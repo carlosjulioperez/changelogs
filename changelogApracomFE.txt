@@ -104,7 +104,7 @@ Configuración Java
 		# vim /usr/local/apache-tomcat-7.0.54/conf/tomcat-users.xml
 			<tomcat-users>
 			        <role rolename="manager-gui"/>
-			        <user username="cromero" password="forever" roles="manager-gui"/>
+			        <user username="cromero" password="***" roles="manager-gui"/>
 			</tomcat-users>
 
 	* Configurar servicio de tomcat7:
