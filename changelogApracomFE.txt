@@ -1,0 +1,699 @@
+Aplicaciones
+	http://186.178.202.67/sql-ledgerFE/login.pl
+	http://186.178.202.67/cjfews/Cjfews?wsdl
+	http://186.178.202.67/feapracom
+	https://trello.com/b/aZETtlcD/fe-apracom
+	
+Checklist
+
+	ls -alrt
+	tail -f ~/fe/logs/feapracom.log
+
+	tail -f ~/fe/logs/tomcat/catalina.2017-03-08.log
+	tail -f ~/fe/logs/tomcat/localhost.2017-03-08.log
+	tail -f ~/fe/logs/tomcat/manager.2017-03-08.log
+	tail -f ~/fe/logs/tomcat/localhost_access_log.2017-03-08.txt
+	
+	ls -alrt /usr/local/apache-tomcat-7.0.54/logs
+	
+	ps aux | grep java
+	sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+	sudo service tomcat7 start
+	sudo service tomcat7 restart
+
+Instalación en servidor de Cromero 192.168.10.13
+
+	* Datos del servidor:
+		cromero@ProxyUb10: lsb_release -a
+		No LSB modules are available.
+		Distributor ID: Ubuntu
+		Description:    Ubuntu 10.04 LTS
+		Release:        10.04
+		Codename:       lucid
+		
+		$ uname -a
+		Linux ProxyUb10 2.6.32-29-generic-pae #58-Ubuntu SMP Fri Feb 11 19:15:25 UTC 2011 i686 GNU/Linux
+
+	* Configuración de puertos:
+		+ Determinar el puerto usado:
+		sudo lsof -i:8080
+	
+		+ Redireccionar el puerto 8080 a 80:
+		http://www.fsi-viewer.com/?show=/technotes.html&display=70013
+		https://glassonionblog.wordpress.com/2011/04/08/tomcat-redirecting-traffic-from-port-8080-to-80-using-iptables/
+
+		* Determinar si localhost está oyendo: nslookup localhost 
+
+	* Conexión remota SSH:
+
+		ssh cromero@186.178.202.67 -p 2222
+		
+		+ Crear archivo de llave clave pública para ssh:
+			# ssh-keygen -t rsa -b 2048
+			Cuando solicite clave, pulsar Enter, dos veces.
+			Copiar en el cliente:
+			scp cromero@192.168.10.13:/home/cromero/.ssh/id_rsa.pub /opt/local/workspace/bin
+
+		+ Copiar log:
+			scp cromero@201.183.224.10:~/fe/logs/feapracom.log .
+
+		+ Copiar Factura:
+			http://www.binarytides.com/linux-scp-command/
+
+			scp cromero@201.183.224.10:~/fe/dir/cg/FA-0990007020001-06062016-004002000005770.xml .
+			scp cromero@201.183.224.10:~/fe/dir/ca/FA-0990007020001-08062016-004002000005799.pdf .
+	
+			scp username@remotehost:/path/directory/\{foo.txt,bar.txt\} .
+			
+			scp cromero@201.183.224.10:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
+			scp cromero@201.183.224.10:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
+
+		+ Copiar un respaldo de la BD:
+			scp cromero@186.101.10.150:~/dbbackup/2015/13-01-2016.apracomsa.sql.bz2 .
+			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
+
+		+ Copiar certificado:
+			scp cromero@201.183.224.10:~/fe/certProd/jssecacerts .
+
+	* Verificar conexión con servidores de SRI:
+		lynx https://celcer.sri.gob.ec
+		lynx https://cel.sri.gob.ec
+
+Configuración Java
+
+	* Ejemplo instalación Java 8:
+		sudo add-apt-repository ppa:webupd8team/java
+		sudo apt-get update
+		sudo apt-get install oracle-java8-installer
+	
+	* Reconfigurar entre varias versiones instaladas:
+		sudo update-alternatives --config java
+
+	* Instalación:
+		# sudo apt-get install oracle-java7-installer mc lynx
+		# scp /Users/carper/Downloads/instaladores/desarrolloWebJava/tomcat/apache-tomcat-7.0.54.tar.gz cromero@192.168.10.13:~/fe
+		# scp /media/carper/Windows8_OS/tmp/jdk-7u60-linux-x64.tar.gz cromero@186.101.10.150:~/fe/java
+
+	* Configuración de Tomcat 7:
+		# sudo vim /usr/bin/tomcat7
+			cd /usr/local/apache-tomcat-7.0.54/bin
+			./catalina.sh run &
+		
+		# sudo chmod +x /usr/bin/tomcat7
+		
+		# vim /usr/local/apache-tomcat-7.0.54/conf/tomcat-users.xml
+			<tomcat-users>
+			        <role rolename="manager-gui"/>
+			        <user username="cromero" password="forever" roles="manager-gui"/>
+			</tomcat-users>
+
+	* Configurar servicio de tomcat7:
+		http://askubuntu.com/questions/351879/how-to-create-a-service-on-ubuntu-upstart
+
+		# sudo vim /etc/init/tomcat7.conf
+		start on filesystem
+		exec /usr/bin/tomcat7
+
+		#sudo ln -s /etc/init/tomcat7.conf /etc/init.d/tomcat7
+
+	* Otra versión:
+		https://www.howtogeek.com/howto/linux/installing-tomcat-6-on-ubuntu/
+		https://askubuntu.com/questions/883892/failed-to-start-tomcat-service-unit-tomcat-service-not-found
+
+	* Parar todos los servicios java:
+		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+
+	* Instalar los certificados del SRI:
+		+ En servidor de Apracomsa:
+			/usr/lib/jvm/java-7-oracle
+			# sudo cp /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts-respaldo
+			# sudo keytool -import -keystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
+			# sudo keytool -import -keystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/cel.sri.gob.ec -alias CA_CEL_SRI -storepass changeit
+	
+		+ En GNU/Linux Freya:
+			# sudo cp /usr/lib/jvm/java-6-oracle/jre/lib/security/cacerts /usr/lib/jvm/java-6-oracle/jre/lib/security/cacerts-respaldo
+			# sudo keytool -import -keystore /usr/lib/jvm/java-6-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
+
+			# sudo cp /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts-respaldo
+			# sudo keytool -import -keystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
+			
+			# sudo keytool -import -keystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/cel.sri.gob.ec -alias CA_CEL_SRI -storepass changeit
+
+		+ En Mac OSX:
+			# sudo cp /usr/lib/jvm/java-6-openjdk/jre/lib/security/cacerts /usr/lib/jvm/java-6-openjdk/jre/lib/security/cacerts-respaldo
+			# sudo keytool -import -keystore /usr/lib/jvm/java-6-openjdk/jre/lib/security/cacerts -file /usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
+
+	* Instalar de certificados con herramientas:
+		+ Descargar herramienta:
+			http://opentox.ntua.gr/files/InstallCert.zip
+		
+		+ Obtención del certificado:
+			$ java InstallCert celcer.sri.gob.ec:443
+			$ java InstallCert cel.sri.gob.ec:443
+		
+		+ Instalación del certificado:
+			$ sudo keytool -importkeystore -srckeystore jssecacerts -destkeystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts
+			$ sudo keytool -importkeystore -srckeystore jssecacerts -destkeystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts
+
+		/home/cromero/fe/certProd/jssecacerts
+
+Gestión de la BD
+	* PostgreSQL:
+		Conectarme con usuario postgres sin password
+		--------------------------------------------
+		$ sudo su postgres
+		# createdb -E SQL_ASCII -T template0 apracomsa
+		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
+
+		# createdb -E UTF-8 -T template0 curso
+		# psql -U sql-ledger apracomsa < /home/carper/Documentos/proyectos/apracom/10-06-2016.apracomsa.sql
+		# psql -d apracomsa < 10-06-2016.apracomsa.sql
+
+		# psql -d apracomsa -U sql-ledger
+
+		+ Conexión como usuario postgres sin especificar el password:
+		sudo -u postgres psql
+
+		#createdb -E UTF-8 -T template0 apracomsa
+		createdb -E SQL_ASCII -T template0 apracomsa
+
+		+ Desde la consola:
+		psql -U postgres apracomsa < /home/carper/Descargas/23-03-2015.apracomsa.sql
+		psql -U postgres apracomsa < /home/carper/23-08-2016.apracomsa.sql
+		
+		\dt	Listado de tablas y usuarios
+		\ds	Listado de secuencias
+		
+		Darle todos los privilegios:
+		grant all privileges on database apracomsa to "sql-ledger";
+		#GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO "sql-ledger";
+		
+		GRANT ALL PRIVILEGES ON TABLE fe_config TO "sql-ledger";
+		GRANT ALL PRIVILEGES ON TABLE fe_cola_aut TO "sql-ledger";
+		GRANT ALL PRIVILEGES ON sequence fe_cola_aut_cola_id_seq TO "sql-ledger";
+
+		* Revisar:
+		alter database lateraldev owner to pavan;
+		GRANT ALL PRIVILEGES ON DATABASE apracomsa TO "sql-ledger";
+		
+		* 9.0 en adelante:
+		GRANT ALL ON ALL TABLES    IN SCHEMA public TO "sql-ledger";
+		GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO "sql-ledger";
+		GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO "sql-ledger";
+
+	* Backup y restore:
+		pg_dump dbname > outfile
+		psql dbname < infile
+
+		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
+
+	* Restaurar una tabla:
+		https://feeding.cloud.geek.nz/posts/restoring-single-table-from-postgres/
+		https://stackoverflow.com/questions/21404141/restore-single-table-dump-from-a-sql-file
+
+		scp -P 2222 /var/lib/postgresql/retenc.pg cromero@186.178.202.67:~/dbbackup
+
+		pg_dump --data-only --table=retenc apracomsa > retenc.pg
+		psql apracomsa < retenc.pg
+
+	* Copiar scripts:
+		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/ddl.sql cromero@192.168.10.13:~/fe
+		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/insert.sql cromero@192.168.10.13:~/fe
+		# scp /mnt/datos/local/workspace/feapracom/resources/sql/insert.sql cromero@192.168.10.13:~/fe
+	
+	* Ejemplos de ejecución de scripts:
+		\i path_to_sql_file
+		@pathof_mysqlfile.sql
+		# psql -U postgres -d apracomsa -a -f /home/cromero/fe/insert.sql
+		
+		apracomsa=# \i /usr/local/fe/ddl.sql
+		apracomsa=# \i /usr/local/fe/insert.sql
+		apracomsa=# \i /usr/local/fe/update.sql
+	
+	* Ver el dueño de las tablas de Postgres:
+		\d
+		GRANT ALL PRIVILEGES ON TABLE fe_config TO "sql-ledger";
+		GRANT ALL PRIVILEGES ON TABLE fe_cola_aut TO "sql-ledger";
+		GRANT ALL PRIVILEGES ON sequence fe_cola_aut_cola_id_seq TO "sql-ledger"; 
+
+	* Grabar la consulta en archivo CSV:
+		\copy (select * from retenc where transdate >= '01/04/2016') to '/tmp/reten.csv' with CSV
+		http://stackoverflow.com/questions/1517635/save-pl-pgsql-output-from-postgresql-to-a-csv-file
+	
+	* Asignar privilegios para acceso a PostgreSQL:
+		sudo vim /etc/postgresql/8.4/main/pg_hba.conf
+		
+		+ Agregar línea de IP asignada temporalmente a mi Mac:
+		host    all         all         192.168.10.104/32      trust
+
+Configuración de entorno de FE
+
+	* Configuración de carpeta ~/fe:
+		# scp /usr/local/fe/p12s/ana_maria_valladares_lopez.p12 cromero@186.101.10.150:~/fe/p12s
+		# scp /Users/carper/documentosCJ/proyectos/general/firmaElectronica/documentos/celcer.sri.gob.ec cromero@192.168.10.13:~/fe/p12s
+		# scp /Users/carper/documentosCJ/proyectos/general/firmaElectronica/documentos/cel.sri.gob.ec cromero@192.168.10.13:~/fe/p12s
+		
+		# cd /usr/local/fe
+		# mkdir -p p12s
+		# mkdir -p dir/cg
+		# mkdir -p dir/cf
+		# mkdir -p dir/ca
+		# mkdir -p dir/cn
+	
+	* Copiar objetos Java:
+		+ Actualizar reportes PDF y librerías:
+		
+		201.183.224.10	
+		192.168.0.3
+	
+		+ Eliminar la carpeta para actualizar el war:
+		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/cjfews*
+		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/feapracom*
+
+		# scp /home/carper/local/maven/dist/cjfews-rep-1.0.jar cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/carper/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		
+		# scp /home/carper/local/maven/cjfews/target/cjfews.war cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/webapps
+		# scp /home/carper/local/maven/feapracom/target/feapracom.war cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/webapps
+		# cp /home/carper/local/maven/dist/autorizacionTest.jar cromero@201.183.224.10:~/fe/lib
+		# scp /home/carper/local/maven/dist/fecola.jar cromero@201.183.224.10:~/fe
+
+		# scp -P 222 /home/carper/local/wsindigo/dist/cjfews.war				cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
+		# scp -P 222 /home/carper/local/wsindigo/dist/feapracom.war				cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
+		# scp -P 222 /mnt/datos/local/workspace/dist/fecola.jar					cromero@186.101.10.150:~/fe
+		# scp -P 222 /home/carper/local/wsindigo/bin/lib/autorizacionTest.jar	cromero@186.101.10.150:~/fe/lib
+
+		# Consultar privilegios:
+			ls -al ~/fe/lib/ | grep autoriza
+
+		# Ejecutar Test autorización
+		# java -cp "lib/*" ec.cjpq.feapracom.util.ProcesoMain
+		# java -cp "lib/*" ec.cjpq.feapracom.util.ProcesoMain "WHERE colaId=1874"
+		
+	 	# sudo chown cromero.cromero /usr/local/apache-tomcat-7.0.54/webapps/cjfews.war
+	 	# sudo chown cromero.cromero /usr/local/apache-tomcat-7.0.54/webapps/feapracom.war
+	
+		# Atributos para los logs
+		# sudo chown cromero.cromero -R /usr/local/apache-tomcat-7.0.54/bin
+		# sudo chown cromero.cromero -R /usr/local/apache-tomcat-7.0.54/logs
+
+	* Darle los permisos apropiados para el manejador de colas:
+		# sudo chown -R cromero.cromero dir/
+		# sudo chmod 755 fecola.jar
+		
+		+ Reiniciar tomcat:
+		http://192.168.10.13:9090/
+		Clic en Manager App y poner las credenciales
+
+	* Creación de enlace a logs:
+		# cd /usr/local/fe
+		# mkdir logs
+		# cd logs
+		# ln -s /usr/local/apache-tomcat-7.0.54/bin/feapracom.log feapracom.log
+		# ln -s /usr/local/apache-tomcat-7.0.54/bin/cjfews.log cjfews.log
+
+	* Copiar archivos App:
+		scp /home/carper/532/App/target/App/WEB-INF/lib.zip cromero@201.183.224.10:~/fe/respaldo
+		scp /home/carper/532/App/target/App.war cromero@201.183.224.10:~/fe/respaldo
+		
+		scp /home/carper/532/App/resources/config/tomcat7/setenv.sh cromero@201.183.224.10:~/tomcat/bin
+		chmod +x ~/tomcat/bin/setenv.sh
+	
+		vim /usr/local/apache-tomcat-7.0.54/conf/context.xml
+	
+		<Resource name="jdbc/AppDS" auth="Container" type="javax.sql.DataSource"
+			  maxActive="20" maxIdle="5" maxWait="10000"
+			  username="sa" password="" driverClassName="org.h2.Driver"
+			  url="jdbc:h2:~/test;INIT=CREATE SCHEMA IF NOT EXISTS TEST"/>
+	
+		vim /usr/local/apache-tomcat-7.0.54/conf/server.xml
+	
+		<Connector port="8080" protocol="HTTP/1.1"
+			connectionTimeout="20000"
+			redirectPort="8443" URIEncoding="UTF-8"/>
+	
+		+ Agregar bibliotecas WEB-INF/lib a App.war:
+		jar uvf App.war WEB-INF
+	
+		/usr/local/apache-tomcat-7.0.54/webapps
+	
+		cp ~/fe/respaldo/App.war /usr/local/apache-tomcat-7.0.54/webapps
+	
+		ps aux | grep java
+		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+		sudo service tomcat7 start
+	
+		+ Encoding:
+			https://openxava.wikispaces.com/problems_en
+			https://geekflare.com/utf-8-configuration-in-websphere-weblogic-tomcat-tc-server-jboss/
+			https://gist.github.com/terrancesnyder/986029
+			http://stackoverflow.com/questions/11089783/character-encoding-issue-with-tomcat
+			set CATALINA_OPTS=-Dfile.encoding="UTF-8"
+
+Código para obtener el mensaje de autorización
+
+	                             mensaje                             
+	-----------------------------------------------------------------
+	AUTORIZADO
+	El comprobante ha sido AUTORIZADO...
+	Número de autorización: 2406201516210213600021700010280897932
+	Fecha de autorización : 2015-06-24T16:21:02.046-05:00
+
+Cambios en SQL-Ledger
+
+	* Cambios en el código para ejecutar fecola.jar:
+		# sudo vim /usr/local/sql-ledgerFE/bin/mozilla/is.pl
+		Cambio, en 870:
+			'E-mail' => { ndx => 5, key => 'E', value => $locale->text('E-mail') },
+		por:
+			'E-mail' => { ndx => 5, key => 'E', value => $locale->text('FE') },
+		
+		Agregar GR:
+			'GR' => { ndx => 6, key => 'G', value => $locale->text('GR') },
+
+		# sudo vim /usr/local/sql-ledgerFE/bin/mozilla/arap.pl
+		Agregar en 552:
+		sub fe {
+		        $form->header;
+			#my $salida = `/usr/bin/java -jar /usr/local/fe/fecola.jar FA $form->{id}`;
+		        my $salida = `/usr/local/fe/fecola.jar FA $form->{id}`;
+		        print qq|
+		                <body>
+		                <h2>COMPROBANTES ELECTRONICOS - COLA DE AUTORIZACIONES </h2>
+		                <h4>$salida</h4>
+		                </body>
+		                </html>
+		        |;
+		}
+
+		sub gr {
+			$form->header;
+			my $salida = `/usr/local/fe/fecola.jar GR $form->{id}`;
+			print qq|
+				<body>
+				<h2>COMPROBANTES ELECTRONICOS - COLA DE AUTORIZACIONES </h2>
+				<h4>$salida</h4>
+				</body>
+				</html> 
+			|;
+		}
+
+	* Configurar SQL-Ledger para versión de pruebas:
+		vim /etc/apache2/sql-ledger-httpd.conf
+		sudo service apache2 restart
+		
+	* Cambios en locales:
+		+ Al ejecutar el cambio aparece el error:
+		Error!
+		fe not defined in locale/ec/is
+	
+		cd /usr/local/sql-ledgerFE/locale/ec/
+		grep FE * -R
+		vim ps
+
+		+ Respaldo del archivo:
+		# sudo cp /usr/local/sql-ledgerFE/locale/ec/is /usr/local/sql-ledgerFE/locale/ec/is.resp-carper
+		
+		# sudo vim /usr/local/sql-ledgerFE/locale/ec/is
+		Agregar en 50:
+		
+		  'FE'                          => 'FE',
+		  'E-mail'                      => 'Correo electrónico',
+		
+		+ Actualizar locales:
+		# cd /usr/local/sql-ledgerFE/locale/ec
+		# sudo perl locales.pl
+		Salida:
+		Spanish/Ecuador - 66.9%
+		
+		+ Cambios en pantallas del SRI:
+		# cd /usr/local/sql-ledgerFE/locale/ec/
+		# sudo vim sri
+		Agregar en línea 13
+		  'actualizar'                  => 'Actualizar',
+		  'guardar'                     => 'Guardar',
+		};
+		
+		Y en línea 70:
+		  'actualizar'                  => 'update',
+		  'guardar'                     => 'save',
+		};
+	
+	*Páginas de man:
+		http://unix.stackexchange.com/questions/3586/what-do-the-numbers-in-a-man-page-mean
+		
+	* Obtener la ruta de un archivo:
+		"%p
+	
+	* Evitar que se congele la sesión ssh:
+	byobu -r Ubuntu, screen -r CentOS
+
+	* Documentación relacionada:
+		http://blog.rolandopalermo.com/2013/03/web-service-client-java-ssl-https.html
+	
+	* Contar carateres de una palabra:
+		g CTRL + G
+Varios
+
+	* Hacer un enlace suave de todos los archivos de ../v10 en el directorio actual:
+	for f in ../v10/* ; do ln -s "$f"  ; done
+
+Pendientes
+	
+	* Debug en consola desde Java:
+		http://blog.rejeev.com/2011/04/jdb-command-line-debugger-for-java.html	
+
+TODO
+
+2016-06-15
+	Generar RIDE de 123430 004-002-000005767
+
+201-06-11
+	Validar el correo del proveedor cuando se seleccione un registro para
+	Revisar el pagineo de la col
+
+2016-06-09
+	Agregar ceros a la inzquierda al código de sustento "01"
+
+2016-06-07
+	Corregir impresión del IVA
+2016-06-04
+	Hacer por skype una retención demo para analizar los datos
+
+2016-06-01
+	SELECT rate FROM tax t, chart c, partstax p 
+	WHERE t.chart_id = c.id AND
+	rate > 0 AND 
+	c.category = 'L' AND 
+	p.chart_id = c.id AND 
+	t.validto >= current_date or t.validto is null AND 
+	p.parts_id = 116270;
+
+
+2016-05-31
+	Prueba de IVA 14%	
+
+2016-05-26
+	* #5 Consulta de Retenciones en Base de Datos:
+		+ Análisis de datos de acuerdo a formulario SQL-Ledger de retenciones: OK
+			Buscar por secret = 0
+		+ Generar consulta SQL para cargar una retención específica:
+
+2016-05-24
+	* #4 Pruebas IVA 14%:
+		+ Prueba de autorización de Facturas en modo desarrollo: OK
+		Prueba de autorización de Guías de Remisión en modo desarrollo
+		+ Visualizar RIDE de Facturas en modo desarrollo: OK
+		Visualizar RIDE de Guías de Remisión en modo desarrollo
+	
+	* #3 N/A
+
+2016-05-23
+
+	* #2 Agregar leyenda de IVA 14% en Facturas:
+		+ Crear método test para generar el RIDE: OK
+			ec.cjpq.cjfews.util.RideUtilTest.java
+		+ Modificar el RIDE de la factura para leer los cambios de parámetros
+		del IVA: OK
+		+ Determinar el tipo de impuesto en el XML de factura: OK
+		+ Modificar la leyenda del impuesto en el RIDE: OK
+
+2016-05-20
+	* #1 Agregar parámetro de IVA al 14%:
+		+ Revisar la ficha técnica del SRI para determinar los cambios del IVA
+		en el proceso y en el RIDE:
+			Código 3 Porcentaje 14% 
+		+ Revisión de los parámetros y del core del proyecto del IVA a 14%:
+			ec.cjpq.cjfews.comprobante.Parametro.java
+			ec.cjpq.cjfews.comprobante.CalculoUtil.java
+			ec.cjpq.cjfews.comprobante.TotalComprobante
+			ec.cjpq.feapracom.bean.DocumentoBean.java
+
+			Ejemplo de factura:
+			/usr/local/fe/dir/cg/FA-1792338743001.-11012016-004002000003559.xml
+
+2016-04-25
+	Modificar el jar del test para ver los logs con warn
+	Quitar en todos los proyectos log.info
+
+	Error con parámetros, corregir en el reporte.
+	Listar los archivos contenidos en el jar	
+	Mostrar los warnings para determinar el error. ¡ERROR ENCONTRADO!
+	Generar prueba de GR con cédula OK
+
+====== MENSAJE DEL SISTEMA [2016-04-25 12:01:34.869] 
+net.sf.jasperreports.engine.JRException: Could not load object from location : /home/carper/local/wsindigo/cjfews-rep/src/generico/reportes/guiaremision_destinatario.jasper
+
+2016-04-21
+
+Determinar destinatario != null
+
+	+ Flujo:
+	
+	CjfewsImpl.autorizarGuiaRemision
+	ProcesoUtil().procesarGuiaRemision
+	WsUtil.autorizacion
+	rideUtil.generar
+
+	Determinar si el reporte es accedido normalmente o si no hay otro jar que lea antes del actualizado
+
+2016-04-11
+	* Analizar el no envío de las GR por correo:
+	2016-Apr-11 18:02:40 [http-bio-8080-exec-10] WARN  ec.cjpq.jdbc.ColaAut.ponerCola(101) - Comprobante GR # 120460 enviado a la cola de autorizaciones...
+	2016-Apr-11 18:03:16 [http-bio-8080-exec-4] WARN  ec.cjpq.feapracom.util.Proceso.autorizarComprobante(83) - Nueva secuencia de comprobante GREMISION: 1021
+	Archivo autorizado    : GR-0930893714-11042016-004002000001021
+
+	Determinar si se genera el PDF
+	Determinar si se envía por correo el PDF generado
+	Determinar el proceso de descarga de RIDE (Teamviewer)
+
+2016-03-17
+	Buscar la factura (ar) y poner los datos de la GR en la cola
+	Agregar la opción en el panel
+
+2016-03-11
+	Se corrigió la funcionalidad de logout ignorando
+	<disable-event-thread>false</disable-event-thread> en zk.xml
+
+2016-03-09
+	Agregar botón logout-shiro en el Menú Principal (home.zul)
+
+2016-03-08
+	Crear mapa de opciones del sistema
+
+2016-03-03
+	Habilitar el toolbarbutton 'logout'
+	QUitar columna secuencia
+
+2016-02-24
+	Analizar Retenciones SRI
+
+	Documentar los campos necesarios para la Guía de Remisión
+		Detallar los campos y pasarlos por correo
+		EntidadDao.getDatosGuiaRemision()
+
+		Shipping point / Puerto de embarque:
+		Ship via / Enviado por:
+		Waybill:
+
+	* Corrección de facturas:
+		* Grabar la secuencia de FE en las facturas como estaba en el código anterior en ar:
+		117909 OK
+		117955 OK
+		117953 OK
+		117954 OK
+		117956 OK
+		117501 OK
+		117962 OK
+		114659 OK
+		117974 OK
+2016-02-23
+	Agregar botón GR en pantallas de SL
+2016-02-16
+	Copiar reporte Factura a GuiaRemision
+	Preparar jar con objetos para fuente de datos de reportes
+
+2016-01-11
+	Configurar tomcat7 como servidor en Ubuntu
+
+2015-12-29
+	Leer las facturas autorizadas y generar las GR
+	Deben validarse los campos: shippingpoint, shipvia, waybill
+	
+	* Datos de Guía de Remisión:
+		Ruc transportista: ar.shippingpoint
+		Razón social: shipvia
+		Placa: waybill
+		Motivo de traslado: description
+
+2015-12-18
+
+	Optimización de métodos de envío en WS y en artefactos del cliente
+	Guardar el nombre generado del documento y reenviarlo desde el FileSystem con copia al cliente
+	Devolver el XML con la clave de acceso del SRI
+	
+2015-12-16
+
+	Reenviar el XML + el RIDE por el nombre del archivo por correo al cliente
+	Descargar el PDF en el browser de la máquina cliente
+
+	Guadar el PDF y XML del SRI en carpeta ca
+	Grabar el XML generado por el SRI OK
+	comprobantes/src/ec/gob/sri/comprobantes/util/AutorizacionComprobantesWs.java
+	Línea 100
+	Ampliar el campo codigoAcceso en el RIDE OK
+
+
+2015-12-15
+	Cambiar el código principal y auxiliar del detalle de la Factura
+		cod principal=parts.partnumber
+		cod auxiliar=makemodel.model
+
+2015-12-09
+	Agregar el campo customer.cc como correo con copia
+
+	Cambiar a productivo de 
+		fe_config.cfg_tip_ambiente = 1 a 2
+	
+2015-12-02
+	Quitar leyenda número de migo
+	No mostrar la leyenda de contribuyente especial si no tiene número
+	Actualizar correctamente el número de secuencial del empleado cuando se autoriza un documento.
+	
+	* Corregir error:
+		Al hacer logout desde el administrador de achivos P12 para el empleado sale:
+		NullPointerException
+
+2015-12-01
+	Ubicar los últimos cambios de los reportes
+
+2015-11-30
+	Ampliar la descripción del campo Guía de Remisión en la factura
+	Modificar el formato de la factura.
+
+2015-11-18
+	
+	Grabar la secuencia y el número de autorización en Sql-Ledger
+
+2015-11-07
+	Probar con archios P12.
+
+2015-10-26
+	Instalar certificados del SRI en Java 8
+
+2015-06-24:
+	Determinar el tamaño del archivo p12 (OK)
+	Cambiar los permisos a la llave (OK)
+	Cambiar el Web Service y el cliente al puerto 8080 (OK)
+	Cambiar la secuencia a 13 para la autorización de facturas (OK)
+	
+	+ Determinar el contenido de las tildes (SOLUCION):
+	¿La firma electrónica protege el contenido del documento digital?
+	Así es, cualquier cambio realizado a los datos del documento, incluso alterando una sola letra, invalidará la firma electrónica, después de cualquier cambio. El receptor del documento digital al validar la firma electrónica recibe la notificación que la firma es inválida
+	
+2015-06-12:
+	Verificar archivo p12 (OK)
+	Actualizar archivo p12 en el servidor (OK)
+	Actualizar sistema en servidor linux (OK)
+
+
