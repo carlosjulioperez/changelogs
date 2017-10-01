@@ -1,0 +1,49 @@
+Perl
+	* Estudio:
+		https://qntm.org/files/perl/perl.html		
+		http://www.onyxneon.com/books/modern_perl/index.html
+		https://learn.perl.org/books/
+		https://www.perl.org/learn.htm
+
+	* Future:
+		https://www.quora.com/What-is-the-future-of-the-Perl-language-beyond-2017
+		https://techbeacon.com/why-perl-6-game-thrones-programming-languages
+		http://perltricks.com/article/an-interview-with-laurent-rosenfeld/
+
+	* Ranking:
+		https://www.meneame.net/m/tecnolog%C3%ADa/stackoverkill-ranking-lenguajes-programacion-frameworks-basado
+		http://www.stackoverkill.com/ranking/
+		http://blog.stoneriverelearning.com/the-7-most-in-demand-programming-languages-for-2017/
+		http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2017/
+
+	* Frameworks:
+		http://mojolicious.org/perldoc
+
+Kotlin
+	* Courses:
+		https://www.udacity.com/course/android-development-for-beginners--ud837
+		https://classroom.udacity.com/courses/ud834/lessons/4027328704/concepts/216017e8-8a5c-4fc8-925d-f03df3618d0c
+
+	* Blogs:
+		https://developer.android.com/kotlin/resources.html
+		https://engineering.facile.it/blog/eng/kotlin-dsl/
+		https://www.reddit.com/r/androiddev/comments/5ssthe/using_kotlin_typesafe_builders_to_create_a_dsl/
+		https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/index.html?index=..%2F..%2Findex#0
+
+	* Videos:
+		https://www.udemy.com/the-complete-kotlin-developer-course/
+
+Python
+	* Blogs:
+		https://www.meneame.net/m/tecnolog%C3%ADa/cero-heroe-python-11-horas-tutorial-video-eng
+
+Varios
+	* Mejores:
+		https://www.quora.com/Which-one-do-you-prefer-for-back-end-development-now-Scala-Kotlin-Elixir-or-Go
+
+	* Fuentes para programar:
+		https://www.meneame.net/m/tecnolog%C3%ADa/han-disenado-tipografia-ideal-escribir-codigo-open-source
+		https://www.genbeta.com/herramientas/han-disenado-una-tipografia-ideal-para-escribir-codigo-y-es-open-source
+
+	* Reunión de managers y un ingeniero:
+		https://www.youtube.com/watch?v=BKorP55Aqvg&feature=youtu.be
