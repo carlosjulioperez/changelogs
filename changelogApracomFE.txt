@@ -6,6 +6,12 @@ Aplicaciones
 	
 Checklist
 
+	Cambiar configuración de teclado
+	https://askubuntu.com/questions/209597/how-do-i-change-keyboards-from-the-command-line
+	
+	sudo setxkbmap es
+	sudo setxkbmap us
+
 	ls -alrt
 	tail -f ~/fe/logs/feapracom.log
 
@@ -20,6 +26,23 @@ Checklist
 	sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
 	sudo service tomcat7 start
 	sudo service tomcat7 restart
+
+Sql-Ledger 2.8.20
+	* VirtualBox:
+		+ Host (desarrollo xenial Ubuntu 16.04.3 LTS):
+			Adapter 1: NAT
+			Adapter 2: Bridge Adapter (wlan0)
+
+		+ Guest (lucid Ubuntu 10.04.4 LTS):
+			+ Determinar las interfaces disponibles:
+			# sudo ip link
+			# sudo vim /etc/network/interfaces
+	
+			+ Agregar:
+			auto eth1
+			iface eth1 inet dhcp
+	
+			# sudo /etc/init.d/networking restart
 
 Instalación en servidor de Cromero 192.168.10.13
 
