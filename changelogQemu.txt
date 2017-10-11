@@ -9,12 +9,12 @@ Qemu y kvm
 	* Quitar el espacio de los archivos con tamaño cero:
 		https://rwmj.wordpress.com/2010/05/18/tip-compress-raw-disk-images-using-qcow2/
 		
-		qemu-img convert -p -O qcow2 us100432-clean_install.img us100432.img 
+		qemu-img convert -p -O qcow2 us100432-clean_install.img us100432_resized.img 
 		
-		+ con compresión (pero no se puede hacer "boot"):
-		qemu-img convert -p -c -f raw -O qcow2 us100432-clean_install.img us100432-clean_install.img.backup
+		+ con compresión:
+		qemu-img convert -p -c -O qcow2 us100432-clean_install.img us100432.img
 
-	* Ejecutar la imagen con tamaño optimizado usando 512 Mb de RA usando 512 Mb de RAM:
+	* Ejecutar la imagen con tamaño optimizado usando 512 Mb de RAM:
 		kvm -m 512 us100432.img
 
 	* qemu on debian:
