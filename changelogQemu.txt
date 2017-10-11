@@ -19,3 +19,18 @@ Qemu y kvm
 
 	* qemu on debian:
 		https://wiki.debian.org/QEMU
+
+	* bridge con wireless:
+		https://wiki.debian.org/BridgeNetworkConnections
+
+		+ Imprimir la MAC:
+		ip addr
+		ip link show wlan0
+
+		$ sudo vim /etc/network/interfaces
+
+		pre-up iwconfig wlan0 essid Administracion
+		bridge_hw 2c:6e:85:7c:24:05
+
+
+		$ ebtables -t nat -A POSTROUTING -o wlan0 -j snat --to-src 2c:6e:85:7c:24:05 --snat-arp --snat-target ACCEPT
