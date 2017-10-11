@@ -1,0 +1,21 @@
+Qemu y kvm
+	* Creación de imagen:
+		https://askubuntu.com/questions/293294/how-to-create-images-from-iso-for-kvm
+		
+		qemu-img create us100432-clean_install.img -f qcow2 10G
+		kvm -m 256 -cdrom /media/sda1/local/iso/ubuntu-10.04.4-server-i386.iso -boot d us100432-clean_install.img
+		kvm -m 512 us100432-clean_install.img
+		
+	* Quitar el espacio de los archivos con tamaño cero:
+		https://rwmj.wordpress.com/2010/05/18/tip-compress-raw-disk-images-using-qcow2/
+		
+		qemu-img convert -p -O qcow2 us100432-clean_install.img us100432.img 
+		
+		+ con compresión (pero no se puede hacer "boot"):
+		qemu-img convert -p -c -f raw -O qcow2 us100432-clean_install.img us100432-clean_install.img.backup
+
+	* Ejecutar la imagen con tamaño optimizado usando 512 Mb de RA usando 512 Mb de RAM:
+		kvm -m 512 us100432.img
+
+	* qemu on debian:
+		https://wiki.debian.org/QEMU

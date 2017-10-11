@@ -24,6 +24,7 @@ Checklist
 	
 	ps aux | grep java
 	sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+	sudo kill -KILL `ps -e | grep chromium | awk '{print $1}'`
 	sudo service tomcat7 start
 	sudo service tomcat7 restart
 
