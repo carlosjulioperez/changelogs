@@ -21,16 +21,18 @@ Qemu y kvm
 		https://wiki.debian.org/QEMU
 
 	* bridge con wireless:
-		https://wiki.debian.org/BridgeNetworkConnections
+		https://unix.stackexchange.com/questions/159191/setup-kvm-on-a-wireless-interface-on-a-laptop-machine
+		
+		$ sudo apt-get install virt-manager
+		$ sudo adduser knoppix kvm
+		$ sudo adduser knoppix libvirt
+		$ sudo adduser knoppix libvirt-qemu
 
-		+ Imprimir la MAC:
-		ip addr
-		ip link show wlan0
+		# sudo ip link
+		# sudo vim /etc/network/interfaces
 
-		$ sudo vim /etc/network/interfaces
+		+ Agregar:
+		auto eth1
+		iface eth1 inet dhcp
 
-		pre-up iwconfig wlan0 essid Administracion
-		bridge_hw 2c:6e:85:7c:24:05
-
-
-		$ ebtables -t nat -A POSTROUTING -o wlan0 -j snat --to-src 2c:6e:85:7c:24:05 --snat-arp --snat-target ACCEPT
+		# sudo /etc/init.d/networking restart
