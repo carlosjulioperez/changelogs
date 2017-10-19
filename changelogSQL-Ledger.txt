@@ -63,6 +63,20 @@ SQL-Ledger
 		postgres@us100432:/home/carper$ psql --version
 		psql (PostgreSQL) 8.4.10
 
+		+ Creación de usuario antes de tareas administrativas:
+		# sudo su postgres
+		# createuser -d sql-ledger  (superuser)
+		# createdb demo
+
+		# sudo vim /etc/postgresql/8.4/main/pg_hba.conf
+
+		Agregar:
+		local           all        all           trust
+
+		# sudo service postgresql-8.4 restart
+
+		http://192.168.122.212/sql-ledger325/admin.pl
+
 	* Impedimentos:
 		perl: warning: Setting locale failed.
 		https://geekytheory.com/solucion-al-error-perl-warning-setting-locale-failed-en-ubuntu-server
