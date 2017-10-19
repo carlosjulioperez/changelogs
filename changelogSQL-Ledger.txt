@@ -1,0 +1,75 @@
+SQL-Ledger
+	* Versión 3.2.5 en ubuntu 10.04 32 bits:
+		# sudo su
+		# cd /usr/local
+		# wget -c http://www.sql-ledger.com/source/sql-ledger-3.2.5.tar.gz
+		# mv sql-ledger sql-ledger325
+		# cd sq-ledger325
+		# chown www-data:www-data users/ css/ spool/ templates/
+		# cd /etc/apache2/
+		# vim sql-ledger-httpd.conf
+
+			Alias /sql-ledger325/ /usr/local/sql-ledger325/
+			<Directory /usr/local/sql-ledger325>
+			        AllowOverride All
+			        AddHandler cgi-script .pl
+			        Options ExecCGI Includes FollowSymlinks
+			        Order Allow,Deny
+			        Allow from All
+			</Directory>
+			<Directory /usr/local/sql-ledger325/users>
+			        Order Deny,Allow
+			        Deny from All
+			</Directory>
+
+		# vim /etc/apache2/httpd.conf
+
+			# SQL-Ledger
+			Include /etc/apache2/sql-ledger-httpd.conf
+
+		# cd /usr/local/sql-ledger325/
+		# cp sql-ledger.conf.default sql-ledger.conf
+		# exit
+		# sudo service apache2 restart
+
+		+ Abrir en un browser:
+
+		http://192.168.122.212/sql-ledger325/login.pl
+		http://192.168.122.212/sql-ledger325/admin.pl
+		
+		+ Verificar si está correcta la instalación:
+		# perl -s sql-ledger.conf 
+
+		+ Instalar requisitos:
+		
+		# cd /etc/apt
+		# sudo cp sources.list sources.list.back
+		# sudo vim sources.list
+
+		Con vim reeemplazar el texto "ec.archive" con "old-releases"
+		Y en la parte final del archivo "security" con "old-releases"
+
+		# sudo apt-get update
+		# sudo apt-get install libpq-dev
+
+		Ahora ya satisfacemos la pregunta del instalador de CPAN
+
+		# whereis pg_config
+		pg_config: /usr/bin/pg_config /usr/share/man/man1/pg_config.1.gz
+
+		# perl -MCPAN -e 'install Bundle::DBD::Pg'
+		# sudo aptitude install libdbi-perl
+
+		postgres@us100432:/home/carper$ psql --version
+		psql (PostgreSQL) 8.4.10
+
+	* Impedimentos:
+		perl: warning: Setting locale failed.
+		https://geekytheory.com/solucion-al-error-perl-warning-setting-locale-failed-en-ubuntu-server
+		
+		# sudo locale-gen es_EC.UTF-8
+		# sudo dpkg-reconfigure locales
+
+		Error! 
+		Database Driver missing!
+
