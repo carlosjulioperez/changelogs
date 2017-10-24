@@ -3,6 +3,7 @@ SQL-Ledger
 		# sudo su
 		# cd /usr/local
 		# wget -c http://www.sql-ledger.com/source/sql-ledger-3.2.5.tar.gz
+		# tar zxvf sql-ledger-3.2.5.tar.gz
 		# mv sql-ledger sql-ledger325
 		# cd sq-ledger325
 		# chown www-data:www-data users/ css/ spool/ templates/
@@ -67,6 +68,9 @@ SQL-Ledger
 		# sudo su postgres
 		# createuser -d sql-ledger  (superuser)
 		# createdb demo
+
+		# createdb -O sql-ledger -E SQL_ASCII -T template0 demo325
+		# createdb -O sql-ledger -E UTF-8 -T template0 demo325
 
 		# sudo vim /etc/postgresql/8.4/main/pg_hba.conf
 
