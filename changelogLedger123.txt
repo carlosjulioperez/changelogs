@@ -1,0 +1,59 @@
+Ledger123 steps install
+	* Versión 3.0.3 en ubuntu 10.04 32 bits:
+
+		# apt-get install libdbix-simple-perl # ubuntu / debian
+		# sudo apt-get install git-core
+		# cd /usr/local
+		# git clone git://github.com/ledger123/ledger123.git
+		# sudo chown -R carper:carper ledger123/
+		# cd ledger123/
+		# git checkout -b rel3 origin/rel3
+		# git pull
+		# mkdir spool
+		# chown www-data:www-data users/ css/ spool/ templates/
+		# vim /etc/apache2/sql-ledger-httpd.conf
+
+			Alias /ledger123/ /usr/local/ledger123/
+			<Directory /usr/local/ledger123>
+			        AllowOverride All
+			        AddHandler cgi-script .pl
+			        Options ExecCGI Includes FollowSymlinks
+			        Order Allow,Deny
+			        Allow from All
+			</Directory>
+			<Directory /usr/local/ledger123/users>
+			        Order Deny,Allow
+			        Deny from All
+			</Directory>
+		
+		# vim /etc/apache2/httpd.conf
+
+			# SQL-Ledger
+			Include /etc/apache2/sql-ledger-httpd.conf
+
+		# cd /usr/local/ledger123/
+		# cp sql-ledger.conf.default sql-ledger.conf
+		# sudo service apache2 restart
+
+		# sudo su postgres
+		# createdb demo303
+
+		http://192.168.122.220/ledger123/admin.pl
+
+		+ Impedimentos:
+		
+		Internal Server Error
+		The server encountered an internal error or misconfiguration and was
+		unable to complete your request.
+
+		sudo cat /var/log/apache2/error.log 
+
+		[Wed Oct 25 14:58:40 2017] [error] [client 192.168.122.1] Can't locate
+		DBIx/Simple.pm in @INC (@INC contains: /etc/perl
+		/usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5
+		/usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10
+		/usr/local/lib/site_perl .) at SL/Form.pm line 10.
+
+		+ Solución:
+			Instalar libdbix-simple-perl   
+

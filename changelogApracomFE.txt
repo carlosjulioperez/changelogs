@@ -193,7 +193,7 @@ Gestión de la BD
 		# createdb -E SQL_ASCII -T template0 apracomsa
 		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
 
-		# createdb -E UTF-8 -T template0 curso
+		# createdb -E UTF8 -T template0 curso
 		# psql -U sql-ledger apracomsa < /home/carper/Documentos/proyectos/apracom/10-06-2016.apracomsa.sql
 		# psql -d apracomsa < 10-06-2016.apracomsa.sql
 
@@ -202,8 +202,8 @@ Gestión de la BD
 		+ Conexión como usuario postgres sin especificar el password:
 		sudo -u postgres psql
 
-		#createdb -E UTF-8 -T template0 apracomsa
-		createdb -E SQL_ASCII -T template0 apracomsa
+		#createdb -E UTF8 -T template0 apracomsa
+		#createdb -E SQL_ASCII -T template0 demo2-325
 
 		+ Desde la consola:
 		psql -U postgres apracomsa < /home/carper/Descargas/23-03-2015.apracomsa.sql

@@ -52,6 +52,7 @@ SQL-Ledger
 
 		# sudo apt-get update
 		# sudo apt-get install libpq-dev
+		# sudo apt-get install lynx
 
 		Ahora ya satisfacemos la pregunta del instalador de CPAN
 
@@ -63,6 +64,8 @@ SQL-Ledger
 
 		postgres@us100432:/home/carper$ psql --version
 		psql (PostgreSQL) 8.4.10
+
+		\du Para listar usuarios
 
 		+ Creación de usuario antes de tareas administrativas:
 		# sudo su postgres
