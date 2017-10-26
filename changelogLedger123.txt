@@ -2,16 +2,18 @@ Ledger123 steps install
 	* Versión 3.0.3 en ubuntu 10.04 32 bits:
 
 		# apt-get install libdbix-simple-perl # ubuntu / debian
+			Determinar si está instalado:
+			# dpkg -l | grep libdbix-simple-perl
+
 		# sudo apt-get install git-core
 		# cd /usr/local
-		# git clone git://github.com/ledger123/ledger123.git
-		# sudo chown -R carper:carper ledger123/
+		# sudo git clone git://github.com/ledger123/ledger123.git
 		# cd ledger123/
-		# git checkout -b rel3 origin/rel3
-		# git pull
-		# mkdir spool
-		# chown www-data:www-data users/ css/ spool/ templates/
-		# vim /etc/apache2/sql-ledger-httpd.conf
+		# sudo git checkout -b rel3 origin/rel3
+		# sudo git pull
+		# sudo mkdir spool
+		# sudo chown www-data:www-data users/ css/ spool/ templates/
+		# sudo vim /etc/apache2/sql-ledger-httpd.conf
 
 			Alias /ledger123/ /usr/local/ledger123/
 			<Directory /usr/local/ledger123>
