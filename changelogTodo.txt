@@ -41,6 +41,12 @@ TODO
 		+ Ampliar impresión clave acceso en NC:
 			19 10 p=2
 	* @informe:
+		+ Sugerencia de servidor, nas y ups:
+			
+		http://www.dell.com/en-us/work/shop/servers-storage-and-networking/poweredge-r530-rack-server/spd/poweredge-r530/pe_r530_1451_a/configurations?selectionState=eyJGUHJpY2UiOjQ3NTQuMDEsIk9DIjoicGVfcjUzMF8xNDUxX2EiLCJRdHkiOjEsIk1vZHMiOlt7IklkIjoxNjk3LCJPcHRzIjpbeyJJZCI6IjFDUFUifV19LHsiSWQiOjE1NjAsIk9wdHMiOlt7IklkIjoiMTZHQk1NIiwiUHJpY2UiOjMyNy43MywiUXR5IjozfV19LHsiSWQiOjE1NDAsIk9wdHMiOlt7IklkIjoiUjFIIn1dfSx7IklkIjoxNTQxLCJPcHRzIjpbeyJJZCI6IkgzMzAiLCJQcmljZSI6MTU2LjkzfV19LHsiSWQiOjE1NzAsIk9wdHMiOlt7IklkIjoiU0E5NkIiLCJQcmljZSI6NzE3Ljg2LCJRdHkiOjJ9XX0seyJJZCI6MTY1MiwiT3B0cyI6W3siSWQiOiJOT01FRCJ9XX0seyJJZCI6MTUyMCwiT3B0cyI6W3siSWQiOiJJOEJBUyJ9XX0seyJJZCI6MTUxNCwiT3B0cyI6W3siSWQiOiJPQk5JQ1EifV19LHsiSWQiOjE2MDAsIk9wdHMiOlt7IklkIjoiRFZSV1NBIiwiUHJpY2UiOjYyLjR9XX0seyJJZCI6MTYyMCwiT3B0cyI6W3siSWQiOiI0OTVSIiwiUHJpY2UiOjM3Ny41Mn1dfSx7IklkIjoxNjIxLCJPcHRzIjpbeyJJZCI6Ik5QV1JDRCJ9XX0seyJJZCI6MTYxMCwiT3B0cyI6W3siSWQiOiJSUkNNQSIsIlByaWNlIjoxMTkuMTJ9XX1dfQ%253D%253D
+
+			26 10 p=6
+
 		+ Servidor y equipo NAS como disco virtual:
 			18 10 p=2
 		+ Informe de requerimientos de SQL-Ledger de Carol Pulido:

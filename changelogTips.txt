@@ -1,0 +1,280 @@
+TIPS
+
+	* Debian Packages:
+		+ Installed packages:
+			dpkg -l | grep jdk
+			
+				ii  openjdk-8-jre-headless:i386	 8u121-b13-0ubuntu1.16.10.2 i386 OpenJDK Java runtime, using Hotspot JIT (headless)
+
+		+ Remove:
+			sudo apt-get remove openjdk-8-jre-headless:i386
+
+		+ Uninstall tomcat 8:
+			sudo apt-get remove --auto-remove tomcat7 tomcat7-docs tomcat7-examples tomcat7-admin
+			sudo apt-get purge --auto-remove tomcat7 tomcat7-docs tomcat7-examples tomcat7-admin
+
+			sudo apt-get remove --auto-remove tomcat8 tomcat8-docs tomcat8-examples tomcat8-admin
+			sudo apt-get purge --auto-remove tomcat8 tomcat8-docs tomcat8-examples tomcat8-admin
+
+			https://www.howtoinstall.co/en/ubuntu/utopic/tomcat8?action=remove
+
+	* Free disk space:
+		http://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu
+	* Borrar archivos recientes de Evince:
+		vim /home/carper/.local/share/recently-used.xbel
+		rm /home/carper/.local/share/recently-used.xbel
+	* uzbl:
+		vim ~/.local/share/uzbl/bookmarks
+
+	* xterm multiple windows:
+		xterm -e bash -c 'echo foo; exec bash' &
+		xterm -e bash -c 'bin/uzbl.sh; exec bash' &
+	* Gnome commander:
+		+ Cambiar VLC como reproductor multimedia por defecto:
+
+			vim ~/.local/share/applications/defaults.list
+			[Default Applications]
+			video/x-msvideo=vlc.desktop
+			video/x-flv=vlc.desktop
+			video/mp2t=vlc.desktop
+			video/mp4=vlc.desktop
+			video/mpeg=vlc.desktop
+			video/ogg=vlc.desktop
+			video/x-theora+ogg=vlc.desktop
+			video/x-ms-wmv=vlc.desktop
+
+			http://askubuntu.com/questions/14197/how-do-i-force-gnome-commander-to-use-vlc-instead-of-movie-player-by-default
+
+	* Usb booteable:
+		Gnome Disks utility
+		http://elementaryos.stackexchange.com/questions/175/how-can-i-format-a-usb-flash-drive
+	
+	* Tamaño de archivos y carpetas:
+		du -hs * | sort -h
+
+		+ Los directorios más grandes:
+			du -BM / | sort -n -r | head -n 10
+			http://www.keyboardninja.eu/linux/find-the-10-largest-directories-in-linux
+
+	* Cambiar resolución:
+		 convert 20170324_114833.jpg -resize 900x900 -quality 85 20170324_114833_2.jpg
+
+		+ En lote:
+			sudo apt-get install imagemagick
+			for i in `ls`; do convert -resize 900x900 -quality 85 $i resized_$i; done
+
+	* Java:
+		+ Install:
+			sudo apt-get install oracle-java6-installer
+			sudo apt-get install oracle-java7-installer
+			sudo apt-get install oracle-java8-installer
+
+		+ Change version:	
+			sudo update-alternatives --config java
+		
+		+ View jar file:
+			jar tf lombok.jar
+			
+		+ Install lombok:
+
+			carper@cjbox:~/local/javaDev$ java -jar lombok-1.16.16.jar install /home/carper/local/indigo/
+			Lombok installed to: /home/carper/local/indigo/eclipse
+
+		+ Ejecutar:
+			java -classpath "classes:./lib/h2-1.3.176.jar" ec.cjpq.core.util.H2Script
+
+		+ Compilar:
+			javac -d bin src/foo/bar/*.java
+			
+			C:\>javac -classpath \examples;\lib\Banners.jar ^
+			            \examples\greetings\Hi.java
+			
+			http://stackoverflow.com/questions/18431857/compile-source-file-to-a-different-directory
+			http://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html
+
+		+ Compilar versión específica de Java con ANT:
+			http://stackoverflow.com/questions/7832298/how-to-tell-ant-to-build-using-a-specific-javac-executable
+			<javac srcdir="${src}"
+				destdir="${build}"
+				fork="yes"
+				executable="/opt/java/jdk1.1/bin/javac"
+				compiler="javac1.1"
+			/>
+
+		+ Listar contenido de archivo jar:
+			jar tf jar-file
+
+			jar -tf /home/carper/local/openxava-4.3/workspace/OpenXava/web/WEB-INF/lib/hibernate3.jar | less
+
+			https://docs.oracle.com/javase/tutorial/deployment/jar/view.html
+	
+	* Tomcat:
+		Parece que en tomcat7 y tomcat8 de la instalación de Ubuntu no trae la
+		biblioteca: jta.jar
+
+			carper@cjbox:~$ grep -rl "javax.transaction.SystemException" ~/local/openxava*
+			/home/carper/local/openxava-4.3/tomcat/lib/jta.jar
+			/home/carper/local/openxava-4.3/workspace/OpenXava/lib/jta.jar
+			/home/carper/local/openxava-4.3/workspace/OpenXavaTest/lib/jbossall-client.jar
+			/home/carper/local/openxava-5.3.2/workspace/OpenXava/web/WEB-INF/lib/jta.jar
+			/home/carper/local/openxava-5.6.1/workspace/Webapp/web/WEB-INF/lib/jta.jar
+			/home/carper/local/openxava-5.6.1/workspace/OpenXava/web/WEB-INF/lib/jta.jar
+
+	* Eclipse:
+
+		+ Indigo:
+			http://vrapper.sourceforge.net/update-site/stable
+			http://eclipse-jetty.github.io/update/
+
+		+ Confugiración:
+			Error: # C  [libsoup-2.4.so.1+0x6c2a1]  soup_session_feature_detach+0x11
+			Agregar en eclipse.ini:
+			-Dorg.eclipse.swt.browser.DefaultType=mozilla
+
+		+ Generación UML:
+			* En class-visualizer emplear como ruta:
+				/home/carper/local/openxava-5.5.1/workspace/Fe/web/WEB-INF/classes/
+			
+			+ Plugins:
+				https://andres.jaimes.net/46/setup-eclipse-papyrus/
+				Papyrus or Topcased are free and open source
+	
+			+ Para Java reverse engineering, instalar papyrus plugin adicional de:
+				http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/maintenance/indigo
+			+ Instalación de modisco desde el url update de indigo:
+				https://www.eclipse.org/forums/index.php/t/323226/
+	
+			http://www.genmymodel.com/
+			nuevousuario@server.com / 123456
+		
+		+ javacomplete:
+			https://github.com/artur-shaik/vim-javacomplete2
+
+		+ maven to eclipse m2e en Indigo:
+			Agregar sitio:
+				http://download.eclipse.org/releases/indigo/
+			Buscar m2e
+
+			http://stackoverflow.com/questions/10378602/eclipse-indigo-for-java-ee-maven-plugin-the-maven-menu-does-not-appear-in-im
+	
+		+ Eclim:
+			http://www.lucianofiandesio.com/vim-configuration-for-happy-java-coding
+			wget http://downloads.sourceforge.net/project/eclim/eclim/1.7.19/eclim_1.7.19.jar
+			java -jar eclim_1.7.19.jar
+
+			+ Iniciar eclimd:
+				Previamente especificar el workspace desde eclipse.
+				Luego especificar dicho workspace en eclimrc antes de iniciar
+				el servidor.
+				
+				http://eclim.org/faq.html#eclim-workspace
+
+				$ eclimd -Dosgi.instance.area.default=@user.home/another_workspace
+				$ eclimd -Dosgi.instance.area.default=@user.home/43
+
+				$ echo "osgi.instance.area.default=@user.home/another_workspace" >> ~/.eclimrc
+				$ echo "osgi.instance.area.default=@user.home/43" >> ~/.eclimrc
+
+	* Matar procesos:
+		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+	
+	* Maven:
+		mvn archetype:generate -DgroupId=ec.cjpq.springsecurity -DartifactId=springsecurity -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+	* MySQL:
+		root/admin
+		echo "create database databasename" | mysql -u username -p
+		cat filename.sql | mysql -u username -p # type mysql password when asked for it
+
+		echo "create database test" | mysql -u root -p
+		cat mysql.sql | mysql -u root -p
+
+	* Búsqueda de texto:
+		grep -rnw '.' -e "Enfermedad" --exclude=*.csv
+		grep -rnw '.' -e "public enum" --exclude=\*.{csv,sql}
+		
+		grep -rnw '.' -e "administrador"
+		grep -rnw '.' -e "conference"
+		grep -rnw '.' -e "ISO-8859-1"
+
+		grep -rnw '.' -e "http://java.sun.com/jstl/core"
+
+
+		http://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-on-linux
+	* Búsqueda de texto en directorio:
+
+		grep -rl transdate proyectos/cjerp --include=*.java
+
+		grep -rl "org.hibernate.ejb" /home/carper/local/openxava-4.3/workspace/
+
+		grep -rl "string" /path
+		where
+		
+		-r (or --recursive) option is used to traverse also all sub-directories of /path, whereas
+		-l (or --files-with-matches) option is used to only print filenames of matching files, and not the matching lines (this could also improve the speed, given that grep stop reading a file at first match with this option).
+
+		http://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories
+
+
+		grep -rl "org.springframework.test.context.junit4.SpringJUnit4ClassRunner" ~/local/openxava*
+		
+	* Shell:
+		+ Search and replace string in the current folder:
+			http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
+
+			+ Non recursive:
+				sed -i -- 's/foo/bar/g' *
+				sed -i -- 's/Buider/Builder/g' *
+				sed -i -- 's/Odómotros/Odómetros/g' *.screen
+
+			+ Recursive:
+				find . -type f -exec sed -i 's/Builder/builder/g' {} +
+				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
+				
+				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
+	
+	* Borrar archivos recursivamente:
+		find . -name "*.bak" -type f
+		find . -name "*.swp" -type f -delete
+		find . -name "*.bak" -type f -delete
+		find . -name "*DS_Store" -type f -delete
+
+		http://askubuntu.com/questions/377438/how-can-i-recursively-delete-all-files-of-a-specific-extension-in-the-current-di
+
+	* Delete all swp files:]
+		http://superuser.com/questions/480367/whats-the-easiest-way-to-delete-vim-swapfiles-ive-already-recovered-from
+
+		find ./ -type f -name "\.*sw[klmnop]" -delete
+		find ./ -type f -name "\.*swp" -delete
+	
+	* Display first lines of files:
+		https://www.cyberciti.biz/faq/unix-linux-show-first-10-20-lines-of-file/
+
+	* Solución de VE en Indigo:
+		http://askubuntu.com/questions/220505/how-to-enable-the-eclipse-internal-browser-ubuntu-12-10
+
+	* Whatsapp Linux:
+		http://www.diolinux.com.br/2014/02/whatsapp-no-pidgin-via-ppa.html
+
+	* Bajar la velocidad del ancho de banda:
+		sudo wondershaper wlan0 64 1024
+		sudo wondershaper remove wlan0
+		sudo ifconfig wlan0 down
+	
+	* Eclipse plugin: 
+		http://www.objectaid.net/update
+		http://fuzz-box.blogspot.com/2012/09/how-to-generate-uml-diagrams-from-java.html
+
+	* OpenXava:
+		+ Foro:
+			https://sourceforge.net/p/openxava/discussion/419690/
+
+		+ Iniciar hsqldb:
+			cd openxava-5.x/tomcat/bin ./start-hsqldb.sh invocing-db 1666
+
+			+ Tarea ant para iniciar la base hsqldb:
+				<target name="hsqldb-run">
+					<java classname="org.hsqldb.Server" classpath="${sql.lib}" fork="true">
+						<arg line="-database /home/carper/local/openxava-5.5.1/tomcat/data/app-db -port 1666 -silent true -trace false"/>
+					</java>
+				</target>

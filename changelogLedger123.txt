@@ -1,9 +1,16 @@
 Ledger123 steps install
 	* Versión 3.0.3 en ubuntu 10.04 32 bits:
-
+		
 		# apt-get install libdbix-simple-perl # ubuntu / debian
 			Determinar si está instalado:
 			# dpkg -l | grep libdbix-simple-perl
+
+		# sudo apt-get install libgd-gd2-perl
+		# sudo cpan GD::Thumbnail
+
+		+ Dependencias para LedgerCart:
+			http://www.sql-ledger-network.com/dokuwiki/doku.php?id=ledgercart_step_by_step_installation:debian
+			# sudo cpan MIME::Lite::TT::HTML
 
 		# sudo apt-get install git-core
 		# cd /usr/local
@@ -48,14 +55,23 @@ Ledger123 steps install
 		The server encountered an internal error or misconfiguration and was
 		unable to complete your request.
 
-		sudo cat /var/log/apache2/error.log 
+			sudo cat /var/log/apache2/error.log 
 
-		[Wed Oct 25 14:58:40 2017] [error] [client 192.168.122.1] Can't locate
-		DBIx/Simple.pm in @INC (@INC contains: /etc/perl
+			[Wed Oct 25 14:58:40 2017] [error] [client 192.168.122.1] Can't locate
+			DBIx/Simple.pm in @INC (@INC contains: /etc/perl
+			/usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5
+			/usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10
+			/usr/local/lib/site_perl .) at SL/Form.pm line 10.
+
+			+ Solución:
+			Instalar libdbix-simple-perl   
+
+		Can't locate GD/Thumbnail.pm in @INC (@INC contains: /etc/perl
 		/usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5
 		/usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10
-		/usr/local/lib/site_perl .) at SL/Form.pm line 10.
+		/usr/local/lib/site_perl .) at bin/mozilla/ic.pl line 847.
+			
+			+ Solución:
+			sudo apt-get install libgd-gd2-perl
 
-		+ Solución:
-			Instalar libdbix-simple-perl   
 
