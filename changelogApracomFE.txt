@@ -91,6 +91,8 @@ Instalación en servidor de Cromero 192.168.10.13
 
 			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.xml .
 			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.pdf .
+			
+			scp cromero@192.168.0.3:/tmp/clientes_activos.csv .
 	
 			scp username@remotehost:/path/directory/\{foo.txt,bar.txt\} .
 			

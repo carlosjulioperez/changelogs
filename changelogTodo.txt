@@ -26,6 +26,19 @@ TODO
 
 		https://www.youtube.com/watch?v=jpo7GeN7pJU
 
+	* sql:
+		+ Crear mer actializado:
+			Instalar pgadmin
+			Instalar schemaspy y dependencias
+		+ Crear sql:
+[Cash--Reports--Receipts]
+module=rp.pl
+action=report
+report=receipts
+
+
+
+
 	* @sql-ledger:
 		+ Instalar Ledger123 en servido:
 			25 10 p=3
