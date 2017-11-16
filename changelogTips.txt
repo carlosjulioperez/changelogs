@@ -201,7 +201,11 @@ TIPS
 	* Búsqueda de archivos filtrando el nombre:
 		https://unix.stackexchange.com/questions/148877/ls-command-list-files-containg-speccific-string-in-file-name-and-belong-to-spe
 
-		ls -c -ltd -- FA*02102017*.xml
+		ls -c -ltd -- FA*2126.xml
+		ls -c -ltd -- FA*02102017*2126.xml
+		ls -c -ltd -- FA*02102017*2126.xml
+		
+		find ./ -name "FA*2126.xml" -print
 
 	* Búsqueda de texto:
 		grep -rnw '.' -e "Enfermedad" --exclude=*.csv
