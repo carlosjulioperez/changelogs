@@ -1,0 +1,101 @@
+Vim
+	* Colores:
+		:color
+		:highlight Normal ctermfg=grey ctermbg=darkblue
+
+
+	* Impedir cortar a 80 caracteres por línea:
+		set formatoptions=
+
+		https://vi.stackexchange.com/questions/2784/how-to-stop-gvim-wrapping-text-at-column-80
+
+	* Encoding:
+		:e ++enc=utf-8
+		:e ++enc=ISO-8859-1 
+		:write ++enc=utf-8 russian.txt
+
+	* Números de línea:
+		https://www.cyberciti.biz/faq/vi-show-line-numbers/
+		:set number
+		:set nu
+
+	* Copiar la ruta del aarchivo:
+		1 + Ctrl + G file's path
+	
+		http://blog.codegourmet.de/2014/10/15/vim-yank-path-of-current-file/
+			:let @" = expand("%:p")
+
+			set clipboard=unnamed
+			nnoremap <silent> cp :let @*=expand("%:p")<CR>
+
+		http://askubuntu.com/questions/473809/how-to-copy-file-and-paste-its-path-in-vim-in-normal-and-insert-mode
+
+	* Alineación en archivos CSV:
+		https://github.com/junegunn/vim-plug
+		https://www.reddit.com/r/vim/comments/3ikyu0/align_columns_in_csv_files/
+	
+	* Borrar espacios en columnas:
+		http://vim.wikia.com/wiki/Remove_unwanted_spaces
+		:%s/\s\+$//
+		En una selección obviar :% antes de s/ ...
+
+	* Alinear texto:
+		https://github.com/godlygeek/tabular
+		Usar Tabularize
+
+			Before:
+			one = 1
+			two = 2
+			three = 3
+			four = 4
+			
+			Running :Tab /= produces:
+			
+			one   = 1
+			two   = 2
+			three = 3
+			four  = 4
+
+		EaseyAlign enter * =
+		https://github.com/junegunn/vim-easy-align
+
+		http://vim.wikia.com/wiki/Simple_text_alignment
+			a=1;
+			foo=2;
+			longstring=1;
+			c=2
+			
+			to
+			
+			a          =1;
+			foo        =2;
+			longstring =1;
+			c          =2;
+			This is how we achieve it
+			
+			0f=20i<Space><Esc>020lvf=hx
+
+	* Alineación:
+		https://github.com/sk1418/Join
+
+		EaseyAlign, * =
+		Seleccionar texto y reemplazar espacio por vaciós <>s, ,,g
+		:J ', ' 10
+		
+		OBJ_MEDICAL_CENTER     
+		OBJ_GENERAL_TABLE      
+		OBJ_PROVINCE           
+		OBJ_CANTON             
+		OBJ_PERSON             
+		OBJ_PATIENT            
+		OBJ_HEALTH_PROFESSIONAL
+		OBJ_MEDICAMENT         
+		OBJ_DISEASE            
+		OBJ_PRESCRIPTION       
+		
+		if (Security.hasAnyObject( Security.OBJ_MEDICAL_CENTER, Security.OBJ_GENERAL_TABLE, Security.OBJ_PROVINCE, Security.OBJ_CANTON, Security.OBJ_PERSON, Security.OBJ_PATIENT, Security.OBJ_HEALTH_PROFESSIONAL, Security.OBJ_MEDICAMENT, Security.OBJ_DISEASE, Security.OBJ_PRESCRIPTION, Security.OBJ_ALL) ) {
+
+	* deshabilitar sql-completion vim:
+		Agregar en .vimrc:
+			let g:loaded_sql_completion = 0
+
