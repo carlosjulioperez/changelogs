@@ -1,4 +1,5 @@
 Calculators
 	* Texas Instruments:
 		https://opencalculus.wordpress.com/2015/10/02/but-you-feel-dirty-why-hs-kids-have-to-buy-ti-calculators/
-
+	* Linear programming:
+		ti nspire pivot solve simplex method step by step

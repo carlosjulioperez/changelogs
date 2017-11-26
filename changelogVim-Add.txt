@@ -19,6 +19,14 @@ Vim
 
 		https://vi.stackexchange.com/questions/2784/how-to-stop-gvim-wrapping-text-at-column-80
 	
+	* Agregar texto al final de cada línea:
+		+ Agregar una coma:
+			:%s/$/,/
+		
+		+ Agregar en selección el string ");" :
+			:'<,'>s/$/);/
+
+
 	* Contar matching en seleccion:
 		http://vim.wikia.com/wiki/Count_number_of_matches_of_a_pattern
 
