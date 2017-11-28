@@ -1,0 +1,10 @@
+Redes
+	* Conocer mi IP pública:
+		https://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+		# curl ipinfo.io/ip
+
+	* Saber quién me hace ping:
+		https://askubuntu.com/questions/430069/how-to-monitor-who-is-pinging-me
+
+		# sudo tcpdump -i ethX icmp and icmp[icmptype]=icmp-echo
+
