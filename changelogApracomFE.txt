@@ -1,4 +1,13 @@
 Aplicaciones
+
+	Claro
+	http://201.183.224.10/sql-ledger/login.pl	
+
+	CNT
+	http://186.178.202.67/sql-ledger/login.pl
+	
+	
+	http://186.178.202.67/mer
 	http://186.178.202.67/sql-ledgerFE/login.pl
 	http://186.178.202.67/ledger123/login.pl
 	http://186.178.202.67/cjfews/Cjfews?wsdl
@@ -71,9 +80,15 @@ Instalación en servidor de Cromero 192.168.10.13
 
 	* Conexión remota SSH:
 
+		ssh carper@186.178.202.67 -p 2222
+		ssh carper@201.183.224.10 -p 2222
+		ssh carper@192.168.0.3
+
 		ssh cromero@186.178.202.67 -p 2222
+		ssh cromero@201.183.224.10 -p 2222
 		ssh cromero@192.168.0.3
 		
+
 		+ Crear archivo de llave clave pública para ssh:
 			# ssh-keygen -t rsa -b 2048
 			Cuando solicite clave, pulsar Enter, dos veces.
@@ -89,10 +104,15 @@ Instalación en servidor de Cromero 192.168.10.13
 			scp cromero@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.pdf .
 			scp cromero@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.xml .
 
+			scp cromero@192.168.0.3:~/fe/dir/ca/FA-0301320479001-30112017-004002000011722.pdf .
+
 			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.xml .
 			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.pdf .
 			
-			scp cromero@192.168.0.3:/tmp/clientes_activos.csv .
+			scp cromero@192.168.0.3:/tmp/clientes.csv .
+			scp cromero@192.168.0.3:/tmp/proveedores.csv .
+			scp cromero@192.168.0.3:/tmp/articulos.csv .
+			scp cromero@192.168.0.3:/tmp/planctas.csv .
 	
 			scp username@remotehost:/path/directory/\{foo.txt,bar.txt\} .
 			
@@ -243,9 +263,21 @@ Gestión de la BD
 		https://stackoverflow.com/questions/21404141/restore-single-table-dump-from-a-sql-file
 
 		scp -P 2222 /var/lib/postgresql/retenc.pg cromero@186.178.202.67:~/dbbackup
+		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/customer.pg .
+		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/address.pg .
 
 		pg_dump --data-only --table=retenc apracomsa > retenc.pg
 		psql apracomsa < retenc.pg
+	
+		2017-12-14
+		pg_dump --data-only --table=customer apracomsa > customer.pg
+		psql ap_prueba < customer.pg
+		
+		pg_dump --data-only --table=address apracomsa > address.pg
+		psql ap_prueba < address.pg
+		
+		pg_dump --data-only --table=contact apracomsa > contact.pg
+		psql apracomsa < contact.pg
 
 	* Copiar scripts:
 		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/ddl.sql cromero@192.168.10.13:~/fe
@@ -275,7 +307,13 @@ Gestión de la BD
 		sudo vim /etc/postgresql/8.4/main/pg_hba.conf
 		
 		+ Agregar línea de IP asignada temporalmente a mi Mac:
-		host    all         all         192.168.10.104/32      trust
+			host    all         all         192.168.10.104/32      trust
+
+		+ Acceso a toda la red de mi Equipo de desarrollo en oficina:
+			host    all         all         192.168.253.0/24        trust
+
+
+
 
 Configuración de entorno de FE
 
@@ -301,19 +339,16 @@ Configuración de entorno de FE
 		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/cjfews*
 		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/feapracom*
 
-		# scp /home/carper/local/maven/dist/cjfews-rep-1.0.jar cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/lib
 		# scp /home/knoppix/proyectos/cjerp/dist/cjfews-rep-1.0.jar cromero@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
 		# scp -P 2222 /home/knoppix/proyectos/cjerp/dist/cjfews-rep-1.0.jar cromero@186.178.202.67:/usr/local/apache-tomcat-7.0.54/lib
 
 		# scp /home/carper/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
 		
 		# scp /home/carper/local/maven/cjfews/target/cjfews.war cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/webapps
-		# scp /home/carper/local/maven/feapracom/target/feapracom.war cromero@201.183.224.10:/usr/local/apache-tomcat-7.0.54/webapps
 		# cp /home/carper/local/maven/dist/autorizacionTest.jar cromero@201.183.224.10:~/fe/lib
 		# scp /home/carper/local/maven/dist/fecola.jar cromero@201.183.224.10:~/fe
 
 		# scp -P 222 /home/carper/local/wsindigo/dist/cjfews.war				cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
-		# scp -P 222 /home/carper/local/wsindigo/dist/feapracom.war				cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
 		# scp -P 222 /mnt/datos/local/workspace/dist/fecola.jar					cromero@186.101.10.150:~/fe
 		# scp -P 222 /home/carper/local/wsindigo/bin/lib/autorizacionTest.jar	cromero@186.101.10.150:~/fe/lib
 

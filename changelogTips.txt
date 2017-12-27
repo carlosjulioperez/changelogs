@@ -18,6 +18,13 @@ TIPS
 
 			https://www.howtoinstall.co/en/ubuntu/utopic/tomcat8?action=remove
 
+	* Cambiar la fecha de archivos recursivamente:
+		find local/razorsql/ -exec touch -t 201712141100 {} \;
+
+	* Imprimir económicamente diapositivas PDF:
+		https://linux.die.net/man/1/pdfnup
+		pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
+
 	* Free disk space:
 		http://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu
 	* Borrar archivos recientes de Evince:
@@ -202,8 +209,7 @@ TIPS
 		https://unix.stackexchange.com/questions/148877/ls-command-list-files-containg-speccific-string-in-file-name-and-belong-to-spe
 
 		ls -c -ltd -- FA*2126.xml
-		ls -c -ltd -- FA*02102017*2126.xml
-		ls -c -ltd -- FA*02102017*2126.xml
+		ls -c -ltd -- FA*29112017*.xml
 		
 		find ./ -name "FA*2126.xml" -print
 
