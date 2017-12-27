@@ -3,7 +3,7 @@ Debian 9 stretch
 	# sudo apt-get install gtk-recordmydesktop geany geany-plugins graphviz
 	ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients
 	libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3
-	postgresql git
+	postgresql git gnumeric calibre shutter
 
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html

@@ -18,6 +18,9 @@ TIPS
 
 			https://www.howtoinstall.co/en/ubuntu/utopic/tomcat8?action=remove
 
+	* Comparar bases de datos:
+		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql
+	
 	* Cambiar la fecha de archivos recursivamente:
 		find local/razorsql/ -exec touch -t 201712141100 {} \;
 
