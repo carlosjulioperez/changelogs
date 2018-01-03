@@ -119,10 +119,6 @@ Instalación en servidor de Cromero 192.168.10.13
 			scp cromero@201.183.224.10:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
 			scp cromero@201.183.224.10:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
 
-		+ Copiar un respaldo de la BD:
-			scp cromero@186.101.10.150:~/dbbackup/2015/13-01-2016.apracomsa.sql.bz2 .
-			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
-
 		+ Copiar certificado:
 			scp cromero@201.183.224.10:~/fe/certProd/jssecacerts .
 
@@ -252,6 +248,9 @@ Gestión de la BD
 		GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO "sql-ledger";
 		GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO "sql-ledger";
 
+		+ Copiar un respaldo de la BD:
+			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
+
 	* Backup y restore:
 		pg_dump dbname > outfile
 		psql dbname < infile
@@ -269,15 +268,33 @@ Gestión de la BD
 		pg_dump --data-only --table=retenc apracomsa > retenc.pg
 		psql apracomsa < retenc.pg
 	
-		2017-12-14
+		2018-01-02
+		http://blog.e-shell.org/134
+		sudo apt-get install recode
+
 		pg_dump --data-only --table=customer apracomsa > customer.pg
-		psql ap_prueba < customer.pg
+		postgres@ProxyUb10:~$ file customer.pg
+		customer.pg: Non-ISO extended-ASCII text, with very long lines
+
+		# iconv -f 8859_1 -t UTF-8 customer.pg -o customer.utf8.pg
+		cat customer.pg | recode iso-8859-1..u8 > customer-utf8.pg
+
+		psql apracomsa303 < customer.utf8.pg
+
+		postgres@ProxyUb10:~$ file customer.pg 
+		customer.pg: Non-ISO extended-ASCII text, with very long lines
+
 		
 		pg_dump --data-only --table=address apracomsa > address.pg
 		psql ap_prueba < address.pg
 		
 		pg_dump --data-only --table=contact apracomsa > contact.pg
 		psql apracomsa < contact.pg
+	
+	* Diferencias entre base de datos:
+		pg_dump apracomsa > apracomsa.sql
+		pg_dump demo123 > demo123.sql
+		apgdiff apracomsa.sql demo123.sql > diff.sql
 
 	* Copiar scripts:
 		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/ddl.sql cromero@192.168.10.13:~/fe

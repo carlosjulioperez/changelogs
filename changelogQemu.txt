@@ -29,6 +29,7 @@ Qemu y kvm
 		$ sudo adduser knoppix libvirt-qemu
 
 		# sudo ip link
+		# sudo ip address show
 		# sudo vim /etc/network/interfaces
 
 		+ Agregar:
