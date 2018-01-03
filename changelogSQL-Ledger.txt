@@ -73,7 +73,7 @@ SQL-Ledger
 		# createdb demo
 
 		# createdb -O sql-ledger -E SQL_ASCII -T template0 demo325
-		# createdb -O sql-ledger -E UTF-8 -T template0 demo325
+		# createdb -O sql-ledger -E UTF-8 -T template1 demo325
 
 		# sudo vim /etc/postgresql/8.4/main/pg_hba.conf
 

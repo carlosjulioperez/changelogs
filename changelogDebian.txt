@@ -4,3 +4,6 @@ Debian 9 stretch
 
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
+
+	+ Teamviewer:
+	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux

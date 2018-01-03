@@ -17,6 +17,9 @@ TIPS
 			sudo apt-get purge --auto-remove tomcat8 tomcat8-docs tomcat8-examples tomcat8-admin
 
 			https://www.howtoinstall.co/en/ubuntu/utopic/tomcat8?action=remove
+	
+	* Comprimir archivos:
+		sudo tar -zcvf sql-ledger-FE.tar.gz sql-ledgerFE
 
 	* Comparar bases de datos:
 		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql
