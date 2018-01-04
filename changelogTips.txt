@@ -19,6 +19,9 @@ TIPS
 			https://www.howtoinstall.co/en/ubuntu/utopic/tomcat8?action=remove
 	
 	* Comprimir archivos:
+		sudo tar -zcvf sql-ledger.tar.gz sql-ledger
+		sudo tar -zcvf users.tar.gz users
+
 		sudo tar -zcvf sql-ledger-FE.tar.gz sql-ledgerFE
 
 	* Comparar bases de datos:
