@@ -84,6 +84,36 @@ SQL-Ledger
 
 		http://192.168.122.212/sql-ledger325/admin.pl
 
+	* Configuración de idioma	* Configuración de idioma:
+		# iconv -f 8859_1 -t UTF-8 customer.pg -o customer.utf8.pg
+		cat customer.pg | recode iso-8859-1..u8 > customer-utf8.pg
+
+		http://abacus.sql-ledger.com/userforum/forum_entry.php?id=352
+		http://sql-ledger.com/userforum/board_entry.php?id=1114&da=ASC&page=0&order=last_answer&descasc=DESC&category=all
+
+		Solución:
+		http://www.ledger123.com/archives/msg02304.html
+
+		Comentar línea #AddDefaultCharset On en:
+		sudo vim /etc/apache2/sql-ledger-httpd.conf
+
+		#carper 03-01-2018
+		Alias /sql-ledger326 /home/cromero/prueba/sql-ledger326/
+		        <Directory /home/cromero/prueba/sql-ledger326>
+		                AllowOverride All
+		                AddHandler cgi-script .pl
+		                #AddDefaultCharset On
+		                Options ExecCGI Includes FollowSymlinks
+		                Order Allow,Deny
+		                Allow from All
+		        </Directory>
+		
+		        <Directory /home/cromero/prueba/sql-ledger326/users>
+		                Order Deny,Allow
+		                Deny from All
+		        </Directory>
+
+
 	* Impedimentos:
 		perl: warning: Setting locale failed.
 		https://geekytheory.com/solucion-al-error-perl-warning-setting-locale-failed-en-ubuntu-server

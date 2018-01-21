@@ -1,3 +1,15 @@
+Tendencias
+	* Kotlin vs Scala:
+		https://dzone.com/articles/kotlin-vs-scala-vs-java?edition=347114&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-12-22
+
+	* IoT:
+		https://dzone.com/articles/5-of-the-most-crucial-internet-of-things-skills?edition=345105&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=iot%202017-12-19
+
+Java
+	* Spring Boot:
+		https://dzone.com/articles/spring-boot-rest-api-projects-with-code-examples?edition=352125&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=Weekly%20Digest%202018-01-17
+		https://dzone.com/articles/bootiful-development-with-spring-boot-and-react?utm_source=Top%205&utm_medium=email&utm_campaign=Top%205%202018-01-193
+
 Perl
 	* Estudio:
 		https://qntm.org/files/perl/perl.html		

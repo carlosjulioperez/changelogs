@@ -1,9 +1,11 @@
 Debian 9 stretch
 	+ Paquetes:
-	# sudo apt-get install gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3 postgresql git gnumeric calibre shutter apgdiff
+	# sudo apt-get install lxde gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3 postgresql git gnumeric calibre shutter apgdiff meld vlc
 
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
+	sudo update-alternatives --install /usr/bin/java java /home/carper/local/jdk1.8.0_152/bin/java 2
+	sudo update-alternatives --config java
 
 	+ Teamviewer:
 	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux
