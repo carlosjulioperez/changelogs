@@ -49,6 +49,8 @@ TIPS
 
 	* Imprimir económicamente diapositivas PDF:
 		https://linux.die.net/man/1/pdfnup
+
+		sudo apt-get install pdfjam
 		pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
 
 	* Free disk space:
