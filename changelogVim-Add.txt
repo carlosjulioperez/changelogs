@@ -34,6 +34,9 @@ Vim
 		
 		Busca las veces que aparece la coma en la selección de texto
 
+	* Ordenar en selección:
+		:'<,'>sort
+
 	* Encoding:
 		:e ++enc=utf-8
 		:e ++enc=ISO-8859-1 
