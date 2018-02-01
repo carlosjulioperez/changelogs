@@ -7,8 +7,17 @@ Tendencias
 
 Java
 	* Spring Boot:
-		https://dzone.com/articles/spring-boot-rest-api-projects-with-code-examples?edition=352125&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=Weekly%20Digest%202018-01-17
+		https://spring.io/guides/gs/accessing-data-rest/
+		http://mrbool.com/rest-server-with-spring-data-spring-boot-and-postgresql/34023
+
+		https://hellokoding.com/restful-api-example-with-spring-boot-spring-data-rest-one-to-many-relationship-and-mysql/
+		https://hellokoding.com/restful-api-example-with-spring-boot-spring-data-rest-spring-data-jpa-many-to-many-extra-columns-relationship-and-mysql/
+
+		https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+		
 		https://dzone.com/articles/bootiful-development-with-spring-boot-and-react?utm_source=Top%205&utm_medium=email&utm_campaign=Top%205%202018-01-193
+
+		https://dzone.com/articles/spring-boot-rest-api-projects-with-code-examples?edition=352125&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=Weekly%20Digest%202018-01-17
 		https://dzone.com/articles/build-a-basic-crud-app-with-angular-50-and-spring?edition=357094&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202018-01-22
 Perl
 	* Estudio:

@@ -1,6 +1,12 @@
 TIPS
 
 	* Debian Packages:
+
+		+ Control de logins:
+			https://www.digitalocean.com/community/tutorials/how-to-monitor-system-authentication-logs-on-ubuntu9
+			
+			$ sudo less /var/log/auth.log
+
 		+ Installed packages:
 			dpkg -l | grep jdk
 			
@@ -99,6 +105,15 @@ TIPS
 			for i in `ls`; do convert -resize 900x900 -quality 85 $i resized_$i; done
 
 	* Archivos recientemente modificados:
+		+ Informe:
+			https://askubuntu.com/questions/411462/show-recent-modified-created-files-using-terminal	
+
+			$ find ${1} -type f | xargs stat --format '%Y :%y %n' 2>/dev/null | sort -nr | cut -d: -f2- | less
+
+		+ Las últimas 24 horas:
+			
+			$ find /directory_path -mtime -1 -ls
+
 		https://stackoverflow.com/questions/15691359/how-can-i-list-ls-the-5-last-modified-files-in-a-directory
 		https://stackoverflow.com/questions/4933627/recent-files-in-folder
 		http://xmodulo.com/how-to-find-recently-modified-files-on-linux.html
