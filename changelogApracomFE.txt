@@ -227,6 +227,8 @@ Gestión de la BD
 		+ Desde la consola:
 		psql -U postgres apracomsa < /home/carper/Descargas/23-03-2015.apracomsa.sql
 		psql -U postgres apracomsa < /home/carper/23-08-2016.apracomsa.sql
+
+		psql -U postgres apracomsa < /home/carper/local/sql-ledger/dbbackup/01-02-2018.apracomsa.sql/data
 		
 		\dt	Listado de tablas y usuarios
 		\ds	Listado de secuencias
@@ -250,6 +252,70 @@ Gestión de la BD
 
 		+ Copiar un respaldo de la BD:
 			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
+
+bccentury
+         fldname         | fldvalue 
+-------------------------+----------
+ version                 | 2.8.9
+ inventory_accno_id      | 10926
+ income_accno_id         | 10767
+ expense_accno_id        | 10822
+ fxgain_accno_id         | 10767
+ fxloss_accno_id         | 10767
+ glnumber                | 1
+ batchnumber             | 
+ vouchernumber           | 
+ ponumber                | 
+ rfqnumber               | 
+ partnumber              | 
+ projectnumber           | 
+ precision               | 2
+ weightunit              | kg
+ closedto                | 20091231
+ audittrail              | 1
+ production_warehouse_id | 32777
+ sonumber                | 4
+ employeenumber          | 28
+ vinumber                | 67
+ sqnumber                | 16
+ customernumber          | 253
+ vendornumber            | 1024
+ sinumber                | 47
+
+apracomsa
+         fldname         |              fldvalue               
+-------------------------+-------------------------------------
+ sqnumber                | Q7676
+ production_warehouse_id | 24161
+ customernumber          | 1622
+ sinumber                | 15858
+ version                 | 2.8.9
+ inventory_accno_id      | 10926
+ income_accno_id         | 10767
+ expense_accno_id        | 11200
+ fxgain_accno_id         | 10767
+ fxloss_accno_id         | 10767
+ glnumber                | 5
+ vinumber                | 247
+ batchnumber             | 
+ vouchernumber           | 
+ sonumber                | 1
+ ponumber                | 656
+ rfqnumber               | 
+ partnumber              | 
+ employeenumber          | 38
+ projectnumber           | 
+ precision               | 2
+ company                 | Apracom S.A.
+ address                 | Cdla. Santa Leonor Mz. 11 Solar #21
+ tel                     | 4606575
+ weightunit              | kg
+ businessnumber          | 0992179155001
+ closedto                | 20150630
+ audittrail              | 1
+ vendornumber            | 45866
+
+INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161');
 
 	* Backup y restore:
 		pg_dump dbname > outfile
@@ -291,6 +357,9 @@ Gestión de la BD
 		pg_dump --data-only --table=contact apracomsa > contact.pg
 		psql apracomsa < contact.pg
 	
+	* Copiar respaldos en disco local:
+		scp carper@192.168.0.3:/home/cromero/dbbackup/2016/30-01-2018.apracomsa.sql.bz2 /home/carper/local/sql-ledger/dbbackup
+
 	* Diferencias entre base de datos:
 		pg_dump apracomsa > apracomsa.sql
 		pg_dump demo123 > demo123.sql
@@ -358,6 +427,10 @@ Configuración de entorno de FE
 
 		# scp /home/knoppix/proyectos/cjerp/dist/cjfews-rep-1.0.jar cromero@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
 		# scp -P 2222 /home/knoppix/proyectos/cjerp/dist/cjfews-rep-1.0.jar cromero@186.178.202.67:/usr/local/apache-tomcat-7.0.54/lib
+
+		2018-02-02
+		+ Actualizar el jar para soporte Offline:
+		$ scp /home/carper/.m2/repository/ec/gob/sri/cliente-ws-offline/1.0/cliente-ws-offline-1.0.jar carper@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
 
 		# scp /home/carper/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
 		
