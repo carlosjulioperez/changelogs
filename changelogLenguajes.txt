@@ -5,6 +5,9 @@ Tendencias
 	* IoT:
 		https://dzone.com/articles/5-of-the-most-crucial-internet-of-things-skills?edition=345105&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=iot%202017-12-19
 
+Go
+	* Beginners:
+		https://dzone.com/articles/go-language-for-beginners-in-16-parts?edition=358115&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202018-02-03
 Java
 	* Spring Boot:
 		https://spring.io/guides/gs/accessing-data-rest/
@@ -44,6 +47,8 @@ Kotlin
 	* Courses:
 		https://www.udacity.com/course/android-development-for-beginners--ud837
 		https://classroom.udacity.com/courses/ud834/lessons/4027328704/concepts/216017e8-8a5c-4fc8-925d-f03df3618d0c
+
+		https://www.udemy.com/crea-sistemas-pos-inventarios-y-ventas-con-php7-y-adminlte/?deal_code=1801CATSPOTTECHUV12&utm_source=email-Adhoc&utm_campaign=2018-01-19_._cn_JanCatSpotlight_._en_Trend_._us_AAlltl_T3_._tg_n_._et_2_._eg_1_._la_es_._rn_43119_._&utm_medium=2018-01-19_JanCatSpotlight_Trend_AAll_T3_n_&utm_content=udemy.6465105&data_h=Bkcfc1taQQ%3D%3D&utm_term=TREND_CAT_STANDALONE_2A
 
 	* Blogs:
 		https://developer.android.com/kotlin/resources.html

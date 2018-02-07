@@ -132,7 +132,7 @@ TIPS
 			sudo update-alternatives --config java
 		
 		+ View jar file:
-			jar tf lombok.jar
+			jar tvf lombok.jar
 			
 		+ Install lombok:
 
@@ -161,9 +161,9 @@ TIPS
 			/>
 
 		+ Listar contenido de archivo jar:
-			jar tf jar-file
+			jar tvf jar-file
 
-			jar -tf /home/carper/local/openxava-4.3/workspace/OpenXava/web/WEB-INF/lib/hibernate3.jar | less
+			jar -tvf /home/carper/local/openxava-4.3/workspace/OpenXava/web/WEB-INF/lib/hibernate3.jar | less
 
 			https://docs.oracle.com/javase/tutorial/deployment/jar/view.html
 	
@@ -233,6 +233,11 @@ TIPS
 
 				$ echo "osgi.instance.area.default=@user.home/another_workspace" >> ~/.eclimrc
 				$ echo "osgi.instance.area.default=@user.home/43" >> ~/.eclimrc
+
+			+ Debian 9:
+				Descargar Eclipse Oxygen y Eclim 2.7.1
+				$ sudo apt-get install build-essential
+
 
 	* Matar procesos:
 		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
