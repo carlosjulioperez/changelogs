@@ -1,4 +1,8 @@
 TIPS
+	* Firefox:
+		+ Quitar sugerencias de usuario y clave:
+			about:config
+			security.insecure_password.ui.enabled = false
 
 	* Debian Packages:
 
@@ -289,6 +293,22 @@ TIPS
 
 
 		grep -rl "org.springframework.test.context.junit4.SpringJUnit4ClassRunner" ~/local/openxava*
+	
+	* Búsqueda de patrón substring en archivos:
+		https://stackoverflow.com/questions/18328777/grep-to-extract-the-word-matching-the-given-pattern
+		https://stackoverflow.com/questions/35269239/grep-only-for-the-first-match-in-amount-of-files
+
+			carper@ProxyUb10:/usr/local/apache-tomcat-7.0.54/bin$ cat cjfews.log | grep aborted
+			', num_aut='0702201801099217915500120040020000125137850380011', fec_aut='2018-02-08T09:10:48-05:00', autorizado='1', num_sec='004-002-000012513', cliente='IMPEQUIL CIA. LTDA', fecha='2018/02/07', total=57.31 where cola_id=18827 was aborted.  Call getNextException to see the cause.
+			', num_aut='0702201801099217915500120040020000125137850380011', fec_aut='2018-02-08T09:10:48-05:00', autorizado='1', num_sec='004-002-000012513', cliente='IMPEQUIL CIA. LTDA', fecha='2018/02/07', total=57.31 where cola_id=18827 was aborted.  Call getNextException to see the cause.
+			', num_aut='0702201806099217915500120040020000038767285400211', fec_aut='2018-02-08T09:11:43-05:00', autorizado='1', num_sec='004-002-000003876', cliente='IMPEQUIL CIA. LTDA', fecha='2018/02/07', total=57.31 where cola_id=18828 was aborted.  Call getNextException to see the cause.
+			', num_aut='0702201806099217915500120040020000038767285400211', fec_aut='2018-02-08T09:11:43-05:00', autorizado='1', num_sec='004-002-000003876', cliente='IMPEQUIL CIA. LTDA', fecha='2018/02/07', total=57.31 where cola_id=18828 was aborted.  Call getNextException to see the cause.
+		
+		$ grep -Eio '\b(cola_id)=[0-9]+\b' cjfews.log | sort -u
+
+		Produce:
+			cola_id=18827
+			cola_id=18828
 		
 	* Shell:
 		+ Search and replace string in the current folder:
