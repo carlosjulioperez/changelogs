@@ -327,13 +327,16 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161
 		https://feeding.cloud.geek.nz/posts/restoring-single-table-from-postgres/
 		https://stackoverflow.com/questions/21404141/restore-single-table-dump-from-a-sql-file
 
+		pg_dump --data-only --table=retenc apracomsa > retenc.pg
+		psql apracomsa < retenc.pg
+		
+		pg_dump --data-only --table=fe_cola_aut apracomsa > fe_cola_aut.pg
+		psql apracomsa < fe_cola_aut.pg
+	
 		scp -P 2222 /var/lib/postgresql/retenc.pg cromero@186.178.202.67:~/dbbackup
 		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/customer.pg .
 		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/address.pg .
 
-		pg_dump --data-only --table=retenc apracomsa > retenc.pg
-		psql apracomsa < retenc.pg
-	
 		2018-01-02
 		http://blog.e-shell.org/134
 		sudo apt-get install recode
