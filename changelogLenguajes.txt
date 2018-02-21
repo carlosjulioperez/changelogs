@@ -8,6 +8,22 @@ Tendencias
 Go
 	* Beginners:
 		https://dzone.com/articles/go-language-for-beginners-in-16-parts?edition=358115&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202018-02-03
+
+Vue
+	* Comparaciones:
+		http://www.stefankrause.net/js-frameworks-benchmark6/webdriver-ts-results/table.html
+
+		vue mobile app example
+		https://laracasts.com/discuss/channels/vue/mobile-app-with-vuejs?page=1
+		https://code.tutsplus.com/tutorials/introducing-vue-and-weex-for-native-mobile-apps--cms-28782
+
+		https://www.valuecoders.com/blog/technology-and-apps/vue-js-comparison-angular-react/#
+		http://naturaily.com/blog/post/react-vs-vue---similarities-and-differences
+		https://codeburst.io/angular-vs-react-vs-vue-f470f5b74bf6
+		https://hackernoon.com/debate-vuejs-vs-reactjs-9d2a8867b69b
+		http://www.cuelogic.com/blog/angular-vs-react-vs-vue-a-2018-comparison/
+		https://news.ycombinator.com/item?id=15052691
+
 Java
 	* Spring Boot:
 		https://spring.io/guides/gs/accessing-data-rest/

@@ -85,6 +85,13 @@ SQL-Ledger
 		http://192.168.122.212/sql-ledger325/admin.pl
 
 	* Configuración de idioma	* Configuración de idioma:
+
+		$ cd /home/cromero/prueba/sql-ledger326/locale/es_utf
+		$ sudo vim all
+		$ sudo vim ic
+		$ sudo vim im
+		$ sudo perl locales.pl -m
+
 		# iconv -f 8859_1 -t UTF-8 customer.pg -o customer.utf8.pg
 		cat customer.pg | recode iso-8859-1..u8 > customer-utf8.pg
 

@@ -1,4 +1,10 @@
 Vim
+	* Cambiar el directorio de trabajo a la ruta actual del archivo:
+		http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+
+		:pwd
+		:lcd %:p:h
+
 	* Colores:
 		:color
 		:highlight Normal ctermfg=grey ctermbg=darkblue

@@ -1,4 +1,19 @@
 TIPS
+
+	* tmux:
+		+ Cambiar el tamaño del pane:
+			ctrl b
+			%       = división vertical
+			"       = división horizontal
+			espacio = cambiar layout
+			x       = salir pane
+
+			ctrl b, ctrl+UP,UP,UP, ...
+			ctrl b, ctrl+DOWN,DOWN,DOWN,DOWN, ...
+
+	* Firewall:
+		https://www.cyberciti.biz/faq/how-to-block-an-ip-address-with-ufw-on-ubuntu-linux-server/
+
 	* Firefox:
 		+ Quitar sugerencias de usuario y clave:
 			about:config
