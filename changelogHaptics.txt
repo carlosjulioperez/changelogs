@@ -1,18 +1,44 @@
 Haptics
 
-	https://illyism.com/journal/vibrate-mobile-phone-web-vibration-api
+	https://192.168.0.1:4444/webconsole/webpages/index.jsp
+	admin
+	A f1r3w4LL2017
 
+	https://illyism.github.io/jquery.vibrate.js/
+	http://www.hapticsjs.org/
+
+	+ Touch events:
+		html touch event spread example
+		Touch Gestures and Events
+
+		https://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html
+
+	+ Código:
+
+
+
+	+ Examples and demos:
+
+	https://developer.mozilla.org/en-US/Apps/Fundamentals/User_input_methods/Touch_Gestures_and_Events
+
+	https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Using_Touch_Events
+
+
+
+
+
+
+	https://patrickhlauke.github.io/touch/
+	http://www.javascriptkit.com/javatutors/touchevents.shtml
+	https://www.codicode.com/art/easy_way_to_add_touch_support_to_your_website.aspx
+
+	http://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
+
+	https://illyism.com/journal/vibrate-mobile-phone-web-vibration-api
 	http://diagramcenter.org/adding-haptic-feedback-to-html.html
 	http://diagramcenter.org/samplebook/09-Haptics.xhtml
-
-	http://www.hapticsjs.org/
 	https://o2labs.github.io/handshake-html5-vibrate-haptic-library/
-	https://illyism.github.io/jquery.vibrate.js/
 	https://pressurejs.com/
-
-	+ iOS:
-		http://community.stencyl.com/index.php?topic=50964.0
-		http://engineering.nodesagency.com/articles/iOS/Haptic-feedback-makes-you-vibrate/
 
 	+ Ejemplos:
 		html5 haptic response example
