@@ -120,6 +120,22 @@ SQL-Ledger
 		                Deny from All
 		        </Directory>
 
+		#carper 12-03-2018 (dd-mm-aaaa)
+		Alias /sql-ledger326-custom /home/cromero/prueba/sql-ledger326-custom/
+		        <Directory /home/cromero/prueba/sql-ledger326-custom>
+		                AllowOverride All
+		                AddHandler cgi-script .pl
+		                #AddDefaultCharset On
+		                Options ExecCGI Includes FollowSymlinks
+		                Order Allow,Deny
+		                Allow from All
+		        </Directory>
+		
+		        <Directory /home/cromero/prueba/sql-ledger326-custom/users>
+		                Order Deny,Allow
+		                Deny from All
+		        </Directory>
+
 
 	* Impedimentos:
 		perl: warning: Setting locale failed.

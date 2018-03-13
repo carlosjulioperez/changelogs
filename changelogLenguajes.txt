@@ -5,6 +5,10 @@ Tendencias
 	* IoT:
 		https://dzone.com/articles/5-of-the-most-crucial-internet-of-things-skills?edition=345105&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=iot%202017-12-19
 
+PostgreSQL
+	* Libros:
+		https://www.quora.com/What-are-some-good-resources-to-learn-about-PostgreSQL
+
 Go
 	* Beginners:
 		https://dzone.com/articles/go-language-for-beginners-in-16-parts?edition=358115&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202018-02-03
