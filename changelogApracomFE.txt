@@ -40,7 +40,9 @@ Checklist
 
 Sql-Ledger 2.8.20
 	* Logotipo:
-		sudo mv sql-ledger.gif /usr/local/busicentury/images 
+		$ sudo mv sql-ledger.gif /usr/local/busicentury/images 
+		$ sudo cp logo.png /usr/local/busicentury/templates/tr_trade/
+
 		Resolución 220x124
 
 	* VirtualBox:
