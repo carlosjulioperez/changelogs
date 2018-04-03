@@ -1,6 +1,6 @@
 Debian 9 stretch
 	+ Paquetes:
-	# sudo apt-get install lxde gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3 postgresql git gnumeric calibre shutter apgdiff meld vlc
+	# sudo apt-get install lxde gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3 postgresql git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf
 
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html

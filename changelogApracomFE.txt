@@ -1,7 +1,7 @@
 Aplicaciones
 
 	Claro
-	http://201.183.224.10/sql-ledger/login.pl	
+	http://200.124.246.26/sql-ledger/login.pl	
 
 	CNT
 	http://186.178.202.67/sql-ledger/login.pl
@@ -39,6 +39,10 @@ Checklist
 	sudo service tomcat7 restart
 
 Sql-Ledger 2.8.20
+	* Logotipo:
+		sudo mv sql-ledger.gif /usr/local/busicentury/images 
+		Resolución 220x124
+
 	* VirtualBox:
 		+ Host (desarrollo xenial Ubuntu 16.04.3 LTS):
 			Adapter 1: NAT
@@ -81,11 +85,11 @@ Instalación en servidor de Cromero 192.168.10.13
 	* Conexión remota SSH:
 
 		ssh carper@186.178.202.67 -p 2222
-		ssh carper@201.183.224.10 -p 2222
+		ssh carper@200.124.246.26 -p 2222
 		ssh carper@192.168.0.3
 
 		ssh cromero@186.178.202.67 -p 2222
-		ssh cromero@201.183.224.10 -p 2222
+		ssh cromero@200.124.246.26 -p 2222
 		ssh cromero@192.168.0.3
 		
 
@@ -96,7 +100,7 @@ Instalación en servidor de Cromero 192.168.10.13
 			scp cromero@192.168.10.13:/home/cromero/.ssh/id_rsa.pub /opt/local/workspace/bin
 
 		+ Copiar log:
-			scp cromero@201.183.224.10:~/fe/logs/feapracom.log .
+			scp cromero@200.124.246.26:~/fe/logs/feapracom.log .
 
 		+ Copiar Factura:
 			http://www.binarytides.com/linux-scp-command/
@@ -116,11 +120,11 @@ Instalación en servidor de Cromero 192.168.10.13
 	
 			scp username@remotehost:/path/directory/\{foo.txt,bar.txt\} .
 			
-			scp cromero@201.183.224.10:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
-			scp cromero@201.183.224.10:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
+			scp cromero@200.124.246.26:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
+			scp cromero@200.124.246.26:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
 
 		+ Copiar certificado:
-			scp cromero@201.183.224.10:~/fe/certProd/jssecacerts .
+			scp cromero@200.124.246.26:~/fe/certProd/jssecacerts .
 
 	* Verificar conexión con servidores de SRI:
 		lynx https://celcer.sri.gob.ec
@@ -251,7 +255,7 @@ Gestión de la BD
 		GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO "sql-ledger";
 
 		+ Copiar un respaldo de la BD:
-			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
+			scp cromero@200.124.246.26:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
 
 bccentury
          fldname         | fldvalue 
@@ -421,7 +425,7 @@ Configuración de entorno de FE
 	* Copiar objetos Java:
 		+ Actualizar reportes PDF y librerías:
 		
-		201.183.224.10	
+		200.124.246.26	
 		192.168.0.3
 	
 		+ Eliminar la carpeta para actualizar el war:
@@ -473,10 +477,10 @@ Configuración de entorno de FE
 		# ln -s /usr/local/apache-tomcat-7.0.54/bin/cjfews.log cjfews.log
 
 	* Copiar archivos App:
-		scp /home/carper/532/App/target/App/WEB-INF/lib.zip cromero@201.183.224.10:~/fe/respaldo
-		scp /home/carper/532/App/target/App.war cromero@201.183.224.10:~/fe/respaldo
+		scp /home/carper/532/App/target/App/WEB-INF/lib.zip cromero@200.124.246.26:~/fe/respaldo
+		scp /home/carper/532/App/target/App.war cromero@200.124.246.26:~/fe/respaldo
 		
-		scp /home/carper/532/App/resources/config/tomcat7/setenv.sh cromero@201.183.224.10:~/tomcat/bin
+		scp /home/carper/532/App/resources/config/tomcat7/setenv.sh cromero@200.124.246.26:~/tomcat/bin
 		chmod +x ~/tomcat/bin/setenv.sh
 	
 		vim /usr/local/apache-tomcat-7.0.54/conf/context.xml
