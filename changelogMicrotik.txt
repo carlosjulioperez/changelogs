@@ -1,0 +1,44 @@
+Microtik
+
+	* Credenciales:
+		MikroTik RouterOS 6.30.4 (c) 1999-2015       http://www.mikrotik.com/
+		admin / B 0xw1n
+
+	* Instalación en Debian 9:
+		https://forum.mikrotik.com/viewtopic.php?t=23016
+		https://github.com/haakonnessjoen/MAC-Telnet
+
+		$ sudo apt-get install build-essential automake autoconf autopoint
+
+		$ cd local/
+		$ mkdir microtik
+		$ cd microtik/
+		$ wget http://github.com/haakonnessjoen/MAC-Telnet/tarball/master -O mactelnet.tar.gz
+		$ tar zxvf mactelnet.tar.gz 
+		$ cd haakonnessjoen-MAC-Telnet-e46b83c/
+
+		$ ./autogen.sh 
+		$ ./configure 
+		$ sudo make install
+
+		$ mactelnet e4:8d:8c:41:e1:a7 -u admin
+
+	* Ejemplos:
+		http://systemzone.net/mikrotik-block-website-facebook-youtube-and-other-sites/
+
+		/ip proxy access add dst-host=www.facebook.com action=deny
+		/ip proxy access add dst-host=www.youtube.com action=deny
+		
+		^.+(youtube.com).+$
+		reemplazar por:
+		^.+youtube.*$
+
+	* Avanzados:
+		https://forum.mikrotik.com/viewtopic.php?t=90491
+		https://aacable.wordpress.com/2014/02/11/blocking-httphttps-facebook-via-automated-address-list/
+
+		microtik dst-nat redirect dansguardian
+		https://forum.mikrotik.com/viewtopic.php?f=4&t=4523
+		https://wiki.mikrotik.com/wiki/Manual:IP/Firewall/NAT
+		
+		https://wiki.mikrotik.com/wiki/How_to_link_Public_addresses_to_Local_ones
