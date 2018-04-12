@@ -5,3 +5,21 @@ SSH
 		# vim .ssh/config
 		Host 190.216.99.42
 			KexAlgorithms +diffie-hellman-group1-sha1	
+
+	* Cambio de puerto SSH:
+		
+		http://itswapshop.com/tutorial/how-change-default-ssh-port-ubuntu
+		http://techie-buzz.com/foss/change-default-ssh-port-in-linux.html
+
+		$ sudo vim /etc/ssh/sshd_config
+		$ sudo /etc/init.d/ssh reload
+		
+		Configuración de sshd_config:
+		
+		'#Port 22
+		Port 3333
+		.
+		.
+		.
+		AllowUsers carper cromero
+		

@@ -62,6 +62,8 @@ SQL-Ledger
 		# perl -MCPAN -e 'install Bundle::DBD::Pg'
 		# sudo aptitude install libdbi-perl
 
+		http://www.microhowto.info/howto/connect_to_a_postgresql_database_using_perl_dbi.html
+
 		postgres@us100432:/home/carper$ psql --version
 		psql (PostgreSQL) 8.4.10
 
@@ -147,3 +149,5 @@ SQL-Ledger
 		Error! 
 		Database Driver missing!
 
+	* apache2 en Debian:
+		https://askubuntu.com/questions/652095/cant-find-httpd-conf

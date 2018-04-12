@@ -31,6 +31,8 @@ TIPS
 			
 				ii  openjdk-8-jre-headless:i386	 8u121-b13-0ubuntu1.16.10.2 i386 OpenJDK Java runtime, using Hotspot JIT (headless)
 
+			 dpkg -s sql-ledger
+
 		+ Remove:
 			sudo apt-get remove openjdk-8-jre-headless:i386
 
@@ -142,6 +144,10 @@ TIPS
 		find . -cmin -1
 
 	* Java:
+		http://www.linuxhostingprovider.com/how-to/how-to-install-java-8-on-debian-gnulinux-9-stretch/
+		https://tecadmin.net/install-java-8-on-debian/
+		https://linuxhint.com/install-openjdk-8-on-debian-9-stretch/
+
 		+ Install:
 			sudo apt-get install oracle-java6-installer
 			sudo apt-get install oracle-java7-installer

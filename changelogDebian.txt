@@ -1,4 +1,6 @@
 Debian 9 stretch
+
+Desarrollo
 	+ Paquetes:
 	# sudo apt-get install lxde gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl qemu-kvm libvirt-clients libvirt-daemon-system virt-manager xchm qalculate tmux pgadmin3 postgresql git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf
 
@@ -9,3 +11,55 @@ Debian 9 stretch
 
 	+ Teamviewer:
 	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux
+
+	+ Configuración de RAID 5 en server:
+	https://serverfault.com/questions/338179/dell-poweredge-add-new-disk-to-an-existing-raid-5-array
+	http://forums.debian.net/viewtopic.php?t=120502
+
+Server Dell PowerEdge R530
+	$ sudo apt-get install graphviz ack-grep mc tmux postgresql git apgdiff build-essential manpages-dev automake autoconf
+
+	+ Java:
+	http://www.linuxhostingprovider.com/how-to/how-to-install-java-8-on-debian-gnulinux-9-stretch/
+
+	$ apt-get install software-properties-common dirmngr
+	$ sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu yakkety main"
+	$ sudo apt-get update
+	$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
+	C2518248EEA14886
+	$ sudo apt-get install oracle-java8-installer
+	
+	$ sudo apt-get install tomcat8
+
+	+ SQL-Ledger 3.2.7 mediante script:
+		https://github.com/sl-community/install-sql-ledger
+
+		$ sudo apt-get install git ansible python
+		$ cd /home/carper/local/sql-ledger/respaldos/cj/install-sql-ledger
+		$ sudo bash install.sh
+		$ sudo chown -R www-data:www-data /usr/local/SL/3.2.7/sql-ledger/
+	
+		
+		+ Informativo: 
+			#Instala la dependencia libdbi-perl
+			$ sudo apt-get install libdbd-pg-perl
+			$ sudo apt-get install libcgi-pm-perl
+			
+			$ udo apt-get install libapache2-mod-perl2
+			$ sudo apt-get install libpq-dev
+			$ sudo perl -MCPAN -e 'install Bundle::DBD::Pg'
+			
+			https://www.server-world.info/en/note?os=Debian_9&p=httpd&f=2		
+		
+			$ sudo a2enmod cgid
+			$ sudo systemctl restart apache2
+			$ sudo a2enconf sql-ledger-httpd
+			$ sudo sudo mv /etc/apache2/sql-ledger-httpd.conf /etc/apache2/conf-available/
+			$ sudo systemctl reload apache2
+		
+			https://github.com/sl-community/install-sql-ledger
+		
+			https://serverfault.com/questions/661644/apache2-4-virtual-host-blocking-access-with-authz-core-log-even-though-authz-no#661653
+			https://serverfault.com/questions/418101/apache-client-denied-by-server-configuration-despite-allowing-access-to-direc
+			http://httpd.apache.org/docs/2.4/upgrading.html
+		
