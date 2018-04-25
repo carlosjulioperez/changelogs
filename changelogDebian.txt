@@ -17,19 +17,76 @@ Desarrollo
 	http://forums.debian.net/viewtopic.php?t=120502
 
 Server Dell PowerEdge R530
-	$ sudo apt-get install graphviz ack-grep mc tmux postgresql git apgdiff build-essential manpages-dev automake autoconf
+	+ Herramientas:
+		$ sudo apt-get install graphviz ack-grep mc tmux postgresql git apgdiff build-essential manpages-dev automake autoconf
 
 	+ Java:
-	http://www.linuxhostingprovider.com/how-to/how-to-install-java-8-on-debian-gnulinux-9-stretch/
+		http://www.linuxhostingprovider.com/how-to/how-to-install-java-8-on-debian-gnulinux-9-stretch/
 
-	$ apt-get install software-properties-common dirmngr
-	$ sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu yakkety main"
-	$ sudo apt-get update
-	$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
-	C2518248EEA14886
-	$ sudo apt-get install oracle-java8-installer
-	
-	$ sudo apt-get install tomcat8
+		$ apt-get install software-properties-common dirmngr
+		$ sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu yakkety main"
+		$ sudo apt-get update
+		$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys
+		C2518248EEA14886
+		$ sudo apt-get install oracle-java8-installer
+		
+		$ sudo apt-get install tomcat8
+
+	+ Mediawiki:
+		https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Debian_or_Ubuntu
+
+		* Descarga:
+			$ sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-xml php-mbstring imagemagick
+			$ cd /tmp/
+			$ wget https://releases.wikimedia.org/mediawiki/1.30/mediawiki-1.30.0.tar.gz
+			$ tar -xvzf /tmp/mediawiki-*.tar.gz
+			$ sudo mkdir /var/lib/mediawiki
+			$ sudo mv mediawiki-*/* /var/lib/mediawiki
+
+		* Configurar mysql:
+
+		+ Accediendo a mysql como usuario root del sistema:
+			https://fragdev.com/blog/mariadb-mysql-root-password-debian-stretch
+
+			$ sudo mysql
+			MariaDB [(none)]> CREATE USER 'mediawikiuser'@'localhost' IDENTIFIED BY 'abc123';
+			MariaDB [(none)]> CREATE DATABASE dbmediawiki;
+			MariaDB [(none)]> use dbmediawiki;
+			MariaDB [(none)]> GRANT ALL ON dbmediawiki.* TO mediawikiuser@localhost;
+			MariaDB [(none)]> quit;
+
+		* Configurar php:
+
+			$ sudo vim /etc/php/7.0/apache2/php.ini
+				upload_max_filesize = 20M
+				memory_limit = 128M
+		* Configurar mediawiki:
+			$ sudo ln -s /var/lib/mediawiki /var/www/html/mediawiki
+
+			+ Dependencias en la configuración:
+				$ sudo apt-get install php-apcu
+				$ sudo apt-get install php-intl
+				$ sudo service apache2 restart
+
+		* Acceder desde un browser:
+			http://192.168.0.150/mediawiki/
+			
+			Database name: dbmediawiki
+			Database username: mediawikiuser
+			Database password: abc123
+
+			Storage engine: InnoDB
+			Database character set: UTF-8
+
+			Name of wiki: apracom_bok
+			username: carper
+			password: laTipica
+			Email address: carlosjulioperez@gmail.com
+
+			User rights profile: Authorized editors only
+			The Authorized editors only scenario allows approved users to
+			edit, but the public can view the pages, including history.
+
 
 	+ SQL-Ledger 3.2.7 mediante script:
 		https://github.com/sl-community/install-sql-ledger

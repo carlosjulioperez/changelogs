@@ -5,6 +5,9 @@ Vim
 		:pwd
 		:lcd %:p:h
 
+	* Forzar coloreo de sintaxis a html en un archivo zul por ejemplo:
+		:set syntax=html
+
 	* Colores:
 		:color
 		:highlight Normal ctermfg=grey ctermbg=darkblue
