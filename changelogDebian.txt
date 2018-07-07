@@ -8,6 +8,10 @@ Desarrollo
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
 	sudo update-alternatives --install /usr/bin/java java /home/carper/local/jdk1.8.0_152/bin/java 2
 	sudo update-alternatives --config java
+	
+	+ Virtualbox:
+	Descargar: virtualbox-5.2_5.2.14-123301~Debian~stretch_amd64.deb
+	$ sudo apt-get install linux-headers-amd64 linux-headers-4.9.0-4-amd64
 
 	+ Teamviewer:
 	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux

@@ -1,5 +1,10 @@
-TIPS
+	TIPS
 
+	* brew:
+		+ Liberar espacio en disco:
+			https://til.hashrocket.com/posts/44a4b95cdd-homebrew-is-eating-up-your-harddrive
+			$ brew cleanup -n
+			$ brew cleanup
 	* tmux:
 		+ Cambiar el tamaño del pane:
 			ctrl b
@@ -10,6 +15,8 @@ TIPS
 
 			ctrl b, ctrl+UP,UP,UP, ...
 			ctrl b, ctrl+DOWN,DOWN,DOWN,DOWN, ...
+		+ Configuración de temas:
+			https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340
 
 	* Firewall:
 		https://www.cyberciti.biz/faq/how-to-block-an-ip-address-with-ufw-on-ubuntu-linux-server/
