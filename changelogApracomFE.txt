@@ -24,8 +24,11 @@ Checklist
 
 	ls -alrt
 	
+	Monitorizar:
 	tail -f /usr/local/apache-tomcat-7.0.54/bin/cjfews.log
-	tail -f ~/fe/logs/feapracom.log
+	tail -f ~/fe/logs/tomcat/catalina.2018-07-18.log
+
+	tail -f ~/fe/logs/feapracom.log (revisar si existe)
 
 	tail -f ~/fe/logs/tomcat/catalina.2018-06-12.log
 	tail -f ~/fe/logs/tomcat/localhost.2018-06-12.log
@@ -234,6 +237,7 @@ Gestión de la BD
 		# Descomprime preservando el archivo original
 		$ bzip2 -dk 14-05-2018.apracomsa.sql.bz2
 		$ psql -U sql-ledger apracomsa < /home/carper/actualizarProxUbu/base/14-05-2018.apracomsa.sql
+		$ psql -U sql-ledger apracomsa < /home/carper/local/projects/04-06-2018.apracomsa.sql
 		$ psql -d apracomsa < 10-06-2016.apracomsa.sql
 
 		# psql -d apracomsa -U sql-ledger

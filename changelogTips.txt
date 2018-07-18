@@ -285,6 +285,12 @@
 		echo "create database test" | mysql -u root -p
 		cat mysql.sql | mysql -u root -p
 	
+	* Búsqueda de archivos filtrando el nombre y mostrando la hora de creación:
+		https://stackoverflow.com/questions/20893022/how-to-display-modified-date-time-with-find-command
+
+		find /media/carper -name "cjerp*" -printf "%p %TY-%Tm-%Td %TH:%TM:%TS %Tz\n"
+		find /media/carper -name "cjerp*" -exec stat -c "%n %y" {} \;
+
 	* Búsqueda de archivos filtrando el nombre:
 		https://unix.stackexchange.com/questions/148877/ls-command-list-files-containg-speccific-string-in-file-name-and-belong-to-spe
 

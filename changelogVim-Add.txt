@@ -1,4 +1,19 @@
 Vim
+
+	* IDE:
+		Instalar tmux
+		Instalar ack.vim
+		+ Buscar texto en archivos:
+			:Ack texto
+		+ Cambiar de carpeta:
+			:cd ~/code/cjerp
+		+ Buscar archivos:
+			:e find **/*/DocumentoElectronico
+		+ Mover window:
+			https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
+			:swap-window -s 3 -t 1
+			to let window number 3 and window number 1 swap their positions.
+
 	* Cambiar el directorio de trabajo a la ruta actual del archivo:
 		http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 
@@ -59,13 +74,8 @@ Vim
 	* Copiar la ruta del aarchivo:
 		1 + Ctrl + G file's path
 	
-		http://blog.codegourmet.de/2014/10/15/vim-yank-path-of-current-file/
-			:let @" = expand("%:p")
-
-			set clipboard=unnamed
-			nnoremap <silent> cp :let @*=expand("%:p")<CR>
-
-		http://askubuntu.com/questions/473809/how-to-copy-file-and-paste-its-path-in-vim-in-normal-and-insert-mode
+		https://stackoverflow.com/questions/17498144/yank-file-path-with-line-no-from-vim-to-system-clipboard
+			:let @+=expand("%") . ':' . line(".")
 
 	* Alineación en archivos CSV:
 		https://github.com/junegunn/vim-plug
