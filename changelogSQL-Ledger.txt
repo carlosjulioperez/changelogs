@@ -1,142 +1,263 @@
 SQL-Ledger
-	* Versión 3.2.5 en ubuntu 10.04 32 bits:
-		# sudo su
-		# cd /usr/local
-		# wget -c http://www.sql-ledger.com/source/sql-ledger-3.2.5.tar.gz
-		# tar zxvf sql-ledger-3.2.5.tar.gz
-		# mv sql-ledger sql-ledger325
-		# cd sq-ledger325
-		# chown www-data:www-data users/ css/ spool/ templates/
-		# cd /etc/apache2/
-		# vim sql-ledger-httpd.conf
+	* Debian 9 stretch:
+		+ perlbrew:
+			+ apt:
+				$ sudo apt install perlbrew
+				$ perlbrew init
+	
+					perlbrew root (~/perl5/perlbrew) is initialized.
+					
+					Append the following piece of code to the end of your ~/.bash_profile and start a
+					new shell, perlbrew should be up and fully functional from there:
+					
+					    source ~/perl5/perlbrew/etc/bashrc
+					
+					Simply run `perlbrew` for usage details.
+					
+					Happy brewing!
+					
+				carper@server-test:~$ perlbrew available
+				carper@server-test:~$ perlbrew install 5.10.1
+	
+			+ manual:
+				https://perlbrew.pl/
+	
+				$ sudo apt install curl
+				$ vim .profile
+				source ~/perl5/perlbrew/etc/bashrc
+	
+				Iniciar nuevo shell
+				$ perlbrew install perl-5.10.0
 
-			Alias /sql-ledger325/ /usr/local/sql-ledger325/
-			<Directory /usr/local/sql-ledger325>
-			        AllowOverride All
-			        AddHandler cgi-script .pl
-			        Options ExecCGI Includes FollowSymlinks
-			        Order Allow,Deny
-			        Allow from All
-			</Directory>
-			<Directory /usr/local/sql-ledger325/users>
-			        Order Deny,Allow
-			        Deny from All
-			</Directory>
-
-		# vim /etc/apache2/httpd.conf
-
-			# SQL-Ledger
-			Include /etc/apache2/sql-ledger-httpd.conf
-
-		# cd /usr/local/sql-ledger325/
-		# cp sql-ledger.conf.default sql-ledger.conf
-		# exit
-		# sudo service apache2 restart
-
-		+ Abrir en un browser:
-
-		http://192.168.122.212/sql-ledger325/login.pl
-		http://192.168.122.212/sql-ledger325/admin.pl
+		+ Instalación de dependencias de SL en Debian 9:
+			Para instalar la versión 2.8.20 o 3.2.7 analizar los pasos de
+			instalación de:
+				https://github.com/sl-community/install-sql-ledger
+			... y luego ejecutarlos manualmente
+	
+			+ Ejecutar el script modificado:
+			~/sql-ledger/cj/install-sql-ledger
+			
+			+ Guía en el archivo:
+			local/respaldo/sql-ledger/cj/install-sql-ledger/tasks/apache.yml:55
+	
+			$ sudo apt install ansible python
+			$ sudo bash install.sh
 		
-		+ Verificar si está correcta la instalación:
-		# perl -s sql-ledger.conf 
-
-		+ Instalar requisitos:
+			Después de la instalación de todas las dependencias, hay que reemplazar los arhivos de nuestra versión en la carpeta:
+			
+			/usr/local/SL/sql-ledger 
+	
+			$ a2enconf archivo.conf
+			$ systemctl reload apache2
+			
+			Desactivar con a2disconf
+			$ cd /etc/apache2
+			$ a2enconf rma.conf
+			$ systemctl reload apache2
+	
+		+ V 2.8.20 en Debian 9:
+			$ sudo vim conf-available/sql-ledger.conf
+				Alias /sql-ledger "/usr/local/SL/2.8.20/sql-ledger"
+				<Directory /usr/local/SL/2.8.20/sql-ledger>
+				    AddHandler cgi-script .pl
+				    Options ExecCGI Includes FollowSymlinks
+				    Require all granted
+				</Directory>
+				
+				<DirectoryMatch "^/usr/local/SL/2.8.20/sql-ledger/(users|bin|SL|sql|templates|locale)" >
+				    Require all denied
+				</DirectoryMatch>
+				
+				# Needed on Debian 9:
+				SetEnv PERL5LIB /usr/local/SL/2.8.20/sql-ledger
 		
-		# cd /etc/apt
-		# sudo cp sources.list sources.list.back
-		# sudo vim sources.list
+		$ sudo a2enconf sql-ledger.conf
+		$ sudo a2dissite default-ssl.conf
 
-		Con vim reeemplazar el texto "ec.archive" con "old-releases"
-		Y en la parte final del archivo "security" con "old-releases"
+		Comentar líneas:
+		$ sudo vim sites-available/000-default.conf
+			# BEGIN ANSIBLE MANAGED BLOCK
+			#RewriteEngine On
+			#RewriteCond  %{REQUEST_URI}  ^/sql-ledger
+			#RewriteRule  .?    https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+			# END ANSIBLE MANAGED BLOCK
 
-		# sudo apt-get update
-		# sudo apt-get install libpq-dev
-		# sudo apt-get install lynx
+		$ sudo systemctl reload apache2
 
-		Ahora ya satisfacemos la pregunta del instalador de CPAN
+		+ Postgres:
+			$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
+				local           all        postgres trust
+			
+			$ createdb -E SQL_ASCII -T template0 apracomsa
+			$ bunzip /home/carper/local/respaldo/database/19-07-2018.apracomsa.sql.bz2
+			$ psql apracomsa < 19-07-2018.apracomsa.sql
 
-		# whereis pg_config
-		pg_config: /usr/bin/pg_config /usr/share/man/man1/pg_config.1.gz
+		$ sudo ufw allow 80
+		$ sudo ufw allow 443
 
-		# perl -MCPAN -e 'install Bundle::DBD::Pg'
-		# sudo aptitude install libdbi-perl
+	* Ubuntu:
+		+ V 2.8.20 en ubuntu 10.04:
+			$ sudo vim /etc/apache2/sql-ledger-httpd.conf
 
-		http://www.microhowto.info/howto/connect_to_a_postgresql_database_using_perl_dbi.html
+				Alias /sql-ledger /usr/local/SL/2.8.20/sql-ledger
+				<Directory /usr/local/SL/2.8.20/sql-ledger>
+				        AllowOverride All
+				        AddHandler cgi-script .pl
+				        AddDefaultCharset On
+				        Options ExecCGI Includes FollowSymlinks
+				        Order Allow,Deny
+				        Allow from All
+				</Directory>
+				
+				<Directory /usr/local/SL/2.8.20/sql-ledger/users>
+				        Order Deny,Allow
+				        Deny from All
+				</Directory>
 
-		postgres@us100432:/home/carper$ psql --version
-		psql (PostgreSQL) 8.4.10
-
-		\du Para listar usuarios
-
-		+ Creación de usuario antes de tareas administrativas:
-		# sudo su postgres
-		# createuser -d sql-ledger  (superuser)
-		# createdb demo
-
-		# createdb -O sql-ledger -E SQL_ASCII -T template0 demo325
-		# createdb -O sql-ledger -E UTF-8 -T template1 demo325
-
-		# sudo vim /etc/postgresql/8.4/main/pg_hba.conf
-
-		Agregar:
-		local           all        all           trust
-
-		# sudo service postgresql-8.4 restart
-
-		http://192.168.122.212/sql-ledger325/admin.pl
-
-	* Configuración de idioma	* Configuración de idioma:
-
-		$ cd /home/cromero/prueba/sql-ledger326/locale/es_utf
-		$ sudo vim all
-		$ sudo vim ic
-		$ sudo vim im
-		$ sudo perl locales.pl -m
-
-		# iconv -f 8859_1 -t UTF-8 customer.pg -o customer.utf8.pg
-		cat customer.pg | recode iso-8859-1..u8 > customer-utf8.pg
-
-		http://abacus.sql-ledger.com/userforum/forum_entry.php?id=352
-		http://sql-ledger.com/userforum/board_entry.php?id=1114&da=ASC&page=0&order=last_answer&descasc=DESC&category=all
-
-		Solución:
-		http://www.ledger123.com/archives/msg02304.html
-
-		Comentar línea #AddDefaultCharset On en:
-		sudo vim /etc/apache2/sql-ledger-httpd.conf
-
-		#carper 03-01-2018
-		Alias /sql-ledger326 /home/cromero/prueba/sql-ledger326/
-		        <Directory /home/cromero/prueba/sql-ledger326>
-		                AllowOverride All
-		                AddHandler cgi-script .pl
-		                #AddDefaultCharset On
-		                Options ExecCGI Includes FollowSymlinks
-		                Order Allow,Deny
-		                Allow from All
-		        </Directory>
+			$ sudo vim /etc/apache2/httpd.conf
+			#SQL-Ledger
+			   Include /etc/apache2/sql-ledger-httpd.conf
+			$ sudo service apache2 restart
 		
-		        <Directory /home/cromero/prueba/sql-ledger326/users>
-		                Order Deny,Allow
-		                Deny from All
-		        </Directory>
-
-		#carper 12-03-2018 (dd-mm-aaaa)
-		Alias /sql-ledger326-custom /home/cromero/prueba/sql-ledger326-custom/
-		        <Directory /home/cromero/prueba/sql-ledger326-custom>
-		                AllowOverride All
-		                AddHandler cgi-script .pl
-		                #AddDefaultCharset On
-		                Options ExecCGI Includes FollowSymlinks
-		                Order Allow,Deny
-		                Allow from All
-		        </Directory>
-		
-		        <Directory /home/cromero/prueba/sql-ledger326-custom/users>
-		                Order Deny,Allow
-		                Deny from All
-		        </Directory>
+		* V 3.2.5 en ubuntu 10.04 32 bits:
+			# sudo su
+			# cd /usr/local
+			# wget -c http://www.sql-ledger.com/source/sql-ledger-3.2.5.tar.gz
+			# tar zxvf sql-ledger-3.2.5.tar.gz
+			# mv sql-ledger sql-ledger325
+			# cd sq-ledger325
+			# chown www-data:www-data users/ css/ spool/ templates/
+			# cd /etc/apache2/
+			# vim sql-ledger-httpd.conf
+	
+				Alias /sql-ledger325/ /usr/local/sql-ledger325/
+				<Directory /usr/local/sql-ledger325>
+				        AllowOverride All
+				        AddHandler cgi-script .pl
+				        Options ExecCGI Includes FollowSymlinks
+				        Order Allow,Deny
+				        Allow from All
+				</Directory>
+				<Directory /usr/local/sql-ledger325/users>
+				        Order Deny,Allow
+				        Deny from All
+				</Directory>
+	
+			# vim /etc/apache2/httpd.conf
+	
+				# SQL-Ledger
+				Include /etc/apache2/sql-ledger-httpd.conf
+	
+			# cd /usr/local/sql-ledger325/
+			# cp sql-ledger.conf.default sql-ledger.conf
+			# exit
+			# sudo service apache2 restart
+	
+			+ Abrir en un browser:
+	
+			http://192.168.122.212/sql-ledger325/login.pl
+			http://192.168.122.212/sql-ledger325/admin.pl
+			
+			+ Verificar si está correcta la instalación:
+			# perl -s sql-ledger.conf 
+	
+			+ Instalar requisitos:
+			
+			# cd /etc/apt
+			# sudo cp sources.list sources.list.back
+			# sudo vim sources.list
+	
+			Con vim reeemplazar el texto "ec.archive" con "old-releases"
+			Y en la parte final del archivo "security" con "old-releases"
+	
+			# sudo apt-get update
+			# sudo apt-get install libpq-dev
+			# sudo apt-get install lynx
+	
+			Ahora ya satisfacemos la pregunta del instalador de CPAN
+	
+			# whereis pg_config
+			pg_config: /usr/bin/pg_config /usr/share/man/man1/pg_config.1.gz
+	
+			# perl -MCPAN -e 'install Bundle::DBD::Pg'
+			# sudo aptitude install libdbi-perl
+	
+			http://www.microhowto.info/howto/connect_to_a_postgresql_database_using_perl_dbi.html
+	
+			postgres@us100432:/home/carper$ psql --version
+			psql (PostgreSQL) 8.4.10
+	
+			\du Para listar usuarios
+	
+			+ Creación de usuario antes de tareas administrativas:
+			# sudo su postgres
+			# createuser -d sql-ledger  (superuser)
+			# createdb demo
+	
+			# createdb -O sql-ledger -E SQL_ASCII -T template0 demo325
+			# createdb -O sql-ledger -E UTF-8 -T template1 demo325
+	
+			# sudo vim /etc/postgresql/8.4/main/pg_hba.conf
+	
+			Agregar:
+			local           all        all           trust
+	
+			# sudo service postgresql-8.4 restart
+	
+			http://192.168.122.212/sql-ledger325/admin.pl
+	
+		* Configuración de idioma:
+	
+			$ cd /home/cromero/prueba/sql-ledger326/locale/es_utf
+			$ sudo vim all
+			$ sudo vim ic
+			$ sudo vim im
+			$ sudo perl locales.pl -m
+	
+			# iconv -f 8859_1 -t UTF-8 customer.pg -o customer.utf8.pg
+			cat customer.pg | recode iso-8859-1..u8 > customer-utf8.pg
+	
+			http://abacus.sql-ledger.com/userforum/forum_entry.php?id=352
+			http://sql-ledger.com/userforum/board_entry.php?id=1114&da=ASC&page=0&order=last_answer&descasc=DESC&category=all
+	
+			Solución:
+			http://www.ledger123.com/archives/msg02304.html
+	
+			Comentar línea #AddDefaultCharset On en:
+			sudo vim /etc/apache2/sql-ledger-httpd.conf
+	
+			#carper 03-01-2018
+			Alias /sql-ledger326 /home/cromero/prueba/sql-ledger326/
+			        <Directory /home/cromero/prueba/sql-ledger326>
+			                AllowOverride All
+			                AddHandler cgi-script .pl
+			                #AddDefaultCharset On
+			                Options ExecCGI Includes FollowSymlinks
+			                Order Allow,Deny
+			                Allow from All
+			        </Directory>
+			
+			        <Directory /home/cromero/prueba/sql-ledger326/users>
+			                Order Deny,Allow
+			                Deny from All
+			        </Directory>
+	
+			#carper 12-03-2018 (dd-mm-aaaa)
+			Alias /sql-ledger326-custom /home/cromero/prueba/sql-ledger326-custom/
+			        <Directory /home/cromero/prueba/sql-ledger326-custom>
+			                AllowOverride All
+			                AddHandler cgi-script .pl
+			                #AddDefaultCharset On
+			                Options ExecCGI Includes FollowSymlinks
+			                Order Allow,Deny
+			                Allow from All
+			        </Directory>
+			
+			        <Directory /home/cromero/prueba/sql-ledger326-custom/users>
+			                Order Deny,Allow
+			                Deny from All
+			        </Directory>
 
 
 	* Impedimentos:

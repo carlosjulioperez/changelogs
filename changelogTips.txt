@@ -1,7 +1,11 @@
 	TIPS
 
+	* Ver los eventos del kernel:
+		https://unix.stackexchange.com/questions/95842/how-can-i-see-dmesg-output-as-it-changes
+		$ dmesg -wH
+
 	* brew:
-		+ Liberar espacio en disco:
+		+ Liberar espacio en disco en Mac:
 			https://til.hashrocket.com/posts/44a4b95cdd-homebrew-is-eating-up-your-harddrive
 			$ brew cleanup -n
 			$ brew cleanup
@@ -17,6 +21,20 @@
 			ctrl b, ctrl+DOWN,DOWN,DOWN,DOWN, ...
 		+ Configuración de temas:
 			https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340
+	* Determinar marca y modelo del equipo:
+		https://askubuntu.com/questions/258922/how-to-display-notebook-model-number
+
+		$ sudo dmidecode | grep -A 9 "System Information"
+		System Information
+		        Manufacturer: Dell Inc.
+		        Product Name: XPS 15 9560
+		        Version: Not Specified
+		        Serial Number: 53CNLH2
+		        UUID: 4C4C4544-0033-4310-804E-B5C04F4C4832
+		        Wake-up Type: Power Switch
+		        SKU Number: 07BE
+		        Family: XPS
+
 
 	* Firewall:
 		https://www.cyberciti.biz/faq/how-to-block-an-ip-address-with-ufw-on-ubuntu-linux-server/
@@ -66,8 +84,26 @@
 	* Comprimir archivos:
 		sudo tar -zcvf sql-ledger.tar.gz sql-ledger
 		sudo tar -zcvf users.tar.gz users
-
 		sudo tar -zcvf sql-ledger-FE.tar.gz sql-ledgerFE
+		
+		+ Respaldo por fecha:
+		sudo tar -zcvf sql-ledger-2018-07-19.tar.gz sql-ledger
+		sudo tar -zcvf sql-ledger-FE-2018-07-19.tar.gz sql-ledgerFE
+		sudo tar -zcvf agroavilab-2018-07-19.tar.gz agroavilab
+		sudo tar -zcvf avisusa-2018-07-19.tar.gz avisusa
+		sudo tar -zcvf primapasta-2018-07-19.tar.gz primapasta
+		sudo tar -zcvf catver-2017-07-19.tar.gz catver
+		sudo tar -zcvf JAPM-2017-07-19.tar.gz JAPM
+		sudo tar -zcvf busicentury-2017-07-19.tar.gz busicentury
+		sudo tar -zcvf biomicro-2017-07-19.tar.gz biomicro
+		sudo tar -zcvf megablue-2016-07-19.tar.gz megablue
+		sudo tar -zcvf sql-ledger327-2014-07-19.tar.gz sql-ledger327
+
+	* Deactivar natural copy en terminal:
+		https://elementaryos.stackexchange.com/questions/2059/how-can-i-disable-natural-copy-paste-in-terminal
+		$ sudo apt install dconf-tools
+		Open dconf editor and navigate to org > pantheon > terminal > settings. 
+		Once you're there, you can untick the option.
 
 	* Cambiar editor de Midnight Commander:
 		https://askubuntu.com/questions/16776/how-to-switch-the-editor-in-mc-midnight-commander-from-nano-to-mcedit

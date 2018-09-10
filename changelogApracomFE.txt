@@ -230,7 +230,11 @@ Gestión de la BD
 		Conectarme con usuario postgres sin password
 		--------------------------------------------
 		$ sudo su postgres
+
 		$ createdb -E SQL_ASCII -T template0 apracomsa
+		$ createdb -E SQL_ASCII -T template0 catver
+		$ createdb -E SQL_ASCII -T template0 blutec
+
 		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
 		CREATE USER rpmd WITH PASSWORD 'rpmd';
 
@@ -253,6 +257,9 @@ Gestión de la BD
 		psql -U postgres apracomsa < /home/carper/23-08-2016.apracomsa.sql
 
 		psql -U postgres apracomsa < /home/carper/local/sql-ledger/dbbackup/01-02-2018.apracomsa.sql/data
+		
+		psql -U sql-ledger peru326 < 19-07-2018.peru326.sql
+
 		
 		\dt	Listado de tablas y usuarios
 		\ds	Listado de secuencias

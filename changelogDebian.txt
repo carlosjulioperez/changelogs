@@ -2,7 +2,7 @@ Debian 9 stretch
 
 Desarrollo
 	+ Paquetes:
-	# sudo apt-get install  gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl xchm qalculate tmux postgresql git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf
+	# sudo apt-get install  gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl xchm qalculate tmux postgresql git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf perlbrew
 
 	# sudo apt-get install lxde qemu-kvm libvirt-clients libvirt-daemon-system virt-manager pgadmin3
 
@@ -11,16 +11,17 @@ Desarrollo
 
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
-	sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_172/bin/java 2
+	sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
 	sudo update-alternatives --config java
 
 	https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
 
 	$ sudo vim /etc/environment
-	JAVA_HOME=/home/carper/local/utils/jdk1.8.0_172
+	JAVA_HOME=/home/carper/local/utils/jdk1.8.0_181
 	$ source /etc/environment
+	
 	$ echo $JAVA_HOME
-	/home/carper/local/utils/jdk1.8.0_172
+	/home/carper/local/utils/jdk1.8.0_181
 
 	+ Virtualbox:
 	Descargar: virtualbox-5.2_5.2.14-123301~Debian~stretch_amd64.deb
@@ -32,7 +33,13 @@ Desarrollo
 	$ sudo apt update
 	$ sudo apt install libjpeg62-turbo:i386 wget gdebi-core
 	$ sudo dpkg -i /media/carper/UUI/local/teamviewer/teamviewer_12.0.76279_i386.deb 
+	$ sudo dpkg -i /home/carper/local/utils/debs/teamviewer_i386.deb
+
 	$ sudo apt-get install -f
+
+	+ Pantheon:
+	https://gandalfn.ovh/
+	https://simerdaniel.blogspot.com/2018/02/pantheon-desktop-sobre-debian-stretch.html
 
 	+ Configuración de RAID 5 en server:
 	https://serverfault.com/questions/338179/dell-poweredge-add-new-disk-to-an-existing-raid-5-array
@@ -41,11 +48,20 @@ Desarrollo
 Server Dell PowerEdge R530
 	+ Herramientas:
 		$ sudo apt-get install ufw graphviz ack-grep mc tmux postgresql git apgdiff build-essential manpages-dev automake autoconf
+	+ ssh:
+		$ sudo vim /etc/ssh/sshd_config
+		
+		#Port 22
+		Port 3333
+		AllowUsers carper cromero
+		
+		$ sudo /etc/init.d/ssh reload
+	
 	+ Firewall:
 		+ Desactivar todo el tráfico entrante y permitir el saliente:
 			$ sudo ufw default deny incoming
 			$ sudo ufw default allow outgoing
-
+			$ sudo ufw allow 3333
 
 	+ Java:
 		http://www.linuxhostingprovider.com/how-to/how-to-install-java-8-on-debian-gnulinux-9-stretch/
@@ -146,4 +162,11 @@ Server Dell PowerEdge R530
 			https://serverfault.com/questions/661644/apache2-4-virtual-host-blocking-access-with-authz-core-log-even-though-authz-no#661653
 			https://serverfault.com/questions/418101/apache-client-denied-by-server-configuration-despite-allowing-access-to-direc
 			http://httpd.apache.org/docs/2.4/upgrading.html
+	+ Apache2:
+
+		$ sudo apache2 -version
+		[sudo] password for carper:    
+		Server version: Apache/2.4.25 (Debian)
+		Server built:   2018-06-02T08:01:13
 		
+

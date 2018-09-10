@@ -14,6 +14,23 @@ Vim
 			:swap-window -s 3 -t 1
 			to let window number 3 and window number 1 swap their positions.
 
+	* Activar la sintaxis:
+		:syntax enable
+	* Tamaño de ventana:
+		if has("gui_running")
+		  " GUI is running or is about to start.
+		  " Maximize gvim window (for an alternative on Windows, see simalt below).
+		  set lines=50 columns=120
+		else
+		  " This is console Vim.
+		  if exists("+lines")
+		    set lines=50
+		  endif
+		  if exists("+columns")
+		    set columns=100
+		  endif
+		endif
+
 	* Cambiar el directorio de trabajo a la ruta actual del archivo:
 		http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 
