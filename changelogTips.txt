@@ -1,4 +1,8 @@
 	TIPS
+	* Extraer el primer campo de string a la izquerda de los dos puntos:
+		https://stackoverflow.com/questions/6284256/how-to-trim-specific-text-with-grep
+
+		$ cat listado.txt | cut -f1 -d":" > nuevo.txt
 
 	* Ver los eventos del kernel:
 		https://unix.stackexchange.com/questions/95842/how-can-i-see-dmesg-output-as-it-changes
