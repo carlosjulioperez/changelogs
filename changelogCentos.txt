@@ -1,0 +1,260 @@
+Centos
+	# sudo cat /etc/centos-release
+	CentOS release 6.10 (Final)
+
+	$ ssh carper@192.168.0.154 -p 2022
+
+	* Configuración de servidor:
+		Habilitar dhcp y determinar la IP con el Gateway. Luego ponerlo como
+		static.
+
+	* Mostrar el gateway en ubuntu:
+		# route -n
+
+	* Copiar el sistema a unidad USB:
+		# sudo dd if=/home/carper/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
+
+	* Cambiar locale:
+		https://www.thegeekdiary.com/how-to-change-the-system-locale-in-centos-rhel-56/
+		# vim /etc/sysconfig/i18n
+
+	* Activar red:
+		http://www.vsysad.com/2015/12/configure-a-static-ip-address-in-rhel-6centos-6/
+
+		# loadkeys us
+		# ifup eth0
+		# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+		#   ONBOOT=yes
+
+		# service network restart
+		# yum install vim (resuelve la dependencia de perl)
+		# yum install tmux tree
+		# yum install man man-pages
+
+	* selinux:
+		# sestatus
+
+		# vim /etc/sysconfig/selinux
+			SELINUX=enforcing 
+			#SELINUX=disabled  
+
+	* Crear usuario admin:
+		# adduser carper
+		# passwd carper
+		# usermod -aG wheel carper
+		# vim /etc/sudoers
+
+	* ssh:
+		https://www.vultr.com/docs/changing-your-ssh-port-for-extra-security-on-centos-6-or-7
+		https://www.cyberciti.biz/faq/centos-change-ssh-port/
+
+		# sudo vim /etc/ssh/sshd_config
+		
+		#Port 22
+		Port 2022 
+		AllowUsers carper
+
+		# yum -y install policycoreutils-python
+		# vim /etc/sysconfig/iptables
+
+			## delete or comment out port 22 line ##
+			## -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+			## open port 2022
+			-A INPUT -m state --state NEW -m tcp -p tcp --dport 2022 -j ACCEPT
+
+		# service iptables stop
+		# service sshd reload
+		# netstat -tulpn | grep sshd
+		# service iptables start
+		
+		# Para activarlo en SELINUX
+		# semanage port -a -t ssh_port_t -p tcp 2022
+	
+	* Estado de servicios:
+		# chkconfig
+
+	* PostgreSQL:
+		+ Copiar respaldo:
+
+		scp -P 2022 /home/carper/local/respaldo/database/28-08-2018.apracomsa.sql.bz2 carper@192.168.0.253:~
+
+		https://www.if-not-true-then-false.com/2010/howto-install-postgresql-8-4-database-server-on-centos-fedora-red-hat/
+		+ Ver codificación de BD:
+		https://stackoverflow.com/questions/6454146/getting-the-encoding-of-a-postgres-database
+		# psql my_database -c 'SHOW SERVER_ENCODING'
+
+		+ Convertir una db a utf-8:
+		https://stackoverflow.com/questions/8806631/how-to-convert-a-db-in-postgresql-to-utf8
+		https://stackoverflow.com/questions/380924/how-can-i-change-database-encoding-for-a-postgresql-database-using-sql-or-phppga
+
+		# yum install postgresql postgresql-server postgresql-contrib
+		# service postgresql initdb
+		# chkconfig postgresql on
+		# service postgresql start
+
+		Instalado:
+		  postgresql.x86_64 0:8.4.20-8.el6_9
+
+		# vim /var/lib/pgsql/data/postgresql.conf
+		#	listen_addresses = '*'
+		#	port = 5432
+
+		# vim /var/lib/pgsql/data/pg_hba.conf
+			#local   all         all                               ident
+			local   all         all                               trust
+
+		# service postgresql restart
+		# su postgres
+		bash-4.1$ createuser -d sql-ledger
+
+			bash-4.1$ createuser -d -P sql-ledger
+			could not change directory to "/root"
+			Shall the new role be a superuser? (y/n) n
+			Shall the new role be allowed to create more new roles? (y/n) n 
+
+		bash-4.1$ bunzip2 28-08-2018.apracomsa.sql.bz2
+		
+		$ pwd
+		/var/lib/pgsql
+
+		* 2.8.20:
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
+		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
+
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 agroavilab
+		$ psql -U sql-ledger agroavilab < 29-08-2018.agroavilab.sql
+		
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 blutec
+		$ psql -U sql-ledger blutec < 29-08-2018.blutec.sql
+		
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 catver
+		$ psql -U sql-ledger catver < 29-08-2018.catver.sql
+		
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busicentury
+		$ psql -U sql-ledger busicentury < 29-08-2018.busicentury.sql
+		
+		* 3.2.7::
+		$ createdb -O sql-ledger -E UTF-8 -T template1 dbbiomicro
+		$ psql -U sql-ledger dbbiomicro < 29-08-2018.peru326.sql
+
+	* Apache:
+		https://www.linode.com/docs/web-servers/apache/apache-web-server-on-centos-6/
+
+		# Conocer el usuario y grupo
+		# egrep -i '^user|^group' /etc/httpd/conf/httpd.conf
+
+		# yum -y install httpd
+		# service httpd start
+		# chkconfig httpd on
+		# vim /etc/sysconfig/iptables
+			iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+		# service iptables save
+		# service iptables restart
+
+	* SQL-Ledger:
+		+ Carpetas home de apache:
+		https://centos.org/forums/viewtopic.php?t=64928
+		https://www.if-not-true-then-false.com/2010/enable-apache-userdir-with-selinux-on-fedora-centos-red-hat-rhel/
+
+		+ Copiar desde el cliente:
+		# scp -P 2022 /home/carper/local/respaldo/sql-ledger/2.8.20/sql-ledger-2018-07-19.tar.gz
+		carper@192.168.253.179:~
+		# scp -P 2022 /home/carper/local/respaldo/sql-ledger/SL327/sql-ledger327_04-19-2018.tar.gz carper@192.168.253.179:~
+
+		# yum -y install perl-DBI perl-DBD-Pg mod_perl perl-DBIx-Simple
+		# yum -y install tetex tetex-fonts tetex-dvips tetex-latex ghostscript lynx
+
+		+ Configuración:
+		# cd /usr/local/SL/2.8.20
+		# chown -R root:root sql-ledger
+		# cd sql-ledger
+		# chown -R apache:apache users/ css/ templates/ spool/ images/
+
+		Para Ubuntu
+		# chown -R www-data:www-data users/ css/ templates/ spool/ images/
+
+		# vim /etc/httpd/conf.d/sql-ledger-httpd.conf
+
+			Alias /sql-ledger /SL/2.8.20/sql-ledger
+			   <Directory /SL/2.8.20/sql-ledger>
+			     AllowOverride All
+			     AddHandler cgi-script .pl
+			     AddDefaultCharset On
+			     Options ExecCGI Includes FollowSymlinks
+			     Order Allow,Deny
+			     Allow from All
+			   </Directory>
+			
+			   <Directory /SL/2.8.20/sql-ledger/users>
+			     Order Deny,Allow
+			     Deny from All
+			   </Directory>
+			
+			Alias /sql-ledger327 /SL/3.2.7/sql-ledger
+			   <Directory /SL/3.2.7/sql-ledger>
+			     AllowOverride All
+			     AddHandler cgi-script .pl
+			     #AddDefaultCharset On
+			     Options ExecCGI Includes FollowSymlinks
+			     Order Allow,Deny
+			     Allow from All
+			   </Directory>
+			
+			   <Directory /SL/3.2.7/sql-ledger/users>
+			     Order Deny,Allow
+			     Deny from All
+			   </Directory>
+
+
+		+ Codificación UTF-8:
+			En la definición de las instalaciones de SQL-Ledger para 3.2.7 (nuevas), comentar:
+
+			# vim /etc/httpd/conf.d/sql-ledger-httpd.conf
+				#AddDefaultCharset On
+
+		# service httpd restart
+	
+	+ SELINUX:
+		https://danwalsh.livejournal.com/56760.html
+
+		https://blog.lysender.com/2015/07/centos-7-selinux-php-apache-cannot-writeaccess-file-no-matter-what/
+		https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/
+		https://unix.stackexchange.com/questions/120748/httpd-cant-access-file-even-after-setting-httpd-sys-content-t
+
+		# ls -aZ /SL/
+		drwxr-xr-x. apache apache system_u:object_r:httpd_sys_content_t:s0 .
+		drwxr-xr-x. root   root   system_u:object_r:httpd_sys_content_t:s0 ..
+		drwxr-xr-x. apache apache system_u:object_r:httpd_sys_content_t:s0 2.6.17
+		drwxr-xr-x. apache apache system_u:object_r:httpd_sys_content_t:s0 2.8.20
+
+		# chown apache:apache -R /SL
+		# cd /SL
+
+		# File permissions, recursive
+		# find . -type f -exec chmod 0644 {} \;
+		 
+		# Dir permissions, recursive
+		# find . -type d -exec chmod 0755 {} \;
+
+		# SELinux serve files off Apache, resursive
+		# chcon -t httpd_sys_content_t /SL -R
+		# chcon -t httpd_sys_script_t /SL -R
+
+		# Allow write only to specific dirs
+		# chcon -t httpd_sys_rw_content_t /SL/2.6.17/sql-ledger/users -R
+		
+		httpd_sys_rw_content_t 
+
+		# semanage boolean -l | grep http
+		
+		# setsebool -P httpd_unified 0
+		# setsebool -P httpd_enable_cgi 0
+		# setsebool -P httpd_builtin_scripting 0
+		# setsebool -P httpd_tty_comm 0
+		# setsebool -P httpd_dbus_avahi 0
+		
+		# restorecon -Rv /SL
+
+	+ Dependencias:
+		https://github.com/tapwag/
+		https://github.com/tapwag/sqlledgerclassic_centos6installer/blob/master/sqlledgertekki.sh
