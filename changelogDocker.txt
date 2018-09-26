@@ -1,0 +1,47 @@
+Docker + Status:
+		$ sudo systemctl status docker
+	+ sudo:
+		$ su - ${USER}
+
+	+ Bases:
+		$ docker ps -a
+		5f859da00034        debian              "bash"              About an hour ago   Up About an hour flamboyant_stallman
+
+		$ docker run -it debian
+		# apt update
+		# apt install curl
+		# apt install openssh-server
+
+		$ docker start 5f859da00034
+		$ docker commit -m "Init config" -a "carper" 5f859da00034 carlosjulioperez/debian
+
+		$ docker login -u carlosjulioperez
+		$ docker push carlosjulioperez/debian
+	
+	+ Eliminar imagen:
+		$ docker images
+		$ docker rmi image_id
+
+Revisar
+	https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+	+ run y start:
+	https://stackoverflow.com/questions/34782678/difference-between-running-and-starting-a-docker-container
+	
+	carper@userver:~$ docker run -it ubuntu
+	
+	$ docker search linode
+	$ docker pull linode/lamp
+	$ docker images
+	
+	$ docker run -p 80:80 -t -i linode/lamp /bin/bash
+	root@1f12cbbfc60c:/#
+	# service apache2 start
+	# service mysql start
+	
+	ctrl p o 
+	ctrl q
+	
+	$ docker login -u carlosjulioperez
+	$ docker commit -m "Init config" -a "carper" ac850f223b3d carlosjulioperez/debian	
+	$ docker push carlosjulioperez/my_linode_lamp
+	

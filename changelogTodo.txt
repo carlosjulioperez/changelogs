@@ -1,7 +1,12 @@
 TODO
+	Comentario 2re 25:27
+
+	Preparar Debian con docker, java y golang
+	Preparar raspberry pi virtual
+	Reloj cuenta regresiva para Iphone sin bloquearse
+
 	/media/carper/UUI/local/jdotxt/todo.txt
 
-	Documental de Juran y padres de calidad
 	* Web UI:
 		https://demo.cuba-platform.com/app/#!
 
@@ -33,39 +38,16 @@ TODO
 
 		https://www.youtube.com/watch?v=jpo7GeN7pJU
 
-	* sql:
-		+ Crear mer actializado:
-			Instalar pgadmin
-			Instalar schemaspy y dependencias
 		+ Crear sql:
 [Cash--Reports--Receipts]
 module=rp.pl
 action=report
 report=receipts
 
-
-
-
-	* @sql-ledger:
-		+ Instalar Ledger123 en servido:
-			25 10 p=3
-
-		+ Instalar Sql-ledger 3.2.5 en servidor:
-			25 10 p=2
-			24 10 p=6
-
-		+ Configurar SQL-Ledger de Dieter :
-			19 10 p=8
-
-	* @fe:
-		+ Ampliar impresión clave acceso en NC:
-			19 10 p=2
 	* @informe:
 		+ Sugerencia de servidor, nas y ups:
 			
 		http://www.dell.com/en-us/work/shop/servers-storage-and-networking/poweredge-r530-rack-server/spd/poweredge-r530/pe_r530_1451_a/configurations?selectionState=eyJGUHJpY2UiOjQ3NTQuMDEsIk9DIjoicGVfcjUzMF8xNDUxX2EiLCJRdHkiOjEsIk1vZHMiOlt7IklkIjoxNjk3LCJPcHRzIjpbeyJJZCI6IjFDUFUifV19LHsiSWQiOjE1NjAsIk9wdHMiOlt7IklkIjoiMTZHQk1NIiwiUHJpY2UiOjMyNy43MywiUXR5IjozfV19LHsiSWQiOjE1NDAsIk9wdHMiOlt7IklkIjoiUjFIIn1dfSx7IklkIjoxNTQxLCJPcHRzIjpbeyJJZCI6IkgzMzAiLCJQcmljZSI6MTU2LjkzfV19LHsiSWQiOjE1NzAsIk9wdHMiOlt7IklkIjoiU0E5NkIiLCJQcmljZSI6NzE3Ljg2LCJRdHkiOjJ9XX0seyJJZCI6MTY1MiwiT3B0cyI6W3siSWQiOiJOT01FRCJ9XX0seyJJZCI6MTUyMCwiT3B0cyI6W3siSWQiOiJJOEJBUyJ9XX0seyJJZCI6MTUxNCwiT3B0cyI6W3siSWQiOiJPQk5JQ1EifV19LHsiSWQiOjE2MDAsIk9wdHMiOlt7IklkIjoiRFZSV1NBIiwiUHJpY2UiOjYyLjR9XX0seyJJZCI6MTYyMCwiT3B0cyI6W3siSWQiOiI0OTVSIiwiUHJpY2UiOjM3Ny41Mn1dfSx7IklkIjoxNjIxLCJPcHRzIjpbeyJJZCI6Ik5QV1JDRCJ9XX0seyJJZCI6MTYxMCwiT3B0cyI6W3siSWQiOiJSUkNNQSIsIlByaWNlIjoxMTkuMTJ9XX1dfQ%253D%253D
-
-			26 10 p=6
 
 		+ Servidor y equipo NAS como disco virtual:
 			18 10 p=2
@@ -181,262 +163,12 @@ report=receipts
 	* @propuesta
 		Propuesta móvil SGS contenedores:
 			25 09 p=1
-+espol
-	* @registro
-		Registro materias:
-			15 09 p=1
-			14 09 p=6
-	* @mds
-		Proyecto y estudio de metodología:
-			14 09 p=1
-			https://docs.google.com/document/d/1ziyomEzD8uQzMojxZXKeeioqvQzIQ8L7QNYTpx6HpxQ/edit
 
-			12 09 p=16
-			11 09 p=3
-			10 09 p=1
-				Buscar lección 2 OK
-				Buscar freemind
-+carper
-	* @erp:
-		(Definir estrategia Sistema ERP):
-			08 09 p=8
-			
-+drboris
-	+ @simluacion:
-		(Revisar licencia de insightmaker.com):
-			14 09 p=2
-			http://www.vicente-navarro.com/blog/2008/03/01/la-licencia-affero-agpl-y-su-relacion-con-la-gpl/
-Boris
-	
-	https://www.jointjs.com/opensource#Download-JointJS
-	https://github.com/jgraph/jgraphx
-	https://github.com/jgraph/jgraph
-
-Espol
-
-	+ Metodología p=1:
-		Objetivos a alcanzar con el plan de implementación
-
-		+ Búsqueda google (odoo plan de implementacion) :
-		https://www.google.com.ec/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwj2zanYwa3VAhXKcT4KHax5AvgQFgg0MAI&url=https%3A%2F%2Fuvadoc.uva.es%2Fbitstream%2F10324%2F16892%2F1%2FTFG-I-381.pdf&usg=AFQjCNGbmliZelB6GZL7_YgmbR3niluFBA
-
-		https://www.odoo.com/documentation/user/9.0/es/getting_started/documentation.html
-	
-	* 05-09 p=2 :
-		Diagrama secuencia registrar calificaciones
-		Diagrama comunicaciones registrar actividad
-		Diagrama comunicaciones registrar calificaciones
-
-	https://docs.google.com/document/d/1odpDm8yWsAngYSVp4CkearBqdpeL5EF9uYmsJUnsKZ0/edit#
-
-Nubesoft
-
-	* 07-09 p=12 :
-		Contrador en pantalla de ingresos
-
-	* 05-09 p=2 :
-		Contrador en pantalla de ingresos
-
-	* 01-09 p=4 :
-		Configuración de herramientas
-
-	* 25-08 (16:25 -      ) p=1 :
-		Configurar Wildfly
-		Bajar SoapUI
-		Probar consumo de WS
-		Instalar BD postgresql
-
-	* 28-08 p=12 :
-
-	* 25-08 (05:20 -      ) p=1 :
-		Agregar zk en proyecto kanutoprocess
-
-	* 21-07 (15:00 - 15:30) p=1 :
-		Conexión exitosa por Teanviewer en Mac y Knoppix USB
-		303220478
-		9xp55x
-
-		486dwv
-
-	* 14-07 (09:30 - 15:30) :
-		Conexión Teamviewer
-		Revisión de código
-
-Diseño de Sistemas:
+Diseño de Sistemas
+	https://docs.google.com/document/d/1ziyomEzD8uQzMojxZXKeeioqvQzIQ8L7QNYTpx6HpxQ/edit
 	https://docs.google.com/document/d/1odpDm8yWsAngYSVp4CkearBqdpeL5EF9uYmsJUnsKZ0/edit	
-	https://www.academico.espol.edu.ec/login.aspx
 
-
-ImpJordan
-	+ Importar DB:
-		* Búsqueda:
-			restore database sql server 2008 r2 to sql server express
-
-		https://stackoverflow.com/questions/6217679/create-restore-database-from-backup-sql-server-express
-
-	+ Video:
-		https://www.dropbox.com/s/8fr44qx6uxqh1gl/prototipoPedidoMovilOffline.ogv?dl=0
-		
-		Base de datos:
-		192.168.1.129
-		181.198.218.230
-
-		ssh jdaf@181.198.218.230 -p 2222
-		181.198.218.230:8080/Webapp
-		181.198.218.230:8080/manager
-
-		mysql: root SA/SA puerto 1194
-
-		/Volumes/UUI/documentos/proyectos/impJordan/consultas.sql
-		/Volumes/UUI/documentos/proyectos/impJordan/cupon/src/userclasses/StateMachine.java
-
-	+ Componentes:
-		https://stackoverflow.com/questions/39051527/setting-values-to-each-combobox-item
-		https://stackoverflow.com/questions/31188524/selection-from-combo-box-displays-text-in-textfield-codename-one
-
-	+ 31-08 p=4:
-		Alineación a la derecha en las cifras (OK)
-		Actualizar el stock del producto en memoria con los productos agregados en el pedido
-
-	+ 30-08 () p=4:
-		Mejorar la funcionalidad y apariencia general
-
-	+ 29-08 () p=2:
-		Buscar por código de cliente (OK)
-		Eliminar un ítem del pedido (OK)
-
-	+ 24-08 (08:00 - 15:00) p=10:
-
-		Buscar por código de cliente (OK)
-		Cupo aisgnado al cliente, saldo consumido y total disponible
-		Alineación a la derecha en las cifras (OK)
-	
-	+ 22-08 (23:06) p=1 :
-		Agregar eliminarDetalle()
-		Modificar UI para usar los metodos del objeto PedidoDomain
-
-	+ 17-08 (14:38) :
-		Conexión base de datos usando jisql (1)
-
-	* 28-07 (11:05) p=3 :	
-		Configuración de cliente de correo evolution (X)
-		Verificar si hay conexión con Teamviewer (X)
-		Revisión de código servidor (OK)
-
-		Deber de Metodología
-		Deber de adicional de Diseño
-		Deber de Diseño
-
-
-	* 27-07 (07:30) p=13 :	
-		+ Importar la BD: (OK)
-			mysql -u root
-			create database iejsaya17;
-			mysql -u root iejsaya17 < /mnt-system/respaldo/pedidoMovil/iejsaya17_BCK\ 20170712\ 1559.sql
-			mysql -u root iejsaya17
-
-		+ Consultas:
-
-		Mostrar los productos en List (OK)
-		Mostrar los productos en la Tabla de totales (OK)
-		Copiar H2 DB en el servidor (OK)
-	
-	* 26-07 (06:50 ):
-		Ajustes para configuración de entorno (OK)
-
-		Mostrar los productos en un combo mediante método
-		before... (OK)
-		
-		Modificar pantalla de pedidos para agregar productos y cálculo de
-		totales
-
-	* 25-07 (08:32 - ) p=12 :
-		Preparar el query de productos filtrados por empresa (OK)
-		Reinstalar Eclipse, lombok (OK)
-		Crear Pojo de Productos en dispositivo móvil (OK)
-
-		Descarga de productos filtrando por empresas (OK)
-		/home/knoppix/documentos/proyectos/impJordan/cupon/src/userclasses/StateMachine.java
-		/home/knoppix/documentos/proyectos/impJordan/cuponservlet/src/ec/cjpq/cupon/servlet/DatosServlet.java
-
-
-	* 24-07 (08:32 - ) p=8, 11 :
-		Probar el servicio web (OK)
-
-		Entidad configuración, donde se pondrá el nombre del vendedor y las
-		empresas asignadasA (OK)
-		Buscar ejemplo de configuración (OK)
-
-	* 23-07 (19:16 - ) p=6 :
-		Cambios en código (OK)
-		Configuración de eclim (Pendiente)
-
-	* 21-07 (18:50 - 21:30) p=5 :
-		Ejecutar Webapp con ddl CREATE e INSERT de pruebas para el piloto
-	
-		Al seleccionar el vendedor se va a considerar todas las empresas asignadas
-		a él.
-		Deben listarse los productos de todas las empresas asignadas al vendedor
-		en el momento de registrar el detalle de pedido.
-	
-		Buscar el código de consultas SQL (¿feapracom?)
-	
-		Consulta de stock
-		Consulta de precios
-		Cálculo automático
-		Ver si productos graban o no IVA
-
-	* 19-07 (08:48 - 11:00) :
-		Configuración de servidor
-	
-	* 19-07 (11:02 - 14:00) p=6 :
-
-	
-	* 18-07 (08:48 - 10:56) p=4 :
-		Installing SQuirreL SQL
-		Verify database connection
-
-	* 18-07 (13:00 - 19:00) p=4 :
-		Desinfeccion de virus de servidor SQL Server
-	
-	* 18-07 (11:15 - ) p=4 :
-		Configuración de entorno de desarrollo en Linux
-
-		+ Configuración de maven:
-		https://stackoverflow.com/questions/16649420/how-to-specify-an-alternate-location-for-the-m2-folder-or-settings-xml-permanen
-
-		Ajustes en build.xml (ant)
-
-	* 16-07 (09:00 - 12:33) p=3 :
-		Configuración de entorno de desarrollo en MacOS
-		Configuración de maven
-
-	* 15-07 (10:33 - 12:33):
-		Terminar inventario equipos Iglesia Central
-	
-	* 14-07 (11:15 - 16:15) :
-		Creación de menú
-		Creación de pantalla Pedidos
-	
-	* Proyectos:
-
-		1. ImpJordán
-		2. Christian
-		3. Altura
-		4. Dr. Boris
-		5. Gestión de proyectos (Consultas en Android e iOS ¿BD Cassandra?)
-
-SGS
-	* 17-08:
-		Viernes 10H30 SGS
-		Implementar una herramienta de reportería
-		Afinar las consultas
-
-	* 18-07 (08:48 - 10:50) p=4 :
-		Propuesta a Rommel Mila
-
-
-	* Revisar:
+Revisar
 	https://entusiasmado.com/8-razones-para-no-usar-la-tecnica-pomodoro/
 
 	* Mike Acton about Java:

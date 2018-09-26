@@ -23,6 +23,8 @@
 
 			ctrl b, ctrl+UP,UP,UP, ...
 			ctrl b, ctrl+DOWN,DOWN,DOWN,DOWN, ...
+
+			ctrl b, :resize-pane -t 1 -y 7
 		+ Configuración de temas:
 			https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340
 	* Determinar marca y modelo del equipo:

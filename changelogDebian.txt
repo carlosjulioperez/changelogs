@@ -9,6 +9,9 @@ Desarrollo
 	$ sudo apt-get update
 	$ sudo apt-get install chromium chromium-l10n
 
+	+ Docker:
+		https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
+	
 	+ Java:
 	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
 	sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2

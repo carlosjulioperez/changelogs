@@ -1,0 +1,78 @@
+Configuración
+	* Desactivar inicio entorno gráfico:
+		http://ask.xmodulo.com/disable-desktop-gui-raspberry-pi.html
+
+		$ sudo raspi-config / 3 / B1 / B1
+
+	* Red:
+		nmap -sP 192.168.0.0/24
+		
+		Raspberry PI
+		ssh pi@192.168.0.153 / 123
+		
+		pi@raspberrypi:~ $ uname -a
+		Linux raspberrypi 4.14.62-v7+ #1134 SMP Tue Aug 14 17:10:10 BST 2018 armv7l GNU/Linux
+		
+		pi@raspberrypi:~ $ lsb_release -a
+		No LSB modules are available.
+		Distributor ID: Raspbian
+		Description:    Raspbian GNU/Linux 9.4 (stretch)
+		Release:        9.4
+		Codename:       stretch
+	
+	* Tomcat:
+		https://stackoverflow.com/questions/27617158/tomcat-7-with-java-8-on-raspberry-pi#31419164
+		https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host
+
+		$ wget -c http://us.mirrors.quenda.co/apache/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz
+
+		$ vim local/utils/apache-tomcat-8.5.34/conf/tomcat-users.xml
+
+			<role rolename="manager-gui"/>
+			<user username="tomcat" password="s3cret" roles="manager-gui"/>
+
+		$ vim local/utils/apache-tomcat-8.5.34/conf/Catalina/localhost/manager.xml
+			<Context privileged="true" antiResourceLocking="false" 
+			         docBase="${catalina.home}/webapps/manager">
+			    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+			</Context>
+
+		$ sudo vim /etc.init.d/tomcat
+
+			#!/bin/sh
+			# /etc/init.d/tomcat
+			# starts the Apache Tomcat service
+			### BEGIN INIT INFO
+			# Provides:          tomcat
+			# Required-Start:
+			# Required-Stop:
+			# Default-Start:     2 3 4 5
+			# Default-Stop:      0 1 6
+			# X-Interactive:     true
+			# Short-Description: Start/stop tomcat application server
+			### END INIT INFO
+			
+			export CATALINA_HOME="/home/pi/local/utils/apache-tomcat-8.5.34"
+			case "$1" in
+			start)
+			  if [ -f $CATALINA_HOME/bin/startup.sh ];
+			  then
+			    echo $"Starting Tomcat"
+			    /bin/su pi $CATALINA_HOME/bin/startup.sh
+			  fi
+			  ;;
+			stop)
+			  if [ -f $CATALINA_HOME/bin/shutdown.sh ];
+			  then
+			    echo $"Stopping Tomcat"
+			    /bin/su pi $CATALINA_HOME/bin/shutdown.sh
+			  fi
+			  ;;
+			*)
+			  echo $"Usage: $0 {start|stop}"
+			  exit 1
+			  ;;
+			esac			
+
+		$ sudo chmod 755 /etc/init.d/tomcat
+		$ sudo /etc/init.d/tomcat start

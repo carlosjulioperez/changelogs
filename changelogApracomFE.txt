@@ -240,9 +240,6 @@ Gestión de la BD
 
 		# Descomprime preservando el archivo original
 		$ bzip2 -dk 14-05-2018.apracomsa.sql.bz2
-		$ psql -U sql-ledger apracomsa < /home/carper/actualizarProxUbu/base/14-05-2018.apracomsa.sql
-		$ psql -U sql-ledger apracomsa < /home/carper/local/projects/04-06-2018.apracomsa.sql
-		$ psql -d apracomsa < 10-06-2016.apracomsa.sql
 
 		# psql -d apracomsa -U sql-ledger
 
@@ -253,12 +250,11 @@ Gestión de la BD
 		#createdb -E SQL_ASCII -T template0 demo2-325
 
 		+ Desde la consola:
-		psql -U postgres apracomsa < /home/carper/Descargas/23-03-2015.apracomsa.sql
-		psql -U postgres apracomsa < /home/carper/23-08-2016.apracomsa.sql
+		$ psql -U sql-ledger peru326 < 19-07-2018.peru326.sql
 
-		psql -U postgres apracomsa < /home/carper/local/sql-ledger/dbbackup/01-02-2018.apracomsa.sql/data
-		
-		psql -U sql-ledger peru326 < 19-07-2018.peru326.sql
+		$ scp -P 3333 /home/carper/local/respaldo/database/19-09-2018.apracomsa.sql.bz2 carper@192.168.0.3:~
+		$ createdb -E SQL_ASCII -T template0 apracomsa_test
+		$ psql -U sql-ledger apracomsa_test < 19-09-2018.apracomsa.sql
 
 		
 		\dt	Listado de tablas y usuarios
