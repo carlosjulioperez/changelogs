@@ -5,7 +5,11 @@ Configuración
 		$ sudo raspi-config / 3 / B1 / B1
 
 	* Red:
+		https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address/74428#74428
+
 		nmap -sP 192.168.0.0/24
+
+		ip -4 addr show | grep global
 		
 		Raspberry PI
 		ssh pi@192.168.0.153 / 123

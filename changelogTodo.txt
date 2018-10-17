@@ -1,12 +1,13 @@
 TODO
-	Comentario 2re 25:27
-
-	Preparar Debian con docker, java y golang
-	Preparar raspberry pi virtual
-	Reloj cuenta regresiva para Iphone sin bloquearse
-
 	/media/carper/UUI/local/jdotxt/todo.txt
+	
+	* Tareas:
 
+		Terminar gotour
+
+	* todo:
+		Comentario 2re 25:27
+		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
 	* Web UI:
 		https://demo.cuba-platform.com/app/#!
 
@@ -16,13 +17,6 @@ TODO
 		http://192.168.0.3:8080/feapracom/
 		smb://192.168.0.41
 		https://secure.globat.com/secure/login.bml
-
-		+ Tareas:
-		x Wifislax
-		x Virtualbox
-		x Instalar classvisualizer
-		Analizar alien fe
-		Nueva arquitectura feapracom -> fe
 
 		+ Plan de trabajo:
 		https://docs.google.com/spreadsheets/d/179z8UsrGORZbJuczwPRxVaLobw1mpW-_lIyQsuQTTV0/edit?usp=sharing

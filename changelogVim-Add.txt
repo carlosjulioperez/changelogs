@@ -1,4 +1,8 @@
 Vim
+	* Desactivar los números de línea
+		https://stackoverflow.com/questions/8322931/how-to-take-off-line-numbers-in-vi#8322955
+		:set nonu
+		:set nu!
 
 	* IDE:
 		Instalar tmux

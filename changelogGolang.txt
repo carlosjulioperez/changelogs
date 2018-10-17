@@ -2,12 +2,18 @@ Golang
 	* Clean architecture:
 		https://hackernoon.com/golang-clean-archithecture-efd6d7c43047
 
+	* Documentación:
+		https://stackoverflow.com/questions/17945068/how-can-you-see-the-documentation-for-a-specific-go-function#17945591
+
 	* Comparaciones con Spring/Java:
 		https://www.reddit.com/r/golang/comments/7vhccf/go_version_of_the_spring_framework/
 		https://www.reddit.com/r/golang/comments/4w4sws/go_vs_java_for_service_oriented_architecture/
 
 	* Microservicios:
 		https://gokit.io/
+	
+	* Base de datos:
+		https://medium.com/samsara-engineering/iterative-optimization-on-hot-paths-c89827749c20
 
 	* RAD:
 		https://gobuffalo.io/en

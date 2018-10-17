@@ -1,4 +1,6 @@
 Aplicaciones
+	+ cogs:
+		apracomsa: 23:27 23:30 -> 3 min
 
 	Claro
 	http://201.183.224.10/sql-ledger/login.pl	
@@ -15,6 +17,8 @@ Aplicaciones
 	https://trello.com/b/aZETtlcD/fe-apracom
 	
 Checklist
+
+	scp -P 3333 carper@192.168.0.3:/usr/local/apache-tomcat-7.0.54/webapps/feapracom/WEB-INF/classes/shiro.ini .
 
 	Cambiar configuración de teclado
 	https://askubuntu.com/questions/209597/how-do-i-change-keyboards-from-the-command-line
@@ -90,15 +94,14 @@ Instalación en servidor de Cromero 192.168.10.13
 		* Determinar si localhost está oyendo: nslookup localhost 
 
 	* Conexión remota SSH:
-
-		ssh carper@186.178.202.67 -p 2222
-		ssh carper@201.183.224.10 -p 2222
+		+ Ubuntu:
+		ssh carper@186.178.202.67 -p 3333
+		ssh carper@201.183.224.10 -p 3333
 		ssh carper@192.168.0.3
-
-		ssh cromero@186.178.202.67 -p 2222
-		ssh cromero@201.183.224.10 -p 2222
-		ssh cromero@192.168.0.3
 		
+		+ Centos:
+		ssh carper@192.168.0.253 -p 2022
+		ssh carper@186.178.202.68 -p 3333
 
 		+ Crear archivo de llave clave pública para ssh:
 			# ssh-keygen -t rsa -b 2048
@@ -255,8 +258,39 @@ Gestión de la BD
 		$ scp -P 3333 /home/carper/local/respaldo/database/19-09-2018.apracomsa.sql.bz2 carper@192.168.0.3:~
 		$ createdb -E SQL_ASCII -T template0 apracomsa_test
 		$ psql -U sql-ledger apracomsa_test < 19-09-2018.apracomsa.sql
-
 		
+		$ createdb -E SQL_ASCII -T template0 catver_prueba2
+		$ psql -U sql-ledger catver_prueba2 < 26-09-2018.catver.sql 
+
+	
+		** 11-oct-2018
+
+		alter database "old" rename to "new";
+		psql
+		alter database "aguas" rename to "zx2018";
+
+		Crear usuario Vania Vizueta como administrador en todas las bases de datos
+
+		Cambiar las claves de los usuarios
+		Enviar correo
+		Se ha procedido a reconfigurar los perfiles con claves temporales
+		Cambiar las claves, no compartir.
+
+		DEPURACION
+		agroavilab: Borrar usuarios solamente.
+
+		$ createdb -E SQL_ASCII -T template0 busi04102018
+		$ createdb -E SQL_ASCII -T template0 busi05102018
+		$ createdb -E SQL_ASCII -T template0 busi08102018
+		$ createdb -E SQL_ASCII -T template0 busi09102018
+		$ createdb -E SQL_ASCII -T template0 busi10102018
+
+		$ psql -U sql-ledger busi04102018 < 04-10-2018.busicentury.sql
+		$ psql -U sql-ledger busi05102018 < 05-10-2018.busicentury.sql
+		$ psql -U sql-ledger busi08102018 < 08-10-2018.busicentury.sql
+		$ psql -U sql-ledger busi09102018 < 09-10-2018.busicentury.sql
+		$ psql -U sql-ledger busi10102018 < 10-10-2018.busicentury.sql
+
 		\dt	Listado de tablas y usuarios
 		\ds	Listado de secuencias
 		
@@ -277,6 +311,8 @@ Gestión de la BD
 		GRANT ALL ON ALL TABLES    IN SCHEMA public TO "sql-ledger";
 		GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO "sql-ledger";
 		GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO "sql-ledger";
+
+		select * from parts where partnumber = 'BC-ACIPOPT'
 
 		+ Copiar un respaldo de la BD:
 			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .

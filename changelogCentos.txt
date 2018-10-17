@@ -2,7 +2,8 @@ Centos
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
 
-	$ ssh carper@192.168.0.154 -p 2022
+	ssh carper@192.168.0.253 -p 2022
+	ssh carper@186.178.202.68 -p 3333
 
 	* Configuración de servidor:
 		Habilitar dhcp y determinar la IP con el Gateway. Luego ponerlo como

@@ -1,4 +1,4 @@
-	TIPS
+TIPS
 	* Extraer el primer campo de string a la izquerda de los dos puntos:
 		https://stackoverflow.com/questions/6284256/how-to-trim-specific-text-with-grep
 
@@ -173,6 +173,8 @@
 		+ En lote:
 			sudo apt-get install imagemagick
 			for i in `ls`; do convert -resize 900x900 -quality 85 $i resized_$i; done
+	* Imagen a PDF:
+		$ convert image1.jpg image2.png image3.bmp output.pdf
 
 	* Archivos recientemente modificados:
 		+ Informe:
