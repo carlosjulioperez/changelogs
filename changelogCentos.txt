@@ -29,7 +29,7 @@ Centos
 
 		# service network restart
 		# yum install vim (resuelve la dependencia de perl)
-		# yum install tmux tree
+		# yum install tree screen
 		# yum install man man-pages
 
 	* selinux:
@@ -53,15 +53,20 @@ Centos
 		
 		#Port 22
 		Port 2022 
-		AllowUsers carper
+		AllowUsers carper cromero
+
+		# service sshd restart
 
 		# yum -y install policycoreutils-python
+		# sudo iptables -L -n
 		# vim /etc/sysconfig/iptables
 
 			## delete or comment out port 22 line ##
 			## -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
 			## open port 2022
 			-A INPUT -m state --state NEW -m tcp -p tcp --dport 2022 -j ACCEPT
+			## open port 8080
+			-A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
 
 		# service iptables stop
 		# service sshd reload
@@ -214,7 +219,94 @@ Centos
 				#AddDefaultCharset On
 
 		# service httpd restart
-	
+
+		+ Teclado:
+			https://www.metod.si/change-keyboard-layout-in-centos-in-console/
+
+		+ Java 7 y Tomcat 8:
+			centos 6 install tomcat
+			https://www.vultr.com/docs/how-to-install-apache-tomcat-8-on-centos-7
+			https://www.rosehosting.com/blog/how-to-install-tomcat-8-on-a-centos-6-vps/
+			https://newpush.com/2011/10/how-to-install-tomcat-6-on-rhel-6-or-centos-6/
+			https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7
+
+			+ Oracle:
+				https://tecadmin.net/steps-to-install-java-on-centos-5-6-or-rhel-5-6/
+				$ sudo tar zxvf jdk-7u80-linux-x64.tar.gz -C /opt
+				$ cd /opt/jdk1.7.0_80/
+			
+			+ OpenJDK:	
+				# yum install java-1.7.0-openjdk-devel.x86_64
+				# yum install java-1.8.0-openjdk-devel.x86_64
+
+			$ sudo alternatives --install /usr/bin/java java /opt/jdk1.7.0_80/bin/java 4
+			$ sudo alternatives --config java
+
+			# useradd -r tomcat8 --shell /bin/false
+			# yum install wget
+			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz -P /tmp
+			# tar -zxf /tmp/apache-tomcat-8.5.34.tar.gz -C /opt
+			# ln -s /opt/apache-tomcat-8.5.34 /opt/tomcat-latest
+			# chown -hR tomcat8: /opt/tomcat-latest /opt/apache-tomcat-8.5.34
+			
+			# vim /etc/init.d/tomcat8
+			export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
+			# chmod +x /etc/init.d/tomcat8
+			# service tomcat8 start
+			# chkconfig tomcat8 on
+
+			# vim /opt/apache-tomcat-8.5.34/conf/tomcat-users.xml
+				<role rolename="manager-gui"/>
+				<user username="" password="" roles="manager-gui"/>
+
+			# vim /opt/apache-tomcat-8.5.34/webapps/manager/META-INF/context.xml
+				<!--
+				  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+				         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+				  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
+				-->
+
+			+ Maven:
+				https://tecadmin.net/install-apache-maven-on-centos/
+
+				# yum install git ant
+				$ wget http://mirror.synyx.de/apache/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz -P /tmp
+				$ tar zxvf /tmp/apache-maven-3.5.4-bin.tar.gz -C /opt
+				$ sudo vi /etc/profile.d/maven.sh
+					export M2_HOME=/opt/maven
+					export PATH=${M2_HOME}/bin:${PATH}
+
+				$ source /etc/profile.d/maven.sh
+
+			+ Ant:
+				https://www.unixmen.com/install-apache-ant-maven-tomcat-centos-76-5/
+
+				$ tar zxvf /tmp/apache-ant-1.9.7-bin.tar.gz -C /opt
+				$ sudo vi /etc/profile.d/ant.sh
+
+					#!/bin/bash
+					ANT_HOME=/opt/ant
+					PATH=$ANT_HOME/bin:$PATH
+					export PATH ANT_HOME
+					export CLASSPATH=.
+
+				$ sudo chmod +x /etc/profile.d/ant.sh
+				$ source /etc/profile.d/ant.sh
+			+ Especificar JAVA_HOME:
+				$ sudo vi /etc/profile.d/java.sh
+					#export JAVA_HOME=/opt/jdk1.7.0_80
+					export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64	
+					export PATH=${JAVA_HOME}/bin:${PATH}
+
+		* Perl:	
+			Se generó nuevamente el archivo "fecola.jar" configurando el
+			entorno de openjdk 7.
+			Se vuelven a compilar los programas con maven
+			Se ejecuta la tarea ant fecola
+
+			+ Modificar línea 555 y 568:
+			$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledgerFE/bin/mozilla/arap.pl
+
 	+ SELINUX:
 		https://danwalsh.livejournal.com/56760.html
 

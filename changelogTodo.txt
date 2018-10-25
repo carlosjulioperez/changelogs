@@ -1,9 +1,58 @@
 TODO
 	/media/carper/UUI/local/jdotxt/todo.txt
+	/Volumes/UUI/local/jdotxt/todo.txt
 	
 	* Tareas:
+		Sacrificios
+
+		FE CentOS
+		Levantar ledger123
+		Depurar accesos de usuarios en members
+
+		Subir db atver
+
+		Montaje de NAS localmente
+		Respaldos 2 veces por día
 
 		Terminar gotour
+
+		====================================================================================================
+		. Llamar Espol
+		Alexis Fernando Lema Ordonez, 
+		alfelema@espol.edu.ec, alfelema@fiec.espol.edu.ec
+		Docente FIEC, Gestión de prácticas comunitarias / casos vulnerables
+
+		Adriana Elisa Collaguazo Jaramillo, 2269-920, Lunes 11:50
+		acollag@espol.edu.ec, acollaguazo@fiec.espol.edu.ec
+		Docente FIEC, PLAN PADRINO
+
+		Lady Maria Soto Navarrete
+		lsoto@espol.edu.ec
+		Docente FCSH, Consulta de casos o estudiantes
+
+		Diana Elizabeth Ortiz Quiroz
+		deortiz@espol.edu.ec
+		Docente FCSH, PLAN PADRINO
+
+		Proyecto de Mejora de Trabajo Social.
+		====================================================================================================
+		
+Buenas tardes.
+
+Mi nombre es Carlos Julio Pérez Quizhpe, matrícula 199923996 de LICSIS, estudiante de la materia Interacción Humano Computador de Katherine Chiluiza para el Proyecto de Mejora de Trabajo Social. Quisiera saber si es posible reunirnos vía Skype, WhatsApp o de forma presencial para entrevistarle en temas relacionados a:
+
+Calamidades domésticas de estudiantes
+Becas
+Plan de Padrinos
+
+El propósito de la entrevista es facilitar al UBEP y a sus usuarios el manejo en línea de calamidades, becas estudiantiles y el plan de padrinos de Espol.  
+
+Mi número celular con whatsapp es 0993208265.
+
+Le agradezco de antemano por su colaboración y estaré al pendiente de sus comentarios.
+
+Saludos cordiales.
+
 
 	* todo:
 		Comentario 2re 25:27

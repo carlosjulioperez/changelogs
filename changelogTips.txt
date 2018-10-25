@@ -1,4 +1,6 @@
 TIPS
+	* Eliminar Virtualbox:
+		http://www.kuneri.com/2008/11/06/how-to-completely-remove-virtualbox-on-mac/
 	* Extraer el primer campo de string a la izquerda de los dos puntos:
 		https://stackoverflow.com/questions/6284256/how-to-trim-specific-text-with-grep
 
