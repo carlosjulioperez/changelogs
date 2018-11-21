@@ -2,12 +2,30 @@ Debian 9 stretch
 
 Desarrollo
 	+ Paquetes:
-	# sudo apt-get install  gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gtk mc uzbl xchm qalculate tmux postgresql git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf perlbrew
+	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux 
 
-	# sudo apt-get install lxde qemu-kvm libvirt-clients libvirt-daemon-system virt-manager pgadmin3
+	+ Dependencia de playonlinux en hp stream:
+	Ejecutando playonlinux desde consola se pudo determinar el error de
+	dependencias
+	$ sudo dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+
+	+ Actualizar youtube-dl:
+	$ sudo apt install python-pip
+	$ sudo pip install youtube-dl
+	$ sudo pip install --upgrade youtube-dl
+
+	+ Desarrollo:
+	# sudo apt-get install postgresql perlbrew
+
+	# sudo apt-get install lxde qemu-kvm libvirt-clients libvirt-daemon-system virt-manager
 
 	$ sudo apt-get update
 	$ sudo apt-get install chromium chromium-l10n
+
+	+ Lista de servicios activos:
+		https://unix.stackexchange.com/questions/82378/what-is-the-recommended-way-of-checking-running-services
+		# ls -1 /etc/rc$(runlevel| cut -d" " -f2).d/S*
+		# service --status-all
 
 	+ Docker:
 		https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
@@ -27,8 +45,8 @@ Desarrollo
 	/home/carper/local/utils/jdk1.8.0_181
 
 	+ Virtualbox:
-	Descargar: virtualbox-5.2_5.2.14-123301~Debian~stretch_amd64.deb
-	$ sudo apt-get install linux-headers-amd64 linux-headers-4.9.0-4-amd64
+	https://wiki.debian.org/VirtualBox
+	$ sudo apt install linux-headers-amd64 linux-headers-4.9.0-6-amd64
 
 	+ Teamviewer:
 	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux

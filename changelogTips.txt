@@ -83,6 +83,12 @@ TIPS
 	* Montar un filesystem remoto:
 		https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
 
+		$ sudo apt install sshfs
+		$ sudo mkdir /mnt/centosfe
+		$ sudo sshfs -p 2022 -o allow_other carper@192.168.0.253:/home/carper/ /mnt/centosfe
+	 	$ df -hT
+		$ sudo umount /mnt/centosfe
+
 	* Crear nuevo archivo en Nautilus:
 		https://askubuntu.com/questions/208291/how-to-create-a-new-blank-file-in-nautilus-3-6-and-above
 	
@@ -130,6 +136,7 @@ TIPS
 
 		sudo apt-get install pdfjam
 		pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
+		pdfnup --nup 3x2 --suffix '3x2' *.pdf
 
 	* Free disk space:
 		http://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu

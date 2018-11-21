@@ -32,6 +32,26 @@ Checklist
 	tail -f /usr/local/apache-tomcat-7.0.54/bin/cjfews.log
 	tail -f ~/fe/logs/tomcat/catalina.2018-07-18.log
 
+	+ Centos:
+	tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2018-10-30.log
+
+
+Verificar error:
+30-Oct-2018 15:57:27.056 WARNING [localhost-startStop-1]
+org.apache.tomcat.util.scan.StandardJarScanner.processURLs Failed to scan
+[file:/opt/apache-tomcat-8.5.34/lib/jaxws-rt.jar] from classloader hierarchy
+java.io.FileNotFoundException: /opt/apache-tomcat-8.5.34/lib/jaxws-rt.jar (No
+		such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:221)
+at java.util.zip.ZipFile.<init>(ZipFile.java:151)
+	at
+java.util.jar.JarFile.<init>(JarFile.java:154)
+	at
+java.util.jar.JarFile.<init>(JarFile.java:118)
+
+
+
 	tail -f ~/fe/logs/feapracom.log (revisar si existe)
 
 	tail -f ~/fe/logs/tomcat/catalina.2018-06-12.log
@@ -44,6 +64,7 @@ Checklist
 	ps aux | grep java
 	sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
 	sudo kill -KILL `ps -e | grep chromium | awk '{print $1}'`
+	sudo kill -KILL `ps -e | grep oracle | awk '{print $1}'`
 	sudo service tomcat7 start
 	sudo service tomcat7 restart
 
@@ -276,6 +297,10 @@ Gestión de la BD
 		DEPURACION
 		agroavilab: Borrar usuarios solamente.
 
+		$ createdb -E SQL_ASCII -T template0 apracomsa
+		$ createdb -E SQL_ASCII -T template0 atver
+		$ createdb -E SQL_ASCII -T template0 tradetecsa
+
 		$ createdb -E SQL_ASCII -T template0 busi04102018
 		$ createdb -E SQL_ASCII -T template0 busi05102018
 		$ createdb -E SQL_ASCII -T template0 busi08102018
@@ -384,14 +409,16 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161
 
 		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
 
-		pg_dump apracomsa   > apr-2018-10-23.sql 
+		pg_dump apracomsa   > apr-2018-11-14.sql 
+		pg_dump atver       > atv-2018-11-14.sql 
+		pg_dump catver      > cat-2018-11-14.sql 
+		pg_dump tradetecsa  > tra-2018-11-14.sql 
+		
 		pg_dump blutec      > blu-2018-10-23.sql 
 		pg_dump busicentury > bus-2018-10-23.sql 
-		pg_dump catver      > cat-2018-10-23.sql 
-		pg_dump tradetecsa  > tra-2018-10-23.sql 
-		
 		pg_dump avisusa     > avi-2018-10-23.sql 
 		pg_dump biolitsa    > bio-2018-10-23.sql 
+		pg_dump biolitsa    > bio-2018-10-26.sql 
 		pg_dump gambalit    > gam-2018-10-23.sql 
 
 		pg_dump peru326     > bio-2018-10-23.sql 

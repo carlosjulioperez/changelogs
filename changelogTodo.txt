@@ -5,14 +5,9 @@ TODO
 	* Tareas:
 		Sacrificios
 
-		FE CentOS
-		Levantar ledger123
-		Depurar accesos de usuarios en members
-
-		Subir db atver
-
+		Respaldos 2 veces por día (dbbackup.sh)
 		Montaje de NAS localmente
-		Respaldos 2 veces por día
+		Copia de respaldos a /mnt/nas
 
 		Terminar gotour
 
