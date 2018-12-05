@@ -1,0 +1,8 @@
+Mis servicios
+Competencia
+	+ ERP:
+		https://qbeconline.com/quickbooks
+	+ Factura electrónica:
+		https://www.facturadeuna.com/
+		https://www.factura9.com/
+		https://quindefee.com/quinde/

@@ -3,13 +3,39 @@ TODO
 	/Volumes/UUI/local/jdotxt/todo.txt
 	
 	* Tareas:
-		Sacrificios
-
-		Respaldos 2 veces por día (dbbackup.sh)
-		Montaje de NAS localmente
-		Copia de respaldos a /mnt/nas
-
 		Terminar gotour
+
+		Jéssica Pico
+		jessypq29@gmail.com
+		0984224545
+		
+		Solicitar formato excel de plan ctas, prod, clientes, prov, etc a Jéssica
+		Hacer las traducciones en español
+		Agregar las retenciones leyendo directamente de facturas y de compras, porcentajes de retención en el plan de cuentas, Manual o no Ruddy
+		Reporte de retención por 1%, 2%, etc.
+		
+		En los ensambles determinar si al vender un componente, qué pasa con el stock del ensamble. Kardex
+		Plan de cuentas
+		Ingresos, Egresos, Trx, Vtas, compras, bodegas, inventario general
+		Pagos, cobros.
+		IVA
+		
+		ATS: Guiarme del DIMM para leer del sistema y generar XML basados en PYME
+		Nómina
+		
+		Tecnología:
+		Crear wiki para tutorial del sistema
+		Crear docker
+		Máquina virtual con el sistema
+		OpenXava (probar con los usuarios) Lombok y Obfuscate Monolítico
+		
+		Spring:
+		https://stackoverflow.com/questions/52547316/spring-boot-jpa-generate-entity-error-from-existing-tables
+		https://spring.io/guides/gs/accessing-data-jpa/
+		
+		https://docs.docker.com/docker-for-mac/install/
+		https://github.com/zkoss/zkspringboot
+
 
 		====================================================================================================
 		. Llamar Espol

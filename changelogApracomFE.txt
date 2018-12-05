@@ -408,52 +408,16 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161
 		psql dbname < infile
 
 		CREATE USER "sql-ledger" WITH PASSWORD 'sql-ledger';
-
-		pg_dump apracomsa   > apr-2018-11-14.sql 
-		pg_dump atver       > atv-2018-11-14.sql 
-		pg_dump catver      > cat-2018-11-14.sql 
-		pg_dump tradetecsa  > tra-2018-11-14.sql 
-		
-		pg_dump blutec      > blu-2018-10-23.sql 
-		pg_dump busicentury > bus-2018-10-23.sql 
-		pg_dump avisusa     > avi-2018-10-23.sql 
-		pg_dump biolitsa    > bio-2018-10-23.sql 
-		pg_dump biolitsa    > bio-2018-10-26.sql 
-		pg_dump gambalit    > gam-2018-10-23.sql 
-
-		pg_dump peru326     > bio-2018-10-23.sql 
-
-		dbrestore.sh
-
-		dropdb apracomsa  
-		dropdb blutec     
-		dropdb busicentury
-		dropdb catver     
-		dropdb peru326    
-
-		$ createdb -E SQL_ASCII -T template0 apracomsa
-		$ createdb -E SQL_ASCII -T template0 blutec
-		$ createdb -E SQL_ASCII -T template0 busicentury
-		$ createdb -E SQL_ASCII -T template0 catver
-		$ createdb -E SQL_ASCII -T template0 tradetecsa
-
-		$ createdb -E SQL_ASCII -T template0 avisusa
-		$ createdb -E SQL_ASCII -T template0 biolitsa
-		$ createdb -E SQL_ASCII -T template0 gambalit
-
 		$ createdb -E UTF8      -T template0 peru326
 
-		$ psql apracomsa   < apr-2018-10-23.sql 
-		$ psql blutec      < blu-2018-10-23.sql 
-		$ psql busicentury < bus-2018-10-23.sql 
-		$ psql catver      < cat-2018-10-23.sql 
-		$ psql tradetecsa  < tra-2018-10-23.sql 
-		
-		$ psql avisusa     < avi-2018-10-23.sql 
-		$ psql biolitsa    < bio-2018-10-23.sql 
-		$ psql gambalit    < gam-2018-10-23.sql 
+		pg_dump apracomsa   > ap-daxti.sql
+		pg_dump busicentury > bc-daxti.sql
 
-		$ psql peru326     < bio-2018-10-23.sql 
+		$ createdb -E SQL_ASCII -T template0 ap-daxti
+		$ createdb -E SQL_ASCII -T template0 bc-daxti
+
+		$ psql ap-daxti < ap-daxti.sql
+		$ psql bc-daxti < bc-daxti.sql
 
 	* Restaurar una tabla:
 		https://feeding.cloud.geek.nz/posts/restoring-single-table-from-postgres/

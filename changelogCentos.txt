@@ -7,8 +7,26 @@ Centos
 	ssh carper@186.178.202.68 -p 3333
 
 	* Montar NAS:
+		Ejemplo en ubuntu:
+		mount -t cifs -o username=cromero,password=macadamia //192.168.0.41/PostgreSql /mnt/ 
+
+		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-client-config-autofs.html	
+
 		https://wiki.centos.org/TipsAndTricks/WindowsShares
-		# yum install samba-client samba-common cifs-utils
+		# yum install autofs samba-client samba-common cifs-utils
+
+		$ sudo mkdir /nas
+		$ sudo vim /etc/auto.master
+		/nas /etc/auto.nas
+		
+		$ sudo vim /etc/auto.nas
+		nasbox	-fstype=cifs,rw,noperm,user=cromero,pass=macadamia ://192.168.0.41/PostgreSql
+
+		$ sudo vim /etc/nsswitch.conf
+		hosts:      files dns wins
+
+		$ sudo service autofs restart
+
 	* Tareas programadas:
 		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-autotasks.html
 		https://www.rosehosting.com/blog/automate-system-tasks-using-cron-on-centos-7/
@@ -63,6 +81,7 @@ Centos
 
 	* eth0 no encontrada al copiar vdi en otra máquina:
 		https://www.ostechnix.com/solve-device-eth0-not-seem-present-delaying-initialization-error/
+		# vi /etc/sysconfig/network-scripts/ifcfg-eth0
 		Cambiar en GUI de VB por la MAC de la máquina virtual.
 
 	* Cambiar locale:
@@ -117,6 +136,8 @@ Centos
 			-A INPUT -m state --state NEW -m tcp -p tcp --dport 2022 -j ACCEPT
 			## open port 8080
 			-A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+			## open port 5432 postgresql
+			-A INPUT -m state --state NEW -m tcp -p tcp --dport 5432 -j ACCEPT
 
 		# service iptables stop
 		# service sshd reload
@@ -152,12 +173,14 @@ Centos
 		  postgresql.x86_64 0:8.4.20-8.el6_9
 
 		# vim /var/lib/pgsql/data/postgresql.conf
-		#	listen_addresses = '*'
-		#	port = 5432
+			listen_addresses = '*'
+			port = 5432
 
 		# vim /var/lib/pgsql/data/pg_hba.conf
 			#local   all         all                               ident
 			local   all         all                               trust
+			
+			host    all         all         192.168.253.238/24      trust
 
 		# service postgresql restart
 		# su postgres

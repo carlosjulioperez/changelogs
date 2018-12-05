@@ -1,7 +1,23 @@
 Docker + Status:
+		$ ssh pi@192.168.253.133
 		$ sudo systemctl status docker
 	+ sudo:
 		$ su - ${USER}
+
+	+ Raspbian PI3:
+		https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
+		$ curl -sSL https://get.docker.com | sh
+
+		$ sudo docker run hello-world
+
+		$ sudo docker search centos
+		$ sudo docker pull centos
+		$ sudo docker images
+	
+		Borrar las dependencias y al final la imagen principal
+		$ sudo docker ps -as
+		$ sudo docker rm 86c3dcbe47cd
+		$ sudo docker rmi centos
 
 	+ Bases:
 		$ docker ps -a
