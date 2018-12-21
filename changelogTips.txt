@@ -1,4 +1,8 @@
 TIPS
+
+	258082
+	carmen quijije fotos un año atrás
+
 	* Eliminar Virtualbox:
 		http://www.kuneri.com/2008/11/06/how-to-completely-remove-virtualbox-on-mac/
 	* Extraer el primer campo de string a la izquerda de los dos puntos:
@@ -42,7 +46,6 @@ TIPS
 		        Wake-up Type: Power Switch
 		        SKU Number: 07BE
 		        Family: XPS
-
 
 	* Firewall:
 		https://www.cyberciti.biz/faq/how-to-block-an-ip-address-with-ufw-on-ubuntu-linux-server/
@@ -185,6 +188,13 @@ TIPS
 	* Imagen a PDF:
 		$ convert image1.jpg image2.png image3.bmp output.pdf
 
+		https://superuser.com/questions/290656/combine-multiple-images-using-imagemagick
+		
+		$ montage -mode concatenate -tile 3x *.png cap5.pdf
+		$ montage -mode concatenate -tile 4x *.png cap5.pdf
+
+
+
 	* Archivos recientemente modificados:
 		+ Informe:
 			https://askubuntu.com/questions/411462/show-recent-modified-created-files-using-terminal	
@@ -270,7 +280,7 @@ TIPS
 			http://vrapper.sourceforge.net/update-site/stable
 			http://eclipse-jetty.github.io/update/
 
-		+ Confugiración:
+		+ Configuración:
 			Error: # C  [libsoup-2.4.so.1+0x6c2a1]  soup_session_feature_detach+0x11
 			Agregar en eclipse.ini:
 			-Dorg.eclipse.swt.browser.DefaultType=mozilla
@@ -362,7 +372,6 @@ TIPS
 
 		grep -rnw '.' -e "http://java.sun.com/jstl/core"
 
-
 		http://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-on-linux
 	* Búsqueda de texto en directorio:
 
@@ -426,6 +435,10 @@ TIPS
 		find ./ -type f -name "\.*sw[klmnop]" -delete
 		find ./ -type f -name "\.*swp" -delete
 	
+	* Buscar archivos y aplicar permisos:
+		find . -name "*.sh" -exec chmod +x {} \;
+		find . -name "*.pl" -exec chmod +x {} \;
+
 	* Display first lines of files:
 		https://www.cyberciti.biz/faq/unix-linux-show-first-10-20-lines-of-file/
 

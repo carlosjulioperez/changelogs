@@ -2,9 +2,56 @@ TODO
 	/media/carper/UUI/local/jdotxt/todo.txt
 	/Volumes/UUI/local/jdotxt/todo.txt
 	
+	* Espiritual:
+		Comentario 2re 25:27
+		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
+		+ Las profecías de Daniel:
+			https://youtu.be/2kHbCVwgDsE
+	
 	* Tareas:
-		Terminar gotour
+		CSV para artículos, plan cuentas, clientes, proveedores
+		Análisis de script para hacer Repost Trx de un ítem
+		Características del PC
+		Diapositivas de SGC
+		Tarea de SGC
+		Tarea de STD
+		Probar docker
+		Analizar routers para escuelas escasos recursos
+		Revisar Marvel App
+		Análisis de NativeScript vs resto
 
+		Terminar tutorial Perl
+		Analizar desarrollo de sistema nómina en Go
+		Terminar gotour
+		js SHORT
+		Exportar contactos de iphone
+
+	* SQL-Ledger:
+		Revisar warehouse el mensaje en Apracom por idioma
+		Ingresar valor de descuento por línea (como lo hace FE)
+		Revisar los ensambles en BC
+		
+	* Nuevos desarrollos:
+		Aprender React móviles (comparar con Vue.JS)
+		SAP usa NativeScript para hacer Apps móviles. Integrar con VueJS.
+
+		Factura móvil
+		Pedidos móvil
+
+		Crear wiki para tutorial del sistema
+		OpenXava (probar con los usuarios) Lombok y Obfuscate Monolítico
+		
+		Spring:
+		https://stackoverflow.com/questions/52547316/spring-boot-jpa-generate-entity-error-from-existing-tables
+		https://spring.io/guides/gs/accessing-data-jpa/
+		
+		https://docs.docker.com/docker-for-mac/install/
+		https://github.com/zkoss/zkspringboot
+
+	* Web UI:
+		https://demo.cuba-platform.com/app/#!
+
+	* Mis servicios:
 		Jéssica Pico
 		jessypq29@gmail.com
 		0984224545
@@ -22,20 +69,11 @@ TODO
 		
 		ATS: Guiarme del DIMM para leer del sistema y generar XML basados en PYME
 		Nómina
-		
-		Tecnología:
-		Crear wiki para tutorial del sistema
-		Crear docker
-		Máquina virtual con el sistema
-		OpenXava (probar con los usuarios) Lombok y Obfuscate Monolítico
-		
-		Spring:
-		https://stackoverflow.com/questions/52547316/spring-boot-jpa-generate-entity-error-from-existing-tables
-		https://spring.io/guides/gs/accessing-data-jpa/
-		
-		https://docs.docker.com/docker-for-mac/install/
-		https://github.com/zkoss/zkspringboot
+	
+	* Espol:
 
+		Encanto gourmet tiene el registro de los depósitos de cada estudiante.
+		¿Cómo llegar a los posibles interesados?
 
 		====================================================================================================
 		. Llamar Espol
@@ -58,28 +96,22 @@ TODO
 		Proyecto de Mejora de Trabajo Social.
 		====================================================================================================
 		
-Buenas tardes.
+		Buenas tardes.
+		
+		Mi nombre es Carlos Julio Pérez Quizhpe, matrícula 199923996 de LICSIS, estudiante de la materia Interacción Humano Computador de Katherine Chiluiza para el Proyecto de Mejora de Trabajo Social. Quisiera saber si es posible reunirnos vía Skype, WhatsApp o de forma presencial para entrevistarle en temas relacionados a:
+		
+		Calamidades domésticas de estudiantes
+		Becas
+		Plan de Padrinos
+		
+		El propósito de la entrevista es facilitar al UBEP y a sus usuarios el manejo en línea de calamidades, becas estudiantiles y el plan de padrinos de Espol.  
+		
+		Mi número celular con whatsapp es 0993208265.
+		
+		Le agradezco de antemano por su colaboración y estaré al pendiente de sus comentarios.
+		
+		Saludos cordiales.
 
-Mi nombre es Carlos Julio Pérez Quizhpe, matrícula 199923996 de LICSIS, estudiante de la materia Interacción Humano Computador de Katherine Chiluiza para el Proyecto de Mejora de Trabajo Social. Quisiera saber si es posible reunirnos vía Skype, WhatsApp o de forma presencial para entrevistarle en temas relacionados a:
-
-Calamidades domésticas de estudiantes
-Becas
-Plan de Padrinos
-
-El propósito de la entrevista es facilitar al UBEP y a sus usuarios el manejo en línea de calamidades, becas estudiantiles y el plan de padrinos de Espol.  
-
-Mi número celular con whatsapp es 0993208265.
-
-Le agradezco de antemano por su colaboración y estaré al pendiente de sus comentarios.
-
-Saludos cordiales.
-
-
-	* todo:
-		Comentario 2re 25:27
-		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
-	* Web UI:
-		https://demo.cuba-platform.com/app/#!
 
 + apracom:
 	* Enlaces:
@@ -113,37 +145,6 @@ report=receipts
 			
 		http://www.dell.com/en-us/work/shop/servers-storage-and-networking/poweredge-r530-rack-server/spd/poweredge-r530/pe_r530_1451_a/configurations?selectionState=eyJGUHJpY2UiOjQ3NTQuMDEsIk9DIjoicGVfcjUzMF8xNDUxX2EiLCJRdHkiOjEsIk1vZHMiOlt7IklkIjoxNjk3LCJPcHRzIjpbeyJJZCI6IjFDUFUifV19LHsiSWQiOjE1NjAsIk9wdHMiOlt7IklkIjoiMTZHQk1NIiwiUHJpY2UiOjMyNy43MywiUXR5IjozfV19LHsiSWQiOjE1NDAsIk9wdHMiOlt7IklkIjoiUjFIIn1dfSx7IklkIjoxNTQxLCJPcHRzIjpbeyJJZCI6IkgzMzAiLCJQcmljZSI6MTU2LjkzfV19LHsiSWQiOjE1NzAsIk9wdHMiOlt7IklkIjoiU0E5NkIiLCJQcmljZSI6NzE3Ljg2LCJRdHkiOjJ9XX0seyJJZCI6MTY1MiwiT3B0cyI6W3siSWQiOiJOT01FRCJ9XX0seyJJZCI6MTUyMCwiT3B0cyI6W3siSWQiOiJJOEJBUyJ9XX0seyJJZCI6MTUxNCwiT3B0cyI6W3siSWQiOiJPQk5JQ1EifV19LHsiSWQiOjE2MDAsIk9wdHMiOlt7IklkIjoiRFZSV1NBIiwiUHJpY2UiOjYyLjR9XX0seyJJZCI6MTYyMCwiT3B0cyI6W3siSWQiOiI0OTVSIiwiUHJpY2UiOjM3Ny41Mn1dfSx7IklkIjoxNjIxLCJPcHRzIjpbeyJJZCI6Ik5QV1JDRCJ9XX0seyJJZCI6MTYxMCwiT3B0cyI6W3siSWQiOiJSUkNNQSIsIlByaWNlIjoxMTkuMTJ9XX1dfQ%253D%253D
 
-		+ Servidor y equipo NAS como disco virtual:
-			18 10 p=2
-		+ Informe de requerimientos de SQL-Ledger de Carol Pulido:
-			18 10 p=1
-			17 10 p=8
-		+ Informe servidor y correos:
-			11 10 p=2
-
-	* encuesta:
-		+ Encuesta satisfacción Sql-Ledger 2.8.20:
-			05 10 p=4
-
-	* @config:
-		+ Configuración de tarjeta de red en máquina virtual Ubuntu 10.04 con
-		QEMU y KVM sobre Knoppix:
-			12 10 p=5
-
-		+ Instalar ubuntu server 10.04 con qemu y kvm:
-			11 10 p=5
-		+ Configuración de máquina virtual:
-			10 10 p=2
-			05 10 p=10
-	
-		+ Instalación de virtualbox:
-			/media/sda1/vm/SQL-Ledger-2.8.2.vdi
-			04 10 p=20
-
-	* @fe:
-		+ Mostrar mensaje cola autorización:
-			10 10 p=2
-
 		(Ajustes en retenciones):
 			24 09 p=8
 			21 09 p=12
@@ -173,60 +174,13 @@ report=receipts
 					icr.setFechaEmision
 					En Proceso.java 138 obtenerlo y grabarlo en EntidadDAO
 
-
-
-
-	* @propuesta:
-		(Propuestas de servicios y curso postgres):
-			https://docs.google.com/document/d/1jO8KIhDfZq4RrmYqw5SIsEjWBgFod_hYyEZKUt6Ftww/edit?usp=sharing
-			15 09 p=2
 	
-	vim /media/sdc1/documentos/textoTmp/changelogApracomFE.txt
-
 	$F{infoCompRetencion}.getFechaEmision()
 	~/proyectos/cjerp/feapracom/src/main/java/ec/cjpq/feapracom/bean/DocumentoBean.java
 	543
 	
 	setFechaEmision transdate como Date()
 	Probar la retención PDF
-
-	/mnt-system/local/projects/cjerp/feapracom/src/main/java/ec/cjpq/feapracom/dao/EntidadDao.java
-	713
-
-	+ 28-08 (10:48 - 12:57) p=5 :
-		Generar feapracom.war
-		Enviar correo a Hugo de cambios en RE
-		Enviar propuesta de programador Java
-
-	+ 27-08 (20:40) p=11 :
-		Determinar la última retención de pruebas (OK)
-	
-	+ 22-08 (20:40) p=3 :
-		Agregar usuarios de shiro
-		Verificar RIDE enviado desde el correo de apracom
-		Actualizar feapracom.war
-
-+carper
-	* @programming
-		Analizando Kotlin:
-			27 09 p=6
-			25 09 p=1
-
-+sgs
-	* inspcont
-		+ Estrategia de BD y pantalla inspección:
-			10 10 p=1
-			09 10 p=14
-			Creando proye
-		+ Configuración:
-			02 10 p=4
-	
-	* @diseño
-		Diagranas UML:
-			01 10 p=5
-	* @propuesta
-		Propuesta móvil SGS contenedores:
-			25 09 p=1
 
 Diseño de Sistemas
 	https://docs.google.com/document/d/1ziyomEzD8uQzMojxZXKeeioqvQzIQ8L7QNYTpx6HpxQ/edit
@@ -237,9 +191,6 @@ Revisar
 
 	* Mike Acton about Java:
 	https://www.youtube.com/watch?v=rX0ItVEVjHc
-
-	* Las profecías de Daniel:
-	https://youtu.be/2kHbCVwgDsE
 
 	* Fin de Java:
 	https://www.quora.com/Is-Google-implictly-going-to-drop-Java-and-use-Kotlin-for-Android-due-to-licensing-issues-with-Oracle

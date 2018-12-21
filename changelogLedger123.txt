@@ -1,4 +1,32 @@
 Ledger123 steps install
+	* Versión 3.0.3 en Raspberry:
+		http://www.sql-ledger-network.com/dokuwiki/doku.php?id=step_by_step_installation:debian
+
+		+ Solución de Error Can't locate bin/mozilla/login.pl:
+			+ Segundo método:
+				https://www.sql-ledger.com/cgi-bin/nav.pl?page=misc/faq.html&title=FAQ
+				https://metacpan.org/pod/release/XSAWYERX/perl-5.26.0/pod/perldelta.pod#Removal-of-the-current-directory-%28%22.%22%29-from-@INC
+			+ Primer método:
+				https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=869994
+
+				$ sudo vim /etc/apache2/apache2.conf
+				SetEnv PERL5LIB "." 
+				$ sudo service apache2 restart
+
+		+ Configuración:
+			$ sudo mv /var/www/html/ledger123/ /opt
+			$ sudo vim /etc/apache2/apache2.conf
+			$ sudo service apache2 restart
+
+			$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
+				local           all        all           trust
+		
+			$ sudo vim /etc/postgresql/9.6/main/postgresql.conf
+				listen_addresses = 'localhost'
+				port = 5432 
+
+			$ sudo service postgresql restart
+
 	* Versión 3.0.3 en ubuntu 10.04 32 bits:
 		
 		# apt-get install libdbix-simple-perl # ubuntu / debian

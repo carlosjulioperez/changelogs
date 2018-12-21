@@ -127,7 +127,7 @@ SQL-Ledger
 			# tar zxvf sql-ledger-3.2.5.tar.gz
 			# mv sql-ledger sql-ledger325
 			# cd sq-ledger325
-			# chown www-data:www-data users/ css/ spool/ templates/
+			# chown www-data:www-data users/ css/ spool/ templates/ images/
 			# cd /etc/apache2/
 			# vim sql-ledger-httpd.conf
 	

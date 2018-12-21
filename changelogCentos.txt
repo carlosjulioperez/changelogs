@@ -5,6 +5,7 @@ Centos
 	ssh carper@192.168.0.253 -p 2022
 	ssh carper@192.168.253.179 -p 2022
 	ssh carper@186.178.202.68 -p 3333
+	ssh carper@186.3.200.21 -p 2022
 
 	* Montar NAS:
 		Ejemplo en ubuntu:
@@ -50,7 +51,6 @@ Centos
 		cd /usr/local/SL/esquema_nuevo/sql-ledger/
 		./is.pl "login=ap_cromero&path=bin/mozilla/&password=forever&action=continue&nextsub=repost_cogs"
 
-
 		# vim /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh
 		#!/bin/sh
 		#
@@ -59,6 +59,11 @@ Centos
 		cd /usr/local/SL/esquema_nuevo/busicentury/
 		./is.pl "login=bu_cromero&path=bin/mozilla/&password=123&action=continue&nextsub=repost_cogs"
 
+	* Desactivar ping:
+		https://webhostinggeeks.com/howto/how-to-deny-icmp-ping-request-on-centos-6-2/
+
+		$ sudo vim /etc/sysctl.conf
+		net.ipv4.icmp_echo_ignore_all = 1
 
 	* Monitorizar:
 		sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2018-11-13.log
@@ -219,9 +224,6 @@ Centos
 	* Apache:
 		https://www.linode.com/docs/web-servers/apache/apache-web-server-on-centos-6/
 
-		# Conocer el usuario y grupo
-		# egrep -i '^user|^group' /etc/httpd/conf/httpd.conf
-
 		# yum -y install httpd
 		# service httpd start
 		# chkconfig httpd on
@@ -229,6 +231,9 @@ Centos
 			iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 		# service iptables save
 		# service iptables restart
+
+		# Conocer el usuario y grupo
+		# egrep -i '^user|^group' /etc/httpd/conf/httpd.conf
 
 	* SQL-Ledger:
 		+ Carpetas home de apache:
@@ -247,7 +252,7 @@ Centos
 		# cd /usr/local/SL/2.8.20
 		# chown -R root:root sql-ledger
 		# cd sql-ledger
-		# chown -R apache:apache users/ css/ templates/ spool/ images/
+		# chown -R apache: users/ css/ templates/ spool/ images/
 
 		Para Ubuntu
 		# chown -R www-data:www-data users/ css/ templates/ spool/ images/

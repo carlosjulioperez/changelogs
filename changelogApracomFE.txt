@@ -403,6 +403,9 @@ apracomsa
 
 INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161');
 
+Blutec
+INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
+
 	* Backup y restore:
 		pg_dump dbname > outfile
 		psql dbname < infile
