@@ -1,6 +1,8 @@
 TODO
 	/media/carper/UUI/local/jdotxt/todo.txt
 	/Volumes/UUI/local/jdotxt/todo.txt
+
+	Sebastián Devsu remoto
 	
 	* Espiritual:
 		Comentario 2re 25:27
@@ -9,22 +11,7 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
-		CSV para artículos, plan cuentas, clientes, proveedores
-		Análisis de script para hacer Repost Trx de un ítem
-		Características del PC
-		Diapositivas de SGC
-		Tarea de SGC
-		Tarea de STD
-		Probar docker
-		Analizar routers para escuelas escasos recursos
-		Revisar Marvel App
-		Análisis de NativeScript vs resto
-
-		Terminar tutorial Perl
-		Analizar desarrollo de sistema nómina en Go
-		Terminar gotour
-		js SHORT
-		Exportar contactos de iphone
+		Comparar apracom con apracomFe
 
 	* SQL-Ledger:
 		Revisar warehouse el mensaje en Apracom por idioma
