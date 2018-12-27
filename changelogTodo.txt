@@ -16,7 +16,6 @@ TODO
 		Aplicar ajustes FE en 3.0.7
 
 		Crear BD de 2019 para cada empresa
-
 		Prioridades:
 			Catver			*1
 			Blutec			*1
@@ -29,6 +28,8 @@ TODO
 			Propar			*6
 			Atver			*7
 			Ponte logistica	*8
+
+		Copiar /home/carper/local/docs/apracom/ en pendrive
 
 		scp -P 2022 /home/carper/local/docs/apracom/import/tablas.tar.gz carper@186.3.200.21:~
 		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~

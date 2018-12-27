@@ -286,21 +286,20 @@ Gestión de la BD
 		DEPURACION
 		agroavilab: Borrar usuarios solamente.
 
-		$ createdb -E SQL_ASCII -T template0 apracomsa
-		$ createdb -E SQL_ASCII -T template0 atver
-		$ createdb -E SQL_ASCII -T template0 tradetecsa
+		$ createdb -E SQL_ASCII -T template0 catver19
+		$ createdb -E SQL_ASCII -T template0 blutec19
+		$ createdb -E SQL_ASCII -T template0 apracomsa19
+		$ createdb -E SQL_ASCII -T template0 tradetecsa19
+		$ createdb -E SQL_ASCII -T template0 busicentury19
+			
+		** 3.2.6
+		$ createdb -E UTF8      -T template0 biomicro19
+		$ createdb -E UTF8      -T template0 qualperu19
 
-		$ createdb -E SQL_ASCII -T template0 busi04102018
-		$ createdb -E SQL_ASCII -T template0 busi05102018
-		$ createdb -E SQL_ASCII -T template0 busi08102018
-		$ createdb -E SQL_ASCII -T template0 busi09102018
-		$ createdb -E SQL_ASCII -T template0 busi10102018
-
-		$ psql -U sql-ledger busi04102018 < 04-10-2018.busicentury.sql
-		$ psql -U sql-ledger busi05102018 < 05-10-2018.busicentury.sql
-		$ psql -U sql-ledger busi08102018 < 08-10-2018.busicentury.sql
-		$ psql -U sql-ledger busi09102018 < 09-10-2018.busicentury.sql
-		$ psql -U sql-ledger busi10102018 < 10-10-2018.busicentury.sql
+			Probol			*5
+			Propar			*6
+			Atver			*7
+			Ponte logistica	*8
 
 		\dt	Listado de tablas y usuarios
 		\ds	Listado de secuencias
@@ -488,9 +487,6 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 
 		+ Acceso a toda la red de mi Equipo de desarrollo en oficina:
 			host    all         all         192.168.253.0/24        trust
-
-
-
 
 Configuración de entorno de FE
 

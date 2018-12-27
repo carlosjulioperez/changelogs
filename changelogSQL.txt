@@ -60,3 +60,13 @@ SQL	* Impedir conexiones en BD:
 		COPY tipoid   FROM '/var/lib/pgsql/csv/tipoid.csv'  DELIMITER  ',' CSV HEADER;
 		COPY tiporet  FROM '/var/lib/pgsql/csv/tiporet.csv' DELIMITER  ',' CSV HEADER;
 
+	* Defaults:
+		+ Apracomsa:
+		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161');
+		
+		* Busicentury:
+		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','32777');
+		
+		+ Blutec:
+		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
+
