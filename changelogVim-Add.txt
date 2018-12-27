@@ -146,7 +146,7 @@ Vim
 	* Alineación:
 		https://github.com/sk1418/Join
 
-		EaseyAlign, * =
+		EasyAlign, * =
 		Seleccionar texto y reemplazar espacio por vaciós <>s, ,,g
 		:J ', ' 10
 		
@@ -162,6 +162,19 @@ Vim
 		OBJ_PRESCRIPTION       
 		
 		if (Security.hasAnyObject( Security.OBJ_MEDICAL_CENTER, Security.OBJ_GENERAL_TABLE, Security.OBJ_PROVINCE, Security.OBJ_CANTON, Security.OBJ_PERSON, Security.OBJ_PATIENT, Security.OBJ_HEALTH_PROFESSIONAL, Security.OBJ_MEDICAMENT, Security.OBJ_DISEASE, Security.OBJ_PRESCRIPTION, Security.OBJ_ALL) ) {
+
+		https://codeyarns.com/2015/04/08/easy-align-plugin-for-vim/
+
+		To align text based on space characters as delimiter:
+		
+		Align on first delimiter: EasyAlign \
+		Align on second delimiter: EasyAlign 2\
+		Align on last delimiter: EasyAlign -\
+		Align on last 2 delimiters: EasyAlign -2\
+		Align on all delimiters: EasyAlign *\
+
+
+
 
 	* deshabilitar sql-completion vim:
 		Agregar en .vimrc:

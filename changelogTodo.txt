@@ -2,6 +2,8 @@ TODO
 	/media/carper/UUI/local/jdotxt/todo.txt
 	/Volumes/UUI/local/jdotxt/todo.txt
 
+	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
+
 	Sebastián Devsu remoto
 	
 	* Espiritual:
@@ -11,9 +13,32 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
-		Comparar apracom con apracomFe
+		Aplicar ajustes FE en 3.0.7
+
+		Crear BD de 2019 para cada empresa
+
+		Prioridades:
+			Catver			*1
+			Blutec			*1
+			Apracom			*2
+			Tradetec		*2
+			BC				*3
+			Biomicro		*4
+			QualPeru		*4
+			Probol			*5
+			Propar			*6
+			Atver			*7
+			Ponte logistica	*8
+
+		scp -P 2022 /home/carper/local/docs/apracom/import/tablas.tar.gz carper@186.3.200.21:~
+		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
+		$ sudo mv SL-FE-diff.sql /var/lib/pgsql
+		# psql -d prueba -a -f SL-FE-diff.sql
 
 	* SQL-Ledger:
+		+ Bloquear BD:
+			https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
+
 		Revisar warehouse el mensaje en Apracom por idioma
 		Ingresar valor de descuento por línea (como lo hace FE)
 		Revisar los ensambles en BC

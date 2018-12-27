@@ -1,0 +1,62 @@
+SQL	* Impedir conexiones en BD:
+		https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
+		
+		update pg_database set datallowconn = false where datname = 'prueba';
+
+	* Backup y restore:
+		pg_dump dbname > outfile
+		psql dbname < infile
+
+		+ Solo esquema:
+		pg_dump -s databasename > file.dump
+	
+	* Comparar bases de datos:
+		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql
+		apgdiff.com
+		
+		$ java -jar apgdiff-2.4.jar
+
+		$ pg_dump apracomsa > apracomsa.sql
+		$ pg_dump demo123 > demo123.sql
+		$ apgdiff apracomsa.sql demo123.sql > diff.sql
+
+	* Renombrar una BD:
+		alter database "old"   rename to "new";
+		alter database "aguas" rename to "zx2018";
+	
+	* Ejemplos de ejecución de scripts:
+		# psql -U postgres -d apracomsa -a -f /home/cromero/fe/insert.sql
+		# psql -d prueba -a -f SL-FE-diff.sql
+		
+		\i path_to_sql_file @pathof_mysqlfile.sql
+		apracomsa=# \i /usr/local/fe/ddl.sql
+		apracomsa=# \i /usr/local/fe/insert.sql
+		apracomsa=# \i /usr/local/fe/update.sql
+
+	* Importar y exportar:
+
+		+ Exportar con cabecera:
+		COPY fe_config TO '/tmp/fe_config.csv' WITH DELIMITER ',' CSV HEADER;
+		COPY customer  TO '/tmp/customer.csv'  WITH DELIMITER ',' CSV HEADER;
+		COPY vendor    TO '/tmp/vendor.csv'    WITH DELIMITER ',' CSV HEADER;
+		COPY parts     TO '/tmp/parts.csv'     WITH DELIMITER ',' CSV HEADER;
+		COPY chart     TO '/tmp/chart.csv'     WITH DELIMITER ',' CSV HEADER;
+		COPY tipodoc   TO '/tmp/tipodoc.csv'   WITH DELIMITER ',' CSV HEADER;
+		COPY tipoid    TO '/tmp/tipoid.csv'    WITH DELIMITER ',' CSV HEADER;
+		COPY tiporet   TO '/tmp/tiporet.csv'   WITH DELIMITER ',' CSV HEADER;
+
+		+ Exportar solo datos:
+
+		COPY ( SELECT * FROM customer ORDER BY name )        TO '/tmp/customer.csv' With CSV DELIMITER ',';
+		COPY ( SELECT * FROM vendor   ORDER BY name )        TO '/tmp/vendor.csv'   With CSV DELIMITER ',';
+		COPY ( SELECT * FROM parts    ORDER BY description ) TO '/tmp/parts.csv'    With CSV DELIMITER ',';
+		COPY ( SELECT * FROM chart    order by accno )       TO '/tmp/chart.csv'    With CSV DELIMITER ',';
+		
+		+ Importar:
+		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
+
+		COPY customer FROM '/tmp/customer.csv'              DELIMITERS ',' CSV;
+		COPY tipodoc  FROM '/var/lib/pgsql/csv/tipodoc.csv' DELIMITER  ',' CSV HEADER;
+		COPY tipoid   FROM '/var/lib/pgsql/csv/tipoid.csv'  DELIMITER  ',' CSV HEADER;
+		COPY tiporet  FROM '/var/lib/pgsql/csv/tiporet.csv' DELIMITER  ',' CSV HEADER;
+

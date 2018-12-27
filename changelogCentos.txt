@@ -203,6 +203,8 @@ Centos
 		/var/lib/pgsql
 
 		* 2.8.20:
+		$ createdb -O sql-ledger -T template1 prueba 
+
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 
@@ -254,6 +256,8 @@ Centos
 		# chown -R root:root sql-ledger
 		# cd sql-ledger
 		# chown -R apache: users/ css/ templates/ spool/ images/
+		# find . -name "*.pl" -exec chmod +x {} \;
+		# find . -name "*.sh" -exec chmod +x {} \;
 
 		Para Ubuntu
 		# chown -R www-data:www-data users/ css/ templates/ spool/ images/
