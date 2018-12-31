@@ -18,6 +18,15 @@ Vim
 			:swap-window -s 3 -t 1
 			to let window number 3 and window number 1 swap their positions.
 
+	* NerdTree:
+		https://stackoverflow.com/questions/8753286/nerd-tree-enter-does-not-open-sub-dirs
+		Agregar en .vimrc:
+		let g:NERDTreeDirArrows=0
+
+		Y desde consola:
+		export LC_CTYPE=en_US.UTF-8
+		export LC_ALL=en_US.UTF-8
+
 	* Activar la sintaxis:
 		:syntax enable
 	* Tamaño de ventana:

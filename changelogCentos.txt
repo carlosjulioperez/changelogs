@@ -3,30 +3,14 @@ Centos
 	CentOS release 6.10 (Final)
 
 	ssh carper@192.168.0.253 -p 2022
+	ssh carper@192.168.1.253 -p 2022
 	ssh carper@192.168.253.179 -p 2022
 	ssh carper@186.178.202.68 -p 3333
 	ssh carper@186.3.200.21 -p 2022
 
-	* Montar NAS:
-		Ejemplo en ubuntu:
-		mount -t cifs -o username=cromero,password=macadamia //192.168.0.41/PostgreSql /mnt/ 
-
-		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-client-config-autofs.html	
-
-		https://wiki.centos.org/TipsAndTricks/WindowsShares
-		# yum install autofs samba-client samba-common cifs-utils
-
-		$ sudo mkdir /nas
-		$ sudo vim /etc/auto.master
-		/nas /etc/auto.nas
-		
-		$ sudo vim /etc/auto.nas
-		nasbox	-fstype=cifs,rw,noperm,user=cromero,pass=macadamia ://192.168.0.41/PostgreSql
-
-		$ sudo vim /etc/nsswitch.conf
-		hosts:      files dns wins
-
-		$ sudo service autofs restart
+	+ SQL-Ledger 3:
+		https://github.com/tapwag/
+		https://github.com/tapwag/sqlledgerclassic_centos6installer/blob/master/sqlledgertekki.sh
 
 	* Tareas programadas:
 		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-autotasks.html
@@ -76,6 +60,9 @@ Centos
 	* Mostrar el gateway en ubuntu:
 		# route -n
 
+	* Mostrar el gateway en MAC:
+		# netstat -rn
+
 	* Copiar el sistema a unidad USB:
 		# sudo dd if=/home/carper/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
 
@@ -99,12 +86,38 @@ Centos
 		# loadkeys us
 		# ifup eth0
 		# vi /etc/sysconfig/network-scripts/ifcfg-eth0
-		#   ONBOOT=yes
+		ONBOOT=yes
+
+		# Servidor
+		DEVICE=em1
+		ONBOOT=yes
+		
+		# DHCP
+		#HWADDR=D0:94:66:19:00:8A
+		#TYPE=Ethernet
+		#UUID=76107c61-cc18-4c0d-a782-abaa5900f992
+		#NM_CONTROLLED=yes
+		#BOOTPROTO=dhcp
+		
+		BOOTPROTO=none
+		IPADDR=192.168.0.253
+		NETMASK=255.255.255.0
+		GATEWAY=192.168.0.1
+		##########################
+
+		Para Virtualbox en equipo de desarrollo:
+		https://serverfault.com/questions/514340/interface-ip-address-is-removed-automatically-on-centos-running-inside-virtualbo
+		https://gist.github.com/fernandoaleman/2172388
+
+		#BOOTPROTO=dhcp
+	 	ONBOOT=yes
+		BOOTPROTO=none
+		IPADDR=192.168.1.253
+		NETMASK=255.255.255.0
 
 		# service network restart
 		# yum install vim (resuelve la dependencia de perl)
-		# yum install tree screen
-		# yum install man man-pages
+		# yum install wget tree screen man man-pages
 
 	* selinux:
 		# sestatus
@@ -170,7 +183,7 @@ Centos
 		https://stackoverflow.com/questions/8806631/how-to-convert-a-db-in-postgresql-to-utf8
 		https://stackoverflow.com/questions/380924/how-can-i-change-database-encoding-for-a-postgresql-database-using-sql-or-phppga
 
-		# yum install postgresql postgresql-server postgresql-contrib
+		# yum -y install postgresql postgresql-server postgresql-contrib
 		# service postgresql initdb
 		# chkconfig postgresql on
 		# service postgresql start
@@ -191,8 +204,6 @@ Centos
 		# service postgresql restart
 		# su postgres
 		bash-4.1$ createuser -d sql-ledger
-
-			bash-4.1$ createuser -d -P sql-ledger
 			could not change directory to "/root"
 			Shall the new role be a superuser? (y/n) n
 			Shall the new role be allowed to create more new roles? (y/n) n 
@@ -320,17 +331,16 @@ Centos
 				$ sudo alternatives --install /usr/bin/java java /opt/jdk1.7.0_80/bin/java 4
 			
 			+ OpenJDK:	
-				# yum install java-1.7.0-openjdk-devel.x86_64
-				# yum install java-1.8.0-openjdk-devel.x86_64
+				# yum -y install java-1.7.0-openjdk-devel.x86_64
+				# yum -y install java-1.8.0-openjdk-devel.x86_64
 
 			$ sudo alternatives --config java
 
 			# useradd -r tomcat8 --shell /bin/false
-			# yum install wget
-			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz -P /tmp
-			# tar -zxf /tmp/apache-tomcat-8.5.34.tar.gz -C /opt
-			# ln -s /opt/apache-tomcat-8.5.34 /opt/tomcat-latest
-			# chown -hR tomcat8: /opt/tomcat-latest /opt/apache-tomcat-8.5.34
+			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz -P /tmp
+			# tar -zxf /tmp/apache-tomcat-8.5.37.tar.gz -C /opt
+			# ln -s /opt/apache-tomcat-8.5.37 /opt/tomcat-latest
+			# chown -hR tomcat8: /opt/tomcat-latest /opt/apache-tomcat-8.5.37
 			
 			# vim /etc/init.d/tomcat8
 
@@ -444,11 +454,11 @@ Centos
 			# service tomcat8 start
 			# chkconfig tomcat8 on
 
-			# vim /opt/apache-tomcat-8.5.34/conf/tomcat-users.xml
+			# vim /opt/apache-tomcat-8.5.37/conf/tomcat-users.xml
 				<role rolename="manager-gui"/>
 				<user username="" password="" roles="manager-gui"/>
 
-			# vim /opt/apache-tomcat-8.5.34/webapps/manager/META-INF/context.xml
+			# vim /opt/apache-tomcat-8.5.37/webapps/manager/META-INF/context.xml
 				https://linuxize.com/post/how-to-install-tomcat-8-5-on-ubuntu-18.04/
 
 				Agregar la IP específica:	
@@ -459,32 +469,34 @@ Centos
 				         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|192.168.253.238" />
 
 			+ Archivos de FE:
-				# mkdir -p /usr/local/fe/dir/ca
-				# mkdir -p /usr/local/fe/dir/cf
-				# mkdir -p /usr/local/fe/dir/cg
-				# mkdir -p /usr/local/fe/dir/cn
-				# mkdir -p /usr/local/fe/logs
-				# mkdir -p /usr/local/fe/p12s
+				# mkdir -p /opt/fe/0908927148001/dir/ca
+				# mkdir -p /opt/fe/0908927148001/dir/cf
+				# mkdir -p /opt/fe/0908927148001/dir/cg
+				# mkdir -p /opt/fe/0908927148001/dir/cn
+				# mkdir -p /opt/fe/logs
+				# mkdir -p /opt/fe/p12s
 
-				# chown -R tomcat8: /usr/local/fe
+				# chown -R tomcat8: /opt/fe
 
 			+ Maven:
 				https://tecadmin.net/install-apache-maven-on-centos/
 
 				# yum install git ant
-				$ wget http://mirror.synyx.de/apache/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz -P /tmp
-				$ tar zxvf /tmp/apache-maven-3.5.4-bin.tar.gz -C /opt
-				$ sudo vi /etc/profile.d/maven.sh
+				# wget http://mirror.synyx.de/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz -P /tmp
+				# tar zxvf /tmp/apache-maven-3.6.0-bin.tar.gz -C /opt
+				# vim /etc/profile.d/maven.sh
 					export M2_HOME=/opt/maven
 					export PATH=${M2_HOME}/bin:${PATH}
+				# chmod +x /etc/profile.d/maven.sh
 
-				$ source /etc/profile.d/maven.sh
+				# source /etc/profile.d/maven.sh
 
 			+ Ant:
 				https://www.unixmen.com/install-apache-ant-maven-tomcat-centos-76-5/
 
-				$ tar zxvf /tmp/apache-ant-1.9.7-bin.tar.gz -C /opt
-				$ sudo vi /etc/profile.d/ant.sh
+				# wget -c https://www-us.apache.org/dist//ant/binaries/apache-ant-1.9.13-bin.tar.gz -P /tmp
+				# tar zxvf /tmp/apache-ant-1.9.13-bin.tar.gz -C /opt
+				# vim /etc/profile.d/ant.sh
 
 					#!/bin/bash
 					ANT_HOME=/opt/ant
@@ -492,8 +504,11 @@ Centos
 					export PATH ANT_HOME
 					export CLASSPATH=.
 
-				$ sudo chmod +x /etc/profile.d/ant.sh
-				$ source /etc/profile.d/ant.sh
+				# cd /opt
+				# ln -s apache-maven-3.6.0 maven
+				# ln -s apache-ant-1.9.13 ant
+				# chmod +x /etc/profile.d/ant.sh
+				# source /etc/profile.d/ant.sh
 			+ Especificar JAVA_HOME:
 				$ sudo vi /etc/profile.d/java.sh
 					#export JAVA_HOME=/opt/jdk1.7.0_80
@@ -550,6 +565,23 @@ Centos
 		
 		# restorecon -Rv /SL
 
-	+ Dependencias:
-		https://github.com/tapwag/
-		https://github.com/tapwag/sqlledgerclassic_centos6installer/blob/master/sqlledgertekki.sh
+	* Montar NAS:
+		Ejemplo en ubuntu:
+		mount -t cifs -o username=cromero,password=macadamia //192.168.0.41/PostgreSql /mnt/ 
+
+		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-client-config-autofs.html	
+
+		https://wiki.centos.org/TipsAndTricks/WindowsShares
+		# yum install autofs samba-client samba-common cifs-utils
+
+		$ sudo mkdir /nas
+		$ sudo vim /etc/auto.master
+		/nas /etc/auto.nas
+		
+		$ sudo vim /etc/auto.nas
+		nasbox	-fstype=cifs,rw,noperm,user=cromero,pass=macadamia ://192.168.0.41/PostgreSql
+
+		$ sudo vim /etc/nsswitch.conf
+		hosts:      files dns wins
+
+		$ sudo service autofs restart

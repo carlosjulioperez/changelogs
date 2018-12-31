@@ -35,6 +35,7 @@ TODO
 		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
 		$ sudo mv SL-FE-diff.sql /var/lib/pgsql
 		# psql -d prueba -a -f SL-FE-diff.sql
+		# psql -d test282 -a -f SL-FE-diff.sql
 
 	* SQL-Ledger:
 		+ Bloquear BD:
