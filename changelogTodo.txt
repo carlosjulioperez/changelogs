@@ -1,6 +1,7 @@
 TODO
-	/media/carper/UUI/local/jdotxt/todo.txt
-	/Volumes/UUI/local/jdotxt/todo.txt
+	/media/carper/UUI/local/projects/changelogs/todo.txt
+	/Volumes/UUI/local/projects/changelogs/todo.txt
+
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
 	Sebastián Devsu remoto
@@ -22,13 +23,13 @@ TODO
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
-			Catver			*1
-			Blutec			*1
-			Apracom			*2
-			Tradetec		*2
-			BC				*3
-			Biomicro		*4
-			QualPeru		*4
+			X Catver			*1
+			X Blutec			*1
+			X Apracom			*2
+			X Tradetec			*2
+			X BC				*3
+			X Biomicro			*4
+			X QualPeru			*4
 			Probol			*5
 			Propar			*6
 			Atver			*7

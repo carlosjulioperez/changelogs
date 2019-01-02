@@ -440,8 +440,11 @@ TIPS
 		Produce:
 			cola_id=18827
 			cola_id=18828
-		
 	
+	* Comprimir sin recursos Mac:
+		tar -czvf –exclude ‘.DS_Store’ cjerp.tar.gz cjerp/
+		zip -r cjerpMac.zip cjerp/ -x "*.DS_Store"
+
 	* Borrar archivos recursivamente:
 		find . -name "*.bak" -type f
 		find . -name "*.swp" -type f -delete

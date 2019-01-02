@@ -1,0 +1,2 @@
+(A) 2019-01-02 Fe para BC +busicentury @fe
+(B) 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
