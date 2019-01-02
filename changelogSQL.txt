@@ -1,6 +1,14 @@
-SQL	* Impedir conexiones en BD:
-		https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
+SQL	
+
+	* Codificación de caracteres:
+		apracomsa=# select * from ar;
+		ERROR:  invalid byte sequence for encoding "UTF8": 0xf1 0x69 0x67 0x61
 		
+		apracomsa=# set client_encoding ='LATIN1';
+		SET
+
+	* Impedir conexiones en BD:
+		https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
 		update pg_database set datallowconn = false where datname = 'prueba';
 
 	* Backup y restore:

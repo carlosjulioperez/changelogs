@@ -8,6 +8,14 @@ Centos
 	ssh carper@186.178.202.68 -p 3333
 	ssh carper@186.3.200.21 -p 2022
 
+	Y desde consola:
+	export LC_CTYPE=en_US.UTF-8
+	export LC_ALL=en_US.UTF-8
+
+	+ Informar si está en uso el puerto 8080:
+	http://www.mkyong.com/linux/linux-which-application-is-using-port-8080/
+	sudo lsof -i :8080
+
 	+ SQL-Ledger 3:
 		https://github.com/tapwag/
 		https://github.com/tapwag/sqlledgerclassic_centos6installer/blob/master/sqlledgertekki.sh
@@ -116,8 +124,8 @@ Centos
 		NETMASK=255.255.255.0
 
 		# service network restart
-		# yum install vim (resuelve la dependencia de perl)
-		# yum install wget tree screen man man-pages
+		# yum -y install vim (resuelve la dependencia de perl)
+		# yum -y install lsof wget tree screen man man-pages
 
 	* selinux:
 		# sestatus

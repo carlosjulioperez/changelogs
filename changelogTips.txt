@@ -1,10 +1,24 @@
 TIPS
 
-	258082
-	carmen quijije fotos un año atrás
+	* Eliminar PostgreSQL:
+		https://stackoverflow.com/questions/8037729/completely-uninstall-postgresql-9-0-4-from-mac-osx-lion
 
+	* Instalar postgresapp:
+		https://postgresapp.com/
+
+		+ Activar psql:
+		https://postgresapp.com/documentation/cli-tools.html
+
+		Sin necesidad de crear el usuario postgres, desde consola:
+		$ carper@mac:~$ psql -l
+
+	* SQuirreL:
+		https://stackoverflow.com/questions/46370597/launching-squirrel-sql-client-on-mac-oso
+		Arreglar el Path de SQuirreL en MacOS
+		
 	* Eliminar Virtualbox:
 		http://www.kuneri.com/2008/11/06/how-to-completely-remove-virtualbox-on-mac/
+	
 	* Extraer el primer campo de string a la izquerda de los dos puntos:
 		https://stackoverflow.com/questions/6284256/how-to-trim-specific-text-with-grep
 
@@ -193,8 +207,6 @@ TIPS
 		$ montage -mode concatenate -tile 3x *.png cap5.pdf
 		$ montage -mode concatenate -tile 4x *.png cap5.pdf
 
-
-
 	* Archivos recientemente modificados:
 		+ Informe:
 			https://askubuntu.com/questions/411462/show-recent-modified-created-files-using-terminal	
@@ -333,7 +345,6 @@ TIPS
 				Descargar Eclipse Oxygen y Eclim 2.7.1
 				$ sudo apt-get install build-essential
 
-
 	* Matar procesos:
 		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
 	
@@ -373,23 +384,44 @@ TIPS
 		grep -rnw '.' -e "http://java.sun.com/jstl/core"
 
 		http://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-on-linux
+	
 	* Búsqueda de texto en directorio:
-
-		grep -rl transdate proyectos/cjerp --include=*.java
-
-		grep -rl "org.hibernate.ejb" /home/carper/local/openxava-4.3/workspace/
 
 		grep -rl "string" /path
 		where
-		
 		-r (or --recursive) option is used to traverse also all sub-directories of /path, whereas
 		-l (or --files-with-matches) option is used to only print filenames of matching files, and not the matching lines (this could also improve the speed, given that grep stop reading a file at first match with this option).
+		
+		grep -rl transdate proyectos/cjerp --include=*.java
+		grep -rl DBConnection . --include=*.java
+		grep -rl "org.hibernate.ejb" /home/carper/local/openxava-4.3/workspace/
 
 		http://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories
-
-
 		grep -rl "org.springframework.test.context.junit4.SpringJUnit4ClassRunner" ~/local/openxava*
 	
+	* Search and replace string in the current folder:
+		http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
+
+		+ Non recursive:
+			sed -i -- 's/foo/bar/g' *
+			sed -i -- 's/Buider/Builder/g' *
+			sed -i -- 's/Odómotros/Odómetros/g' *.screen
+
+		+ Recursive:
+			+ En linux:
+				find . -type f -exec sed -i 's/Builder/builder/g' {} +
+				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
+				find . -type f -exec sed -i 's/feapracom/cjfe/g' {} +
+				find . -type f -exec sed -i 's,/usr/local/fe,/opt/fe,g' {} +
+				
+				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
+
+			+ En Mac:
+				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
+				
+				$ find . -type f -name '*.txt' -exec sed -i '' s/this/that/ {} +
+				$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
+
 	* Búsqueda de patrón substring en archivos:
 		https://stackoverflow.com/questions/18328777/grep-to-extract-the-word-matching-the-given-pattern
 		https://stackoverflow.com/questions/35269239/grep-only-for-the-first-match-in-amount-of-files
@@ -406,20 +438,6 @@ TIPS
 			cola_id=18827
 			cola_id=18828
 		
-	* Shell:
-		+ Search and replace string in the current folder:
-			http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
-
-			+ Non recursive:
-				sed -i -- 's/foo/bar/g' *
-				sed -i -- 's/Buider/Builder/g' *
-				sed -i -- 's/Odómotros/Odómetros/g' *.screen
-
-			+ Recursive:
-				find . -type f -exec sed -i 's/Builder/builder/g' {} +
-				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
-				
-				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
 	
 	* Borrar archivos recursivamente:
 		find . -name "*.bak" -type f

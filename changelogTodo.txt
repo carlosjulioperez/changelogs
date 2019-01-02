@@ -1,10 +1,11 @@
 TODO
 	/media/carper/UUI/local/jdotxt/todo.txt
 	/Volumes/UUI/local/jdotxt/todo.txt
-
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
 	Sebastián Devsu remoto
+
+	Reprogramar entrevista en DevSU
 	
 	* Espiritual:
 		Comentario 2re 25:27
@@ -13,7 +14,11 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
-		Aplicar ajustes FE en 3.0.7
+		+ Estrategia:
+			En la Centos VM preparar BD de SL. Luego pasarlas a MAC.
+			En Mac programar en Java.
+		
+		Buscar las rutas de /fe en cada sistema
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
@@ -33,9 +38,11 @@ TODO
 
 		scp -P 2022 /home/carper/local/docs/apracom/import/tablas.tar.gz carper@186.3.200.21:~
 		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
+		scp -P 3333 /Users/carper/Downloads/apgdiff/SL-FE-diff.sql carper@186.178.202.68:~
 		$ sudo mv SL-FE-diff.sql /var/lib/pgsql
 		# psql -d prueba -a -f SL-FE-diff.sql
-		# psql -d test282 -a -f SL-FE-diff.sql
+		# psql -d apracomsa19 -a -f SL-FE-diff.sql
+		# psql -d busicentury19 -a -f SL-FE-diff.sql
 
 	* SQL-Ledger:
 		+ Bloquear BD:

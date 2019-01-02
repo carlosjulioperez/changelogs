@@ -268,7 +268,7 @@ Gestión de la BD
 		sudo -u postgres psql
 
 		#createdb -E UTF8 -T template0 apracomsa
-		#createdb -E SQL_ASCII -T template0 demo2-325
+		#createdb -E SQL_ASCII -T template0 apracomsa
 	
 		** 11-oct-2018
 
@@ -291,6 +291,8 @@ Gestión de la BD
 		$ createdb -E SQL_ASCII -T template0 apracomsa19
 		$ createdb -E SQL_ASCII -T template0 tradetecsa19
 		$ createdb -E SQL_ASCII -T template0 busicentury19
+		$ createdb -E SQL_ASCII -T template0 biomicro19
+		$ createdb -E SQL_ASCII -T template0 qualperu19
 			
 		** 3.2.6
 		$ createdb -E UTF8      -T template0 biomicro19

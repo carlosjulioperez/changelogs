@@ -12,6 +12,8 @@ Vim
 		+ Cambiar de carpeta:
 			:cd ~/code/cjerp
 		+ Buscar archivos:
+			https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim
+			:e **/test/Suite.java
 			:e find **/*/DocumentoElectronico
 		+ Mover window:
 			https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
@@ -19,6 +21,16 @@ Vim
 			to let window number 3 and window number 1 swap their positions.
 
 	* NerdTree:
+		El motivo principal de que no se vea correctamente los separadores de carpeta y archivos de NerdTree es por el locale.
+		Esto lo genera OSX.
+
+		https://serverfault.com/questions/320971/centos-6-and-locale-error
+
+		$ sudo vim /etc/ssh/ssh_config
+		Host *
+		    #SendEnv LANG LC_*
+
+		Esta es la solución secundaria.
 		https://stackoverflow.com/questions/8753286/nerd-tree-enter-does-not-open-sub-dirs
 		Agregar en .vimrc:
 		let g:NERDTreeDirArrows=0
