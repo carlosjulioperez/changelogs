@@ -63,10 +63,13 @@ SQL
 		+ Importar:
 		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
 
-		COPY customer FROM '/tmp/customer.csv'              DELIMITERS ',' CSV;
-		COPY tipodoc  FROM '/var/lib/pgsql/csv/tipodoc.csv' DELIMITER  ',' CSV HEADER;
-		COPY tipoid   FROM '/var/lib/pgsql/csv/tipoid.csv'  DELIMITER  ',' CSV HEADER;
-		COPY tiporet  FROM '/var/lib/pgsql/csv/tiporet.csv' DELIMITER  ',' CSV HEADER;
+		COPY customer  FROM '/tmp/customer.csv'                      DELIMITERS ',' CSV;
+		COPY tipodoc   FROM '/var/lib/pgsql/csv/tipodoc.csv'         DELIMITER  ',' CSV HEADER;
+		COPY tipoid    FROM '/var/lib/pgsql/csv/tipoid.csv'          DELIMITER  ',' CSV HEADER;
+		COPY tiporet   FROM '/var/lib/pgsql/csv/tiporet.csv'         DELIMITER  ',' CSV HEADER;
+		COPY chart     FROM '/var/lib/pgsql/csv/planCtasApracom.csv' DELIMITER  ',' CSV HEADER;
+		COPY fe_config FROM '/var/lib/pgsql/csv/fe_config.csv'       DELIMITER  ',' CSV HEADER;
+
 
 	* Defaults:
 		+ Apracomsa:

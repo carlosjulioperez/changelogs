@@ -58,8 +58,7 @@ Centos
 		net.ipv4.icmp_echo_ignore_all = 1
 
 	* Monitorizar:
-		sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2018-11-13.log
-		sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2018-11-14.log
+		sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2019-01-02.log
 
 	* Configuración de servidor:
 		Habilitar dhcp y determinar la IP con el Gateway. Luego ponerlo como
