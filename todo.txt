@@ -1,5 +1,7 @@
+(A) 2019-01-03 Configuración de internet Claro en Dell +apracom @sql-ledger
 (A) 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe
 (B) Entorno y pruebas de FE +oymar @sql-ledger
 (B) Revisión de idiomas en ES +oymar @sql-ledger
+(C) Clasificar directorio fe/dir por año +apracom @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe

@@ -19,14 +19,20 @@ TODO
 			En la Centos VM preparar BD de SL. Luego pasarlas a MAC.
 			En Mac programar en Java.
 		
-		x Entorno local de fe
-		x Actualizar estructuras para fe
-		x Subir datos de fe_config
-		x Subir tablas tipoid, tipodoc
-		x Cambiar busicentury19 por busicentury
-		x Diff en ap y bc
-		Acceso de los usuarios y configuración de FE
-		generar fecola.jar con logo de bc
+		+ Fe:	
+			x Entorno local de fe
+			x Actualizar estructuras para fe
+			x Subir datos de fe_config
+			x Subir tablas tipoid, tipodoc
+			x Cambiar busicentury19 por busicentury
+			x Diff en ap y bc
+			x Acceso de los usuarios y configuración de FE
+			x Actualizar la ruta del archivo p12
+			x generar fecola.jar
+			x Integrar fecola.jar con SL
+				$ sudo cp /home/carper/local/projects/cjerp/dist/bc_fecola.jar /usr/local/fe
+			x Comparar fuentes de AP y BC para poner ls ajustes de FE
+			Generar los reportes con el logo de BC
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
@@ -48,9 +54,10 @@ TODO
 		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
 		scp -P 3333 /Users/carper/Downloads/apgdiff/SL-FE-diff.sql carper@186.178.202.68:~
 		$ sudo mv SL-FE-diff.sql /var/lib/pgsql
-		# psql -d prueba -a -f SL-FE-diff.sql
-		# psql -d apracomsa19 -a -f SL-FE-diff.sql
-		# psql -d busicentury19 -a -f SL-FE-diff.sql
+		
+		# psql -d prueba        -U sql-ledger -a -f SL-FE-diff.sql
+		# psql -d apracomsa19   -U sql-ledger -a -f SL-FE-diff.sql
+		# psql -d busicentury19 -U sql-ledger -a -f SL-FE-diff.sql
 
 		cp /home/carper/csv/fe_config.csv /var/lib/pgsql/csv
 

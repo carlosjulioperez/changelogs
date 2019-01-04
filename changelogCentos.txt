@@ -98,19 +98,28 @@ Centos
 		# Servidor
 		DEVICE=em1
 		ONBOOT=yes
-		
-		# DHCP
-		#HWADDR=D0:94:66:19:00:8A
-		#TYPE=Ethernet
-		#UUID=76107c61-cc18-4c0d-a782-abaa5900f992
-		#NM_CONTROLLED=yes
-		#BOOTPROTO=dhcp
-		
 		BOOTPROTO=none
 		IPADDR=192.168.0.253
 		NETMASK=255.255.255.0
 		GATEWAY=192.168.0.1
+		
+		#DEVICE=em1
+		#HWADDR=D0:94:66:19:00:8A
+		#TYPE=Ethernet
+		#UUID=76107c61-cc18-4c0d-a782-abaa5900f992
+		#ONBOOT=yes
+		#NM_CONTROLLED=yes
+		#BOOTPROTO=dhcp
+		
 		##########################
+
+		#DEVICE=em2
+		#HWADDR=D0:94:66:19:00:8B
+		#TYPE=Ethernet
+		#UUID=ebe14a39-7f83-4ca1-ad14-409315db7e50
+		#ONBOOT=yes
+		#NM_CONTROLLED=yes
+		#BOOTPROTO=dhcp
 
 		Para Virtualbox en equipo de desarrollo:
 		https://serverfault.com/questions/514340/interface-ip-address-is-removed-automatically-on-centos-running-inside-virtualbo
@@ -277,7 +286,7 @@ Centos
 		# find . -name "*.pl" -exec chmod +x {} \;
 		# find . -name "*.sh" -exec chmod +x {} \;
 
-		Para Ubuntu
+		Para Debian
 		# chown -R www-data:www-data users/ css/ templates/ spool/ images/
 
 		# vim /etc/httpd/conf.d/sql-ledger-httpd.conf
