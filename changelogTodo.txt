@@ -19,6 +19,13 @@ TODO
 			En la Centos VM preparar BD de SL. Luego pasarlas a MAC.
 			En Mac programar en Java.
 		
+		+ Diego:
+			x Subir maestros de artículos
+			x Subir maestros de clientes
+			x Subir maestros de proveedores 
+			
+			Respaldo de BD apracom19
+
 		+ Fe:	
 			x Entorno local de fe
 			x Actualizar estructuras para fe

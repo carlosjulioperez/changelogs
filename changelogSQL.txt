@@ -1,5 +1,13 @@
 SQL	
 
+	* Cambiar propietario de tablas usando psql:
+		https://stackoverflow.com/questions/12445608/psql-list-all-tables
+		https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql
+
+		https://gist.githubusercontent.com/gingerlime/2482969/raw/08e68527f737cb4ada8352bffa9a687d34d163f6/change_db_owner.sh
+
+		\dt
+
 	* Codificación de caracteres:
 		apracomsa=# select * from ar;
 		ERROR:  invalid byte sequence for encoding "UTF8": 0xf1 0x69 0x67 0x61
@@ -44,14 +52,17 @@ SQL
 	* Importar y exportar:
 
 		+ Exportar con cabecera:
-		COPY fe_config TO '/tmp/fe_config.csv' WITH DELIMITER ',' CSV HEADER;
-		COPY customer  TO '/tmp/customer.csv'  WITH DELIMITER ',' CSV HEADER;
-		COPY vendor    TO '/tmp/vendor.csv'    WITH DELIMITER ',' CSV HEADER;
-		COPY parts     TO '/tmp/parts.csv'     WITH DELIMITER ',' CSV HEADER;
-		COPY chart     TO '/tmp/chart.csv'     WITH DELIMITER ',' CSV HEADER;
-		COPY tipodoc   TO '/tmp/tipodoc.csv'   WITH DELIMITER ',' CSV HEADER;
-		COPY tipoid    TO '/tmp/tipoid.csv'    WITH DELIMITER ',' CSV HEADER;
-		COPY tiporet   TO '/tmp/tiporet.csv'   WITH DELIMITER ',' CSV HEADER;
+		COPY fe_config   TO '/tmp/fe_config.csv'   WITH DELIMITER ',' CSV HEADER;
+		COPY customer    TO '/tmp/customer.csv'    WITH DELIMITER ',' CSV HEADER;
+		COPY vendor      TO '/tmp/vendor.csv'      WITH DELIMITER ',' CSV HEADER;
+		COPY parts       TO '/tmp/parts.csv'       WITH DELIMITER ',' CSV HEADER;
+		COPY chart       TO '/tmp/chart.csv'       WITH DELIMITER ',' CSV HEADER;
+		COPY tipodoc     TO '/tmp/tipodoc.csv'     WITH DELIMITER ',' CSV HEADER;
+		COPY tipoid      TO '/tmp/tipoid.csv'      WITH DELIMITER ',' CSV HEADER;
+		COPY tiporet     TO '/tmp/tiporet.csv'     WITH DELIMITER ',' CSV HEADER;
+		COPY partstax    TO '/tmp/partstax.csv'    WITH DELIMITER ',' CSV HEADER;
+		COPY customertax TO '/tmp/customertax.csv' WITH DELIMITER ',' CSV HEADER;
+		COPY vendortax   TO '/tmp/vendortax.csv'   WITH DELIMITER ',' CSV HEADER;
 
 		+ Exportar solo datos:
 
@@ -69,6 +80,14 @@ SQL
 		COPY tiporet   FROM '/var/lib/pgsql/csv/tiporet.csv'         DELIMITER  ',' CSV HEADER;
 		COPY chart     FROM '/var/lib/pgsql/csv/planCtasApracom.csv' DELIMITER  ',' CSV HEADER;
 		COPY fe_config FROM '/var/lib/pgsql/csv/fe_config.csv'       DELIMITER  ',' CSV HEADER;
+
+		--2019-01-04
+		COPY parts       FROM '/var/lib/pgsql/csv/Materiales2.csv' DELIMITER  ',' CSV HEADER;
+		COPY partstax    FROM '/var/lib/pgsql/csv/partstax.csv'    DELIMITER  ',' CSV HEADER;
+		COPY customer    FROM '/var/lib/pgsql/csv/customers.csv'   DELIMITER  ',' CSV HEADER;
+		COPY customertax FROM '/var/lib/pgsql/csv/customertax.csv' DELIMITER  ',' CSV HEADER;
+		COPY vendor      FROM '/var/lib/pgsql/csv/vendor.csv'      DELIMITER  ',' CSV HEADER;
+		COPY vendortax   FROM '/var/lib/pgsql/csv/vendortax.csv'   DELIMITER  ',' CSV HEADER;
 
 
 	* Defaults:
