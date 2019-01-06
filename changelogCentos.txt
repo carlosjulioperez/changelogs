@@ -379,10 +379,7 @@ Centos
 				## Source function library.
 				#. /etc/rc.d/init.d/functions
 				
-				#export JAVA_HOME=/usr/java/default
-				#export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk.x86_64
 				export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
-				#export JAVA_HOME=/opt/jdk1.7.0_80
 				export JAVA_OPTS="-Dfile.encoding=UTF-8 \
 				  -Dnet.sf.ehcache.skipUpdateCheck=true \
 				  -XX:+UseConcMarkSweepGC \
@@ -466,7 +463,8 @@ Centos
 				esac    
 				exit 0
 
-			# chmod +x /etc/init.d/tomcat8
+			# <role rolename="manager-gui"/>
+                <user username="" password="" roles="manager-gui"/> chmod +x /etc/init.d/tomcat8
 			# service tomcat8 start
 			# chkconfig tomcat8 on
 
