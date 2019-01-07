@@ -41,7 +41,8 @@ SQL
 		alter database "aguas" rename to "zx2018";
 	
 	* Ejemplos de ejecución de scripts:
-		# psql -U postgres -d apracomsa -a -f /home/cromero/fe/insert.sql
+		# psql -U sql-ledger -d apracomsa -a -f /home/cromero/fe/insert.sql
+		# psql -U sql-ledger -d apracomsa -a -f ~/local/projects/cjerp/cjfe/src/main/resources/sql/fe_config.sql 
 		# psql -d prueba -a -f SL-FE-diff.sql
 		
 		\i path_to_sql_file @pathof_mysqlfile.sql
