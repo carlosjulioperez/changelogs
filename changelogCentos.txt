@@ -3,7 +3,6 @@ Centos
 	CentOS release 6.10 (Final)
 
 	ssh carper@192.168.0.253 -p 2022
-	ssh carper@192.168.1.253 -p 2022
 	ssh carper@192.168.253.179 -p 2022
 	ssh carper@186.178.202.68 -p 2022
 	ssh carper@186.3.200.21 -p 2022
