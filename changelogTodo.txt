@@ -43,11 +43,21 @@ TODO
 
 			--Pruebas
 			x Duplicar base bd para pruebas
-			Cambiar el dataset por bcprueba
-			Copiar el conector con el logo
-			Mostrar botón FE
-			Validar usuario postgres
-			Verificar la consulta en fe_cola
+			x Cambiar el dataset por bcprueba
+			x Validar usuario postgres
+			x Verificar la consulta en fe_cola
+			x Mostrar botón FE
+				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/is.pl
+				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/arap.pl
+				
+				$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledger/bin/mozilla/is.pl
+			x Error java.lang.ClassFormatError
+			x Solución: mvn clean compile
+
+			x Especificar la forma de pago en cada factura
+			x Validar el envío de correo
+			Diferenciar el logo por empresa
+
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:

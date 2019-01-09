@@ -610,16 +610,18 @@ Código para obtener el mensaje de autorización
 Cambios en SQL-Ledger
 
 	* Cambios en el código para ejecutar fecola.jar:
-		# sudo vim /usr/local/sql-ledgerFE/bin/mozilla/is.pl
+	$ sudo vim /usr/local/sql-ledgerFE/bin/mozilla/is.pl
 		Cambio, en 870:
-			'E-mail' => { ndx => 5, key => 'E', value => $locale->text('E-mail') },
-		por:
-			'E-mail' => { ndx => 5, key => 'E', value => $locale->text('FE') },
-		
-		Agregar GR:
-			'GR' => { ndx => 6, key => 'G', value => $locale->text('GR') },
 
-		# sudo vim /usr/local/sql-ledgerFE/bin/mozilla/arap.pl
+		Resultado:
+			'E-mail' => { ndx => 5, key => 'E', value => $locale->text('FE') },
+			'Print and Post' => { ndx => 6, key => 'R', value => $locale->text('GR') },
+
+		$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/locale/ec/is
+		 	 'fe'                          => 'fe',
+		   	 'gr'                          => 'gr',
+
+	$ sudo vim /usr/local/sql-ledgerFE/bin/mozilla/arap.pl
 		Agregar en 552:
 		sub fe {
 		        $form->header;
