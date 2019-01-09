@@ -1,4 +1,5 @@
 Centos
+	
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
 
@@ -490,6 +491,7 @@ Centos
 				# mkdir -p /opt/fe/p12s
 
 				# chown -R tomcat8: /opt/fe
+				# chmod 777 /tmp/salida.pdf
 
 			+ Maven:
 				https://tecadmin.net/install-apache-maven-on-centos/

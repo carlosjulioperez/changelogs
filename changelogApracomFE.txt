@@ -408,9 +408,11 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 
 		$ createdb -E SQL_ASCII -T template0 ap-daxti
 		$ createdb -E SQL_ASCII -T template0 bc-daxti
+		$ createdb -E SQL_ASCII -T template0 bcprueba
 
 		$ psql ap-daxti < ap-daxti.sql
 		$ psql bc-daxti < bc-daxti.sql
+		$ psql bcprueba < bc.sql
 
 	* Restaurar una tabla:
 		https://feeding.cloud.geek.nz/posts/restoring-single-table-from-postgres/

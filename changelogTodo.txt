@@ -39,7 +39,15 @@ TODO
 			x Integrar fecola.jar con SL
 				$ sudo cp /home/carper/local/projects/cjerp/dist/bc_fecola.jar /usr/local/fe
 			x Comparar fuentes de AP y BC para poner ls ajustes de FE
-			Generar los reportes con el logo de BC
+			x Generar los reportes con el logo de BC
+
+			--Pruebas
+			x Duplicar base bd para pruebas
+			Cambiar el dataset por bcprueba
+			Copiar el conector con el logo
+			Mostrar botón FE
+			Validar usuario postgres
+			Verificar la consulta en fe_cola
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
