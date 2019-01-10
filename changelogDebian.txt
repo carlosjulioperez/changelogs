@@ -31,18 +31,22 @@ Desarrollo
 		https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
 	
 	+ Java:
-	https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
-	sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
-	sudo update-alternatives --config java
+		https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
+		sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
+		sudo update-alternatives --config java
+		
+		+ JAVA_HOME:
+			https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
 
-	https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
+			$ sudo vim /etc/environment
+			JAVA_HOME=/home/carper/local/utils/jdk1.8.0_181
+			$ source /etc/environment
+			
+			$ echo $JAVA_HOME
+			/home/carper/local/utils/jdk1.8.0_181
 
-	$ sudo vim /etc/environment
-	JAVA_HOME=/home/carper/local/utils/jdk1.8.0_181
-	$ source /etc/environment
-	
-	$ echo $JAVA_HOME
-	/home/carper/local/utils/jdk1.8.0_181
+			https://serverfault.com/questions/143786/how-to-determine-java-home-on-debian-ubuntu
+			JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
 	+ Virtualbox:
 	https://wiki.debian.org/VirtualBox

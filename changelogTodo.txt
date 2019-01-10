@@ -56,8 +56,41 @@ TODO
 
 			x Especificar la forma de pago en cada factura
 			x Validar el envío de correo
-			Diferenciar el logo por empresa
 
+			x Diferenciar el logo por empresa $P{LOGO}
+			build.xml
+
+			Cambiar LOGO a String
+			"/img/ap_logo.jpg"
+			LOGO = Configuracion.getEmisorRutaLogo();
+
+			x src/main/reports/img/ap_logo.jpg y bc_logo.jpg
+			x factura.jrxml
+			x notadebito.jrxml
+			x notacredito.jrxml
+
+			comprobanteretencion.jrxml
+
+			SUB1 (java.io.InputStream)
+			$P{SUBREPORT_DIR} + "comprobanteretencion_detalle.jasper"	
+			
+			SUB2 (java.io.InputStream)
+			$P{SUBREPORT_DIR} + "factura_detalle_info_adicional.jasper"
+
+			fallan: 
+			guiaremision.jrxml
+			SUB1 (java.io.InputStream)
+			$P{SUBREPORT_DIR} + "guiaremision_destinatario.jasper"
+			
+			SUB2 (java.io.InputStream)
+			$P{SUBREPORT_DIR} + "guiaremision_detalle.jasper"
+
+			SUB3 (java.io.InputStream)
+			$P{SUBREPORT_DIR} + "factura_detalle_info_adicional.jasper"
+
+			Emplear: configuracion.getEmisorRutaLogo()
+			configuracion.emilogo
+			x Determinar el programa que carga el parámetro del nombre de la imagen
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
