@@ -1,5 +1,4 @@
 (A) 2019-01-06 Crear cjfeapp +core @fe
-(A) 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe
 (B) Entorno y pruebas de FE +oymar @sql-ledger
 (B) Revisión de idiomas en ES +oymar @sql-ledger
 (C) Clasificar directorio fe/dir por año +apracom @fe
@@ -9,3 +8,4 @@ x 2019-01-04 2019-01-03 Configuración de internet CNT en Dell +apracom @sql-led
 x 2019-01-04 Configuracion de tarjeta de red +oymar @sql-ledger
 x 2019-01-04 Importar mestros con Diego +apracom @sql-ledger
 x 2019-01-04 Pruebas de autorización de FE +apracom @fe
+x 2019-01-11 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe

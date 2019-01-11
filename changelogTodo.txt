@@ -106,6 +106,12 @@ TODO
 			x Sacar respaldo de  bases de datos: apracomsa y busicentury
 			x Sacar respaldo de SL de cada empresa
 			x Insert en las tablas para la ruta del logotipo
+			x Pruebas de FE con 001-001
+			x Restaurar parámetros anteriores al terminar la prueba
+
+			x Crear usuario geovanna para pruebas de firmas
+			x Enviar correo electrónico
+			x Permitir acceso en tomcat a la IP CNT 186.178.23.164 
 
 			Crear carpetas de fe
 			# cd /usr/local/fe
@@ -114,6 +120,8 @@ TODO
 			# mkdir -p dir/cf
 			# mkdir -p dir/ca
 			# mkdir -p dir/cn
+
+			FP,01,4.84,30,dias
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
