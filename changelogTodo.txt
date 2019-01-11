@@ -36,8 +36,7 @@ TODO
 			x Acceso de los usuarios y configuración de FE
 			x Actualizar la ruta del archivo p12
 			x generar fecola.jar
-			x Integrar fecola.jar con SL
-				$ sudo cp /home/carper/local/projects/cjerp/dist/bc_fecola.jar /usr/local/fe
+
 			x Comparar fuentes de AP y BC para poner ls ajustes de FE
 			x Generar los reportes con el logo de BC
 
@@ -69,6 +68,9 @@ TODO
 			x notadebito.jrxml
 			x notacredito.jrxml
 
+			$P{SUBREPORT_DIR}
+			/home/carper/local/projects/cjerp/cjfews/src/main/reports/generico/reportes/
+
 			comprobanteretencion.jrxml
 
 			SUB1 (java.io.InputStream)
@@ -91,6 +93,27 @@ TODO
 			Emplear: configuracion.getEmisorRutaLogo()
 			configuracion.emilogo
 			x Determinar el programa que carga el parámetro del nombre de la imagen
+
+			Probar en máquina virtual
+			Generar cjfews-rep-1.0.jar y copiar en Maven
+			$ ant jar
+			$ cp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar ~/.m2/repository/ec/cjpq/util/cjfews-rep/1.0	
+
+			x Generar cjfews.war (incluirá cjfews-rep-1.0.jar)
+			x Generar febc.war
+			x Generar feapracom.war
+
+			x Sacar respaldo de  bases de datos: apracomsa y busicentury
+			x Sacar respaldo de SL de cada empresa
+			x Insert en las tablas para la ruta del logotipo
+
+			Crear carpetas de fe
+			# cd /usr/local/fe
+			# mkdir -p p12s
+			# mkdir -p dir/cg
+			# mkdir -p dir/cf
+			# mkdir -p dir/ca
+			# mkdir -p dir/cn
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:
@@ -118,6 +141,20 @@ TODO
 		# psql -d busicentury19 -U sql-ledger -a -f SL-FE-diff.sql
 
 		cp /home/carper/csv/fe_config.csv /var/lib/pgsql/csv
+
+		Instalar cambios a producción
+		-----------------------------
+			Respaldo de dos wars
+			Ajuste en logo de empresa en fe_config
+			Modificar SL para *_fecola.jar
+			Verificar propietario de las tablas
+			
+			x Integrar fecola.jar con SL
+				$ sudo cp /home/carper/SL/bc_fecola.jar /usr/local/fe
+				$ sudo cp /home/carper/SL/ap_fecola.jar /usr/local/fe
+				$ sudo chown tomcat8: /usr/local/fe/*fecola.jar
+			$ sudo vim /usr/local/sql-ledgerFE/bin/mozilla/arap.pl
+				Agregar en 552:
 
 	* SQL-Ledger:
 		+ Bloquear BD:

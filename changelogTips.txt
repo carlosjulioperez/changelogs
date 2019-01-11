@@ -423,6 +423,7 @@ TIPS
 				find . -type f -exec sed -i 's,apracomsa,busicentury19,g' {} +
 				find . -type f -exec sed -i 's,busicentury19,busicentury,g' {} +
 				find . -type f -exec sed -i 's,busicentury,bcprueba,g' {} +
+				find . -type f -exec sed -i 's,bcprueba,busicentury,g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux

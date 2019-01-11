@@ -34,6 +34,9 @@ Desarrollo
 		https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
 		sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
 		sudo update-alternatives --config java
+
+		https://stackoverflow.com/questions/46615152/debian-9-openjdk-7-jre-and-openjdk-7-jre-headless
+		$ sudo apt install openjdk-8-jdk openjdk-8-jre-headless
 		
 		+ JAVA_HOME:
 			https://askubuntu.com/questions/175514/how-to-set-java-home-for-java
