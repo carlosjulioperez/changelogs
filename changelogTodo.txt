@@ -4,10 +4,6 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
-	Sebastián Devsu remoto
-
-	Reprogramar entrevista en DevSU
-	
 	* Espiritual:
 		Comentario 2re 25:27
 		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
@@ -15,10 +11,9 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
-		+ Estrategia:
-			En la Centos VM preparar BD de SL. Luego pasarlas a MAC.
-			En Mac programar en Java.
-		
+		+ Cambios: 
+			Formato de facturas, Comprobantes de Ingreso, Egreso y Retencionea.
+
 		+ Diego:
 			x Subir maestros de artículos
 			x Subir maestros de clientes
@@ -122,6 +117,34 @@ TODO
 			# mkdir -p dir/cn
 
 			FP,01,4.84,30,dias
+
+		+ alex:
+			x generar cjfews.war
+			x Crear proyecto fe (bd oymar eso varía por cada empresa)
+			x Modificar build.xml para generar oy_fecola.jar
+			x cambiar bc por prueba oymar
+			x Generar fe.war
+			x Crear estructura de /usr/local/fe
+			x Copiar fe_config de oymar
+			x Update para especificar el logo de la empresa
+			x Copiar script para cambio de propietario de objetos
+			x scp -P 2022 /home/carper/local/projects/changelogs/script/change_db_owner.sh carper@186.33.181.219:~
+
+			x Copiar el archivo p12
+			x scp -P 2022 /home/carper/Descargas/monica_martillo.p12 carper@186.33.181.219:~
+			x scp -P 2022 ~/local/projects/cjerp/fe/src/main/resources/sql/fe_config.sql carper@186.33.181.219:~
+			x scp -P 2022 /home/carper/tmp/fe.war carper@186.33.181.219:~
+
+				$ sudo chown -R tomcat8: /opt/apache-tomcat-8.5.37/webapps/
+
+			x Configuración de correo
+		
+		+ sql-ledgerCJ:
+			Idioma EC a UTF8
+			rm tr_trade general
+			Subir tablas
+			Realizar pruebas de FE
+
 
 		Crear BD de 2019 para cada empresa
 		Prioridades:

@@ -415,15 +415,7 @@ TIPS
 				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
 				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
-				find . -type f -exec sed -i 's/feapracom/cjfe/g' {} +
-				
-				find . -type f -exec sed -i 's/feapracom/febc/g' {} +
-				find . -type f -exec sed -i 's,/usr/local/fe,/opt/fe,g' {} +
-				find . -type f -exec sed -i 's,APRACOMSA,BC,g' {} +	
-				find . -type f -exec sed -i 's,apracomsa,busicentury19,g' {} +
-				find . -type f -exec sed -i 's,busicentury19,busicentury,g' {} +
-				find . -type f -exec sed -i 's,busicentury,bcprueba,g' {} +
-				find . -type f -exec sed -i 's,bcprueba,busicentury,g' {} +
+				find . -type f -exec sed -i 's/busicentury/prueba/g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux

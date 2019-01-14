@@ -101,3 +101,6 @@ SQL
 		+ Blutec:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
 
+	* Multitenancy:
+		hibernate 3 multi tenancy
+		http://spring.io/blog/2007/01/23/dynamic-datasource-routing/

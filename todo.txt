@@ -1,6 +1,11 @@
-(A) 2019-01-06 Crear cjfeapp +core @fe
-(B) Entorno y pruebas de FE +oymar @sql-ledger
+(A) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
+(A) 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
+(A) Cambiar plantilla tr_trade a general +core @sql-ledger
+(A) Comparar SL 303 vs SL 327 +core @sql-ledger
+(B) Agregar FE en SQL-Ledger 303 +core @fe
+(B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
 (B) Revisión de idiomas en ES +oymar @sql-ledger
+(C) 2019-01-11 Crear cjfeapp +core @fe
 (C) Clasificar directorio fe/dir por año +apracom @fe
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
