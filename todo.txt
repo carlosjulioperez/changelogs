@@ -1,3 +1,4 @@
+(A) Martes 22 16:30 Reunión UBEP Comunitarias y tesis
 (A) 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
 (A) Instalación de docker y configuración +core @sql-ledger
 (B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
