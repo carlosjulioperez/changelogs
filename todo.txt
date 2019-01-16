@@ -1,12 +1,11 @@
-(A) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
 (A) 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
-(A) Cambiar plantilla tr_trade a general +core @sql-ledger
-(A) Comparar SL 303 vs SL 327 +core @sql-ledger
-(B) Agregar FE en SQL-Ledger 303 +core @fe
+(A) Instalación de docker y configuración +core @sql-ledger
 (B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
-(B) Revisión de idiomas en ES +oymar @sql-ledger
 (C) 2019-01-11 Crear cjfeapp +core @fe
+(C) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
+(C) Agregar FE en SQL-Ledger 303 +core @fe
 (C) Clasificar directorio fe/dir por año +apracom @fe
+(C) Comparar SL 303 vs SL 327 +core @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
 x 2019-01-04 2019-01-03 Configuración de internet CNT en Dell +apracom @sql-ledger
@@ -14,3 +13,6 @@ x 2019-01-04 Configuracion de tarjeta de red +oymar @sql-ledger
 x 2019-01-04 Importar mestros con Diego +apracom @sql-ledger
 x 2019-01-04 Pruebas de autorización de FE +apracom @fe
 x 2019-01-11 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe
+x 2019-01-13 2019-01-13 Revisión de idiomas en ES +oymar @sql-ledger
+x 2019-01-14 Cambiar plantilla tr_trade a general +core @sql-ledger
+x 2019-01-14 Envío de maestros a Vanessa hostal internacional manta +core @sql-ledger

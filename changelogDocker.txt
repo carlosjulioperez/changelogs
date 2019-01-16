@@ -14,12 +14,13 @@ Docker + Status:
 		$ sudo docker pull centos
 		$ sudo docker images
 	
-		Borrar las dependencias y al final la imagen principal
+	+ Borrar las dependencias y al final la imagen principal:
+		$ sudo docker images
 		$ sudo docker ps -as
 		$ sudo docker rm 86c3dcbe47cd
-		$ sudo docker rmi centos
+		$ sudo docker rmi image_id (centos)
 
-	+ Bases:
+	+ Howto:
 		$ docker ps -a
 		5f859da00034        debian              "bash"              About an hour ago   Up About an hour flamboyant_stallman
 
@@ -33,10 +34,14 @@ Docker + Status:
 
 		$ docker login -u carlosjulioperez
 		$ docker push carlosjulioperez/debian
-	
-	+ Eliminar imagen:
-		$ docker images
-		$ docker rmi image_id
+
+	+ Centos:
+		$ su - carper
+		$ docker pull centos:6.10
+		$ docker run -it centos:6.10
+
+		$ yum -y install git acpid httpd postgresql perl-DBI perl-DBD-Pg git-core gitweb postfix texlive
+
 
 Revisar
 	https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04

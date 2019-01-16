@@ -9,7 +9,7 @@ Centos
 	ssh carper@186.33.181.219 -p 2022
 
 	* Test:
-	ssh carper@192.168.253.179 -p 2022
+	ssh carper@192.168.253.83 -p 2022
 	ssh carper@192.168.1.9 -p 2022
 
 	ssh carper@186.3.200.21 -p 2022

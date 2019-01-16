@@ -13,6 +13,7 @@ TODO
 	* Tareas:
 		+ Cambios: 
 			Formato de facturas, Comprobantes de Ingreso, Egreso y Retencionea.
+			Verificar log de febc
 
 		+ Diego:
 			x Subir maestros de artículos
@@ -140,9 +141,9 @@ TODO
 			x Configuración de correo
 		
 		+ sql-ledgerCJ:
-			Idioma EC a UTF8
-			rm tr_trade general
-			Subir tablas
+			x Idioma EC a UTF8
+			x mv tr_trade general
+			x Subir tablas
 			Realizar pruebas de FE
 
 
