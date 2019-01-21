@@ -6,6 +6,8 @@ Centos
 	* Producción:
 	ssh carper@192.168.0.253 -p 2022
 	ssh carper@186.178.202.68 -p 2022
+	ssh carper@200.124.241.243 -p 2022
+
 	ssh carper@186.33.181.219 -p 2022
 
 	* Test:
@@ -21,7 +23,8 @@ Centos
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
 
-		# date +%T -s "00:11:13"	
+		# date -s "21 JAN 2019 01:00:00"
+		# date +%T -s "00:58:13"	
 		# hwclock --systohc
 
 	* Monitorizar:

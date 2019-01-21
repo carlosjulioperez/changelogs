@@ -4,13 +4,17 @@ Vim
 		:set nonu
 		:set nu!
 
-	* Instalar el mejor tema gruvbox:
+	* Tema gruvbox:
+		+ En vim:
 		https://github.com/morhetz/gruvbox/wiki/Installation
 		git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 
-	* En terminator:
+		+ En terminator:
 		https://github.com/egel/terminator-gruvbox
 		$ mkdir -p ~/.config/terminator/ && wget -O ~/.config/terminator/config https://raw.githubusercontent.com/egel/terminator-gruvbox/master/config
+
+		+ En tmux:
+			https://gist.github.com/andytwigg/2e27d53e296aa77a3a4e32cfeab76fae
 
 	* IDE:
 		Instalar tmux

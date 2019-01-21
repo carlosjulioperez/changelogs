@@ -14,33 +14,20 @@ TODO
 		+ Cambios: 
 			Formato de facturas, Comprobantes de Ingreso, Egreso y Retencionea.
 			Verificar log de febc
+			Cuadre de caja
+			Ofuscar cjfews y fe
 
-		+ Diego:
-			x Subir maestros de artículos
-			x Subir maestros de clientes
-			x Subir maestros de proveedores 
-			
-			Respaldo de BD apracom19
+		+ Hugo:
+			x 2019-01-17
+			x Agregar id 311 Liquidaciones de compra 2 (%) Renta en todas las bases
+			x Corregir id 341 -> 344 Otros aplicables al 2% 
+
+			select * from tiporet order by 1;
+			INSERT INTO tiporet (id,description,porcret,impuesto) VALUES (311,'Liquidaciones de Compra',2,'Renta');
+			UPDATE tiporet SET id=344 WHERE id=341;
 
 		+ Fe:	
-			x Entorno local de fe
-			x Actualizar estructuras para fe
-			x Subir datos de fe_config
-			x Subir tablas tipoid, tipodoc
-			x Cambiar busicentury19 por busicentury
-			x Diff en ap y bc
-			x Acceso de los usuarios y configuración de FE
-			x Actualizar la ruta del archivo p12
-			x generar fecola.jar
 
-			x Comparar fuentes de AP y BC para poner ls ajustes de FE
-			x Generar los reportes con el logo de BC
-
-			--Pruebas
-			x Duplicar base bd para pruebas
-			x Cambiar el dataset por bcprueba
-			x Validar usuario postgres
-			x Verificar la consulta en fe_cola
 			x Mostrar botón FE
 				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/is.pl
 				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/arap.pl
@@ -52,58 +39,12 @@ TODO
 			x Especificar la forma de pago en cada factura
 			x Validar el envío de correo
 
-			x Diferenciar el logo por empresa $P{LOGO}
-			build.xml
-
-			Cambiar LOGO a String
-			"/img/ap_logo.jpg"
-			LOGO = Configuracion.getEmisorRutaLogo();
-
-			x src/main/reports/img/ap_logo.jpg y bc_logo.jpg
-			x factura.jrxml
-			x notadebito.jrxml
-			x notacredito.jrxml
-
-			$P{SUBREPORT_DIR}
-			/home/carper/local/projects/cjerp/cjfews/src/main/reports/generico/reportes/
-
-			comprobanteretencion.jrxml
-
-			SUB1 (java.io.InputStream)
-			$P{SUBREPORT_DIR} + "comprobanteretencion_detalle.jasper"	
-			
-			SUB2 (java.io.InputStream)
-			$P{SUBREPORT_DIR} + "factura_detalle_info_adicional.jasper"
-
-			fallan: 
-			guiaremision.jrxml
-			SUB1 (java.io.InputStream)
-			$P{SUBREPORT_DIR} + "guiaremision_destinatario.jasper"
-			
-			SUB2 (java.io.InputStream)
-			$P{SUBREPORT_DIR} + "guiaremision_detalle.jasper"
-
-			SUB3 (java.io.InputStream)
-			$P{SUBREPORT_DIR} + "factura_detalle_info_adicional.jasper"
-
-			Emplear: configuracion.getEmisorRutaLogo()
-			configuracion.emilogo
-			x Determinar el programa que carga el parámetro del nombre de la imagen
-
-			Probar en máquina virtual
-			Generar cjfews-rep-1.0.jar y copiar en Maven
 			$ ant jar
 			$ cp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar ~/.m2/repository/ec/cjpq/util/cjfews-rep/1.0	
 
 			x Generar cjfews.war (incluirá cjfews-rep-1.0.jar)
 			x Generar febc.war
 			x Generar feapracom.war
-
-			x Sacar respaldo de  bases de datos: apracomsa y busicentury
-			x Sacar respaldo de SL de cada empresa
-			x Insert en las tablas para la ruta del logotipo
-			x Pruebas de FE con 001-001
-			x Restaurar parámetros anteriores al terminar la prueba
 
 			x Crear usuario geovanna para pruebas de firmas
 			x Enviar correo electrónico
@@ -120,49 +61,13 @@ TODO
 			FP,01,4.84,30,dias
 
 		+ alex:
-			x generar cjfews.war
-			x Crear proyecto fe (bd oymar eso varía por cada empresa)
-			x Modificar build.xml para generar oy_fecola.jar
-			x cambiar bc por prueba oymar
-			x Generar fe.war
-			x Crear estructura de /usr/local/fe
-			x Copiar fe_config de oymar
-			x Update para especificar el logo de la empresa
-			x Copiar script para cambio de propietario de objetos
 			x scp -P 2022 /home/carper/local/projects/changelogs/script/change_db_owner.sh carper@186.33.181.219:~
 
-			x Copiar el archivo p12
 			x scp -P 2022 /home/carper/Descargas/monica_martillo.p12 carper@186.33.181.219:~
 			x scp -P 2022 ~/local/projects/cjerp/fe/src/main/resources/sql/fe_config.sql carper@186.33.181.219:~
 			x scp -P 2022 /home/carper/tmp/fe.war carper@186.33.181.219:~
-
-				$ sudo chown -R tomcat8: /opt/apache-tomcat-8.5.37/webapps/
-
 			x Configuración de correo
 		
-		+ sql-ledgerCJ:
-			x Idioma EC a UTF8
-			x mv tr_trade general
-			x Subir tablas
-			Realizar pruebas de FE
-
-
-		Crear BD de 2019 para cada empresa
-		Prioridades:
-			X Catver			*1
-			X Blutec			*1
-			X Apracom			*2
-			X Tradetec			*2
-			X BC				*3
-			X Biomicro			*4
-			X QualPeru			*4
-			Probol			*5
-			Propar			*6
-			Atver			*7
-			Ponte logistica	*8
-
-		Copiar /home/carper/local/docs/apracom/ en pendrive
-
 		scp -P 2022 /home/carper/local/docs/apracom/import/tablas.tar.gz carper@186.3.200.21:~
 		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
 		scp -P 3333 /Users/carper/Downloads/apgdiff/SL-FE-diff.sql carper@186.178.202.68:~
@@ -173,20 +78,6 @@ TODO
 		# psql -d busicentury19 -U sql-ledger -a -f SL-FE-diff.sql
 
 		cp /home/carper/csv/fe_config.csv /var/lib/pgsql/csv
-
-		Instalar cambios a producción
-		-----------------------------
-			Respaldo de dos wars
-			Ajuste en logo de empresa en fe_config
-			Modificar SL para *_fecola.jar
-			Verificar propietario de las tablas
-			
-			x Integrar fecola.jar con SL
-				$ sudo cp /home/carper/SL/bc_fecola.jar /usr/local/fe
-				$ sudo cp /home/carper/SL/ap_fecola.jar /usr/local/fe
-				$ sudo chown tomcat8: /usr/local/fe/*fecola.jar
-			$ sudo vim /usr/local/sql-ledgerFE/bin/mozilla/arap.pl
-				Agregar en 552:
 
 	* SQL-Ledger:
 		+ Bloquear BD:
@@ -221,8 +112,6 @@ TODO
 		jessypq29@gmail.com
 		0984224545
 		
-		Solicitar formato excel de plan ctas, prod, clientes, prov, etc a Jéssica
-		Hacer las traducciones en español
 		Agregar las retenciones leyendo directamente de facturas y de compras, porcentajes de retención en el plan de cuentas, Manual o no Ruddy
 		Reporte de retención por 1%, 2%, etc.
 		

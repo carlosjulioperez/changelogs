@@ -43,7 +43,7 @@ SQL
 	* Ejemplos de ejecución de scripts:
 		# psql -U sql-ledger -d apracomsa -a -f /home/cromero/fe/insert.sql
 		# psql -U sql-ledger -d apracomsa -a -f ~/local/projects/cjerp/cjfe/src/main/resources/sql/fe_config.sql 
-		# psql -d prueba -a -f SL-FE-diff.sql
+		# psql -U sql-ledger -d prueba -a -f SL-FE-diff.sql
 		
 		\i path_to_sql_file @pathof_mysqlfile.sql
 		apracomsa=# \i /usr/local/fe/ddl.sql
@@ -58,6 +58,8 @@ SQL
 		COPY vendor      TO '/tmp/vendor.csv'      WITH DELIMITER ',' CSV HEADER;
 		COPY parts       TO '/tmp/parts.csv'       WITH DELIMITER ',' CSV HEADER;
 		COPY chart       TO '/tmp/chart.csv'       WITH DELIMITER ',' CSV HEADER;
+		COPY tax         TO '/tmp/tax.csv'         WITH DELIMITER ',' CSV HEADER;
+		COPY defaults    TO '/tmp/defaults.csv'    WITH DELIMITER ',' CSV HEADER;
 		COPY tipodoc     TO '/tmp/tipodoc.csv'     WITH DELIMITER ',' CSV HEADER;
 		COPY tipoid      TO '/tmp/tipoid.csv'      WITH DELIMITER ',' CSV HEADER;
 		COPY tiporet     TO '/tmp/tiporet.csv'     WITH DELIMITER ',' CSV HEADER;
@@ -75,20 +77,23 @@ SQL
 		+ Importar:
 		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
 
-		COPY customer  FROM '/tmp/customer.csv'                      DELIMITERS ',' CSV;
-		COPY tipodoc   FROM '/var/lib/pgsql/csv/tipodoc.csv'         DELIMITER  ',' CSV HEADER;
-		COPY tipoid    FROM '/var/lib/pgsql/csv/tipoid.csv'          DELIMITER  ',' CSV HEADER;
-		COPY tiporet   FROM '/var/lib/pgsql/csv/tiporet.csv'         DELIMITER  ',' CSV HEADER;
-		COPY chart     FROM '/var/lib/pgsql/csv/planCtasApracom.csv' DELIMITER  ',' CSV HEADER;
-		COPY fe_config FROM '/var/lib/pgsql/csv/fe_config.csv'       DELIMITER  ',' CSV HEADER;
+		COPY customer    FROM '/tmp/customer.csv'    DELIMITER  ',' CSV HEADER;
+		COPY tipodoc     FROM '/tmp/tipodoc.csv'     DELIMITER  ',' CSV HEADER;
+		COPY tipoid      FROM '/tmp/tipoid.csv'      DELIMITER  ',' CSV HEADER;
+		COPY tiporet     FROM '/tmp/tiporet.csv'     DELIMITER  ',' CSV HEADER;
+		COPY fe_config   FROM '/tmp/fe_config.csv'   DELIMITER  ',' CSV HEADER;
+		
+		COPY chart       FROM '/tmp/chart.csv'       DELIMITER  ',' CSV HEADER;
+		COPY defaults    FROM '/tmp/defaults.csv'    DELIMITER  ',' CSV HEADER;
+		COPY tax         FROM '/tmp/tax.csv'         DELIMITER  ',' CSV HEADER;
 
 		--2019-01-04
-		COPY parts       FROM '/var/lib/pgsql/csv/Materiales2.csv' DELIMITER  ',' CSV HEADER;
-		COPY partstax    FROM '/var/lib/pgsql/csv/partstax.csv'    DELIMITER  ',' CSV HEADER;
-		COPY customer    FROM '/var/lib/pgsql/csv/customers.csv'   DELIMITER  ',' CSV HEADER;
-		COPY customertax FROM '/var/lib/pgsql/csv/customertax.csv' DELIMITER  ',' CSV HEADER;
-		COPY vendor      FROM '/var/lib/pgsql/csv/vendor.csv'      DELIMITER  ',' CSV HEADER;
-		COPY vendortax   FROM '/var/lib/pgsql/csv/vendortax.csv'   DELIMITER  ',' CSV HEADER;
+		COPY parts       FROM '/tmp/parts.csv'       DELIMITER  ',' CSV HEADER;
+		COPY partstax    FROM '/tmp/partstax.csv'    DELIMITER  ',' CSV HEADER;
+		COPY customer    FROM '/tmp/customers.csv'   DELIMITER  ',' CSV HEADER;
+		COPY customertax FROM '/tmp/customertax.csv' DELIMITER  ',' CSV HEADER;
+		COPY vendor      FROM '/tmp/vendor.csv'      DELIMITER  ',' CSV HEADER;
+		COPY vendortax   FROM '/tmp/vendortax.csv'   DELIMITER  ',' CSV HEADER;
 
 
 	* Defaults:
@@ -100,6 +105,12 @@ SQL
 		
 		+ Blutec:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
+
+	* Cuentas para productos:
+		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');
+		68  | 1010703021 | INVENTARIO DE PRODUCTOS TERMINADOS
+		333 | 4010101002 | VENTAS LOCALES BIENES 0%          
+		393 | 5010101001 | COSTO DE PRODUCTOS VENDIDOS       
 
 	* Multitenancy:
 		hibernate 3 multi tenancy
