@@ -49,29 +49,29 @@ Centos
 
 		# crontab -e
 		# m h dom mon dow user command
-		0 0 * * *       /home/cromero/dbbackup-night.sh
-		0 13 * * *      /home/cromero/dbbackup.sh
-		0  0 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/cromero/cronApr-night.log 2>&1
-		5 13 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/cromero/cronApr.log 2>&1
-		10 0 * * *      /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/cromero/cronBus-night.log 2>&1
-		15 13 * * *     /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/cromero/cronBus.log 2>&1
+		0 0 * * *       /home/user2/dbbackup-night.sh
+		0 13 * * *      /home/user2/dbbackup.sh
+		0  0 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/user2/cronApr-night.log 2>&1
+		5 13 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/user2/cronApr.log 2>&1
+		10 0 * * *      /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/user2/cronBus-night.log 2>&1
+		15 13 * * *     /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/user2/cronBus.log 2>&1
 
 		# vim /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh
 		#!/bin/sh
 		#
 		## Recalculate Average Cost
 		#cd /root/www/app.myledger.net/manshanew/2013/
-		# 2018-11-20 Modificado por carper
+		# 2018-11-20 Modificado por user1
 		cd /usr/local/SL/esquema_nuevo/sql-ledger/
-		./is.pl "login=ap_cromero&path=bin/mozilla/&password=forever&action=continue&nextsub=repost_cogs"
+		./is.pl "login=ap_user2&path=bin/mozilla/&password=forever&action=continue&nextsub=repost_cogs"
 
 		# vim /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh
 		#!/bin/sh
 		#
 		## Recalculate Average Cost
-		# 2018-11-20 Modificado por carper
+		# 2018-11-20 Modificado por user1
 		cd /usr/local/SL/esquema_nuevo/busicentury/
-		./is.pl "login=bu_cromero&path=bin/mozilla/&password=123&action=continue&nextsub=repost_cogs"
+		./is.pl "login=bu_user2&path=bin/mozilla/&password=123&action=continue&nextsub=repost_cogs"
 
 	* Desactivar ping:
 		https://webhostinggeeks.com/howto/how-to-deny-icmp-ping-request-on-centos-6-2/
@@ -90,12 +90,12 @@ Centos
 		# netstat -rn
 
 	* Copiar el sistema a unidad USB:
-		# sudo dd if=/home/carper/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
+		# sudo dd if=/home/user1/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
 
 	* Reducir tamaño de vdi:
 		$ dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile
 		Shutdown VM
-		$ vboxmanage modifymedium --compact /home/carper/VirtualBox\ VMs/centos6EN/centos6EN.vdi
+		$ vboxmanage modifymedium --compact /home/user1/VirtualBox\ VMs/centos6EN/centos6EN.vdi
 
 	* eth0 no encontrada al copiar vdi en otra máquina:
 		https://www.ostechnix.com/solve-device-eth0-not-seem-present-delaying-initialization-error/
@@ -162,9 +162,9 @@ Centos
 			#SELINUX=disabled  
 
 	* Crear usuario admin:
-		# adduser carper
-		# passwd carper
-		# usermod -aG wheel carper
+		# adduser user1
+		# passwd user1
+		# usermod -aG wheel user1
 		# vim /etc/sudoers
 
 	* ssh:
@@ -175,7 +175,7 @@ Centos
 		
 		#Port 22
 		Port 2022 
-		AllowUsers carper cromero
+		AllowUsers user1 user2
 
 		# service sshd restart
 
@@ -288,10 +288,6 @@ Centos
 		https://www.if-not-true-then-false.com/2010/enable-apache-userdir-with-selinux-on-fedora-centos-red-hat-rhel/
 
 		+ Copiar desde el cliente:
-		# scp -P 2022 /home/carper/local/respaldo/sql-ledger/2.8.20/sql-ledger-2018-07-19.tar.gz
-		carper@192.168.253.179:~
-		# scp -P 2022 /home/carper/local/respaldo/sql-ledger/SL327/sql-ledger327_04-19-2018.tar.gz carper@192.168.253.179:~
-
 		# yum -y install perl-DBI perl-DBD-Pg mod_perl perl-DBIx-Simple
 		# yum -y install tetex tetex-fonts tetex-dvips tetex-latex ghostscript lynx
 
@@ -602,7 +598,7 @@ Centos
 
 	* Montar NAS:
 		Ejemplo en ubuntu:
-		mount -t cifs -o username=cromero,password=macadamia //192.168.0.41/PostgreSql /mnt/ 
+		mount -t cifs -o username=user2,password=macadamia //192.168.0.41/PostgreSql /mnt/ 
 
 		https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-nfs-client-config-autofs.html	
 
@@ -614,7 +610,7 @@ Centos
 		/nas /etc/auto.nas
 		
 		$ sudo vim /etc/auto.nas
-		nasbox	-fstype=cifs,rw,noperm,user=cromero,pass=macadamia ://192.168.0.41/PostgreSql
+		nasbox	-fstype=cifs,rw,noperm,user=user2,pass=macadamia ://192.168.0.41/PostgreSql
 
 		$ sudo vim /etc/nsswitch.conf
 		hosts:      files dns wins

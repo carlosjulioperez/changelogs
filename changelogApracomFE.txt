@@ -1,13 +1,787 @@
 Aplicaciones
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp /home/user1/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
 	+ cogs:
 		apracomsa: 23:27 23:30 -> 3 min
 
-	Claro
-	http://201.183.224.10/sql-ledger/login.pl	
-
 	CNT
 	http://186.178.202.67/sql-ledger/login.pl
-	
 	
 	http://186.178.202.67/mer
 	http://186.178.202.67/sql-ledgerFE/login.pl
@@ -17,8 +791,6 @@ Aplicaciones
 	https://trello.com/b/aZETtlcD/fe-apracom
 	
 Checklist
-
-	scp -P 3333 carper@192.168.0.3:/usr/local/apache-tomcat-7.0.54/webapps/feapracom/WEB-INF/classes/shiro.ini .
 
 	Cambiar configuración de teclado
 	https://askubuntu.com/questions/209597/how-do-i-change-keyboards-from-the-command-line
@@ -94,7 +866,7 @@ Sql-Ledger 2.8.20
 Instalación en servidor de Cromero 192.168.10.13
 
 	* Datos del servidor:
-		cromero@ProxyUb10: lsb_release -a
+		user2@ProxyUb10: lsb_release -a
 		No LSB modules are available.
 		Distributor ID: Ubuntu
 		Description:    Ubuntu 10.04 LTS
@@ -115,47 +887,35 @@ Instalación en servidor de Cromero 192.168.10.13
 		* Determinar si localhost está oyendo: nslookup localhost 
 
 	* Conexión remota SSH:
-		+ Ubuntu:
-		ssh carper@186.178.202.67 -p 3333
-		ssh carper@201.183.224.10 -p 3333
-		ssh carper@192.168.0.3
-		
-		+ Centos:
-		ssh carper@192.168.0.253 -p 2022
-		ssh carper@186.178.202.68 -p 3333
-
 		+ Crear archivo de llave clave pública para ssh:
 			# ssh-keygen -t rsa -b 2048
 			Cuando solicite clave, pulsar Enter, dos veces.
 			Copiar en el cliente:
-			scp cromero@192.168.10.13:/home/cromero/.ssh/id_rsa.pub /opt/local/workspace/bin
+			scp user2@192.168.10.13:/home/user2/.ssh/id_rsa.pub /opt/local/workspace/bin
 
 		+ Copiar log:
-			scp cromero@201.183.224.10:~/fe/logs/feapracom.log .
+			scp user2@201.183.224.10:~/fe/logs/feapracom.log .
 
 		+ Copiar Factura:
 			http://www.binarytides.com/linux-scp-command/
 
-			scp cromero@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.pdf .
-			scp cromero@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.xml .
+			scp user2@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.pdf .
+			scp user2@192.168.0.3:~/fe/dir/ca/NC-1790252361001-29092017-004003000000055.xml .
 
-			scp cromero@192.168.0.3:~/fe/dir/ca/FA-0301320479001-30112017-004002000011722.pdf .
+			scp user2@192.168.0.3:~/fe/dir/ca/FA-0301320479001-30112017-004002000011722.pdf .
 
-			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.xml .
-			scp -P 2222 cromero@186.178.202.67:~/fe/dir/ca/FA-1791923138001-23102017-005002000002259.pdf .
-			
-			scp cromero@192.168.0.3:/tmp/clientes.csv .
-			scp cromero@192.168.0.3:/tmp/proveedores.csv .
-			scp cromero@192.168.0.3:/tmp/articulos.csv .
-			scp cromero@192.168.0.3:/tmp/planctas.csv .
+			scp user2@192.168.0.3:/tmp/clientes.csv .
+			scp user2@192.168.0.3:/tmp/proveedores.csv .
+			scp user2@192.168.0.3:/tmp/articulos.csv .
+			scp user2@192.168.0.3:/tmp/planctas.csv .
 	
 			scp username@remotehost:/path/directory/\{foo.txt,bar.txt\} .
 			
-			scp cromero@201.183.224.10:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
-			scp cromero@201.183.224.10:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
+			scp user2@201.183.224.10:~/fe/dir/cg/\{RE-0920219581001-22082016-004002000003498.xml,RE-0992646950001-22082016-004002000003499.xml\} .
+			scp user2@201.183.224.10:~/fe/dir/ca/\{RE-0920219581001-22082016-004002000003498.pdf,RE-0992646950001-22082016-004002000003499.pdf\} .
 
 		+ Copiar certificado:
-			scp cromero@201.183.224.10:~/fe/certProd/jssecacerts .
+			scp user2@201.183.224.10:~/fe/certProd/jssecacerts .
 
 	* Verificar conexión con servidores de SRI:
 		lynx https://celcer.sri.gob.ec
@@ -177,14 +937,6 @@ Configuración Java
 
 	* Instalación:
 		# sudo apt-get install oracle-java7-installer mc lynx
-		# scp /Users/carper/Downloads/instaladores/desarrolloWebJava/tomcat/apache-tomcat-7.0.54.tar.gz cromero@192.168.10.13:~/fe
-		# scp /media/carper/Windows8_OS/tmp/jdk-7u60-linux-x64.tar.gz cromero@186.101.10.150:~/fe/java
-		$ scp /home/carper/local/misArchivos/java/jdk-7u80-linux-i586.tar.gz carper@192.168.100.212:~
-
-		+ En máquina virtual con qemu/kvm:
-
-		$ scp /home/carper/.vimrc carper@192.168.100.212:~
-		$ scp -r /home/carper/.vim carper@192.168.100.212:~
 
 	* Configuración de Tomcat 7:
 		# sudo vim /usr/bin/tomcat7
@@ -196,7 +948,7 @@ Configuración Java
 		# vim /usr/local/apache-tomcat-7.0.54/conf/tomcat-users.xml
 			<tomcat-users>
 			        <role rolename="manager-gui"/>
-			        <user username="cromero" password="***" roles="manager-gui"/>
+			        <user username="user2" password="***" roles="manager-gui"/>
 			</tomcat-users>
 
 	* Configurar servicio de tomcat7:
@@ -247,7 +999,7 @@ Configuración Java
 			$ sudo keytool -importkeystore -srckeystore jssecacerts -destkeystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts
 			$ sudo keytool -importkeystore -srckeystore jssecacerts -destkeystore /usr/lib/jvm/java-8-oracle/jre/lib/security/cacerts
 
-		/home/cromero/fe/certProd/jssecacerts
+		/home/user2/fe/certProd/jssecacerts
 
 Gestión de la BD
 	* PostgreSQL:
@@ -327,7 +1079,7 @@ Gestión de la BD
 		select * from parts where partnumber = 'BC-ACIPOPT'
 
 		+ Copiar un respaldo de la BD:
-			scp cromero@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
+			scp user2@201.183.224.10:~/dbbackup/2016/10-06-2016.apracomsa.sql.bz2 .
 
 bccentury
          fldname         | fldvalue 
@@ -424,10 +1176,6 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 		pg_dump --data-only --table=fe_cola_aut apracomsa > fe_cola_aut.pg
 		psql apracomsa < fe_cola_aut.pg
 	
-		scp -P 2222 /var/lib/postgresql/retenc.pg cromero@186.178.202.67:~/dbbackup
-		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/customer.pg .
-		scp -P 2222 cromero@186.178.202.67:/var/lib/postgresql/address.pg .
-
 		2018-01-02
 		http://blog.e-shell.org/134
 		sudo apt-get install recode
@@ -452,7 +1200,7 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 		psql apracomsa < contact.pg
 	
 	* Copiar respaldos en disco local:
-		scp carper@192.168.0.3:/home/cromero/dbbackup/2016/30-01-2018.apracomsa.sql.bz2 /home/carper/local/sql-ledger/dbbackup
+		scp user1@192.168.0.3:/home/user2/dbbackup/2016/30-01-2018.apracomsa.sql.bz2 /home/user1/local/sql-ledger/dbbackup
 
 	* Diferencias entre base de datos:
 		pg_dump apracomsa > apracomsa.sql
@@ -460,14 +1208,14 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 		apgdiff apracomsa.sql demo123.sql > diff.sql
 
 	* Copiar scripts:
-		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/ddl.sql cromero@192.168.10.13:~/fe
-		# scp /Users/carper/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/insert.sql cromero@192.168.10.13:~/fe
-		# scp /mnt/datos/local/workspace/feapracom/resources/sql/insert.sql cromero@192.168.10.13:~/fe
+		# scp /Users/user1/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/ddl.sql user2@192.168.10.13:~/fe
+		# scp /Users/user1/documentosCJ/proyectos/cjerp/workspace/feapracom/resources/sql/insert.sql user2@192.168.10.13:~/fe
+		# scp /mnt/datos/local/workspace/feapracom/resources/sql/insert.sql user2@192.168.10.13:~/fe
 	
 	* Ejemplos de ejecución de scripts:
 		\i path_to_sql_file
 		@pathof_mysqlfile.sql
-		# psql -U postgres -d apracomsa -a -f /home/cromero/fe/insert.sql
+		# psql -U postgres -d apracomsa -a -f /home/user2/fe/insert.sql
 		
 		apracomsa=# \i /usr/local/fe/ddl.sql
 		apracomsa=# \i /usr/local/fe/insert.sql
@@ -495,9 +1243,9 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 Configuración de entorno de FE
 
 	* Configuración de carpeta ~/fe:
-		# scp /usr/local/fe/p12s/ana_maria_valladares_lopez.p12 cromero@186.101.10.150:~/fe/p12s
-		# scp /Users/carper/documentosCJ/proyectos/general/firmaElectronica/documentos/celcer.sri.gob.ec cromero@192.168.10.13:~/fe/p12s
-		# scp /Users/carper/documentosCJ/proyectos/general/firmaElectronica/documentos/cel.sri.gob.ec cromero@192.168.10.13:~/fe/p12s
+		# scp /usr/local/fe/p12s/ana_maria_valladares_lopez.p12 user2@186.101.10.150:~/fe/p12s
+		# scp /Users/user1/documentosCJ/proyectos/general/firmaElectronica/documentos/celcer.sri.gob.ec user2@192.168.10.13:~/fe/p12s
+		# scp /Users/user1/documentosCJ/proyectos/general/firmaElectronica/documentos/cel.sri.gob.ec user2@192.168.10.13:~/fe/p12s
 		
 		# cd /usr/local/fe
 		# mkdir -p p12s
@@ -516,20 +1264,10 @@ Configuración de entorno de FE
 		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/cjfews*
 		# sudo rm -rf /usr/local/apache-tomcat-7.0.54/webapps/feapracom*
 
-		# scp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar cromero@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
-		# scp -P 2222 ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar cromero@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
-
-		+ Ver el contenido del archivo jar:
-		$ jar tvf cjfews-rep-1.0.jar
-
-		2018-02-02
-		+ Actualizar el jar para soporte Offline:
-		$ scp /home/carper/.m2/repository/ec/gob/sri/cliente-ws-offline/1.0/cliente-ws-offline-1.0.jar carper@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
-
-		# scp /home/carper/local/wsindigo/cjfews/WebContent/WEB-INF/lib/xmlpull-1.1.3.1.jar cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/lib
+		# scp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar user2@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
 		
-		# scp /home/carper/local/projects/cjerp/cjfews/target/cjfews.war cromero@192.168.0.3:/usr/local/apache-tomcat-7.0.54/webapps
-		# scp -P 222 /home/carper/local/projects/cjerp/cjfews/target/cjfews.war	cromero@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
+		# scp /home/user1/local/projects/cjerp/cjfews/target/cjfews.war user2@192.168.0.3:/usr/local/apache-tomcat-7.0.54/webapps
+		# scp -P 222 /home/user1/local/projects/cjerp/cjfews/target/cjfews.war	user2@186.101.10.150:/usr/local/apache-tomcat-7.0.54/webapps
 
 		# Consultar privilegios:
 			ls -al ~/fe/lib/ | grep autoriza
@@ -538,15 +1276,15 @@ Configuración de entorno de FE
 		# java -cp "lib/*" ec.cjpq.feapracom.util.ProcesoMain
 		# java -cp "lib/*" ec.cjpq.feapracom.util.ProcesoMain "WHERE colaId=1874"
 		
-	 	# sudo chown cromero.cromero /usr/local/apache-tomcat-7.0.54/webapps/cjfews.war
-	 	# sudo chown cromero.cromero /usr/local/apache-tomcat-7.0.54/webapps/feapracom.war
+	 	# sudo chown user2.user2 /usr/local/apache-tomcat-7.0.54/webapps/cjfews.war
+	 	# sudo chown user2.user2 /usr/local/apache-tomcat-7.0.54/webapps/feapracom.war
 	
 		# Atributos para los logs
-		# sudo chown cromero.cromero -R /usr/local/apache-tomcat-7.0.54/bin
-		# sudo chown cromero.cromero -R /usr/local/apache-tomcat-7.0.54/logs
+		# sudo chown user2.user2 -R /usr/local/apache-tomcat-7.0.54/bin
+		# sudo chown user2.user2 -R /usr/local/apache-tomcat-7.0.54/logs
 
 	* Darle los permisos apropiados para el manejador de colas:
-		# sudo chown -R cromero.cromero dir/
+		# sudo chown -R user2.user2 dir/
 		# sudo chmod 755 fecola.jar
 		
 		+ Reiniciar tomcat:
@@ -561,10 +1299,10 @@ Configuración de entorno de FE
 		# ln -s /usr/local/apache-tomcat-7.0.54/bin/cjfews.log cjfews.log
 
 	* Copiar archivos App:
-		scp /home/carper/532/App/target/App/WEB-INF/lib.zip cromero@201.183.224.10:~/fe/respaldo
-		scp /home/carper/532/App/target/App.war cromero@201.183.224.10:~/fe/respaldo
+		scp /home/user1/532/App/target/App/WEB-INF/lib.zip user2@201.183.224.10:~/fe/respaldo
+		scp /home/user1/532/App/target/App.war user2@201.183.224.10:~/fe/respaldo
 		
-		scp /home/carper/532/App/resources/config/tomcat7/setenv.sh cromero@201.183.224.10:~/tomcat/bin
+		scp /home/user1/532/App/resources/config/tomcat7/setenv.sh user2@201.183.224.10:~/tomcat/bin
 		chmod +x ~/tomcat/bin/setenv.sh
 	
 		vim /usr/local/apache-tomcat-7.0.54/conf/context.xml
@@ -662,7 +1400,7 @@ Cambios en SQL-Ledger
 		vim ps
 
 		+ Respaldo del archivo:
-		# sudo cp /usr/local/sql-ledgerFE/locale/ec/is /usr/local/sql-ledgerFE/locale/ec/is.resp-carper
+		# sudo cp /usr/local/sql-ledgerFE/locale/ec/is /usr/local/sql-ledgerFE/locale/ec/is.resp-user1
 		
 		# sudo vim /usr/local/sql-ledgerFE/locale/ec/is
 		Agregar en 50:
@@ -792,7 +1530,7 @@ TODO
 	Generar prueba de GR con cédula OK
 
 ====== MENSAJE DEL SISTEMA [2016-04-25 12:01:34.869] 
-net.sf.jasperreports.engine.JRException: Could not load object from location : /home/carper/local/wsindigo/cjfews-rep/src/generico/reportes/guiaremision_destinatario.jasper
+net.sf.jasperreports.engine.JRException: Could not load object from location : /home/user1/local/wsindigo/cjfews-rep/src/generico/reportes/guiaremision_destinatario.jasper
 
 2016-04-21
 
