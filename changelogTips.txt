@@ -1,5 +1,9 @@
 TIPS
 
+	* Reparar vfat drive:
+		https://askubuntu.com/questions/147228/how-to-repair-a-corrupted-fat32-file-system
+		$ sudo dosfsck -w -r -l -a -v -t /dev/sdc1
+
 	* Actualizar password git:
 		git config --global credential.helper osxkeychain
 
@@ -416,6 +420,7 @@ TIPS
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
 				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
 				find . -type f -exec sed -i 's/busicentury/prueba/g' {} +
+				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
