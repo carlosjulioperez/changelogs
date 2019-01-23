@@ -4,17 +4,15 @@ Centos
 	CentOS release 6.10 (Final)
 	
 	* Producción:
-	ssh carper@192.168.0.253 -p 2022
-	ssh carper@186.178.202.68 -p 2022
-	ssh carper@200.124.241.243 -p 2022
-
-	ssh carper@186.33.181.219 -p 2022
+	192.168.0.253
+	186.178.202.68
+	200.124.241.243
+	186.33.181.219
 
 	* Test:
-	ssh carper@192.168.253.83 -p 2022
-	ssh carper@192.168.1.9 -p 2022
-
-	ssh carper@186.3.200.21 -p 2022
+	192.168.253.83
+	192.168.1.9
+	186.3.200.21
 
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
@@ -208,8 +206,6 @@ Centos
 
 	* PostgreSQL:
 		+ Copiar respaldo:
-
-		scp -P 2022 /home/carper/local/respaldo/database/28-08-2018.apracomsa.sql.bz2 carper@192.168.0.253:~
 
 		https://www.if-not-true-then-false.com/2010/howto-install-postgresql-8-4-database-server-on-centos-fedora-red-hat/
 		+ Ver codificación de BD:
