@@ -252,18 +252,6 @@ Centos
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busicentury
-		$ psql -U sql-ledger busicentury < 29-08-2018.busicentury.sql
-		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 agroavilab
-		$ psql -U sql-ledger agroavilab < 29-08-2018.agroavilab.sql
-		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 blutec
-		$ psql -U sql-ledger blutec < 29-08-2018.blutec.sql
-		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 catver
-		$ psql -U sql-ledger catver < 29-08-2018.catver.sql
-		
 		* 3.2.7::
 		$ createdb -O sql-ledger -E UTF-8 -T template1 dbbiomicro
 		$ psql -U sql-ledger dbbiomicro < 29-08-2018.peru326.sql

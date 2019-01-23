@@ -420,6 +420,7 @@ TIPS
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
 				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
 				find . -type f -exec sed -i 's/busicentury/prueba/g' {} +
+				find . -type f -exec sed -i 's,5432/prueba,5432/oymar,g' {} +
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
 
 			+ En Mac:

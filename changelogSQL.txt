@@ -106,6 +106,9 @@ SQL
 		+ Blutec:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
 
+		+ Oymar:
+		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','431');
+
 	* Cuentas para productos:
 		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');
 		68  | 1010703021 | INVENTARIO DE PRODUCTOS TERMINADOS

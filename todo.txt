@@ -1,7 +1,6 @@
-(A) Martes 22 16:30 Reunión UBEP Comunitarias y tesis
-(A) 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
 (A) Instalación de docker y configuración +core @sql-ledger
 (B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
+(B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (C) 2019-01-11 Crear cjfeapp +core @fe
 (C) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
 (C) Agregar FE en SQL-Ledger 303 +core @fe
@@ -17,3 +16,5 @@ x 2019-01-11 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe
 x 2019-01-13 2019-01-13 Revisión de idiomas en ES +oymar @sql-ledger
 x 2019-01-14 Cambiar plantilla tr_trade a general +core @sql-ledger
 x 2019-01-14 Envío de maestros a Vanessa hostal internacional manta +core @sql-ledger
+x 2019-01-22 Martes 22 16:30 Reunión UBEP Comunitarias y tesis
+x 2019-01-23 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
