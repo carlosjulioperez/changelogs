@@ -16,6 +16,14 @@ TODO
 			Verificar log de febc
 			Cuadre de caja
 			Ofuscar cjfews y fe
+		
+		+ Jonathan:
+			Sistema operativo: versión distro, entorno gráfico, utilitarios
+			Terminal services (visor de escritorios remotos) Usuarios de nómina, SAP
+			Thunderbird versión
+			Firefox Quantum
+			Internet Explorer, MS Edge (Bancos accesos certificados, Guayaquil) Páginas gobierno
+			Migración ofimática, carpetas compartidas
 
 		+ Hugo:
 			x 2019-01-17
