@@ -11,8 +11,52 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
+		Cambiar dataset de oymar
+
+		Error, Los comprobantes no fueron recibidos.
+		2301201901090892714800110010010000000051234567818 ARCHIVO NO CUMPLE
+		ESTRUCTURA XML: Se encontró el siguiente error en la estructura del
+		comprobante: cvc-complex-type.2.4.a: Invalid content was found
+		starting with element 'baseImponible'. One of '{codigoPorcentaje}' is
+		expected.. 
+
+		NO AUTORIZADO ERROR EN DIFERENCIAS: --- Inventario de errores --- -
+		Factura: El importe total esperado 3540.0 no coincide con el calculado
+		7080.0: total sin impuestos 7080.0 - total descuento adicional 0.0 -
+		total devolucion iva 0.0 - total compensaciones 0.0 + total impuestos
+		0.0 + propina 0.0 + total retenciones 0.0 + totalExportaciones 0.0 +
+		total rubros terceros 0.0 El total sin impuestos de la factura 7080.0
+		no es igual a la suma de los totales sin impuestos de los detalles
+		3540.0
+
+		ERROR EN DIFERENCIAS:
+
+		--- Inventario de errores ---
+
+		- Factura:
+		        El importe total esperado 280.0 no coincide con el calculado
+				30.0: total sin impuestos 0.0 - total descuento adicional 0.0
+				- total devolucion iva 0.0 - total compensaciones 0.0 + total
+				impuestos 30.0 + propina 0.0 + total retenciones 0.0 +
+				totalExportaciones 0.0 + total rubros terceros 0.0
+				        El total sin impuestos de la factura 0.0 no es igual a
+						la suma de los totales sin impuestos de los detalles
+						250.0
+
+		codigoPorcentaje = 0
+		baseImponible = Valor
+
+		Examen OYM
+		Examen IHC
+		Tareas STD
+
+		+ FE:
+			Verificar productos y clientes con IVA
+			Puerto 8080 en Netlife
+			Puerto 8080 en CNT http://186.46.121.238
+
 		+ Cambios: 
-			Formato de facturas, Comprobantes de Ingreso, Egreso y Retencionea.
+			Formato de facturas, Comprobantes de Ingreso, Egreso y Retenciones.
 			Verificar log de febc
 			Cuadre de caja
 			Ofuscar cjfews y fe
