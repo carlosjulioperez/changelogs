@@ -223,6 +223,7 @@ TIPS
 		+ Las últimas 24 horas:
 			
 			$ find /directory_path -mtime -1 -ls
+			$ find . -mtime -1 -ls | grep java
 
 		https://stackoverflow.com/questions/15691359/how-can-i-list-ls-the-5-last-modified-files-in-a-directory
 		https://stackoverflow.com/questions/4933627/recent-files-in-folder

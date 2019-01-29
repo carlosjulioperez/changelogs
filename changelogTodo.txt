@@ -11,6 +11,9 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Tareas:
+		fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
+		cjfews/src/main/java/ec/cjpq/cjfews/comprobante/CalculoUtil.java
+
 		Cambiar dataset de oymar
 
 		Error, Los comprobantes no fueron recibidos.
