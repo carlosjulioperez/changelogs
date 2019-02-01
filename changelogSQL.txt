@@ -1,5 +1,15 @@
 SQL	
 
+	* Terminar conexiones:
+		https://stackoverflow.com/questions/5108876/kill-a-postgresql-session-connection
+
+		SELECT pg_terminate_backend(procpid) 
+		FROM pg_stat_activity 
+		WHERE -- don't kill my own connection!
+			procpid <> pg_backend_pid()
+			-- don't kill the connections to other databases
+			AND datname = 'database_name' ;
+
 	* Cambiar propietario de tablas usando psql:
 		https://stackoverflow.com/questions/12445608/psql-list-all-tables
 		https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql
