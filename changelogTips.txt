@@ -1,4 +1,10 @@
 TIPS
+	* Instalar tema Gogh:
+		https://github.com/Mayccoll/Gogh
+		$ sudo apt-get install dconf-cli
+		$  bash -c  "$(wget -qO- https://git.io/vQgMr)"
+
+		Seleccionar 56 (gruvbox Dark)
 
 	* Reparar vfat drive:
 		https://askubuntu.com/questions/147228/how-to-repair-a-corrupted-fat32-file-system
