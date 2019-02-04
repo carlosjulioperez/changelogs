@@ -10,7 +10,10 @@ TODO
 		+ Las profecías de Daniel:
 			https://youtu.be/2kHbCVwgDsE
 	
-	* Tareas:
+	* Configuración desarrollo Java local (FE):
+		Solo wars se copiarán a la máquina virtual para las pruebas.
+
+	 Tareas:
 		fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
 		cjfews/src/main/java/ec/cjpq/cjfews/comprobante/CalculoUtil.java
 
