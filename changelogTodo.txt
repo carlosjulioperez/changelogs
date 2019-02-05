@@ -14,10 +14,12 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	 Tareas:
-		fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
-		cjfews/src/main/java/ec/cjpq/cjfews/comprobante/CalculoUtil.java
+		x Analizar el código de comprobantes offline
 
-		Cambiar dataset de oymar
+		x fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
+		x cjfews/src/main/java/ec/cjpq/cjfews/comprobante/CalculoUtil.java
+
+		x Cambiar dataset de oymar
 
 		Error, Los comprobantes no fueron recibidos.
 		2301201901090892714800110010010000000051234567818 ARCHIVO NO CUMPLE
