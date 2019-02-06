@@ -10,6 +10,10 @@ SQL
 			-- don't kill the connections to other databases
 			AND datname = 'database_name' ;
 
+	* Determinar el tamaño de la BD:
+		https://stackoverflow.com/questions/18907047/postgres-db-size-command
+		\l+
+
 	* Cambiar propietario de tablas usando psql:
 		https://stackoverflow.com/questions/12445608/psql-list-all-tables
 		https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql

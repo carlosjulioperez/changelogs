@@ -243,6 +243,10 @@ Gestión de la BD
 
 		#createdb -E UTF8 -T template0 apracomsa
 		#createdb -E SQL_ASCII -T template0 apracomsa
+
+		$ createdb -E UTF8 -T template0 him
+		$ createdb -E UTF8 -T template0 pm
+		$ createdb -E UTF8 -T template0 ramoc
 	
 		** 11-oct-2018
 
@@ -267,7 +271,7 @@ Gestión de la BD
 		$ createdb -E SQL_ASCII -T template0 busicentury19
 		$ createdb -E SQL_ASCII -T template0 biomicro19
 		$ createdb -E SQL_ASCII -T template0 qualperu19
-			
+
 		** 3.2.6
 		$ createdb -E UTF8      -T template0 biomicro19
 		$ createdb -E UTF8      -T template0 qualperu19
@@ -386,7 +390,8 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 
 		$ psql ap-daxti < ap-daxti.sql
 		$ psql bc-daxti < bc-daxti.sql
-		$ psql bcprueba < bc.sql
+		
+		$ psql bcprueba < modelo_diego.sql
 
 	* Restaurar una tabla:
 		https://feeding.cloud.geek.nz/posts/restoring-single-table-from-postgres/

@@ -14,6 +14,29 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	 Tareas:
+
+		Diego 2019-02-05:
+		FE y usuarios
+		busicentury19 (cargadas las tablas) 
+			x Respaldo para usarlas como modelo
+			FE
+			x Cargar usuarios de BC (Geovanna)
+			Agregar BD al respaldo automático del sistema y copiar al NAS
+			x Crear un usuario a acastano
+
+		x Habilitar SL a Gina, Vanessa y Verónica Masterrana
+		
+		TRUNCATE customertax;
+		TRUNCATE vendor;
+		TRUNCATE customertax;
+		TRUNCATE customer;
+		TRUNCATE ar;
+		TRUNCATE ap;
+
+		TRUNCATE partsgroup;
+		TRUNCATE partstax;
+		TRUNCATE parts;
+
 		x Analizar el código de comprobantes offline
 
 		x fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
