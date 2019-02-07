@@ -21,8 +21,8 @@ Centos
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
 
-		# date -s "21 JAN 2019 01:00:00"
-		# date +%T -s "00:58:13"	
+		# date -s "7 FEB 2019 07:43:00"
+		# date +%T -s "07:73:00"	
 		# hwclock --systohc
 
 	* Monitorizar:
@@ -49,12 +49,15 @@ Centos
 
 		# crontab -e
 		# m h dom mon dow user command
-		0 0 * * *       /home/user2/dbbackup-night.sh
-		0 13 * * *      /home/user2/dbbackup.sh
-		0  0 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/user2/cronApr-night.log 2>&1
-		5 13 * * *      /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/user2/cronApr.log 2>&1
-		10 0 * * *      /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/user2/cronBus-night.log 2>&1
-		15 13 * * *     /usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/user2/cronBus.log 2>&1
+		0 0 * * *	/home/cromero/dbbackup-night.sh
+		0 13 * * *	/home/cromero/dbbackup.sh
+		0  0 * * *	/usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/cromero/cronApr-00.log 2>&1
+		0  8 * * *	/usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/cromero/cronApr-08.log 2>&1
+		5 13 * * *	/usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh > /home/cromero/cronApr-13.log 2>&1
+		10 0 * * *	/usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/cromero/cronBus-00.log 2>&1
+		10 8 * * *	/usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/cromero/cronBus-08.log 2>&1
+		15 13 * * *	/usr/local/SL/esquema_nuevo/busicentury/repostavgBusi.sh > /home/cromero/cronBus-13.log 2>&1
+		0 0 * * *	mount -t cifs -o username=cromero,password=macadamia //192.168.0.41/PostgreSql /mnt/	
 
 		# vim /usr/local/SL/esquema_nuevo/sql-ledger/repostavgcost.sh
 		#!/bin/sh

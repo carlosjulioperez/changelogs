@@ -242,6 +242,7 @@ Gestión de la BD
 		sudo -u postgres psql
 
 		#createdb -E UTF8 -T template0 apracomsa
+
 		#createdb -E SQL_ASCII -T template0 apracomsa
 
 		$ createdb -E UTF8 -T template0 him
