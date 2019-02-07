@@ -1,3 +1,4 @@
+(A) Mostrar mensajes excepciones de log en UI +core @fe
 (A) Pruebas FE productos con IVA +oymar @sql-ledger
 (B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (B) Instalación de docker y configuración +core @sql-ledger

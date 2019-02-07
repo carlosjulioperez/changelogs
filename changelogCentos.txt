@@ -464,8 +464,7 @@ Centos
 				esac    
 				exit 0
 
-			# <role rolename="manager-gui"/>
-                <user username="" password="" roles="manager-gui"/> chmod +x /etc/init.d/tomcat8
+			# chmod +x /etc/init.d/tomcat8
 			# service tomcat8 start
 			# chkconfig tomcat8 on
 
