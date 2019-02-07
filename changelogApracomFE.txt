@@ -591,7 +591,6 @@ Cambios en SQL-Ledger
 		Agregar en 552:
 		sub fe {
 		        $form->header;
-			#my $salida = `/usr/bin/java -jar /usr/local/fe/fecola.jar FA $form->{id}`;
 		        my $salida = `java -jar /usr/local/fe/fecola.jar FA $form->{id}`;
 		        print qq|
 		                <body>
