@@ -1,5 +1,4 @@
 (A) Mostrar mensajes excepciones de log en UI +core @fe
-(A) Pruebas FE productos con IVA +oymar @sql-ledger
 (B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (B) Instalación de docker y configuración +core @sql-ledger
 (B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
@@ -22,3 +21,5 @@ x 2019-01-22 Martes 22 16:30 Reunión UBEP Comunitarias y tesis
 x 2019-01-23 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
 x 2019-02-05 Acceso al sistema para pm, him y ramoc +bases @sql-ledger
 x 2019-02-05 Adecuar busicentury19 con nuevos usuarios y FE +busicentury @sql-ledger
+x 2019-02-11 Habilitar acceso de oymar y otros +core @sql-ledger
+x 2019-02-11 Pruebas FE productos con IVA +oymar @sql-ledger

@@ -488,6 +488,7 @@ Centos
 				         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|192.168.253.238" />
 
 				186.178.23.164 Manta
+				157.100.248.133 Vanessa
 
 			+ Archivos de FE:
 				# mkdir -p /usr/local/fe/dir/ca
