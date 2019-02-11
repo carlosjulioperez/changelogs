@@ -8,6 +8,7 @@ Centos
 	186.178.202.68
 	200.124.241.243
 	186.33.181.219
+	172.20.10.14
 
 	* Test:
 	192.168.253.83
@@ -247,13 +248,14 @@ Centos
 		/var/lib/pgsql
 
 		* 2.8.20:
-		$ createdb -O sql-ledger -T template1 prueba 
+		$ createdb -O sql-ledger -T template0 prueba 
+		$ createdb -O sql-ledger -T template0 oymar
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 
 		* 3.2.7::
-		$ createdb -O sql-ledger -E UTF-8 -T template1 dbbiomicro
+		$ createdb -O sql-ledger -E UTF-8 -T template0 dbbiomicro
 		$ psql -U sql-ledger dbbiomicro < 29-08-2018.peru326.sql
 
 	* Apache:

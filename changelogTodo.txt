@@ -10,6 +10,22 @@ TODO
 		+ Las profecías de Daniel:
 			https://youtu.be/2kHbCVwgDsE
 	
+	* JDBC:
+		+ Yegor:
+			https://es.slideshare.net/YegorBugayenko/orm-is-a-perfect-antipattern
+			https://jdbc.jcabi.com/
+		
+		www.jdbi.org
+		https://www.baeldung.com/jdbi
+
+		https://www.codeproject.com/Tips/1231391/Yet-Another-Fluent-JDBC-Wrapper-in-Lines-of-Code
+
+		https://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/jdbc.html
+		http://acodigo.blogspot.com/2017/03/spring-base-de-datos-con-jdbctemplate.html
+		https://danielme.com/2017/10/02/spring-jdbc-template-simplificando-el-uso-de-sql/
+		https://pramatr.wordpress.com/2008/08/19/spring-jdbctemplate-the-phantom-performance-problem/
+		https://www.journaldev.com/17053/spring-jdbctemplate-example
+
 	* Configuración desarrollo Java local (FE):
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
@@ -62,7 +78,7 @@ TODO
 
 		ERROR EN DIFERENCIAS:
 
-		--- Inventario de errores ---
+	--- Inventario de errores ---
 
 		- Factura:
 		        El importe total esperado 280.0 no coincide con el calculado

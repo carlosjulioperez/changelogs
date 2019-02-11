@@ -1,4 +1,13 @@
 TIPS
+	* Maven:
+		Para solucionar el error al ejecutar test con maven:
+		Error: no se ha encontrado o cargado la clase principal org.apache.maven.surefire.booter.ForkedBoote
+
+		https://stackoverflow.com/questions/53010200/maven-surefire-could-not-find-forkedbooter-class
+
+		Agregar n .profile (Debian)
+			export _JAVA_OPTIONS=-Djdk.net.URLClassPath.disableClassPathURLCheck=true
+
 	* Instalar tema Gogh:
 		https://github.com/Mayccoll/Gogh
 		$ sudo apt-get install dconf-cli
