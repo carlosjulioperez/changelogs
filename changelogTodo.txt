@@ -17,6 +17,9 @@ TODO
 		
 		www.jdbi.org
 		https://www.baeldung.com/jdbi
+		https://blog.2ndquadrant.com/java-database-interface-postgresql/
+		https://nbsoftsolutions.com/blog/the-difficulty-of-performance-evaluation-of-hikaricp-in-dropwizard
+		https://www.toptal.com/java/dropwizard-tutorial-microservices
 
 		https://www.codeproject.com/Tips/1231391/Yet-Another-Fluent-JDBC-Wrapper-in-Lines-of-Code
 
