@@ -1,3 +1,4 @@
+(A) Habilitar equipo Vanessa +core @sql-ledger
 (A) Mostrar mensajes excepciones de log en UI +core @fe
 (B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (B) Instalación de docker y configuración +core @sql-ledger
