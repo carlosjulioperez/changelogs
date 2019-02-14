@@ -50,7 +50,7 @@ i.description, i.description), i.qty, i.fxsellprice,
 FROM invoice i 
 LEFT OUTER JOIN parts AS p ON i.parts_id = p.id 
 LEFT OUTER JOIN makemodel AS m ON i.parts_id = m.parts_id 
-WHERE i.trans_id = 575;
+WHERE i.trans_id = 65210; --ap-daxti
 
 
 		Diego 2019-02-05:
