@@ -32,10 +32,12 @@ TODO
 	* Configuración desarrollo Java local (FE):
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
-	 Tareas:
+	* Tareas:
+	 	Habilitar Postgres remoto
 	 	Grabar unidades en descripción de la factura
 
-oymar=# SELECT p.partnumber, m.model, i.unit + i.description, i.qty, i.fxsellprice, 
+oymar=# SELECT p.partnumber, m.model, COALESCE ( '('||i.unit||') ' ||
+i.description, i.description), i.qty, i.fxsellprice, 
 ( COALESCE ( 
  (SELECT t.rate FROM tax t, chart c, partstax p 
  WHERE t.chart_id = c.id AND 
