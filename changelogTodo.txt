@@ -36,8 +36,9 @@ TODO
 	 	Habilitar Postgres remoto
 	 	Grabar unidades en descripción de la factura
 
-oymar=# SELECT p.partnumber, m.model, COALESCE ( '('||i.unit||') ' ||
-i.description, i.description), i.qty, i.fxsellprice, 
+SELECT p.partnumber, m.model, 
+(CASE WHEN (i.unit IS NULL OR i.unit = '') THEN '' ELSE '('||i.unit||') ' END)
+ || i.description AS description, i.qty, i.fxsellprice, 
 ( COALESCE ( 
  (SELECT t.rate FROM tax t, chart c, partstax p 
  WHERE t.chart_id = c.id AND 

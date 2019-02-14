@@ -1,8 +1,7 @@
-(A) Agregar unidades en facturas +core @fe
-(A) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
 (A) Habilitar equipo Gina +core @sql-ledger
 (A) Habilitar equipo Vanessa +core @sql-ledger
 (A) Mostrar mensajes excepciones de log en UI +core @fe
+(B) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
 (B) Agregar FE en SQL-Ledger 303 +core @fe
 (B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
@@ -29,3 +28,4 @@ x 2019-02-13 Copiar tabla tiporet de AP a BC19 +core @sql-ledger
 x 2019-02-13 Copiar tabla tiporet de AP a him +core @sql-ledger
 x 2019-02-13 Copiar tabla tiporet de AP a pm +core @sql-ledger
 x 2019-02-13 Copiar tabla tiporet de AP a ramoc +core @sql-ledger
+x 2019-02-14 Agregar unidades en facturas +core @fe
