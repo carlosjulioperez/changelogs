@@ -33,6 +33,23 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	 Tareas:
+	 	Grabar unidades en descripción de la factura
+
+oymar=# SELECT p.partnumber, m.model, i.unit + i.description, i.qty, i.fxsellprice, 
+( COALESCE ( 
+ (SELECT t.rate FROM tax t, chart c, partstax p 
+ WHERE t.chart_id = c.id AND 
+ t.rate > 0 AND 
+ c.category = 'L' AND 
+ p.chart_id = c.id AND 
+ (t.validto >= current_date or t.validto is null) AND 
+ p.parts_id = i.parts_id) ,0) ) AS iva, 
+ i.discount, i.sellprice, lotnum
+FROM invoice i 
+LEFT OUTER JOIN parts AS p ON i.parts_id = p.id 
+LEFT OUTER JOIN makemodel AS m ON i.parts_id = m.parts_id 
+WHERE i.trans_id = 575;
+
 
 		Diego 2019-02-05:
 		FE y usuarios
