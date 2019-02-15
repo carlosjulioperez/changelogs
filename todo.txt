@@ -1,13 +1,16 @@
-(A) Habilitar equipo Gina +core @sql-ledger
-(A) Habilitar equipo Vanessa +core @sql-ledger
-(A) Mostrar mensajes excepciones de log en UI +core @fe
-(B) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
-(B) Agregar FE en SQL-Ledger 303 +core @fe
-(B) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
-(B) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
+(A) Datos para capacitación de Gina +core @sql-ledger
+(A) Datos para capacitación de Vanessa +core @sql-ledger
+(B) Cotización de curso ZK +curso @zk
+(B) Habilitar equipo Gina +core @sql-ledger
+(B) Habilitar equipo Vanessa +core @sql-ledger
+(B) Mostrar mensajes excepciones de log en UI +core @fe
+(C) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
+(C) Agregar FE en SQL-Ledger 303 +core @fe
 (C) Clasificar directorio fe/dir por año +apracom @fe
 (C) Comparar SL 303 vs SL 327 +core @sql-ledger
+(C) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
 (C) Instalación de docker y configuración +core @sql-ledger
+(C) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
 x 2019-01-04 2019-01-03 Configuración de internet CNT en Dell +apracom @sql-ledger

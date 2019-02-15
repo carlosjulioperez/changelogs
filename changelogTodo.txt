@@ -32,9 +32,14 @@ TODO
 	* Configuración desarrollo Java local (FE):
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
+		Exportar a Excel:
+			Plan de cuentas
+			Todas las transacciones cxc, cxp, facturas, clientes, proveedores
+
+		Revisar el enlace de las cuentas
+
+
 	* Tareas:
-	 	Habilitar Postgres remoto
-	 	Grabar unidades en descripción de la factura
 
 SELECT p.partnumber, m.model, 
 (CASE WHEN (i.unit IS NULL OR i.unit = '') THEN '' ELSE '('||i.unit||') ' END)
@@ -53,73 +58,6 @@ LEFT OUTER JOIN parts AS p ON i.parts_id = p.id
 LEFT OUTER JOIN makemodel AS m ON i.parts_id = m.parts_id 
 WHERE i.trans_id = 65210; --ap-daxti
 
-
-		Diego 2019-02-05:
-		FE y usuarios
-		busicentury19 (cargadas las tablas) 
-			x Respaldo para usarlas como modelo
-			FE
-			x Cargar usuarios de BC (Geovanna)
-			Agregar BD al respaldo automático del sistema y copiar al NAS
-			x Crear un usuario a acastano
-
-		x Habilitar SL a Gina, Vanessa y Verónica Masterrana
-		
-		TRUNCATE customertax;
-		TRUNCATE vendor;
-		TRUNCATE customertax;
-		TRUNCATE customer;
-		TRUNCATE ar;
-		TRUNCATE ap;
-
-		TRUNCATE partsgroup;
-		TRUNCATE partstax;
-		TRUNCATE parts;
-
-		x Analizar el código de comprobantes offline
-
-		x fe/src/main/java/ec/cjpq/fe/bean/DocumentoBean.java
-		x cjfews/src/main/java/ec/cjpq/cjfews/comprobante/CalculoUtil.java
-
-		x Cambiar dataset de oymar
-
-		Error, Los comprobantes no fueron recibidos.
-		2301201901090892714800110010010000000051234567818 ARCHIVO NO CUMPLE
-		ESTRUCTURA XML: Se encontró el siguiente error en la estructura del
-		comprobante: cvc-complex-type.2.4.a: Invalid content was found
-		starting with element 'baseImponible'. One of '{codigoPorcentaje}' is
-		expected.. 
-
-		NO AUTORIZADO ERROR EN DIFERENCIAS: --- Inventario de errores --- -
-		Factura: El importe total esperado 3540.0 no coincide con el calculado
-		7080.0: total sin impuestos 7080.0 - total descuento adicional 0.0 -
-		total devolucion iva 0.0 - total compensaciones 0.0 + total impuestos
-		0.0 + propina 0.0 + total retenciones 0.0 + totalExportaciones 0.0 +
-		total rubros terceros 0.0 El total sin impuestos de la factura 7080.0
-		no es igual a la suma de los totales sin impuestos de los detalles
-		3540.0
-
-		ERROR EN DIFERENCIAS:
-
-	--- Inventario de errores ---
-
-		- Factura:
-		        El importe total esperado 280.0 no coincide con el calculado
-				30.0: total sin impuestos 0.0 - total descuento adicional 0.0
-				- total devolucion iva 0.0 - total compensaciones 0.0 + total
-				impuestos 30.0 + propina 0.0 + total retenciones 0.0 +
-				totalExportaciones 0.0 + total rubros terceros 0.0
-				        El total sin impuestos de la factura 0.0 no es igual a
-						la suma de los totales sin impuestos de los detalles
-						250.0
-
-		codigoPorcentaje = 0
-		baseImponible = Valor
-
-		Examen OYM
-		Examen IHC
-		Tareas STD
-
 		+ FE:
 			Verificar productos y clientes con IVA
 			Puerto 8080 en Netlife
@@ -127,18 +65,9 @@ WHERE i.trans_id = 65210; --ap-daxti
 
 		+ Cambios: 
 			Formato de facturas, Comprobantes de Ingreso, Egreso y Retenciones.
-			Verificar log de febc
 			Cuadre de caja
 			Ofuscar cjfews y fe
 		
-		+ Jonathan:
-			Sistema operativo: versión distro, entorno gráfico, utilitarios
-			Terminal services (visor de escritorios remotos) Usuarios de nómina, SAP
-			Thunderbird versión
-			Firefox Quantum
-			Internet Explorer, MS Edge (Bancos accesos certificados, Guayaquil) Páginas gobierno
-			Migración ofimática, carpetas compartidas
-
 		+ Hugo:
 			x 2019-01-17
 			x Agregar id 311 Liquidaciones de compra 2 (%) Renta en todas las bases
@@ -147,59 +76,6 @@ WHERE i.trans_id = 65210; --ap-daxti
 			select * from tiporet order by 1;
 			INSERT INTO tiporet (id,description,porcret,impuesto) VALUES (311,'Liquidaciones de Compra',2,'Renta');
 			UPDATE tiporet SET id=344 WHERE id=341;
-
-		+ Fe:	
-
-			x Mostrar botón FE
-				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/is.pl
-				$ sudo vim /usr/local/SL/esquema_nuevo/busicentury/bin/mozilla/arap.pl
-				
-				$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledger/bin/mozilla/is.pl
-			x Error java.lang.ClassFormatError
-			x Solución: mvn clean compile
-
-			x Especificar la forma de pago en cada factura
-			x Validar el envío de correo
-
-			$ ant jar
-			$ cp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar ~/.m2/repository/ec/cjpq/util/cjfews-rep/1.0	
-
-			x Generar cjfews.war (incluirá cjfews-rep-1.0.jar)
-			x Generar febc.war
-			x Generar feapracom.war
-
-			x Crear usuario geovanna para pruebas de firmas
-			x Enviar correo electrónico
-			x Permitir acceso en tomcat a la IP CNT 186.178.23.164 
-
-			Crear carpetas de fe
-			# cd /usr/local/fe
-			# mkdir -p p12s
-			# mkdir -p dir/cg
-			# mkdir -p dir/cf
-			# mkdir -p dir/ca
-			# mkdir -p dir/cn
-
-			FP,01,4.84,30,dias
-
-		+ alex:
-			x scp -P 2022 /home/carper/local/projects/changelogs/script/change_db_owner.sh carper@186.33.181.219:~
-
-			x scp -P 2022 /home/carper/Descargas/monica_martillo.p12 carper@186.33.181.219:~
-			x scp -P 2022 ~/local/projects/cjerp/fe/src/main/resources/sql/fe_config.sql carper@186.33.181.219:~
-			x scp -P 2022 /home/carper/tmp/fe.war carper@186.33.181.219:~
-			x Configuración de correo
-		
-		scp -P 2022 /home/carper/local/docs/apracom/import/tablas.tar.gz carper@186.3.200.21:~
-		scp -P 2022 /media/carper/UUI/respaldo/sql-ledger/apgdiff/SL-FE-diff.sql carper@186.3.200.21:~
-		scp -P 3333 /Users/carper/Downloads/apgdiff/SL-FE-diff.sql carper@186.178.202.68:~
-		$ sudo mv SL-FE-diff.sql /var/lib/pgsql
-		
-		# psql -d prueba        -U sql-ledger -a -f SL-FE-diff.sql
-		# psql -d apracomsa19   -U sql-ledger -a -f SL-FE-diff.sql
-		# psql -d busicentury19 -U sql-ledger -a -f SL-FE-diff.sql
-
-		cp /home/carper/csv/fe_config.csv /var/lib/pgsql/csv
 
 	* SQL-Ledger:
 		+ Bloquear BD:
@@ -246,55 +122,8 @@ WHERE i.trans_id = 65210; --ap-daxti
 		ATS: Guiarme del DIMM para leer del sistema y generar XML basados en PYME
 		Nómina
 	
-	* Espol:
-
-		Encanto gourmet tiene el registro de los depósitos de cada estudiante.
-		¿Cómo llegar a los posibles interesados?
-
-		====================================================================================================
-		. Llamar Espol
-		Alexis Fernando Lema Ordonez, 
-		alfelema@espol.edu.ec, alfelema@fiec.espol.edu.ec
-		Docente FIEC, Gestión de prácticas comunitarias / casos vulnerables
-
-		Adriana Elisa Collaguazo Jaramillo, 2269-920, Lunes 11:50
-		acollag@espol.edu.ec, acollaguazo@fiec.espol.edu.ec
-		Docente FIEC, PLAN PADRINO
-
-		Lady Maria Soto Navarrete
-		lsoto@espol.edu.ec
-		Docente FCSH, Consulta de casos o estudiantes
-
-		Diana Elizabeth Ortiz Quiroz
-		deortiz@espol.edu.ec
-		Docente FCSH, PLAN PADRINO
-
-		Proyecto de Mejora de Trabajo Social.
-		====================================================================================================
-		
-		Buenas tardes.
-		
-		Mi nombre es Carlos Julio Pérez Quizhpe, matrícula 199923996 de LICSIS, estudiante de la materia Interacción Humano Computador de Katherine Chiluiza para el Proyecto de Mejora de Trabajo Social. Quisiera saber si es posible reunirnos vía Skype, WhatsApp o de forma presencial para entrevistarle en temas relacionados a:
-		
-		Calamidades domésticas de estudiantes
-		Becas
-		Plan de Padrinos
-		
-		El propósito de la entrevista es facilitar al UBEP y a sus usuarios el manejo en línea de calamidades, becas estudiantiles y el plan de padrinos de Espol.  
-		
-		Mi número celular con whatsapp es 0993208265.
-		
-		Le agradezco de antemano por su colaboración y estaré al pendiente de sus comentarios.
-		
-		Saludos cordiales.
-
-
 + apracom:
 	* Enlaces:
-		http://192.168.0.3/sql-ledger/login.pl
-		http://192.168.0.3:8080/feapracom/
-		smb://192.168.0.41
-		https://secure.globat.com/secure/login.bml
 
 		+ Plan de trabajo:
 		https://docs.google.com/spreadsheets/d/179z8UsrGORZbJuczwPRxVaLobw1mpW-_lIyQsuQTTV0/edit?usp=sharing
@@ -357,10 +186,6 @@ report=receipts
 	
 	setFechaEmision transdate como Date()
 	Probar la retención PDF
-
-Diseño de Sistemas
-	https://docs.google.com/document/d/1ziyomEzD8uQzMojxZXKeeioqvQzIQ8L7QNYTpx6HpxQ/edit
-	https://docs.google.com/document/d/1odpDm8yWsAngYSVp4CkearBqdpeL5EF9uYmsJUnsKZ0/edit	
 
 Revisar
 	https://entusiasmado.com/8-razones-para-no-usar-la-tecnica-pomodoro/
