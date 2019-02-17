@@ -32,14 +32,17 @@ TODO
 	* Configuración desarrollo Java local (FE):
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
-		Exportar a Excel:
-			Plan de cuentas
-			Todas las transacciones cxc, cxp, facturas, clientes, proveedores
-
-		Revisar el enlace de las cuentas
-
-
 	* Tareas:
+
+		Crear BD de prueba de bc19 para Hugo con tercer asiento generado
+
+		Dejar GIFI como GIFI en traducción
+		En Plan de Cuentas dejar como payments solo pago no pago/caja
+		+ Hoteles:
+			Exportar a Excel:
+				Plan de cuentas
+				Todas las transacciones cxc, cxp, facturas, clientes, proveedores
+			Revisar el enlace de las cuentas
 
 SELECT p.partnumber, m.model, 
 (CASE WHEN (i.unit IS NULL OR i.unit = '') THEN '' ELSE '('||i.unit||') ' END)
