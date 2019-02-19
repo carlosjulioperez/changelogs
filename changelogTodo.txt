@@ -33,8 +33,28 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		+ cjapp:
+			Apache shiro con jdbc realm.
+			En tabla user: carper@empresa en un esquema diferente
+			https://github.com/hakdogan/ApacheShiro
 
-		Crear BD de prueba de bc19 para Hugo con tercer asiento generado
+		+ Hoteles:
+			Terminar configuración
+
+			Seguir desde configuracion y plan de ctas
+			Crear nueva BD
+			Copiar script para cambiar propietario a BD
+			Importar plan de cuentas
+			Importar fe_config.csv
+			Exportar clientes y direcciones
+			Exportar proveedores y direcciones
+
+AP_tax:IC_taxpart:IC_taxservice 
+AR_tax:AP_tax:IC_taxpart:IC_taxservice 
+AP_paid:IC_expense 
+AP_paid:IC_taxpart:IC_taxservice 
+
+		x Crear BD de prueba de bc19 para Hugo con tercer asiento generado
 
 		Dejar GIFI como GIFI en traducción
 		En Plan de Cuentas dejar como payments solo pago no pago/caja
@@ -44,6 +64,8 @@ TODO
 				Todas las transacciones cxc, cxp, facturas, clientes, proveedores
 			Revisar el enlace de las cuentas
 
+
+Probar esto en 3.0.3
 SELECT p.partnumber, m.model, 
 (CASE WHEN (i.unit IS NULL OR i.unit = '') THEN '' ELSE '('||i.unit||') ' END)
  || i.description AS description, i.qty, i.fxsellprice, 

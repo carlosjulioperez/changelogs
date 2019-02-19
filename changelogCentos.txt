@@ -11,12 +11,17 @@ Centos
 
 	186.33.181.219 oymar
 
-	157.100.248.133 Vanessa
 	181.199.126.231 Gina
+	157.100.248.133 Vanessa
 
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
+
+	* Logs:
+		$ less /var/log/messages
+		$ less /var/log/syslog
+		$ less /var/log/httpd/access_log
 
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
@@ -250,8 +255,8 @@ Centos
 		/var/lib/pgsql
 
 		* 2.8.20:
-		$ createdb -O sql-ledger -T template0 prueba 
 		$ createdb -O sql-ledger -T template0 oymar
+		$ createdb -O sql-ledger -T template0 hpm
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
