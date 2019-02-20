@@ -1,6 +1,4 @@
 (A) Datos para capacitación de Vanessa +core @sql-ledger
-(B) Cotización de curso ZK +curso @zk
-(B) Habilitar equipo Gina +core @sql-ledger
 (B) Habilitar equipo Vanessa +core @sql-ledger
 (B) Mostrar mensajes excepciones de log en UI +core @fe
 (C) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
@@ -34,3 +32,5 @@ x 2019-02-14 Agregar unidades en facturas +core @fe
 x 2019-02-15 Datos para capacitación de Gina +core @sql-ledger
 x 2019-02-15 Descripción general del sistema de Plan Padrinos +espol @tesis
 x 2019-02-15 Importar Plan de Cuentas +him @sql-ledger
+x 2019-02-18 Habilitar equipo Gina +core @sql-ledger
+x 2019-02-19 Cotización de curso ZK +curso @zk
