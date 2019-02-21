@@ -1,15 +1,16 @@
-(A) Cambio dirección de Catver y logo en plantillas +catver @sql-ledger
-(A) Creación de proyecto parrot +core @parrot
-(A) Datos para capacitación de Vanessa +core @sql-ledger
-(A) Revisar backups de todas BD +core @sql-ledger
-(B) Habilitar equipo Vanessa +core @sql-ledger
-(B) Mostrar mensajes excepciones de log en UI +core @fe
-(C) Abstraer fecola y obtener dataset pata enviar como parámetro +core @sql-ledger
-(C) Agregar FE en SQL-Ledger 303 +core @fe
+(A) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
+(A) Datos para capacitación de Vanessa +him @sql-ledger
+(A) Instalar FE +him @fe
+(A) Instalar FE +hpm @fe
+(A) Revisar backups de todas BD +apracom @sql-ledger
+(B) Habilitar equipo Vanessa +him @sql-ledger
+(B) Mostrar mensajes excepciones de log en UI +apracom @fe
+(C) Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
+(C) Agregar FE en SQL-Ledger 303 +cjpq @fe
 (C) Clasificar directorio fe/dir por año +apracom @fe
-(C) Comparar SL 303 vs SL 327 +core @sql-ledger
-(C) Insertar production_warehouse_id al editar Defaults +core @sql-ledger
-(C) Instalación de docker y configuración +core @sql-ledger
+(C) Comparar SL 303 vs SL 327 +cjpq @sql-ledger
+(C) Insertar production_warehouse_id al editar Defaults +cjpq @sql-ledger
+(C) Instalación de docker y configuración +cjpq @sql-ledger
 (C) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
@@ -19,22 +20,24 @@ x 2019-01-04 Importar mestros con Diego +apracom @sql-ledger
 x 2019-01-04 Pruebas de autorización de FE +apracom @fe
 x 2019-01-11 2019-01-02 Pruebas de Fe BC con base vieja +busicentury @fe
 x 2019-01-13 2019-01-13 Revisión de idiomas en ES +oymar @sql-ledger
-x 2019-01-14 Cambiar plantilla tr_trade a general +core @sql-ledger
-x 2019-01-14 Envío de maestros a Vanessa hostal internacional manta +core @sql-ledger
+x 2019-01-14 Cambiar plantilla tr_trade a general +cjpq @sql-ledger
+x 2019-01-14 Envío de maestros a Vanessa hostal internacional manta +him @sql-ledger
 x 2019-01-22 Martes 22 16:30 Reunión UBEP Comunitarias y tesis
 x 2019-01-23 2019-01-11 Entorno y pruebas de FE +oymar @sql-ledger
 x 2019-02-05 Acceso al sistema para pm, him y ramoc +bases @sql-ledger
 x 2019-02-05 Adecuar busicentury19 con nuevos usuarios y FE +busicentury @sql-ledger
-x 2019-02-11 Habilitar acceso de oymar y otros +core @sql-ledger
+x 2019-02-11 Habilitar acceso de oymar y otros +cjpq @sql-ledger
 x 2019-02-11 Pruebas FE productos con IVA +oymar @sql-ledger
-x 2019-02-13 Copiar tabla tiporet de AP a BC19 +core @sql-ledger
-x 2019-02-13 Copiar tabla tiporet de AP a him +core @sql-ledger
-x 2019-02-13 Copiar tabla tiporet de AP a pm +core @sql-ledger
-x 2019-02-13 Copiar tabla tiporet de AP a ramoc +core @sql-ledger
-x 2019-02-14 Agregar unidades en facturas +core @fe
-x 2019-02-15 Datos para capacitación de Gina +core @sql-ledger
+x 2019-02-13 Copiar tabla tiporet de AP a BC19 +apracom @sql-ledger
+x 2019-02-13 Copiar tabla tiporet de AP a him +him @sql-ledger
+x 2019-02-13 Copiar tabla tiporet de AP a pm +hpm @sql-ledger
+x 2019-02-13 Copiar tabla tiporet de AP a ramoc +ramoc @sql-ledger
+x 2019-02-14 Agregar unidades en facturas +oymar @fe
+x 2019-02-15 Datos para capacitación de Gina +hpm @sql-ledger
 x 2019-02-15 Descripción general del sistema de Plan Padrinos +espol @tesis
 x 2019-02-15 Importar Plan de Cuentas +him @sql-ledger
-x 2019-02-18 Habilitar equipo Gina +core @sql-ledger
+x 2019-02-18 Habilitar equipo Gina +hpm @sql-ledger
 x 2019-02-19 Cotización de curso ZK +curso @zk
-x 2019-02-20 Repost en catver y blutec +core @sql-ledger
+x 2019-02-20 Repost en catver y blutec +catver @sql-ledger
+x 2019-02-21 Cambio dirección de Catver y logo en plantillas +catver @sql-ledger
+x 2019-02-21 Exportar datos puerto manta a servidor +hpm @sql-ledger

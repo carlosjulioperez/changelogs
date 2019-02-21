@@ -42,6 +42,11 @@ TODO
 		Piedad Espol
 		pmpizarr@espol.edu.ec
 
+		+ Revisar:
+			Seguridad en proyectos espol
+			Zkboost:
+			Comparar Vuejs con Fluter
+			Comparar Dart con JavaScript
 
 		+ parrot:
 			jetty, shiro, zk, jdbi, postgres, lombok, jodatime, log4j,

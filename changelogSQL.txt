@@ -71,10 +71,17 @@ SQL
 
 	* Importar y exportar:
 
+		+ Exportar solo datos:
+		COPY ( SELECT * FROM customer ORDER BY name )        TO '/tmp/customer.csv' With CSV DELIMITER ',';
+		COPY ( SELECT * FROM vendor   ORDER BY name )        TO '/tmp/vendor.csv'   With CSV DELIMITER ',';
+		COPY ( SELECT * FROM parts    ORDER BY description ) TO '/tmp/parts.csv'    With CSV DELIMITER ',';
+		COPY ( SELECT * FROM chart    order by accno )       TO '/tmp/chart.csv'    With CSV DELIMITER ',';
+		
 		+ Exportar con cabecera:
 		COPY fe_config   TO '/tmp/fe_config.csv'   WITH DELIMITER ',' CSV HEADER;
 		COPY customer    TO '/tmp/customer.csv'    WITH DELIMITER ',' CSV HEADER;
 		COPY vendor      TO '/tmp/vendor.csv'      WITH DELIMITER ',' CSV HEADER;
+		COPY address     TO '/tmp/address.csv'     WITH DELIMITER ',' CSV HEADER;
 		COPY parts       TO '/tmp/parts.csv'       WITH DELIMITER ',' CSV HEADER;
 		COPY chart       TO '/tmp/chart.csv'       WITH DELIMITER ',' CSV HEADER;
 		COPY tax         TO '/tmp/tax.csv'         WITH DELIMITER ',' CSV HEADER;
@@ -86,32 +93,25 @@ SQL
 		COPY customertax TO '/tmp/customertax.csv' WITH DELIMITER ',' CSV HEADER;
 		COPY vendortax   TO '/tmp/vendortax.csv'   WITH DELIMITER ',' CSV HEADER;
 
-		+ Exportar solo datos:
-
-		COPY ( SELECT * FROM customer ORDER BY name )        TO '/tmp/customer.csv' With CSV DELIMITER ',';
-		COPY ( SELECT * FROM vendor   ORDER BY name )        TO '/tmp/vendor.csv'   With CSV DELIMITER ',';
-		COPY ( SELECT * FROM parts    ORDER BY description ) TO '/tmp/parts.csv'    With CSV DELIMITER ',';
-		COPY ( SELECT * FROM chart    order by accno )       TO '/tmp/chart.csv'    With CSV DELIMITER ',';
-		
 		+ Importar:
 		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
 
-		COPY customer    FROM '/tmp/customer.csv'    DELIMITER  ',' CSV HEADER;
-		COPY tipodoc     FROM '/tmp/tipodoc.csv'     DELIMITER  ',' CSV HEADER;
-		COPY tipoid      FROM '/tmp/tipoid.csv'      DELIMITER  ',' CSV HEADER;
-		COPY tiporet     FROM '/tmp/tiporet.csv'     DELIMITER  ',' CSV HEADER;
 		COPY fe_config   FROM '/tmp/fe_config.csv'   DELIMITER  ',' CSV HEADER;
+		COPY customer    FROM '/tmp/customer.csv'    DELIMITER  ',' CSV HEADER;
+		COPY vendor      FROM '/tmp/vendor.csv'      DELIMITER  ',' CSV HEADER;
+		COPY address     FROM '/tmp/address.csv'     DELIMITER  ',' CSV HEADER;
+		COPY parts       FROM '/tmp/parts.csv'       DELIMITER  ',' CSV HEADER;
+		COPY tipoid      FROM '/tmp/tipoid.csv'      DELIMITER  ',' CSV HEADER;
+		COPY tipodoc     FROM '/tmp/tipodoc.csv'     DELIMITER  ',' CSV HEADER;
+		COPY tiporet     FROM '/tmp/tiporet.csv'     DELIMITER  ',' CSV HEADER;
 		
 		COPY chart       FROM '/tmp/chart.csv'       DELIMITER  ',' CSV HEADER;
 		COPY defaults    FROM '/tmp/defaults.csv'    DELIMITER  ',' CSV HEADER;
 		COPY tax         FROM '/tmp/tax.csv'         DELIMITER  ',' CSV HEADER;
 
 		--2019-01-04
-		COPY parts       FROM '/tmp/parts.csv'       DELIMITER  ',' CSV HEADER;
 		COPY partstax    FROM '/tmp/partstax.csv'    DELIMITER  ',' CSV HEADER;
-		COPY customer    FROM '/tmp/customers.csv'   DELIMITER  ',' CSV HEADER;
 		COPY customertax FROM '/tmp/customertax.csv' DELIMITER  ',' CSV HEADER;
-		COPY vendor      FROM '/tmp/vendor.csv'      DELIMITER  ',' CSV HEADER;
 		COPY vendortax   FROM '/tmp/vendortax.csv'   DELIMITER  ',' CSV HEADER;
 
 
