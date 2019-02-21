@@ -33,7 +33,23 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
-		+ cjapp:
+		
+		pasantía
+		fecha inio y fin
+		actividades empresariales
+		horas de prácticas
+		
+		Piedad Espol
+		pmpizarr@espol.edu.ec
+
+
+		+ parrot:
+			jetty, shiro, zk, jdbi, postgres, lombok, jodatime, log4j,
+			proguard
+
+			https://stackoverflow.com/questions/34706466/how-do-i-use-proguard-obfuscation-while-building-a-maven-plugin-package
+			https://wvengen.github.io/proguard-maven-plugin/
+
 			Apache shiro con jdbc realm.
 			En tabla user: carper@empresa en un esquema diferente
 			https://github.com/hakdogan/ApacheShiro

@@ -122,9 +122,9 @@ SQL
 		* Busicentury:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','32777');
 		
-		+ Blutec:
+		+ Blutec/Catver:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
-
+		
 		+ Oymar:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','431');
 
