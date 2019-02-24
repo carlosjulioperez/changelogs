@@ -39,5 +39,6 @@ x 2019-02-15 Importar Plan de Cuentas +him @sql-ledger
 x 2019-02-18 Habilitar equipo Gina +hpm @sql-ledger
 x 2019-02-19 Cotización de curso ZK +curso @zk
 x 2019-02-20 Repost en catver y blutec +catver @sql-ledger
+x 2019-02-21 Ajuste logotipo +catver @sql-ledger
 x 2019-02-21 Cambio dirección de Catver y logo en plantillas +catver @sql-ledger
 x 2019-02-21 Exportar datos puerto manta a servidor +hpm @sql-ledger

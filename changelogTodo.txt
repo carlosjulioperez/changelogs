@@ -4,6 +4,8 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
+	Revisar los respaldos del servidor
+
 	* Espiritual:
 		Comentario 2re 25:27
 		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
@@ -33,11 +35,9 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
-		
-		pasantía
-		fecha inio y fin
-		actividades empresariales
-		horas de prácticas
+		+ FE:
+			$ sudo vim locale/ec_utf/sri
+			'actualizar'                  => 'update',
 		
 		Piedad Espol
 		pmpizarr@espol.edu.ec
@@ -69,7 +69,8 @@ TODO
 			Importar fe_config.csv
 			Exportar clientes y direcciones
 			Exportar proveedores y direcciones
-
+			Logotipo
+			FE
 AP_tax:IC_taxpart:IC_taxservice 
 AR_tax:AP_tax:IC_taxpart:IC_taxservice 
 AP_paid:IC_expense 

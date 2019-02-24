@@ -4,19 +4,24 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp
 
-	+ Porcentaje batería:
-	+ Lxde:
-		http://www.upubuntu.com/2012/12/how-to-monitor-your-laptops-battery.html
+	* LXDE:
+		+ Cargar variables de entorno:
+			LXDE no carga las variables de entorno definidas en .profile.
+			Entonces hay que copiar esas lineas en .bashrc
 
-		$ sudo apt-get install fdpowermon
-		$ gksu gedit /etc/xdg/lxsession/LXDE/autostart
-		Agregar
-		@fdpowermon
-	+ consola:
-		https://askubuntu.com/questions/69556/how-do-i-check-the-batterys-status-via-the-terminal
+		+ Porcentaje batería:
+			http://www.upubuntu.com/2012/12/how-to-monitor-your-laptops-battery.html
 
-		$ upower -i /org/freedesktop/UPower/devices/battery_BAT0
-	
+			$ sudo apt-get install fdpowermon
+			$ gksu gedit /etc/xdg/lxsession/LXDE/autostart
+			Agregar
+			@fdpowermon
+		+ consola:
+			https://askubuntu.com/questions/69556/how-do-i-check-the-batterys-status-via-the-terminal
+
+			$ upower -i /org/freedesktop/UPower/devices/battery_BAT0
+
+
 	+ Dependencia de playonlinux en hp stream:
 	Ejecutando playonlinux desde consola se pudo determinar el error de
 	dependencias
