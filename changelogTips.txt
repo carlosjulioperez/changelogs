@@ -436,6 +436,7 @@ TIPS
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
 				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
 				find . -type f -exec sed -i 's/busicentury/prueba/g' {} +
+				find . -type f -exec sed -i 's,ec.cjpq.fe.ui,ec.cjpq.parrot.fe.composer,g' {} +
 				find . -type f -exec sed -i 's,5432/prueba,5432/oymar,g' {} +
 				find . -type f -exec sed -i 's,5432/busicentury,5432/busicentury19,g' {} +
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +

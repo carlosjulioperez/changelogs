@@ -38,6 +38,8 @@ TODO
 		+ FE:
 			$ sudo vim locale/ec_utf/sri
 			'actualizar'                  => 'update',
+			'guardar'                     => 'save',
+
 		
 		Piedad Espol
 		pmpizarr@espol.edu.ec
@@ -49,8 +51,11 @@ TODO
 			Comparar Dart con JavaScript
 
 		+ parrot:
-			jetty, shiro, zk, jdbi, postgres, lombok, jodatime, log4j,
+			jetty, shiro, zk, jdbi, postgres, lombok, jodatime, 
 			proguard
+
+			Crear un properties para usuario, url y empresa y leerlo desde shiro
+			Crear Configuracion.zul
 
 			https://stackoverflow.com/questions/34706466/how-do-i-use-proguard-obfuscation-while-building-a-maven-plugin-package
 			https://wvengen.github.io/proguard-maven-plugin/
@@ -79,13 +84,18 @@ AP_paid:IC_taxpart:IC_taxservice
 		x Crear BD de prueba de bc19 para Hugo con tercer asiento generado
 
 		Dejar GIFI como GIFI en traducción
+		No traducir el plan de cuentas (dejar contra)
 		En Plan de Cuentas dejar como payments solo pago no pago/caja
+		Imprimir formato de Comprobantes de egreso
+		Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
+		Toda impresión de cheque es un comprobante de pago
+		Comprobantes de retención (ver mensaje de error)
+
 		+ Hoteles:
 			Exportar a Excel:
 				Plan de cuentas
 				Todas las transacciones cxc, cxp, facturas, clientes, proveedores
 			Revisar el enlace de las cuentas
-
 
 Probar esto en 3.0.3
 SELECT p.partnumber, m.model, 

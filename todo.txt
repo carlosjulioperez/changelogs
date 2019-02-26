@@ -1,9 +1,7 @@
 (A) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
-(A) Datos para capacitación de Vanessa +him @sql-ledger
 (A) Instalar FE +him @fe
 (A) Instalar FE +hpm @fe
 (A) Revisar backups de todas BD +apracom @sql-ledger
-(B) Habilitar equipo Vanessa +him @sql-ledger
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
 (C) Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
 (C) Agregar FE en SQL-Ledger 303 +cjpq @fe
@@ -38,7 +36,9 @@ x 2019-02-15 Descripción general del sistema de Plan Padrinos +espol @tesis
 x 2019-02-15 Importar Plan de Cuentas +him @sql-ledger
 x 2019-02-18 Habilitar equipo Gina +hpm @sql-ledger
 x 2019-02-19 Cotización de curso ZK +curso @zk
+x 2019-02-20 Habilitar equipo Vanessa +him @sql-ledger
 x 2019-02-20 Repost en catver y blutec +catver @sql-ledger
 x 2019-02-21 Ajuste logotipo +catver @sql-ledger
 x 2019-02-21 Cambio dirección de Catver y logo en plantillas +catver @sql-ledger
+x 2019-02-21 Datos para capacitación de Vanessa +him @sql-ledger
 x 2019-02-21 Exportar datos puerto manta a servidor +hpm @sql-ledger

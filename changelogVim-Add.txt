@@ -1,4 +1,8 @@
 Vim
+	* Mostrar archivo como xml:
+		https://stackoverflow.com/questions/7600860/getting-vim-to-recognize-xml
+		:set filetype=xml
+
 	* Desactivar los números de línea
 		https://stackoverflow.com/questions/8322931/how-to-take-off-line-numbers-in-vi#8322955
 		:set nonu
@@ -18,9 +22,13 @@ Vim
 
 	* IDE:
 		Instalar tmux
-		Instalar ack.vim
+
 		+ Buscar texto en archivos:
+			https://github.com/mileszs/ack.vim
+
+			$ git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 			:Ack texto
+
 		+ Cambiar de carpeta:
 			:cd ~/code/cjerp
 		+ Buscar archivos:

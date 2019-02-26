@@ -132,6 +132,9 @@ SQL
 		+ him:
 		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','2');
 
+		+ hpm:
+		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','361');
+
 	* Cuentas para productos:
 		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');
 		68  | 1010703021 | INVENTARIO DE PRODUCTOS TERMINADOS

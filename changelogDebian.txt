@@ -8,6 +8,11 @@ Desarrollo
 		+ Cargar variables de entorno:
 			LXDE no carga las variables de entorno definidas en .profile.
 			Entonces hay que copiar esas lineas en .bashrc
+			$ vim .bashrc
+			
+			Agregar las tildes
+			https://askubuntu.com/questions/963659/use-usinternational-with-dead-keys-in-i3wm
+			setxkbmap -layout us -variant intl
 
 		+ Porcentaje batería:
 			http://www.upubuntu.com/2012/12/how-to-monitor-your-laptops-battery.html
