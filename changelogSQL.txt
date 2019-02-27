@@ -141,6 +141,19 @@ SQL
 		333 | 4010101002 | VENTAS LOCALES BIENES 0%          
 		393 | 5010101001 | COSTO DE PRODUCTOS VENDIDOS       
 
+	* Rastro de detalle de facturas:
+
+		select * from inventory where parts_id = 17141 and shippingdate = '10-17-2018';
+		select * from invoice where id in (631502,576923);
+		select * from ar where id = 187051;
+		
+		delete from inventory WHERE trans_id = 187049;
+		delete from invoice WHERE trans_id = 187049;
+		delete from acc_trans WHERE trans_id = 187049;
+
+	* Renumerar facturas por el campo orden de compra:
+		update ar set invnumber=ponumber where invnumber='63';
+
 	* Multitenancy:
 		hibernate 3 multi tenancy
 		http://spring.io/blog/2007/01/23/dynamic-datasource-routing/

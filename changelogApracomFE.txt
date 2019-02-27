@@ -407,6 +407,9 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 		pg_dump --data-only --table=tiporet busicentury19 > tiporet.sql
 		psql busicentury19 < tiporet.pg
 	
+		pg_dump --data-only --table=inventory apracomsa > apracomsa_inventory.sql
+		pg_dump --data-only --table=invoice apracomsa > apracomsa_invoice.sql
+
 		2018-01-02
 		http://blog.e-shell.org/134
 		sudo apt-get install recode

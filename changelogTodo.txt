@@ -35,10 +35,17 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		+ oymar:
+			Agregar columna unidad.
+			Dirección de los clientes.
+
+	
 		+ FE:
 			$ sudo vim locale/ec_utf/sri
 			'actualizar'                  => 'update',
 			'guardar'                     => 'save',
+
+			Poner las plantillas en español de la versión 2.8
 
 		
 		Piedad Espol
@@ -60,9 +67,7 @@ TODO
 			https://stackoverflow.com/questions/34706466/how-do-i-use-proguard-obfuscation-while-building-a-maven-plugin-package
 			https://wvengen.github.io/proguard-maven-plugin/
 
-			Apache shiro con jdbc realm.
 			En tabla user: carper@empresa en un esquema diferente
-			https://github.com/hakdogan/ApacheShiro
 
 		+ Hoteles:
 			Terminar configuración
