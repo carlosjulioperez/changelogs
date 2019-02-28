@@ -56,7 +56,7 @@ SQL
 	
 	* Ejemplos de ejecución de scripts:
 
-		$ createdb -E UTF8 -T template0 hpm
+		$ createdb -E UTF8 -T template1 hpm
 
 		# psql -U sql-ledger -d apracomsa -a -f /home/cromero/fe/insert.sql
 		# psql -U sql-ledger -d apracomsa -a -f ~/local/projects/cjerp/cjfe/src/main/resources/sql/fe_config.sql 

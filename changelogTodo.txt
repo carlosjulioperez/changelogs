@@ -35,17 +35,31 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		x Determinar el logo de general
+		x Dejar GIFI como GIFI en traducción
+		x No traducir el plan de cuentas (dejar contra)
+		x En Plan de Cuentas dejar como payments solo pago no pago/caja
+		Imprimir formato de Comprobantes de egreso
+		Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
+		Toda impresión de cheque es un comprobante de pago
+		Comprobantes de retención (ver mensaje de error)
+		+ Hoteles:
+			Exportar a Excel:
+				Plan de cuentas
+				Todas las transacciones cxc, cxp, facturas, clientes, proveedores
+			Revisar el enlace de las cuentas
+
 		+ oymar:
 			Agregar columna unidad.
 			Dirección de los clientes.
 
-	
 		+ FE:
 			$ sudo vim locale/ec_utf/sri
 			'actualizar'                  => 'update',
 			'guardar'                     => 'save',
+			'imprimir'                    => 'print',
 
-			Poner las plantillas en español de la versión 2.8
+			x Poner las plantillas en español de la versión 2.8.9 ?
 
 		
 		Piedad Espol
@@ -58,7 +72,7 @@ TODO
 			Comparar Dart con JavaScript
 
 		+ parrot:
-			jetty, shiro, zk, jdbi, postgres, lombok, jodatime, 
+			ver pom.xml
 			proguard
 
 			Crear un properties para usuario, url y empresa y leerlo desde shiro
@@ -69,38 +83,13 @@ TODO
 
 			En tabla user: carper@empresa en un esquema diferente
 
-		+ Hoteles:
-			Terminar configuración
-
-			Seguir desde configuracion y plan de ctas
-			Crear nueva BD
-			Copiar script para cambiar propietario a BD
-			Importar plan de cuentas
-			Importar fe_config.csv
-			Exportar clientes y direcciones
-			Exportar proveedores y direcciones
-			Logotipo
-			FE
 AP_tax:IC_taxpart:IC_taxservice 
 AR_tax:AP_tax:IC_taxpart:IC_taxservice 
 AP_paid:IC_expense 
 AP_paid:IC_taxpart:IC_taxservice 
 
-		x Crear BD de prueba de bc19 para Hugo con tercer asiento generado
 
-		Dejar GIFI como GIFI en traducción
-		No traducir el plan de cuentas (dejar contra)
-		En Plan de Cuentas dejar como payments solo pago no pago/caja
-		Imprimir formato de Comprobantes de egreso
-		Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
-		Toda impresión de cheque es un comprobante de pago
-		Comprobantes de retención (ver mensaje de error)
 
-		+ Hoteles:
-			Exportar a Excel:
-				Plan de cuentas
-				Todas las transacciones cxc, cxp, facturas, clientes, proveedores
-			Revisar el enlace de las cuentas
 
 Probar esto en 3.0.3
 SELECT p.partnumber, m.model, 

@@ -42,3 +42,4 @@ x 2019-02-21 Ajuste logotipo +catver @sql-ledger
 x 2019-02-21 Cambio dirección de Catver y logo en plantillas +catver @sql-ledger
 x 2019-02-21 Datos para capacitación de Vanessa +him @sql-ledger
 x 2019-02-21 Exportar datos puerto manta a servidor +hpm @sql-ledger
+x 2019-02-27 Agregar dato RUC en dirección de empresa +apracom @sql-ledger

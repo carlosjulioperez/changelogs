@@ -3,6 +3,8 @@ Centos
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
 	
+	192.168.253.162
+
 	* Producción:
 	192.168.0.253
 	186.178.202.67
