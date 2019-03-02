@@ -4,11 +4,14 @@ Centos
 	CentOS release 6.10 (Final)
 	
 	192.168.253.162
+	192.168.1.253
 
 	* Producción:
 	192.168.0.253
-	192.168.0.157 virtual
-	186.178.202.67
+
+	192.168.0.3 virtual
+	186.178.202.67 virtual
+
 	186.178.202.68
 	200.124.241.243
 
@@ -240,7 +243,7 @@ Centos
 			port = 5432
 
 		# vim /var/lib/pgsql/data/pg_hba.conf
-			#local   all         all                               ident
+			local   all         all                               trust
 			local   all         all                               trust
 			
 			host    all         all         192.168.253.238/24      trust
@@ -258,11 +261,13 @@ Centos
 		/var/lib/pgsql
 
 		* 2.8.20:
-		$ createdb -O sql-ledger -T template0 oymar
-		$ createdb -O sql-ledger -T template0 hpm
+		$ createdb -O sql-ledger -T template1 oymar
+		$ createdb -O sql-ledger -T template1 hpm
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
+		
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi12
 
 		* 3.2.7::
 		$ createdb -O sql-ledger -E UTF-8 -T template0 dbbiomicro
@@ -505,6 +510,7 @@ Centos
 
 				# chown -R tomcat8: /usr/local/fe
 				# chmod -R 777 /usr/local/fe/logs
+				# touch /tmp/salida.pdf
 				# chmod 777 /tmp/salida.pdf
 
 			+ Maven:
