@@ -42,14 +42,13 @@ TODO
 		x Dejar GIFI como GIFI en traducción
 		x No traducir el plan de cuentas (dejar contra)
 		x En Plan de Cuentas dejar como payments solo pago no pago/caja
-		Imprimir formato de Comprobantes de egreso
+		x Imprimir formato de Comprobantes de egreso
 		x Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
 		x Toda impresión de cheque es un comprobante de pago
-		Comprobantes de retención (ver mensaje de error)
+		x Comprobantes de retención (ver mensaje de error)
+		
 		Logotipo de him
 		FE para hpm
-
-		Leer las credenciales de /SL/users
 
 		+ Hoteles:
 			Exportar a Excel:
