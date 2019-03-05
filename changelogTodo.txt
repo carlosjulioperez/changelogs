@@ -35,14 +35,22 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+
+		go frameworks
+
 		x Determinar el logo de general
 		x Dejar GIFI como GIFI en traducción
 		x No traducir el plan de cuentas (dejar contra)
 		x En Plan de Cuentas dejar como payments solo pago no pago/caja
 		Imprimir formato de Comprobantes de egreso
-		Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
-		Toda impresión de cheque es un comprobante de pago
+		x Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
+		x Toda impresión de cheque es un comprobante de pago
 		Comprobantes de retención (ver mensaje de error)
+		Logotipo de him
+		FE para hpm
+
+		Leer las credenciales de /SL/users
+
 		+ Hoteles:
 			Exportar a Excel:
 				Plan de cuentas

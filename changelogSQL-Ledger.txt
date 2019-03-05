@@ -259,6 +259,9 @@ SQL-Ledger
 			                Deny from All
 			        </Directory>
 
+	* Latex:
+		+ Agregar pie con firmas:
+			https://tex.stackexchange.com/questions/347912/two-signature-wilcards-side-by-side
 
 	* Impedimentos:
 		perl: warning: Setting locale failed.

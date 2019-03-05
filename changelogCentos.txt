@@ -109,7 +109,7 @@ Centos
 	* Reducir tamaño de vdi:
 		$ dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile
 		Shutdown VM
-		$ vboxmanage modifymedium --compact /home/user1/VirtualBox\ VMs/centos6EN/centos6EN.vdi
+		$ vboxmanage modifymedium --compact ~/VirtualBox\ VMs/centos6/centos6.vdi 
 
 	* eth0 no encontrada al copiar vdi en otra máquina:
 		https://www.ostechnix.com/solve-device-eth0-not-seem-present-delaying-initialization-error/
