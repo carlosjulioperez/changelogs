@@ -1,7 +1,6 @@
 (A) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
 (A) Instalar FE +him @fe
 (A) Instalar FE +hpm @fe
-(A) Revisar backups de todas BD +apracom @sql-ledger
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
 (C) Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
 (C) Agregar FE en SQL-Ledger 303 +cjpq @fe
@@ -43,3 +42,8 @@ x 2019-02-21 Cambio dirección de Catver y logo en plantillas +catver @sql-ledge
 x 2019-02-21 Datos para capacitación de Vanessa +him @sql-ledger
 x 2019-02-21 Exportar datos puerto manta a servidor +hpm @sql-ledger
 x 2019-02-27 Agregar dato RUC en dirección de empresa +apracom @sql-ledger
+x 2019-02-27 Quitar dato RUC en dirección de empresa +apracom @sql-ledger
+x 2019-03-06 Diferenciar repost para busicentury19 y busi12 +busicentury @sql-ledger
+x 2019-03-06 Proceso de facturas proveedor, retenciones y pagos a +hpm @sql-ledger
+x 2019-03-06 Restaurar base busi12 a 27 de febrero +busicentury @sql-ledger
+x 2019-03-06 Revisar backups de todas BD +apracom @sql-ledger

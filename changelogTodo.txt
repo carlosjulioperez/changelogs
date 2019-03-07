@@ -36,6 +36,10 @@ TODO
 
 	* Tareas:
 
+		Repost bc, bc12 3 veces al día
+		Respaldo de bc12 junto con bc19
+		Restaurar base lunes bc12 (5 luego 4)
+
 		go frameworks
 
 		x Determinar el logo de general
