@@ -35,10 +35,13 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		Demasiadas transacciones En Proceso SRI
+		Ejemplo en internet de procesamiento de FE
 
-		Repost bc, bc12 3 veces al día
-		Respaldo de bc12 junto con bc19
-		Restaurar base lunes bc12 (5 luego 4)
+		Montar 22feb Busi12h en una nueva base para BC
+		Montar 26feb Busi12 en una nueva base para BC
+
+		x Revisar por qué no aparecen las facturas para hacer un pago.
 
 		go frameworks
 
