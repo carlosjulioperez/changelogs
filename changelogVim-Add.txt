@@ -1,4 +1,10 @@
 Vim
+	* vim autocomplete Java:
+		https://github.com/artur-shaik/vim-javacomplete2
+		
+		$ cd ~/.vim/bundle
+		$ git clone https://github.com/artur-shaik/vim-javacomplete2.git
+
 	* Mostrar archivo como xml:
 		https://stackoverflow.com/questions/7600860/getting-vim-to-recognize-xml
 		:set filetype=xml
@@ -35,6 +41,25 @@ Vim
 			https://stackoverflow.com/questions/3554719/find-a-file-via-recursive-directory-search-in-vim
 			:e **/test/Suite.java
 			:e find **/*/DocumentoElectronico
+
+		+ FindFile:
+			https://stackoverflow.com/questions/6852763/vim-quickfix-list-launch-files-in-new-tab
+			https://vim.fandom.com/wiki/Searching_for_files
+
+			+ Agregar en .vimrc:
+			set switchbuf+=newtab
+			
+			" find files and populate the quickfix list
+			fun! FindFiles(filename)
+			  let error_file = tempname()
+			  silent exe '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
+			  set errorformat=%f:%l:%m
+			  exe "cfile ". error_file
+			  copen
+			  call delete(error_file)
+			endfun
+			command! -nargs=1 FindFile call FindFiles(<q-args>)
+
 		+ Mover window:
 			https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows
 			:swap-window -s 3 -t 1

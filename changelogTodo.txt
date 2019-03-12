@@ -35,6 +35,11 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		Traducción Centro de costos por Departamento
+		Comprobante Egreso a media página
+		Agregar logotipo en PDF
+		Impresión PDF en Libro Mayor
+
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de procesamiento de FE
 
