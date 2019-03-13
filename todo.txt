@@ -49,3 +49,4 @@ x 2019-03-06 Restaurar base busi12 a 27 de febrero +busicentury @sql-ledger
 x 2019-03-06 Revisar backups de todas BD +apracom @sql-ledger
 x 2019-03-07 Creación y restauración de bd de bc +busicentury @fe
 x 2019-03-07 Preparar servidor clon con bd de busi12 +busicentury @sql-ledger
+x 2019-03-12 2019-03-12 apprueba registros duplicados 01-29-2019 IESS 43233 637.15 +apracom @sql-ledger

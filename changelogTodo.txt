@@ -12,24 +12,21 @@ TODO
 		+ Las profecías de Daniel:
 			https://youtu.be/2kHbCVwgDsE
 	
+	* Java Performance:
+		JDK8
+		Scala
+		Vertex
+			https://github.com/vert-x3/vertx-examples/tree/master/web-examples
+			https://medium.com/capital-one-tech/building-microservices-a-reactive-framework-comparison-fb49d8f3c8f4
+		Mejor performance en Tomcat
+
 	* JDBC:
-		+ Yegor:
-			https://es.slideshare.net/YegorBugayenko/orm-is-a-perfect-antipattern
-			https://jdbc.jcabi.com/
 		
 		www.jdbi.org
 		https://www.baeldung.com/jdbi
 		https://blog.2ndquadrant.com/java-database-interface-postgresql/
 		https://nbsoftsolutions.com/blog/the-difficulty-of-performance-evaluation-of-hikaricp-in-dropwizard
 		https://www.toptal.com/java/dropwizard-tutorial-microservices
-
-		https://www.codeproject.com/Tips/1231391/Yet-Another-Fluent-JDBC-Wrapper-in-Lines-of-Code
-
-		https://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/jdbc.html
-		http://acodigo.blogspot.com/2017/03/spring-base-de-datos-con-jdbctemplate.html
-		https://danielme.com/2017/10/02/spring-jdbc-template-simplificando-el-uso-de-sql/
-		https://pramatr.wordpress.com/2008/08/19/spring-jdbctemplate-the-phantom-performance-problem/
-		https://www.journaldev.com/17053/spring-jdbctemplate-example
 
 	* Configuración desarrollo Java local (FE):
 		Solo wars se copiarán a la máquina virtual para las pruebas.
@@ -42,11 +39,6 @@ TODO
 
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de procesamiento de FE
-
-		Montar 22feb Busi12h en una nueva base para BC
-		Montar 26feb Busi12 en una nueva base para BC
-
-		x Revisar por qué no aparecen las facturas para hacer un pago.
 
 		go frameworks
 
