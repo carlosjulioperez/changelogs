@@ -1,4 +1,9 @@
 SQL	
+	* Mostrar registros con ID duplicados:
+		https://stackoverflow.com/questions/28156795/how-to-find-duplicate-records-in-postgresql
+
+		select * from chart a
+		where (select count(*) from chart b where b.id = a.id) > 1;
 
 	* Terminar conexiones:
 		https://stackoverflow.com/questions/5108876/kill-a-postgresql-session-connection

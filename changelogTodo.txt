@@ -13,7 +13,7 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 	
 	* Java Performance:
-		JDK8
+		JDK8 vs go
 		Scala
 		Vertex
 			https://github.com/vert-x3/vertx-examples/tree/master/web-examples
@@ -32,10 +32,45 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		Agregar columna unidad de medida en RIDES
 		Traducción Centro de costos por Departamento
 		Comprobante Egreso a media página
-		Agregar logotipo en PDF
+		Agregar logotipo en PDF's
 		Impresión PDF en Libro Mayor
+		Usar AP transaction como comprobante de pago
+
+		2019-03-12
+		Revisar por qué se triplicó una trx
+		2019-03-13
+		BC: Base 12 poner las mismas seguridades que en el clon
+		respaldo, repost 3 veces al día.
+		Probar tarjeta de red wireless para máquina de angélica
+		Corregir usuario de repost en apracom
+		Ver qué usuarios (vendedores) aparecen en las transacciones)
+
+		Seguir la pista de cuenta duplicada 
+
+
+PULLA SANMARTIN JULIA CARMITA 
+
+DBD::Pg::db do failed: ERROR: duplicate key value violates unique constraint
+"chart_accno_key" at SL/AM.pm line 117.
+Error!
+
+UPDATE chart SET
+accno = '1.1.1.01.004',
+description = 'Caja reembolsos',
+charttype = 'A',
+gifi_accno = '',
+category = 'A',
+link = 'AR_paid:AP_paid',
+contra = '0'
+WHERE id = 210
+ERROR: duplicate key value violates unique constraint "chart_accno_key"
+
+select * from chart a
+where (select count(*) from chart b where b.id = a.id) > 1;
+
 
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de procesamiento de FE

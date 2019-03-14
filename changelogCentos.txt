@@ -105,6 +105,7 @@ Centos
 
 	* Copiar el sistema a unidad USB:
 		# sudo dd if=/home/user1/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
+		# sudo dd if=/home/carper/local/iso/ubuntu/ubuntu-18.04.2-desktop-amd64.iso of=/dev/sda
 
 	* Reducir tamaño de vdi:
 		$ dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile
