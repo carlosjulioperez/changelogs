@@ -39,16 +39,18 @@ TODO
 		Impresión PDF en Libro Mayor
 		Usar AP transaction como comprobante de pago
 
+		Cotización de cuadre de caja
+
 		2019-03-12
 		Revisar por qué se triplicó una trx
 		2019-03-13
-		BC: Base 12 poner las mismas seguridades que en el clon
-		respaldo, repost 3 veces al día.
-		Probar tarjeta de red wireless para máquina de angélica
-		Corregir usuario de repost en apracom
-		Ver qué usuarios (vendedores) aparecen en las transacciones)
+		x BC: Base 12 poner las mismas seguridades que en el clon
+		x respaldo, repost 3 veces al día.
+		x Probar tarjeta de red wireless para máquina de angélica
+		x Corregir usuario de repost en apracom
+		x Ver qué usuarios (vendedores) aparecen en las transacciones)
 
-		Seguir la pista de cuenta duplicada 
+		x Seguir la pista de cuenta duplicada 
 
 
 PULLA SANMARTIN JULIA CARMITA 

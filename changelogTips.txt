@@ -19,8 +19,15 @@ TIPS
 		https://askubuntu.com/questions/147228/how-to-repair-a-corrupted-fat32-file-system
 		$ sudo dosfsck -w -r -l -a -v -t /dev/sdc1
 
-	* Actualizar password git:
-		git config --global credential.helper osxkeychain
+	* Git:
+		+ Clonar rama específica:
+			https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git
+			$ git clone -b <branch> <remote_repo>
+
+			$ git clone -b zk8 https://github.com/zkoss/zkessentials.git
+
+		+ Actualizar password git:
+			$ git config --global credential.helper osxkeychain
 
 	* Eliminar PostgreSQL:
 		https://stackoverflow.com/questions/8037729/completely-uninstall-postgresql-9-0-4-from-mac-osx-lion
