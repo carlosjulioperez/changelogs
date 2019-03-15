@@ -59,6 +59,11 @@ Centos
 		https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/
 
 		# crontab -e
+
+		# m h dom mon dow user command
+		0 0 * * *   /root/db_backup.sh 00:00
+		0 13 * * *   /root/db_backup.sh 13:00
+
 		# m h dom mon dow user command
 		0 0 * * *	/home/cromero/dbbackup-night.sh
 		0 13 * * *	/home/cromero/dbbackup.sh
