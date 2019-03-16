@@ -1,4 +1,8 @@
 TIPS
+	* Contar los archivos en un directorio:
+		https://unix.stackexchange.com/questions/157285/why-does-ls-wc-l-show-the-correct-number-of-files-in-current-directory/157289
+		$ ls | wc -l
+
 	* Maven:
 		Para solucionar el error al ejecutar test con maven:
 		Error: no se ha encontrado o cargado la clase principal org.apache.maven.surefire.booter.ForkedBoote
@@ -447,6 +451,7 @@ TIPS
 				find . -type f -exec sed -i 's,5432/prueba,5432/oymar,g' {} +
 				find . -type f -exec sed -i 's,5432/busicentury,5432/busicentury19,g' {} +
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
+				find . -type f -exec sed -i 's/Hoja\ de\ Balance/Balance\ General/g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux

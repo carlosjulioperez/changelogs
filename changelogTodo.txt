@@ -4,8 +4,6 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
-	Revisar los respaldos del servidor
-
 	* Espiritual:
 		Comentario 2re 25:27
 		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
@@ -33,12 +31,7 @@ TODO
 
 	* Tareas:
 		Agregar columna unidad de medida en RIDES
-		Traducción Centro de costos por Departamento
-		Comprobante Egreso a media página
-		Agregar logotipo en PDF's
-		Impresión PDF en Libro Mayor
-		Usar AP transaction como comprobante de pago
-
+		x Respaldos de bd para todas las empresa
 		Cotización de cuadre de caja
 
 		2019-03-12
