@@ -30,6 +30,16 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+
+		Balance General mostrar la fecha de corte, no la fecha del sistema
+
+Forma de pago de cliente: retencion o cheque o efectivo
+Efectivo recibo, se ingresa como forma de pago
+También se ve reflejado en la factura del cliente.
+El sistema lo fe como forma de pago
+El descripción va el número de factura
+En Memo o nota va el número de autorización
+
 		Agregar columna unidad de medida en RIDES
 		x Respaldos de bd para todas las empresa
 		Cotización de cuadre de caja
@@ -44,7 +54,6 @@ TODO
 		x Ver qué usuarios (vendedores) aparecen en las transacciones)
 
 		x Seguir la pista de cuenta duplicada 
-
 
 PULLA SANMARTIN JULIA CARMITA 
 
@@ -65,7 +74,6 @@ ERROR: duplicate key value violates unique constraint "chart_accno_key"
 
 select * from chart a
 where (select count(*) from chart b where b.id = a.id) > 1;
-
 
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de procesamiento de FE
@@ -100,9 +108,16 @@ where (select count(*) from chart b where b.id = a.id) > 1;
 			'guardar'                     => 'save',
 			'imprimir'                    => 'print',
 
+		+ Filtro en las cuentas para las retenciones:
+			bin/mozilla/sri.pl:47
+
+			SELECT * FROM chart WHERE 
+				accno BETWEEN '2.1.3.01.002' AND '2.1.3.01.006' OR
+				accno BETWEEN '2.1.3.02.002' AND '2.1.3.02.004'
+			ORDER BY description;
+
 			x Poner las plantillas en español de la versión 2.8.9 ?
 
-		
 		Piedad Espol
 		pmpizarr@espol.edu.ec
 
