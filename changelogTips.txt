@@ -1,4 +1,8 @@
 TIPS
+
+	* Listar solamente directorios:
+		$ ls -d */
+
 	* Buscar archivos y mostrar la fecha de modificación:
 		https://stackoverflow.com/questions/20893022/how-to-display-modified-date-time-with-find-command
 
