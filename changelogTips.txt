@@ -1,4 +1,9 @@
 TIPS
+	* Búsqueda con ack por tipo de archivo:
+		https://stackoverflow.com/questions/25200246/search-for-a-specific-file-type-with-ack
+
+		$ ack --help=types
+		$ ack trans_id --type=perl
 
 	* Listar solamente directorios:
 		$ ls -d */
