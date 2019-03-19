@@ -32,6 +32,7 @@ TODO
 	* Tareas:
 
 		Balance General mostrar la fecha de corte, no la fecha del sistema
+		FE para hpm
 
 Forma de pago de cliente: retencion o cheque o efectivo
 Efectivo recibo, se ingresa como forma de pago
@@ -41,6 +42,9 @@ El descripción va el número de factura
 En Memo o nota va el número de autorización
 
 		Agregar columna unidad de medida en RIDES
+		Demasiadas transacciones En Proceso SRI
+		Ejemplo en internet de procesamiento de FE
+
 		x Respaldos de bd para todas las empresa
 		Cotización de cuadre de caja
 
@@ -52,33 +56,9 @@ En Memo o nota va el número de autorización
 		x Probar tarjeta de red wireless para máquina de angélica
 		x Corregir usuario de repost en apracom
 		x Ver qué usuarios (vendedores) aparecen en las transacciones)
-
 		x Seguir la pista de cuenta duplicada 
-
-PULLA SANMARTIN JULIA CARMITA 
-
-DBD::Pg::db do failed: ERROR: duplicate key value violates unique constraint
-"chart_accno_key" at SL/AM.pm line 117.
-Error!
-
-UPDATE chart SET
-accno = '1.1.1.01.004',
-description = 'Caja reembolsos',
-charttype = 'A',
-gifi_accno = '',
-category = 'A',
-link = 'AR_paid:AP_paid',
-contra = '0'
-WHERE id = 210
-ERROR: duplicate key value violates unique constraint "chart_accno_key"
-
-select * from chart a
-where (select count(*) from chart b where b.id = a.id) > 1;
-
-		Demasiadas transacciones En Proceso SRI
-		Ejemplo en internet de procesamiento de FE
-
-		go frameworks
+		2019-03-18
+		Crear bd logistca en servidor Dell
 
 		x Determinar el logo de general
 		x Dejar GIFI como GIFI en traducción
@@ -88,9 +68,6 @@ where (select count(*) from chart b where b.id = a.id) > 1;
 		x Imprimir formato de Libro Mayor (ver en SL qué formato se debe imprimir)
 		x Toda impresión de cheque es un comprobante de pago
 		x Comprobantes de retención (ver mensaje de error)
-		
-		Logotipo de him
-		FE para hpm
 
 		+ Hoteles:
 			Exportar a Excel:
