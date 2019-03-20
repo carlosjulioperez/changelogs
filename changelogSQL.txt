@@ -59,6 +59,11 @@ SQL
 		alter database "old"   rename to "new";
 		alter database "aguas" rename to "zx2018";
 	
+	* Crear una bd para SL:
+		Crear la bd
+		Ingresar admin para crear la estructura
+		Ejecut7ar el script SL-FE-diff.sql para agregar las columnas faltantes.
+
 	* Ejemplos de ejecución de scripts:
 
 		$ createdb -E UTF8 -T template1 hpm
@@ -69,6 +74,7 @@ SQL
 		# psql -U sql-ledger -d prueba -a -f SL-FE-diff.sql
 		# psql -U sql-ledger -d hpm -a -f SL-FE-diff.sql
 		# psql -U sql-ledger -d him -a -f SL-FE-diff.sql
+		# psql -U sql-ledger -d logistica -a -f SL-FE-diff.sql
 		
 		\i path_to_sql_file @pathof_mysqlfile.sql
 		apracomsa=# \i /usr/local/fe/ddl.sql

@@ -59,6 +59,10 @@ En Memo o nota va el número de autorización
 		x Seguir la pista de cuenta duplicada 
 		2019-03-18
 		Crear bd logistca en servidor Dell
+		2019-03-19
+		Copiar base de him de hpm en servidor de him
+		Desactivar respaldo de him en hpm
+		Pasar plan de cuentas de bc19 a logistica
 
 		x Determinar el logo de general
 		x Dejar GIFI como GIFI en traducción

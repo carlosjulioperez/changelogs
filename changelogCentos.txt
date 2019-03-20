@@ -266,6 +266,8 @@ Centos
 		$ pwd
 		/var/lib/pgsql
 
+		template0 para SQL_ASCII
+		template1 para UTF8
 		* 2.8.20:
 		$ createdb -O sql-ledger -T template1 oymar
 		$ createdb -O sql-ledger -T template1 hpm
