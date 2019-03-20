@@ -1,4 +1,9 @@
 SQL-Ledger
+	* Plan de cuentas por defecto:
+		Crear bd vacía.
+		Ejecutar Admin con instalación de sql-ecu19
+		Seleccionar plan cuentas "mychart"
+
 	* Debian 9 stretch:
 		+ perlbrew:
 			+ apt:
