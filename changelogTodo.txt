@@ -30,6 +30,12 @@ TODO
 		Solo wars se copiarán a la máquina virtual para las pruebas.
 
 	* Tareas:
+		Comparar ap19 con cj para adaptar cambios de plan cuentas de empresa modelo
+		Límite de reenvíos de whatsapp para Ing. Cástano
+		Preguntar a banco pacífico por descuentos
+		Hacer factura de marzo con fecha 14 AP
+		x Crear bd logistica de bc19 general (plan ctas. ap)
+		x Compras y ventas a CSV
 
 		Balance General mostrar la fecha de corte, no la fecha del sistema
 		FE para hpm
