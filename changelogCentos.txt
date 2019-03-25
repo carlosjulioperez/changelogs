@@ -271,7 +271,7 @@ Centos
 		* 2.8.20:
 		$ createdb -O sql-ledger -T template1 oymar
 		$ createdb -O sql-ledger -T template1 hpm
-		$ createdb -O sql-ledger -T template1 him
+		$ createdb -O sql-ledger -T template1 him_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql

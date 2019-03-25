@@ -9,44 +9,36 @@ TODO
 		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
 		+ Las profecías de Daniel:
 			https://youtu.be/2kHbCVwgDsE
-	
-	* Java Performance:
-		JDK8 vs go
-		Scala
-		Vertex
-			https://github.com/vert-x3/vertx-examples/tree/master/web-examples
-			https://medium.com/capital-one-tech/building-microservices-a-reactive-framework-comparison-fb49d8f3c8f4
-		Mejor performance en Tomcat
 
-	* JDBC:
-		
-		www.jdbi.org
-		https://www.baeldung.com/jdbi
-		https://blog.2ndquadrant.com/java-database-interface-postgresql/
-		https://nbsoftsolutions.com/blog/the-difficulty-of-performance-evaluation-of-hikaricp-in-dropwizard
-		https://www.toptal.com/java/dropwizard-tutorial-microservices
-
-	* Configuración desarrollo Java local (FE):
-		Solo wars se copiarán a la máquina virtual para las pruebas.
+	* Analizar:
+		BD en memoria para seguridades
+		Consultas SQL en tablas para cada sistema que funcione con FE (ej.
+		Ledger 123 o 327
+		Crear tablas como en sistema de gestión clínica
 
 	* Tareas:
+		Crear war ofuscado para módulo de seguridad 
+		Validar accesos de menuitem
+		Seguir con los formularios (configuraion.zul)
 
 		Balance General mostrar la fecha de corte, no la fecha del sistema
 		FE para hpm
 
-Forma de pago de cliente: retencion o cheque o efectivo
-Efectivo recibo, se ingresa como forma de pago
-También se ve reflejado en la factura del cliente.
-El sistema lo fe como forma de pago
-El descripción va el número de factura
-En Memo o nota va el número de autorización
-
 		Agregar columna unidad de medida en RIDES
 		Demasiadas transacciones En Proceso SRI
-		Ejemplo en internet de procesamiento de FE
+		Ejemplo en internet de descarga de FE
 
-		x Respaldos de bd para todas las empresa
-		Cotización de cuadre de caja
+		2019-03-25 10 - 12h
+		+ him:
+		Se debe poner la fecha del venedor a 01-ene
+		El administrador (vendedor) puede usar el código de un vendedor para crear facturas de venta con fechas posteriores.
+		
+		Revisar impresión de retención de fA 001-001-726, 001-001-543
+		Todas las retenciones que tienen base e iva no se muestran
+		completamente
+
+		+ hpm:
+		hpm=# select * from vendor where vendornumber like '000053';
 
 		2019-03-12
 		Revisar por qué se triplicó una trx
@@ -83,30 +75,8 @@ En Memo o nota va el número de autorización
 			Agregar columna unidad.
 			Dirección de los clientes.
 
-		+ FE:
-			$ sudo vim locale/ec_utf/sri
-			'actualizar'                  => 'update',
-			'guardar'                     => 'save',
-			'imprimir'                    => 'print',
-
-		+ Filtro en las cuentas para las retenciones:
-			bin/mozilla/sri.pl:47
-
-			SELECT * FROM chart WHERE 
-				accno BETWEEN '2.1.3.01.002' AND '2.1.3.01.006' OR
-				accno BETWEEN '2.1.3.02.002' AND '2.1.3.02.004'
-			ORDER BY description;
-
-			x Poner las plantillas en español de la versión 2.8.9 ?
-
 		Piedad Espol
 		pmpizarr@espol.edu.ec
-
-		+ Revisar:
-			Seguridad en proyectos espol
-			Zkboost:
-			Comparar Vuejs con Fluter
-			Comparar Dart con JavaScript
 
 		+ parrot:
 			ver pom.xml
@@ -119,14 +89,6 @@ En Memo o nota va el número de autorización
 			https://wvengen.github.io/proguard-maven-plugin/
 
 			En tabla user: carper@empresa en un esquema diferente
-
-AP_tax:IC_taxpart:IC_taxservice 
-AR_tax:AP_tax:IC_taxpart:IC_taxservice 
-AP_paid:IC_expense 
-AP_paid:IC_taxpart:IC_taxservice 
-
-
-
 
 Probar esto en 3.0.3
 SELECT p.partnumber, m.model, 
@@ -189,9 +151,6 @@ WHERE i.trans_id = 65210; --ap-daxti
 		
 		https://docs.docker.com/docker-for-mac/install/
 		https://github.com/zkoss/zkspringboot
-
-	* Web UI:
-		https://demo.cuba-platform.com/app/#!
 
 	* Mis servicios:
 		Jéssica Pico
