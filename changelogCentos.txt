@@ -288,6 +288,8 @@ Centos
 		* 3.2.7::
 		$ createdb -O sql-ledger -E UTF-8 -T template0 dbbiomicro
 		$ psql -U sql-ledger dbbiomicro < 29-08-2018.peru326.sql
+		
+		$ createdb -O sql-ledger demo326
 
 		* Descomprimir bz2:
 		$ bzip2 -dk 14-05-2018.apracomsa.sql.bz2

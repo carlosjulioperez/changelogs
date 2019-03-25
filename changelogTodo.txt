@@ -20,6 +20,13 @@ TODO
 		Crear war ofuscado para módulo de seguridad 
 		Validar accesos de menuitem
 		Seguir con los formularios (configuraion.zul)
+		
+		Comparar ap19 con cj para adaptar cambios de plan cuentas de empresa modelo
+		Límite de reenvíos de whatsapp para Ing. Cástano
+		Preguntar a banco pacífico por descuentos
+		Hacer factura de marzo con fecha 14 AP
+		x Crear bd logistica de bc19 general (plan ctas. ap)
+		x Compras y ventas a CSV
 
 		Balance General mostrar la fecha de corte, no la fecha del sistema
 		FE para hpm
@@ -52,9 +59,9 @@ TODO
 		2019-03-18
 		Crear bd logistca en servidor Dell
 		2019-03-19
-		Copiar base de him de hpm en servidor de him
-		Desactivar respaldo de him en hpm
-		Pasar plan de cuentas de bc19 a logistica
+		x Copiar base de him de hpm en servidor de him
+		x Desactivar respaldo de him en hpm
+		x Pasar plan de cuentas de bc19 a logistica
 
 		x Determinar el logo de general
 		x Dejar GIFI como GIFI en traducción
