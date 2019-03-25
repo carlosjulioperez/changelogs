@@ -4,6 +4,9 @@ SQL
 
 		select * from chart a
 		where (select count(*) from chart b where b.id = a.id) > 1;
+		
+		select * from vendor a
+		where (select count(*) from vendor b where b.id = a.id) > 1;
 
 	* Terminar conexiones:
 		https://stackoverflow.com/questions/5108876/kill-a-postgresql-session-connection
@@ -125,26 +128,6 @@ SQL
 		COPY partstax    FROM '/tmp/partstax.csv'    DELIMITER  ',' CSV HEADER;
 		COPY customertax FROM '/tmp/customertax.csv' DELIMITER  ',' CSV HEADER;
 		COPY vendortax   FROM '/tmp/vendortax.csv'   DELIMITER  ',' CSV HEADER;
-
-
-	* Defaults:
-		+ Apracomsa:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161');
-		
-		* Busicentury:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','32777');
-		
-		+ Blutec/Catver:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
-		
-		+ Oymar:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','431');
-		
-		+ him:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','2');
-
-		+ hpm:
-		INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','361');
 
 	* Cuentas para productos:
 		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');

@@ -1,8 +1,49 @@
 SQL-Ledger
-	* Plan de cuentas por defecto:
-		Crear bd vacía.
-		Ejecutar Admin con instalación de sql-ecu19
-		Seleccionar plan cuentas "mychart"
+	* Características:
+		+ Vendedores:
+			Se debe poner la fecha del venedor a 01-ene
+			El administrador (vendedor) puede usar el código de un vendedor para crear facturas de venta con fechas posteriores.
+		
+		+ Retenciones del cliente:
+			Efectivo / Recibido. Valor negativo como pago de cliente.
+
+		+ Plan de cuentas por defecto:
+			Crear bd vacía.
+			Ejecutar Admin con instalación de sql-ecu19
+			Seleccionar plan cuentas "mychart"
+		
+		+ FE:
+			$ sudo vim locale/ec_utf/sri
+			'actualizar'                  => 'update',
+			'guardar'                     => 'save',
+			'imprimir'                    => 'print',
+
+		+ Filtro en las cuentas para las retenciones:
+			bin/mozilla/sri.pl:47
+
+			SELECT * FROM chart WHERE 
+				accno BETWEEN '2.1.3.01.002' AND '2.1.3.01.006' OR
+				accno BETWEEN '2.1.3.02.002' AND '2.1.3.02.004'
+			ORDER BY description;
+		
+		* Defaults:
+			+ Apracomsa:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','24161');
+			
+			* Busicentury:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','32777');
+			
+			+ Blutec/Catver:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550');
+			
+			+ Oymar:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','431');
+			
+			+ him:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','2');
+
+			+ hpm:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','361');
 
 	* Debian 9 stretch:
 		+ perlbrew:
