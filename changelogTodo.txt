@@ -46,6 +46,13 @@ TODO
 
 		+ hpm:
 		hpm=# select * from vendor where vendornumber like '000053';
+		Registro "duplicado"
+		
+		BASANTE POZO JOSE NEPTALI 
+		+ Revisar template / language code
+		No file 1553553771_ap_transaction_001001322063.aux.
+		<../templates/hpm//logo.png, id=1, 135.50626pt x 138.5175pt>
+
 
 		2019-03-12
 		Revisar por qué se triplicó una trx

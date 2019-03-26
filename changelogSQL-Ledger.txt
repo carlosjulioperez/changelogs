@@ -44,6 +44,9 @@ SQL-Ledger
 
 			+ hpm:
 			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','361');
+		* Error en reportes PDF:
+			“Missing $ inserted” in LaTeX. Es por el soporte del idioma.
+			Cambiar latin1 por utf8.
 
 	* Debian 9 stretch:
 		+ perlbrew:
