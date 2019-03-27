@@ -35,6 +35,11 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-03-26 10
+		Revisar duplicados en hpm
+		Subir datos de hpm en máquina virtual
+		Impresiones en him
+
 		2019-03-25 10 - 12h
 		+ him:
 		Se debe poner la fecha del venedor a 01-ene
