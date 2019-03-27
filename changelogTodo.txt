@@ -11,6 +11,8 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 
 	* Analizar:
+		Verificar zkoss
+
 		BD en memoria para seguridades
 		Consultas SQL en tablas para cada sistema que funcione con FE (ej.
 		Ledger 123 o 327
@@ -34,6 +36,12 @@ TODO
 		Agregar columna unidad de medida en RIDES
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
+
+		2019-03-27
+		Agregar label al menú
+
+		x Detalle de memorias de 32GB en Amazon
+		x Detalle de memorias libres y ocupadas de 16 y 32
 
 		2019-03-26 10
 		Revisar duplicados en hpm
