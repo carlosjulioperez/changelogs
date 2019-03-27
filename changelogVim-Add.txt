@@ -1,4 +1,12 @@
 Vim
+	* Comentar texto:
+		https://github.com/tomtom/tcomment_vim
+
+		$ cd .vim
+		$ mkdir -p pack/tml/start
+		$ cd pack/tml/start
+		$ git clone https://github.com/tomtom/tcomment_vim
+
 	* vim autocomplete Java:
 		https://github.com/artur-shaik/vim-javacomplete2
 		
