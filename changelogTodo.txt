@@ -12,6 +12,7 @@ TODO
 
 	* Analizar:
 		Verificar zkoss
+		Analizar zktree y eventos
 
 		BD en memoria para seguridades
 		Consultas SQL en tablas para cada sistema que funcione con FE (ej.

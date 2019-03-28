@@ -5,6 +5,7 @@ SQL
 		select * from ap a where (select count(*) from ap b where b.id = a.id) > 1;
 		select * from chart a where (select count(*) from chart b where b.id = a.id) > 1;
 		select * from vendor a where (select count(*) from vendor b where b.id = a.id) > 1;
+		select * from parts a where (select count(*) from parts where b.id = a.id) > 1;
 
 		Crear como nuevo, buscar el reg. anterior y borrarlo en una empresa de prueba. Luego sacar el reporte para ver si hay error.
 
