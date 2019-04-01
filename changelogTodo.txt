@@ -11,8 +11,11 @@ TODO
 			https://youtu.be/2kHbCVwgDsE
 
 	* Analizar:
-		Verificar zkoss
-		Analizar zktree y eventos
+		Crear interface para controles genéricos toolbar	
+		Llamar a pantalla de login
+		Crear menú desde Java
+		Validar el acceso mediante shiro
+		Acceso desde JDBC
 
 		BD en memoria para seguridades
 		Consultas SQL en tablas para cada sistema que funcione con FE (ej.
