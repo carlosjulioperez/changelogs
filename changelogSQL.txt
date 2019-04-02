@@ -46,6 +46,9 @@ SQL
 		pg_dump dbname > outfile
 		psql dbname < infile
 
+		pg_dump --data-only --table=parts logistica > parts.sql
+		psql logistica < parts.sql
+
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
 	

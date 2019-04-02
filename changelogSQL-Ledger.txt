@@ -6,6 +6,7 @@ SQL-Ledger
 		
 		+ Retenciones del cliente:
 			Efectivo / Recibido. Valor negativo como pago de cliente.
+			Las retenciones de IVA deben ser marcadas como PAGO no como impuesto.
 
 		+ Plan de cuentas por defecto:
 			Crear bd vacía.

@@ -41,6 +41,11 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-04-01
+		him=# update chart set id = 355 where id=343 and accno='6.2.1.01.003';
+		him=# update chart set id = 356 where id=345 and accno='6.2.1.01.005';
+		him=# update chart set id = 357 where id=346 and accno='6.2.1.01.006';
+
 		2019-03-27
 		Agregar label al menú
 
