@@ -1,4 +1,14 @@
 TIPS
+	* screen:
+		http://aperiodic.net/screen/quick_reference
+		$ screen
+		< Preparar el entorno de trabajo >
+		$ C-a d 
+
+		< Restaurar >
+		$ screen -ls
+		$ screen -r
+	
 	* Búsqueda con ack por tipo de archivo:
 		https://stackoverflow.com/questions/25200246/search-for-a-specific-file-type-with-ack
 
