@@ -48,6 +48,12 @@ SQL
 
 		pg_dump --data-only --table=parts logistica > parts.sql
 		psql logistica < parts.sql
+		
+		pg_dump --data-only --table=acc_trans oymar > acc_trans.sql
+		psql oymar_prueba < acc_trans.sql
+
+		pg_dump --data-only --table=retenc oymar_prueba > retenc.sql
+		psql oymar < retenc.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump

@@ -29,6 +29,8 @@ SQL-Ledger
 				accno BETWEEN '2.1.3.01.002' AND '2.1.3.01.006' OR
 				accno BETWEEN '2.1.3.02.002' AND '2.1.3.02.004'
 			ORDER BY description;
+
+			oymar: 2010319011 - 2010319013 
 		
 		* Defaults:
 			+ Apracomsa:

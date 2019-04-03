@@ -41,6 +41,12 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-04-03
+		x Verificar el RUC en Defaults
+		x Crear empresa de prueba
+		Probar retenciones
+		Cambiar logo a predeterminado
+
 		2019-04-02
 		Minimial zk maven dependencies
 		Collapsed treeitem
