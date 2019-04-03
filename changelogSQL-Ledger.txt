@@ -1,5 +1,8 @@
 SQL-Ledger
 	* Características:
+		+ Números de factura:
+			Solamente los administradores pueden cambiar la numeración
+
 		+ Vendedores:
 			Se debe poner la fecha del venedor a 01-ene
 			El administrador (vendedor) puede usar el código de un vendedor para crear facturas de venta con fechas posteriores.
@@ -45,6 +48,10 @@ SQL-Ledger
 
 			+ hpm:
 			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','361');
+
+			+ Cartagena:
+			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','590');
+
 		* Error en reportes PDF:
 			“Missing $ inserted” in LaTeX. Es por el soporte del idioma.
 			Cambiar latin1 por utf8.
