@@ -22,7 +22,7 @@ SQL-Ledger
 			'guardar'                     => 'save',
 			'imprimir'                    => 'print',
 
-		+ Filtro en las cuentas para las retenciones:
+		+ Retenciones a proiveedores, Filtro en las cuentas:
 			bin/mozilla/sri.pl:47
 
 			SELECT * FROM chart WHERE 
@@ -31,6 +31,8 @@ SQL-Ledger
 			ORDER BY description;
 
 			oymar: 2010319011 - 2010319013 
+
+			Colocar el RUC en el campo gifi_accno
 		
 		* Defaults:
 			+ Apracomsa:
