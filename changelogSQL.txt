@@ -55,6 +55,8 @@ SQL
 		pg_dump --data-only --table=retenc oymar_prueba > retenc.sql
 		psql oymar < retenc.sql
 
+		pg_dump --data-only --table=vendor oymar > vendor.sql
+
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
 	

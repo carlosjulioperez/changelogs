@@ -4,6 +4,8 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* PostgreSQL:
+		$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
 	* LXDE:
 		+ Cargar variables de entorno:
 			LXDE no carga las variables de entorno definidas en .profile.
