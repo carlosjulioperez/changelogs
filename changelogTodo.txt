@@ -4,6 +4,14 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
+	* Cursos SAP:
+		29-abril
+		https://open.sap.com/courses/cp1-3
+
+		https://open.sap.com/courses/ui51
+		8-mayo
+		https://open.sap.com/courses/ui52
+
 	* Espiritual:
 		Comentario 2re 25:27
 		Reloj cuenta regresiva para Iphone sin bloquearse (prédicas)
@@ -43,6 +51,23 @@ TODO
 		Agregar columna unidad de medida en RIDES
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
+
+		2019-04-03
+		x Verificar el RUC en Defaults
+		x Crear empresa de prueba
+		Probar retenciones
+		Cambiar logo a predeterminado
+		x Determinar por qué en las retenciones ap toma el ruc de gifi_accno y en hpm de taxnumber
+		x Ver el plan de cuentas
+		x Ver retenc en hoteles
+
+		SELECT id,name,vendornumber,taxnumber,gifi_accno from vendor;
+		SELECT * from retenc limit 10;
+
+		2019-04-02
+		Minimial zk maven dependencies
+		Collapsed treeitem
+		Center login form
 
 		2019-04-01
 		him=# update chart set id = 355 where id=343 and accno='6.2.1.01.003';
