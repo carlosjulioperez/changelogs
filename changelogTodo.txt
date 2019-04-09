@@ -10,6 +10,9 @@ TODO
 		+ Las profecías de Daniel:
 			https://youtu.be/2kHbCVwgDsE
 
+	* Estrategia:
+		Demandas de servicios profesionales como Deloitte en Seguridad Informática
+
 	* Analizar:
 		Crear interface para controles genéricos toolbar	
 		Llamar a pantalla de login
