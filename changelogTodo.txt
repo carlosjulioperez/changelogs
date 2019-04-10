@@ -52,6 +52,12 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-04-09
+		Revisar en BC el abono del cliente de expalsa 004-001-000002707 del libro mayor y en la factura
+		select * from ar where invnumber='004-001-000002707';
+		Determinar el abono del cliente
+		busicentury19=# select * from acc_trans where source='001-001-000266885';
+
 		2019-04-03
 		x Verificar el RUC en Defaults
 		x Crear empresa de prueba
