@@ -52,6 +52,15 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-04-10
+		Se pierde el pago después del repost
+
+			busicentury19=# select * from chart where id=84;
+			 id |   accno    |               description                | charttype | category |                 link                 | gifi_accno | contra 
+			----+------------+------------------------------------------+-----------+----------+--------------------------------------+------------+--------
+			 84 | 1011305011 | RETENCIONES RENTA RECIBIDAS SOBRE VENTAS | A         | A        | AR_paid:AP_amount:IC_expense:IC_cogs |            | f
+
+
 		2019-04-09
 		Revisar en BC el abono del cliente de expalsa 004-001-000002707 del libro mayor y en la factura
 		select * from ar where invnumber='004-001-000002707';
