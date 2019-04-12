@@ -52,6 +52,9 @@ TODO
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
 
+		2019-04-12
+		x Revisar cuenta de retenciones de IVA de him
+
 		2019-04-10
 		Se pierde el pago después del repost
 
