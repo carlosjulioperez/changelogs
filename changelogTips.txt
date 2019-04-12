@@ -22,6 +22,7 @@ TIPS
 		https://stackoverflow.com/questions/20893022/how-to-display-modified-date-time-with-find-command
 
 		$ find /media/carper/UUI/ -name "sql-ledger*.tar.gz" -exec stat  -c "%y %n" {} \;
+		$ find /media/carper/UUI/ -name "cjerp.tar.gz" -exec stat  -c "%y %n" {} \;
 		$ find /var -type d -exec stat  -c "%n %y" {} \;
 
 	* Contar los archivos en un directorio:
