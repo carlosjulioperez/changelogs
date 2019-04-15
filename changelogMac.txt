@@ -1,7 +1,17 @@
 Software en mac
 
-    + cask:
-    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+	+ Grabar una imagen en pendrive:
+		$ diskutil list
+		/dev/disk2 (external, physical):
+		   #:                       TYPE NAME                    SIZE       IDENTIFIER
+		   0:     FDisk_partition_scheme                        *7.7 GB     disk2
+		   1:             Windows_FAT_32 UUI                     7.7 GB     disk2s1
+
+		$ diskutil unmountDisk /dev/disk2
+		$ sudo dd bs=1m if=/Users/carper/recursos/iso/wifislax64-2.0-final.iso of=/dev/rdisk2 conv=sync
+	
+	+ cask:
+	$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
 
 	+ gruvbox on iTerm2:
 		+ Descargar:
