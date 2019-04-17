@@ -4,6 +4,11 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
+	* Prioridad:
+		Generar logotipo en xml
+		Eliminar ws e integrarlo cn fe
+		Revisar el proceso del programa del SRI
+
 	* Cursos SAP:
 		29-abril
 		https://open.sap.com/courses/cp1-3
@@ -51,6 +56,10 @@ TODO
 		Agregar columna unidad de medida en RIDES
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
+
+		2019-04-16
+		Determinar por qué se omite una I en el proveedor CHIRIGUAYA
+		45375 CHIRIGUAYA MONSALVE CARLOS DANIEL
 
 		2019-04-12
 		x Revisar cuenta de retenciones de IVA de him
