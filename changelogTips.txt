@@ -8,6 +8,9 @@ TIPS
 		< Restaurar >
 		$ screen -ls
 		$ screen -r
+
+		+ mensaje There is no screen to be resumed:
+		$ screen -d -r <numero>
 	
 	* Búsqueda con ack por tipo de archivo:
 		https://stackoverflow.com/questions/25200246/search-for-a-specific-file-type-with-ack

@@ -38,7 +38,7 @@ Centos
 
 	* Monitorizar:
 		https://www.whatismyip.com/es/
-		$ sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2019-01-12.log
+		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-04-18.log
 		$ sudo tail -f /usr/local/fe/logs/cjfews.log
 
 	+ Instalar ack-grep:

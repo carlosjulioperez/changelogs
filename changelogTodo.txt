@@ -5,8 +5,16 @@ TODO
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
 	* Prioridad:
+		Verificar: DOCUMENTO EN PROCESO
+		~/local/projects/cjerp/cjfews/src/main/java/ec/cjpq/cjfews/util/WsUtil.java
+
 		Generar logotipo en xml
+			x importar bd
+			x pruebas unitarias para generar ride
+
 		Eliminar ws e integrarlo cn fe
+			crear un nuevo proyecto
+
 		Revisar el proceso del programa del SRI
 
 	* Cursos SAP:

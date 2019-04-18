@@ -27,7 +27,7 @@ Checklist
 	tail -f ~/fe/logs/tomcat/catalina.2018-07-18.log
 
 	+ Centos:
-	tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2018-10-30.log
+	$ sudo tail -f /opt/apache-tomcat-8.5.34/logs/catalina.2019-04-18.log
 
 
 Verificar error:
