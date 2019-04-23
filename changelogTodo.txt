@@ -4,18 +4,83 @@ TODO
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
+	* Correo:
+		
+		Luego me pasa un formato con seguimiento de actividades tutoriadas
+		Al final se hacen los foratos 14, 15 y 16 (tutor)
+
+		https://www.gearbest.com/graphics-tablets/pp_009740682417.html?wid=1433363&_branch_match_id=648876655172749924
+		https://www.gearbest.com/wireless-routers/pp_621455.html?wid=1433363&_branch_match_id=648876655172749924
+
+		https://openwrt.org/
+
+		https://dd-wrt.com/
+		https://es.wikipedia.org/wiki/DD-WRT
+
+		Redactar la información de forma genérica.
+		=========================================	
+
+		Se necesita trabajar con archivos multimedia como fotos, videos, etc.
+		Los juegos educativos se van a guardar dentro de un json.
+		Inicialmente se realizarán pruebas de viabilidad mediante el envío de fotos.
+
+		El problema específico de la escuela.
+		====================================
+
+		En primera instancia es un experimento.
+		Se necesita enviar data a un servicio cloud en un ambiente en donde siempre no hay Internet. 
+		El router reemplazará el servidor local (visitando las páginas como un servicio web con node.js)
+		Las visitas a las páginas, los juegos y sus resultados se almacenarán en los routers (por medio de la aplicación web node.js) y cuando haya Internet se subirán dichos datos a la nube.
+
+		Las estadísticas de los juegos educativos deben subir la información en un servicio cloud y se usará el router como un servidor temporal.
+		Beneficiaros
+		============
+
+		Escuela de 2500 niños
+		Escuala de 800 niños
+		Niños indirectos 250.
+		No se suben fotos de los niños, sino los juegos educativos.
+		Es para hacer una especie de servidor temporal de archivos multimedia usando la neblina (fog computing)
+
+		Es una actividad específica que no está dentro de un proyecto grande.
+		Detallarlo genérico en la parte de servidor de archivos. Se necesita para un proyecto de vínculos y que es una especie de servidor caché de archivos.
+
+		Arquitectura nueva para analizar el rendimiento de los estudiantes
+		Analizar la información del router de forma inteligente antes de que
+		suba a la nube.
+
+		Entregable
+		==========
+		Instalar node.js en el router
+		Prueba de que cualquier consulta de los archivos multimedia en el router o en el USB del mismo
+
+
 	* Prioridad:
+		Realizar cosejerías Espol
+		Borrar biblias críticas
 		Verificar: DOCUMENTO EN PROCESO
 		~/local/projects/cjerp/cjfews/src/main/java/ec/cjpq/cjfews/util/WsUtil.java
+
+		Estrategia 1:
+			feapp = cjfews + fe
+			Comparar proceso de autorización con el del SRI
+			Ingeniería inversa de tablas específicas.
+			Corregir la ruta de los reportes (puesto que no se usará cjfews-rep.jar
+		
+		Estrategia 2:
+			crear un nuevo proyecto
 
 		Generar logotipo en xml
 			x importar bd
 			x pruebas unitarias para generar ride
 
-		Eliminar ws e integrarlo cn fe
-			crear un nuevo proyecto
-
 		Revisar el proceso del programa del SRI
+			Ver el diseño de las clases
+			¿Email sencillo con bc-mail?
+
+	* Casa perro:
+		https://www.diyattempt.com/2014/02/country-dog-house-with-porch.html?m=1
+		http://jenwoodhouse.com/diy-doghouse-gazebo/
 
 	* Cursos SAP:
 		29-abril
