@@ -1,4 +1,7 @@
 Vim
+	* Borrar un rango de líneas:
+		:19,29d
+
 	* Comentar texto:
 		https://github.com/tomtom/tcomment_vim
 
@@ -246,9 +249,6 @@ Vim
 		Align on last delimiter: EasyAlign -\
 		Align on last 2 delimiters: EasyAlign -2\
 		Align on all delimiters: EasyAlign *\
-
-
-
 
 	* deshabilitar sql-completion vim:
 		Agregar en .vimrc:
