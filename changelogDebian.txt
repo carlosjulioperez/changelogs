@@ -75,6 +75,22 @@ Desarrollo
 
 			https://serverfault.com/questions/143786/how-to-determine-java-home-on-debian-ubuntu
 			JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+	+ Maven:
+		https://www.tecmint.com/install-apache-maven-on-ubuntu-debian/
+
+		$ cd /opt
+		$ sudo wget https://www-us.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+		$ sudo tar zxvf apache-maven-3.6.1-bin.tar.gz
+		$ sudo vim /etc/profile.d/maven.sh
+
+			# Apache Maven Environment Variables
+			export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+			export M2_HOME=/opt/apache-maven-3.6.1
+			export PATH=${M2_HOME}/bin:${PATH}
+
+		$ sudo chmod +x /etc/profile.d/maven.sh
+		$ sudo su
+		# source /etc/profile.d/maven.sh
 
 	+ Virtualbox:
 	https://wiki.debian.org/VirtualBox
