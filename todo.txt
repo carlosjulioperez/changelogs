@@ -1,5 +1,4 @@
 (A) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
-(A) Instalar FE +him @fe
 (A) Instalar FE +hpm @fe
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
 (C) Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
