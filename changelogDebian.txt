@@ -4,6 +4,16 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* Ahorro batería de laptop:
+		https://esgeeks.com/tlp-aumentar-duracion-bateria-linux/
+		https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html
+
+		$ sudo apt install tlp tlp-rdw
+		$ sudo tlp start
+		$ sudo tlp-stat -s
+
+		$ systemctl status tlp
+
 	* PostgreSQL:
 		$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
 	* LXDE:
