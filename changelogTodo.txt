@@ -13,8 +13,9 @@ TODO
 		Estrategia 1:
 			feapp = cjfews + fe
 			Comparar proceso de autorización con el del SRI
-			Ingeniería inversa de tablas específicas.
-			Corregir la ruta de los reportes (puesto que no se usará cjfews-rep.jar
+			Crear fecola con Groovy
+			x Ingeniería inversa de tablas específicas.
+			x Corregir la ruta de los reportes (puesto que no se usará cjfews-rep.jar
 		
 		Estrategia 2:
 			crear un nuevo proyecto
@@ -26,6 +27,13 @@ TODO
 		Revisar el proceso del programa del SRI
 			Ver el diseño de las clases
 			¿Email sencillo con bc-mail?
+
+	* JDBC Performance:
+		Persisting fast in database: JDBC
+		https://medium.com/@jerolba/persisting-fast-in-database-jdbc-76912ec2ef42
+
+	* Groovy:
+		https://dzone.com/articles/loops-performance-in-groovy
 
 	* Casa perro:
 		https://www.diyattempt.com/2014/02/country-dog-house-with-porch.html?m=1
