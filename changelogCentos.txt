@@ -271,6 +271,7 @@ Centos
 		* 2.8.20:
 		$ createdb -O sql-ledger -T template1 oymar
 		$ createdb -O sql-ledger -T template1 hpm
+		$ createdb -O sql-ledger -T template1 him_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
@@ -532,6 +533,17 @@ Centos
 				# chmod -R 777 /usr/local/fe/logs
 				# touch /tmp/salida.pdf
 				# chmod 777 /tmp/salida.pdf
+
+			+ View jar file:
+				jar tvf lombok.jar
+
+			+ Actualizar war:
+				https://docs.oracle.com/cd/E19528-01/819-4675/aduwm/index.html
+
+				$ jar -uvf WARfilename.war path_to_modified_file
+				$ jar -uvf console.war newfile/index.html
+
+				$ jar -uvf feapp.war WEB-INF/classes/hibernate.properties
 
 			+ Maven:
 				https://tecadmin.net/install-apache-maven-on-centos/
