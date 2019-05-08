@@ -22,7 +22,7 @@ SQL-Ledger
 			'guardar'                     => 'save',
 			'imprimir'                    => 'print',
 
-		+ Retenciones a proiveedores, Filtro en las cuentas:
+		+ Retenciones a proveedores, Filtro en las cuentas:
 			bin/mozilla/sri.pl:47
 
 			SELECT * FROM chart WHERE 

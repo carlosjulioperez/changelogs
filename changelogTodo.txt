@@ -1,4 +1,7 @@
 TODO
+
+	https://www.academico.espol.edu.ec/UI/RegistrosOnline/paralelosCompuestos.aspx?tipoRegistro=TP&codigoMateria=ADMG2001
+
 	/media/carper/UUI/local/projects/changelogs/todo.txt
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
@@ -66,9 +69,7 @@ TODO
 		Seguir con los formularios (configuraion.zul)
 		
 		Comparar ap19 con cj para adaptar cambios de plan cuentas de empresa modelo
-		Límite de reenvíos de whatsapp para Ing. Cástano
 		Preguntar a banco pacífico por descuentos
-		Hacer factura de marzo con fecha 14 AP
 		x Crear bd logistica de bc19 general (plan ctas. ap)
 		x Compras y ventas a CSV
 
@@ -78,6 +79,11 @@ TODO
 		Agregar columna unidad de medida en RIDES
 		Demasiadas transacciones En Proceso SRI
 		Ejemplo en internet de descarga de FE
+
+		2019-05-07
+		x Otorgar permisos de bodegas a jmoran
+		x Crear usuario achaquinga@busicentury19
+		x Crear bd atver2019 según plantilla
 
 		2019-04-16
 		Determinar por qué se omite una I en el proveedor CHIRIGUAYA
@@ -93,7 +99,6 @@ TODO
 			 id |   accno    |               description                | charttype | category |                 link                 | gifi_accno | contra 
 			----+------------+------------------------------------------+-----------+----------+--------------------------------------+------------+--------
 			 84 | 1011305011 | RETENCIONES RENTA RECIBIDAS SOBRE VENTAS | A         | A        | AR_paid:AP_amount:IC_expense:IC_cogs |            | f
-
 
 		2019-04-09
 		Revisar en BC el abono del cliente de expalsa 004-001-000002707 del libro mayor y en la factura
