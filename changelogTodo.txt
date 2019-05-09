@@ -1,13 +1,21 @@
 TODO
 
-	https://www.academico.espol.edu.ec/UI/RegistrosOnline/paralelosCompuestos.aspx?tipoRegistro=TP&codigoMateria=ADMG2001
-
 	/media/carper/UUI/local/projects/changelogs/todo.txt
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
 	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
 
 	* Prioridad:
+		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
+
+		2019-05-08
+		x javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+		x 535 5.7.8  https://support.google.com/mail/?p=BadCredentials f93sm9675272qtb.16 - gsmtp
+	
+		x atver2019 Plantilla al crear los productos con fecha 2010-01-01
+		x En repost la fecha del producto debe ser anterior.
+		x Campo = ¡Actualizado!
+
 		SL: Impedir facturar sin stock, lote o número de serie
 
 		Verificar: DOCUMENTO EN PROCESO
