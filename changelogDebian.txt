@@ -102,6 +102,22 @@ Desarrollo
 		$ sudo su
 		# source /etc/profile.d/maven.sh
 
+	+ Groovy:
+		https://askubuntu.com/questions/834653/how-to-set-groovy-home-environment-variable-on-ubuntu
+
+		$ cd /opt	
+		$ sudo wget -c https://dl.bintray.com/groovy/maven/apache-groovy-sdk-2.5.7.zip
+		$ sudo unzip apache-groovy-sdk-2.5.7.zip
+		$ sudo ln -s groovy-2.5.7 groovy-latest
+		$ sudo vim /etc/profile.d/groovy.sh
+
+			export GROOVY_HOME=/opt/groovy-latest
+			export PATH=${GROOVY_HOME}/bin:${PATH}
+		
+		$ sudo chmod +x /etc/profile.d/groovy.sh
+		$ sudo su
+		# source /etc/profile.d/groovy.sh
+
 	+ Virtualbox:
 	https://wiki.debian.org/VirtualBox
 	$ sudo apt install linux-headers-amd64 linux-headers-4.9.0-6-amd64
