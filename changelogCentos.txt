@@ -548,6 +548,15 @@ Centos
 				$ jar -uvf console.war newfile/index.html
 
 				$ jar -uvf feapp.war WEB-INF/classes/hibernate.properties
+			
+			+ Extraer:
+				https://www.mkyong.com/linux/how-to-extract-war-file-in-linux/
+
+				En específica carpeta:
+				https://stackoverflow.com/questions/15830952/extracting-jar-to-specified-directory
+
+			+ Modificar bd:
+				$ sudo vim /opt/tomcat-latest/webapps/feapp/WEB-INF/classes/hibernate.properties
 
 			+ Maven:
 				https://tecadmin.net/install-apache-maven-on-centos/
