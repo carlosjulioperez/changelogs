@@ -1,4 +1,28 @@
 SQL	
+
+	* Duplicar tablas:
+		https://popsql.com/learn-sql/postgresql/how-to-duplicate-a-table-in-postgresql/
+
+		create table dupe_users as (select * from users);
+
+		-- The `with no data` here means structure only, no actual rows
+		create table dupe_users as (select * from users) with no data;
+
+		create table chart_copy as (select * from chart) with no data;
+
+	* Actualizar campos de una tabla por medio de otra:
+		COPY chart TO '/tmp/chart.csv' WITH DELIMITER ',' CSV HEADER;
+		CREATE TABLE chart_copy AS (SELECT * FROM chart) WITH NO DATA;
+		COPY chart_copy FROM '/tmp/chart.csv' DELIMITER  ',' CSV HEADER;
+		
+		https://stackoverflow.com/questions/6256610/updating-table-rows-in-postgres-using-subquery
+
+			UPDATE 	chart
+			SET 	link=chart_copy.link 
+			FROM 	(SELECT * FROM chart_copy) AS chart_copy
+			WHERE 	chart.accno=chart_copy.accno 
+			AND		chart.link IS NULL;	
+
 	* Mostrar registros con ID duplicados:
 		https://stackoverflow.com/questions/28156795/how-to-find-duplicate-records-in-postgresql
 
@@ -49,13 +73,7 @@ SQL
 		pg_dump --data-only --table=parts logistica > parts.sql
 		psql logistica < parts.sql
 		
-		pg_dump --data-only --table=acc_trans oymar > acc_trans.sql
-		psql oymar_prueba < acc_trans.sql
-
-		pg_dump --data-only --table=retenc oymar_prueba > retenc.sql
-		psql oymar < retenc.sql
-
-		pg_dump --data-only --table=vendor oymar > vendor.sql
+		pg_dump --data-only --table=chart atver2019 > chart.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
