@@ -8,6 +8,21 @@ TODO
 	* Prioridad:
 		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
 
+		2019-05-13
+		Actualizar atver2019.chart con busicentury19.chart
+
+		COPY chart TO '/tmp/chart.csv' WITH DELIMITER ',' CSV HEADER;
+		CREATE TABLE chart_copy AS (SELECT * FROM chart) WITH NO DATA;
+		COPY chart_copy FROM '/tmp/chart.csv' DELIMITER  ',' CSV HEADER;
+		
+		https://stackoverflow.com/questions/6256610/updating-table-rows-in-postgres-using-subquery
+
+			UPDATE 	chart
+			SET 	link=chart_copy.link 
+			FROM 	(SELECT * FROM chart_copy) AS chart_copy
+			WHERE 	chart.accno=chart_copy.accno 
+			AND		chart.link IS NULL;	
+
 		2019-05-08
 		x javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
 		x 535 5.7.8  https://support.google.com/mail/?p=BadCredentials f93sm9675272qtb.16 - gsmtp
