@@ -4,6 +4,13 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* easyssh:
+		https://www.linux.com/blog/learn/intro-to-linux/2018/11/three-ssh-guis-linux
+
+		$ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+		$ sudo flatpak install flathub com.github.muriloventuroso.easyssh
+		$ flatpak run com.github.muriloventuroso.easyssh
+
 	* Ahorro batería de laptop:
 		https://esgeeks.com/tlp-aumentar-duracion-bateria-linux/
 		https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html

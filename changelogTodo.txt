@@ -3,10 +3,36 @@ TODO
 	/media/carper/UUI/local/projects/changelogs/todo.txt
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
-	/home/carper/local/projects/cjerp/feapracom/src/main/resources/sql/query.sql
-
 	* Prioridad:
+		La llave de mi corazón
 		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
+
+		2019-05-17
+			agreagar autorización en descarga de csv en reportes
+
+			====================================================================================================
+			Ingeniero Echeverria
+			
+			Adjunto un formato con los cambios que hay que hacer en la base de clientes, estos cambios fueron en base a la información que se encontraba en el sistema el día viernes 10 de mayo pero ayer nuevamente cambió la base y son otros errores que se encontraron, adjunto unos prints con el caso  del cliente Adams Alfonso.
+			
+			También hoy revisando cxc en la mañana nos aparecían facturas duplicadas por cobrar y fueron 3 casos específicos Oceanfish fct 497, Docapes fct 503 y Parmalat fct 473 pero en este momento antes de enviar el mail vuelvo a revisar y ya no salen duplicadas.
+			
+			Le comento estos casos en particular, para poder reunirnos con los encargados del sistema y revisar estos errores y saber porque se dan ya que para mi hoy en día la información que está en el sistema no es confiable y por ejemplo antes de facturar se debe revisar que la información del cliente sea la correcta y luego hacer la factura para evitar las anulaciones y en el caso de las cxc no sabría si el valor de la cartera es correcto.
+			
+			Saludos cordiales,
+			
+			Angela Chaquinga
+			====================================================================================================
+
+			select * from customer where name like 'ADAMS ALFONSO';
+
+
+		2019-05-14
+		x ponte: productos marcar use lots
+		x catver: importar productos
+
+		Clientes no muetra el correo correcto en el módulo y la factura no se
+		va.
 
 		2019-05-13
 		Actualizar atver2019.chart con busicentury19.chart
@@ -37,9 +63,12 @@ TODO
 		~/local/projects/cjerp/cjfews/src/main/java/ec/cjpq/cjfews/util/WsUtil.java
 
 		Estrategia 1:
-			feapp = cjfews + fe
+			x feapp = cjfews + fe
 			Comparar proceso de autorización con el del SRI
+			Modificar fecola para enviar como parámetro la empresa en la conexión
+
 			Crear fecola con Groovy
+
 			x Ingeniería inversa de tablas específicas.
 			x Corregir la ruta de los reportes (puesto que no se usará cjfews-rep.jar
 		
