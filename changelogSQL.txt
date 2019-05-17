@@ -1,4 +1,45 @@
 SQL	
+	* Buscar un valor en todos los campos de una bd:
+		https://stackoverflow.com/questions/5350088/how-to-search-a-specific-value-in-all-tables-postgresql
+
+		$ pg_dump --data-only --inserts -U postgres your-db-name > a.tmp
+		$ grep United a.tmp
+		INSERT INTO countries VALUES ('US', 'United States');
+		INSERT INTO countries VALUES ('GB', 'United Kingdom');
+
+		$ pg_dump --data-only --insert -U postgres busicentury19 > busicentury19-20190517.sql
+		$ ack diana.echeverria busicentury19-20190517.sql
+
+
+		carper@cjbox-dev:~/tmp$ ack diana.echeverria busicentury19-20190517.sql
+		INSERT INTO contact VALUES (11, 11, '', '', '', '', '', '', '', '', 'diana.echeverria@tonicorp.com', 'M', NULL, 'company');
+		INSERT INTO vendor VALUES (11, 'PLASTICOS ECUATORIANOS S.A.', ' ', '', '', 'diana.echeverria@tonicorp.com', 'Henry Decker', 0, false, 'PEC0990013497', 'rrugel@tonicor.com', '', '0990013497001', 0, '', '', 0, 0, '', '', 0, '', 0, '   ', '2019-01-01', NULL, 191, 5, NULL, 0, 0, 0, 0, false, 1, '', '', '', '');
+
+
+		busicentury19=# \d contact;
+												  Tabla «public.contact»
+			Columna    |         Tipo          |                           Modificadores                            
+		---------------+-----------------------+--------------------------------------------------------------------
+		 id            | integer               | not null valor por omisión nextval(('contactid'::text)::regclass)
+		 trans_id      | integer               | not null
+		 salutation    | character varying(32) | 
+		 firstname     | character varying(32) | 
+		 lastname      | character varying(32) | 
+		 contacttitle  | character varying(32) | 
+		 occupation    | character varying(32) | 
+		 phone         | character varying(20) | 
+		 fax           | character varying(20) | 
+		 mobile        | character varying(20) | 
+		 email         | text                  | 
+		 gender        | character(1)          | valor por omisión 'M'::bpchar
+		 parent_id     | integer               | 
+		 typeofcontact | character varying(20) | 
+		Índices:
+			"contact_pkey" PRIMARY KEY, btree (id)
+
+		¿Relación entre vendor y contact?
+		¿Relación entre customer y contact?
+
 
 	* Duplicar tablas:
 		https://popsql.com/learn-sql/postgresql/how-to-duplicate-a-table-in-postgresql/
@@ -23,12 +64,23 @@ SQL
 			WHERE 	chart.accno=chart_copy.accno 
 			AND		chart.link IS NULL;	
 
+	* Actualizar campo uselots:
+		update parts set uselots = 'Y';
+
 	* Mostrar registros con ID duplicados:
 		https://stackoverflow.com/questions/28156795/how-to-find-duplicate-records-in-postgresql
 
+		select * from ar a where (select count(*) from ar b where b.id = a.id) > 1;
+		select * from customer a where (select count(*) from customer b where b.id = a.id) > 1;
+		select * from customer a where (select count(*) from customer b where b.customernumber = a.customernumber) > 1;
+		
+		select * from customer where email like 'damiana90@hotmail.com';
+		select * from customer where email like 'diana.echeverria@tonicorp.com';
+
 		select * from ap a where (select count(*) from ap b where b.id = a.id) > 1;
-		select * from chart a where (select count(*) from chart b where b.id = a.id) > 1;
 		select * from vendor a where (select count(*) from vendor b where b.id = a.id) > 1;
+		
+		select * from chart a where (select count(*) from chart b where b.id = a.id) > 1;
 		select * from parts a where (select count(*) from parts b where b.id = a.id) > 1;
 
 		Crear como nuevo, buscar el reg. anterior y borrarlo en una empresa de prueba. Luego sacar el reporte para ver si hay error.
@@ -61,6 +113,12 @@ SQL
 		
 		apracomsa=# set client_encoding ='LATIN1';
 		SET
+
+		+ En JDBC:
+			jdbc:postgresql://localhost/busicentury19?allowEncodingChanges=true
+			En SQuirreL por ejemplo, ingresar:
+				set client_encoding ='LATIN1';
+				sentencia sql
 
 	* Impedir conexiones en BD:
 		https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
