@@ -75,7 +75,9 @@ SQL
 		select * from customer a where (select count(*) from customer b where b.customernumber = a.customernumber) > 1;
 		
 		select * from customer where email like 'damiana90@hotmail.com';
-		select * from customer where email like 'diana.echeverria@tonicorp.com';
+		set client_encoding ='LATIN1';
+		select id, name, email, customernumber, taxnumber from customer where email like 'damiana90@hotmail.com';
+		update customer set id=1100000 where id=11;
 
 		select * from ap a where (select count(*) from ap b where b.id = a.id) > 1;
 		select * from vendor a where (select count(*) from vendor b where b.id = a.id) > 1;
