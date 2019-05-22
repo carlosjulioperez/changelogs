@@ -10,37 +10,6 @@ SQL
 		$ pg_dump --data-only --insert -U postgres busicentury19 > busicentury19-20190517.sql
 		$ ack diana.echeverria busicentury19-20190517.sql
 
-
-		carper@cjbox-dev:~/tmp$ ack diana.echeverria busicentury19-20190517.sql
-		INSERT INTO contact VALUES (11, 11, '', '', '', '', '', '', '', '', 'diana.echeverria@tonicorp.com', 'M', NULL, 'company');
-		INSERT INTO vendor VALUES (11, 'PLASTICOS ECUATORIANOS S.A.', ' ', '', '', 'diana.echeverria@tonicorp.com', 'Henry Decker', 0, false, 'PEC0990013497', 'rrugel@tonicor.com', '', '0990013497001', 0, '', '', 0, 0, '', '', 0, '', 0, '   ', '2019-01-01', NULL, 191, 5, NULL, 0, 0, 0, 0, false, 1, '', '', '', '');
-
-
-		busicentury19=# \d contact;
-												  Tabla «public.contact»
-			Columna    |         Tipo          |                           Modificadores                            
-		---------------+-----------------------+--------------------------------------------------------------------
-		 id            | integer               | not null valor por omisión nextval(('contactid'::text)::regclass)
-		 trans_id      | integer               | not null
-		 salutation    | character varying(32) | 
-		 firstname     | character varying(32) | 
-		 lastname      | character varying(32) | 
-		 contacttitle  | character varying(32) | 
-		 occupation    | character varying(32) | 
-		 phone         | character varying(20) | 
-		 fax           | character varying(20) | 
-		 mobile        | character varying(20) | 
-		 email         | text                  | 
-		 gender        | character(1)          | valor por omisión 'M'::bpchar
-		 parent_id     | integer               | 
-		 typeofcontact | character varying(20) | 
-		Índices:
-			"contact_pkey" PRIMARY KEY, btree (id)
-
-		¿Relación entre vendor y contact?
-		¿Relación entre customer y contact?
-
-
 	* Duplicar tablas:
 		https://popsql.com/learn-sql/postgresql/how-to-duplicate-a-table-in-postgresql/
 
@@ -72,8 +41,20 @@ SQL
 
 		select * from ar a where (select count(*) from ar b where b.id = a.id) > 1;
 		select * from customer a where (select count(*) from customer b where b.id = a.id) > 1;
-		select * from customer a where (select count(*) from customer b where b.customernumber = a.customernumber) > 1;
-		
+		select * from customer a where (select count(*) from customer b where b.customernumber = a.customernumber) > 1 order by customernumber;
+		select * from customer a where (select count(*) from customer b where b.taxnumber = a.taxnumber) > 1 order by taxnumber;
+
+		select * from address a where (select count(*) from address b where b.id = a.id) > 1;
+			https://stackoverflow.com/questions/48626812/postgresql-find-duplicates-in-column-with-id
+
+			Select * from (
+			select Id, Firstname, count(1)over(partition by Firstname) as Cnt
+			from yourtable
+			)a Where Cnt > 1
+
+		Select * from (select id, address1, count(1)over(partition by id) as Cnt from address) a Where Cnt > 1;
+
+
 		select * from customer where email like 'damiana90@hotmail.com';
 		set client_encoding ='LATIN1';
 		select id, name, email, customernumber, taxnumber from customer where email like 'damiana90@hotmail.com';
@@ -81,11 +62,17 @@ SQL
 
 		select * from ap a where (select count(*) from ap b where b.id = a.id) > 1;
 		select * from vendor a where (select count(*) from vendor b where b.id = a.id) > 1;
+		select * from warehouse a where (select count(*) from warehouse b where b.id = a.id) > 1;
 		
 		select * from chart a where (select count(*) from chart b where b.id = a.id) > 1;
 		select * from parts a where (select count(*) from parts b where b.id = a.id) > 1;
 
-		Crear como nuevo, buscar el reg. anterior y borrarlo en una empresa de prueba. Luego sacar el reporte para ver si hay error.
+		+ Sincronizar:
+		https://stackoverflow.com/questions/4448340/postgresql-duplicate-key-violates-unique-constraint
+
+		SELECT MAX(id) FROM address;
+		SELECT nextval('addressid');
+		SELECT setval('addressid', (SELECT MAX(id) FROM address));
 
 	* Terminar conexiones:
 		https://stackoverflow.com/questions/5108876/kill-a-postgresql-session-connection
@@ -133,7 +120,7 @@ SQL
 		pg_dump --data-only --table=parts logistica > parts.sql
 		psql logistica < parts.sql
 		
-		pg_dump --data-only --table=chart atver2019 > chart.sql
+		pg_dump --data-only --table=address hpm > address.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
