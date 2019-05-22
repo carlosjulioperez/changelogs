@@ -4,18 +4,33 @@ TODO
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
 	* Prioridad:
-		La llave de mi corazón
+
+		Armando:
+		pos
+		inventario
+		retenciones
+
+		x Llamar a Daniel y Sr. de Containers para desarrollo (llamar jueves)
+		x Acceso a jbermudez
+		x Enviar propuesta a Daniel
+		x Error de Gina
+		x Enviar tarea a omaldonado
+		Agreagar autorización en descarga de csv en reportes
+		Cambios a oyague para pago
+
+		Llamar a Paez Maldonado
+		Llamar a Interlab
+		Fotos a Rodrigo
+		Ofrecer servicios en Manta
+		Cobrar las NC de Movistar
+		Reembolso de retenciones SRI
+
 		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
 
 		2019-05-17
 			Agregar sql-ecu19 en virtual
 			Agregar busicentury19
-
-			agreagar autorización en descarga de csv en reportes
-
-
 			select * from customer where name like 'ADAMS ALFONSO';
-
 
 		2019-05-14
 		x ponte: productos marcar use lots
@@ -411,6 +426,17 @@ Revisar
 	* Fin de Java:
 	https://www.quora.com/Is-Google-implictly-going-to-drop-Java-and-use-Kotlin-for-Android-due-to-licensing-issues-with-Oracle
 	
+Colegio
+	http://www.sc.ehu.es/sbweb/ocw-fisica/problemas/dinamica/circular/problemas/din_circular_problemas.xhtml
+	https://www.fisicalab.com/apartado/mcu-plano-vertical#contenidos
+	https://www.youtube.com/watch?v=WNu33jv6crI&feature=youtu.be
+	
+	https://www.youtube.com/watch?v=h6qvQzjPNjE
+	https://www.youtube.com/watch?v=NQtZNBUzps4
+
+	ejercicios dinámica 09 circular velocidad mínima
+	https://www.youtube.com/watch?v=WNu33jv6crI
+
 * Correo:
 		
 		Luego me pasa un formato con seguimiento de actividades tutoriadas
