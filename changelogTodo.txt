@@ -15,9 +15,23 @@ TODO
 		x Enviar propuesta a Daniel
 		x Error de Gina
 		x Enviar tarea a omaldonado
+
+		x Instalar EasySSH
+		x Enviar csv a daxti
+		x Ajustes en him
+		x Declaración de Abril
+		Ajustes en hpm
+		
+		Curso de Data Science IBM
+		Programar estudios de Go, Scala (coursera)
+		Clojure y Dim (libros)
+
 		Agreagar autorización en descarga de csv en reportes
 		Cambios a oyague para pago
+		Curso Perl
+		Validar ventas con stock > 0 
 
+		Ofrecer FE
 		Llamar a Paez Maldonado
 		Llamar a Interlab
 		Fotos a Rodrigo
@@ -26,6 +40,9 @@ TODO
 		Reembolso de retenciones SRI
 
 		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
+
+		2019-05-23
+			Soporte a Martha Ruíz
 
 		2019-05-17
 			Agregar sql-ecu19 en virtual

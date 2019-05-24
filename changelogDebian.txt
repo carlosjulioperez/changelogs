@@ -4,11 +4,17 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* Fuentes de consola:
+
+		$ gsettings get org.gnome.desktop.interface monospace-font-name
+		'Roboto Mono 10'
+
 	* easyssh:
 		https://www.linux.com/blog/learn/intro-to-linux/2018/11/three-ssh-guis-linux
 
-		$ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-		$ sudo flatpak install flathub com.github.muriloventuroso.easyssh
+		$ sudo apt install flatpak
+		$ flatpa remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+		$ flatpak install flathub com.github.muriloventuroso.easyssh
 		$ flatpak run com.github.muriloventuroso.easyssh
 
 	* Ahorro batería de laptop:
