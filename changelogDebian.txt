@@ -4,6 +4,18 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* brave browser:
+		https://medium.com/@devlin.trace/install-brave-on-debian-9-stretch-f32f42a226e4
+		
+		$ sudo echo kernel.unprivileged_userns_clone = 1 | sudo tee /etc/sysctl.d/00-local-userns.conf
+		$ sudo curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+		$ sudo source /etc/os-release
+		$ sudo echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stretch main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-stretch.list
+		$ sudo apt update
+		$ sudo apt install brave-keyring brave-browser
+
+		vim /.config/BraveSoftware/Brave-Browser/Default/Preferences
+
 	* Fuentes de consola:
 
 		$ gsettings get org.gnome.desktop.interface monospace-font-name

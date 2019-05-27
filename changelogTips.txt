@@ -21,6 +21,10 @@ TIPS
 	* Listar solamente directorios:
 		$ ls -d */
 
+	* pdftk:
+		$ sudo apt install pdftk
+		$ pdftk libro-finanzasross.pdf cat 300-370 output ross-cap10y11.pdf
+
 	* Buscar archivos y mostrar la fecha de modificación:
 		https://stackoverflow.com/questions/20893022/how-to-display-modified-date-time-with-find-command
 

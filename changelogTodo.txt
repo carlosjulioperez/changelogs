@@ -9,20 +9,11 @@ TODO
 		pos
 		inventario
 		retenciones
-
-		x Llamar a Daniel y Sr. de Containers para desarrollo (llamar jueves)
-		x Acceso a jbermudez
-		x Enviar propuesta a Daniel
-		x Error de Gina
-		x Enviar tarea a omaldonado
-
-		x Instalar EasySSH
-		x Enviar csv a daxti
-		x Ajustes en him
-		x Declaración de Abril
-		Ajustes en hpm
 		
+		Terminar FE hpm
+
 		Curso de Data Science IBM
+		Curso de blockchain IBM
 		Programar estudios de Go, Scala (coursera)
 		Clojure y Dim (libros)
 
