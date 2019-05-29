@@ -402,6 +402,8 @@ Centos
 
 			# useradd -r tomcat8 --shell /bin/false
 			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz -P /tmp
+			# wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz -P /tmp
+
 			# tar -zxf /tmp/apache-tomcat-8.5.37.tar.gz -C /opt
 			# ln -s /opt/apache-tomcat-8.5.37 /opt/tomcat-latest
 			# chown -hR tomcat8: /opt/tomcat-latest /opt/apache-tomcat-8.5.37
@@ -611,6 +613,22 @@ Centos
 
 			+ Modificar línea 555 y 568:
 			$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledgerFE/bin/mozilla/arap.pl
+
+		* Migración:
+			+ Respaldo:
+				# cd /usr/local
+				# tar zcvf SL.tar.gz SL/
+				# cp SL.tar.gz /home/carper/feinst/
+				# cp /etc/httpd/conf.d/sql-ledger-httpd.conf /home/carper/feinst
+			
+			+ Restauración:
+				# tar zxvf /home/carper/feinst/SL.tar.gz -C /usr/local
+				# cp /home/carper/feinst/sql-ledger-httpd.conf /etc/httpd/conf.d/
+
+			Copiar archivos de fe (wars y directorios)
+			Copiar bases datos
+			Configurar crontab
+			Montaje de NAS
 
 	+ SELINUX:
 		https://danwalsh.livejournal.com/56760.html
