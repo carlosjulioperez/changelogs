@@ -5,12 +5,10 @@ TODO
 
 	* Prioridad:
 
-		Armando:
-		pos
-		inventario
-		retenciones
-		
-		Terminar FE hpm
+		Llamar Movistar Mall del SOl
+		Terminar FE hpm y cobrar saldo 80
+		Cobrar facturas en hpm y him
+		Instalar CentOS en clon
 
 		Curso de Data Science IBM
 		Curso de blockchain IBM

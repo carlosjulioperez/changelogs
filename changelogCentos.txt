@@ -41,6 +41,10 @@ Centos
 		$ sudo tail -f /usr/local/fe/logs/cjfews.log
 		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-04-18.log
 
+	* Instalar en modo texto:
+		https://www.unixmen.com/install-centos-6-5-remotely-using-telnet/
+		linux text
+
 	+ Instalar ack-grep:
 	$ sudo su
 	$ curl https://beyondgrep.com/ack-2.24-single-file > /bin/ack && chmod 0755 /bin/ack
@@ -126,8 +130,12 @@ Centos
 		https://www.thegeekdiary.com/how-to-change-the-system-locale-in-centos-rhel-56/
 		# vim /etc/sysconfig/i18n
 
+	* eth0 not present:
+		https://www.youtube.com/watch?v=zGvlU3X4WT8
+
 	* Activar red:
 		http://www.vsysad.com/2015/12/configure-a-static-ip-address-in-rhel-6centos-6/
+		https://www.centos.org/forums/viewtopic.php?t=62062
 
 		# loadkeys us
 		# ifup eth0

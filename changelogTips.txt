@@ -1,4 +1,19 @@
 TIPS
+	* Descomprimir varios archivos:
+		https://guyfromit.blogspot.com/2014/02/linux-unzip-z01-z02-files-extract.html
+		zip -F coolapp.zip --output newarchive.zip
+
+			HIMNARIO ADVENTISTA CHILE.z01
+			HIMNARIO ADVENTISTA CHILE.z02
+			HIMNARIO ADVENTISTA CHILE.z03
+			HIMNARIO ADVENTISTA CHILE.z04
+			HIMNARIO ADVENTISTA CHILE.z05
+			HIMNARIO ADVENTISTA CHILE.z06
+			HIMNARIO ADVENTISTA CHILE.z07
+			HIMNARIO ADVENTISTA CHILE.zip
+
+		$ zip -F HIMNARIO\ ADVENTISTA\ CHILE.zip --output himnario.zip
+
 	* screen:
 		http://aperiodic.net/screen/quick_reference
 		$ screen
