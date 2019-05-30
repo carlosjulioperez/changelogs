@@ -1,5 +1,8 @@
 Centos
 	
+	rsync -r -v --progress -e ssh user@remote-system:/address/to/remote/file /home/user/
+	rsync -r -v --progress -e ssh carper@192.168.0.111:/address/to/remote/file /home/user/
+
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
 	
@@ -632,10 +635,11 @@ Centos
 				# tar zxvf /home/carper/feinst/SL.tar.gz -C /usr/local
 				# cp /home/carper/feinst/sql-ledger-httpd.conf /etc/httpd/conf.d/
 
-			Copiar archivos de fe (wars y directorios)
-			Copiar bases datos
-			Configurar crontab
-			Montaje de NAS
+			x Copiar archivos de fe (wars y directorios)
+			x Configurar crontab
+			x Montaje de NAS
+			x Copiar bases datos
+			x Copiar wars y permisos
 
 	+ SELINUX:
 		https://danwalsh.livejournal.com/56760.html
