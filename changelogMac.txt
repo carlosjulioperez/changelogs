@@ -1,4 +1,6 @@
 Software en mac
+	+ Limpiar archivos recientes:
+		https://superuser.com/questions/30839/how-to-clear-recent-items-in-os-x
 
 	+ Grabar una imagen en pendrive:
 		$ diskutil list
