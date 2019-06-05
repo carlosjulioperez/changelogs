@@ -3,6 +3,22 @@ TODO
 	/media/carper/UUI/local/projects/changelogs/todo.txt
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
+	5/1/2014
+	5/31/2019
+
+	* Estrategia para la libertad en el Futuro:
+		Nim (Móviles: App Web, Vue.JS, Vue.JS+NativeScript)
+		Clojure
+		C (videos de Richard Couture)
+		SCIP (Algoritmos)
+		Fluter
+		Kotlin (Alternativa a licenciamiento de Oracle)
+		Smalltalk
+			https://hackernoon.com/what-makes-a-programming-language-cool-f40401f0f929
+			Pharo 
+			https://medium.com/concerning-pharo/pharo-pi-9eef257b6a21
+		Lazarus (freepascal)
+
 	* Prioridad:
 		Errores de jdbc exception en consumo de WS
 		x Log de apagado del servidor el viernes de noche
