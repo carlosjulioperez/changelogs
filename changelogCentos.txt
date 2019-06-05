@@ -1,7 +1,6 @@
 Centos
 	
 	rsync -r -v --progress -e ssh user@remote-system:/address/to/remote/file /home/user/
-	rsync -r -v --progress -e ssh carper@192.168.0.111:/address/to/remote/file /home/user/
 
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
@@ -28,9 +27,13 @@ Centos
 	export LC_ALL=en_US.UTF-8
 
 	* Logs:
-		$ less /var/log/messages
-		$ less /var/log/syslog
-		$ less /var/log/httpd/access_log
+		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown
+		https://superuser.com/questions/167281/is-there-a-log-that-records-shutdowns-in-linux
+
+		$ sudo cat /etc/rsyslog.conf
+		$ sudo less /var/log/messages
+		$ sudo less /var/log/syslog
+		$ sudo less /var/log/httpd/access_log
 
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
@@ -42,7 +45,7 @@ Centos
 	* Monitorizar:
 		https://www.whatismyip.com/es/
 		$ sudo tail -f /usr/local/fe/logs/cjfews.log
-		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-04-18.log
+		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-05-30.log
 
 	* Instalar en modo texto:
 		https://www.unixmen.com/install-centos-6-5-remotely-using-telnet/

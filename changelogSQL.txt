@@ -121,6 +121,7 @@ SQL
 		psql logistica < parts.sql
 		
 		pg_dump --data-only --table=address hpm > address.sql
+		pg_dump --data-only --table=partsgroup catver > partsgroup_catver.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
