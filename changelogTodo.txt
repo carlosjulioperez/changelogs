@@ -3,8 +3,7 @@ TODO
 	/media/carper/UUI/local/projects/changelogs/todo.txt
 	/Volumes/UUI/local/projects/changelogs/todo.txt
 
-	5/1/2014
-	5/31/2019
+	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* Estrategia para la libertad en el Futuro:
 		Nim (Móviles: App Web, Vue.JS, Vue.JS+NativeScript)
