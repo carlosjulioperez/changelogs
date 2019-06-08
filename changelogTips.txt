@@ -268,7 +268,10 @@ TIPS
 		http://elementaryos.stackexchange.com/questions/175/how-can-i-format-a-usb-flash-drive
 	
 	* Tamaño de archivos y carpetas:
-		du -hs * | sort -h
+		$ du -hs * | sort -h
+
+		https://askubuntu.com/questions/356902/why-doesnt-this-show-the-hidden-files-folders
+		$ du -sch .[!.]* * |sort -h
 
 		+ Los directorios más grandes:
 			du -BM / | sort -n -r | head -n 10
