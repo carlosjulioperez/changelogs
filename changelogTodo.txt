@@ -17,6 +17,11 @@ TODO
 			Pharo 
 			https://medium.com/concerning-pharo/pharo-pi-9eef257b6a21
 		Lazarus (freepascal)
+	
+	* Programación en remoto:
+		Preparar instancia de vim.
+		Configurar entorno programación en servidor.
+
 
 	* Prioridad:
 		Errores de jdbc exception en consumo de WS
