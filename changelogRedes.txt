@@ -1,4 +1,6 @@
 Redes
+	* Determinar los equipos en mi red:
+		$ nmap -sP 192.168.253.0/24
 	* Conocer mi IP pública:
 		https://askubuntu.com/questions/95910/command-for-determining-my-public-ip
 		# curl ipinfo.io/ip
