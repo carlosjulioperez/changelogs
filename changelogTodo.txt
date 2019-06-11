@@ -6,7 +6,7 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
-		Raspberry
+		x Raspberry
 		PHP coursera
 		FE Gina y OYMAR
 		Analizar repost

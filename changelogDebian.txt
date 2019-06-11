@@ -40,9 +40,12 @@ Desarrollo
 		https://www.linux.com/blog/learn/intro-to-linux/2018/11/three-ssh-guis-linux
 
 		$ sudo apt install flatpak
-		$ flatpa remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 		$ flatpak install flathub com.github.muriloventuroso.easyssh
 		$ flatpak run com.github.muriloventuroso.easyssh
+
+		+ Eliminar flatpak:
+		/var/lib/flatpak/ & ~/.local/share/flatpak
 
 	* Ahorro batería de laptop:
 		https://esgeeks.com/tlp-aumentar-duracion-bateria-linux/
