@@ -4,6 +4,12 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* pac manager (ssh):
+		https://sites.google.com/site/davidtv/
+		Descargar deb
+		$ sudo dpkg -i pac-4.5.5.7-all.db
+		$ sudo apt-get install -f
+
 	* youtube-dl:
 		$ sudo apt-get remove -y youtube-dl
 		$ sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
