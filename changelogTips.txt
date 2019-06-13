@@ -79,7 +79,12 @@ TIPS
 			$ git clone -b zk8 https://github.com/zkoss/zkessentials.git
 
 		+ Actualizar password git:
+			https://stackoverflow.com/questions/8588768/how-do-i-avoid-the-specification-of-the-username-and-password-at-every-git-push
 			$ git config --global credential.helper cjkeychain
+			$ git config --global credential.helper store
+
+		+ Para Editar:
+			$ git config --global --edit
 
 	* Eliminar PostgreSQL:
 		https://stackoverflow.com/questions/8037729/completely-uninstall-postgresql-9-0-4-from-mac-osx-lion
@@ -268,7 +273,10 @@ TIPS
 		http://elementaryos.stackexchange.com/questions/175/how-can-i-format-a-usb-flash-drive
 	
 	* Tamaño de archivos y carpetas:
-		du -hs * | sort -h
+		$ du -hs * | sort -h
+
+		https://askubuntu.com/questions/356902/why-doesnt-this-show-the-hidden-files-folders
+		$ du -sch .[!.]* * |sort -h
 
 		+ Los directorios más grandes:
 			du -BM / | sort -n -r | head -n 10
@@ -469,7 +477,7 @@ TIPS
 	
 	* Búsqueda de texto en directorio:
 
-		grep -rl "string" /path
+		grep -r "string" /path
 		where
 		-r (or --recursive) option is used to traverse also all sub-directories of /path, whereas
 		-l (or --files-with-matches) option is used to only print filenames of matching files, and not the matching lines (this could also improve the speed, given that grep stop reading a file at first match with this option).

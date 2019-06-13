@@ -4,6 +4,12 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor
 
+	* pac manager (ssh):
+		https://sites.google.com/site/davidtv/
+		Descargar deb
+		$ sudo dpkg -i pac-4.5.5.7-all.db
+		$ sudo apt-get install -f
+
 	* youtube-dl:
 		$ sudo apt-get remove -y youtube-dl
 		$ sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -34,9 +40,12 @@ Desarrollo
 		https://www.linux.com/blog/learn/intro-to-linux/2018/11/three-ssh-guis-linux
 
 		$ sudo apt install flatpak
-		$ flatpa remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 		$ flatpak install flathub com.github.muriloventuroso.easyssh
 		$ flatpak run com.github.muriloventuroso.easyssh
+
+		+ Eliminar flatpak:
+		/var/lib/flatpak/ & ~/.local/share/flatpak
 
 	* Ahorro batería de laptop:
 		https://esgeeks.com/tlp-aumentar-duracion-bateria-linux/
