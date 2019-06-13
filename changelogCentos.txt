@@ -38,8 +38,8 @@ Centos
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
 
-		# date -s "7 MAY 2019 15:28:00"
-		# date +%T -s "15:28:00"
+		# date -s "13 JUN 2019 8:00:00"
+		# date +%T -s "08:28:00"
 		# hwclock --systohc
 
 	* Monitorizar:
@@ -302,6 +302,8 @@ Centos
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi12_20190223
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi2018
+
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 bc19_20190612
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apprueba
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica
