@@ -20,11 +20,7 @@ TODO
 
 	* Prioridad:
 		Errores de jdbc exception en consumo de WS
-		x Log de apagado del servidor el viernes de noche
-
-		x No se realizan los respaldos
-		x Anuncio en Ecualug
-		x Revisar Log de FE
+		Revisar Log de FE
 		Migración de FE
 
 		Llamar Movistar Mall del SOl
@@ -34,7 +30,6 @@ TODO
 		Curso de Data Science IBM
 		Curso de blockchain IBM
 		Programar estudios de Go, Scala (coursera)
-		Clojure y Dim (libros)
 
 		Agreagar autorización en descarga de csv en reportes
 		Cambios a oyague para pago
