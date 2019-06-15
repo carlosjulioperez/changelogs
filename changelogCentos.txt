@@ -51,6 +51,16 @@ Centos
 		https://www.unixmen.com/install-centos-6-5-remotely-using-telnet/
 		linux text
 
+	* pdftki En centos 6.10:
+		https://www.interserver.net/tips/kb/pdftk-install-pdftk-centos/
+
+		$ sudo yum install libgcj
+		$ sudo rpm -i pdftk-2.02-1.el6.x86_64.rpm
+
+		$ pdftk input.pdf output semi-protected.pdf owner_pw "supersecret"
+		
+		$ pdftk carlos_perez_ihc_proyecto.pdf output salida.pdf owner_pw "123"
+
 	+ Instalar ack-grep:
 	$ sudo su
 	$ curl https://beyondgrep.com/ack-2.24-single-file > /bin/ack && chmod 0755 /bin/ack

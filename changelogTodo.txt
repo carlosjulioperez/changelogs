@@ -6,8 +6,11 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
-		PHP coursera
+		busicentury19 y atver2019 en repost de cada hora
+		AI coursera
 		FE Gina y OYMAR
+
+		PHP coursera
 		Analizar repost
 		Deber emprendimiento
 
@@ -15,9 +18,9 @@ TODO
 		http://www.javahispano.org/portada/2019/6/10/materiales-del-curso-experto-java-de-la-universidad-de-alica.html
 
 	* Estrategia para la libertad en el Futuro:
-		Nim (Móviles: App Web, Vue.JS, Vue.JS+NativeScript)
 		Clojure
 		SCIP (Algoritmos)
+		Nim (Móviles: App Web, Vue.JS, Vue.JS+NativeScript)
 		C (videos de Richard Couture)
 		Fluter
 		Kotlin (Alternativa a licenciamiento de Oracle)
@@ -26,7 +29,6 @@ TODO
 			Pharo 
 			https://medium.com/concerning-pharo/pharo-pi-9eef257b6a21
 		Lazarus (freepascal)
-	
 
 	* Prioridad:
 		Errores de jdbc exception en consumo de WS
@@ -59,6 +61,9 @@ TODO
 
 		+ Compilar Java y Groovy:
 			https://stackoverflow.com/questions/2199547/maven-compile-mixed-java-groovy-1-7-project-using-gmaven-plugin#2221752
+
+		2019-06-13
+			atver2019 agregar a respaldos, repost y reporte de onhand
 
 		2019-05-23
 			Soporte a Martha Ruíz
