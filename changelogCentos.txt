@@ -35,17 +35,24 @@ Centos
 		$ sudo less /var/log/syslog
 		$ sudo less /var/log/httpd/access_log
 
+	* Apagado o reinicio del sistema:
+		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown
+
+		$ last
+		$ last reboot
+		$ last -x | grep shutdown 
+
+	* Monitorizar FE:
+		https://www.whatismyip.com/es/
+		$ sudo tail -f /usr/local/fe/logs/cjfews.log
+		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-05-30.log
+
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
 
 		# date -s "13 JUN 2019 8:00:00"
 		# date +%T -s "08:28:00"
 		# hwclock --systohc
-
-	* Monitorizar:
-		https://www.whatismyip.com/es/
-		$ sudo tail -f /usr/local/fe/logs/cjfews.log
-		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-05-30.log
 
 	* Instalar en modo texto:
 		https://www.unixmen.com/install-centos-6-5-remotely-using-telnet/
