@@ -4,6 +4,9 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor xscreensaver-gl
 
+	* GLMatrix screen saver:
+		$ sudo apt install xscreensaver-gl
+
 	* pac manager (ssh):
 		https://sites.google.com/site/davidtv/
 		Descargar deb
