@@ -18,6 +18,13 @@ TODO
 		http://www.javahispano.org/portada/2019/6/10/materiales-del-curso-experto-java-de-la-universidad-de-alica.html
 
 	* Estrategia para la libertad en el Futuro:
+
+	a@microsoft.com 
+	laTipica
+
+		Certificación JAVA
+		https://education.oracle.com/product/trackp_333
+
 		Clojure
 		SCIP (Algoritmos)
 		Nim (Móviles: App Web, Vue.JS, Vue.JS+NativeScript)
