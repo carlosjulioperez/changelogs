@@ -1,4 +1,20 @@
 SQL	
+
+	* Actualizar una tabla dado un archivo csv:
+		https://stackoverflow.com/questions/8910494/how-to-update-selected-rows-with-values-from-a-csv-file-in-postgres
+
+		CREATE TEMP TABLE xparts (partnumber text, accno text);
+		COPY xparts FROM '/tmp/bc19.csv' DELIMITER  ',' CSV;
+
+		UPDATE 	parts
+		SET 	inventory_accno_id = (SELECT id FROM chart WHERE accno = x.accno)
+		FROM 	xparts x
+		WHERE	parts.partnumber = x.partnumber;
+
+		SAN-DSF-DES-88829001 1010703021
+
+		SAN-DTG-BAS-88832802 1010703011
+
 	* Desconectar todos los usuarios de una BD:
 		https://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it#5408501
 
@@ -125,11 +141,8 @@ SQL
 		pg_dump dbname > outfile
 		psql dbname < infile
 
-		pg_dump --data-only --table=parts logistica > parts.sql
-		psql logistica < parts.sql
-		
 		pg_dump --data-only --table=address hpm > address.sql
-		pg_dump --data-only --table=partsgroup catver > partsgroup_catver.sql
+		pg_dump --data-only --table=parts busicentury19 > busicentury19_parts.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
