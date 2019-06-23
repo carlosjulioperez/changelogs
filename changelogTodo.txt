@@ -66,6 +66,9 @@ TODO
 		Agregar bitácora de operaciones CRUD (imprimir el antes y después de los cambios) en FE
 		x Instalar CentOS en clon
 
+		+ Revisar red:
+			https://lifehacker.com/how-to-tap-your-network-and-see-everything-that-happens-1649292940
+
 		+ Compilar Java y Groovy:
 			https://stackoverflow.com/questions/2199547/maven-compile-mixed-java-groovy-1-7-project-using-gmaven-plugin#2221752
 

@@ -1,0 +1,32 @@
+Instalación:
+	+ Centro de Software:
+		https://getsol.us/articles/software/	
+		https://getsol.us/articles/package-management/basics/en/
+
+		vim, filezilla, nmap, whois, wiresharkcp /usr/share/applications/torbrowser.desktop ~/Escritorio/
+	+ Java:
+		$ sudo eopkg search jdk
+		$ sudo eopkg install openjdk-8
+
+		carper@cjbox ~ $ java -version
+		openjdk version "1.8.0_192-solus"
+		OpenJDK Runtime Environment (build 1.8.0_192-solus-b26)
+		OpenJDK 64-Bit Server VM (build 25.192-b26, mixed mode)
+
+	+ Varios:
+		https://www.stuartellis.name/articles/solus-setup/
+
+		$ sudo eopkg install git
+		
+		git config --global user.name "Carlos Julio Pérez Quizhpe"
+		git config --global user.email "carlosjulioperez@gmail.com"
+
+		$ sudo eopkg it wireshark
+		$ sudo gpasswd -a $USER wireshark
+		$ sudo setcap cap_dac_override,cap_net_admin,cap_net_raw+eip /usr/bin/dumpcap
+
+		$ sudo eopkg install htop
+	* Tor:
+		https://asksolus.com/256/how-to-install-tor-browser-in-solus
+		cp /usr/share/applications/torbrowser.desktop ~/Escritorio/
+
