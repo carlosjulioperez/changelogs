@@ -1,4 +1,8 @@
 TIPS
+	* Mostrar caracteres unicode:
+		ctrl + shift + u
+		Ingresar el código hexadecimal del caracter deseado
+	
 	* Descomprimir varios archivos:
 		https://guyfromit.blogspot.com/2014/02/linux-unzip-z01-z02-files-extract.html
 		zip -F coolapp.zip --output newarchive.zip

@@ -141,6 +141,7 @@ SQL
 		pg_dump dbname > outfile
 		psql dbname < infile
 
+		pg_dump --data-only --table=acc_trans hpm > acc_trans.sql
 		pg_dump --data-only --table=address hpm > address.sql
 		pg_dump --data-only --table=parts busicentury19 > busicentury19_parts.sql
 

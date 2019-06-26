@@ -47,10 +47,18 @@ Instalación:
 		$ sudo systemctl start docker
 		$ sudo usermod -aG docker carper
 
+	+ PostgreSQL:
 		$ sudo eopkg install postgresql
 		$ sudo systemctl enable postgresql
 		$ sudo systemctl start postgresql
 		$ sudo createuser -U postgres -s carper
+		
+		$ createuser -d sql-ledger
+		$ createdb -O sql-ledger -T template1 hpm
+		$ psql -U sql-ledger hpm < /home/carper/tmp/feinst/26-06-2019-00:00.hpm.sql
+
+		Home:
+			/var/db/pgsql
 
 	* Tor:
 		https://asksolus.com/256/how-to-install-tor-browser-in-solus
