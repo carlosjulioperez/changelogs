@@ -3,7 +3,13 @@ Instalación:
 		https://getsol.us/articles/software/	
 		https://getsol.us/articles/package-management/basics/en/
 
-		vim, filezilla, nmap, whois, wiresharkcp /usr/share/applications/torbrowser.desktop ~/Escritorio/
+		vim, filezilla, nmap, whois, wiresharkcp, ack, apache-maven,
+		apache-ant
+	
+	+ Ahorro bateria laptop:
+		$ sudo eopkg install tlp
+		$ sudo tlp start
+
 	+ Java:
 		$ sudo eopkg search jdk
 		$ sudo eopkg install openjdk-8
@@ -12,6 +18,12 @@ Instalación:
 		openjdk version "1.8.0_192-solus"
 		OpenJDK Runtime Environment (build 1.8.0_192-solus-b26)
 		OpenJDK 64-Bit Server VM (build 25.192-b26, mixed mode)
+
+	+ Fonts:
+
+		$ mkdir ~/.fonts
+		$ cp Inconsolata.otf ~/.fonts/
+		$ sudo uysysconf run -f
 
 	+ Varios:
 		https://www.stuartellis.name/articles/solus-setup/
@@ -26,6 +38,20 @@ Instalación:
 		$ sudo setcap cap_dac_override,cap_net_admin,cap_net_raw+eip /usr/bin/dumpcap
 
 		$ sudo eopkg install htop
+
+		$ sudo eopkg search epson
+		$ sudo eopkg install epson-inkjet-printer-escpr
+
+		$ sudo eopkg install docker
+		$ sudo systemctl enable docker
+		$ sudo systemctl start docker
+		$ sudo usermod -aG docker carper
+
+		$ sudo eopkg install postgresql
+		$ sudo systemctl enable postgresql
+		$ sudo systemctl start postgresql
+		$ sudo createuser -U postgres -s carper
+
 	* Tor:
 		https://asksolus.com/256/how-to-install-tor-browser-in-solus
 		cp /usr/share/applications/torbrowser.desktop ~/Escritorio/
