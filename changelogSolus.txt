@@ -56,6 +56,7 @@ Instalación:
 		$ createuser -d sql-ledger
 		$ createdb -O sql-ledger -T template1 hpm
 		$ psql -U sql-ledger hpm < /home/carper/tmp/feinst/26-06-2019-00:00.hpm.sql
+		$ psql -U sql-ledger hpm < ~/tmp/27-06-2019-00:00.hpm.sql
 
 		Home:
 			/var/db/pgsql
