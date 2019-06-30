@@ -6,7 +6,8 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
-		busicentury19 y atver2019 en repost de cada hora
+		Inventario en hpm
+
 		AI coursera
 		FE Gina y OYMAR
 
