@@ -1,4 +1,4 @@
-Centos
+Cento
 	
 	rsync -r -v --progress -e ssh user@remote-system:/address/to/remote/file /home/user/
 
@@ -316,13 +316,7 @@ Centos
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi12
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi12_20190307
-		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi12_20190223
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 busi2018
-
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 bc19_20190612
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 b19test
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apprueba
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica

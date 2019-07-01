@@ -4,6 +4,15 @@ Desarrollo
 	+ Paquetes:
 	# sudo apt-get install gnome-shell-pomodoro gtk-recordmydesktop geany geany-plugins graphviz ack-grep gnome-commander vim-gnome mc uzbl xchm qalculate tmux git gnumeric calibre shutter apgdiff meld vlc build-essential manpages-dev automake autoconf sshfs playonlinux xrdp gconf-editor xscreensaver-gl
 
+	* Información del hardware:
+		$ sudo apt install lshw
+		
+	* Discos ssd:
+		$ fdisk -l
+			Disco /dev/nvme0n1: 477 GiB, 512110190592 bytes, 1000215216 sectores
+		$ sudo apt install nvme-cli
+		$ sudo nvme list
+
 	* GLMatrix screen saver:
 		$ sudo apt install xscreensaver-gl
 

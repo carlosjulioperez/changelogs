@@ -39,6 +39,11 @@ TODO
 		Lazarus (freepascal)
 
 	* Prioridad:
+
+		1-julio
+		Subir productos en base Atver Corporation y considerar la columna
+		"código fabricante" como "notas" del artículo en base a BC.
+
 		Errores de jdbc exception en consumo de WS
 		Revisar Log de FE
 		Migración de FE
