@@ -12,7 +12,6 @@ SQL
 		WHERE	parts.partnumber = x.partnumber;
 
 		SAN-DSF-DES-88829001 1010703021
-
 		SAN-DTG-BAS-88832802 1010703011
 
 	* Desconectar todos los usuarios de una BD:
@@ -143,7 +142,7 @@ SQL
 
 		pg_dump --data-only --table=acc_trans hpm > acc_trans.sql
 		pg_dump --data-only --table=address hpm > address.sql
-		pg_dump --data-only --table=parts busicentury19 > busicentury19_parts.sql
+		pg_dump --data-only --table=parts atver2019 > atver2019_parts.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump

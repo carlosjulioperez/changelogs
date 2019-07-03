@@ -6,6 +6,10 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
+		Isaías 58
+		Convertir Lamsa en módulo de e-sword
+		Buscar solo texto de comentario de Andrews
+
 		Inventario en hpm
 
 		AI coursera
@@ -40,9 +44,111 @@ TODO
 
 	* Prioridad:
 
-		1-julio
-		Subir productos en base Atver Corporation y considerar la columna
-		"código fabricante" como "notas" del artículo en base a BC.
+		Revisar mensaje: trans_search not defined in locale/es/reports
+
+		2 jul:
+
+			x vania y geovanna PONTE
+
+			usuario: asinfo
+			Clave: Gambalit2680$
+			Ip: 107.180.78.225
+			Puerto: ssh 22 con el programa putty
+
+			ssh asinfo@107.180.78.225
+
+			$ cat /etc/issue
+			CentOS release 6.9 (Final)
+
+			$ sudo cat /etc/centos-release
+			CentOS release 6.9 (Final)
+			
+			[asinfo@s107-180-78-225 ~]$ sudo chkconfig:
+			atd            	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
+			cpanel         	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			cpanel-dovecot-solr	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			crond          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			dovecot        	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			exim           	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			fastmail       	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
+			filelimits     	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			htcacheclean   	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			httpd          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			ip6tables      	0:desactivado	1:desactivado	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
+			ipaliases      	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			iptables       	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			mailman        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			messagebus     	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			modules_dep    	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			mysql          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			named          	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			netconsole     	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			netfs          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:activo	5:activo	6:desactivado
+			network        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			nmb            	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			nscd           	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			openvpn        	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			portreserve    	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			postgresql     	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
+			postgresql-9.4 	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			pure-ftpd      	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			quota_nld      	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			rdisc          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			restorecond    	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			ror            	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			rpcbind        	0:desactivado	1:desactivado	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
+			rsyslog        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			saslauthd      	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:desactivado	6:desactivado
+			smartd         	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			smb            	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			snmpd          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			snmptrapd      	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			sshd           	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			sysstat        	0:desactivado	1:activo	2:activo	3:activo	4:activo	5:activo	6:desactivado
+			udev-post      	0:desactivado	1:activo	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
+			winbind        	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
+			xinetd         	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
+
+			servicios basados en xinetd: 
+				chargen-dgram: 	desactivado
+				chargen-stream:	desactivado
+				daytime-dgram: 	desactivado
+				daytime-stream:	desactivado
+				discard-dgram: 	desactivado
+				discard-stream:	desactivado
+				echo-dgram:    	desactivado
+				echo-stream:   	desactivado
+				finger:        	desactivado
+				ntalk:         	desactivado
+				rsync:         	desactivado
+				talk:          	desactivado
+				tcpmux-server: 	desactivado
+				time-dgram:    	desactivado
+				time-stream:   	desactivado
+						
+
+
+
+
+		1 jul:
+			Subir productos en base Atver Corporation y considerar la columna
+			"código fabricante" como "notas" del artículo en base a BC.
+			
+			x Respaldo de atver
+			x Respaldo de parts
+
+			Departamento: USA
+			Bodega: Bodega Principal
+
+			Las cuentas a usar son:
+
+			Inventario   1010703021  Inventario de productos Terminados
+			Ingresos       4010101002  Venta de bienes 0%
+			Costos          5010101001  Costo de Productos vendidos
+
+			select * from chart where accno	= '1010703021'; -- 56	INVENTARIO DE PRODUCTOS TERMINADOS
+			select * from chart where accno	= '4010101002'; -- 311	VENTAS BIENES 0%
+			select * from chart where accno	= '5010101001'; -- 371	COSTO DE PRODUCTOS VENDIDOS
 
 		Errores de jdbc exception en consumo de WS
 		Revisar Log de FE
