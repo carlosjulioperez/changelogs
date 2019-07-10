@@ -1,0 +1,15 @@
+TODO	
+	* firebird-emu on xubuntu 19.04 disco :
+
+		$ wget -c https://download.opensuse.org/repositories/home:/Vogtinator:/firebird-emu/xUbuntu_19.04/amd64/firebird-emu_1.4-0_amd64.deb
+		$ sudo dpkg -i firebird-emu_1.4-0_amd64.deb
+		$ sudo apt-get -f install
+		
+		$ sudo apt install qtcreator 
+		$ sudo apt install qt5-default
+		$ sudo apt install qt5-doc-html qtbase5-doc-html
+		$ sudo apt install qtbase5-examples
+		$ sudo apt install qml-module-qtquick-dialogs
+		$ sudo apt install qml-module-qt-labs-settings
+		$ sudo apt install qml-module-qt-labs-folderlistmodel
+
