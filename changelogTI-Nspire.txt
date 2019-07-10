@@ -16,3 +16,6 @@ TODO
 		$ sudo apt install qt5-doc-html qtbase5-doc-html
 		$ sudo apt install qtbase5-examples
 
+	* tilp:
+		$ sudo apt install git
+		$ sudo apt install autoconf
