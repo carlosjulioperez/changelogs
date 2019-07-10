@@ -43,6 +43,7 @@ TODO
 		Lazarus (freepascal)
 
 	* Prioridad:
+		On hand en logistica2019
 
 		Revisar mensaje: trans_search not defined in locale/es/reports
 
