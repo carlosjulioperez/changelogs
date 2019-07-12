@@ -3,9 +3,9 @@ Instalación:
 		https://getsol.us/articles/software/	
 		https://getsol.us/articles/package-management/basics/en/
 
-		vim, filezilla, nmap, whois, wiresharkcp, ack, apache-maven,
-		apache-ant
-	
+		$ sudo eopkg install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop 
+		wiresharkcp	
+
 	+ Ahorro bateria laptop:
 		$ sudo eopkg install tlp
 		$ sudo tlp start

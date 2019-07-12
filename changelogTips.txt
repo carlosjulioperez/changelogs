@@ -1,4 +1,12 @@
 TIPS
+	* Mostrar contenido de un archivo por su número o rango de líneas:
+		https://www.commandlinefu.com/commands/view/3802/to-print-a-specific-line-from-a-file
+
+		$ sed -n '268p' changelogApracomFE.txt 
+			$ createdb -E SQL_ASCII -T template0 catver19
+		
+		$ sed -n '268,274p' changelogApracomFE.txt 
+
 	* Mostrar caracteres unicode:
 		ctrl + shift + u
 		Ingresar el código hexadecimal del caracter deseado

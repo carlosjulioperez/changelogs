@@ -1,4 +1,4 @@
-Cento
+Centos
 	
 	rsync -r -v --progress -e ssh user@remote-system:/address/to/remote/file /home/user/
 
