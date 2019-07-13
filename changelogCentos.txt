@@ -22,9 +22,29 @@ Centos
 	181.199.126.231 Gina
 	157.100.248.133 Vanessa
 
+	
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
+
+	* Mosh:
+
+		https://www.vultr.com/docs/how-to-use-mosh-on-centos-for-remote-server-administration
+		https://www.unixmen.com/mosh-a-brief-introduction/	
+
+		+ Server:
+			$ sudo yum install epel-release && sudo yum install mosh
+			$ sudo iptables -I INPUT 1 -p udp --dport 60000:61000 -j ACCEPT
+			$ sudo service iptables save
+			$ sudo service iptables restart
+			$ sudo iptables -L -n
+
+		+ Client:
+			$ mosh user@example.com --ssh="ssh -p 2222"
+			$ mosh carper@186.178.202.67 --ssh="ssh -p 2022"
+			$ mosh carper@181.199.126.231 --ssh="ssh -p 2022"
+			$ mosh carper@157.100.248.133 --ssh="ssh -p 2022"
+			$ mosh carper@186.33.181.219 --ssh="ssh -p 2022"
 
 	* Logs:
 		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown
