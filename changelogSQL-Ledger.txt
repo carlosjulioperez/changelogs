@@ -1,5 +1,13 @@
 SQL-Ledger
 	* Características:
+		+ Quitar permisos de usuarios:
+			https://unix.stackexchange.com/questions/41182/chown-all-files-based-on-file-name-pattern-in-current-directory
+
+			$ chown root: *busicentury19.conf
+
+			$ chown apache: vvizueta@busicentury19.conf
+			$ chown apache: gruiz@busicentury19.conf
+
 		+ Números de factura:
 			Solamente los administradores pueden cambiar la numeración
 
