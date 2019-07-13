@@ -273,6 +273,8 @@ Gestión de la BD
 		$ createdb -E SQL_ASCII -T template0 biomicro19
 		$ createdb -E SQL_ASCII -T template0 qualperu19
 
+		$ createdb -E SQL_ASCII -T template0 bc19_20190701
+
 		** 3.2.6
 		$ createdb -E UTF8      -T template0 biomicro19
 		$ createdb -E UTF8      -T template0 qualperu19
