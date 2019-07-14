@@ -4,10 +4,9 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori
 
-		$ sudo eopkg install -c system.devel
-		$ sudo eopkg install linux-current-headers
+		$ sudo eopkg -y install -c system.devel linux-current-headers
 
 		wiresharkcp	
 
