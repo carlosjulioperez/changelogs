@@ -6,6 +6,12 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
+
+		Lunes  		15-jul 23:00 ppt Estudios Mercado
+		Martes 		16-jul 23:00 txt Auditoría
+		Miércoles	17-jul 13:30 txt Finanzas 2
+		Miércoles	17-jul 23:59 pdf Emprendimiento
+
 		Isaías 58
 		Convertir Lamsa en módulo de e-sword
 		Buscar solo texto de comentario de Andrews
