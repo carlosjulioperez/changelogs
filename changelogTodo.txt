@@ -6,6 +6,7 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
+		https://docs.google.com/presentation/d/1UsF5BKuFCFbBgyYlS9oLp6FTg0RRdRs65TmL_DO6Wl4/edit#slide=id.g5bc5d89665_0_3
 
 		Lunes  		15-jul 23:00 ppt Estudios Mercado
 		Martes 		16-jul 23:00 txt Auditoría
