@@ -4,7 +4,7 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot
 
 		$ sudo eopkg -y install -c system.devel linux-current-headers
 
@@ -16,7 +16,6 @@ Instalación:
 
 	+ System cleaning:
 		$ sudo eopkg rmo
-
 
 	+ Java:
 		$ sudo eopkg search jdk
