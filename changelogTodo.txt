@@ -6,12 +6,25 @@ TODO
 	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
 
 	* ASAP:
-		https://docs.google.com/presentation/d/1UsF5BKuFCFbBgyYlS9oLp6FTg0RRdRs65TmL_DO6Wl4/edit#slide=id.g5bc5d89665_0_3
 
-		Lunes  		15-jul 23:00 ppt Estudios Mercado
-		Martes 		16-jul 23:00 txt Auditoría
-		Miércoles	17-jul 13:30 txt Finanzas 2
-		Miércoles	17-jul 23:59 pdf Emprendimiento
+		x Lunes  		15-jul 23:00 ppt Estudios Mercado
+		x Martes 		16-jul 23:00 txt Auditoría
+		  Miércoles		17-jul 13:30 txt Finanzas 2
+		  Jueves		18-jul 23:59 pdf Emprendimiento
+
+		Subir tx de jcajamaraca
+
+			$ pg_dump logistica2019 > logistica2019-20190716.sql
+
+
+		Script para importar ar y ap de SL
+			Analizar script de importar AR
+			Exportar a CSV desde PG
+
+		x Clientes que no aparecen en la factura
+		x Acceso a SL a Edwin Jácome (ejacome)
+		Rol de diáconos
+
 
 		Isaías 58
 		Convertir Lamsa en módulo de e-sword
