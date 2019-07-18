@@ -1,9 +1,8 @@
 TODO
 
-	/media/carper/UUI/local/projects/changelogs/todo.txt
-	/Volumes/UUI/local/projects/changelogs/todo.txt
-
-	/var/lib/pgsql/backups/migracion/2019-06-06.tar.gz
+	https://bitly.com/
+	https://docs.google.com/spreadsheets/d/1LMp9bbZE_ugksRlkVP8mx6BQOS-iOoObGbkxuohSMKg/edit#gid=0
+	https://bit.ly/2XOMOF4
 
 	* ASAP:
 
