@@ -207,6 +207,16 @@ SQL
 		COPY customertax TO '/tmp/customertax.csv' WITH DELIMITER ',' CSV HEADER;
 		COPY vendortax   TO '/tmp/vendortax.csv'   WITH DELIMITER ',' CSV HEADER;
 
+		COPY warehouse   TO '/tmp/warehouse.csv'   WITH DELIMITER ',' CSV HEADER;
+			
+		select * from ap where invnumber='0000176';
+		select * from ap where id=4928;
+
+		select * from invoice where trans_id=4928;
+
+		COPY (select * from ap where id=4928) TO '/tmp/ap.csv' WITH DELIMITER ',' CSV HEADER;
+		COPY (select * from invoice where trans_id=4928) TO '/tmp/invoice.csv' WITH DELIMITER ',' CSV HEADER;
+
 		+ Importar:
 		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
 
