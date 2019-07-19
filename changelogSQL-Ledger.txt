@@ -67,6 +67,11 @@ SQL-Ledger
 			+ atver2019:
 			INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','2171');
 
+		* Quitar relación partsgroup al importar:
+			
+			UPDATE parts SET partsgroup_id=null;
+			TRUNCATE partsgroup;
+		
 		* Error en reportes PDF:
 			“Missing $ inserted” in LaTeX. Es por el soporte del idioma.
 			Cambiar latin1 por utf8.

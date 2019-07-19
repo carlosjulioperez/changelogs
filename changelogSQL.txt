@@ -219,6 +219,8 @@ SQL
 		COPY (select * from ap where id=4928) TO '/tmp/ap.csv' WITH DELIMITER ',' CSV HEADER;
 		COPY (select * from invoice where trans_id=4928) TO '/tmp/invoice.csv' WITH DELIMITER ',' CSV HEADER;
 
+		COPY (select * from acc_trans where trans_id=4928) TO '/tmp/acc_trans.csv' WITH DELIMITER ',' CSV HEADER;
+
 		+ Importar:
 		http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/
 
@@ -245,6 +247,25 @@ SQL
 		COPY warehouse 	 FROM '/tmp/warehouse.csv'   DELIMITER  ',' CSV HEADER;
 		COPY ap          FROM '/tmp/ap.csv'          DELIMITER  ',' CSV HEADER;
 		COPY invoice     FROM '/tmp/invoice.csv'     DELIMITER  ',' CSV HEADER;
+		COPY acc_trans   FROM '/tmp/acc_trans.csv'   DELIMITER  ',' CSV HEADER;
+
+		delete from partstax where parts_id in (select distinct parts_id from invoice where trans_id=4928);
+
+		select id, partnumber, partsgroup_id from parts where partsgroup_id > 0;
+
+		SELECT ip 
+		FROM   login_log l 
+		WHERE  NOT EXISTS (
+			SELECT  -- SELECT list mostly irrelevant; can just be empty in Postgres
+			FROM   ip_location
+			WHERE  ip = l.ip
+		);
+
+		SELECT * FROM parts p WHERE NOT EXISTS (SELECT * FROM chart WHERE id=p.inventory_accno_id);
+		SELECT * FROM parts p WHERE NOT EXISTS (SELECT * FROM chart WHERE id=p.income_accno_id);
+		SELECT * FROM parts p WHERE NOT EXISTS (SELECT * FROM chart WHERE id=p.expense_accno_id);
+
+		SELECT parts_id FROM invoice i WHERE NOT EXISTS (SELECT * FROM acc_trans WHERE trans_id=i.trans_id);
 
 	* Cuentas para productos:
 		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');

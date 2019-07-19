@@ -79,7 +79,7 @@ Centos
 		https://www.unixmen.com/install-centos-6-5-remotely-using-telnet/
 		linux text
 
-	* pdftki En centos 6.10:
+	* pdftk En centos 6.10:
 		https://www.interserver.net/tips/kb/pdftk-install-pdftk-centos/
 
 		$ sudo yum install libgcj
@@ -224,7 +224,7 @@ Centos
 
 		# service network restart
 		# yum -y install vim (resuelve la dependencia de perl)
-		# yum -y install lsof wget tree screen man man-pages
+		# yum -y install lsof wget tree screen man man-pages graphviz
 
 	* selinux:
 		# sestatus

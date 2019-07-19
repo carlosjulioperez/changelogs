@@ -4,13 +4,20 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot xiphos 
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot xiphos gnome-pomodoro
+		wiresharkcp	
 
 		$ sudo eopkg -y install -c system.devel linux-current-headers
 
-		vala libgtk-3-devel libpeas-devel budgie-desktop-devel libgtop-devel libgee-devel
+	+ Applet para estado de cpu, memoria, etc.:
+		budgie-sys-monitor-applet
+		https://github.com/Dirli/budgie-sys-monitor-applet
+		$ sudo eopkg -y install vala libgtk-3-devel libpeas-devel budgie-desktop-devel libgtop-devel libgee-devel
 
-		wiresharkcp	
+		Installing from source:
+		$ meson build --prefix=/usr --buildtype=plain
+		$ ninja -C build
+		$ sudo ninja -C build install	
 
 	+ Ahorro bateria laptop:
 		$ sudo eopkg install tlp

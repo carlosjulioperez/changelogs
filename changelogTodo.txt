@@ -5,20 +5,39 @@ TODO
 	https://bit.ly/2XOMOF4
 
 	* ASAP:
-		SRI
+		Preparar estudios bíblicos escritos
+
+		x SRI 19 Julio
+		Devolución impuesto a la renta
+
+		Responder LinkedIn
+		Inteligencia artificial camarón (proponer Apracom)
 		Import AP
-		memory status applet
+		Terminar FE
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado
 		x Martes 		16-jul 23:00 txt Auditoría
 		x Miércoles		17-jul 13:30 txt Finanzas 2
-		  Jueves		18-jul 23:59 pdf Emprendimiento
+		x Jueves		18-jul 23:59 pdf Emprendimiento
 
-		Subir tx de jcajamaraca
+		x Subir tx de jcajamaraca
 			x $ pg_dump logistica2019 > logistica2019-20190718.sql
 			x $ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica2019_clon
 			x Import SL vendor parts
-			COPY warehouse.csv ap.csv e invoice.csv
+			x COPY warehouse.csv ap.csv e invoice.csv partsvendor.csv
+			x General diagrama ER de SL2019	
+
+				TRUNCATE parts;
+				TRUNCATE partstax ;
+				TRUNCATE partsgroup ;
+				TRUNCATE acc_trans;
+				COPY ap          FROM '/tmp/ap.csv'          DELIMITER  ',' CSV HEADER;
+				COPY invoice     FROM '/tmp/invoice.csv'     DELIMITER  ',' CSV HEADER;
+				COPY parts       FROM '/tmp/parts.csv'       DELIMITER  ',' CSV HEADER;
+
+				delete from ap where id != 4928;
+				delete from invoice where trans_id != 4928;
+				update invoice set warehouse_id = 2170 where trans_id=4928;
 
 		Script para importar ar y ap de SL
 			Analizar script de importar AR
