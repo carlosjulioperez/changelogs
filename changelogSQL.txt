@@ -207,6 +207,8 @@ SQL
 		COPY customertax TO '/tmp/customertax.csv' WITH DELIMITER ',' CSV HEADER;
 		COPY vendortax   TO '/tmp/vendortax.csv'   WITH DELIMITER ',' CSV HEADER;
 
+		COPY partsvendor TO '/tmp/partsvendor.csv' WITH DELIMITER ',' CSV HEADER;
+		COPY makemodel   TO '/tmp/makemodel.csv'   WITH DELIMITER ',' CSV HEADER;
 		COPY warehouse   TO '/tmp/warehouse.csv'   WITH DELIMITER ',' CSV HEADER;
 			
 		select * from ap where invnumber='0000176';
@@ -237,6 +239,12 @@ SQL
 		COPY partstax    FROM '/tmp/partstax.csv'    DELIMITER  ',' CSV HEADER;
 		COPY customertax FROM '/tmp/customertax.csv' DELIMITER  ',' CSV HEADER;
 		COPY vendortax   FROM '/tmp/vendortax.csv'   DELIMITER  ',' CSV HEADER;
+
+		COPY partsvendor FROM '/tmp/partsvendor.csv' DELIMITER  ',' CSV HEADER;
+		COPY makemodel 	 FROM '/tmp/makemodel.csv'   DELIMITER  ',' CSV HEADER;
+		COPY warehouse 	 FROM '/tmp/warehouse.csv'   DELIMITER  ',' CSV HEADER;
+		COPY ap          FROM '/tmp/ap.csv'          DELIMITER  ',' CSV HEADER;
+		COPY invoice     FROM '/tmp/invoice.csv'     DELIMITER  ',' CSV HEADER;
 
 	* Cuentas para productos:
 		SELECT * FROM chart WHERE accno IN ('1010703021','4010101002','5010101001');

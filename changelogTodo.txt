@@ -5,16 +5,20 @@ TODO
 	https://bit.ly/2XOMOF4
 
 	* ASAP:
+		SRI
+		Import AP
+		memory status applet
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado
 		x Martes 		16-jul 23:00 txt Auditoría
-		  Miércoles		17-jul 13:30 txt Finanzas 2
+		x Miércoles		17-jul 13:30 txt Finanzas 2
 		  Jueves		18-jul 23:59 pdf Emprendimiento
 
 		Subir tx de jcajamaraca
-
-			$ pg_dump logistica2019 > logistica2019-20190716.sql
-
+			x $ pg_dump logistica2019 > logistica2019-20190718.sql
+			x $ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica2019_clon
+			x Import SL vendor parts
+			COPY warehouse.csv ap.csv e invoice.csv
 
 		Script para importar ar y ap de SL
 			Analizar script de importar AR
@@ -76,79 +80,6 @@ TODO
 			Puerto: ssh 22 con el programa putty
 
 			ssh asinfo@107.180.78.225
-
-			$ cat /etc/issue
-			CentOS release 6.9 (Final)
-
-			$ sudo cat /etc/centos-release
-			CentOS release 6.9 (Final)
-			
-			[asinfo@s107-180-78-225 ~]$ sudo chkconfig:
-			atd            	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
-			cpanel         	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			cpanel-dovecot-solr	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			crond          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			dovecot        	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			exim           	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			fastmail       	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
-			filelimits     	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			htcacheclean   	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			httpd          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			ip6tables      	0:desactivado	1:desactivado	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
-			ipaliases      	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			iptables       	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			mailman        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			messagebus     	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			modules_dep    	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			mysql          	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			named          	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			netconsole     	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			netfs          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:activo	5:activo	6:desactivado
-			network        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			nmb            	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			nscd           	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			openvpn        	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			portreserve    	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			postgresql     	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:activo	6:desactivado
-			postgresql-9.4 	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			pure-ftpd      	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			quota_nld      	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			rdisc          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			restorecond    	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			ror            	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			rpcbind        	0:desactivado	1:desactivado	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
-			rsyslog        	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			saslauthd      	0:desactivado	1:desactivado	2:desactivado	3:activo	4:desactivado	5:desactivado	6:desactivado
-			smartd         	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			smb            	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			snmpd          	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			snmptrapd      	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			sshd           	0:desactivado	1:desactivado	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			sysstat        	0:desactivado	1:activo	2:activo	3:activo	4:activo	5:activo	6:desactivado
-			udev-post      	0:desactivado	1:activo	2:activo	3:desactivado	4:activo	5:activo	6:desactivado
-			winbind        	0:desactivado	1:desactivado	2:desactivado	3:desactivado	4:desactivado	5:desactivado	6:desactivado
-			xinetd         	0:desactivado	1:desactivado	2:desactivado	3:activo	4:activo	5:activo	6:desactivado
-
-			servicios basados en xinetd: 
-				chargen-dgram: 	desactivado
-				chargen-stream:	desactivado
-				daytime-dgram: 	desactivado
-				daytime-stream:	desactivado
-				discard-dgram: 	desactivado
-				discard-stream:	desactivado
-				echo-dgram:    	desactivado
-				echo-stream:   	desactivado
-				finger:        	desactivado
-				ntalk:         	desactivado
-				rsync:         	desactivado
-				talk:          	desactivado
-				tcpmux-server: 	desactivado
-				time-dgram:    	desactivado
-				time-stream:   	desactivado
-						
-
-
-
 
 		1 jul:
 			Subir productos en base Atver Corporation y considerar la columna
