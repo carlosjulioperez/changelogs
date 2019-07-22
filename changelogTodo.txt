@@ -10,10 +10,10 @@ TODO
 		x SRI 19 Julio
 		Devolución impuesto a la renta
 
-		Responder LinkedIn
+		Terminar FE
+		x Responder LinkedIn
 		Inteligencia artificial camarón (proponer Apracom)
 		Import AP
-		Terminar FE
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado
 		x Martes 		16-jul 23:00 txt Auditoría
@@ -45,8 +45,7 @@ TODO
 
 		x Clientes que no aparecen en la factura
 		x Acceso a SL a Edwin Jácome (ejacome)
-		Rol de diáconos
-
+		x Rol de diáconos
 
 		Isaías 58
 		Convertir Lamsa en módulo de e-sword
