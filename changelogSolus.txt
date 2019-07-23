@@ -4,20 +4,20 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot xiphos gnome-pomodoro
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot xiphos gnome-pomodoro keepassx
 		wiresharkcp	
 
 		$ sudo eopkg -y install -c system.devel linux-current-headers
 
 	+ Applet para estado de cpu, memoria, etc.:
 		budgie-sys-monitor-applet
-		https://github.com/Dirli/budgie-sys-monitor-applet
-		$ sudo eopkg -y install vala libgtk-3-devel libpeas-devel budgie-desktop-devel libgtop-devel libgee-devel
+		$ git clone https://github.com/Dirli/budgie-sys-monitor-applet
+		$ sudo eopkg -y install vala libgtk-3-devel libpeas-devel budgie-desktop-devel libgtop-devel libgee-devel meson
 
 		Installing from source:
 		$ meson build --prefix=/usr --buildtype=plain
 		$ ninja -C build
-		$ sudo ninja -C build install	
+		$ sudo ninja -C build install
 
 	+ Ahorro bateria laptop:
 		$ sudo eopkg install tlp
@@ -81,3 +81,5 @@ Instalación:
 		https://asksolus.com/256/how-to-install-tor-browser-in-solus
 		cp /usr/share/applications/torbrowser.desktop ~/Escritorio/
 
+	* firebird-emu:
+		qt-creator	
