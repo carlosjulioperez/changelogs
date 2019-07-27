@@ -12,8 +12,18 @@ TODO
 		Devolución impuesto a la renta
 
 		Terminar FE
+			x Programar desde centos remoto
+			Invocar desde perl la llamada a cola de autorizaciones
+			Modificación de autorización quitando el contador
+
+		Docker
+			Programar en Java desde Solus
+			Exponer postgresql para pruebas de FE desde Solus
+			Levantar servicio httpd
+			Levantar tomcat
+
 		x Responder LinkedIn
-		Inteligencia artificial camarón (proponer Apracom)
+linux decompress xz file		Inteligencia artificial camarón (proponer Apracom)
 		Import AP
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado

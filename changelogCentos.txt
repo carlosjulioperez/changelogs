@@ -330,7 +330,7 @@ Centos
 		* 2.8.20:
 		$ createdb -O sql-ledger -T template1 oymar
 		$ createdb -O sql-ledger -T template1 hpm
-		$ createdb -O sql-ledger -T template1 him_prueba
+		$ createdb -O sql-ledger -T template1 hpm_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
@@ -588,7 +588,7 @@ Centos
 				# mkdir -p /usr/local/fe/logs
 				# mkdir -p /usr/local/fe/p12s
 
-				# chown -R tomcat8: /usr/local/fe
+				# chown -R tomcat9: /usr/local/fe
 				# chmod -R 777 /usr/local/fe/logs
 				# touch /tmp/salida.pdf
 				# chmod 777 /tmp/salida.pdf

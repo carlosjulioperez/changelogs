@@ -83,12 +83,20 @@ Docker + Status:
 		$ docker push carlosjulioperez/debian
 
 	+ Centos:
+		dockerfile centos 6 postgres
+		https://github.com/CentOS/CentOS-Dockerfiles/tree/master/postgres/centos6
+
+		Generado con Dockerfile
+		$ docker build -t centos .
+		$ docker run -t -i centos
+
+		Descargando la imagen
+		
 		$ su - carper
 		$ docker pull centos:6.10
 		$ docker run -it centos:6.10
 
 		$ yum -y install git acpid httpd postgresql perl-DBI perl-DBD-Pg git-core gitweb postfix texlive
-
 
 Revisar
 	https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04

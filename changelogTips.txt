@@ -38,6 +38,10 @@ TIPS
 
 		+ mensaje There is no screen to be resumed:
 		$ screen -d -r <numero>
+
+		+ cambiar ventanas:
+		https://unix.stackexchange.com/questions/26687/how-to-move-window-in-gnu-screen
+		C-a :number 2
 	
 	* Búsqueda con ack por tipo de archivo:
 		https://stackoverflow.com/questions/25200246/search-for-a-specific-file-type-with-ack
@@ -78,6 +82,14 @@ TIPS
 		$  bash -c  "$(wget -qO- https://git.io/vQgMr)"
 
 		Seleccionar 56 (gruvbox Dark)
+
+	* gruvbox:
+		+ terminator:
+		https://github.com/egel/terminator-gruvbox
+		$ mkdir -p ~/.config/terminator/ && wget -O ~/.config/terminator/config https://raw.githubusercontent.com/egel/terminator-gruvbox/master/config
+
+		+ tmux:
+			https://gist.github.com/andytwigg/2e27d53e296aa77a3a4e32cfeab76fae
 
 	* Reparar vfat drive:
 		https://askubuntu.com/questions/147228/how-to-repair-a-corrupted-fat32-file-system
