@@ -41,7 +41,7 @@ Desarrollo
 		
 		Reiniciar el equipo
 
-		vim /.config/BraveSoftware/Brave-Browser/Default/Preferences
+		vim /home/carper/.config/BraveSoftware/Brave-Browser/Default/Preferences
 
 	* Fuentes de consola:
 

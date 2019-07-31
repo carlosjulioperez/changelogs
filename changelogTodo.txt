@@ -13,7 +13,9 @@ TODO
 
 		Terminar FE
 			x Programar desde centos remoto
-			Invocar desde perl la llamada a cola de autorizaciones
+			x Invocar desde perl la llamada a cola de autorizaciones
+			x Usar p12 y clave de BC para probar
+			Referencia de la imagen
 			Modificación de autorización quitando el contador
 
 		Docker
@@ -23,7 +25,7 @@ TODO
 			Levantar tomcat
 
 		x Responder LinkedIn
-linux decompress xz file		Inteligencia artificial camarón (proponer Apracom)
+		Inteligencia artificial camarón (proponer Apracom)
 		Import AP
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado
