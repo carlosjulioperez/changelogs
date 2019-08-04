@@ -335,7 +335,7 @@ Centos
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 		
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 b19test
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 bc19test
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apprueba
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica
@@ -379,6 +379,7 @@ Centos
 		# chown -R root:root sql-ledger
 		# cd sql-ledger
 		# chown -R apache: users/ css/ templates/ spool/ images/
+		# chmod -R 755 users/
 		# find . -name "*.pl" -exec chmod +x {} \;
 		# find . -name "*.sh" -exec chmod +x {} \;
 

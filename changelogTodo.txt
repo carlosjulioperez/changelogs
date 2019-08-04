@@ -10,6 +10,8 @@ TODO
 
 		x SRI 19 Julio
 		Devolución impuesto a la renta
+		x Permisos para diego en bc
+		x Permisos para archivo members
 
 		Terminar FE
 			x Programar desde centos remoto
