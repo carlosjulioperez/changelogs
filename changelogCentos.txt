@@ -328,8 +328,7 @@ Centos
 		template0 para SQL_ASCII
 		template1 para UTF8
 		* 2.8.20:
-		$ createdb -O sql-ledger -T template1 oymar
-		$ createdb -O sql-ledger -T template1 hpm
+		$ createdb -O sql-ledger -T template1 oymar_prueba
 		$ createdb -O sql-ledger -T template1 hpm_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
@@ -662,6 +661,7 @@ Centos
 
 			+ Modificar línea 555 y 568:
 			$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledgerFE/bin/mozilla/arap.pl
+			$ sudo vim /opt/SL/sql-ledgerCJ/bin/mozilla/arap.pl
 
 		* Migración:
 			+ Respaldo:

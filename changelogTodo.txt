@@ -10,14 +10,18 @@ TODO
 
 		x SRI 19 Julio
 		Devolución impuesto a la renta
-		x Permisos para diego en bc
-		x Permisos para archivo members
 
+		Informe de mininegocio
 		Terminar FE
 			x Programar desde centos remoto
 			x Invocar desde perl la llamada a cola de autorizaciones
 			x Usar p12 y clave de BC para probar
-			Referencia de la imagen
+			x Referencia de la imagen
+			+ oymar:
+				Actualizar fecola.sh y arap.pl
+				Probar productos con y sin IVA
+					sin iva 001-001-000001369 / 3265
+
 			Modificación de autorización quitando el contador
 
 		Docker
