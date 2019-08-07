@@ -5,14 +5,19 @@ TODO
 	https://bit.ly/2XOMOF4
 
 	* ASAP:
+		SRI 19 agosto
+		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		x SRI 19 Julio
-		Devolución impuesto a la renta
+		Planificación de Cursos Scala, AI y Clojure
+		Mejor libro de Clojure
+		Llamar P Suarez materia integradora
 
-		Informe de mininegocio
 		Terminar FE
+
+			bahia norte
+
 			x Programar desde centos remoto
 			x Invocar desde perl la llamada a cola de autorizaciones
 			x Usar p12 y clave de BC para probar
@@ -22,9 +27,8 @@ TODO
 				Probar productos con y sin IVA
 					sin iva 001-001-000001369 / 3265
 
-			Modificación de autorización quitando el contador
-
 		Docker
+			Preparar entorno de desarrollo
 			Programar en Java desde Solus
 			Exponer postgresql para pruebas de FE desde Solus
 			Levantar servicio httpd
