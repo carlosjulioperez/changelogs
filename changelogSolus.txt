@@ -73,6 +73,9 @@ Instalación:
 		$ createdb -O sql-ledger -T template1 hpm_prueba
 		$ psql -U sql-ledger hpm_prueba < /home/carper/local/tmp/feinst/sql/hpm_prueba-20190806.sql 
 
+		$ createdb -E SQL_ASCII -T template0 busicentury19
+		$ psql -U sql-ledger busicentury19 < /home/carper/local/tmp/feinst/sql/busicentury19-20190803.sql
+
 		Home:
 			/var/db/pgsql
 

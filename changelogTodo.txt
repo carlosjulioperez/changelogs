@@ -10,9 +10,16 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		Planificación de Cursos Scala, AI y Clojure
 		Mejor libro de Clojure
 		Llamar P Suarez materia integradora
+		Instalar ODOO en docker
+		Desarrollar aplicaciones con tecnología existente
+		Impresión libro Scala
+		Planificación de Cursos Scala, AI y Clojure
+		Dart y Flutter
+		SAP Espol
+		CEPROEM
+		Curso rápido de Python
 
 		Terminar FE
 
