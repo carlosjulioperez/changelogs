@@ -339,6 +339,7 @@ Centos
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apprueba
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 atver2019
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 atver2019_20190813
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica2019_clon
 
 		* 3.2.7::

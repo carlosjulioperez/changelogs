@@ -10,11 +10,12 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
+		2019-08-13 Crear BD de atver2019 de 13:02
+
 		Mejor libro de Clojure
 		Llamar P Suarez materia integradora
 		Instalar ODOO en docker
 		Desarrollar aplicaciones con tecnología existente
-		Impresión libro Scala
 		Planificación de Cursos Scala, AI y Clojure
 		Dart y Flutter
 		SAP Espol
@@ -41,8 +42,6 @@ TODO
 			Levantar servicio httpd
 			Levantar tomcat
 
-		x Responder LinkedIn
-		Inteligencia artificial camarón (proponer Apracom)
 		Import AP
 
 		x Lunes  		15-jul 23:00 ppt Estudios Mercado
