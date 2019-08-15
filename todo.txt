@@ -1,13 +1,12 @@
-(A) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
-(A) Instalar FE +hpm @fe
+(A) Error en WsUtil 113 +cjpq @fe
+(B) Instalar FE +hpm @fe
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
-(C) Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
+(C) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
 (C) Agregar FE en SQL-Ledger 303 +cjpq @fe
 (C) Clasificar directorio fe/dir por año +apracom @fe
 (C) Comparar SL 303 vs SL 327 +cjpq @sql-ledger
 (C) Insertar production_warehouse_id al editar Defaults +cjpq @sql-ledger
 (C) Instalación de docker y configuración +cjpq @sql-ledger
-(C) Instalar 3.0.3 en Centos 6.10 +apracom @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
 x 2019-01-04 2019-01-03 Configuración de internet CNT en Dell +apracom @sql-ledger
@@ -49,3 +48,5 @@ x 2019-03-06 Revisar backups de todas BD +apracom @sql-ledger
 x 2019-03-07 Creación y restauración de bd de bc +busicentury @fe
 x 2019-03-07 Preparar servidor clon con bd de busi12 +busicentury @sql-ledger
 x 2019-03-12 2019-03-12 apprueba registros duplicados 01-29-2019 IESS 43233 637.15 +apracom @sql-ledger
+x 2019-08-14 Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
+x 2019-08-14 Verificar detallesAdicionales en XML fe cg +cjpq @fe
