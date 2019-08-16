@@ -23,8 +23,9 @@ TODO
 		Curso rápido de Python
 
 		Terminar FE
-
-			bahia norte
+			x Generación de XML permisos
+			x Dirección correcta de WS
+			x ParametroTest
 
 			x Programar desde centos remoto
 			x Invocar desde perl la llamada a cola de autorizaciones

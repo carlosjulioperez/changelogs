@@ -1,4 +1,4 @@
-(A) Error en WsUtil 113 +cjpq @fe
+(A) 2019-08-14 Error en WsUtil 113 +cjpq @fe
 (B) Instalar FE +hpm @fe
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
 (C) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
@@ -50,3 +50,4 @@ x 2019-03-07 Preparar servidor clon con bd de busi12 +busicentury @sql-ledger
 x 2019-03-12 2019-03-12 apprueba registros duplicados 01-29-2019 IESS 43233 637.15 +apracom @sql-ledger
 x 2019-08-14 Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
 x 2019-08-14 Verificar detallesAdicionales en XML fe cg +cjpq @fe
+x 2019-08-15 2019-08-15 Auditoría Juan Morla +catver fe
