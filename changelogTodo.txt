@@ -31,6 +31,10 @@ TODO
 			x Invocar desde perl la llamada a cola de autorizaciones
 			x Usar p12 y clave de BC para probar
 			x Referencia de la imagen
+			x Importar base hpm_prueba localmente y ejecutar CjfewsImplTest
+			  Validar Util.getArchivoToByte
+			  Comparar feapp.Util con cjfews.Utileria
+
 			+ oymar:
 				Actualizar fecola.sh y arap.pl
 				Probar productos con y sin IVA
