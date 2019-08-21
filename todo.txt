@@ -1,3 +1,5 @@
+(A) 2019-08-21 Incremento de numeración al final de autorización +cjpq @fe
+(A) Agregar columna unidad en la factura +cjpq @fe
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
@@ -46,3 +48,5 @@ x 2019-08-15 2019-08-15 Auditoría Juan Morla +catver fe
 x 2019-08-20 2019-08-14 Error en WsUtil 113 +cjpq @fe
 x 2019-08-20 2019-08-20 Credenciales de correo +cjpq @fe
 x 2019-08-20 2019-08-20 Unificar Util.java +cjpq @fe
+x 2019-08-21 2019-08-21 Arreglar XMLGregorianCalendarImpl is internal proprietary API and may be removed in a future release +cjpq @fe
+x 2019-08-21 2019-08-21 Propuesta Mario Pescarolo +pescarolo @aceites
