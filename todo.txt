@@ -1,12 +1,4 @@
-(A) 2019-08-14 Error en WsUtil 113 +cjpq @fe
-(B) Instalar FE +hpm @fe
 (B) Mostrar mensajes excepciones de log en UI +apracom @fe
-(C) 2019-02-20 Creación de proyecto parrot +cjpq @parrot
-(C) Agregar FE en SQL-Ledger 303 +cjpq @fe
-(C) Clasificar directorio fe/dir por año +apracom @fe
-(C) Comparar SL 303 vs SL 327 +cjpq @sql-ledger
-(C) Insertar production_warehouse_id al editar Defaults +cjpq @sql-ledger
-(C) Instalación de docker y configuración +cjpq @sql-ledger
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
 x 2019-01-04 2019-01-03 Configuración de internet CNT en Dell +apracom @sql-ledger
@@ -51,3 +43,6 @@ x 2019-03-12 2019-03-12 apprueba registros duplicados 01-29-2019 IESS 43233 637.
 x 2019-08-14 Abstraer fecola y obtener dataset pata enviar como parámetro +cjpq @sql-ledger
 x 2019-08-14 Verificar detallesAdicionales en XML fe cg +cjpq @fe
 x 2019-08-15 2019-08-15 Auditoría Juan Morla +catver fe
+x 2019-08-20 2019-08-14 Error en WsUtil 113 +cjpq @fe
+x 2019-08-20 2019-08-20 Credenciales de correo +cjpq @fe
+x 2019-08-20 2019-08-20 Unificar Util.java +cjpq @fe
