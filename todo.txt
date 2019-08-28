@@ -1,6 +1,6 @@
 (A) 2019-08-23 Agregar clases de autorización y recepción del SRI +cjpq @fe
-(A) Agregar columna unidad en la factura +cjpq @fe
-(B) Examen de emprendimiento +espol @tarea
+(A) 2019-08-27 Informe de examen 02 +espol @tarea
+(B) Agregar columna unidad en la factura +cjpq @fe
 (C) Mostrar mensajes excepciones de log en UI +apracom @fe
 x 2019-01-02 Entorno Fe para BC 19 +busicentury @fe
 x 2019-01-02 Importar plan de cuentas +apracom @sql-ledger
@@ -57,3 +57,5 @@ x 2019-08-22 2019-08-22 Sufijo aleatorio para la clave de acceso +cjpq @fe
 x 2019-08-23 2019-08-23 Usuario a gruiz y vania en apracomsa +apracom @fe
 x 2019-08-24 2019-08-25 Tarea de finanzas 2 +espol @tarea
 x 2019-08-25 2019-08-25 Tarea de emprendimiento +espol @tarea
+x 2019-08-26 Expo Examen de emprendimiento +espol @tarea
+x 2019-08-27 2019-08-27 Listado de BD y usuarios asignados por cada uno

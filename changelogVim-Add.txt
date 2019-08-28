@@ -1,4 +1,10 @@
 Vim
+	* Buscar un texto en el proyecto:
+		https://lostechies.com/derickbailey/2010/05/11/vim-grep-find-all-occurrences-of-text-in-your-project/
+		
+		:vimgrep /path_to_command/gj ./**/*.java
+		:cw
+
 	* Borrar un rango de líneas:
 		:19,29d
 
