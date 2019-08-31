@@ -5,14 +5,13 @@ TODO
 	https://bit.ly/2XOMOF4
 
 	* ASAP:
-		SRI 19 agosto
+		SRI 19 septiembre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
 		2019-08-13 Crear BD de atver2019 de 13:02
 
-		Mejor libro de Clojure
 		Llamar P Suarez materia integradora
 		Instalar ODOO en docker
 		Desarrollar aplicaciones con tecnología existente
@@ -21,6 +20,12 @@ TODO
 		SAP Espol
 		CEPROEM
 		Curso rápido de Python
+
+		+ Nim:
+			Benchmark multicore
+			Datos embebidos con SQLite (Offline para móviles)
+			Integración con Vue.js
+			Mejor framework para microservices (web para escritorio y móviles)
 
 		Terminar FE
 			x Generación de XML permisos
