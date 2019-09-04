@@ -10,7 +10,10 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		2019-08-13 Crear BD de atver2019 de 13:02
+		validarComprobante
+		EnvioComprobantesWs
+
+		EnvioComprobantesView.btnEnvioIndividualActionPerformed() 673
 
 		Llamar P Suarez materia integradora
 		Instalar ODOO en docker
