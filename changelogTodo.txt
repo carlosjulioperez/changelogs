@@ -27,6 +27,8 @@ TODO
 			Integración con Vue.js
 			Mejor framework para microservices (web para escritorio y móviles)
 
+			https://forum.nim-lang.org/t/4051
+
 		Terminar FE
 			x Generación de XML permisos
 			x Dirección correcta de WS
