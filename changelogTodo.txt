@@ -10,9 +10,11 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
+		OpenXava con ejemplos
+		Propuesta a Ingenio
+
 		validarComprobante
 		EnvioComprobantesWs
-
 		EnvioComprobantesView.btnEnvioIndividualActionPerformed() 673
 
 		Llamar P Suarez materia integradora
