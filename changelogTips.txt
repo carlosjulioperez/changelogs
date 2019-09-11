@@ -1,4 +1,10 @@
 TIPS
+	* Geany:
+		+ Cambiar color:
+			https://wiki.geany.org/themes/start
+			https://github.com/shosca/base16-gruvbox/tree/master/geany	
+			https://github.com/geany/geany-themes/
+
 	* Mostrar contenido de un archivo por su número o rango de líneas:
 		https://www.commandlinefu.com/commands/view/3802/to-print-a-specific-line-from-a-file
 

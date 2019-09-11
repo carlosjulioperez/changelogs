@@ -10,8 +10,18 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		OpenXava con ejemplos
-		Propuesta a Ingenio
+		x Problema de Gina
+		x 	Ver la impresión del cheque
+		
+		Terminar FE
+
+		Llamar a Pescarolo
+		Análisis de OpenXava
+		Flutter
+		Curso Scala
+		Nim in Action
+		Cursos de Arduino y Domótica
+		https://www.youtube.com/watch?v=SLZ5WfcB6mo
 
 		validarComprobante
 		EnvioComprobantesWs
