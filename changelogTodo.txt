@@ -5,10 +5,27 @@ TODO
 	https://bit.ly/2XOMOF4
 
 	* ASAP:
+		Probar OpenXava 6
+			Liferay
+			Hibernate Envers
+				https://www.openxava.org/doc/
+				https://www.openxava.org/OpenXavaDoc/docs/audit_es.html
+				https://www.openxava.org/OpenXavaDoc/docs/access-tracking_es.html
+				https://www.openxava.org/OpenXavaDoc/docs/access-tracking-old_es.html
+			XavaPro
+
+		Propuesta Nomina
+
 		SRI 19 septiembre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
+
+		+ Nómina:
+			https://www.squarenet.com.ec/modulono.html
+			https://rp3.com.ec/solucion/rp3-nomina/
+			https://www.grupotea.com.ec/wwwgrupoteacomec-c1oqa
+			http://www.elixir.ec/SoftwareContable/Modulos
 
 		x Problema de Gina
 		x 	Ver la impresión del cheque
