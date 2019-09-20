@@ -14,18 +14,19 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		
+		https://ezgantt.appspot.com/	
+		https://ezgantt.appspot.com/#1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA
+		https://docs.google.com/spreadsheets/d/1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA/edit#gid=0
 
-		Esquema de departamentos de la solución
-		Cronograma sugerido	
-		Evitar la duplicidad de información
-		Creación de formularios electrónicos
-		Determinar la trazabilidad
-		Consulta web de los reportes
-		Comparación de licencias
-		Eliminación de uso de antivirus
-		Instalación de equipos con GNU/Linux
-		Modelo scrum avances iterativos
+		x Cronograma sugerido	
+		x Evitar la duplicidad de información
+		x Creación de formularios electrónicos
+		x Determinar la trazabilidad
+		x Consulta web de los reportes
+		x Modelo scrum avances iterativos
+		x Comparación de licencias
+		x Eliminación de uso de antivirus
+		x Instalación de equipos con GNU/Linux
 
 		Beneficios de uso de software libre
 
