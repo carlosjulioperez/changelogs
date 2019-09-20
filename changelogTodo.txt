@@ -4,36 +4,41 @@ TODO
 	https://docs.google.com/spreadsheets/d/1LMp9bbZE_ugksRlkVP8mx6BQOS-iOoObGbkxuohSMKg/edit#gid=0
 	https://bit.ly/2XOMOF4
 
-	* ASAP:
-		Probar OpenXava 6
-			Liferay
-			Hibernate Envers
-				https://www.openxava.org/doc/
-				https://www.openxava.org/OpenXavaDoc/docs/audit_es.html
-				https://www.openxava.org/OpenXavaDoc/docs/access-tracking_es.html
-				https://www.openxava.org/OpenXavaDoc/docs/access-tracking-old_es.html
-			XavaPro
+	* Servicios:
+		https://www.revistalideres.ec/lideres/fugu-software-libre-llevo-mexico.html
 
-		Propuesta Nomina
+	* ASAP:
 
 		SRI 19 septiembre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
+		
+
+		Esquema de departamentos de la solución
+		Cronograma sugerido	
+		Evitar la duplicidad de información
+		Creación de formularios electrónicos
+		Determinar la trazabilidad
+		Consulta web de los reportes
+		Comparación de licencias
+		Eliminación de uso de antivirus
+		Instalación de equipos con GNU/Linux
+		Modelo scrum avances iterativos
+
+		Beneficios de uso de software libre
+
+
 		+ Nómina:
 			https://www.squarenet.com.ec/modulono.html
 			https://rp3.com.ec/solucion/rp3-nomina/
 			https://www.grupotea.com.ec/wwwgrupoteacomec-c1oqa
 			http://www.elixir.ec/SoftwareContable/Modulos
-
-		x Problema de Gina
-		x 	Ver la impresión del cheque
 		
 		Terminar FE
 
 		Llamar a Pescarolo
-		Análisis de OpenXava
 		Flutter
 		Curso Scala
 		Nim in Action
@@ -53,6 +58,15 @@ TODO
 		CEPROEM
 		Curso rápido de Python
 
+		Probar OpenXava 6
+			Liferay
+			Hibernate Envers
+				https://www.openxava.org/doc/
+				https://www.openxava.org/OpenXavaDoc/docs/audit_es.html
+				https://www.openxava.org/OpenXavaDoc/docs/access-tracking_es.html
+				https://www.openxava.org/OpenXavaDoc/docs/access-tracking-old_es.html
+			XavaPro
+		
 		+ Nim:
 			Benchmark multicore
 			Datos embebidos con SQLite (Offline para móviles)

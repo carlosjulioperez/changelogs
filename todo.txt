@@ -1,4 +1,7 @@
 (A) 2019-08-23 Agregar clases de autorización y recepción del SRI +cjpq @fe
+(A) Compra de garrapaticida
+(A) Demo de Fabrica con PostgreSQL en la nube
+(A) Propuesta en diapositiva
 (B) Agregar columna unidad en la factura +cjpq @fe
 (C) Impresión de Gina +hpm @sql-ledger
 (C) Mostrar mensajes excepciones de log en UI +apracom @fe
@@ -60,3 +63,6 @@ x 2019-08-25 2019-08-25 Tarea de emprendimiento +espol @tarea
 x 2019-08-26 Expo Examen de emprendimiento +espol @tarea
 x 2019-08-27 2019-08-27 Listado de BD y usuarios asignados por cada uno
 x 2019-09-09 Agregar usuarios vendedores de jbermudez +apracom @fe
+x 2019-09-19 Declaración SRI agosto
+x 2019-09-19 Incluir valor del mantenimiento mensual de Nomina en propuesta +apracom @nomina
+x 2019-09-19 Preguntas Ing Narváez de los tiempos
