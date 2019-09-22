@@ -18,19 +18,6 @@ TODO
 		https://ezgantt.appspot.com/#1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA
 		https://docs.google.com/spreadsheets/d/1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA/edit#gid=0
 
-		x Cronograma sugerido	
-		x Evitar la duplicidad de información
-		x Creación de formularios electrónicos
-		x Determinar la trazabilidad
-		x Consulta web de los reportes
-		x Modelo scrum avances iterativos
-		x Comparación de licencias
-		x Eliminación de uso de antivirus
-		x Instalación de equipos con GNU/Linux
-
-		Beneficios de uso de software libre
-
-
 		+ Nómina:
 			https://www.squarenet.com.ec/modulono.html
 			https://rp3.com.ec/solucion/rp3-nomina/
