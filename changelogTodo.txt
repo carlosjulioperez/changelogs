@@ -7,12 +7,22 @@ TODO
 	* Servicios:
 		https://www.revistalideres.ec/lideres/fugu-software-libre-llevo-mexico.html
 
+		Cyber Security, Seguridad de la Información (Deloitte)
+		https://www.virtualit.com.ec/ciberseguridad
+		https://www.andeanecuador.com.ec/content/dam/assets/dc/Documents/risk/Deloitte%202018%20Cyber%20Risk%20%20Information%20Security%20Study%20-%20Ecuador%20vF.pdf
+		Lisp -> Clojure
+		Smalltalk -> Pharo (Europa)
+
+		postgresql driver (de zk parrot)
+
 	* ASAP:
 
 		SRI 19 septiembre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
+
+		x Creación de panel Trello para Fabrica
 
 		https://ezgantt.appspot.com/	
 		https://ezgantt.appspot.com/#1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA
