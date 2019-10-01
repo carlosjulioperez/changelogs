@@ -23,7 +23,13 @@ TODO
 		El caballero de la armadura oxidada Robert Fischer
 
 		------
-		Tarea en curso: maven
+		Tarea en curso
+		Analizar maven vs generar war
+		Raspberry
+		Copia de cédula
+		
+		Consulta de libro en misión
+		
 	
 		Actualizar Trello
 		Descomponer el reporte de fábrica
