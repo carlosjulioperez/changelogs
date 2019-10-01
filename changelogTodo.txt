@@ -22,7 +22,21 @@ TODO
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
-		x Creación de panel Trello para Fabrica
+		------
+		Tarea en curso: maven
+	
+		Actualizar Trello
+		Descomponer el reporte de fábrica
+		Armar modelo de entidades (modelar con ClassVisualizer)
+
+		Generar la lista de Sprints (2 semanas)
+
+		Cobrar a OYMAR
+		Modificación del reporte
+		Probar FE
+
+
+		------	
 
 		https://ezgantt.appspot.com/	
 		https://ezgantt.appspot.com/#1kYfoEFXW-psZ8AMy0Ne7wRMiM3umNKBs3v9U7nvafXA
