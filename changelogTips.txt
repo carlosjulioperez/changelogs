@@ -1,4 +1,22 @@
 TIPS
+
+	* Eclipse:
+		[Desktop Entry]
+		Version=1.0
+		Name=Eclipse 2019.09 R
+		Comment=Eclipse
+		Exec=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/eclipse
+		Icon=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/icon.xpm
+		Terminal=false
+		Type=Application
+		Categories=Utility;Application;
+
+		Instalar vim vrapper
+		Instalar Darkest Dark Theme with DevStyle CI 2019.09.16
+			Editor theme: Darkest Dark -> IntelliJ Idea Dark
+
+		Windows, Preference, Install/Update, Available Software Site
+
 	* Geany:
 		+ Cambiar color:
 			https://wiki.geany.org/themes/start

@@ -17,19 +17,21 @@ TODO
 
 	* ASAP:
 
-		SRI 19 septiembre
+		SRI 19 octubre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
 
+		https://cnnespanol.cnn.com/2019/09/25/ee-uu-entregara-55-000-visas-en-su-loteria-de-visas-2021-asi-podrias-ganartela/
+
 		------
-		Tarea en curso
+		Tarea en curso: Agregar tareas de test
+		x Ejecutar java con classpath como fecola.sh
+		Configurar OX sin tomcat
+
 		Analizar maven vs generar war
 		Raspberry
 		Copia de cédula
-		
-		Consulta de libro en misión
-		
 	
 		Actualizar Trello
 		Descomponer el reporte de fábrica

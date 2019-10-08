@@ -4,10 +4,18 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave-browser terminator midori translate-shell geany flameshot xiphos gnome-pomodoro keepassx
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave terminator midori translate-shell geany flameshot gnome-pomodoro keepassx simplescreenrecorder mosh
+
 		wiresharkcp	
 
 		$ sudo eopkg -y install -c system.devel linux-current-headers
+
+	+ Driver Broadcom:
+		Actualizar el sistema
+		Instalar los 4 drivers de broadcom
+		$ sudo eopkg it -c system.devel -y
+		$ sudo eopkg it linux-current-headers -y
+		$ sudo eopkg it linux-lts-headers -y
 
 	+ Applet para estado de cpu, memoria, etc.:
 		budgie-sys-monitor-applet
@@ -15,6 +23,7 @@ Instalación:
 		$ sudo eopkg -y install vala libgtk-3-devel libpeas-devel budgie-desktop-devel libgtop-devel libgee-devel meson
 
 		Installing from source:
+		$ cd budgie-sys-monitor-applet/
 		$ meson build --prefix=/usr --buildtype=plain
 		$ ninja -C build
 		$ sudo ninja -C build install
@@ -53,8 +62,6 @@ Instalación:
 		$ sudo gpasswd -a $USER wireshark
 		$ sudo setcap cap_dac_override,cap_net_admin,cap_net_raw+eip /usr/bin/dumpcap
 
-		$ sudo eopkg install htop
-
 		$ sudo eopkg search epson
 		$ sudo eopkg install epson-inkjet-printer-escpr
 
@@ -83,5 +90,3 @@ Instalación:
 		https://asksolus.com/256/how-to-install-tor-browser-in-solus
 		cp /usr/share/applications/torbrowser.desktop ~/Escritorio/
 
-	* firebird-emu:
-		qt-creator	
