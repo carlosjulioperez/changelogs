@@ -584,6 +584,7 @@ TIPS
 		zip -r cjerpMac.zip cjerp/ -x "*.DS_Store"
 
 	* Borrar archivos recursivamente:
+		find . -name "*~" -type f -delete
 		find . -name "*.swp" -type f -delete
 		find . -name "*.bak" -type f -delete
 		find . -name "*DS_Store" -type f -delete

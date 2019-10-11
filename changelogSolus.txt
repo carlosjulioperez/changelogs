@@ -4,11 +4,14 @@ Instalación:
 		https://getsol.us/articles/package-management/basics/en/
 		https://averagelinuxuser.com/after-installing-solus/
 
-		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit brave terminator midori translate-shell geany flameshot gnome-pomodoro keepassx simplescreenrecorder mosh
+		$ sudo eopkg -y install vim filezilla nmap whois ack apache-maven apache-ant tlp git docker htop vlc gufw bleachbit terminator midori translate-shell geany flameshot  keepassx simplescreenrecorder mosh
 
-		wiresharkcp	
+		wiresharkcp	brave gnome-pomodoro
 
 		$ sudo eopkg -y install -c system.devel linux-current-headers
+
+	+ Virtualbox:
+		https://getsol.us/articles/software/virtualbox/en/
 
 	+ Driver Broadcom:
 		Actualizar el sistema
@@ -55,8 +58,9 @@ Instalación:
 
 		$ sudo eopkg install git
 		
-		git config --global user.name "Carlos Julio Pérez Quizhpe"
-		git config --global user.email "carlosjulioperez@gmail.com"
+		$ git config --global credential.helper store
+		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
+		$ git config --global user.email "carlosjulioperez@gmail.com"
 
 		$ sudo eopkg it wireshark
 		$ sudo gpasswd -a $USER wireshark
