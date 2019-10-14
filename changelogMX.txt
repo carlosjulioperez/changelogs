@@ -1,0 +1,12 @@
+MX Linux
+	+ Instalación:
+		sudo apt install vim wine32 playonlinux ack-grep filezilla qutebrowser
+		qutebrowser-qtwebengine qutebrowser-qtwebkit vim-gnome meld nmap
+		docker translate-shell keepassx simplescreenrecorder mosh postgresql
+		virtualbox
+
+		MX Instalar paquetes: flameshot
+
+	+ Administración de ventanas:
+		Gestor de ventanas / Windows manager
+		https://www.youtube.com/watch?v=s0rTIKM43ug
