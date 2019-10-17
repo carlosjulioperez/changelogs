@@ -3,10 +3,11 @@ MX Linux
 		sudo apt install vim wine32 playonlinux ack-grep filezilla
 		vim-gnome meld nmap docker translate-shell keepassx
 		simplescreenrecorder mosh postgresql virtualbox vlc maven ant
-		tree openjdk-8-jdk
+		ant-optional tree openjdk-8-jdk
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
 
 	+ Administración de ventanas:
 		Gestor de ventanas / Windows manager
 		https://www.youtube.com/watch?v=s0rTIKM43ug
+

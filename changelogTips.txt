@@ -1,5 +1,10 @@
 TIPS
 
+	* pdftotext:
+		https://www.howtogeek.com/228531/how-to-convert-a-pdf-file-to-editable-text-using-the-command-line-in-linux/
+
+	    sudo apt-get install poppler-utils
+
 	* Eclipse:
 		[Desktop Entry]
 		Version=1.0
