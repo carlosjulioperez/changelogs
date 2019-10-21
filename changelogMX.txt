@@ -1,9 +1,9 @@
 MX Linux
 	+ Instalación:
-		sudo apt install vim wine32 playonlinux ack-grep filezilla
-		vim-gnome meld nmap docker translate-shell keepassx
-		simplescreenrecorder mosh postgresql virtualbox vlc maven ant
-		ant-optional tree openjdk-8-jdk
+		sudo apt install vim wine32 playonlinux ack-grep filezilla vim-gnome
+		meld nmap docker translate-shell keepassx simplescreenrecorder mosh
+		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
+		terminator youtube-dl touchpad-indicator
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
 
