@@ -21,9 +21,9 @@ TODO
 		https://www.youtube.com/watch?v=ItA5sgNhK2s
 		
 		====================
-		x RV1865 revisada en iphone
-		iTunes
 		Fabrica
+			x Clases identificables groovy
+			x Determinar si los campos de los formularios son variables
 		x Tarea espol
 		Modem ASUS
 		
@@ -54,7 +54,6 @@ TODO
 		Cobrar a OYMAR
 		Modificación del reporte
 		Probar FE
-
 
 		------	
 
