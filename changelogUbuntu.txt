@@ -1,0 +1,4 @@
+Ubuntu
+	+ paquetes:
+		sudo apt install vim filezilla openjdk-8-jdk openjdk-8-jre-headless
+		ack gnome-shell-pomodoro vim-gnome tree terminator meld youtube-dl vlc
