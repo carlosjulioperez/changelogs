@@ -1,4 +1,7 @@
 TIPS
+	* convertir videos:
+		Con vlc opción mp4, tamaño óptimo.
+		ffmpeg -i my-video.mov -vcodec h264 -acodec mp2 my-video.mp4
 
 	* pdftotext:
 		https://www.howtogeek.com/228531/how-to-convert-a-pdf-file-to-editable-text-using-the-command-line-in-linux/

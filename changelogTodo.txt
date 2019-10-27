@@ -19,17 +19,17 @@ TODO
 
 		RVG Adventista con comentario de EGW
 		https://www.youtube.com/watch?v=ItA5sgNhK2s
-
-		Determinar la creación de la transacción 28192
-
+		
+		====================
 		Fabrica
-		x pago CNT
-		Pago hipotecario
-		Carta firmada
-		Proyecto
-		journal robert roberts
+			x Clases identificables groovy
+			x Determinar si los campos de los formularios son variables
+		x Tarea espol
+		Modem ASUS
+		
+		====================
 
-		SRI 19 octubre
+		SRI 19 noviembre
 		Devolución impuesto a la renta
 		Preparar estudios bíblicos escritos
 		El caballero de la armadura oxidada Robert Fischer
@@ -54,7 +54,6 @@ TODO
 		Cobrar a OYMAR
 		Modificación del reporte
 		Probar FE
-
 
 		------	
 
