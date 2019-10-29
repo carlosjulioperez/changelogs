@@ -22,9 +22,7 @@ TODO
 		
 		====================
 		Fabrica
-			x Clases identificables groovy
-			x Determinar si los campos de los formularios son variables
-		x Tarea espol
+			Validar nulos en propiedades calculadas
 		Modem ASUS
 		
 		====================
