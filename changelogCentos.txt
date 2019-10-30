@@ -334,6 +334,23 @@ Centos
 		$ createdb -O sql-ledger -T template1 hpm_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
+
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 ap_20191028t
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 ap_20191028n
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 ap_20191029m
+
+		13:01 28-10-2019.apracomsa.sql.bz3 t
+		00:01 29-10-2019.apracomsa-night.sql.bz2 n
+		08:01 29-10-2019.apracomsa-morning.sql.bz2 m
+				
+		psql ap_20191028t < /tmp/datos/28-10-2019.apracomsa.sql 
+		psql ap_20191028n < /tmp/datos/29-10-2019.apracomsa-night.sql
+		psql ap_20191029m < /tmp/datos/29-10-2019.apracomsa-morning.sql
+
+		$ time ./repostavgcost_ap_20191028t.sh > ap_20191028t.log 2>&1
+
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
+		
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 bc19test
