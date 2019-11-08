@@ -18,14 +18,11 @@ TODO
 	* ASAP:
 
 		Ingenio
-			campos
-			grabar
-
-		Revisar página web y hacer la propuesta
-		Modem
 		Tarea Simulación
-		Llamar BIESS
 		Terminar FE
+
+		Modem
+		Llamar BIESS
 		
 		====================
 		Fabrica
