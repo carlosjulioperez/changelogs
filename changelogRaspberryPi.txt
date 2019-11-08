@@ -1,4 +1,7 @@
 Configuración
+	* Paquetes:
+		sudo apt install terminator gnumeric vim-gnome ant mosh
+
 	* Desactivar inicio entorno gráfico:
 		http://ask.xmodulo.com/disable-desktop-gui-raspberry-pi.html
 
