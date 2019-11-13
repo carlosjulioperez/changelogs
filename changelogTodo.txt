@@ -26,7 +26,10 @@ TODO
 		
 		====================
 		Fabrica
-			Validar nulos en propiedades calculadas
+			Quitar lombok
+		Tarea de proyectos
+		Videos wordpress
+		Copiar mp3 a ipod
 		Modem ASUS
 		
 		====================
