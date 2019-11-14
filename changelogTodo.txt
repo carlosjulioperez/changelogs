@@ -17,17 +17,16 @@ TODO
 
 	* ASAP:
 
+		Router
+		Bajar video de Wordpress
+		Tesis
 		Ingenio
-		Tarea Simulación
-		Terminar FE
 
-		Modem
-		Llamar BIESS
+		Terminar FE
 		
 		====================
 		Fabrica
 			Quitar lombok
-		Tarea de proyectos
 		Videos wordpress
 		Copiar mp3 a ipod
 		Modem ASUS

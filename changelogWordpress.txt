@@ -1,4 +1,7 @@
 Crer base de datos en MySQL
+	* Tutorial:
+		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
+
 	* Catver:
 		https://www.debuntu.org/how-to-create-a-mysql-database-and-set-privileges-to-a-user/
 

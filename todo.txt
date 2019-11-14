@@ -1,5 +1,6 @@
-(A) 2019-08-23 Agregar clases de autorización y recepción del SRI +cjpq @fe
-(A) Demo de Fabrica con PostgreSQL en la nube
+(A) 2019-11-13 Configuración de dd-wrt para asus
+(A) Bajar video de wordpress
+(B) 2019-08-23 Agregar clases de autorización y recepción del SRI +cjpq @fe
 (B) Agregar columna unidad en la factura +cjpq @fe
 (C) Impresión de Gina +hpm @sql-ledger
 (C) Mostrar mensajes excepciones de log en UI +apracom @fe
@@ -65,3 +66,4 @@ x 2019-09-19 Declaración SRI agosto
 x 2019-09-19 Incluir valor del mantenimiento mensual de Nomina en propuesta +apracom @nomina
 x 2019-09-19 Preguntas Ing Narváez de los tiempos
 x 2019-09-19 Propuesta en diapositiva
+x 2019-11-13 Demo de Fabrica con PostgreSQL en la nube

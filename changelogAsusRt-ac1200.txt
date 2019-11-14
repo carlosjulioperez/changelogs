@@ -1,0 +1,16 @@
+Asus RT-AC1200
+	* Reset:
+		Mantener pulsado 15 segundos el botón reset.
+	
+	* dd-wrt:
+		https://www.asus.com/us/Networking/RT-AC1200/HelpDesk_BIOS/
+		https://wiki.dd-wrt.com/wiki/index.php/Supported_Devices#Asus
+		
+		https://forum.dd-wrt.com/phpBB2/viewtopic.php?t=287041
+		https://www.overclock.net/forum/18049-network-hardware/1621979-open-wrt-ddwrt-asus-rt-ac1200.html
+		https://forum.openwrt.org/t/asus-rt-ac1200/4755
+
+		Parece que no tiene soporte ninguno de los dos
+
+	* Video:
+		https://www.youtube.com/watch?v=rG3fVNT18Pc
