@@ -1,65 +1,69 @@
-Crer base de datos en MySQL
+Wordpress	
 	* Tutorial:
 		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
+	* CentOS 6:
+		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2
+		https://ivanblagojevic.com/2017/12/how-to-install-wordpress-on-centos-6-server/
 
-	* Catver:
-		https://www.debuntu.org/how-to-create-a-mysql-database-and-set-privileges-to-a-user/
+	* Ubuntu:
+		* Catver:
+			https://www.debuntu.org/how-to-create-a-mysql-database-and-set-privileges-to-a-user/
 
-		$ mysql -u root
-		mysql> create database wpcatverdb;
-		mysql> grant usage on *.* to wpuser@localhost identified by 'wpuser123';	
-		mysql> grant all privileges on wpcatverdb.* to wpuser@localhost;
-		\q
+			$ mysql -u root
+			mysql> create database wpcatverdb;
+			mysql> grant usage on *.* to wpuser@localhost identified by 'wpuser123';	
+			mysql> grant all privileges on wpcatverdb.* to wpuser@localhost;
+			\q
 
-		$ mysql -u wpuser -p wpcatverdb
-		o
-		$ mysql -u wpuser -p'wpuser123' wpcatverdb			
+			$ mysql -u wpuser -p wpcatverdb
+			o
+			$ mysql -u wpuser -p'wpuser123' wpcatverdb			
 
-		catver/esta es la clave de catver
+			catver/esta es la clave de catver
 
-		+ Crear un usuario admin:
-		mysql> CREATE USER 'carper'@'%' IDENTIFIED BY '2vale5';
-		mysql> GRANT ALL PRIVILEGES ON *.* TO 'carper'@'%' WITH GRANT OPTION;
-	
-	+ Habilitar el acceso remoto a la BD:
-		#sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
-		sudo vim /etc/mysql/my.cnf
+			+ Crear un usuario admin:
+			mysql> CREATE USER 'carper'@'%' IDENTIFIED BY '2vale5';
+			mysql> GRANT ALL PRIVILEGES ON *.* TO 'carper'@'%' WITH GRANT OPTION;
+		
+		+ Habilitar el acceso remoto a la BD:
+			#sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+			sudo vim /etc/mysql/my.cnf
 
-		Agregar:
-		bind-address = 0.0.0.0wikipedia wordpress
-			
-		sudo service mysql restart
-	
-	* MySQL 5.7:
-		+ Activar el usuario root:
-			https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
+			Agregar:
+			bind-address = 0.0.0.0wikipedia wordpress
+				
+			sudo service mysql restart
+		
+		* MySQL 5.7:
+			+ Activar el usuario root:
+				https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
 
-		+ Importar BD de seguridad:
-			echo "create database seguridad" | mysql -u root -p
-			mysql -u root -p seguridad < SEGURIDAD_IEJS2017\ 20170321\ 0910.sql
+			+ Importar BD de seguridad:
+				echo "create database seguridad" | mysql -u root -p
+				mysql -u root -p seguridad < SEGURIDAD_IEJS2017\ 20170321\ 0910.sql
 
-		+ Consola administración:
-			https://www.ubuntuupdates.org/package/core/yakkety/universe/base/mysql-workbench
+			+ Consola administración:
+				https://www.ubuntuupdates.org/package/core/yakkety/universe/base/mysql-workbench
 
-		+ queries:
+			+ queries:
 
-			mysql> show databases;
-			+--------------------+
-			| Database           |
-			+--------------------+
-			| information_schema |
-			| iejsa17            |
-			| mysql              |
-			| performance_schema |
-			| seguridad          |
-			| sys                |
-			+--------------------+
-			6 rows in set (0,00 sec)
+				mysql> show databases;
+				+--------------------+
+				| Database           |
+				+--------------------+
+				| information_schema |
+				| iejsa17            |
+				| mysql              |
+				| performance_schema |
+				| seguridad          |
+				| sys                |
+				+--------------------+
+				6 rows in set (0,00 sec)
 
-			mysql> use iejsa17;
+				mysql> use iejsa17;
 
-			mysql> describe fac_cabventa;
+				mysql> describe fac_cabventa;
 
 
-	* Instalación:
-		http://192.168.0.3/wordpress/wp-admin/install.php
+		* Instalación:
+			http://192.168.0.3/wordpress/wp-admin/install.php

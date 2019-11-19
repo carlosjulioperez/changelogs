@@ -1,6 +1,18 @@
-(A) 2019-11-13 Configuración de dd-wrt para asus
-(A) Bajar video de wordpress
-(B) 2019-08-23 Agregar clases de autorización y recepción del SRI +cjpq @fe
-(B) Agregar columna unidad en la factura +cjpq @fe
-(C) Impresión de Gina +hpm @sql-ledger
-(C) Mostrar mensajes excepciones de log en UI +apracom @fe
+2019-11-18 Máquina virtual CentOS con wordpress +ap
+2019-11-18 Bajar video de wordpress +ap
+Módulo preferencias +eneragro 
+Test de InicioZafra +eneragro 
+b Módulo Paros +eneragro
+r Módulo Blc +eneragro
+x 2019-11-18 2019-11-18 Módulo InicioZafra +eneragro
+x 2019-11-18 2019-11-18 Test de BrixDensidadWp +eneragro 
+Terminar tarea de project en excel +espol
+Tesis avance capítulo 2 +espol
+Tesis capítulo 1 +espol
+Agregar clases de autorización y recepción del SRI +hpm
+Cambios en OX 6.2.1 +nomina
+Módulo de empleados +nomina
+Módulo de rubros +nomina
+Agregar columna unidad en la factura +oymar
+x 2019-11-18 2019-11-18 Decaración octubre +sri
+Mostrar mensajes excepciones de log en UI +z @fe

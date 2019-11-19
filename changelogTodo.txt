@@ -17,11 +17,6 @@ TODO
 
 	* ASAP:
 
-		Router
-		Bajar video de Wordpress
-		Tesis
-		Ingenio
-
 		Terminar FE
 		
 		====================
