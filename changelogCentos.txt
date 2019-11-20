@@ -179,6 +179,9 @@ Centos
 	* eth0 not present:
 		https://www.youtube.com/watch?v=zGvlU3X4WT8
 
+	* Determinar IP:
+		$ ifconfig eth0 | grep inet | awk '{ print $2 }'
+
 	* Activar red:
 		http://www.vsysad.com/2015/12/configure-a-static-ip-address-in-rhel-6centos-6/
 		https://www.centos.org/forums/viewtopic.php?t=62062

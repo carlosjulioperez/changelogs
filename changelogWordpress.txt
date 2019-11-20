@@ -3,7 +3,71 @@ Wordpress
 		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
 	* CentOS 6:
 		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2
+		https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-6
+
 		https://ivanblagojevic.com/2017/12/how-to-install-wordpress-on-centos-6-server/
+
+		+ LAMP:
+			$ sudo yum install httpd
+			$ sudo service httpd start
+
+			$ sudo yum install mysql-server
+			$ sudo service mysqld start
+			$ sudo /usr/bin/mysql_secure_installation
+
+			$ sudo yum install php php-mysql
+			$ sudo yum install php-gd
+
+			$ sudo chkconfig httpd on
+			$ sudo chkconfig mysqld on
+
+			$ sudo vim /var/www/html/info.php
+				<?php
+				phpinfo();
+				?>
+			$ sudo service httpd restart
+
+		+ Wordpress Config:
+			$ mysql -u root -p
+
+			CREATE DATABASE wordpress;
+			CREATE USER wordpressuser@localhost;
+			SET PASSWORD FOR wordpressuser@localhost= PASSWORD("***");
+			GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@localhost IDENTIFIED BY '***';
+			FLUSH PRIVILEGES;
+			exit
+
+			$ sudo cp /opt/wordpress/wp-config-sample.php /opt/wordpress/wp-config.php
+			$ sudo vim /opt/wordpress/wp-config.php
+
+				// ** MySQL settings - You can get this info from your web host ** //
+				/** The name of the database for WordPress */
+				define('DB_NAME', 'wordpress');
+
+				/** MySQL database username */
+				define('DB_USER', 'wordpressuser');
+
+				/** MySQL database password */
+				define('DB_PASSWORD', '***');
+
+			$ sudo chown -R root: /opt/wordpress/
+			$ sudo cp -r /opt/wordpress/* /var/www/html
+
+			$ sudo service httpd restart
+
+		+ url:
+			192.168.253.254/wp-admin/install.php
+
+		+ Actualizar PHP:
+			Your server is running PHP version 5.3.3 but WordPress 5.3 requires at least 5.6.20.
+			https://fututel.com/es/blog/2488-actualizar-a-php-5-6-en-centos-6
+
+			$ rpm -qa | grep php
+			# wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm && rpm -Uvh epel-release-latest-6.noarch.rpm
+			# wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && rpm -Uvh remi-release-6*.rpm
+			# vim /etc/yum.repos.d/remi.repo
+
+			# yum -y update php
 
 	* Ubuntu:
 		* Catver:
