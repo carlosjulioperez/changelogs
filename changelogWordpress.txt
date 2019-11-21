@@ -60,14 +60,14 @@ Wordpress
 
 		+ Actualizar PHP:
 			Your server is running PHP version 5.3.3 but WordPress 5.3 requires at least 5.6.20.
-			https://fututel.com/es/blog/2488-actualizar-a-php-5-6-en-centos-6
-
 			$ rpm -qa | grep php
-			# wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm && rpm -Uvh epel-release-latest-6.noarch.rpm
-			# wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && rpm -Uvh remi-release-6*.rpm
-			# vim /etc/yum.repos.d/remi.repo
 
-			# yum -y update php
+			https://www.srbu.se/index.php?option=com_content&view=article&id=198:upgrade-php-to-v7-1-centos-6&catid=12&Itemid=121
+
+			# yum install epel-release
+			# rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+			# yum install yum-plugin-replace
+			# yum replace php-common --replace-with=php71w-common	
 
 	* Ubuntu:
 		* Catver:

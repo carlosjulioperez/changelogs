@@ -1,14 +1,17 @@
-2019-11-18 Máquina virtual CentOS con wordpress +ap
-2019-11-18 Bajar video de wordpress +ap
-Módulo preferencias +eneragro 
-Test de InicioZafra +eneragro 
+2019-11-20 Revisar video de wordpress para configurar sitio +ap
+2019-11-20 SL Catver solo de consulta +ap
+x 2019-11-20 2019-11-18 Bajar video de wordpress +ap
+x 2019-11-20 2019-11-19 Máquina virtual CentOS con wordpress +ap
+Grabar solo un registro en módulo Preferencias +eneragro
 b Módulo Paros +eneragro
 r Módulo Blc +eneragro
 x 2019-11-18 2019-11-18 Módulo InicioZafra +eneragro
 x 2019-11-18 2019-11-18 Test de BrixDensidadWp +eneragro 
-Terminar tarea de project en excel +espol
+x 2019-11-20 2019-11-20 Módulo Preferencias +eneragro 
+x 2019-11-20 2019-11-20 Terminar tarea de project en excel +espol
 Tesis avance capítulo 2 +espol
 Tesis capítulo 1 +espol
+x 2019-11-20 2019-11-20 Completar tareas project en excel +espol
 Agregar clases de autorización y recepción del SRI +hpm
 Cambios en OX 6.2.1 +nomina
 Módulo de empleados +nomina
