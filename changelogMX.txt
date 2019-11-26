@@ -4,9 +4,26 @@ MX Linux
 		meld nmap docker translate-shell keepassx simplescreenrecorder mosh
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
 		groovy terminator youtube-dl touchpad-indicator pdfjam evince
-		gnome-shell-pomodoro calibre
+		gnome-shell-pomodoro calibre planner
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
+	
+		* Docker:
+			https://mxlinux.org/wiki/applications/docker/
+
+			$ wget -O docker.gpg  https://download.docker.com/linux/debian/gpg 
+			$ gpg   --keyid-format 0xlong docker.gpg 2>/dev/null
+			$ gpg  --keyid-format 0xlong docker.gpg 2>/dev/null | grep -sq 0x8D81803C0EBFCD88 && sudo apt-key add docker.gpg
+
+			$ CODENAME=stretch
+			$ echo "deb [arch=amd64] https://download.docker.com/linux/debian $CODENAME  stable" | sudo tee /etc/apt/sources.list.d/docker.list
+			$ sudo apt update
+			$ sudo apt --simulate install docker-ce
+			$ sudo apt install docker-ce
+			
+			$ sudo usermod -a -G docker $USER
+
+			$ sudo apt install docker-compose
 
 	+ Administración de ventanas:
 		Gestor de ventanas / Windows manager

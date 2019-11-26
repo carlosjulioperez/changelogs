@@ -1,6 +1,7 @@
 Wordpress	
 	* Tutorial:
 		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
+
 	* CentOS 6:
 		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2
 		https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-6

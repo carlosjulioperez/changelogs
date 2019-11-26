@@ -3,6 +3,25 @@ Docker + Status:
 	* Docker:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
+		+ Wordpress:
+			https://neliosoftware.com/es/blog/como-usar-docker-para-desarrollar-en-wordpress/
+
+			$ docker-compose up -d
+			$ docker-compose stop
+
+			+ Para crear archivos:
+			Crear una carpeta
+			~/pagina/archivos
+			
+			... y dentro de ella crear el archivo de configuración:
+
+			docker-compose.yml:
+			    volumes:
+				      - ./:/var/www/html/wp-content/
+
+			Luego crear la carpeta uploads
+			$ sudo mkdir uploads
+			$ sudo chown -R www-data: uploads/
 
 		+ Ubuntu (desde OSX):
 			docker pull ubuntu

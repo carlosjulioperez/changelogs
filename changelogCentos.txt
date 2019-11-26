@@ -27,6 +27,11 @@ Centos
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
+	* Imprimir archivos en formato xml desde consola:
+		https://www.poftut.com/pretty-print-format-xml-command-line-linux/
+
+		$ sudo yum install libxml2-utils
+		$ tidy -xml -i data.xml
 
 	* Mosh:
 
@@ -42,10 +47,13 @@ Centos
 
 		+ Client:
 			$ mosh user@example.com --ssh="ssh -p 2222"
-			$ mosh carper@186.178.202.67 --ssh="ssh -p 2022"
+			$ mosh carper@186.178.202.67  --ssh="ssh -p 2022"
 			$ mosh carper@181.199.126.231 --ssh="ssh -p 2022"
 			$ mosh carper@157.100.248.133 --ssh="ssh -p 2022"
-			$ mosh carper@186.33.181.219 --ssh="ssh -p 2022"
+			$ mosh carper@186.33.181.219  --ssh="ssh -p 2022"
+		+ Matar procesos:
+			https://stackoverflow.com/questions/17857733/how-do-i-reattach-to-a-detached-mosh-session
+			$ kill `pidof mosh-server`
 
 	* Logs:
 		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown
@@ -67,8 +75,15 @@ Centos
 
 	* Monitorizar FE:
 		https://www.whatismyip.com/es/
-		$ sudo tail -f /usr/local/fe/logs/cjfews.log
-		$ sudo tail -f /opt/apache-tomcat-8.5.37/logs/catalina.2019-05-30.log
+		$ sudo less /usr/local/fe/logs/cjfews.log
+		$ sudo less /usr/local/fe/logs/cjfews.log.2019-11-23
+
+		$ sudo less /usr/local/fe/logs/feapracom.log
+		$ sudo less /usr/local/fe/logs/feapracom.log.2019-11-23
+
+		$ sudo less /opt/apache-tomcat-8.5.37/logs/catalina.2019-11-24.log
+
+		$ sudo tail -f 
 
 	* Cambiar la fecha y hora:
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
@@ -229,7 +244,7 @@ Centos
 
 		# service network restart
 		# yum -y install vim (resuelve la dependencia de perl)
-		# yum -y install lsof wget tree screen man man-pages graphviz
+		# yum -y install lsof wget tree screen man man-pages graphviz tidy
 
 	* selinux:
 		# sestatus
