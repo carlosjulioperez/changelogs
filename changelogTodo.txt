@@ -16,14 +16,10 @@ TODO
 		postgresql driver (de zk parrot)
 
 	* ASAP:
-
 		Terminar FE
-		
-		====================
 		Fabrica
-			Quitar lombok
-		Videos wordpress
-		Copiar mp3 a ipod
+		Wordpress:
+			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992
 		Modem ASUS
 		
 		====================

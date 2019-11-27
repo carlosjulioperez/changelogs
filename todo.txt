@@ -1,33 +1,33 @@
-2019-11-20 Revisar video de wordpress para configurar sitio +ap
-Agregar project al examen de plan y control +ap
-2019-11-25 Revisar retención AMRC Angélica Rodriguez +ap
-Agregar clases de autorización y recepción del SRI +hpm
-Agregar columna unidad en la factura +oymar
-Cambios en OX 6.2.1 +nomina
-Determinar error de Retenciones en log +ap
-Docker para router con dd-rwt +espol
-Grabar solo un registro en módulo Preferencias +eneragro
-Instalar FE en HPM +hpm
-Mostrar mensajes excepciones de log en UI +z @fe
-Módulo Blc +eneragro
-Módulo Paros +eneragro
-Módulo de empleados +nomina
-Módulo de rubros +nomina
-x 2019-11-18 2019-11-18 Decaración octubre +sri
-x 2019-11-18 2019-11-18 Módulo InicioZafra +eneragro
-x 2019-11-18 2019-11-18 Test de BrixDensidadWp +eneragro 
+Entorno CSS de Compact dry e pharm +ap
+Revisar retención AMRC Angélica Rodriguez +ap
 x 2019-11-20 2019-11-18 Bajar video de wordpress +ap
 x 2019-11-20 2019-11-19 Máquina virtual CentOS con wordpress +ap
-x 2019-11-20 2019-11-20 Completar tareas project en excel +espol
-x 2019-11-20 2019-11-20 Módulo Preferencias +eneragro 
 x 2019-11-20 2019-11-20 SL Catver solo de consulta +ap
-x 2019-11-20 2019-11-20 Terminar tarea de project en excel +espol
 x 2019-11-21 2019-11-21 Crear página de inicio Compact-Dry +ap
-x 2019-11-21 2019-11-21 Imprimir material de plan y control +espol
-x 2019-11-21 2019-11-21 Imprimir material de simulación +espol
 x 2019-11-21 2019-11-21 Instalar docker +ap
+x 2019-11-25 2019-11-25 Instalar Docker para Wordpress +ap
+x 2019-11-26 2019-11-20 Revisar video de wordpress para configurar sitio +ap
+Módulo Paros +eneragro
+Grabar solo un registro en módulo Preferencias +eneragro
+Módulo Blc +eneragro
+x 2019-11-18 2019-11-18 Módulo InicioZafra +eneragro
+x 2019-11-18 2019-11-18 Test de BrixDensidadWp +eneragro 
+x 2019-11-20 2019-11-20 Módulo Preferencias +eneragro 
 x 2019-11-21 2019-11-21 Módulo Area +eneragro
 x 2019-11-21 2019-11-21 Test Módulo Area +eneragro
+Agregar project al examen de plan y control +espol
+Docker para router con dd-rwt +espol
+x 2019-11-20 2019-11-20 Completar tareas project en excel +espol
+x 2019-11-20 2019-11-20 Terminar tarea de project en excel +espol
+x 2019-11-21 2019-11-21 Imprimir material de plan y control +espol
+x 2019-11-21 2019-11-21 Imprimir material de simulación +espol
 x 2019-11-22 2019-11-21 Tesis avance capítulo 2 +espol
 x 2019-11-22 2019-11-21 Tesis capítulo 1 +espol
-x 2019-11-25 2019-11-25 Instalar Docker para Wordpress +ap
+Agregar clases de autorización y recepción del SRI +hpm
+Instalar FE en HPM +hpm
+Cambios en OX 6.2.1 +nomina
+Módulo de empleados +nomina
+Módulo de rubros +nomina
+Agregar columna unidad en la factura +oymar
+x 2019-11-18 2019-11-18 Decaración octubre +sri
+Mostrar mensajes excepciones de log en UI +z @fe
