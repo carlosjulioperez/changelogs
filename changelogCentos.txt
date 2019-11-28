@@ -425,6 +425,7 @@ Centos
 		Para Debian
 		# chown -R www-data:www-data users/ css/ templates/ spool/ images/
 
+		$ sudo less /etc/httpd/conf.d/sql-ledger-httpd.conf
 		# vim /etc/httpd/conf.d/sql-ledger-httpd.conf
 
 			Alias /sql-ledger /SL/2.8.20/sql-ledger

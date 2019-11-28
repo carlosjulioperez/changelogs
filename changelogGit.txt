@@ -1,0 +1,14 @@
+Git
+	+ Clonar rama específica:
+		https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git
+		$ git clone -b <branch> <remote_repo>
+
+		$ git clone -b zk8 https://github.com/zkoss/zkessentials.git
+
+	+ Actualizar password git:
+		$ git config --global credential.helper store
+		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
+		$ git config --global user.email "carlosjulioperez@gmail.com"
+
+	+ Para Editar:
+		$ git config --global --edit

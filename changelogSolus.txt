@@ -57,10 +57,6 @@ Instalación:
 		https://www.stuartellis.name/articles/solus-setup/
 
 		$ sudo eopkg install git
-		
-		$ git config --global credential.helper store
-		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
-		$ git config --global user.email "carlosjulioperez@gmail.com"
 
 		$ sudo eopkg it wireshark
 		$ sudo gpasswd -a $USER wireshark

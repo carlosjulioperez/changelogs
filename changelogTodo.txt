@@ -17,7 +17,12 @@ TODO
 
 	* ASAP:
 		Terminar FE
-		Fabrica
+		Apracom:
+			No aparecía el usuario AMRC ahora sí.
+			Los datos de FE de AMRC están vacíos.
+		Ingenio:
+			Programar el botón Nuevo para que sólo almacene un registro (n<=1)
+
 		Wordpress:
 			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992
 		Modem ASUS
