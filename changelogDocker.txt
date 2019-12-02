@@ -5,8 +5,18 @@ Docker + Status:
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
 		+ Wordpress:
 			https://neliosoftware.com/es/blog/como-usar-docker-para-desarrollar-en-wordpress/
+			https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose
+			https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
+
+			https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42
 
 			$ docker-compose up -d
+			+ Acceder desde la terminal:
+				$ docker-compose exec wordpress sh
+
+				$ docker-compose exec mysql sh
+				$ mysql -u root -p
+
 			$ docker-compose stop
 
 			+ Para crear archivos:

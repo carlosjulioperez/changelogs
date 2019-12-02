@@ -16,6 +16,8 @@ TODO
 		postgresql driver (de zk parrot)
 
 	* ASAP:
+		LATAM confirmar el vuelo:
+
 		Terminar FE
 		Apracom:
 			No aparecía el usuario AMRC ahora sí.

@@ -92,10 +92,6 @@ TIPS
 	* Listar solamente directorios:
 		$ ls -d */
 
-	* pdftk:
-		$ sudo apt install pdftk
-		$ pdftk libro-finanzasross.pdf cat 300-370 output ross-cap10y11.pdf
-
 	* Buscar archivos y mostrar la fecha de modificación:
 		https://stackoverflow.com/questions/20893022/how-to-display-modified-date-time-with-find-command
 
@@ -282,6 +278,10 @@ TIPS
 	
 	* Cambiar la fecha de archivos recursivamente:
 		find local/razorsql/ -exec touch -t 201712141100 {} \;
+
+	* pdftk:
+		$ sudo apt install pdftk
+		$ pdftk libro-finanzasross.pdf cat 300-370 output ross-cap10y11.pdf
 
 	* Imprimir económicamente diapositivas PDF:
 		https://linux.die.net/man/1/pdfnup
@@ -486,6 +486,7 @@ TIPS
 
 	* Matar procesos:
 		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
+		kill `pidof mosh-server`
 	
 	* Maven:
 		mvn archetype:generate -DgroupId=ec.cjpq.springsecurity -DartifactId=springsecurity -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
