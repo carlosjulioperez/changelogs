@@ -1,4 +1,3 @@
-2019-12-02 Completar página de inicio +ap
 (A) Terminar cap 1 y cap 2 para enviar a Ing Maldonado +espol
 Agregar clases de autorización y recepción del SRI +hpm
 Agregar columna unidad en la factura +oymar
@@ -37,3 +36,4 @@ x 2019-11-29 2019-11-28 Hacer un resumen de simulación negocios para el examen 
 x 2019-11-29 2019-11-28 Proyecto de simulación negocios +espol
 x 2019-12-01 2019-11-30 Exportor e Import en Wordpress +ap
 x 2019-12-01 2019-12-01 Aplicar tema Guardian similar a eFarm +ap
+x 2019-12-02 2019-12-02 Completar página de inicio +ap

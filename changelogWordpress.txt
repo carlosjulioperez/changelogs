@@ -1,6 +1,8 @@
 Wordpress	
 	* Tutorial:
 		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
+	* FTP credentials:
+		$ sudo chown -R apache html/
 	
 	* Export import:
 		https://wpcrib.com/export-import-wordpress-website/
