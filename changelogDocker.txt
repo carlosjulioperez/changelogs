@@ -1,77 +1,84 @@
 Docker + Status:
 
-	* Docker:
+	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
-		+ Wordpress:
-			https://neliosoftware.com/es/blog/como-usar-docker-para-desarrollar-en-wordpress/
-			https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose
-			https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
 
-			https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42
+	+ Wordpress:
+		https://neliosoftware.com/es/blog/como-usar-docker-para-desarrollar-en-wordpress/
+		https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose
+		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-and-phpmyadmin-with-docker-compose-on-ubuntu-14-04
 
-			$ docker-compose up -d
-			+ Acceder desde la terminal:
-				$ docker-compose exec wordpress sh
+		https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42
 
-				$ docker-compose exec mysql sh
-				$ mysql -u root -p
+		$ docker-compose up -d
+		+ Acceder desde la terminal:
+			$ docker-compose exec wordpress sh
 
-			$ docker-compose stop
+			$ docker-compose exec mysql sh
+			$ mysql -u root -p
 
-			+ Para crear archivos:
-			Crear una carpeta
-			~/pagina/archivos
-			
-			... y dentro de ella crear el archivo de configuración:
+		$ docker-compose stop
 
-			docker-compose.yml:
-			    volumes:
-				      - ./:/var/www/html/wp-content/
+		+ Para crear archivos:
+		Crear una carpeta
+		~/pagina/archivos
+		
+		... y dentro de ella crear el archivo de configuración:
 
-			Luego crear la carpeta uploads
-			$ sudo mkdir uploads
-			$ sudo chown -R www-data: uploads/
+		docker-compose.yml:
+		    volumes:
+			      - ./:/var/www/html/wp-content/
 
-		+ Ubuntu (desde OSX):
-			docker pull ubuntu
-			$ docker run -t -i ubuntu /bin/bash
-			# apt update
-			# apt install openssh-server openssh-client
+		Luego crear la carpeta uploads
+		$ sudo mkdir uploads
+		$ sudo chown -R www-data: uploads/
 
-			$ docker ps -a
-			$ docker commit -m "ssh" -a "carper" 7ddf7d253e4e carper/ubuntu
-			$ docker images
-			$ docker inspect 27d75fd8a971 | grep Comment
+		+ Lista de volumenes:
+			$ docker volume ls
 
-			+ pdftk:
-			https://askubuntu.com/questions/1028522/how-can-i-install-pdftk-in-ubuntu-18-04-and-later
+	+ Ubuntu (desde OSX):
+		docker pull ubuntu
+		$ docker run -t -i ubuntu /bin/bash
+		# apt update
+		# apt install openssh-server openssh-client
 
-			# apt install git default-jdk-headless ant libcommons-lang3-java libbcprov-java
+		$ docker ps -a
+		$ docker commit -m "ssh" -a "carper" 7ddf7d253e4e carper/ubuntu
+		$ docker images
+		$ docker inspect 27d75fd8a971 | grep Comment
 
-		+ PHP:
-			$ docker pull linode/lamp
-			$ sudo docker run -p 80:80 -t -i linode/lamp /bin/bash
-			
-			service apache2 start
-			service mysql start
-			apt install vim
-			exit
+		+ pdftk:
+		https://askubuntu.com/questions/1028522/how-can-i-install-pdftk-in-ubuntu-18-04-and-later
 
-		+ General:
-			$ docker ps
-			$ docker commit -m "info.php" -a "carper" df520e63918b carper/lamp
-			$ docker images
-			$ sudo docker run -p 80:80 -t -i carper/lamp /bin/bash
-			
-			+ Para dejar en detach:
-			ctrl + p then ctrl + q. 
+		# apt install git default-jdk-headless ant libcommons-lang3-java libbcprov-java
 
-			https://stackoverflow.com/questions/19688314/how-do-you-attach-and-detach-from-dockers-process
-			$ docker attach 8065ea3ac497
-			ctrl + c (para restaurar)
+	+ PHP:
+		$ docker pull linode/lamp
+		$ sudo docker run -p 80:80 -t -i linode/lamp /bin/bash
+		
+		service apache2 start
+		service mysql start
+		apt install vim
+		exit
 
-			The website’s root directory is /var/www/example.com/public_html/.
+	+ General:
+		$ docker ps
+		$ docker commit -m "info.php" -a "carper" df520e63918b carper/lamp
+		$ docker images
+		$ sudo docker run -p 80:80 -t -i carper/lamp /bin/bash
+		
+		+ Para dejar en detach:
+		ctrl + p then ctrl + q. 
+
+		https://stackoverflow.com/questions/19688314/how-do-you-attach-and-detach-from-dockers-process
+		$ docker attach 8065ea3ac497
+		ctrl + c (para restaurar)
+
+		The website’s root directory is /var/www/example.com/public_html/.
+	
+	+ Borrar todos los volumenes:
+		$ docker volume prune
 
 	+ En PI:
 		$ ssh pi@192.168.253.133

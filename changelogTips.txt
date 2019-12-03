@@ -1,4 +1,7 @@
 TIPS
+	* translate-shell:
+		$ trans :es 'this is my word'
+
 	* convertir videos:
 		Con vlc opción mp4, tamaño óptimo.
 		ffmpeg -i my-video.mov -vcodec h264 -acodec mp2 my-video.mp4

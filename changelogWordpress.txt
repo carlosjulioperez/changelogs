@@ -1,12 +1,36 @@
 Wordpress	
 	* Tutorial:
 		https://www.udemy.com/course/wordpress-for-beginners-create-a-website-blog-step-by-step/
+	
 	* FTP credentials:
 		$ sudo chown -R apache html/
 	
 	* Export import:
+
 		https://wpcrib.com/export-import-wordpress-website/
 		https://wpcrib.com/how-to-backup-your-wordpress-site/
+		https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql
+
+		Revisar:
+		migrate wordpress site to docker-compose
+
+		+ wp-cli (en centos 6.10) :
+			https://dev.to/_shahroznawaz/how-to-migrate-wordpress-website-from-any-server-using-wp-cli-1ni2
+			https://wpshout.com/quick-guides/migrate-wordpress-wp-cli-rsync/
+
+			$ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar	
+			$ chmod +x wp-cli.phar
+			$ sudo mv wp-cli.phar /usr/local/bin/wp
+			$ cd /var/www/html/
+			$ wp core version --allow-root
+
+			$ sudo tar zcvf html.tar.gz /var/www/html/
+			$ mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry.sq
+
+			+ Importar:
+			$ mysql -u wordpressuser -p wordpress < compact-dry.sql
+
+			$ wp search-replace "http://192.168.253.254" "http://181.199.126.231"
 
 	* CentOS 6:
 		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2
@@ -39,7 +63,7 @@ Wordpress
 
 			CREATE DATABASE wordpress;
 			CREATE USER wordpressuser@localhost;
-			SET PASSWORD FOR wordpressuser@localhost= PASSWORD("***");
+			SET PASSWORD FOR wordpressuser@localhost= PASSWORD("***"); (laTipica)
 			GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@localhost IDENTIFIED BY '***';
 			FLUSH PRIVILEGES;
 			exit

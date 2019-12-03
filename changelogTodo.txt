@@ -1,5 +1,3 @@
-TODO
-
 	https://bitly.com/
 	https://docs.google.com/spreadsheets/d/1LMp9bbZE_ugksRlkVP8mx6BQOS-iOoObGbkxuohSMKg/edit#gid=0
 	https://bit.ly/2XOMOF4
@@ -16,14 +14,8 @@ TODO
 		postgresql driver (de zk parrot)
 
 	* ASAP:
-		LATAM confirmar el vuelo:
-
 		Terminar FE
-		Apracom:
-			No aparecía el usuario AMRC ahora sí.
-			Los datos de FE de AMRC están vacíos.
 		Ingenio:
-			Programar el botón Nuevo para que sólo almacene un registro (n<=1)
 
 		Wordpress:
 			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992

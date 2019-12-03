@@ -5,10 +5,10 @@ MX Linux
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
 		groovy terminator youtube-dl touchpad-indicator pdfjam evince
 		gnome-shell-pomodoro calibre planner pdfjam texlive-latex-recommended
-		libxml2-utils pdftk chromium
+		libxml2-utils pdftk chromium translate-shell
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
-	
+		
 		* Docker:
 			https://mxlinux.org/wiki/applications/docker/
 
