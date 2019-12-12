@@ -5,9 +5,17 @@ MX Linux
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
 		groovy terminator youtube-dl touchpad-indicator pdfjam evince
 		gnome-shell-pomodoro calibre planner pdfjam texlive-latex-recommended
-		libxml2-utils pdftk chromium translate-shell
+		libxml2-utils pdftk chromium translate-shell gnumeric
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
+
+		+ freeoffice remove:
+		https://askubuntu.com/questions/681966/how-to-uninstall-softmaker-freeoffice
+
+		$ dpkg --get-selections | grep softmaker
+		softmaker-freeoffice-2018
+		$ sudo dpkg -r "component name"
+		$ sudo dpkg -r softmaker-freeoffice-2018
 		
 		* Docker:
 			https://mxlinux.org/wiki/applications/docker/

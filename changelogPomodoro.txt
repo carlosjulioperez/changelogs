@@ -1,0 +1,10 @@
+Pomodoro
+	* cli:
+		https://github.com/kevinschoon/pomo
+		$ curl -L -s https://kevinschoon.github.io/pomo/install.sh | bash /dev/stdin
+		$ pomo init
+		$ pomo start -t my-project "write some codes"
+
+		$ pomo start -t Ingenio "Módulo paros"
+		
+

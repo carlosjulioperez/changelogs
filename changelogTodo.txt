@@ -20,6 +20,11 @@
 		Wordpress:
 			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992
 		Modem ASUS
+
+		CEO 
+			Requisitos de Google
+			Registrar página como canónicas
+			Google search CEO
 		
 		====================
 

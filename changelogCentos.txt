@@ -75,13 +75,13 @@ Centos
 
 	* Monitorizar FE:
 		https://www.whatismyip.com/es/
-		$ sudo less /usr/local/fe/logs/cjfews.log
-		$ sudo less /usr/local/fe/logs/cjfews.log.2019-11-23
+		$ sudo less -N /usr/local/fe/logs/cjfews.log
+		$ sudo less -N /usr/local/fe/logs/cjfews.log.2019-11-23
 
-		$ sudo less /usr/local/fe/logs/feapracom.log
-		$ sudo less /usr/local/fe/logs/feapracom.log.2019-11-23
+		$ sudo less -N /usr/local/fe/logs/feapracom.log
+		$ sudo less -N /usr/local/fe/logs/feapracom.log.2019-11-23
 
-		$ sudo less /opt/apache-tomcat-8.5.37/logs/catalina.2019-11-24.log
+		$ sudo less -N /opt/apache-tomcat-8.5.37/logs/catalina.2019-11-24.log
 
 		$ sudo tail -f 
 
@@ -629,12 +629,16 @@ Centos
 				# mkdir -p /usr/local/fe/logs
 				# mkdir -p /usr/local/fe/p12s
 
-				# chown -R tomcat9: /usr/local/fe
+				# chown -R tomcat8: /usr/local/fe
 				# chmod -R 777 /usr/local/fe/logs
 				# touch /tmp/salida.pdf
 				# chmod 777 /tmp/salida.pdf
 
-				$ sudo vim /opt/tomcat-latest/webapps/feapp/WEB-INF/classes/hibernate.properties
+				$ scp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar user2@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
+
+				+ feNuevo:
+					$ sudo vim /opt/tomcat-latest/webapps/feapp/WEB-INF/classes/hibernate.properties
+
 				$ sudo service tomcat8 restart
 
 			+ View jar file:
@@ -703,6 +707,9 @@ Centos
 			+ Modificar línea 555 y 568:
 			$ sudo vim /usr/local/SL/esquema_nuevo/sql-ledgerFE/bin/mozilla/arap.pl
 			$ sudo vim /opt/SL/sql-ledgerCJ/bin/mozilla/arap.pl
+			
+			+ Línea 870:
+			$ sudo vim /opt/SL/sql-ledgerCJ/bin/mozilla/is.pl
 
 		* Migración:
 			+ Respaldo:

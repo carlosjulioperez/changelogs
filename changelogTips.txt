@@ -1,4 +1,9 @@
 TIPS
+
+	* less con número de líneas:
+		https://stackoverflow.com/questions/831681/how-to-display-line-numbers-in-less-gnu
+		$ sudo less -N /opt/SL/sql-ledgerCJ/bin/mozilla/arap.pl
+
 	* translate-shell:
 		$ trans :es 'this is my word'
 
@@ -547,16 +552,17 @@ TIPS
 
 		+ Non recursive:
 			sed -i -- 's/foo/bar/g' *
+			sed -i -- 's/oymar/hpm/g' *
 			sed -i -- 's/Buider/Builder/g' *
 			sed -i -- 's/Odómotros/Odómetros/g' *.screen
 
-		+ Recursive:
+		+ Buscar reemplazar Recursive:
 			+ En linux:
 				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
 				find . -type f -exec sed -i 's/ec.cjpq.cmc.model/ec.cjpq.model.cmc/g' {} +
 				find . -type f -exec sed -i 's/busicentury/prueba/g' {} +
-				find . -type f -exec sed -i 's,secure,security,g' {} +
+				find . -type f -exec sed -i 's,oymar,hpm,g' {} +
 				find . -type f -exec sed -i 's,5432/prueba,5432/oymar,g' {} +
 				find . -type f -exec sed -i 's,5432/busicentury,5432/busicentury19,g' {} +
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
