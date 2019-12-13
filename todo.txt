@@ -1,4 +1,6 @@
 2019-12-07 Módulo Paros +eneragro
+2019-12-12 Crear avance de nómina +espol
+2019-12-12 Crear diapositiva para 5min pitch +espol
 Agregar clases de autorización y recepción del SRI +hpm
 Agregar columna unidad en la factura +oymar
 Cambios en OX 6.2.1 +nomina
@@ -10,39 +12,3 @@ Módulo de empleados +nomina
 Módulo de rubros +nomina
 Search console google visibilidad (buscador) +ap 
 Terminar cap 2 para enviar a Ing Maldonado +espol
-x 2019-11-18 2019-11-18 Decaración octubre +sri
-x 2019-11-18 2019-11-18 Módulo InicioZafra +eneragro
-x 2019-11-18 2019-11-18 Test de BrixDensidadWp +eneragro 
-x 2019-11-20 2019-11-18 Bajar video de wordpress +ap
-x 2019-11-20 2019-11-19 Máquina virtual CentOS con wordpress +ap
-x 2019-11-20 2019-11-20 Completar tareas project en excel +espol
-x 2019-11-20 2019-11-20 Módulo Preferencias +eneragro 
-x 2019-11-20 2019-11-20 SL Catver solo de consulta +ap
-x 2019-11-20 2019-11-20 Terminar tarea de project en excel +espol
-x 2019-11-21 2019-11-21 Crear página de inicio Compact-Dry +ap
-x 2019-11-21 2019-11-21 Imprimir material de plan y control +espol
-x 2019-11-21 2019-11-21 Imprimir material de simulación +espol
-x 2019-11-21 2019-11-21 Instalar docker +ap
-x 2019-11-21 2019-11-21 Módulo Area +eneragro
-x 2019-11-21 2019-11-21 Test Módulo Area +eneragro
-x 2019-11-22 2019-11-21 Tesis avance capítulo 2 +espol
-x 2019-11-22 2019-11-21 Tesis capítulo 1 +espol
-x 2019-11-25 2019-11-25 Instalar Docker para Wordpress +ap
-x 2019-11-26 2019-11-20 Revisar video de wordpress para configurar sitio +ap
-x 2019-11-27 2019-11-27 Revisar retención AMRC Angélica Rodriguez +ap
-x 2019-11-28 2019-11-28 Agregar project plan y control +espol
-x 2019-11-28 2019-11-28 Grabar solo un registro en módulo Preferencias +eneragro
-x 2019-11-28 2019-11-28 Listado proveedores apracom formato csv +espol
-x 2019-11-29 2019-11-28 Hacer un resumen de simulación negocios para el examen +espol
-x 2019-11-29 2019-11-28 Proyecto de simulación negocios +espol
-x 2019-12-01 2019-11-30 Exportor e Import en Wordpress +ap
-x 2019-12-01 2019-12-01 Aplicar tema Guardian similar a eFarm +ap
-x 2019-12-02 2019-12-02 Completar página de inicio +ap
-x 2019-12-05 2019-12-05 Proceso de repost +ap
-x 2019-12-06 2019-12-05 Terminar cap 1 para enviar a Ing Maldonado +espol
-x 2019-12-06 2019-12-06 Creación de usuario Laura García para auditoría +ap
-x 2019-12-09 2019-12-08 Comparar instalaciones FE en hpm y oymar +hpm
-x 2019-12-09 2019-12-08 Instalar FE en HPM +hpm
-x 2019-12-09 2019-12-09 Probar firma de oymar +hpm
-x 2019-12-09 2019-12-09 Pruebas de FE +hpm
-x 2019-12-11 2019-12-09 Ajustes en cap 1 borrador 1 +espol
