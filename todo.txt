@@ -1,14 +1,15 @@
+(A) Docker para router con dd-rwt +espol
 2019-12-07 Módulo Paros +eneragro
-2019-12-12 Crear avance de nómina +espol
-2019-12-12 Crear diapositiva para 5min pitch +espol
 Agregar clases de autorización y recepción del SRI +hpm
 Agregar columna unidad en la factura +oymar
 Cambios en OX 6.2.1 +nomina
 Devolución de impuesto a la renta +sri
-Docker para router con dd-rwt +espol
 Mostrar mensajes excepciones de log en UI +z @fe
 Módulo Blc +eneragro
 Módulo de empleados +nomina
 Módulo de rubros +nomina
 Search console google visibilidad (buscador) +ap 
 Terminar cap 2 para enviar a Ing Maldonado +espol
+x 2019-12-13 2019-12-13 Crear avance de nómina +espol
+x 2019-12-13 2019-12-13 Crear diapositiva para 5min pitch +espol
+x 2019-12-13 2019-12-13 Entregar cap1 borrador 3 +espol
