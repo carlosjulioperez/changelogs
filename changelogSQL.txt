@@ -144,6 +144,7 @@ SQL
 		pg_dump --data-only --table=address hpm > address.sql
 		pg_dump --data-only --table=parts atver2019 > atver2019_parts.sql
 		pg_dump --data-only --table=employee apracomsa > apracomsa_employee.sql
+		pg_dump --data-only --table=retenc oymar > oymar_retenc.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump

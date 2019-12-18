@@ -1,8 +1,8 @@
 (A) Docker para router con dd-rwt +espol
-2019-12-07 Módulo Paros +eneragro
+(A) Groovy parsing formules +nomina
+2019-12-16 Correo de dimaglia@hotmail.com +dimaglia
 Agregar clases de autorización y recepción del SRI +hpm
 Agregar columna unidad en la factura +oymar
-Cambios en OX 6.2.1 +nomina
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +z @fe
 Módulo Blc +eneragro
@@ -13,3 +13,11 @@ Terminar cap 2 para enviar a Ing Maldonado +espol
 x 2019-12-13 2019-12-13 Crear avance de nómina +espol
 x 2019-12-13 2019-12-13 Crear diapositiva para 5min pitch +espol
 x 2019-12-13 2019-12-13 Entregar cap1 borrador 3 +espol
+x 2019-12-13 Cambios en OX 6.2.1 +nomina
+x 2019-12-16 2019-12-16 Capítulo 2 Borrador 1 +espol
+x 2019-12-17 2019-12-07 Módulo Paros +eneragro
+x 2019-12-17 2019-12-16 Tarea plan y control +espol
+x 2019-12-17 2019-12-17 Agregar opciones a usuario vconforme +ap
+x 2019-12-17 2019-12-17 Pueba de retenciones renta 2% 344 +oymar
+x 2019-12-17 2019-12-17 Revisar retenciones el SL +oymar
+x 2019-12-18 2019-12-17 Agregar columna unidad en factura +oymar
