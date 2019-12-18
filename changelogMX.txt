@@ -5,7 +5,7 @@ MX Linux
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
 		groovy terminator youtube-dl touchpad-indicator pdfjam evince
 		gnome-shell-pomodoro calibre planner pdfjam texlive-latex-recommended
-		libxml2-utils pdftk chromium translate-shell gnumeric xchm
+		libxml2-utils pdftk chromium translate-shell gnumeric xchm simplescreenrecorder
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
 

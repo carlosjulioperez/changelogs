@@ -21,3 +21,5 @@ x 2019-12-17 2019-12-17 Agregar opciones a usuario vconforme +ap
 x 2019-12-17 2019-12-17 Pueba de retenciones renta 2% 344 +oymar
 x 2019-12-17 2019-12-17 Revisar retenciones el SL +oymar
 x 2019-12-18 2019-12-17 Agregar columna unidad en factura +oymar
+x 2019-12-18 2019-12-18 Integradora App primer avance +nomina
+x 2019-12-18 2019-12-18 Mødulo empleado +nomina
