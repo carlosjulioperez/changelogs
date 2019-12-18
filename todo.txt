@@ -1,4 +1,6 @@
 (A) Docker para router con dd-rwt +espol
+2019-12-18 Actualizar Nomina e Ingenio en raspberry pi +Nomina
+2019-12-18 Actualizar Ingenio en hpm +eneragro
 (A) Groovy parsing formules +nomina
 2019-12-16 Correo de dimaglia@hotmail.com +dimaglia
 Agregar clases de autorización y recepción del SRI +hpm
