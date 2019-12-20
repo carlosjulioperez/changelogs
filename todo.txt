@@ -1,8 +1,7 @@
 (A) Docker para router con dd-rwt +espol
-2019-12-18 Actualizar Nomina e Ingenio en raspberry pi +Nomina
-2019-12-18 Actualizar Ingenio en hpm +eneragro
 (A) Groovy parsing formules +nomina
 2019-12-16 Correo de dimaglia@hotmail.com +dimaglia
+Página de compact-dry +ap
 Agregar clases de autorización y recepción del SRI +hpm
 Agregar columna unidad en la factura +oymar
 Devolución de impuesto a la renta +sri
@@ -23,5 +22,7 @@ x 2019-12-17 2019-12-17 Agregar opciones a usuario vconforme +ap
 x 2019-12-17 2019-12-17 Pueba de retenciones renta 2% 344 +oymar
 x 2019-12-17 2019-12-17 Revisar retenciones el SL +oymar
 x 2019-12-18 2019-12-17 Agregar columna unidad en factura +oymar
+x 2019-12-18 2019-12-18 Actualizar Nomina e Ingenio en raspberry pi +Nomina
 x 2019-12-18 2019-12-18 Integradora App primer avance +nomina
 x 2019-12-18 2019-12-18 Mødulo empleado +nomina
+x 2019-12-19 2019-12-19 Actualizar Ingenio en hpm +eneragro
