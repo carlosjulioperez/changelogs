@@ -31,6 +31,23 @@ Wordpress
 			$ mysql -u wordpressuser -p wordpress < compact-dry.sql
 
 			$ wp search-replace "http://192.168.253.254" "http://181.199.126.231"
+			$ wp search-replace "http://192.168.253.254" "http://192.168.1.254"
+
+	* Configuración general:
+		$ sudo vim /etc/php.ini
+
+		max_execution_time = 300
+		memory_limit = 128M
+		post_max_size = 64M
+		upload_max_filesize = 64M
+
+	* efarm:
+		$ sudo vim /etc/php.ini
+
+		max_execution_time = 180
+		memory_limit = 128M
+		post_max_size = 32M
+		upload_max_filesize = 32M
 
 	* CentOS 6:
 		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2

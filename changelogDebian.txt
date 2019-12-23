@@ -117,6 +117,8 @@ Desarrollo
 		# ls -1 /etc/rc$(runlevel| cut -d" " -f2).d/S*
 		# service --status-all
 
+		https://confluence.jaytaala.com/display/TKB/chkconfig+alternative+for+debian+based+distros		
+
 	+ Docker:
 		https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
 	

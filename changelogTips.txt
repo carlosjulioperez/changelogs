@@ -1,4 +1,6 @@
 TIPS
+	* Listado de directorios y archivos:
+		$ tree -s -D -L 2
 
 	* less con número de líneas:
 		https://stackoverflow.com/questions/831681/how-to-display-line-numbers-in-less-gnu

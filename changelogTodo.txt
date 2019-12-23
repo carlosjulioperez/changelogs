@@ -22,7 +22,14 @@
 			2 obtener duración de dos dos horas
 
 		Wordpress:
+			Cambio de IP en máquina virtual
+
 			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992
+			Subir tema de efarm:
+			
+			+ The link you followed has expired:
+			https://wordpress.org/support/topic/the-link-you-followed-has-expired/
+
 		Modem ASUS
 
 		CEO 
