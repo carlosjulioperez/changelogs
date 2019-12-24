@@ -1,10 +1,8 @@
-(A) 2019-12-22 Configuración página web compact-dry +ap
 (A) Docker para router con dd-rwt +espol
 (A) Groovy parsing formules +nomina
-2019-12-16 Correo de dimaglia@hotmail.com +dimaglia
-2019-12-23 Tarea de Plan y Control +espol
 2019-12-24 Actualizar documento capítulo 2 +nomina
 Agregar clases de autorización y recepción del SRI +hpm
+Correo de dimaglia@hotmail.com +dimaglia
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +z @fe
 Módulo Blc +eneragro
@@ -29,3 +27,5 @@ x 2019-12-18 2019-12-18 Integradora App primer avance +nomina
 x 2019-12-18 2019-12-18 Mødulo empleado +nomina
 x 2019-12-19 2019-12-19 Actualizar Ingenio en hpm +eneragro
 x 2019-12-20 2019-12-20 Revisar el mensaje The link you followed has expired. +ap
+x 2019-12-23 2019-12-22 Configuración página web compact-dry +ap
+x 2019-12-23 2019-12-23 Tarea de Plan y Control +espol

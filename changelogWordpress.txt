@@ -49,6 +49,18 @@ Wordpress
 		post_max_size = 32M
 		upload_max_filesize = 32M
 
+		Instalar:
+			better font awesome
+
+		+ Desactivar breadcrumb:
+			/var/www/html/wp-content/themes/efarm/header.php:80
+			<!-- <?php get_template_part('breadcrumb'); ?> -->
+
+		+ Colores del menú:
+			https://www.w3schools.com/colors/colors_picker.asp
+			/var/www/html/wp-content/themes/efarm/css/theme.css:399
+			color: #80bb01;	> #3d4e84;
+
 	* CentOS 6:
 		https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2
 		https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-6

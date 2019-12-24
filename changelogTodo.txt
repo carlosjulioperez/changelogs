@@ -14,21 +14,28 @@
 		postgresql driver (de zk parrot)
 
 	* ASAP:
-		$ pomo start -t Ingenio "Duración de horas"
+		+ Wordpress:
+			x General
+			x Skin / Breadcrumbs
+			x Header3
+			x Footer
+			x Blog archive
+			x Site Identity
+			x HomePage settings
 
-		Terminar FE
-		Ingenio:
-			1 sumar los tiempos
-			2 obtener duración de dos dos horas
+			Slider plugin, 
+			Style.css, colores
 
-		Wordpress:
-			Cambio de IP en máquina virtual
+			Cambio de IP en máquina virtual (OK) wp command line
 
 			https://themeforest.net/item/efarm-a-multipurpose-food-wordpress-theme/20109992
 			Subir tema de efarm:
 			
 			+ The link you followed has expired:
 			https://wordpress.org/support/topic/the-link-you-followed-has-expired/
+		
+		+ Ingenio:
+			$ pomo start -t Ingenio "Duración de horas"
 
 		Modem ASUS
 
