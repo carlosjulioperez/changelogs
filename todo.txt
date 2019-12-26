@@ -1,13 +1,11 @@
 (A) Docker para router con dd-rwt +espol
 (A) Groovy parsing formules +nomina
-2019-12-24 Actualizar documento capítulo 2 +nomina
+2019-12-26 Página CONTACTOS y mapa de imágenes +ap
 Agregar clases de autorización y recepción del SRI +hpm
 Correo de dimaglia@hotmail.com +dimaglia
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +z @fe
 Módulo Blc +eneragro
-Módulo de empleados +nomina
-Módulo de rubros +nomina
 Search console google visibilidad (buscador) +ap 
 x 2019-12-13 2019-12-13 Crear avance de nómina +espol
 x 2019-12-13 2019-12-13 Crear diapositiva para 5min pitch +espol
@@ -29,3 +27,14 @@ x 2019-12-19 2019-12-19 Actualizar Ingenio en hpm +eneragro
 x 2019-12-20 2019-12-20 Revisar el mensaje The link you followed has expired. +ap
 x 2019-12-23 2019-12-22 Configuración página web compact-dry +ap
 x 2019-12-23 2019-12-23 Tarea de Plan y Control +espol
+x 2019-12-24 2019-12-24 Correo con avances de página web +ap
+x 2019-12-24 2019-12-24 Exportar tabla de provincias, cantones y parroquias +nomina
+x 2019-12-24 2019-12-24 Módulo de fórmulación +nomina
+x 2019-12-24 2019-12-24 Módulo de fórmulas +nomina
+x 2019-12-24 2019-12-24 Módulo de rubros +nomina
+x 2019-12-24 Módulo de empleados +nomina
+x 2019-12-24 Módulo de rubros +nomina
+x 2019-12-25 2019-12-24 Actualizar documento capítulo 3 segundo sprint +nomina
+x 2019-12-25 2019-12-25 Instalación de plantuml +espol
+x 2019-12-25 2019-12-25 Slider para home page +ap
+x 2019-12-26 2019-12-26 Galería de productos con enlace a páginas +ap

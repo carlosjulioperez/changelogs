@@ -1,4 +1,11 @@
 Vim
+	* Quitar blancos en columnas:
+		https://vi.stackexchange.com/questions/12680/how-to-delete-all-white-spaces-until-first-character
+		:'<,'>s,^\s*,,
+
+		En calc:
+		https://forum.openoffice.org/en/forum/viewtopic.php?f=9&t=82066
+		
 	* Buscar un texto en el proyecto:
 		https://lostechies.com/derickbailey/2010/05/11/vim-grep-find-all-occurrences-of-text-in-your-project/
 		

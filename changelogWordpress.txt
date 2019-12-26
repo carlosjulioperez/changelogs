@@ -25,13 +25,31 @@ Wordpress
 			$ wp core version --allow-root
 
 			$ sudo tar zcvf html.tar.gz /var/www/html/
-			$ mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry.sq
+			$ sudo su
+			# mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry.sql
 
 			+ Importar:
 			$ mysql -u wordpressuser -p wordpress < compact-dry.sql
 
 			$ wp search-replace "http://192.168.253.254" "http://181.199.126.231"
 			$ wp search-replace "http://192.168.253.254" "http://192.168.1.254"
+
+	* Plugin:
+		Gallery custom links
+		https://wordpress.org/plugins/gallery-custom-links/
+
+		Duplicate post
+		https://wordpress.org/plugins/duplicate-post/
+
+		+ Image maps:
+			ON mouse over:
+			https://twentyeleven.co.uk/2012/05/16/image-rollover-in-wordpress-no-plugins-required/
+			
+			https://css-tricks.com/the-many-ways-to-link-up-shapes-and-images-with-html-and-css/	
+			https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap
+
+			https://wordpress.org/plugins/image-point/
+
 
 	* Configuración general:
 		$ sudo vim /etc/php.ini
@@ -40,6 +58,9 @@ Wordpress
 		memory_limit = 128M
 		post_max_size = 64M
 		upload_max_filesize = 64M
+
+	* revslider:
+		https://www.youtube.com/watch?v=4BqCxxHnC8U
 
 	* efarm:
 		$ sudo vim /etc/php.ini
