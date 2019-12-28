@@ -24,15 +24,30 @@ Wordpress
 			$ cd /var/www/html/
 			$ wp core version --allow-root
 
-			$ sudo tar zcvf html.tar.gz /var/www/html/
+			$ sudo tar zcvf html-20191227.tar.gz /var/www/html/
 			$ sudo su
-			# mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry.sql
+			# mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry-20191227.sql
 
 			+ Importar:
-			$ mysql -u wordpressuser -p wordpress < compact-dry.sql
+			# mysql -u root -p
+
+			mysql> show databases;
+			+--------------------+
+			| Database           |
+			+--------------------+
+			| information_schema |
+			| mysql              |
+			| wordpress          |
+			+--------------------+
+			3 rows in set (0.00 sec)
+			mysql> drop database wordpress;
+			mysql> \q
+
+			$ mysql -u wordpressuser -p wordpress < compact-dry-20191227.sql
 
 			$ wp search-replace "http://192.168.253.254" "http://181.199.126.231"
 			$ wp search-replace "http://192.168.253.254" "http://192.168.1.254"
+			$ wp search-replace "http://192.168.1.254"   "http://181.199.126.231"
 
 	* Plugin:
 		Gallery custom links
@@ -42,6 +57,8 @@ Wordpress
 		https://wordpress.org/plugins/duplicate-post/
 
 		+ Image maps:
+			http://www.outsharked.com/imagemapster/default.aspx?demos.html
+
 			ON mouse over:
 			https://twentyeleven.co.uk/2012/05/16/image-rollover-in-wordpress-no-plugins-required/
 			

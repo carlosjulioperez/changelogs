@@ -1,10 +1,9 @@
 (A) Docker para router con dd-rwt +espol
 (A) Groovy parsing formules +nomina
-2019-12-26 Página CONTACTOS y mapa de imágenes +ap
 Agregar clases de autorización y recepción del SRI +hpm
 Correo de dimaglia@hotmail.com +dimaglia
 Devolución de impuesto a la renta +sri
-Mostrar mensajes excepciones de log en UI +z @fe
+Mostrar mensajes excepciones de log en UI +fe
 Módulo Blc +eneragro
 Search console google visibilidad (buscador) +ap 
 x 2019-12-13 2019-12-13 Crear avance de nómina +espol
@@ -38,3 +37,6 @@ x 2019-12-25 2019-12-24 Actualizar documento capítulo 3 segundo sprint +nomina
 x 2019-12-25 2019-12-25 Instalación de plantuml +espol
 x 2019-12-25 2019-12-25 Slider para home page +ap
 x 2019-12-26 2019-12-26 Galería de productos con enlace a páginas +ap
+x 2019-12-27 2019-12-26 Página CONTACTOS demo +ap
+x 2019-12-27 2019-12-27 Descargar Razor SQL +tools
+x 2019-12-27 2019-12-27 Reporte de clientes con ventas en 2019 +ap
