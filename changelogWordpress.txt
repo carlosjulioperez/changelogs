@@ -24,9 +24,9 @@ Wordpress
 			$ cd /var/www/html/
 			$ wp core version --allow-root
 
-			$ sudo tar zcvf html-20191227.tar.gz /var/www/html/
+			$ sudo tar zcvf html-20191229.tar.gz html/
 			$ sudo su
-			# mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry-20191227.sql
+			# mysqldump --add-drop-table -h localhost -u wordpressuser -p wordpress > compact-dry-20191229.sql
 
 			+ Importar:
 			# mysql -u root -p
@@ -43,7 +43,7 @@ Wordpress
 			mysql> drop database wordpress;
 			mysql> \q
 
-			$ mysql -u wordpressuser -p wordpress < compact-dry-20191227.sql
+			$ mysql -u wordpressuser -p wordpress < /home/carper/wp/20191229/compact-dry-20191229.sql
 
 			$ wp search-replace "http://192.168.253.254" "http://181.199.126.231"
 			$ wp search-replace "http://192.168.253.254" "http://192.168.1.254"

@@ -41,3 +41,4 @@ x 2019-12-27 2019-12-27 Descargar Razor SQL +tools
 x 2019-12-27 2019-12-27 Reporte de clientes con ventas en 2019 +ap
 x 2019-12-29 2019-12-28 Optimizar slider de imágenes +ap
 x 2019-12-29 2019-12-28 Página CONTACTOS demo +ap
+x 2019-12-29 2019-12-29 Actualizar página CompactDry en la nube hpm +ap
