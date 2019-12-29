@@ -56,6 +56,9 @@ Wordpress
 		Duplicate post
 		https://wordpress.org/plugins/duplicate-post/
 
+		Image Hotspots
+		https://wordpress.org/plugins/devvn-image-hotspot/	
+
 		+ Image maps:
 			http://www.outsharked.com/imagemapster/default.aspx?demos.html
 

@@ -64,12 +64,7 @@
 	
 		Actualizar Trello
 		Descomponer el reporte de fábrica
-		Armar modelo de entidades (modelar con ClassVisualizer)
 
-		Generar la lista de Sprints (2 semanas)
-
-		Cobrar a OYMAR
-		Modificación del reporte
 		Probar FE
 
 		------	

@@ -37,6 +37,7 @@ x 2019-12-25 2019-12-24 Actualizar documento capítulo 3 segundo sprint +nomina
 x 2019-12-25 2019-12-25 Instalación de plantuml +espol
 x 2019-12-25 2019-12-25 Slider para home page +ap
 x 2019-12-26 2019-12-26 Galería de productos con enlace a páginas +ap
-x 2019-12-27 2019-12-26 Página CONTACTOS demo +ap
 x 2019-12-27 2019-12-27 Descargar Razor SQL +tools
 x 2019-12-27 2019-12-27 Reporte de clientes con ventas en 2019 +ap
+x 2019-12-29 2019-12-28 Optimizar slider de imágenes +ap
+x 2019-12-29 2019-12-28 Página CONTACTOS demo +ap
