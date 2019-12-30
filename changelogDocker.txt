@@ -3,6 +3,63 @@ Docker + Status:
 	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
+	+ openwrt:
+
+		$ docker pull xdrum/openwrt
+		$ docker run -i -t xdrum/openwrt /bin/ash
+		$ passwd
+		$ opkg update
+		$ dropbear restart
+
+		====================================================================================================
+
+		https://openwrt.org/docs/guide-user/virtualization/docker_openwrt_image
+
+		$ docker import http://downloads.openwrt.org/attitude_adjustment/12.09/x86/generic/openwrt-x86-generic-rootfs.tar.gz openwrt-x86-generic-rootfs
+		$ docker images
+		REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+		openwrt-x86-generic-rootfs   latest              fca0dc34cdab        48 seconds ago      5.28MB
+
+		$ docker run -i openwrt-x86-generic-rootfs cat /etc/banner
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ ATTITUDE ADJUSTMENT (12.09, r36088)
+ -----------------------------------------------------
+  * 1/4 oz Vodka      Pour all ingredients into mixing
+  * 1/4 oz Gin        tin with ice, strain into glass.
+  * 1/4 oz Amaretto
+  * 1/4 oz Triple sec
+  * 1/4 oz Peach schnapps
+  * 1/4 oz Sour mix
+  * 1 splash Cranberry juice
+ -----------------------------------------------------
+
+		$ docker run -i openwrt-x86-generic-rootfs ifconfig
+		$ docker run -i -t openwrt-x86-generic-rootfs /bin/ash
+
+		/ # mkdir -p /var/lock
+		/ # opkg update
+		/ # passwd
+		/ # ps
+		  PID USER       VSZ STAT COMMAND
+			1 root      1260 S    /bin/ash
+		   13 root      1260 R    ps
+
+		/ # /etc/init.d/dropbear restart
+		/ # ps
+		  PID USER       VSZ STAT COMMAND
+			1 root      1264 S    /bin/ash
+		   36 root       972 S    /usr/sbin/dropbear -P /var/run/dropbear.1.pid -p 22
+		   37 root      1260 R    ps
+		/ # 
+
+		En otra consola:
+		$ ssh root@172.17.0.2
+		# opkg install lighttpd
 
 	+ Wordpress:
 		https://neliosoftware.com/es/blog/como-usar-docker-para-desarrollar-en-wordpress/
@@ -36,6 +93,9 @@ Docker + Status:
 
 		+ Lista de volumenes:
 			$ docker volume ls
+
+		+ Vía 2:
+			https://akrabat.com/developing-wordpress-sites-with-docker/
 
 	+ Ubuntu (desde OSX):
 		docker pull ubuntu
@@ -79,6 +139,14 @@ Docker + Status:
 	
 	+ Borrar todos los volumenes:
 		$ docker volume prune
+		$ docker system prune --volumes
+
+		https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+		$ docker container stop $(docker container ls -aq)
+		$ docker container rm $(docker container ls -aq)
+		$ docker images
+		$ docker rmi contenedor
 
 	+ En PI:
 		$ ssh pi@192.168.253.133

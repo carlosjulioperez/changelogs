@@ -14,8 +14,50 @@
 		postgresql driver (de zk parrot)
 
 	* ASAP:
+		+ openwrt:
+			+ lua web app on openwrt:
+
+			+ openwrt docker image:
+				Last modified: 2019/11/07 21:14 by tmomas
+				https://openwrt.org/docs/guide-user/virtualization/docker_openwrt_image
+				
+				https://github.com/openwrt/docker
+
+			+ nodejs:
+				https://pages.corifeus.com/github/openwrt-insomnia
+
+
+			+ webapps:
+				https://forum.openwrt.org/t/hosting-web-applications-on-openwrt/46468
+				https://openwrt.org/docs/guide-user/services/webserver/install_wordpress
+
+			+ LuCI:
+				https://openwrt.org/docs/techref/luci
+				https://medium.com/openwrt-iot/openwrt-adding-a-web-interface-4bcdf1279a6f
+
+			+ Java:
+				https://stackoverflow.com/questions/2856843/java-on-openwrt-dd-wrt
+
+			+ Go:
+
+			+ Nim:
+			
+			+ raspberry_pi:
+				http://www.makikiweb.com/Pi/lxc_openwrt.html
+				https://www.brianlinkletter.com/vrnetlab-emulate-networks-using-kvm-and-docker/
+
+				raspberry pi proxy openwrt
+				https://raspberrytips.com/raspberry-pi-firewall/
+				https://oldwiki.archive.openwrt.org/toh/raspberry_pi_foundation/raspberry_pi
+				http://saisa.eu/blogs/Guidance/?p=2015
+
+	
 		+ Wordpress:
-			x General
+			CEO 
+				Requisitos de Google
+				Registrar página como canónicas
+				Google search CEO
+			
 			x Skin / Breadcrumbs
 			x Header3
 			x Footer
@@ -37,13 +79,6 @@
 		+ Ingenio:
 			$ pomo start -t Ingenio "Duración de horas"
 
-		Modem ASUS
-
-		CEO 
-			Requisitos de Google
-			Registrar página como canónicas
-			Google search CEO
-		
 		====================
 
 		SRI 19 noviembre

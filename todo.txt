@@ -1,4 +1,4 @@
-(A) Docker para router con dd-rwt +espol
+(A) 2019-12-29 Docker para router con dd-rwt +espol
 (A) Groovy parsing formules +nomina
 Agregar clases de autorización y recepción del SRI +hpm
 Correo de dimaglia@hotmail.com +dimaglia
