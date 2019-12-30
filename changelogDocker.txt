@@ -4,6 +4,12 @@ Docker + Status:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
 	+ openwrt:
+		https://pages.corifeus.com/github/openwrt-insomnia/docs/docker-commands.html
+
+		$ docker pull patrikx3/openwrt-insomnia	
+		$ docker run -i -t patrikx3/openwrt-insomnia /bin/bash
+
+		====================================================================================================
 
 		$ docker pull xdrum/openwrt
 		$ docker run -i -t xdrum/openwrt /bin/ash

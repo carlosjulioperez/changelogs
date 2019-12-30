@@ -15,7 +15,10 @@
 
 	* ASAP:
 		+ openwrt:
-			+ lua web app on openwrt:
+
+			+ nodejs:
+				https://openwrt.org/packages/pkgdata/node
+				https://pages.corifeus.com/github/openwrt-insomnia
 
 			+ openwrt docker image:
 				Last modified: 2019/11/07 21:14 by tmomas
@@ -23,9 +26,8 @@
 				
 				https://github.com/openwrt/docker
 
-			+ nodejs:
-				https://pages.corifeus.com/github/openwrt-insomnia
-
+			+ wordpress:
+				https://snippets.khromov.se/installing-wordpress-on-a-tiny-wireless-router/
 
 			+ webapps:
 				https://forum.openwrt.org/t/hosting-web-applications-on-openwrt/46468
@@ -37,10 +39,6 @@
 
 			+ Java:
 				https://stackoverflow.com/questions/2856843/java-on-openwrt-dd-wrt
-
-			+ Go:
-
-			+ Nim:
 			
 			+ raspberry_pi:
 				http://www.makikiweb.com/Pi/lxc_openwrt.html
@@ -50,9 +48,32 @@
 				https://raspberrytips.com/raspberry-pi-firewall/
 				https://oldwiki.archive.openwrt.org/toh/raspberry_pi_foundation/raspberry_pi
 				http://saisa.eu/blogs/Guidance/?p=2015
-
 	
 		+ Wordpress:
+			2019-12-30:
+			Unificar INICIO con HOME
+			INICIO dos columnas 1:col actual, 2col accesos directos
+			Quitar INICIO
+			Tipografía CompactDry de Janina Cabrera
+			galería con imágenes más pequeñas
+			Contrastar fondo de ícono de mapa
+			Animación de íconos de mapa [Sin la base]
+			Resaltar área en hover
+			Dos en centro américa para abarcar todos
+			Agregar formulario de contactos a ventas@compact-dry.com
+			Lo sentimos su mensaje no se ha enviado por favor comuníquese con
+			nosotros a ventas@compact-dry.com
+			Noticias: Mostrar el blog como galería con la imagen y el título
+			de la noticia
+			Subir logo de CD en acerca de y poner los títulos en medium
+			Optimizar el peso de las imágenes 
+			Photoshop guardar para web
+			Galería separarlos 
+			Hover en imágenes con título y un breve resumen de cada placa lorem impsum
+			
+			CompactDry EC
+			Placa cromogénica para detección de ...
+
 			CEO 
 				Requisitos de Google
 				Registrar página como canónicas
