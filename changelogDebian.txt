@@ -175,6 +175,11 @@ Desarrollo
 		$ sudo su
 		# source /etc/profile.d/groovy.sh
 
+		https://stackoverflow.com/questions/44455220/java-home-is-not-defined-correctly-in-groovy
+		$ cd /usr/lib/jvm
+		$ sudo ln -s java-8-openjdk-amd64/ default-java 
+		$ groovy --version
+
 	+ Virtualbox:
 	https://wiki.debian.org/VirtualBox
 	$ sudo apt install linux-headers-amd64 linux-headers-4.9.0-6-amd64

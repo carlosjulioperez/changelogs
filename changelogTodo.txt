@@ -14,6 +14,7 @@
 		postgresql driver (de zk parrot)
 
 	* Groovy:
+		/home/carper/local/project/workspace/OpenXava/lib/hsqldb.jar
 		https://dzone.com/articles/loops-performance-in-groovy
 		https://stackoverflow.com/questions/2621180/groovy-load-csv-files
 
