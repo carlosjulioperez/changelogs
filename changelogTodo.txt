@@ -13,6 +13,13 @@
 
 		postgresql driver (de zk parrot)
 
+	* Groovy:
+		https://dzone.com/articles/loops-performance-in-groovy
+		https://stackoverflow.com/questions/2621180/groovy-load-csv-files
+
+		http://groovy-lang.org/databases.html
+		https://www.lovholm.net/2017/06/load-database-from-csv-with-columns-and-tables-read-from-file/
+
 	* ASAP:
 		+ openwrt:
 
@@ -408,9 +415,6 @@
 	* JDBC Performance:
 		Persisting fast in database: JDBC
 		https://medium.com/@jerolba/persisting-fast-in-database-jdbc-76912ec2ef42
-
-	* Groovy:
-		https://dzone.com/articles/loops-performance-in-groovy
 
 	* Casa perro:
 		https://www.diyattempt.com/2014/02/country-dog-house-with-porch.html?m=1

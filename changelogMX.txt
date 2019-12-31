@@ -9,6 +9,9 @@ MX Linux
 		simplescreenrecorder graphviz
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
+		
+		+ Accesos directos de programas:
+			.local/share/applications/
 
 		+ freeoffice remove:
 		https://askubuntu.com/questions/681966/how-to-uninstall-softmaker-freeoffice

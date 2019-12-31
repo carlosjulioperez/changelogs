@@ -62,6 +62,9 @@ TIPS
 		Ingresar el código hexadecimal del caracter deseado
 	
 	* Descomprimir varios archivos:
+		https://chrisjean.com/unzip-multiple-files-from-linux-command-line/
+		$ unzip '*.zip'
+
 		https://guyfromit.blogspot.com/2014/02/linux-unzip-z01-z02-files-extract.html
 		zip -F coolapp.zip --output newarchive.zip
 
@@ -285,6 +288,9 @@ TIPS
 
 	* Comparar bases de datos:
 		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql
+	
+	* Razorsql ruta:
+		/home/carper/.razorsql/hsqldb/hsqldb2.2.jar
 	
 	* Cambiar la fecha de archivos recursivamente:
 		find local/razorsql/ -exec touch -t 201712141100 {} \;
