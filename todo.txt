@@ -1,5 +1,4 @@
 (A) 2019-12-29 Docker para router con dd-rwt +espol
-(A) 2019-12-31 Importar csv para JDBC en Groovy +eneragro
 (A) Groovy parsing formules +nomina
 Agregar clases de autorización y recepción del SRI +hpm
 Correo de dimaglia@hotmail.com +dimaglia
@@ -44,3 +43,4 @@ x 2019-12-29 2019-12-28 Optimizar slider de imágenes +ap
 x 2019-12-29 2019-12-28 Página CONTACTOS demo +ap
 x 2019-12-29 2019-12-29 Actualizar página CompactDry en la nube hpm +ap
 x 2019-12-30 x 2019-12-30 2019-12-30 Cambiar ícono del mapa CompactDry +ap
+x 2020-01-01 2019-12-31 Importar csv para JDBC en Groovy +eneragro
