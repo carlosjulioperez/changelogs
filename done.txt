@@ -99,3 +99,41 @@ x 2019-12-09 2019-12-09 Pruebas de FE +hpm
 x 2019-12-11 2019-12-09 Ajustes en cap 1 borrador 1 +espol
 x 2019-12-12 2019-12-12 Corregir capítulo 2 +espol
 x 2019-12-12 2019-12-12 Creación de usuario vendedor gsuarez +ap
+x 2019-12-13 2019-12-13 Crear avance de nómina +espol
+x 2019-12-13 2019-12-13 Crear diapositiva para 5min pitch +espol
+x 2019-12-13 2019-12-13 Entregar cap1 borrador 3 +espol
+x 2019-12-13 2019-12-13 Terminar cap 2 para enviar a Ing Maldonado +espol
+x 2019-12-13 Cambios en OX 6.2.1 +nomina
+x 2019-12-16 2019-12-16 Capítulo 2 Borrador 1 +espol
+x 2019-12-17 2019-12-07 Módulo Paros +eneragro
+x 2019-12-17 2019-12-16 Tarea plan y control +espol
+x 2019-12-17 2019-12-17 Agregar opciones a usuario vconforme +ap
+x 2019-12-17 2019-12-17 Pueba de retenciones renta 2% 344 +oymar
+x 2019-12-17 2019-12-17 Revisar retenciones el SL +oymar
+x 2019-12-18 2019-12-17 Agregar columna unidad en factura +oymar
+x 2019-12-18 2019-12-17 Agregar columna unidad en la factura +oymar
+x 2019-12-18 2019-12-18 Actualizar Nomina e Ingenio en raspberry pi +nomina
+x 2019-12-18 2019-12-18 Integradora App primer avance +nomina
+x 2019-12-18 2019-12-18 Mødulo empleado +nomina
+x 2019-12-19 2019-12-19 Actualizar Ingenio en hpm +eneragro
+x 2019-12-20 2019-12-20 Revisar el mensaje The link you followed has expired. +ap
+x 2019-12-23 2019-12-22 Configuración página web compact-dry +ap
+x 2019-12-23 2019-12-23 Tarea de Plan y Control +espol
+x 2019-12-24 2019-12-24 Correo con avances de página web +ap
+x 2019-12-24 2019-12-24 Exportar tabla de provincias, cantones y parroquias +nomina
+x 2019-12-24 2019-12-24 Módulo de fórmulación +nomina
+x 2019-12-24 2019-12-24 Módulo de fórmulas +nomina
+x 2019-12-24 2019-12-24 Módulo de rubros +nomina
+x 2019-12-24 Módulo de empleados +nomina
+x 2019-12-24 Módulo de rubros +nomina
+x 2019-12-25 2019-12-24 Actualizar documento capítulo 3 segundo sprint +nomina
+x 2019-12-25 2019-12-25 Instalación de plantuml +espol
+x 2019-12-25 2019-12-25 Slider para home page +ap
+x 2019-12-26 2019-12-26 Galería de productos con enlace a páginas +ap
+x 2019-12-27 2019-12-27 Descargar Razor SQL +tools
+x 2019-12-27 2019-12-27 Reporte de clientes con ventas en 2019 +ap
+x 2019-12-29 2019-12-28 Optimizar slider de imágenes +ap
+x 2019-12-29 2019-12-28 Página CONTACTOS demo +ap
+x 2019-12-29 2019-12-29 Actualizar página CompactDry en la nube hpm +ap
+x 2019-12-30 x 2019-12-30 2019-12-30 Cambiar ícono del mapa CompactDry +ap
+x 2020-01-01 2019-12-31 Importar csv para JDBC en Groovy +eneragro
