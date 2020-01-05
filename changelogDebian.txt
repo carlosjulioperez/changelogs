@@ -119,6 +119,10 @@ Desarrollo
 
 		https://confluence.jaytaala.com/display/TKB/chkconfig+alternative+for+debian+based+distros		
 
+		https://confluence.jaytaala.com/display/TKB/chkconfig+alternative+for+debian+based+distros
+		$ sudo apt-get install sysv-rc-conf
+		$ sudo sysv-rc-conf
+
 	+ Docker:
 		https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
 	

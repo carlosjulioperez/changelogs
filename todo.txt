@@ -1,12 +1,12 @@
-(A) 2020-01-02 Docker para router con dd-rwt +espol
 (A) 2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
-(A) Groovy parsing formules +nomina
+(A) 2020-01-02 Docker para router con dd-rwt +espol
+(A) 2020-01-02 Módulo de Jugos +eneragro
 Agregar clases de autorización y recepción del SRI +hpm
 Campo agua maceración +eneragro
-(A) 2020-01-02 Módulo de Jugos +eneragro
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +fe
 Módulo Blc +eneragro
 Módulo Stock fábrica +eneragro
 Módulo Stock proceso +eneragro
 Search console google visibilidad (buscador) +ap 
+x 2020-01-03 2020-01-03 Groovy parsing formules +nomina

@@ -470,6 +470,15 @@ Centos
 		+ Teclado:
 			https://www.metod.si/change-keyboard-layout-in-centos-in-console/
 
+		+ Groovy:
+			http://docs.groovy-lang.org/docs/next/html/documentation/core-getting-started.html#SDKMAN
+			https://sdkman.io/usage
+
+			$ curl -s get.sdkman.io | bash
+			$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+			$ sdk install groovy 2.4.8
+			$ groovy -version
+
 		+ Java 7 y Tomcat 8:
 			centos 6 install tomcat
 			https://www.rosehosting.com/blog/how-to-install-tomcat-8-on-a-centos-6-vps/
