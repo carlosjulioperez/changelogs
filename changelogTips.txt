@@ -333,6 +333,13 @@ TIPS
 
 			http://askubuntu.com/questions/14197/how-do-i-force-gnome-commander-to-use-vlc-instead-of-movie-player-by-default
 
+	* Formatear USB fat32:
+		https://askubuntu.com/questions/22381/how-to-format-a-usb-flash-drive
+
+		$ lsblk
+		$ sudo umount /dev/sdb1
+		$ sudo mkfs.vfat -n 'CJ' /dev/sdb1
+
 	* Usb booteable:
 		Gnome Disks utility
 		http://elementaryos.stackexchange.com/questions/175/how-can-i-format-a-usb-flash-drive

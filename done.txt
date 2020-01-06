@@ -137,3 +137,4 @@ x 2019-12-29 2019-12-28 Página CONTACTOS demo +ap
 x 2019-12-29 2019-12-29 Actualizar página CompactDry en la nube hpm +ap
 x 2019-12-30 x 2019-12-30 2019-12-30 Cambiar ícono del mapa CompactDry +ap
 x 2020-01-01 2019-12-31 Importar csv para JDBC en Groovy +eneragro
+x 2020-01-03 2020-01-03 Groovy parsing formules +nomina

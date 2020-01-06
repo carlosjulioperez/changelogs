@@ -1,6 +1,7 @@
 (A) 2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
 (A) 2020-01-02 Docker para router con dd-rwt +espol
-(A) 2020-01-02 Módulo de Jugos +eneragro
+(A) 2020-01-05 Módulo de Jugos +eneragro
+(A) 2020-01-05 Módulo Cantón filtro de Provincia +nomina
 Agregar clases de autorización y recepción del SRI +hpm
 Campo agua maceración +eneragro
 Devolución de impuesto a la renta +sri
@@ -9,4 +10,4 @@ Módulo Blc +eneragro
 Módulo Stock fábrica +eneragro
 Módulo Stock proceso +eneragro
 Search console google visibilidad (buscador) +ap 
-x 2020-01-03 2020-01-03 Groovy parsing formules +nomina
+x 2020-01-05 2020-01-05 Instalación de groovy 2.4.8 con sdkman en CentOS 6.10 +hpm

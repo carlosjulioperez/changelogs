@@ -1,7 +1,13 @@
 Vim
 	* Quitar blancos en columnas:
 		https://vi.stackexchange.com/questions/12680/how-to-delete-all-white-spaces-until-first-character
-		:'<,'>s,^\s*,,
+		
+		Nota: Debe copiarse la columna con los espacios en blanco al inicio
+		para que funcione el comando.
+		
+		:%s,^\s*,,g
+
+		Otra opción es seleccionar la columna y alinear a la izquierda (<)
 
 		En calc:
 		https://forum.openoffice.org/en/forum/viewtopic.php?f=9&t=82066
