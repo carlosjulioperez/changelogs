@@ -138,3 +138,7 @@ x 2019-12-29 2019-12-29 Actualizar página CompactDry en la nube hpm +ap
 x 2019-12-30 x 2019-12-30 2019-12-30 Cambiar ícono del mapa CompactDry +ap
 x 2020-01-01 2019-12-31 Importar csv para JDBC en Groovy +eneragro
 x 2020-01-03 2020-01-03 Groovy parsing formules +nomina
+x 2020-01-05 2020-01-05 Instalación de groovy 2.4.8 con sdkman en CentOS 6.10 +hpm
+x 2020-01-06 2020-01-05 Módulo Cantón filtro de Provincia +nomina
+x 2020-01-06 2020-01-06 Actualización de OX de 6.2.1 a 6.2.2 +nomina
+x 2020-01-06 Módulo empleado filtro por parroquia +nomina

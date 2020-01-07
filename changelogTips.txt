@@ -1,4 +1,8 @@
 TIPS
+
+	* Contar caracteres de una cadena:
+		$ echo "SANTIAGO DE QUITO (CAB. EN SAN ANTONIO DE QUITO)" | wc -c
+
 	* Listado de directorios y archivos:
 		$ tree -s -D -L 2
 
