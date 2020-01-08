@@ -476,8 +476,13 @@ Centos
 
 			$ curl -s get.sdkman.io | bash
 			$ source "$HOME/.sdkman/bin/sdkman-init.sh"
-			$ sdk install groovy 2.4.8
+			$ sdk install groovy 2.4.5 (2.4.8)
 			$ groovy -version
+
+			https://sdkman.io/usage#listversions
+			$ sdk list groovy
+			$ sdk current groovy
+			$ sdk default groovy 2.4.5
 
 		+ Java 7 y Tomcat 8:
 			centos 6 install tomcat

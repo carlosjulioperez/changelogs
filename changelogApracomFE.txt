@@ -195,6 +195,20 @@ Configuración Java
 			# sudo cp /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts-respaldo
 			# sudo keytool -import -keystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
 			# sudo keytool -import -keystore /usr/lib/jvm/java-7-oracle/jre/lib/security/cacerts -file /usr/local/fe/p12s/cel.sri.gob.ec -alias CA_CEL_SRI -storepass changeit
+
+			+ 2020-01-07:
+			$ sudo cp /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/cacerts /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/cacerts-respaldo
+		
+			$ sudo keytool -import -keystore \
+				/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/cacerts -file \
+				/usr/local/fe/p12s/celcer.sri.gob.ec -alias CA_CELCER_SRI -storepass changeit
+		
+			$ sudo keytool -import -keystore \
+				/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/cacerts -file \
+				/usr/local/fe/p12s/cel.sri.gob.ec -alias CA_CEL_SRI -storepass changeit
+
+			$ lynx https://celcer.sri.gob.ec
+			$ lynx https://cel.sri.gob.ec
 	
 		+ En GNU/Linux Freya:
 			# sudo cp /usr/lib/jvm/java-6-oracle/jre/lib/security/cacerts /usr/lib/jvm/java-6-oracle/jre/lib/security/cacerts-respaldo

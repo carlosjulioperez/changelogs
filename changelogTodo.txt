@@ -25,6 +25,18 @@
 		https://www.lovholm.net/2017/06/load-database-from-csv-with-columns-and-tables-read-from-file/
 
 	* ASAP:
+
+		+ ap:
+			https://www.dbadillo.com/?p=91
+
+			/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
+			
+			$ keytool -list -keystore "%JAVA_HOME%/jre/lib/security/cacerts"
+			$ keytool -list -keystore "/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/lib/security/cacerts"
+			#keytool -import -keystore
+			«/usr/local/ComprobantesElectronicos/resources/jssecacerts» -file
+			Escritorio/cel.sri.gob.ec -alias CA_SRI -storepass changeit
+
 		+ openwrt:
 
 			+ nodejs:
