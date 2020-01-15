@@ -1,15 +1,20 @@
-(A) 2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
-(A) 2020-01-02 Docker para router con dd-rwt +espol
-(A) 2020-01-05 Módulo de Jugos +eneragro
-2020-01-07 Reemplazo de código Java por Groovy y eliminación de lombok.jar +eneragro
-Cambiar el nombre de los campos +nomina
+(A) 2020-01-15 Docker para router con dd-rwt +espol
+2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
+2020-01-13 Módulo Stock fábrica +eneragro
 Agregar clases de autorización y recepción del SRI +hpm
 Campo agua maceración +eneragro
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +fe
 Módulo Blc +eneragro
-Módulo Stock fábrica +eneragro
 Módulo Stock proceso +eneragro
 Search console google visibilidad (buscador) +ap 
 x 2020-01-06 2020-01-06 Actualizar pantalla de Empleado y modelo de dominio +nomina
+x 2020-01-07 2020-01-07 Reemplazo de código Java por Groovy y eliminación de lombok.jar +eneragro
 x 2020-01-07 2020-01-07 Solución de error al firmar comprobantes +ap
+x 2020-01-08 2020-01-08 Provincia, cantón y parroquia sin PK composite +nomina
+x 2020-01-13 2020-01-05 Módulo de Jugos +eneragro
+x 2020-01-14 2020-01-14 Modificar el war de José Carreño para Imprimir Proformas (JasperReport 5) +josecarreno
+x 2020-01-15 2020-01-15 Copiar bd de him en server de hpm
+x 2020-01-15 2020-01-15 Copiar plantillas de him en server de hpm
+x 2020-01-15 2020-01-15 Respaldar base y plantilla en virtual
+x 2020-01-15 2020-01-15 Usuario para apagar servidor centos

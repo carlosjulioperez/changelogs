@@ -587,6 +587,7 @@ TIPS
 				find . -type f -exec sed -i 's,5432/busicentury,5432/busicentury19,g' {} +
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
 				find . -type f -exec sed -i 's/Hoja\ de\ Balance/Balance\ General/g' {} +
+				find . -type f -exec sed -i 's,WEB-INF.classes.,,g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
