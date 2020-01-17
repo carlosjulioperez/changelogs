@@ -27,6 +27,9 @@
 	* ASAP:
 
 		+ business process simulation software open source:
+				
+			https://www.itcentralstation.com/products/comparisons/bizagi_vs_bonita_vs_sparx-systems-enterprise-architect
+
 			https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0718-50062016000100011
 			https://sparxsystems.com/resources/user-guides/15.0/simulation/business-process-simulation-bpsim.pdf
 			http://www.bpsim.org/specifications/2.0/WFMC-BPSWG-2016-01.pdf

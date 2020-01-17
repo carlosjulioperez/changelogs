@@ -94,7 +94,7 @@ Centos
 	* Monitorizar FE:
 		https://www.whatismyip.com/es/
 		$ sudo less -N /usr/local/fe/logs/cjfews.log
-		$ sudo less -N /usr/local/fe/logs/cjfews.log.2019-11-23
+		$ sudo less -N /usr/local/fe/logs/cjfews.log.2020-01-16
 
 		$ sudo less -N /usr/local/fe/logs/feapracom.log
 		$ sudo less -N /usr/local/fe/logs/feapracom.log.2019-11-23
