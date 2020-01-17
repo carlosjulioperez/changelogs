@@ -26,7 +26,22 @@
 
 	* ASAP:
 
+		+ business process simulation software open source:
+			https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0718-50062016000100011
+			https://sparxsystems.com/resources/user-guides/15.0/simulation/business-process-simulation-bpsim.pdf
+			http://www.bpsim.org/specifications/2.0/WFMC-BPSWG-2016-01.pdf
+
 		+ ap:
+
+			https://www.inteme.com.ec/2019/12/16/validacion-firma-electronica-sri/
+
+
+
+
+			https://support.code42.com/Administrator/6/Configuring/Install_a_CA-signed_SSL_certificate_for_HTTPS_console_access
+
+			Ver las claves en employee
+
 			https://www.dbadillo.com/?p=91
 
 			/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java

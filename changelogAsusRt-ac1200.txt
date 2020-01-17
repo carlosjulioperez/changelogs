@@ -1,4 +1,5 @@
 Asus RT-AC1200
+	CMIIT ID 2015DJ2869
 	* Reset:
 		Mantener pulsado 15 segundos el botón reset.
 	

@@ -22,7 +22,6 @@ Centos
 	186.33.181.219 oymar
 
 	181.199.126.231 Gina
-	157.100.248.133 Vanessa
 
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
@@ -61,8 +60,6 @@ Centos
 			$ mosh user@example.com --ssh="ssh -p 2222"
 			$ mosh carper@186.178.202.67  --ssh="ssh -p 2022"
 			$ mosh carper@181.199.126.231 --ssh="ssh -p 2022"
-			$ mosh carper@157.100.248.133 --ssh="ssh -p 2022"
-			$ mosh carper@186.33.181.219  --ssh="ssh -p 2022"
 		+ Matar procesos:
 			https://stackoverflow.com/questions/17857733/how-do-i-reattach-to-a-detached-mosh-session
 			$ kill `pidof mosh-server`
@@ -77,6 +74,15 @@ Centos
 		$ sudo less /var/log/messages
 		$ sudo less /var/log/syslog
 		$ sudo less /var/log/httpd/access_log
+
+	* Instalación de firma digital pem:
+		1. https://www.sslshopper.com/ssl-converter.html
+		2. https://serverfault.com/questions/511812/how-does-one-install-a-custom-ca-certificate-on-centos 
+
+		$ sudo update-ca-trust force-enable
+		$ sudo cp /home/carper/feinst/pem/ana_maria_valladares_lopez.pem /etc/pki/ca-trust/source/anchors/
+		$ sudo cp /home/carper/feinst/pem/*.pem /etc/pki/ca-trust/source/anchors/
+		$ update-ca-trust extract
 
 	* Apagado o reinicio del sistema:
 		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown

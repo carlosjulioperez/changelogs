@@ -1,4 +1,4 @@
-(A) 2020-01-15 Docker para router con dd-rwt +espol
+(A) 2020-01-15 Docker para router con openWRT DD-WRT +espol
 2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
 2020-01-13 Módulo Stock fábrica +eneragro
 Agregar clases de autorización y recepción del SRI +hpm
@@ -18,3 +18,7 @@ x 2020-01-15 2020-01-15 Copiar bd de him en server de hpm
 x 2020-01-15 2020-01-15 Copiar plantillas de him en server de hpm
 x 2020-01-15 2020-01-15 Respaldar base y plantilla en virtual
 x 2020-01-15 2020-01-15 Usuario para apagar servidor centos
+x 2020-01-16 2020-01-16 Adaptar nuevo código de firma en FE +ap
+x 2020-01-16 2020-01-16 Bajar la herramienta del SRI y aplicar ingeniería inversa a FE +ap
+x 2020-01-16 2020-01-16 Respaldo de hpm +hpm
+x 2020-01-16 2020-01-16 Revisar log de fe +ap
