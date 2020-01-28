@@ -2,6 +2,11 @@
 	https://docs.google.com/spreadsheets/d/1LMp9bbZE_ugksRlkVP8mx6BQOS-iOoObGbkxuohSMKg/edit#gid=0
 	https://bit.ly/2XOMOF4
 
+	* Biblias:
+		http://www.elcamino-cr.org/Programas.html
+		https://sourceforge.net/projects/printcrippledbi/
+		http://verdadpresente.com.ar/e-sword-11-completo-mega/
+
 	* Nuevas profesiones:
 		https://fundaciontelefonica.com.ec/cultura-digital/las-5-profesiones-del-futuro/
 
@@ -27,12 +32,33 @@
 	* ASAP:
 
 		+ business process simulation software open source:
-				
+			Enterprise architect
+			New project
+			Seleccionar Model
+			Clic derecho: Add a model using wizard
+			Business Process Diagram with Lanes
+			Create patterns
+			Seleccionar BPMN2
+
+			Agregar elementos desde Toolbox
+			Simulador desde Artefact / Business Process Simulation
+			Clic derecho / Properties / Properties ...
+			Clic derecho / Configure BPSim / Clic en carpeta (configure package)
+			Seleccionar el modelo recién creado
+
+			Inicio / New Parameter / Category Control 
+			Restricciones (Parameter)
+			TriggerCount, values: 1
+			IntegerTriggerTimer: 15min
+
+			Degree of utilization para:
+			Empleados
+
+
 			https://www.itcentralstation.com/products/comparisons/bizagi_vs_bonita_vs_sparx-systems-enterprise-architect
 
 			https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0718-50062016000100011
 			https://sparxsystems.com/resources/user-guides/15.0/simulation/business-process-simulation-bpsim.pdf
-			http://www.bpsim.org/specifications/2.0/WFMC-BPSWG-2016-01.pdf
 
 		+ ap:
 
