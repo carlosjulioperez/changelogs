@@ -1,4 +1,5 @@
-(A) 2020-01-26 Convertir texto bblx a pascal +cjpq
+(A) Convertir texto bblx a pascal +cjpq
+(A) 2020-01-28 Módulo Nómina +nomina
 (A) Terminar documentación de tesis
 (B) 2020-01-25 Hacer test de bairesdev +espol
 (B) Docker para router con openWRT DD-WRT +espol
@@ -36,3 +37,4 @@ x 2020-01-21 2020-01-21 Subir comentario JFB +cjpq
 x 2020-01-23 2020-01-23 Simulación proceso nómina +espol
 x 2020-01-26 2020-01-25 Subir fotos conectados manta +cjpq
 x 2020-01-27 2020-01-26 Terminar informe simulación +espol
+x 2020-01-28 2020-01-28 Modificar avances de simulación

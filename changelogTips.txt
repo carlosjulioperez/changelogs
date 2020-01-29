@@ -307,6 +307,7 @@ TIPS
 		https://linux.die.net/man/1/pdfnup
 
 		sudo apt-get install pdfjam
+		pdfnup --nup 2x1 --suffix '2x1' 03\ Interconexión\ de\ Redes.pdf
 		pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
 		pdfnup --nup 3x2 --suffix '3x2' *.pdf
 
