@@ -9,6 +9,9 @@ MX Linux
 		simplescreenrecorder graphviz screen
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
+		+ Angry IP Scanner:
+			https://angryip.org/download/#linux
+			$ sudo dpkg -i ipscan_3.6.2_amd64.deb
 		
 		+ Accesos directos de programas:
 			.local/share/applications/

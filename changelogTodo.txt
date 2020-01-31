@@ -51,21 +51,9 @@
 			TriggerCount, values: 1
 			IntegerTriggerTimer: 15min
 
-			Degree of utilization para:
-			Empleados
-
-
-			https://www.itcentralstation.com/products/comparisons/bizagi_vs_bonita_vs_sparx-systems-enterprise-architect
-
-			https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0718-50062016000100011
-			https://sparxsystems.com/resources/user-guides/15.0/simulation/business-process-simulation-bpsim.pdf
-
 		+ ap:
 
 			https://www.inteme.com.ec/2019/12/16/validacion-firma-electronica-sri/
-
-
-
 
 			https://support.code42.com/Administrator/6/Configuring/Install_a_CA-signed_SSL_certificate_for_HTTPS_console_access
 

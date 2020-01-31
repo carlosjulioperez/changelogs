@@ -1,14 +1,14 @@
-(A) Convertir texto bblx a pascal +cjpq
+(A) 2020-01-28 Hacer test de bairesdev +espol
 (A) 2020-01-28 Módulo Nómina +nomina
 (A) Terminar documentación de tesis
-(B) 2020-01-25 Hacer test de bairesdev +espol
 (B) Docker para router con openWRT DD-WRT +espol
 (C) 2020-01-25 Buscar router dd-wrt +espol
-2020-01-02 Correo de dimaglia@hotmail.com +dimaglia
 2020-01-13 Módulo Stock fábrica +eneragro
 Agregar clases de autorización y recepción del SRI +hpm
 Bajar videos "En la mira de la verdad" +cjpq
 Campo agua maceración +eneragro
+Convertir texto bblx a pascal +cjpq
+Correo de dimaglia@hotmail.com +dimaglia
 Devolución de impuesto a la renta +sri
 Mostrar mensajes excepciones de log en UI +fe
 Módulo Blc +eneragro

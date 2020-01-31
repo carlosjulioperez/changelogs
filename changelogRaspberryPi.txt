@@ -1,6 +1,16 @@
 Configuración
 	* Paquetes:
-		sudo apt install terminator gnumeric vim-gnome ant mosh
+		sudo apt install terminator gnumeric vim-gnome ant mosh xrdp
+
+		xrdp en el servidor
+		rdesktop o vinagre en el cliente
+
+		https://www.poftut.com/linux-remote-desktop-rdesktop-command-tutorial-with-examples/
+		$ rdesktop -u ismail 192.168.1.10
+
+	* Java 8:
+		$ sudo apt install openjdk-8-jdk openjdk-8-jre
+		$ sudo update-alternatives --config java
 
 	* Desactivar inicio entorno gráfico:
 		http://ask.xmodulo.com/disable-desktop-gui-raspberry-pi.html
