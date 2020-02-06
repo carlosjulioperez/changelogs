@@ -21,8 +21,6 @@ Centos
 
 	186.33.181.219 oymar
 
-	181.199.126.231 Gina
-
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
@@ -81,8 +79,10 @@ Centos
 
 		$ sudo update-ca-trust force-enable
 		$ sudo cp /home/carper/feinst/pem/ana_maria_valladares_lopez.pem /etc/pki/ca-trust/source/anchors/
+		$ sudo cp /home/carper/fe/p12s/MONICACLARITA.pem /etc/pki/ca-trust/source/anchors/
+
 		$ sudo cp /home/carper/feinst/pem/*.pem /etc/pki/ca-trust/source/anchors/
-		$ update-ca-trust extract
+		$ sudo update-ca-trust extract
 
 	* Apagado o reinicio del sistema:
 		https://unix.stackexchange.com/questions/9819/how-to-find-out-from-the-logs-what-caused-system-shutdown

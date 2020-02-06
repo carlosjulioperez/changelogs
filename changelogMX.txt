@@ -9,6 +9,16 @@ MX Linux
 		simplescreenrecorder graphviz screen
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
+		foliate, bookwarm
+		+ Pomodoro:
+			* Marinara on Chromium:
+				https://github.com/topics/pomodoro
+			* Pomotroid:
+				https://splode.github.io/pomotroid/
+
+				$ sudo dpkg -i pomotroid-0.7.0-linux.deb
+				$ sudo chmod 4755 /opt/Pomotroid/chrome-sandbox
+
 		+ Angry IP Scanner:
 			https://angryip.org/download/#linux
 			$ sudo dpkg -i ipscan_3.6.2_amd64.deb
