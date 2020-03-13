@@ -21,6 +21,15 @@ Centos
 
 	186.33.181.219 oymar
 
+	* Documentar:
+		postgres@mx-box:~$ createdb nomina
+		postgres@mx-box:~$ psql nomina
+		psql (9.6.16)
+		Digite «help» para obtener ayuda.
+
+		nomina=# create schema nomina;
+		CREATE SCHEMA
+
 	Y desde consola:
 	export LC_CTYPE=en_US.UTF-8
 	export LC_ALL=en_US.UTF-8
@@ -194,6 +203,8 @@ Centos
 	* Copiar el sistema a unidad USB:
 		# sudo dd if=/home/user1/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
 		# sudo dd if=/home/carper/local/iso/ubuntu/ubuntu-18.04.2-desktop-amd64.iso of=/dev/sda
+		
+		# sudo dd if=/home/carper/local/iso/KNOPPIX_V8.6.1-2019-10-14-EN/KNOPPIX_V8.6.1-2019-10-14-EN.iso of=/dev/sdb bs=4M status=progress
 
 	* Reducir tamaño de vdi:
 		$ dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile
@@ -359,6 +370,9 @@ Centos
 			Shall the new role be allowed to create more new roles? (y/n) n 
 
 		bash-4.1$ bunzip2 28-08-2018.apracomsa.sql.bz2
+
+		* cambiar la clave de postgres:
+			https://www.liquidweb.com/kb/change-a-password-for-postgresql-on-linux-via-command-line/	
 		
 		$ pwd
 		/var/lib/pgsql

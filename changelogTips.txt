@@ -1,4 +1,6 @@
 TIPS
+	* Descargar libros de Kindle Cloud y convertirlos a epub:
+		https://medium.com/@michelle_z./how-to-convert-kindle-cloud-reader-to-epub-mobi-azw3-8f044db60119
 
 	* Contar caracteres de una cadena:
 		$ echo "SANTIAGO DE QUITO (CAB. EN SAN ANTONIO DE QUITO)" | wc -c
@@ -61,7 +63,7 @@ TIPS
 		
 		$ sed -n '268,274p' changelogApracomFE.txt 
 
-	* Mostrar caracteres unicode:
+	* Mostrar caracteres unicode HTML5:
 		ctrl + shift + u
 		Ingresar el código hexadecimal del caracter deseado
 	
@@ -306,10 +308,15 @@ TIPS
 	* Imprimir económicamente diapositivas PDF:
 		https://linux.die.net/man/1/pdfnup
 
-		sudo apt-get install pdfjam
-		pdfnup --nup 2x1 --suffix '2x1' 03\ Interconexión\ de\ Redes.pdf
-		pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
-		pdfnup --nup 3x2 --suffix '3x2' *.pdf
+		$ sudo apt-get install pdfjam
+		$ pdfnup --nup 2x1 --suffix '2x1' 03\ Interconexión\ de\ Redes.pdf
+		$ pdfnup --nup 2x2 --suffix '2x2' 03\ Interconexión\ de\ Redes.pdf
+		$ pdfnup --nup 3x2 --suffix '3x2' *.pdf
+
+		$ pdfnup --nup 2x2 --suffix '2x2' --no-landscape --frame true
+
+	* Unir archivos PDF:
+		$ pdfjoin *.pdf
 
 	* Free disk space:
 		http://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu
@@ -589,6 +596,8 @@ TIPS
 				find . -type f -exec sed -i 's/Código\ Vendedor/Código\ Proveedor/g' {} +
 				find . -type f -exec sed -i 's/Hoja\ de\ Balance/Balance\ General/g' {} +
 				find . -type f -exec sed -i 's,WEB-INF.classes.,,g' {} +
+				find . -type f -exec sed -i 's,parrot,rolpago,g' {} +
+				find . -type f -exec sed -i 's,feapracom,rolpago,g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
