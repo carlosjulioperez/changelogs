@@ -5,8 +5,6 @@ Centos
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)
 	
-	192.168.0.188 printer
-
 	192.168.253.162
 	192.168.1.253
 
