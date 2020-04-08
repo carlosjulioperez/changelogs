@@ -2,6 +2,8 @@
 	https://docs.google.com/spreadsheets/d/1LMp9bbZE_ugksRlkVP8mx6BQOS-iOoObGbkxuohSMKg/edit#gid=0
 	https://bit.ly/2XOMOF4
 
+	https://github.com/freitass/todo.txt-vim
+
 	* Biblias:
 		http://www.elcamino-cr.org/Programas.html
 		https://sourceforge.net/projects/printcrippledbi/

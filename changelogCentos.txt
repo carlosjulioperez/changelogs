@@ -13,6 +13,7 @@ Centos
 
 	192.168.0.3 virtual
 	186.178.202.67 virtual
+	190.63.182.218
 
 	18.178.202.68
 	200.124.241.243
@@ -382,6 +383,7 @@ Centos
 		$ createdb -O sql-ledger -T template1 hpm_prueba
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apracomsa_test
 
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 ap_20191028t
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 ap_20191028n
@@ -506,13 +508,15 @@ Centos
 
 			$ curl -s get.sdkman.io | bash
 			$ source "$HOME/.sdkman/bin/sdkman-init.sh"
-			$ sdk install groovy 2.4.5 (2.4.8)
+			$ sdk install groovy 2.4.19 (2.4.8)
 			$ groovy -version
 
 			https://sdkman.io/usage#listversions
 			$ sdk list groovy
 			$ sdk current groovy
-			$ sdk default groovy 2.4.5
+			$ sdk default groovy 2.4.19
+
+			$ sdk uninstall groovy 2.3.0
 
 		+ Java 7 y Tomcat 8:
 			centos 6 install tomcat

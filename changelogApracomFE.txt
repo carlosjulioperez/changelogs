@@ -1,4 +1,4 @@
-Aplicaciones	
+ Aplicaciones	
 	+ cogs:
 		apracomsa: 23:27 23:30 -> 3 min
 
@@ -258,6 +258,7 @@ Gestión de la BD
 		#createdb -E UTF8 -T template0 apracomsa
 
 		#createdb -E SQL_ASCII -T template0 apracomsa
+		#createdb -E SQL_ASCII -T template0 apracomsa_test
 
 		$ createdb -E UTF8 -T template0 him
 		$ createdb -E UTF8 -T template0 pm
@@ -420,6 +421,8 @@ INSERT INTO defaults (fldname,fldvalue) VALUES ('production_warehouse_id','50550
 		pg_dump --data-only --table=fe_cola_aut apracomsa > fe_cola_aut.pg
 		psql apracomsa < fe_cola_aut.pg
 	
+		pg_dump --data-only --table=tiporet apracomsa > apracomsa_tiporet.sql
+
 		pg_dump --data-only --table=tiporet busicentury19 > tiporet.sql
 		psql busicentury19 < tiporet.pg
 	
@@ -568,8 +571,15 @@ Configuración de entorno de FE
 			connectionTimeout="20000"
 			redirectPort="8443" URIEncoding="UTF-8"/>
 	
-		+ Agregar bibliotecas WEB-INF/lib a App.war:
-		jar uvf App.war WEB-INF
+		+ Actualizar war:
+			+ Agregar bibliotecas WEB-INF/lib a App.war:
+			$ jar uvf App.war WEB-INF
+
+			+ Actualizar archivo properties:
+				── WEB-INF
+					└── classes
+							└── jdbc.properties
+			$ jar uvf feapracom.war WEB-INF
 	
 		/usr/local/apache-tomcat-7.0.54/webapps
 	

@@ -142,3 +142,33 @@ x 2020-01-05 2020-01-05 Instalación de groovy 2.4.8 con sdkman en CentOS 6.10 +
 x 2020-01-06 2020-01-05 Módulo Cantón filtro de Provincia +nomina
 x 2020-01-06 2020-01-06 Actualización de OX de 6.2.1 a 6.2.2 +nomina
 x 2020-01-06 Módulo empleado filtro por parroquia +nomina
+x 2020-04-02 Terminar documentación de tesis
+x 2020-04-02 Docker para router con openWRT DD-WRT +espol
+x 2020-04-02 2020-01-25 Buscar router dd-wrt +espol
+x 2020-01-06 2020-01-06 Actualizar pantalla de Empleado y modelo de dominio +nomina
+x 2020-01-07 2020-01-07 Reemplazo de código Java por Groovy y eliminación de lombok.jar +eneragro
+x 2020-01-07 2020-01-07 Solución de error al firmar comprobantes +ap
+x 2020-01-08 2020-01-08 Provincia, cantón y parroquia sin PK composite +nomina
+x 2020-01-13 2020-01-05 Módulo de Jugos +eneragro
+x 2020-01-14 2020-01-14 Modificar el war de José Carreño para Imprimir Proformas (JasperReport 5) +josecarreno
+x 2020-01-15 2020-01-15 Copiar bd de him en server de hpm
+x 2020-01-15 2020-01-15 Copiar plantillasde him en server de hpm
+x 2020-01-15 2020-01-15 Respaldar base y plantilla en virtual
+x 2020-01-15 2020-01-15 Usuario para apagar servidor centos
+x 2020-01-16 2020-01-16 Adaptar nuevo código de firma en FE +ap
+x 2020-01-16 2020-01-16 Bajar la herramienta del SRI y aplicar ingeniería inversa a FE +ap
+x 2020-01-16 2020-01-16 Respaldo de hpm +hpm
+x 2020-01-16 2020-01-16 Revisar log de fe +ap
+x 2020-01-19 2020-01-19 Imágenes de sistema, reportes y prototipo móvil +espol
+x 2020-01-19 2020-01-19 Leer Guía Idear para especificaciones de Péster +espol
+x 2020-01-19 2020-01-19 Llenar el poster con temas principales +espol
+x 2020-01-20 2020-01-20 Actualizar hoja de vida +cjpq
+x 2020-01-20 2020-01-20 Primer avance capítulo 4 +nomina
+x 2020-01-21 2020-01-21 Subir comentario JFB +cjpq
+x 2020-01-23 2020-01-23 Simulación proceso nómina +espol
+x 2020-01-26 2020-01-25 Subir fotos conectados manta +cjpq
+x 2020-01-27 2020-01-26 Terminar informe simulación +espol
+x 2020-01-28 2020-01-28 Modificar avances de simulación
+x 2020-04-02 2020-01-28 Hacer test de bairesdev +espol
+x 2020-04-02 2020-01-28 Módulo Nómina +nomina
+x 2020-04-02 Convertir texto bblx a pascal +cjpq

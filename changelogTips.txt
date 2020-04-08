@@ -67,6 +67,10 @@ TIPS
 		ctrl + shift + u
 		Ingresar el código hexadecimal del caracter deseado
 	
+	* Descomprimir archivo especificado:
+		$ unzip -l groovy-binary-2.3.0.zip
+		$ unzip -d . groovy-binary-2.3.0.zip groovy-2.3.0/embeddable/groovy-all-2.3.0.jar
+
 	* Descomprimir varios archivos:
 		https://chrisjean.com/unzip-multiple-files-from-linux-command-line/
 		$ unzip '*.zip'

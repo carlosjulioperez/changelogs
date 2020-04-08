@@ -145,6 +145,9 @@ SQL
 		pg_dump --data-only --table=parts atver2019 > atver2019_parts.sql
 		pg_dump --data-only --table=employee apracomsa > apracomsa_employee.sql
 		pg_dump --data-only --table=retenc oymar > oymar_retenc.sql
+		
+		pg_dump --data-only --table=tiporet apracomsa_test > apracomsa_test_tiporet.sql
+		pg_dump --data-only --table=retenc apracomsa_test > apracomsa_test_retenc.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
@@ -205,6 +208,7 @@ SQL
 		COPY tipodoc     TO '/tmp/tipodoc.csv'     WITH DELIMITER ',' CSV HEADER;
 		COPY tipoid      TO '/tmp/tipoid.csv'      WITH DELIMITER ',' CSV HEADER;
 		COPY tiporet     TO '/tmp/tiporet.csv'     WITH DELIMITER ',' CSV HEADER;
+		COPY retenc      TO '/tmp/retenc.csv'      WITH DELIMITER ',' CSV HEADER;
 		COPY partstax    TO '/tmp/partstax.csv'    WITH DELIMITER ',' CSV HEADER;
 		COPY customertax TO '/tmp/customertax.csv' WITH DELIMITER ',' CSV HEADER;
 		COPY vendortax   TO '/tmp/vendortax.csv'   WITH DELIMITER ',' CSV HEADER;
