@@ -107,7 +107,7 @@ Centos
 		$ sudo less -N /usr/local/fe/logs/feapracom.log
 		$ sudo less -N /usr/local/fe/logs/feapracom.log.2019-11-23
 
-		$ sudo less -N /opt/apache-tomcat-8.5.37/logs/catalina.2019-11-24.log
+		$ sudo less /opt/apache-tomcat-8.5.34/logs/catalina.2020-04-07.log
 
 		$ sudo tail -f 
 

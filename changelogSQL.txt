@@ -148,6 +148,8 @@ SQL
 		
 		pg_dump --data-only --table=tiporet apracomsa_test > apracomsa_test_tiporet.sql
 		pg_dump --data-only --table=retenc apracomsa_test > apracomsa_test_retenc.sql
+		pg_dump --data-only --table=tiporet apracomsa > apracomsa_tiporet.sql
+		pg_dump --data-only --table=retenc apracomsa > apracomsa_retenc.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
