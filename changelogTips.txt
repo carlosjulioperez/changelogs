@@ -1,4 +1,8 @@
 TIPS
+	* Borrar espacios a la derecha:
+		:%s,\s\+$,,e 
+		:'<,'>s,\s\+$,,e 
+
 	* Descarga video facebook con credenciales:
 		$ youtube-dl -F
 		https://www.facebook.com/rennie.moreirapazmino/videos/2642944245934723/
