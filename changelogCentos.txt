@@ -367,12 +367,22 @@ Centos
 			could not change directory to "/root"
 			Shall the new role be a superuser? (y/n) n
 			Shall the new role be allowed to create more new roles? (y/n) n 
+		
+			+ Alternativa:
+				md5 para todos los usuarios en pg_hba.conf
+
+				ALTER USER postgres WITH PASSWORD 'new_password';
+				ALTER USER "sql-ledger" WITH PASSWORD 'nueva_clave';
 
 		bash-4.1$ bunzip2 28-08-2018.apracomsa.sql.bz2
 
+		* En MX-Linux:
+			$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
+				 local   all             all md5
+
 		* cambiar la clave de postgres:
-			https://www.liquidweb.com/kb/change-a-password-for-postgresql-on-linux-via-command-line/	
-		
+			https://www.liquidweb.com/kb/change-a-password-for-postgresql-on-linux-via-command-line/
+			
 		$ pwd
 		/var/lib/pgsql
 

@@ -4,12 +4,10 @@ TIPS
 		:'<,'>s,\s\+$,,e 
 
 	* Descarga video facebook con credenciales:
-		$ youtube-dl -F
+		$ youtube-dl -f dash_sd_src
 		https://www.facebook.com/rennie.moreirapazmino/videos/2642944245934723/
 		--username=user@at.com --password="secret key"
 		
-		$ youtube-dl -F https://www.facebook.com/rennie.moreirapazmino/videos/2648621555366992/ --username=carlosjulioperez@gmail.com --password="redes sociales 3"
-
 	* Descargar libros de Kindle Cloud y convertirlos a epub:
 		https://medium.com/@michelle_z./how-to-convert-kindle-cloud-reader-to-epub-mobi-azw3-8f044db60119
 
