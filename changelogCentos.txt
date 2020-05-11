@@ -545,7 +545,9 @@ Centos
 				# yum -y install java-1.7.0-openjdk-devel.x86_64
 				# yum -y install java-1.8.0-openjdk-devel.x86_64
 
-			$ sudo alternatives --config java
+			+ Cambiar entre versiones de Java:
+				$ sudo update-alternatives --list java
+				$ sudo update-alternatives --config java
 
 			# useradd -r tomcat8 --shell /bin/false
 			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz -P /tmp
