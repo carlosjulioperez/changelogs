@@ -10,6 +10,10 @@ MX Linux
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
 		foliate, bookwarm
+		+ Driver broadcom:
+			$ sudo vim /etc/modprobe.d/broadcom-sta-dkms.conf
+			Descomentar b43
+
 		+ Pomodoro:
 			* Marinara on Chromium:
 				https://github.com/topics/pomodoro

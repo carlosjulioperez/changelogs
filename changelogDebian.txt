@@ -132,6 +132,7 @@ Desarrollo
 		sudo update-alternatives --config java
 
 		https://stackoverflow.com/questions/46615152/debian-9-openjdk-7-jre-and-openjdk-7-jre-headless
+		$ sudo apt install openjdk-7-jdk openjdk-7-jre-headless
 		$ sudo apt install openjdk-8-jdk openjdk-8-jre-headless
 		
 		+ JAVA_HOME:

@@ -19,6 +19,7 @@ Centos
 	200.124.241.243
 
 	186.33.181.219 oymar
+	190.63.184.11 K
 
 	* Documentar:
 		postgres@mx-box:~$ createdb nomina
@@ -43,11 +44,14 @@ Centos
 
 		$ sudo cat /home/apagar/.bash_profile
 			sudo poweroff
+	* Servicios instalados:
+		https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-centoslinux/	
+		$ sudo service --status-all
 
 	* Imprimir archivos en formato xml desde consola:
 		https://www.poftut.com/pretty-print-format-xml-command-line-linux/
 
-		$ sudo yum install libxml2-utils
+		$ sudo yum install tidy
 		$ tidy -xml -i data.xml
 
 	* Mosh:

@@ -1,11 +1,7 @@
 TIPS
-	* Borrar espacios a la derecha:
-		:%s,\s\+$,,e 
-		:'<,'>s,\s\+$,,e 
 
 	* Descarga video facebook con credenciales:
-		$ youtube-dl -f dash_sd_src
-		https://www.facebook.com/rennie.moreirapazmino/videos/2642944245934723/
+		$ youtube-dl -f dash_sd_src https://www.facebook.com/rennie.moreirapazmino/videos/2642944245934723/
 		--username=user@at.com --password="secret key"
 		
 	* Descargar libros de Kindle Cloud y convertirlos a epub:
@@ -27,6 +23,12 @@ TIPS
 	* convertir videos:
 		Con vlc opción mp4, tamaño óptimo.
 		ffmpeg -i my-video.mov -vcodec h264 -acodec mp2 my-video.mp4
+	* Editores XML:
+		https://xml-copy-editor.sourceforge.io/
+
+		Geany: PrettyPrinter XML
+		$ sudo apt install geany-plugins
+
 	* Print XML:
 		https://stackoverflow.com/questions/16090869/how-to-pretty-print-xml-from-the-command-line
 		libxml2-utils:
@@ -586,6 +588,12 @@ TIPS
 
 		http://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories
 		grep -rl "org.springframework.test.context.junit4.SpringJUnit4ClassRunner" ~/local/openxava*
+
+		+ Usando find:
+		https://www.cyberciti.biz/faq/howto-recursively-search-all-files-for-words/
+		$ find . -type f -exec grep -l "word" {} +
+		$ find . -type f -exec grep -l "FosfatosSaveAction" {} +
+
 	
 	* Search and replace string in the current folder:
 		http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
@@ -596,7 +604,7 @@ TIPS
 			sed -i -- 's/Buider/Builder/g' *
 			sed -i -- 's/Odómotros/Odómetros/g' *.screen
 
-		+ Buscar reemplazar Recursive:
+		+ Buscar reemplazar recursive:
 			+ En linux:
 				find . -type f -exec sed -i 's/ISO-8859-1/UTF-8/g' {} +
 				find . -type f -exec sed -i 's/Builder/builder/g' {} +
@@ -612,7 +620,8 @@ TIPS
 				find . -type f -exec sed -i 's,parrot,rolpago,g' {} +
 				find . -type f -exec sed -i 's,feapracom,rolpago,g' {} +
 				
-				find . -type f -exec sed -i 's,msgTrashCreado,formulario_trash_creado,g' {} +
+				find . -type f -exec sed -i 's,save\(\),actualizar\(\),g' {} +
+				find . -type f -exec sed -i 's,\(\)\(\)\(\),,g' {} +
 
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
@@ -639,6 +648,12 @@ TIPS
 	* Comprimir sin recursos Mac:
 		tar -czvf –exclude ‘.DS_Store’ cjerp.tar.gz cjerp/
 		zip -r cjerpMac.zip cjerp/ -x "*.DS_Store"
+
+	* Borrar archivos con grep:
+		https://stackoverflow.com/questions/20858524/delete-a-list-of-files-with-find-and-grep
+
+		$ find | grep Save | xargs rm -f
+		$ find . -name '*Save*' -exec rm -f {} \;
 
 	* Borrar archivos recursivamente:
 		find . -name "*~" -type f -delete
