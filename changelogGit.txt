@@ -1,4 +1,10 @@
 Git
+	+ Arreglar Error bad index Fatal index file corrupt:
+		https://stackoverflow.com/questions/1115854/how-to-resolve-error-bad-index-fatal-index-file-corrupt-when-using-git
+		
+		$ rm -f .git/index
+		$ git reset
+
 	+ Clonar rama específica:
 		https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git
 		$ git clone -b <branch> <remote_repo>

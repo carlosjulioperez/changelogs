@@ -199,6 +199,7 @@ SQL
 		COPY ( SELECT * FROM chart    order by accno )       TO '/tmp/chart.csv'    With CSV DELIMITER ',';
 		
 		+ Exportar con cabecera:
+		COPY exportador  TO '/tmp/cliente.csv'     WITH DELIMITER ',' CSV HEADER;
 		COPY fe_config   TO '/tmp/fe_config.csv'   WITH DELIMITER ',' CSV HEADER;
 		COPY customer    TO '/tmp/customer.csv'    WITH DELIMITER ',' CSV HEADER;
 		COPY vendor      TO '/tmp/vendor.csv'      WITH DELIMITER ',' CSV HEADER;

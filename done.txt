@@ -172,3 +172,93 @@ x 2020-01-28 2020-01-28 Modificar avances de simulación
 x 2020-04-02 2020-01-28 Hacer test de bairesdev +espol
 x 2020-04-02 2020-01-28 Módulo Nómina +nomina
 x 2020-04-02 Convertir texto bblx a pascal +cjpq
+x 2020-06-18 Agregar porcentajes de retención @apracom +fe
+x 2020-06-18 Agregar clases de autorización y recepción del SRI +hpm
+x 2020-06-18 Correo de dimaglia@hotmail.com +dimaglia
+x 2020-06-18 Devolución de impuesto a la renta +sri
+x 2020-06-18 Mostrar mensajes excepciones de log en UI +fe
+x 2020-06-18 Demo formulario +contenedores
+x 2020-06-18 Número para día de trabajo +ingenio
+x 2020-06-19 Archivar en changelog.txt +ingenio
+x 2020-06-19 Cálculo %A.R. en TrashCana +ingenio
+x 2020-06-19 Propuesta lectura barcode +eneragro
+x 2020-06-19 TrashCana calendario para fecha +ingenio
+x 2020-06-19 Buscar proveedores lectores industriales +ingenio
+x 2020-06-19 Descripción DiaTrabajo +ingenio
+x 2020-06-19 Tablas BrixDensidad ReadOnly +ingenio
+x 2020-06-21 LocalDate to java.sql.Timestamp +ingenio
+x 2020-06-22 Ajuste de horaS y hora en TrashCanaTest +ingenio
+x 2020-06-22 Diagrama de proceso para conteo de sacos por código de barras +ingenio
+x 2020-06-23 CRUD.delete impedir borrar un registro +ingenio
+x 2020-06-23 x 2020-06-23 Tabla Naviera y Cliente (renombrar de Exportador) +contenedores
+x 2020-06-23 Formulario Plantilla Seco +contenedores
+x 2020-06-24 Restricción para aplicar cumplimiento en títulos en Saco +contenedores
+x 2020-06-24 Ajuste de hora en Trash +ingenio
+x 2020-06-26 Crear tarea para generar war sin libs +ingenio
+x 2020-06-25 Ajuste de hora en Cana +ingenio
+x 2020-06-29 Ajuste de hora en Jugo +ingenio
+x 2020-06-29 Clase con datos generales para pruebas +ingenio
+x 2020-06-30 Propuesta ATS para oyague +ingenio
+x 2020-07-01 Ajuste de hora en Bagazo +ingenio
+x 2020-07-01 Validación nulos de query.resultList +ingenio
+x 2020-06-26 Ajuste de hora en Jugo +ingenio
+x 2020-07-02 Ajuste de hora en Turbiedad +ingenio
+x 2020-07-02 Ajuste de hora en Ph +ingenio
+x 2020-07-02 Subir cambios +ingenio
+x 2020-07-02 Subir BD +ingenio
+x 2020-07-02 Ajuste de hora en Meladura +ingenio
+x 2020-07-02 Ajuste de hora en Fosfatos +ingenio
+x 2020-07-02 Ajuste de hora en Masas +ingenio
+x 2020-07-02 Ajuste de hora en Mieles +ingenio
+x 2020-07-02 Ajuste de hora en MielesNutsch +ingenio
+x 2020-07-02 Ajuste de hora en Magmas +ingenio
+x 2020-07-02 Ajuste de hora en TqFundidor +ingenio
+x 2020-07-02 Ajuste de hora en AzucarGranel +ingenio
+x 2020-07-03 Ajuste de hora en AzucarCrudo +ingenio
+x 2020-07-03 Ajuste de hora en Grasshoper +ingenio
+x 2020-07-03 Ajuste de hora en TamanoGrano +ingenio
+x 2020-07-03 Ajuste de hora en BtuLbBagazo +ingenio
+x 2020-07-03 Ajuste de hora en Cto24HTest +ingenio
+x 2020-07-03 Cambio de Pestañas por Secciones en Cto24HTest +ingenio
+x 2020-07-04 Reemplazo de OneToMany por ElementCollection Cont. Seco +contenedores
+x 2020-07-07 Revisar acceso al sistema por IP pública +ingenio
+x 2020-07-07 Grabar nulo en los títulos de SecoDetalle +contenedores
+x 2020-07-09 Mejora de la propuesta codebar +ingenio
+x 2020-07-16 Ampliar tamano descripción en plantillas +contenedores
+x 2020-07-16 Cambiar Collection a ElementList en formularios +contenedores
+x 2020-07-17 Validar es necesario grabar los promedios (SI) +ingenio
+x 2020-07-17 Query de métodos promedio como atributos +ingenio
+x 2020-07-21 Cálculo de totales de Cto24HDetalle4 +ingenio
+x 2020-07-21 Cto24HDetalle6 +ingenio
+x 2020-07-21 Cto24HDetalle5 +ingenio
+x 2020-07-21 Ajustar material.csv +ingenio
+x 2020-07-21 Ajuste de hora en Cto24HDetalle7 (Acidez Volatil) +ingenio
+x 2020-07-22 Cto24HDetalle8 +ingenio
+x 2020-07-22 2020-07-08 Rediseñar Cto24H +ingenio
+x 2020-07-22 2020-07-16 Crear @Embedded Cto24HDetalle4 +ingenio
+x 2020-07-25 Cto24HTest +ingenio
+x 2020-07-28 Informe de avance del sistema +ingenio
+x 2020-07-28 ParoTest +ingenio
+x 2020-07-28 Tabla paros +ingenio
+x 2020-07-28 Test para validar un solo registro por diaTrabajo +ingenio
+x 2020-07-29 Crear DiaTrabajoEditableAction para validar un solo registro +ingenio
+x 2020-07-28 Renombrar DiaTrabajoEditableAction a DiaTrabajoSaveAction +ingenio
+x 2020-07-30 Propiedad calculada para colecciones +ingenio
+x 2020-07-31 Controlador BlcConsultarAction +ingenio
+x 2020-08-03 Agregar campo a entidad Material +ingenio
+x 2020-08-03 x 2020-08-03 2020-07-28 Blc sección: Tiempos +ingenio
+x 2020-08-04 Agregar campo orden en BlcDetalle1 +ingenio
+x 2020-08-04 Blc grabar totales de paro +ingenio
+x 2020-08-05 Renombrar getFormulario() a getDiaTrabajo() +ingenio
+x 2020-08-05 Renombrar DiaTrabajo a Formulario +ingenio
+x 2020-08-05 Agregar XOrderBy("hora") en todos las instancias de Formulario +ingenio
+x 2020-08-05 Ajuste en controllers.xml para heredar de Ingenio +ingenio
+x 2020-08-06 Ajuste de títulos en las instancias de Formulario +ingenio
+x 2020-08-06 Modificar Test para escoger secciones
+x 2020-08-06 Parametrizar factor felining y fr +ingenio
+x 2020-08-06 Ajustes en Cto24H +ingenio
+x 2020-08-06 Parametro DIA_TRABAJO_UN_REGISTRO (S/N) +ingenio
+x 2020-08-06 Agregar registros en DescriptionsList +ingenio
+x 2020-08-07 Cambiar tamano hora en instancias de Formulario +ingenio
+x 2020-08-07 Módulo TurnoTrabajo +ingenio
+x 2020-08-07 Parametrizar turnos en DisTrabajo +ingenio

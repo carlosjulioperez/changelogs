@@ -1,4 +1,24 @@
 Vim
+	* Congelado:
+		https://stackoverflow.com/questions/3419820/sometimes-my-file-just-freezes-in-my-vi-vim-what-happened	
+
+		c-s: congela
+		c-q: descongela
+
+	* Reemplazar c-m por enter:
+		https://stackoverflow.com/questions/5939142/replacing-carriage-return-m-with-enter
+		%s,^M,\r,g
+		Para que salga ^M, presionar c-v luego ENTER
+	* Manejo de tabs:
+		https://vim.fandom.com/wiki/Alternative_tab_navigation
+
+	* Buscador:
+		https://vimawesome.com/plugin/vim-finder-lives-by-it
+		:Files
+
+		https://vimawesome.com/plugin/fzf
+		:FZF
+
 	* Explorador por defecto:
 		https://shapeshed.com/vim-netrw/
 	* Agregar sufijos al final de la columna:
@@ -187,6 +207,7 @@ Vim
 
 	* Ordenar en selección:
 		:'<,'>sort
+		:'<,'>sort! (desc)
 
 	* Encoding:
 		:e ++enc=utf-8

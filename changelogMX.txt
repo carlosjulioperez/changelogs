@@ -1,5 +1,4 @@
-MX Linux
-	+ Instalación:
+MX Linux + Instalación:
 		sudo apt install vim wine32 playonlinux ack-grep filezilla vim-gnome
 		meld nmap docker translate-shell keepassx simplescreenrecorder mosh
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk
@@ -7,6 +6,21 @@ MX Linux
 		gnome-shell-pomodoro calibre planner pdfjam texlive-latex-recommended
 		libxml2-utils pdftk chromium translate-shell gnumeric xchm
 		simplescreenrecorder graphviz screen
+
+		* Actualizar virtualbox:
+			$ sudo dpkg-reconfigure virtualbox-dkms
+			$ sudo modprobe vboxdrv
+
+		* Text to speach:
+			gespeaker y mbrolla con administrador de paquetes.
+			https://hipertextual.com/archivo/2010/04/comando-linux-festival/
+			$ sudo apt-get install festival festvox-ellpc11k
+
+			$ echo "hola, hablo un poco lento, jejeje" | festival --tts --language castillian_spanish
+
+		* Buscador de archivos optimizado:
+			https://github.com/ggreer/the_silver_searcher
+			$ apt-get install silversearcher-ag
 
 		MX Instalar paquetes: flameshot qutebrowser qutebrowser-qtwebengine qutebrowser-qtwebkit
 		foliate, bookwarm

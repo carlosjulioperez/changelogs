@@ -1,4 +1,18 @@
 TIPS
+	* Fragmentos de youtube:
+		https://simonmccarthyjones.files.wordpress.com/2017/04/blog5.png
+
+			https://youtu.be/F7RpuCu2Vxg?t=3813
+			https://www.youtube.com/embed/F7RpuCu2Vxg?start=3813&end=3815
+			
+			1.31.15=5940
+			1.47.15=6431
+			https://www.youtube.com/embed/F7RpuCu2Vxg?start=5940&end=6431
+
+			<iframe width="714" height="402"
+			src="https://www.youtube.com/embed/F7RpuCu2Vxg?start=3813&end=3815" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope;
+			picture-in-picture" allowfullscreen></iframe>
 
 	* Descarga video facebook con credenciales:
 		$ youtube-dl -f dash_sd_src https://www.facebook.com/rennie.moreirapazmino/videos/2642944245934723/
@@ -593,7 +607,15 @@ TIPS
 		https://www.cyberciti.biz/faq/howto-recursively-search-all-files-for-words/
 		$ find . -type f -exec grep -l "word" {} +
 		$ find . -type f -exec grep -l "FosfatosSaveAction" {} +
+	* Buscar recursicamente excluyendo directorios:
+		https://stackoverflow.com/questions/6565471/how-can-i-exclude-directories-from-grep-r
 
+		https://www.shayanderson.com/linux/grep-exclude-directory.htm
+		
+		$ grep -Ri --exclude-dir "local" TrashCanaCrearTrashAction
+
+		+ Más rápido:
+		$ sudo ag -a TrashCanaCrearTrashAction
 	
 	* Search and replace string in the current folder:
 		http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
@@ -619,10 +641,12 @@ TIPS
 				find . -type f -exec sed -i 's,WEB-INF.classes.,,g' {} +
 				find . -type f -exec sed -i 's,parrot,rolpago,g' {} +
 				find . -type f -exec sed -i 's,feapracom,rolpago,g' {} +
+				find . -type f -exec sed -i 's,Ingenio,Contenedor,g' {} +
+				find . -type f -exec sed -i 's,ingenio,contenedor,g' {} +
+				find . -type f -exec sed -i 's,DiaTrabajo,Formulario,g' {} +
 				
-				find . -type f -exec sed -i 's,save\(\),actualizar\(\),g' {} +
-				find . -type f -exec sed -i 's,\(\)\(\)\(\),,g' {} +
-
+				find . -type f -exec sed -i 's,SqlUtil.instance.getPromedio,SqlUtil.instance.getValorCampo,g' {} +
+				
 			+ En Mac:
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
 				

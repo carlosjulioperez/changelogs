@@ -1,13 +1,13 @@
 Pomodoro
 	* top:
+		https://github.com/kevinschoon/pomo	
 		https://awesomeopensource.com/projects/pomodoro
 	* pomo:
-		https://github.com/kevinschoon/pomo
 		$ curl -L -s https://kevinschoon.github.io/pomo/install.sh | bash /dev/stdin
 		$ pomo init
 		$ pomo start -t my-project "write some codes"
 
-		$ pomo start -t Ingenio "Módulo paros"
+		$ pomo start -t Ingenio "Cto24H rediseño"
 	* cli:
 		https://coderwall.com/p/7ea_ew/productivity-pomodoro-technique-with-cli
 		

@@ -715,6 +715,9 @@ Centos
 				$ jar -uvf console.war newfile/index.html
 
 				$ jar -uvf feapp.war WEB-INF/classes/hibernate.properties
+
+				+ Eliminar lib del jar a transferir y luego agregarlo en el destino:
+				$ jar -uvf Ingenio2.war WEB-INF/lib/
 			
 			+ Extraer:
 				https://www.mkyong.com/linux/how-to-extract-war-file-in-linux/

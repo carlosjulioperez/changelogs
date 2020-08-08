@@ -1,5 +1,16 @@
-Agregar porcentajes de retención @apracom +fe
-Agregar clases de autorización y recepción del SRI +hpm
-Correo de dimaglia@hotmail.com +dimaglia
-Devolución de impuesto a la renta +sri
-Mostrar mensajes excepciones de log en UI +fe
+Reemplazo de Util.instance.toTimestamp(hora, fecha) por SqlUtil.instance.obtenerFecha(hora, diaTrabajoId) +ingenio
+(A) Mostrar listado después de Ingenio.save +ingenio
+(B) Blc sección: Variables primarias +ingenio
+(C) Agregar consultarDatos() en Cto24H +ingenio
+(C) Blc onload +ingenio
+(C) Ocultar Blc.CargarItems +ingenio
+Blc sección: Datos día +ingenio
+Colores UI según http://www.southpacificsurveys.com +contenedores
+Flash Kindle +tools
+Grabar nulo en los títulos de SecoRefrigerado +contenedores
+Instalar LifeRay e identificar tablas de sistema +ingenio
+Plantilla de formulario Reefer +contenedores
+Tabla Paros Embedded a OneToMany +ingenio
+Un solo registro en plantillas +ingenio
+Validar Trx con un solo registro de diaTrabajo +ingenio
+Validar items cargados en Cana <- TrashCana +ingenio
