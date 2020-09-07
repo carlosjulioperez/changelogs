@@ -16,6 +16,21 @@ Git
 		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
 		$ git config --global user.email "carlosjulioperez@gmail.com"
 
+	+ Nuevo repo:
+		https://medium.com/swlh/using-git-how-to-add-a-repo-to-track-an-existing-project-a05093f76396
+
+		Crear un repositorio nuevo y con el resto de las opciones en blanco
+		Copiar el URL
+		Dento de la carpeta a importar
+
+		$ git init
+		$ git remote add origin <repo-URL>
+		$ git remote -v   (verificar)
+
+		$ git add .
+		$ git commit -m "Initial commit"
+		$ git push -u origin master
+
 	+ Para Editar:
 		$ git config --global --edit
 	+ Ignorar archivos:
