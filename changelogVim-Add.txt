@@ -1,4 +1,15 @@
 Vim
+	* Atajo de teclado para nueva pestaña:
+		https://vim.fandom.com/wiki/Alternative_tab_navigation
+		Agregar al final de .vimrc
+			" Tab navigation like Firefox.
+			nnoremap <C-S-tab> :tabprevious<CR>
+			nnoremap <C-tab>   :tabnext<CR>
+			nnoremap <C-t>     :tabnew<CR>
+			inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+			inoremap <C-tab>   <Esc>:tabnext<CR>i
+			inoremap <C-t>     <Esc>:tabnew<CR>
+
 	* Congelado:
 		https://stackoverflow.com/questions/3419820/sometimes-my-file-just-freezes-in-my-vi-vim-what-happened	
 
