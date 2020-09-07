@@ -19,7 +19,7 @@ Centos
 	200.124.241.243
 
 	186.33.181.219 oymar
-	190.63.184.11 K
+	190.63.184.11 100020, 10015432, 10028080
 
 	* Documentar:
 		postgres@mx-box:~$ createdb nomina
