@@ -270,3 +270,7 @@ x 2020-09-07 Instalación de Liferay 6.1.2
 x 2020-09-08 Configuración de Ingenio con ox 6.3.2 +ingenio
 x 2020-09-08 Instalación de Ingenio portlets en Liferay 6.1.2 +ingenio
 x 2020-09-08 Driver postgres jdbc compatible con Liferay +ingenio
+x 2020-09-08 Ajuste de archivos git +ingenio
+x 2020-09-08 Copiar liferay en servidor +ingenio
+x 2020-09-08 Desactivar la selección de temas +ingenio
+x 2020-09-08 Ajuste war en tarea generatePortlets +ingenio

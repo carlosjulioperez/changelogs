@@ -2,7 +2,7 @@ Liferay
 	* 6.1.2:
 		+ Instalación:
 			liferay-portal-tomcat-6.1.2-ce-ga3-20130816114619181.zip
-			$ echo "portal.security.manager.strategy=none" >> /home/knoppix/local/liferay-portal-6.1.2-ce-ga3/portal-ext.properties
+			$ echo "portal.security.manager.strategy=none" >> /opt/liferay-portal-6.1.2-ce-ga3/portal-ext.properties
 			Solución: copiar javax.el-3.0.1-b09.jar a liferay/lib
 			Copiar ejb.jar en liferay/lib
 			Reemplazar liferay/ext/postgresql.jar por el driver usado en la aplicación desarrollada.
@@ -13,6 +13,18 @@ Liferay
 				maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 				username="postgres" password="" driverClassName="org.postgresql.Driver"
 				url="jdbc:postgresql://localhost:5432/ingenio"/>
+
+		+ En el servidor:
+			$ unzip liferay-portal-tomcat-6.1.2-ce-ga3-20130816114619181.zip -d /opt
+			$ echo "portal.security.manager.strategy=none" >> /opt/liferay-portal-6.1.2-ce-ga3/portal-ext.properties
+			$ cp ejb.jar javax.el-3.0.1-b09.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/
+			$ mv /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext/postgresql.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext/postgresql-jar 
+			$ cp postgresql-42.2.5.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext
+			$ vim /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/conf/context.xml
+
+		+ Configuración:
+			Crear la página
+			Seleccionar el tema clásico
 			
 		+ Error 1:
 			Caused by: org.hibernate.engine.jndi.JndiException: Unable to lookup JNDI name [java:comp/env/jdbc/IngenioDS]

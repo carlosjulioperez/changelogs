@@ -683,7 +683,13 @@ Centos
 				Por (antecediendo o separados por pipe):
 				  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
 				         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|192.168.253.238" />
-
+			
+			+ Liferay 6.1.2 y tomcat7:
+			# useradd -r tomcat7 --shell /bin/false
+			# chown -R tomcat7: /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40
+			# chmod +x /etc/init.d/tomcat7
+			# service tomcat7 start
+			# chkconfig tomcat7 on
 
 			+ Archivos de FE:
 				# mkdir -p /usr/local/fe/dir/ca

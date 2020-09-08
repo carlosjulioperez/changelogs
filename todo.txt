@@ -1,6 +1,5 @@
-Copiar liferay en servidor +ingenio
-Configuración de usuarios +ingenio
-Desactivar la selección de temas +ingenio
+Creación de servicio tomcat7 +ingenio
+Configuración de usuarios en el servidor +ingenio
 (C) Blc onload +ingenio
 (C) Ocultar Blc.CargarItems +ingenio
 Blc sección: Datos día +ingenio
