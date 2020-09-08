@@ -1,7 +1,6 @@
-Reemplazo de Util.instance.toTimestamp(hora, fecha) por SqlUtil.instance.obtenerFecha(hora, diaTrabajoId) +ingenio
-(A) Mostrar listado después de Ingenio.save +ingenio
-(B) Blc sección: Variables primarias +ingenio
-(C) Agregar consultarDatos() en Cto24H +ingenio
+Copiar liferay en servidor +ingenio
+Configuración de usuarios +ingenio
+Desactivar la selección de temas +ingenio
 (C) Blc onload +ingenio
 (C) Ocultar Blc.CargarItems +ingenio
 Blc sección: Datos día +ingenio

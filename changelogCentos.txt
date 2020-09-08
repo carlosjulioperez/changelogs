@@ -699,6 +699,7 @@ Centos
 				# chmod 777 /tmp/salida.pdf
 
 				$ scp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar user2@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
+				$ scp -P 1000 liferay-portal-tomcat-6.1.2-ce-ga3-20130816114619181.zip root@190.63.184.11:/root/carper
 
 				+ feNuevo:
 					$ sudo vim /opt/tomcat-latest/webapps/feapp/WEB-INF/classes/hibernate.properties

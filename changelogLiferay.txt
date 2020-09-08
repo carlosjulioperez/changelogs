@@ -1,0 +1,42 @@
+Liferay
+	* 6.1.2:
+		+ Instalación:
+			liferay-portal-tomcat-6.1.2-ce-ga3-20130816114619181.zip
+			$ echo "portal.security.manager.strategy=none" >> /home/knoppix/local/liferay-portal-6.1.2-ce-ga3/portal-ext.properties
+			Solución: copiar javax.el-3.0.1-b09.jar a liferay/lib
+			Copiar ejb.jar en liferay/lib
+			Reemplazar liferay/ext/postgresql.jar por el driver usado en la aplicación desarrollada.
+
+			$ vim /home/knoppix/local/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/conf/context.xml
+			<!-- PostgreSQL -->
+			<Resource name="jdbc/IngenioDS" auth="Container" type="javax.sql.DataSource"
+				maxTotal="20" maxIdle="5" maxWaitMillis="10000"
+				username="postgres" password="" driverClassName="org.postgresql.Driver"
+				url="jdbc:postgresql://localhost:5432/ingenio"/>
+			
+		+ Error 1:
+			Caused by: org.hibernate.engine.jndi.JndiException: Unable to lookup JNDI name [java:comp/env/jdbc/IngenioDS]
+			https://issues.liferay.com/browse/LPS-40250?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
+			https://stackoverflow.com/questions/41270451/setting-up-jndi-with-a-tomcat-7-environment-using-liferay-6-1
+			
+			portal.security.manager.strategy=none
+
+			archivo portal-ext.properties
+			https://www.opensource-techblog.com/2014/09/portal-properties-and-portal-ext.html
+			https://docs.liferay.com/dxp/portal/7.1-ga1/propertiesdoc/portal.properties.html
+
+			Solución:
+			$ echo "portal.security.manager.strategy=none" >> /home/knoppix/local/liferay-portal-6.1.2-ce-ga3/portal-ext.properties
+
+		+ Error 2:
+			java.lang.NoClassDefFoundError: javax/el/ELManager
+			https://stackoverflow.com/questions/49394504/hibernate-validator-6-0-8-jars-causing-exception
+			Hibernate Validator Engine / Bundle-Version: 6.0.15.Final
+
+			Solución: copiar javax.el-3.0.1-b09.jar a liferay/lib
+
+		+ Error 3:
+			Caused by: javax.servlet.ServletException: java.lang.AbstractMethodError: Method org/postgresql/jdbc3/Jdbc3DatabaseMetaData.getSchemas(Ljav a/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet; is abstract
+			
+			https://stackoverflow.com/questions/26274312/getschema-in-postgresql-jdbc-driver-throws-java-lang-abstractmethoderror-or-java
+

@@ -72,11 +72,15 @@ Desarrollo
 		$ systemctl status tlp
 
 	* PostgreSQL:
+		$ sudo apt install postgresql-9.6
 		$ sudo vim /etc/postgresql/9.6/main/pg_hba.conf
 
-		+ En Debian 10 (de Knoppix 8.6):
+		+ PostgreSQL 11 En Debian 10 (de Knoppix 8.6):
 			$ sudo make-ssl-cert generate-default-snakeoil --force-overwrite
 			$ sudo apt install postgresql
+
+			$ sudo apt-get purge postgresql-11
+			$ sudo apt-get autoremove
 
 	* LXDE:
 		+ Cargar variables de entorno:

@@ -262,3 +262,11 @@ x 2020-08-06 Agregar registros en DescriptionsList +ingenio
 x 2020-08-07 Cambiar tamano hora en instancias de Formulario +ingenio
 x 2020-08-07 Módulo TurnoTrabajo +ingenio
 x 2020-08-07 Parametrizar turnos en DisTrabajo +ingenio
+x 2020-09-07 Crear poyecto App con ox 4.3
+x 2020-09-07 Instalación de postgresql 9.6 en Debian 10 (Knoppix 8.6)
+x 2020-09-07 Acceso rápido de C-T para tabnew en Vim
+x 2020-09-07 Configuración trust en pg_hpa.conf para usuario postgres
+x 2020-09-07 Instalación de Liferay 6.1.2
+x 2020-09-08 Configuración de Ingenio con ox 6.3.2 +ingenio
+x 2020-09-08 Instalación de Ingenio portlets en Liferay 6.1.2 +ingenio
+x 2020-09-08 Driver postgres jdbc compatible con Liferay +ingenio
