@@ -1,4 +1,12 @@
 Git
+	+ Quitar carpeta:
+		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository
+
+		$ git rm -r i18n/portlets/
+		$ git rm -r --cached i18n/portlet
+		$ git commit -m "Quitar archivos autogenerados"
+		$ git push
+
 	+ Arreglar Error bad index Fatal index file corrupt:
 		https://stackoverflow.com/questions/1115854/how-to-resolve-error-bad-index-fatal-index-file-corrupt-when-using-git
 		
@@ -45,18 +53,22 @@ Git
 			*~
 
 			.metadata/
-			data/
 			tests/
 			temp/
 			web/*
 			xava/*
+			i18n/portlets/
 
 			!xava/application.xml
 			!xava/controllers.xml
+			!xava/editors.xml
+			!xava/tabs-default-values.xml
 
 			# swap
 			[._]*.s[a-v][a-z]
 			[._]*.sw[a-p]
 			[._]s[a-v][a-z]
 			[._]sw[a-p]
+
+			act.sh
 

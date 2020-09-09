@@ -1,4 +1,3 @@
-Creación de servicio tomcat7 +ingenio
 Configuración de usuarios en el servidor +ingenio
 (C) Blc onload +ingenio
 (C) Ocultar Blc.CargarItems +ingenio
