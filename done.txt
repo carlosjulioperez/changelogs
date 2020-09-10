@@ -276,3 +276,8 @@ x 2020-09-08 Desactivar la selección de temas +ingenio
 x 2020-09-08 Ajuste war en tarea generatePortlets +ingenio
 x 2020-09-08 Shell script para actualizar war portlets +ingenio
 x 2020-09-08 Creación de servicio tomcat7 +ingenio
+x 2020-09-09 Reinstalación de liferay +ingenio
+x 2020-09-09 Creación de menú por roles +ingenio
+x 2020-09-09 Crear la página de bienvenida +ingenio
+x 2020-09-09 Respaldo de la instalación +ingenio
+x 2020-09-09 Configuración de usuarios en el servidor +ingenio

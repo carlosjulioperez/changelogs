@@ -1,4 +1,8 @@
 Vim
+	* Cambiar tamaño de splits:
+		https://vim.fandom.com/wiki/Resize_splits_more_quickly
+		Ctrl-w + and Ctrl-w -
+
 	* Atajo de teclado para nueva pestaña:
 		https://vim.fandom.com/wiki/Alternative_tab_navigation
 		Agregar al final de .vimrc

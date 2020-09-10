@@ -20,7 +20,7 @@ Liferay
 			$ cp ejb.jar javax.el-3.0.1-b09.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/
 			$ mv /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext/postgresql.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext/postgresql-jar 
 			$ cp postgresql-42.2.5.jar /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/lib/ext
-			$ vim /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/conf/context.xml
+			$ cp context.xml /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/conf
 
 		+ Configuración:
 			Crear la página

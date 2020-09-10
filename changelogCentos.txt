@@ -70,6 +70,9 @@ Centos
 			$ mosh user@example.com --ssh="ssh -p 2222"
 			$ mosh carper@186.178.202.67  --ssh="ssh -p 2022"
 			$ mosh carper@181.199.126.231 --ssh="ssh -p 2022"
+			
+			$ mosh root@190.63.184.11 --ssh="ssh -p 1000"
+
 		+ Matar procesos:
 			https://stackoverflow.com/questions/17857733/how-do-i-reattach-to-a-detached-mosh-session
 			$ kill `pidof mosh-server`
