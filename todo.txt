@@ -1,14 +1,9 @@
-Proyecto Pescarolo +contenedores
-Propuesta Apracom 
-(C) Blc onload +ingenio
-(C) Ocultar Blc.CargarItems +ingenio
+(B) 2020-09-17 Flujo jugo +ingenio
+(B) Avence Pescarolo formato 2 de PDF +contenedores
+(C) StockProcesoTest +ingenio
+Blc onload +ingenio
 Blc sección: Datos día +ingenio
 Colores UI según http://www.southpacificsurveys.com +contenedores
+Error al borrar Inspeccion +contenedores
 Flash Kindle +tools
-Grabar nulo en los títulos de SecoRefrigerado +contenedores
-Instalar LifeRay e identificar tablas de sistema +ingenio
-Plantilla de formulario Reefer +contenedores
-Tabla Paros Embedded a OneToMany +ingenio
-Un solo registro en plantillas +ingenio
-Validar Trx con un solo registro de diaTrabajo +ingenio
-Validar items cargados en Cana <- TrashCana +ingenio
+Ocultar Blc.CargarItems +ingenio

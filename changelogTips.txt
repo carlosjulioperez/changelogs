@@ -1,4 +1,9 @@
 TIPS
+	* qutebrowser:
+		qute://settings
+		https://www.qutebrowser.org/doc/help/configuring.html
+		language: en-US,en -> es-EC,es 
+
 	* Fragmentos de youtube:
 		https://simonmccarthyjones.files.wordpress.com/2017/04/blog5.png
 

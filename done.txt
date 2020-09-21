@@ -281,3 +281,14 @@ x 2020-09-09 Creación de menú por roles +ingenio
 x 2020-09-09 Crear la página de bienvenida +ingenio
 x 2020-09-09 Respaldo de la instalación +ingenio
 x 2020-09-09 Configuración de usuarios en el servidor +ingenio
+x 2020-09-15 Ordenar por código en Plantilla Contenedor Seco +contenedores
+x 2020-09-15 Ordenar por código en Plantilla Contenedor Seco y Refrigerado +contenedores
+x 2020-09-17 Cambiar checks por combo enum en inspección +contenedores
+x 2020-09-16 Formulario Inspeccion y selección de tipo de contenedor +contenedores
+x 2020-09-17 Elaboración de project con ajustes finales +ingenio
+x 2020-09-18 Declaración SRI +sri
+x 2020-09-18 Optimizar resolución imagen portada Ingenio +ingenio
+x 2020-09-18 Excel de perfil para trabajo remoto +propuesta
+x 2020-09-18 Propuesta Apracom 
+x 2020-09-20 Resumen ES +iasd
+x 2020-09-20 Aumento de porcentaje apracom
