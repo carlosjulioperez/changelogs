@@ -292,3 +292,22 @@ x 2020-09-18 Excel de perfil para trabajo remoto +propuesta
 x 2020-09-18 Propuesta Apracom 
 x 2020-09-20 Resumen ES +iasd
 x 2020-09-20 Aumento de porcentaje apracom
+x 2020-09-22 StockProcesoTest +ingenio
+x 2020-09-22 2020-09-17 Flujo jugo +ingenio
+x 2020-09-22 Ajuste Formulario Caña +ingenio
+x 2020-09-22 Actualización war +contenedores
+x 2020-09-22 Avance Pescarolo formato 2 de PDF +contenedores
+x 2020-09-22 Actualización war portal +ingenio
+x 2020-09-23 Agregar totales en StockProcesoP +ingenio
+x 2020-09-24 Rediseñar BlcDetalle1 +ingenio
+x 2020-09-23 Plantilla para BLC en Datos Día +ingenio
+x 2020-09-24 BlcDetalle1 campo editable +ingenio
+x 2020-09-25 Agregar totales en StockProceso +ingenio
+x 2020-09-25 Renombrar InicioZafra a Zafra +ingenio
+x 2020-09-25 Eliminar Preferencias +ingenio
+x 2020-09-24 BLC ingresar datos como StockFabrica +ingenio
+x 2020-09-26 Impedir CargarItems en DiaTrabajo cerrado +ingenio
+x 2020-09-27 Determinar campos de excel BLC +ingenio
+x 2020-09-27 Agregar parámetro ZAFRA_VIGENTE +ingenio
+x 2020-09-27 Agregar Zafra.codigo (int) +ingenio
+x 2020-09-28 BlcDetalle1 sumatoria por material (día anterior) +ingenio

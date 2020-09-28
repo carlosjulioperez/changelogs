@@ -1,4 +1,10 @@
 TIPS
+	* youtube lua plugin para vlc en kmoppix32:
+		sudo curl "http://git.videolan.org/?p=vlc.git;a=blob_plain;f=share/lua/playlist/youtube.lua;hb=HEAD" -o /usr/lib/i386-linux-gnu/vlc/lua/playlist/youtube.lua
+
+	* gnome activity bar:
+		https://askubuntu.com/questions/792180/how-to-make-gnomes-activities-bar-always-visible
+
 	* qutebrowser:
 		qute://settings
 		https://www.qutebrowser.org/doc/help/configuring.html
