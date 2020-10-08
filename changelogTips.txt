@@ -1,4 +1,7 @@
 TIPS
+	* Crear USB Windows booteable:
+		https://github.com/slacka/WoeUSB
+
 	* youtube lua plugin para vlc en kmoppix32:
 		sudo curl "http://git.videolan.org/?p=vlc.git;a=blob_plain;f=share/lua/playlist/youtube.lua;hb=HEAD" -o /usr/lib/i386-linux-gnu/vlc/lua/playlist/youtube.lua
 
@@ -135,6 +138,9 @@ TIPS
 		$ screen -ls
 		$ screen -r
 
+		Matar una pestaña congelada
+		:kill
+
 		+ mensaje There is no screen to be resumed:
 		$ screen -d -r <numero>
 
@@ -156,6 +162,7 @@ TIPS
 
 		$ find /media/carper/UUI/ -name "sql-ledger*.tar.gz" -exec stat  -c "%y %n" {} \;
 		$ find /media/carper/UUI/ -name "cjerp.tar.gz" -exec stat  -c "%y %n" {} \;
+		$ find ./ -name "*.pl" -exec stat  -c "%y %n" {} \;
 		$ find /var -type d -exec stat  -c "%n %y" {} \;
 
 	* Contar los archivos en un directorio:

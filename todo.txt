@@ -1,12 +1,13 @@
-(B) Blc consultaPago transient +ingenio
+SellosCierreContenedor +contenedores
 (C) Actualizar SuiteTest +ingenio
-Agregar Termógrafo en Estiba +contenedores
+(C) Actualizar war portlet +ingenio
+(C) Blc consultaPago transient +ingenio
+(C) Validar clic en listado cuando dia cerrado +ingenio
 Blc onload +ingenio
 Blc sección: Datos día +ingenio
 Colores UI según http://www.southpacificsurveys.com +contenedores
+Cálculo de Fábrica +ingenio
 Error al borrar Inspeccion +contenedores
 Flash Kindle +tools
+Miel Final Melaza Gal/TCM +ingenio
 Ocultar Blc.CargarItems +ingenio
-StockFabrica total día anterior +ingenio
-Subir Plantilla StockFabrica +ingenio
-Subir Plantilla StockProceso +ingenio

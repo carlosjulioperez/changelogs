@@ -311,3 +311,33 @@ x 2020-09-27 Determinar campos de excel BLC +ingenio
 x 2020-09-27 Agregar parámetro ZAFRA_VIGENTE +ingenio
 x 2020-09-27 Agregar Zafra.codigo (int) +ingenio
 x 2020-09-28 BlcDetalle1 sumatoria por material (día anterior) +ingenio
+x 2020-09-28 Query para consulta valores BLC acumulados por material +ingenio
+x 2020-09-28 Agregar columna acumulado en BlcDetalle1 +ingenio
+x 2020-09-29 Cambio campo por id en SqlUtil.getValMatBlcAcu() +ingenio
+x 2020-09-29 Subir Plantilla StockProceso +ingenio
+x 2020-09-29 Subir Plantilla Material +ingenio
+x 2020-09-29 Ajuste de StockFabricaTest +ingenio
+x 2020-09-29 Actualizar portlet war +ingenio
+x 2020-09-30 Agregar StockFabrica.ax132 +ingenio
+x 2020-09-30 Agregar StockFabrica.ax135 +ingenio
+x 2020-09-30 Agregar StockFabrica.ax140 en Plantilla +ingenio
+x 2020-09-30 Ajustar getDetallePorIndicador() en StockFabricaDetalleAction +ingenio
+x 2020-09-30 Agregar StockFabrica.ax140 +ingenio
+x 2020-09-30 Pestaña Presentación de azúcar por presentaciones +ingenio
+x 2020-09-30 BlcTest: Agregar Pestaña Presentación de azúcar por presentaciones +ingenio
+x 2020-09-30 No se muestra BlcP.descripcion +ingenio
+x 2020-10-01 BlcDetalle1Action: implementar getValor() +ingenio
+x 2020-10-01 BlcDetalle1Action: Actualizar en getView() y con setValores() fuera del switch +ingenio
+x 2020-10-01 Ajustar BlcTest +ingenio
+x 2020-10-01 Variables primarias: método balance +ingenio
+x 2020-10-04 Jugo Diluido (BR) +ingenio
+x 2020-10-06 Propuesta Juan Eljuri +pos
+x 2020-10-06 Revisar duplicidad de líneas +apracom 
+x 2020-10-04 BlcDetalle12P +ingenio
+x 2020-10-04 BlcDetalle12 +ingenio
+x 2020-10-04 Agregar indicadores en indicador.csv +ingenio
+x 2020-10-06 BlcDetalle13P +ingenio
+x 2020-10-06 BlcDetalle13 +ingenio
+x 2020-10-07 Solución a registros duplicados por doble id 3440 en retenc +apracom
+x 2020-10-07 Agregar Termógrafo en Estiba +contenedores
+x 2020-10-07 Crear entidad Contenedor y relacionarlo en Inspeccion +contenedores
