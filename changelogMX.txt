@@ -1,4 +1,48 @@
-MX Linux + Instalación:
+MX 19.1:
+	* Paquetes:
+		sudo apt install ack-grep bleachbit terminator meld keepassx
+		openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql
+	* PostgreSQL:
+		$ sudo pg_createcluster 11 main
+		$ sudo pg_ctlcluster 11 main start
+		$ sudo pg_dropcluster 11 mainexit
+		
+	* vim:
+		https://opensource.com/article/20/2/how-install-vim-plugins
+		https://tpaschalis.github.io/vim-go-setup/
+		
+		$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		
+		$ vim .vimrc
+			call plug#begin()
+			Plug 'preservim/NERDTree'
+			Plug 'morhetz/gruvbox'
+			call plug#end()
+			
+			" NERDTree plugin specific commands
+			:nnoremap <C-g> :NERDTreeToggle<CR>
+		
+		Instalar el plugin:
+			:PlugInstall
+		
+		Ejecutar:
+			:NERDTree
+			
+		https://github.com/godlygeek/tabular
+			mkdir -p ~/.vim/bundle
+			cd ~/.vim/bundle
+			git clone git://github.com/godlygeek/tabular.git
+
+		
+	* gruvbox:
+		https://github.com/morhetz/gruvbox
+		https://github.com/morhetz/gruvbox/wiki/Installation
+		+vim-plug:
+			Add Plug 'morhetz/gruvbox' to your .vimrc and run :PlugInstall
+
+
+MX 18.3:
 		sudo apt install vim wine32 playonlinux ack-grep filezilla vim-gnome
 		meld nmap docker translate-shell keepassx simplescreenrecorder mosh
 		postgresql virtualbox vlc maven ant ant-optional tree openjdk-8-jdk

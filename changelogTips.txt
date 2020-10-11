@@ -1,4 +1,8 @@
 TIPS
+	* Copiar archivos con indicador de progreso:
+		https://www.baeldung.com/linux/copy-command-with-progress
+		$ rsync --progress /media/sda4/carper/local/iso/win10/MiniOS10\ LTSC\ v2020.06.iso /media/sdd3/vm/iso
+
 	* Crear USB Windows booteable:
 		https://github.com/slacka/WoeUSB
 

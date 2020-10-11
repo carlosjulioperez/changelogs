@@ -197,8 +197,22 @@ Desarrollo
 		$ groovy --version
 
 	+ Virtualbox:
-	https://wiki.debian.org/VirtualBox
-	$ sudo apt install linux-headers-amd64 linux-headers-4.9.0-6-amd64
+		https://wiki.debian.org/VirtualBox
+
+		Knoppix 8.3 es Debian 10
+		https://vitux.com/how-to-install-virtualbox-on-debian-10/
+		$ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+		$ echo "deb http://download.virtualbox.org/virtualbox/debian buster contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+
+
+		$ sudo vim /etc/apt/sources.list.d/virtualbox.list
+			deb http://download.virtualbox.org/virtualbox/debian buster contrib
+		$ wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
+		$ sudo apt-key add oracle_vbox_2016.asc
+		$ sudo apt-get update
+		$ sudo apt-get install virtualbox-6.1
+
+		$ sudo apt install linux-headers-amd64 linux-headers-4.9.0-6-amd64
 
 	+ Teamviewer:
 	https://linuxconfig.org/how-to-install-teamviewer-on-debian-9-stretch-linux

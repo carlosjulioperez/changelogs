@@ -1,4 +1,6 @@
-SellosCierreContenedor +contenedores
+Project POS +eljuri
+x 2020-10-08 SellosCierreContenedorTest +contenedores
+x 2020-10-08 SellosCierreContenedor +contenedores
 (C) Actualizar SuiteTest +ingenio
 (C) Actualizar war portlet +ingenio
 (C) Blc consultaPago transient +ingenio
