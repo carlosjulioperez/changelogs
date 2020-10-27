@@ -1,7 +1,9 @@
 MX 19.1:
 	* Paquetes:
 		sudo apt install ack-grep bleachbit terminator meld keepassx
-		openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql
+		openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql ant ant-optional
+		groovy wine playonlinux tmux
+
 	* PostgreSQL:
 		$ sudo pg_createcluster 11 main
 		$ sudo pg_ctlcluster 11 main start

@@ -25,6 +25,11 @@ Liferay
 		+ Configuración:
 			Crear la página
 			Seleccionar el tema clásico
+
+			+ Abrir enlaces en nueva pestaña (pendiente):
+				https://jsumon.wordpress.com/2011/06/09/liferay-uiicon-target_blank-of-liferay6-0-5-not-open-link-page-in-new-tab/
+
+				$ vim /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/webapps/ROOT/html/taglib/ui/icon/page.jsp
 			
 		+ Error 1:
 			Caused by: org.hibernate.engine.jndi.JndiException: Unable to lookup JNDI name [java:comp/env/jdbc/IngenioDS]

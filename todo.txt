@@ -1,15 +1,20 @@
-Project POS +eljuri
-x 2020-10-08 SellosCierreContenedorTest +contenedores
-x 2020-10-08 SellosCierreContenedor +contenedores
+JRDataSourceFactory +ingenio
+(A) Agregar consulta Paro +ingenio
+(A) Project POS +eljuri
+(A) Reporte Hac +ingenio
+(B) Acumulado por mes y a la fecha +ingenio
 (C) Actualizar SuiteTest +ingenio
-(C) Actualizar war portlet +ingenio
+(C) Agregar columnas Brix cachaza y humedad en Turbiedad +ingenio
 (C) Blc consultaPago transient +ingenio
 (C) Validar clic en listado cuando dia cerrado +ingenio
+Abrir enlaces en nueva pestaña en liferay +ingenio
 Blc onload +ingenio
-Blc sección: Datos día +ingenio
 Colores UI según http://www.southpacificsurveys.com +contenedores
 Cálculo de Fábrica +ingenio
+Cálculo de paros +ingenio
+Ejecutar SuiteTest creando todas las entidades y consultas +ingenio
 Error al borrar Inspeccion +contenedores
 Flash Kindle +tools
+Ingreso de datos de 16 de septiembre de 2020 +ingenio
 Miel Final Melaza Gal/TCM +ingenio
 Ocultar Blc.CargarItems +ingenio

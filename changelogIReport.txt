@@ -1,0 +1,5 @@
+Configuración
+	+ 5.6.0:
+		Instalar java 6 
+		Modificar etc/ireport.conf:
+		jdkhome="/opt/zulu6.22.0.3-jdk6.0.119-linux_x64"

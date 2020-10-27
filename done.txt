@@ -341,3 +341,29 @@ x 2020-10-06 BlcDetalle13 +ingenio
 x 2020-10-07 Solución a registros duplicados por doble id 3440 en retenc +apracom
 x 2020-10-07 Agregar Termógrafo en Estiba +contenedores
 x 2020-10-07 Crear entidad Contenedor y relacionarlo en Inspeccion +contenedores
+x 2020-10-11 todo.txt en vim +config
+x 2020-10-08 SellosCierreContenedorTest +contenedores
+x 2020-10-08 SellosCierreContenedor +contenedores
+x 2020-10-11 Configuración de qutebrowser +config
+x 2020-10-11 Acualizar base de datos +ingenio
+x 2020-10-11 BLC: Agregrar items de detalle12 y detalle13 +ingenio
+x 2020-10-11 Crear BlcAdmin para ingresar datos acumulados iniciales +ingenio
+x 2020-10-11 Crear valores del día anterior en tabla detalle1 +ingenio
+x 2020-10-11 Crear valores del día anterior en tabla detalle12 +ingenio
+x 2020-10-11 Crear valores del día anterior en tabla detalle13 +ingenio
+x 2020-10-11 Ajuste de BlcDetalle1Action invocado desde BlcAdmin +ingenio
+x 2020-10-12 BlcCenicanaP y BlcCelicanaPDetalle +ingenio
+x 2020-10-12 BlcCenicana y BlcCelicanaDetalle +ingenio
+x 2020-10-13 BlcCenicana consultar datos +ingenio
+x 2020-10-14 2020-10-14 Agregar sumatoria "Sacarosa en Silos" +ingenio
+x 2020-10-14 BLC: Consultar datos y cálculos de detalle12 +ingenio
+x 2020-10-14 Miel F.M. Gal/TCM +ingenio
+x 2020-10-15 Diagrama de proceso del sistema +ingenio
+x 2020-10-20 Modificar acumulado de Sacarosa en Silos Día Anterior en BlcDetalle12 +ingenio
+x 2020-10-20 BLC: Consultar datos y cálculos de BlcDetalle13 +ingenio
+x 2020-10-21 BlcPDetalle14, BlcPDetalle15, BlcPDetalle16 +ingenio
+x 2020-10-21 Agregar en acidez volátil: PRE COSECHA QUEMADA y CAÑA COMERCIAL +ingenio
+x 2020-10-21 BlcDetalle14, BlcDetalle15, BlcDetalle16 +ingenio
+x 2020-10-21 Parámetro FR 0.641 +ingenio
+x 2020-10-25 Análisis rutinarios y especiales fábrica +ingenio
+x 2020-10-26 BlcReportAction +ingenio

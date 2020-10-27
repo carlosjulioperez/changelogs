@@ -1,4 +1,28 @@
 Vim
+	* Navegar por camelCase:
+		https://github.com/bkad/CamelCaseMotion
+		Agregar al final de .vimrc
+
+			call plug#begin()
+			Plug 'preservim/NERDTree'
+			Plug 'morhetz/gruvbox'
+			Plug 'junegunn/fzf'
+			Plug 'junegunn/vim-easy-align'
+			Plug 'bkad/CamelCaseMotion'
+			call plug#end()
+
+			map <silent> w <Plug>CamelCaseMotion_w
+			map <silent> b <Plug>CamelCaseMotion_b
+			map <silent> e <Plug>CamelCaseMotion_e
+			map <silent> ge <Plug>CamelCaseMotion_ge
+			sunmap w
+			sunmap b
+			sunmap e
+			sunmap ge
+		
+			imap <silent> <S-Left> <C-o><Plug>CamelCaseMotion_b
+			imap <silent> <S-Right> <C-o><Plug>CamelCaseMotion_w
+
 	* Cambiar tamaño de splits:
 		https://vim.fandom.com/wiki/Resize_splits_more_quickly
 		Ctrl-w + and Ctrl-w -
