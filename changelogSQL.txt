@@ -1,4 +1,7 @@
 SQL	
+	* Comandos a archivo:
+		https://stackoverflow.com/questions/5331320/psql-save-results-of-command-to-a-file
+		\o texto.txt
 
 	* Actualizar una tabla dado un archivo csv:
 		https://stackoverflow.com/questions/8910494/how-to-update-selected-rows-with-values-from-a-csv-file-in-postgres
@@ -149,7 +152,9 @@ SQL
 		pg_dump --data-only --table=tiporet apracomsa_test > apracomsa_test_tiporet.sql
 		pg_dump --data-only --table=retenc apracomsa_test > apracomsa_test_retenc.sql
 		pg_dump --data-only --table=tiporet apracomsa > apracomsa_tiporet.sql
-		pg_dump --data-only --table=retenc apracomsa > apracomsa_retenc.sql
+		I
+		pg_dump --data-only --table=inventory apracomsa > apracomsa_inventory.sql
+
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump

@@ -1,0 +1,12 @@
+Windows 10
+	* Desactivar Defender:
+		https://www.techadvisor.co.uk/how-to/windows/how-permanently-disable-windows-defender-3679498/
+		regedit
+		Ubicar: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows
+		Defender
+		New>DWORD (32-Bit) Value.
+		DisableAntiSpyware
+		Modify / Value data / 1
+		Ok
+
+

@@ -196,6 +196,7 @@ Centos
 		https://webhostinggeeks.com/howto/how-to-deny-icmp-ping-request-on-centos-6-2/
 
 		$ sudo vim /etc/sysctl.conf
+		# Desactivar ping
 		net.ipv4.icmp_echo_ignore_all = 1
 
 	* Configuración de servidor:
@@ -240,7 +241,7 @@ Centos
 
 		# loadkeys us
 		# ifup eth0
-		# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+		# vim /etc/sysconfig/network-scripts/ifcfg-eth0
 		ONBOOT=yes
 
 		# Servidor
@@ -287,8 +288,8 @@ Centos
 		# sestatus
 
 		# vim /etc/sysconfig/selinux
-			SELINUX=enforcing 
-			#SELINUX=disabled  
+			#SELINUX=enforcing 
+			SELINUX=disabled
 
 	* Crear usuario admin:
 		# adduser user1
@@ -369,6 +370,7 @@ Centos
 			
 			+ Para una IP específica:
 				host    all         all         192.168.253.238/24      trust
+				host    all         all         192.168.253.156/24      trust
 
 		# service postgresql restart
 		# su postgres
@@ -423,8 +425,8 @@ Centos
 		$ psql -U sql-ledger apracomsa < 29-08-2018.apracomsa.sql
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 bc19test
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 catver_prueba
-		$ createdb -O sql-ledger -E SQL_ASCII -T template0 blutec_prueba
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 blutec
+		$ createdb -O sql-ledger -E SQL_ASCII -T template0 catver
 		
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 apprueba
 		$ createdb -O sql-ledger -E SQL_ASCII -T template0 logistica
@@ -466,7 +468,7 @@ Centos
 
 		+ Configuración:
 		# cd /usr/local/SL/2.8.20
-		# chown -R root:root sql-ledger
+		# chown -R root: sql-ledger
 		# cd sql-ledger
 		# chown -R apache: users/ css/ templates/ spool/ images/
 		# chmod -R 755 users/
@@ -711,6 +713,12 @@ Centos
 
 				$ scp ~/local/projects/cjerp/dist/cjfews-rep-1.0.jar user2@192.168.0.3:/usr/local/apache-tomcat-7.0.54/lib
 				$ scp -P 1000 liferay-portal-tomcat-6.1.2-ce-ga3-20130816114619181.zip root@190.63.184.11:/root/carper
+
+				-- Migración
+				$ scp -P 2022 SL-2020-10-22.tar.gz root@192.168.0.158:/usr/local
+				$ scp -P 2022 /var/lib/pgsql/backups/apracomsa-20201030.sql root@192.168.0.158:/var/lib/pgsql/backups
+
+				$ scp -P 2022 /etc/httpd/conf.d/sql-ledger-httpd.conf root@192.168.0.158:/etc/httpd/conf.d
 
 				+ feNuevo:
 					$ sudo vim /opt/tomcat-latest/webapps/feapp/WEB-INF/classes/hibernate.properties

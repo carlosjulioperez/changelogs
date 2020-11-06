@@ -1,4 +1,10 @@
 TIPS
+	* Tarea crontab cada 4 horas:
+		https://serverfault.com/questions/39004/what-is-the-correct-syntax-to-run-cron-every-4-hours
+
+		0 */4 * * * /cmd.sh
+		0 0,4,8,12,16,20 * * * /cmd.sh
+
 	* Copiar archivos con indicador de progreso:
 		https://www.baeldung.com/linux/copy-command-with-progress
 		$ rsync --progress /media/sda4/carper/local/iso/win10/MiniOS10\ LTSC\ v2020.06.iso /media/sdd3/vm/iso

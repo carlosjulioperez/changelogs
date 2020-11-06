@@ -367,3 +367,11 @@ x 2020-10-21 BlcDetalle14, BlcDetalle15, BlcDetalle16 +ingenio
 x 2020-10-21 Parámetro FR 0.641 +ingenio
 x 2020-10-25 Análisis rutinarios y especiales fábrica +ingenio
 x 2020-10-26 BlcReportAction +ingenio
+x 2020-10-28 Compilar JRDataSourceFactory.java +ingenio
+x 2020-10-27 Usuario postgres vs sql-ledger +ap
+x 2020-10-27 Script Vacuum +ap
+x 2020-11-01 Ajuste "/var/lib/pgsql/data/postgresql.conf" +ap
+x 2020-10-28 Compilar JRDataSourceFactory.java +ingenio
+x 2020-10-27 Usuario postgres vs sql-ledger +ap
+x 2020-10-27 Script Vacuum +ap
+x 2020-11-01 Ajuste "/var/lib/pgsql/data/postgresql.conf" +ap

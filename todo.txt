@@ -1,8 +1,9 @@
-JRDataSourceFactory +ingenio
-(A) Agregar consulta Paro +ingenio
-(A) Project POS +eljuri
-(A) Reporte Hac +ingenio
+x 2020-11-01 JRDataSourceFactory y ejemplo fe +ingenio
+(A) Reporte BLC +ingenio
 (B) Acumulado por mes y a la fecha +ingenio
+(B) Agregar consulta Paro +ingenio
+(B) Project POS +eljuri
+(B) Reporte Hac +ingenio
 (C) Actualizar SuiteTest +ingenio
 (C) Agregar columnas Brix cachaza y humedad en Turbiedad +ingenio
 (C) Blc consultaPago transient +ingenio

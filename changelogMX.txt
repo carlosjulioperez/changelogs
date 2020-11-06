@@ -1,18 +1,22 @@
 MX 19.1:
 	* Paquetes:
 		sudo apt install ack-grep bleachbit terminator meld keepassx
-		openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql ant ant-optional
-		groovy wine playonlinux tmux
+		openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql ant
+		ant-optional groovy wine playonlinux tmux gnumeric
 
 	* PostgreSQL:
 		$ sudo pg_createcluster 11 main
 		$ sudo pg_ctlcluster 11 main start
-		$ sudo pg_dropcluster 11 mainexit
+		
+		+ Para borrar:
+			$ sudo pg_dropcluster 11 mainexit
 		
 	* vim:
 		https://opensource.com/article/20/2/how-install-vim-plugins
 		https://tpaschalis.github.io/vim-go-setup/
 		
+		$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		o
 		$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 		
@@ -23,7 +27,7 @@ MX 19.1:
 			call plug#end()
 			
 			" NERDTree plugin specific commands
-			:nnoremap <C-g> :NERDTreeToggle<CR>
+			:nnoremap <C-n> :NERDTreeToggle<CR>
 		
 		Instalar el plugin:
 			:PlugInstall
