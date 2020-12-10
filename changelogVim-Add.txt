@@ -2,10 +2,25 @@ Vim
 	* Ir a último término de búsqueda:
 		https://stackoverflow.com/questions/15707618/vim-find-last-occurrence-of
 		GN
+	
+	* Instalar pathogen.vim:
+		https://github.com/tpope/vim-pathogen
+
+		$ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+		curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+	* Tabular:
+		https://github.com/godlygeek/tabular
+		
+		$ mkdir -p ~/.vim/bundle
+		$ cd ~/.vim/bundle
+		$ git clone git://github.com/godlygeek/tabular.git
 
 	* Navegar por camelCase:
 		https://github.com/bkad/CamelCaseMotion
 		Agregar al final de .vimrc
+
+			execute pathogen#infect()
 
 			call plug#begin()
 			Plug 'preservim/NERDTree'
