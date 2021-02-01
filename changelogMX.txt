@@ -1,9 +1,20 @@
 MX 19.1:
 	* Paquetes:
-		sudo apt install ack bleachbit terminator meld keepassx openjdk-8-jdk silversearcher-ag vim-gtk3 postgresql ant ant-optional groovy tmux
+		sudo apt install ack bleachbit terminator meld keepassx openjdk-8-jdk \
+		silversearcher-ag vim-gtk3 postgresql ant ant-optional groovy tmux \
+		qutebrowser wine playonlinux doublecmd-gtk
 
 	* Package manager:
-		wine wine64
+		VirtualBox Brave Wine Zoom AnyDesk 'SoftMaker FreeOffice 2018'
+
+	* Java:
+		https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
+		sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
+		sudo update-alternatives --config java
+	
+	* Groovy:
+		$ sudo vim /usr/share/groovy/bin/startGroovy
+		/usr/lib/jvm/java-11-openjdk-amd64
 
 	* PostgreSQL:
 		Actualizar los locales y dejar en en_US y es_EC

@@ -213,7 +213,7 @@ Centos
 		# sudo dd if=/home/user1/local/iso/centos/CentOS-6.10-x86_64-minimal.iso of=/dev/sda
 		# sudo dd if=/home/carper/local/iso/ubuntu/ubuntu-18.04.2-desktop-amd64.iso of=/dev/sda
 		
-		# sudo dd if=/home/carper/local/iso/KNOPPIX_V8.6.1-2019-10-14-EN/KNOPPIX_V8.6.1-2019-10-14-EN.iso of=/dev/sdb bs=4M status=progress
+		# sudo dd if=/home/carper/local/iso/KNOPPIX_V8.6.1-2019-10-14-EN/KNOPPIX_V8.6.1-2019-10-14-EN.iso of=/dev/sd[x] bs=4M status=progress
 
 	* Reducir tamaño de vdi:
 		$ dd if=/dev/zero of=/var/tmp/bigemptyfile bs=4096k ; rm /var/tmp/bigemptyfile
@@ -456,6 +456,15 @@ Centos
 
 		# Conocer el usuario y grupo
 		# egrep -i '^user|^group' /etc/httpd/conf/httpd.conf
+		
+		https://linux.101hacks.com/unix/httpd-apr-sockaddr-info-get-error/
+		# Para apracom
+		ServerName 192.168.0.3
+
+		https://stackoverflow.com/questions/26742580/504-gateway-time-out-the-server-didnt-respond-in-time-how-to-fix-it
+		https://httpd.apache.org/docs/2.2/mod/core.html#timeout
+		# TimeOut 60
+		# TimeOut 600
 
 	* SQL-Ledger:
 		+ Carpetas home de apache:

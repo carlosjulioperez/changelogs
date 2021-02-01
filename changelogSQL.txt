@@ -155,7 +155,8 @@ SQL
 		
 		pg_dump --data-only --table=inventory apracomsa > apracomsa_inventory.sql
 		pg_dump --data-only --table=ingenio.stockfabricadetalle17 ingenio > stockfabricadetalle17.sql
-
+		
+		pg_dump --data-only --table=ingenio.blcdetalle16 ingenio > blcdetalle16.sql
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
