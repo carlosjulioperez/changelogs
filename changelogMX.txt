@@ -9,8 +9,8 @@ MX 19.1:
 
 	* Java:
 		https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
-		sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
-		sudo update-alternatives --config java
+		$ sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
+		$ sudo update-alternatives --config java
 	
 	* Groovy:
 		$ sudo vim /usr/share/groovy/bin/startGroovy

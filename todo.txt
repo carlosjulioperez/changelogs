@@ -1,21 +1,20 @@
-x 2020-11-01 JRDataSourceFactory y ejemplo fe +ingenio
-(A) Reporte BLC +ingenio
-(B) Acumulado por mes y a la fecha +ingenio
-(B) Agregar consulta Paro +ingenio
-(B) Project POS +eljuri
-(B) Reporte Hac +ingenio
+(A) Microservicios
+(A) Puebas algoritmos
+(A) MongoDB
+
+Curso Java básico
+(B) Pescarolo reportes
+(B) Renta 2018
+(B) Renta 2019
+(C) API acceso usuarios Liferay +ingenio
 (C) Actualizar SuiteTest +ingenio
+(C) Acumulado por mes y a la fecha +ingenio
 (C) Agregar columnas Brix cachaza y humedad en Turbiedad +ingenio
+(C) Agregar consulta Paro +ingenio
 (C) Blc consultaPago transient +ingenio
+(C) Project POS +eljuri
+(C) Reporte BLC +ingenio
+(C) Reporte Hac +ingenio
 (C) Validar clic en listado cuando dia cerrado +ingenio
-Abrir enlaces en nueva pestaña en liferay +ingenio
-Blc onload +ingenio
 Colores UI según http://www.southpacificsurveys.com +contenedores
-Cálculo de Fábrica +ingenio
-Cálculo de paros +ingenio
-Ejecutar SuiteTest creando todas las entidades y consultas +ingenio
-Error al borrar Inspeccion +contenedores
-Flash Kindle +tools
-Ingreso de datos de 16 de septiembre de 2020 +ingenio
-Miel Final Melaza Gal/TCM +ingenio
-Ocultar Blc.CargarItems +ingenio
+x 2021-02-15 Propuesta bodega camaronera +agrorganicasa
