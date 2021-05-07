@@ -1,0 +1,48 @@
+Dependencias
+
+	MX Linux 19.4
+	* node.js:
+		https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-debian-10
+
+		$ sudo apt install nodejs npm
+		$ node -v
+		v10.24.0
+
+		Descargar la última versión y agregar al PATH
+		$ vim ~/.bashrc
+		export PATH=$PATH:/home/carper/local/fullstack/node-v14.16.1-linux-x64/bin
+		$ source ~/.bashrc
+
+	* Angular CLI:
+		https://angular.io/cli
+
+		$ npm install -g @angular/cli
+
+			npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+			npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+			/home/carper/local/fullstack/node-v14.16.1-linux-x64/bin/ng -> /home/carper/local/fullstack/node-v14.16.1-linux-x64/lib/node_modules/@angular/cli/bin/ng
+
+			> @angular/cli@11.2.9 postinstall /home/carper/local/fullstack/node-v14.16.1-linux-x64/lib/node_modules/@angular/cli
+			> node ./bin/postinstall/script.js
+
+			? Would you like to share anonymous usage data with the Angular Team at Google under
+			Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+			how to change this setting, see https://angular.io/analytics. No
+			+ @angular/cli@11.2.9:
+			added 242 packages from 181 contributors in 72.188s
+		
+		$ ng new my-first-project
+		$ cd my-first-project
+		$ ng serve
+
+		http://localhost:4200/
+
+		$ ng generate service employee --skip-tests=true
+
+
+	* SpringBoot:
+		https://start.spring.io/
+
+
+
+

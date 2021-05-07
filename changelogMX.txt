@@ -1,20 +1,43 @@
 MX 19.1:
 	* Paquetes:
-		sudo apt install ack bleachbit terminator meld keepassx openjdk-8-jdk \
-		silversearcher-ag vim-gtk3 postgresql ant ant-optional groovy tmux \
-		qutebrowser wine playonlinux doublecmd-gtk
+		
+		sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3
+		postgresql tmux qutebrowser
+		openjdk-8-jdk
+		openjdk-11-jdk ant ant-optional groovy
+		playonlinux doublecmd-gtk
 
 	* Package manager:
 		VirtualBox Brave Wine Zoom AnyDesk 'SoftMaker FreeOffice 2018'
 
 	* Java:
+
+		$ curl -s get.sdkman.io | bash
+		$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+		$ sdk install groovy 2.4.19 (2.4.8)
+
 		https://www.itzgeek.com/how-tos/linux/debian/how-to-install-oracle-java-8-on-debian-9-ubuntu-linux-mint.html
 		$ sudo update-alternatives --install /usr/bin/java java /home/carper/local/utils/jdk1.8.0_181/bin/java 2
 		$ sudo update-alternatives --config java
 	
 	* Groovy:
 		$ sudo vim /usr/share/groovy/bin/startGroovy
+			o
+		$ sudo vim /home/carper/.sdkman/candidates/groovy/2.4.19
 		/usr/lib/jvm/java-11-openjdk-amd64
+	
+	* GroovyConsole:
+		$ groovyConsole  en 2.4.16 debian es un error
+		java.lang.reflect.InvocationTargetException
+
+		$ whereis groovyConsole
+		groovyConsole: /usr/bin/groovyConsole
+
+		+ Apuntar a JDK y agregar en:
+		~/.sdkman/candidates/groovy/2.4.19/bin/startGroovy
+
+		export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
 
 	* PostgreSQL:
 		Actualizar los locales y dejar en en_US y es_EC
@@ -121,9 +144,11 @@ MX 18.3:
 			https://mxlinux.org/wiki/applications/docker/
 
 			$ wget -O docker.gpg  https://download.docker.com/linux/debian/gpg 
-			$ gpg   --keyid-format 0xlong docker.gpg 2>/dev/null
-			$ gpg  --keyid-format 0xlong docker.gpg 2>/dev/null | grep -sq 0x8D81803C0EBFCD88 && sudo apt-key add docker.gpg
+			$ gpg  --keyid-format 0xlong docker.gpg 2>/dev/null
 
+			# For MX 19 : 
+			CODENAME=buster
+			# For MX 18 : 
 			$ CODENAME=stretch
 			$ echo "deb [arch=amd64] https://download.docker.com/linux/debian $CODENAME  stable" | sudo tee /etc/apt/sources.list.d/docker.list
 			$ sudo apt update

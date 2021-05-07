@@ -576,6 +576,10 @@ TIPS
 				Descargar Eclipse Oxygen y Eclim 2.7.1
 				$ sudo apt-get install build-essential
 
+			+ Varios:
+				:PingEclim
+				:JavaCorrect
+
 	* Matar procesos:
 		sudo kill -KILL `ps -e | grep java | awk '{print $1}'`
 		kill `pidof mosh-server`
@@ -672,6 +676,7 @@ TIPS
 				find . -type f -exec sed -i 's,Ingenio,Contenedor,g' {} +
 				find . -type f -exec sed -i 's,ingenio,contenedor,g' {} +
 				find . -type f -exec sed -i 's,DiaTrabajo,Formulario,g' {} +
+				find . -type f -exec sed -i 's,se.magnus,ec.carper,g' {} +
 				
 				find . -type f -exec sed -i 's,SqlUtil.instance.getPromedio,SqlUtil.instance.getValorCampo,g' {} +
 				
