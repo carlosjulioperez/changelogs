@@ -1,21 +1,8 @@
-(A) Microservicios
-(A) BairesDev java
-(A) Puebas algoritmos
-(A) MongoDB
-
-Curso Java básico
-(B) Pescarolo reportes
-(B) Renta 2018
-(B) Renta 2019
-(C) API acceso usuarios Liferay +ingenio
-(C) Actualizar SuiteTest +ingenio
-(C) Acumulado por mes y a la fecha +ingenio
-(C) Agregar columnas Brix cachaza y humedad en Turbiedad +ingenio
-(C) Agregar consulta Paro +ingenio
-(C) Blc consultaPago transient +ingenio
-(C) Project POS +eljuri
-(C) Reporte BLC +ingenio
-(C) Reporte Hac +ingenio
-(C) Validar clic en listado cuando dia cerrado +ingenio
-Colores UI según http://www.southpacificsurveys.com +contenedores
-x 2021-02-15 Propuesta bodega camaronera +agrorganicasa
+(A) Pescarolo reportes @design +pescarolo
+(B) Colores UI según http://www.southpacificsurveys.com @design +pescarolo
+(D) Crear paquete laboratorio @fix +ingenio
+(E) Actualizar SuiteTest @fix +ingenio
+(A) Cotizar villa primavera 2 @research +carper
+(B) Estrategia venta terrenos @design +carper
+(E) Renta 2018 @tax +carper
+(E) Renta 2019 @tax +carper
