@@ -1,4 +1,8 @@
 TIPS
+	* Descargar deb en carpeta local específica:
+		$ dpkg-deb -X sleek_1.0.3-1_amd64.deb /home/carper/local/fullstack/
+		$ dpkg-deb -X code_1.56.0-1620166262_amd64.deb /home/carper/local/fullstack/
+
 	* Tarea crontab cada 4 horas:
 		https://serverfault.com/questions/39004/what-is-the-correct-syntax-to-run-cron-every-4-hours
 

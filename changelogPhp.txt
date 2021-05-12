@@ -1,0 +1,13 @@
+PHP
+	* Symfony:
+		+ Libros:
+			Mastering Symfony
+			https://www.amazon.com/Mastering-Symfony-Sohail-Salehi-ebook/dp/B016WKHQ30/ref=sr_1_2?dchild=1&keywords=symfony&qid=1620774048&s=books&sr=1-2
+		
+			Building PHP Applications with Symfony, CakePHP, and Zend Framework
+			https://www.amazon.com/Building-Applications-Symfony-CakePHP-Framework/dp/0470887346/ref=sr_1_4?dchild=1&keywords=symfony&qid=1620774048&s=books&sr=1-4
+
+		+ Tutoriales:
+			https://www.tutorialspoint.com/symfony/index.htm
+			https://symfonycasts.com/tracks/symfony3
+			https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi60M3i4cLwAhVBKawKHQg4CswQFjACegQIAxAD&url=https%3A%2F%2Fsymfonycasts.com%2Fcourses&usg=AOvVaw0g7IwKCtMJCItOtfE5qYJt

@@ -1,8 +1,13 @@
-(A) Pescarolo reportes @design +pescarolo
-(B) Colores UI según http://www.southpacificsurveys.com @design +pescarolo
-(D) Crear paquete laboratorio @fix +ingenio
-(E) Actualizar SuiteTest @fix +ingenio
-(A) Cotizar villa primavera 2 @research +carper
-(B) Estrategia venta terrenos @design +carper
-(E) Renta 2018 @tax +carper
-(E) Renta 2019 @tax +carper
+(B) Pescarolo reportes +pescarolo @design
+(B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
+(E) Crear paquete laboratorio +ingenio @fix
+(E) Actualizar SuiteTest +ingenio @fix
+(B) Cotizar villa primavera 2 - $45K +carper @research
+(B) Estrategia venta terrenos +carper @design
+(E) Renta 2018 +carper @tax
+(E) Renta 2019 +carper @tax
+(A) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
+(B) 2021-05-10 Revisar camunda +telconet @research
+x 2021-05-11 (A) 2021-05-11 Configuración de escritorio +telconet @setup
+x 2021-05-11 (A) 2021-05-11 Reunión con Allan y Néstor para proyecto ECUCERT +telconet @design
+(A) 2021-05-11 Recursos Symfony 2.4 - 3 +telconet @research

@@ -1,0 +1,8 @@
+Electron apps
+	* sleek:
+		/home/carper/local/fullstack/sleek/opt/sleek/sleek %U
+		/home/carper/local/fullstack/sleek/usr/share/icons/hicolor/0x0/apps/sleek.png
+
+	* code:
+		/home/carper/local/fullstack/code/usr/share/code/bin/code
+		/home/carper/local/fullstack/code/usr/share/code/resources/app/resources/linux/code.png

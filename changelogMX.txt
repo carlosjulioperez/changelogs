@@ -1,6 +1,8 @@
 MX 19.1:
 	* Paquetes:
 		
+		$ sudo apt-get install openjdk-11-jdk
+		
 		sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3
 		postgresql tmux qutebrowser
 		openjdk-8-jdk
@@ -9,6 +11,15 @@ MX 19.1:
 
 	* Package manager:
 		VirtualBox Brave Wine Zoom AnyDesk 'SoftMaker FreeOffice 2018'
+	
+	* Verificar hardware acceleration:
+		
+		+ Verificar:
+			https://unix.stackexchange.com/questions/963/how-to-verify-if-hardware-acceleration-is-enabled
+			$ glxinfo | grep "direct rendering"
+
+		+ Desactivar:
+			https://unix.stackexchange.com/questions/408582/how-to-disable-hardware-acceleration-in-linux
 
 	* Java:
 

@@ -1,0 +1,6 @@
+x 2021-05-10 (A) 2021-05-09 Instalar openfortivpn de MX Repo +telconet @research
+x 2021-05-10 (A) 2021-05-10 Instalar virt-viewer de MX Repo +telconet @research
+x 2021-05-10 (A) 2021-05-10 Comparación tamaños vscode y eclipse +carper @research
+x 2021-05-11 (A) 2021-05-11 Instalación manual de sleek.deb +carper @research
+x 2021-05-11 (A) 2021-05-11 Instalación manual de vscode.db +carper @research
+x 2021-05-11 (A) 2021-05-11 Configurar path java 11 en vscode +carper @research
