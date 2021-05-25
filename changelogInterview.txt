@@ -1,0 +1,51 @@
+Interview
+	+ Enlaces:
+		https://codingnconcepts.com/
+
+	+ Java:
+		Setters: Mutators, getters: accesors.
+
+		* Immutable class:
+			The instance cannot change the value after create an object.
+			The class is final so we cannot create a subclass.
+			There is no setter methods.
+			
+			Final class and final data members.
+			
+			public final class Employee{  
+				final String pancardNumber;  
+
+				public Employee(String pancardNumber){
+					this.pancardNumber=pancardNumber;  
+				}
+
+				public String getPancardNumber(){  
+					return pancardNumber;  
+				}  
+			}  	
+
+			In Java, all primitive wrapper classes (Integer, Byte, Long, Float, Double, Character, Boolean and Short) and String are immutable in nature.
+
+			Wrappers: Integer, Double, String
+
+		* override vs overload:
+
+
+		* Bean scope:
+
+		* ArrayList vs LinkedList:
+
+		* Stream:
+
+		* Corder
+
+		* Thread:
+			stop, run, finalize
+			thread-safety, caching and collections.
+
+		* try, catch, finally:
+
+		* JMS, Kafka:
+
+	+ Patterns:
+

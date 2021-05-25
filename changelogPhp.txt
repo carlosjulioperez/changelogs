@@ -1,13 +1,78 @@
 PHP
+
+	* hack:
+		http://qbit.com.mx/blog/2016/09/01/evitando-los-getters-y-setters-en-las-entitades-de-symfony/
+
+	
 	* Symfony:
+		+ Instalación:
+
+			https://symfony.com/doc/3.4/setup.html
+		
+		+ Tutoriales:
+			https://symfony.com/doc/2.4/book/index.html
+			https://uniwebsidad.com/libros/symfony-2-4
+
+			+ Peticiones y respuestas:
+			https://symfony.com/doc/2.4/book/http_fundamentals.html#requests-and-responses-in-symfony
+			https://uniwebsidad.com/libros/symfony-2-4/capitulo-1/peticiones-y-respuestas-en-symfony
+
+			+ Glosario:
+			https://symfony.com/doc/2.4/glossary.html
+			Request y Response para subir archivos
+
+			+ Front controller: 
+			Php que administra cada request que llega a la aplicación.  Doctrine: The Doctrine Project is the home to several PHP libraries primarily focused on database storage and object mapping. The core projects are the Object Relational Mapper (ORM) and the Database Abstraction Layer (DBAL) it is built upon.  
+
+			+ Controller: 
+			https://symfony.com/doc/2.4/glossary.html#term-controller
+			A controller is a PHP function that houses all the logic necessary to return a Response object that represents a particular page.
+
+
+			https://www.tutorialspoint.com/symfony/index.htm
+			https://symfonycasts.com/tracks/symfony3
+			https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi60M3i4cLwAhVBKawKHQg4CswQFjACegQIAxAD&url=https%3A%2F%2Fsymfonycasts.com%2Fcourses&usg=AOvVaw0g7IwKCtMJCItOtfE5qYJt
+
+		+ CentOS:
+			https://tecadmin.net/install-symfony-2-framework-on-centos/
+
+		+ tutorial:
+			https://uniwebsidad.com/libros/symfony-2-4
+			https://uniwebsidad.com/libros/symfony-2-4/capitulo-3/instalando-una-distribucion-de-symfony2
+
+		+ docker:
+			+ Pepa:
+				+ Entorno vscode:
+					https://www.youtube.com/watch?v=CjLQz09KBQs
+					https://www.youtube.com/watch?v=mi8kpAgHYFo
+
+			+ Opción sencilla:
+			https://github.com/hspaans/php-devcontainer
+
+			+ Segunda:
+			https://www.returngis.net/2019/02/dockerizar-tu-aplicacion-symfony/
+			https://www.returngis.net/2019/07/desplegar-symfony-en-web-app-for-containers/
+
+			/workspaces/php-devcontainer/.devcontainer
+
+			https://www.therelicans.com/anthonygilbertt/setting-up-a-php-docker-container-then-adding-symfony-part-2-2-59f1
+			https://github.com/bitnami/bitnami-docker-symfony
+
+			https://betterprogramming.pub/dockerize-your-development-environment-in-vs-code-d55ba8d705a9
+		+ vscode:
+
+			https://marketplace.visualstudio.com/items?itemName=TheNouillet.symfony-vscode
+			C-P:
+				ext install TheNouillet.symfony-vscode
+		
+			https://dev.to/fuenrob/configurar-docker-con-xdebug-y-vs-code-252h
+
+		+ docker hub:
+			https://hub.docker.com/r/alexhalkin/docker-apache-symfony
+
 		+ Libros:
 			Mastering Symfony
 			https://www.amazon.com/Mastering-Symfony-Sohail-Salehi-ebook/dp/B016WKHQ30/ref=sr_1_2?dchild=1&keywords=symfony&qid=1620774048&s=books&sr=1-2
 		
 			Building PHP Applications with Symfony, CakePHP, and Zend Framework
 			https://www.amazon.com/Building-Applications-Symfony-CakePHP-Framework/dp/0470887346/ref=sr_1_4?dchild=1&keywords=symfony&qid=1620774048&s=books&sr=1-4
-
-		+ Tutoriales:
-			https://www.tutorialspoint.com/symfony/index.htm
-			https://symfonycasts.com/tracks/symfony3
-			https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi60M3i4cLwAhVBKawKHQg4CswQFjACegQIAxAD&url=https%3A%2F%2Fsymfonycasts.com%2Fcourses&usg=AOvVaw0g7IwKCtMJCItOtfE5qYJt

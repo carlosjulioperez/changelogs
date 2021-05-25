@@ -72,6 +72,7 @@ Centos
 			$ mosh user@example.com --ssh="ssh -p 2222"
 			$ mosh carper@186.178.202.67  --ssh="ssh -p 2022"
 			$ mosh carper@181.199.126.231 --ssh="ssh -p 2022"
+			$ mosh carper@186.33.181.219 --ssh="ssh -p 2022"
 			
 			$ mosh root@190.63.184.11 --ssh="ssh -p 1000"
 

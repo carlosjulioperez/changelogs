@@ -1,13 +1,14 @@
-(B) Pescarolo reportes +pescarolo @design
+(A) 2021-05-25 nuevo branch basado en nnalual-4 +telconet @setup
+(A) 2021-05-25 Revisar nuevo código +telconet @setup
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
-(E) Crear paquete laboratorio +ingenio @fix
+(B) Pescarolo reportes +pescarolo @design
+(B) Revisar camunda +telconet @research
+(C) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
+(C) Cotizar villa primavera 2 - $45K $48K +carper @research
+(C) Estrategia venta terrenos +carper @design
+(C) Oracle PL/SQL +skills @research
 (E) Actualizar SuiteTest +ingenio @fix
-(B) Cotizar villa primavera 2 - $45K +carper @research
-(B) Estrategia venta terrenos +carper @design
+(E) Crear paquete laboratorio +ingenio @fix
 (E) Renta 2018 +carper @tax
 (E) Renta 2019 +carper @tax
-(A) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
-(B) 2021-05-10 Revisar camunda +telconet @research
-x 2021-05-11 (A) 2021-05-11 Configuración de escritorio +telconet @setup
-x 2021-05-11 (A) 2021-05-11 Reunión con Allan y Néstor para proyecto ECUCERT +telconet @design
-(A) 2021-05-11 Recursos Symfony 2.4 - 3 +telconet @research
+(E) Renta 2020 +carper @tax

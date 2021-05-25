@@ -1,4 +1,18 @@
 Docker + Status:
+	* Docker container paths:
+		https://www.freecodecamp.org/news/where-are-docker-images-stored-docker-container-paths-explained/
+
+		$ docker info
+
+		* Default storage driver:
+		/var/lib/docker/overlay2
+
+		Iniciar un contenedor con un volumen
+		$ docker run --name nginx_container -v /var/log nginx
+
+		Borrar los no usados:
+		$ docker system prune -a
+		$ docker volumes prune
 
 	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
