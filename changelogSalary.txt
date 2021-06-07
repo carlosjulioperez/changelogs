@@ -1,0 +1,12 @@
+Salary:
+	[12 Programming Languages with High Salaries]:
+	https://insights.dice.com/2020/10/13/12-programming-languages-that-pay-ultra-high-salaries/	
+	go, swift, python
+
+	https://www.businessinsider.com/highest-paying-programming-languages-stack-overflow-developer-survey-2020-5#9-swift-1
+
+	[Roles]:
+	https://searchdatamanagement.techtarget.com/definition/data-engineer
+
+	[Swift]:
+	https://medium.com/comsystoreply/https-medium-com-max-comsysto-comparing-backend-frameworks-written-in-java-swift-and-go-70acd07d3a8a

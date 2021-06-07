@@ -10,17 +10,24 @@ MX 19.1:
 		playonlinux doublecmd-gtk
 
 	* Package manager:
-		 Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018'
+		 Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker
+		 FreeOffice 2018' sq
 
 	* Symfony:
-		'Local Web Server' php-symfony (Also Install "Recommended" Packages"
+		'Local Web Server' php-symfony (Also Install "Recommended" Packages" sqlitebrowser
+
+		[Configurar date.timezone]
+		* $ sudo vim /etc/php/7.3/apache2/php.ini
+		* $ sudo vim /etc/php/7.3/cli/php.ini
+			date.timezone ="America/Guayaquil" 
+
+		$ sudo service apache2 restart
 
 		+ Crear proyecto:
 			$ curl -sS https://getcomposer.org/installer | php
 			$ sudo mv composer.phar /usr/local/bin/composer
 			
-			$ composer create-project symfony/framework-standard-edition myproject/ ~2.4
-			claves mismas que el usuario.
+			$ composer create-project symfony/framework-standard-edition app_name327 3.2.7
 
 			database_host (127.0.0.1): 
 			database_port (null): 3306
@@ -33,25 +40,18 @@ MX 19.1:
 			mailer_password (null): mailer
 			secret (ThisTokenIsNotSoSecretChangeIt): 
 			
-			+ Otra forma:
-			https://symfony.com/blog/symfony-2-4-0-released
-
-			$ composer create-project symfony/framework-standard-edition somewhere/ 2.4.0
-
-			+ Otra forma:
-
-			$ cd /home/carper/local/projects/handsoncode/symfony
-			$ composer create-project symfony/skeleton sfcourse ~4.2
-			$ sudo ln -s -f /home/carper/local/projects/handsoncode/symfony/sfcourse /var/www/html/
+			+ Agregar en app/AppKernel.php:
+				public function __construct($environment, $debug)
+					{
+						date_default_timezone_set('America/Guayaquil');
+						parent::__construct($environment, $debug);
+					}
 			
-			http://localhost/sfcourse/public
-
-			Ir a Symfony recipes
-			https://flex.symfony.com/
-			symfony/web-server-bundle
+			$ cd app_name
+			$ bin/symfony_requirements
+			$ bin/console server:run
 			
-			https://youtu.be/Bo0guUbL5uo?t=1535
-
+			+ version 5:
 			$ cd sfcourse
 			$ composer require make
 			$ bin/console (debe aparecer make en el listado)
@@ -64,9 +64,6 @@ MX 19.1:
 
 			http://localhost/sfcourse/public/index.php/main
 
-			+ Crear un route:
-
-	
 	* Verificar hardware acceleration:
 		
 		+ Verificar:

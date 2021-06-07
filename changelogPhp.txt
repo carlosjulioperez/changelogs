@@ -2,6 +2,7 @@ PHP
 
 	* hack:
 		http://qbit.com.mx/blog/2016/09/01/evitando-los-getters-y-setters-en-las-entitades-de-symfony/
+		https://stackoverflow.com/questions/9105419/generate-array-from-php-while-loop
 
 	
 	* Symfony:
@@ -39,6 +40,7 @@ PHP
 		+ tutorial:
 			https://uniwebsidad.com/libros/symfony-2-4
 			https://uniwebsidad.com/libros/symfony-2-4/capitulo-3/instalando-una-distribucion-de-symfony2
+			https://www.tutorialspoint.com/symfony/symfony_quick_guide.htm
 
 		+ docker:
 			+ Pepa:

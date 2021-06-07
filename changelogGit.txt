@@ -1,4 +1,50 @@
 Git
+	+ Borrar rama:
+		$ git checkout master
+		$ git branch -D cjperez-1
+	
+	+ Crear una nueva rama basada en otra:
+		$ git checkout master (si no estoy en rama master)
+		$ git fetch
+		$ git checkout -b cjperez-1 origin/nnaulal-4
+		$ git reset --hard origin/nnaulal-4
+
+	+ Reseteo a master:
+		$ git reset --hard origin/master
+
+	+ Actualizar cambios a master:
+		$ cd Repositories/telcos
+		$ git status
+		$ git add src/telconet/soporteBundle/Controller/CasoEcucertController.php
+		$ git status
+		$ git log
+		$ git status
+		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_20210604_cjperez.pks
+		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
+		$ git status
+		$ git commit -m "Ultimos cambios"
+		$ git status
+		$ git push -f origin cjperez-1
+		$ git fetch origin
+		$ git reset --hard origin/master
+		$ git merge --squash origin/cjperez-1
+		$ git status
+		$ git commit -m "MD: INT: Telcos: Mant: Administracion para Procesamiento de Ips Ecucert MD"
+		$ git log
+		$ git push -f origin cjperez-1
+		$ git status
+
+		+ Agregar cambios:
+		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez.pks
+		$ git status
+		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
+		$ git status
+		$ git commit --amend
+		$ git status
+		$ git log
+		$ git push -f origin cjperez-1
+
+
 	+ Quitar carpeta:
 		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository
 

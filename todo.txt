@@ -1,7 +1,8 @@
-(A) 2021-05-25 nuevo branch basado en nnalual-4 +telconet @setup
-(A) 2021-05-25 Revisar nuevo código +telconet @setup
+(A) Contenedor de Symfony para pruebas locales +telconet @research
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
+(B) Leer funcionamiento de SoporteService::guardarJsonIncidenciaEcucert() +telconet @research
 (B) Pescarolo reportes +pescarolo @design
+(B) Recrear el JSON en PHP +telconet @enhance
 (B) Revisar camunda +telconet @research
 (C) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
 (C) Cotizar villa primavera 2 - $45K $48K +carper @research

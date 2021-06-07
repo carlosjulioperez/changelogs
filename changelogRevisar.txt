@@ -1,6 +1,28 @@
 Revisar:
+	+ Pelis:
+		https://blogs.lasprovincias.es/lapeliculadelasemana/2017/06/22/cinco-peliculas-de-espias-europeas-que-deberias-ver/
+
 	+ Tecnología:
+
+		* Cognitive class:
+		https://courses.cognitiveclass.ai/dashboard
+
+		* Angular:
+		
+		[Beginning Angular with Typescript (updated to Angular 9)]:
+		https://www.amazon.com/Beginning-Angular-Typescript-updated/dp/1973593793/ref=sr_1_6?dchild=1&keywords=angular&qid=1622413507&s=books&sr=1-6
+
+		https://www.youtube.com/playlist?list=PLq5m66kIJ5Z-KNR-xdK2GMiDlLLcpXLLB
+		https://www.dotnetcurry.com/angularjs/angular-9-10-cheatsheet-new-features
+
+		* Hybris:
+		https://jobs.ciklum.com/hybris-internship/
+
 		* Documentables de ciencia y tecnología:	
 		https://www.xataka.com/videojuegos/11-documentales-ciencia-tecnologia-que-puedes-ver-gratis-legalmente-internet
 		
 		https://www.arte.tv/es/videos/RC-015228/homo-digitalis/
+
+	+ Estudio bíblico:
+		[Los gentiles conocerán mi Nombre]:
+		https://www.youtube.com/watch?v=479fy2ZgSs4

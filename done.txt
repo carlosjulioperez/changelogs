@@ -389,3 +389,26 @@ x 2021-05-12 2021-05-11 Symfony 2.4 Book +telconet @research
 x 2021-05-14 2021-05-12 Configuración de herramientas de desarrollo local +carper @setup
 x 2021-05-14 2021-05-12 Levantar ambiente desarrollo Telcos en VDI +telconet @setup
 x 2021-05-15 2021-05-15 Script para instalar sleek y vscode en /tmp +carper @research
+x 2021-05-26 2021-05-25 nuevo branch basado en nnalual-4 +telconet @setup
+x 2021-05-26 2021-05-26 nuevo branch basado en nnalual-4 +telconet @setup
+x 2021-05-26 2021-05-26 Analizar diagramas +telconet @design
+x 2021-05-26 2021-05-26 Ordenar audios con imágenes +telconet @design
+x 2021-05-27 2021-05-27 Instalación de symlink y limpieza de caché en contenedor +telconet @setup
+x 2021-05-28 2021-05-28 Crear bash personalizado para ejecutar SQL-Developer +telconet @setup
+x 2021-05-31 2021-05-31 Crear combo Tipo de evento +telconet @enhance
+x 2021-06-01 Ejecutar el Script SQL para permisos de Ecucert +telconet @setup
+x 2021-06-01 Actualizar parameters.yml con configuracion de Db pruebas de Nestor +telconet @setup
+x 2021-06-02 2021-06-02 Crear secuecia oracle +telconet @enhance
+x 2021-06-02 Corte de energía desde 13:15 hasta 15:55 +carper @fix
+x 2021-06-02 2021-06-02 Genear array ips +telconet @enhance
+x 2021-06-02 2021-06-02 Instalar jq en MX +carper @setup
+x 2021-06-02 2021-06-02 Genear array data +telconet @enhance
+x 2021-06-03 2021-06-02 Generar noTicket +telconet @research
+x 2021-06-03 2021-06-03 Consulta del nombre de la empresa +telconet @research
+x 2021-06-03 2021-06-03 Generar el Subject +telconet @enhance
+x 2021-06-03 2021-06-03 Invocar TecnicoWSController.putIngresarIncidencia() +telconet @enhance
+x 2021-06-03 2021-06-03 Generar el token +telconet @enhance
+x 2021-06-07 2021-06-06 Corregir errores sonar +telcos @fix
+x 2021-06-06 2021-06-06 Documentar git +telcos @setup
+x 2021-06-07 2021-06-07 Instructivo +telconet @docs
+x 2021-06-07 Registrar las horas trabajadas en zoho +telconet @setup
