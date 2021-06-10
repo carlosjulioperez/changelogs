@@ -1,1 +1,32 @@
-Symfony
+Symfony 
+	
+	+ docker: $ docker pull phpmentors/symfony-app
+		$ docker run -p 8000:80 -it phpmentors/symfony-app
+		$ docker run -p 8000:80 -it phpmentors/symfony-app /bin/bash
+
+	+ ejemplo 1:
+		https://hub.docker.com/r/whatwedo/symfony3
+
+		$ docker pull whatwedo/symfony3
+		Status: Downloaded newer image for whatwedo/symfony3:latest
+		docker.io/whatwedo/symfony3:latest
+		
+		$ docker run -p 80:80 -v [YOUR-PROJECT-ROOT]:/var/www whatwedo/symfony3:v2.1
+		$ docker run -p 8000:80 -v demo:/var/www whatwedo/symfony3:v2.1
+
+	+ vdi:
+		$ cjperez@pvd-cjperez-rh-sisvdi:~$ lsb_release -a
+		Description:	Ubuntu 18.04.5 LTS Release:	18.04 Codename:	bionic
+		
+		* [Ejemplo 1]:
+		https://symfony.com/doc/2.4/book/installation.html
+		$ cd /home/cjperez/local
+		$ curl -s https://getcomposer.org/installer | php
+		$ php composer.phar create-project symfony/framework-standard-edition p1 '2.4.*'
+
+		https://hub.docker.com/r/bitnami/symfony/
+		$ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-symfony/master/docker-compose.yml
+
+		* [Ejemplo 2]:
+		https://symfony.com/doc/3.2/setup.html
+		$ composer create-project symfony/framework-standard-edition demo

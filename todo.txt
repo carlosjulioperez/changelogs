@@ -1,4 +1,6 @@
-(A) Contenedor de Symfony para pruebas locales +telconet @research
+(A) 2021-06-10 Agregar parametro [idEmpresa_megadatos: 1] de parameters.yml.dist a parameters.yml +telconet @doc
+(A) 2021-06-10 Identificar funciones JS para Cloud +telconet @research
+(A) 2021-06-09 Omitir proceso al determinar si un casoID viene de Ecucert +telconet @bug
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (B) Leer funcionamiento de SoporteService::guardarJsonIncidenciaEcucert() +telconet @research
 (B) Pescarolo reportes +pescarolo @design

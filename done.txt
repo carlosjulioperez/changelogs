@@ -410,5 +410,7 @@ x 2021-06-03 2021-06-03 Invocar TecnicoWSController.putIngresarIncidencia() +tel
 x 2021-06-03 2021-06-03 Generar el token +telconet @enhance
 x 2021-06-07 2021-06-06 Corregir errores sonar +telcos @fix
 x 2021-06-06 2021-06-06 Documentar git +telcos @setup
-x 2021-06-07 2021-06-07 Instructivo +telconet @docs
+x 2021-06-07 2021-06-07 Instructivo +telconet @doc
 x 2021-06-07 Registrar las horas trabajadas en zoho +telconet @setup
+x 2021-06-08 2021-06-07 Contenedor de Symfony para pruebas locales +telconet @research
+x 2021-06-09 Orden de ejecución SQL en MR gitlab para [MD: INT: Telcos: Mant: Administracion para Procesamiento de Ips Ecucert MD] +telconet @doc

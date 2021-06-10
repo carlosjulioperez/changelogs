@@ -1,0 +1,3 @@
+Angular
+	+ Video 1:	
+	$ ng new angular-essentials

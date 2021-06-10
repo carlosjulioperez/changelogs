@@ -10,3 +10,4 @@ Salary:
 
 	[Swift]:
 	https://medium.com/comsystoreply/https-medium-com-max-comsysto-comparing-backend-frameworks-written-in-java-swift-and-go-70acd07d3a8a
+	https://www.quora.com/What-is-the-future-of-Swift?share=1

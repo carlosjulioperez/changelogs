@@ -1,7 +1,14 @@
 Git
 	+ Borrar rama:
 		$ git checkout master
-		$ git branch -D cjperez-1
+		$ git branch -D cjperez-bug
+
+	+ Crear rama:
+		$ git checkout master (si no estoy en rama master)
+		$ git fetch
+		$ git checkout -b cjperez-bug origin/master
+		$ git branch -a (todas)
+		$ git branch -v (locales)
 	
 	+ Crear una nueva rama basada en otra:
 		$ git checkout master (si no estoy en rama master)

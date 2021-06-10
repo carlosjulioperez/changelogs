@@ -17,6 +17,9 @@ Docker + Status:
 	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
 		https://linode.com/docs/applications/containers/how-to-install-docker-and-deploy-a-lamp-stack/
+	* Diferencias:
+		https://zhao-li.medium.com/how-to-understand-the-difference-between-docker-composes-up-vs-run-vs-exec-commands-a506151967df
+
 	+ openwrt:
 		https://pages.corifeus.com/github/openwrt-insomnia/docs/docker-commands.html
 
