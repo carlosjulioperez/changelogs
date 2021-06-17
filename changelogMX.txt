@@ -3,15 +3,40 @@ MX 19.1:
 		
 		$ sudo apt-get install openjdk-11-jdk
 		
-		sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3
-		postgresql tmux 
-		openjdk-8-jdk
-		openjdk-11-jdk ant ant-optional groovy
+		sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3 postgresql tmux openjdk-11-jdk ant ant-optional groovy
 		playonlinux doublecmd-gtk
 
 	* Package manager:
-		 Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker
-		 FreeOffice 2018' sq
+		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker
+		FreeOffice 2018' sq
+
+	* Agregar resolución monitor externo:
+		https://forum.mxlinux.org/viewtopic.php?f=104&t=60205&start=10
+		$ cvt 1366 768 | grep Modeline  | cut -d' '  -f2-
+		$ xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+		$ xrandr --addmode VGA1 "1368x768_60.00" --error esperado
+		$ xrandr --addmode DP-1 "1368x768_60.00"
+
+		+ Configuración:
+		$ sudo vim /etc/X11/xorg.conf.d/10-monitor.conf
+			Section "Monitor"
+				Identifier "DP-1"
+				Modeline "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+				Option "PreferredMode" "1368x768_60.00"
+				Option "UseEDID" "False"
+			EndSection
+
+		+ Session and Startup / Application Autostart:
+			vim bin/confDisplay.sh
+			$ xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+			$ xrandr --addmode DP-1 "1368x768_60.00"
+
+			+ Display config:
+			bin/confDisplay.sh
+			on login
+		
+		+ Ejecutar Display:
+			Clic en DP-1 y seleccionar la nueva resolución
 
 	* Symfony:
 		'Local Web Server' php-symfony (Also Install "Recommended" Packages" sqlitebrowser

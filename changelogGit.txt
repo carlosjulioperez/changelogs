@@ -8,6 +8,7 @@ Git
 		$ git fetch
 		$ git checkout -b cjperez-bug origin/master
 		$ git branch -a (todas)
+
 		$ git branch -v (locales)
 	
 	+ Crear una nueva rama basada en otra:
@@ -31,14 +32,15 @@ Git
 		$ git status
 		$ git commit -m "Ultimos cambios"
 		$ git status
-		$ git push -f origin cjperez-1
+		$ git push -f origin cjperez-bug
+		
 		$ git fetch origin
 		$ git reset --hard origin/master
-		$ git merge --squash origin/cjperez-1
+		$ git merge --squash origin/cjperez-bug
 		$ git status
 		$ git commit -m "MD: INT: Telcos: Mant: Administracion para Procesamiento de Ips Ecucert MD"
 		$ git log
-		$ git push -f origin cjperez-1
+		$ git push -f origin cjperez-bug
 		$ git status
 
 		+ Agregar cambios:
@@ -47,9 +49,9 @@ Git
 		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
 		$ git status
 		$ git commit --amend
+		$ git push -f origin cjperez-bug
 		$ git status
 		$ git log
-		$ git push -f origin cjperez-1
 
 
 	+ Quitar carpeta:

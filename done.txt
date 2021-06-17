@@ -414,3 +414,14 @@ x 2021-06-07 2021-06-07 Instructivo +telconet @doc
 x 2021-06-07 Registrar las horas trabajadas en zoho +telconet @setup
 x 2021-06-08 2021-06-07 Contenedor de Symfony para pruebas locales +telconet @research
 x 2021-06-09 Orden de ejecución SQL en MR gitlab para [MD: INT: Telcos: Mant: Administracion para Procesamiento de Ips Ecucert MD] +telconet @doc
+x 2021-06-10 2021-06-10 Agregar parametro [idEmpresa_megadatos: 1] de parameters.yml.dist a parameters.yml +telconet @doc
+x 2021-06-14 2021-06-14 Restaurar código para fix del bug del respaldo +telconet @bug
+x 2021-06-16 2021-06-16 Revisión mp3 para determinar el análisis +telconet @bug
+x 2021-06-16 2021-06-16 Crear documento FOR SIS 03 ANALISIS Y DISEÑO TECNICO BUG INFORME EJECUTIVO ECUCERT.doc +telconet @bug
+x 2021-06-16 2021-06-16 Crear documento pruebas +telconet @bug
+x 2021-06-11 2021-06-11 Omitir proceso al determinar si un casoID viene de Ecucert +telconet @bug
+x 2021-06-14 2021-06-14 Crear nuevo caso 20210614-0001 ECUCERT +telconet @bug
+x 2021-06-14 2021-06-14 Preparar el JSON para finalizar la tarea y despés cerrar el caso +telconet @bug
+x 2021-06-15 2021-06-15 Configuración de tareas en Trello +telconet @setup
+x 2021-06-15 2021-06-15 Documentar casos de prueba +telconet @bug
+x 2021-06-15 2021-06-15 Instalación de postman para probar WS +telconet @research

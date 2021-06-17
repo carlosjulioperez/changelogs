@@ -1,0 +1,3 @@
+Raspbian
+	sudo apt install qutebrowser openfortivpn audacious virt-viewer
+	flameshot bleachbit keepassx vim-gtk3 xpad

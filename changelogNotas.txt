@@ -1,0 +1,95 @@
+Notas
+	+ Cursos bíblicos:
+		https://docs.google.com/spreadsheets/d/1mOXD2IXZcn6ur9Y1qhAaoCTCMG4Q-6vJ5rNl7pjWo7Q/edit#gid=61628535
+
+	Libro: El ser y la conciencia.
+
+	+ opensap:
+		https://open.sap.com/dashboard
+
+	+ php sandbox:
+		https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo2
+
+	+ telcos:
+		https://trello.com/b/Abhc6wdw/telconet
+
+		/media/pi/homeMX/carper/progs/telconet/changelogTelcos.txt
+		/media/pi/homeMX/carper/progs/telconet/config/links.txt
+
+		http://dev-telcos-developer.telconet.ec/soporte/reporteria/consulta_casos_ecucert/
+		http://dev-telcos-developer.telconet.ec/app.php/soporte/info_caso
+		http://dev-telcos-developer.telconet.ec/soporte/tareas/
+
+	+ peli:
+		https://youtu.be/wbjthcsSWTc?t=2432
+
+	+ Bug:
+		https://gitlab.telconet.ec/telcos/telcos/-/merge_requests/9200
+		https://projects.zoho.com/portal/telcosis#todomilestones/245613000009404201/customview/6
+		
+		Néstor Gabriel Naula López, [11.06.21 09:49]
+		https://dev-telcos-developer.telconet.ec/soporte/tareas/
+		select * from info_caso where numero_caso='20210611-0001';
+		select * from DB_SOPORTE.info_incidencia_det; --Update 409768100 (id Caso)
+
+		Néstor Gabriel Naula López, [11.06.21 10:13]
+		{
+			"op": "putFinalizarTarea",
+		   
+			"user": "nnaulal",
+			"data":
+			{
+				"codEmpresa":       "10",
+				"idCaso":           409768100,
+				"prefijoEmpresa":   "TN",
+				"tarea": {
+								"idTarea":         39505485,
+								"materiales":      "",
+								"fechaInicial":    "",
+								"horaInicial":     "",
+								"observacion":     "Se cierra por proceso",
+								"fechaCierre":     "11-06-2021",
+								"horaCierre":      "20:03:30",
+								"idTareaFinal":    6565,
+								"esSolucion":      "true",
+								"idComunicacion":  39505485
+						}
+			}
+		}
+
+		Néstor Gabriel Naula López, [11.06.21 10:13]
+		http://localhost/rs/soporte/ws/rest/procesar
+		20210611-0001
+
+		$ curl -d "@cerrarTarea.json" -H "Content-Type: application/json" http://localhost/rs/soporte/ws/rest/procesar
+
+		Néstor Gabriel Naula López, [14.06.21 12:28]
+		Máster siempre está en actualización ayer subieron algo
+		Para crear el caso
+		Debe hacerlo desde un logi
+		En la parte derecha sale una lupa con la login
+		Debes poner
+		Tiosa
+		O pancali
+		Cualquiera de las dos
+		Estando en sesión Telconet
+		Y ahi procedes a crear el caso
+
+		Néstor Gabriel Naula López, [14.06.21 14:25]
+		https://projects.zoho.com/portal/telcosis#tasklistdetail/245613000009404201/245613000010316625
+
+		+ Api test:
+		$ curl -X GET -i http://localhost:8080/employee/all
+
+		$ sudo apt install jq
+		$ curl http://localhost:8080/employee/all -s | jq .
+
+		$ curl -d "@add_employee.json" -H "Content-Type: application/json" -X POST http://localhost:8080/employee/add
+
+		$ curl -d "@update_employee.json" -H "Content-Type: application/json" -X PUT http://localhost:8080/employee/update
+
+		$ curl -X DELETE -H "Accept: application/json" http://localhost:8080/employee/delete/4
+
+
+
+
