@@ -1,3 +1,19 @@
 Raspbian
-	sudo apt install qutebrowser openfortivpn audacious virt-viewer
-	flameshot bleachbit keepassx vim-gtk3 xpad
+	$ sudo apt install qutebrowser openfortivpn audacious virt-viewer
+	flameshot bleachbit keepassx vim-gtk3 xpad thunar sqlite3 sqlitebrowser
+
+	+ Pomodoro:
+	
+	https://github.com/mehdidc/pomodoro
+	$ sudo pip install pomodoro-cli
+	$ pomodoro 25 5 --timer=True 
+
+	pomostat overall
+	pomostat week
+	pomostat thisweek
+	pomostat lastweek
+	pomostat week --weekof='2018-01-01'
+	pomostat stats
+	pomostat weeks
+	pomostat today
+	pomostat yesterday

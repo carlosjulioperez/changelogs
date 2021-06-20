@@ -9,6 +9,22 @@ MX 19.1:
 	* Package manager:
 		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker
 		FreeOffice 2018' sq
+	* Pomodoro:
+		https://github.com/mehdidc/pomodoro
+		$ sudo apt install python-pip
+		$ sudo pip install pomodoro-cli
+	
+		$ pomodoro 25 5 --timer=True 
+
+		pomostat overall
+		pomostat week
+		pomostat thisweek
+		pomostat lastweek
+		pomostat week --weekof='2018-01-01'
+		pomostat stats
+		pomostat weeks
+		pomostat today
+		pomostat yesterday
 
 	* Agregar resolución monitor externo:
 		https://forum.mxlinux.org/viewtopic.php?f=104&t=60205&start=10

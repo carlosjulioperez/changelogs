@@ -1,14 +1,14 @@
 Git
 	+ Borrar rama:
 		$ git checkout master
-		$ git branch -D cjperez-bug
+		$ git branch -D cjperez-2
 
 	+ Crear rama:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-bug origin/master
+		$ git checkout -b cjperez-2 origin/master
+		
 		$ git branch -a (todas)
-
 		$ git branch -v (locales)
 	
 	+ Crear una nueva rama basada en otra:
@@ -78,6 +78,22 @@ Git
 		$ git config --global credential.helper store
 		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
 		$ git config --global user.email "carlosjulioperez@gmail.com"
+		
+		$ git config --global user.email "cjperez@telconet.ec"
+
+		+ Probado con gitlab:
+		https://stackoverflow.com/questions/21745213/changed-github-password-no-longer-able-to-push-back-to-the-remote
+
+		$ git remote -v
+			origin	https://cjperez:MDsoWB)5%21P@gitlab.telconet.ec/telcos/telcos.git (fetch)
+			origin	https://cjperez:MDsoWB)5%21P@gitlab.telconet.ec/telcos/telcos.git (push)
+		$ git remote set-url origin https://cjperez@gitlab.telconet.ec/telcos/telcos.git
+		$ git fetch
+		y prompt solicita la nueva clave
+		$ git config --global credential.helper store
+		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
+		$ git config --global user.email "cjperez@telconet.ec"
+		$ git fetch
 
 	+ Nuevo repo:
 		https://medium.com/swlh/using-git-how-to-add-a-repo-to-track-an-existing-project-a05093f76396
