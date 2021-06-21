@@ -1,0 +1,16 @@
+Cursos
+	+ Scala:
+		https://alvinalexander.com/scala/scala-book-free/
+
+		https://www.guru99.com/scala-tutorial.html
+		https://www.mygreatlearning.com/blog/scala-tutorial/
+
+		https://academy.lightbend.com/
+		https://academy.lightbend.com/dashboard
+
+		https://cognitiveclass.ai/courses	
+		https://cognitiveclass.ai/learn
+
+		https://courses.cognitiveclass.ai/courses/course-v1:BigDataUniversity+SC0101EN+2016/courseware/14db1c4f26394ef7be7e9d37f8b29146/67289d0c32a445ea90777cb15d134e9f/
+
+

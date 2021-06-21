@@ -1,10 +1,9 @@
+(A) 2021-06-21 Prueba para subir archivo digital +telconet @test
+(A) 2021-06-21 Identificar componentes para seleccionar más de un archivo. +telconet @research
 (A) 2021-06-18 Impedimento idPto +telconet @impediment
-x 2021-06-18 2021-06-18 Quitar validación al agregar característica del producto +telconet @research
-x 2021-06-18 2021-06-17 Determinar los componentes a modificar +telconet @research
-x 2021-06-17 2021-06-17 Análisis de documento FOR_SIS_02_LEVANTAMIENTO_DE_REQUERIMIENTO_DE_SOFTWARE_Cloud_IaaS.docx +telconet @research
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (B) Identificar funciones JS para Cloud +telconet @research
-(B) Leer funcionamiento de SoporteService::guardarJsonIncidenciaEcucert() +telconet @research
+(B) Leer funcionamiento de SoporteService::guardarJsonIncidencia Ecucert() +telconet @research
 (B) Pescarolo reportes +pescarolo @design
 (B) Recrear el JSON en PHP +telconet @enhance
 (B) Revisar camunda +telconet @research

@@ -425,3 +425,8 @@ x 2021-06-14 2021-06-14 Preparar el JSON para finalizar la tarea y despés cerra
 x 2021-06-15 2021-06-15 Configuración de tareas en Trello +telconet @setup
 x 2021-06-15 2021-06-15 Documentar casos de prueba +telconet @bug
 x 2021-06-15 2021-06-15 Instalación de postman para probar WS +telconet @research
+x 2021-06-21 2021-06-21 Instalar SchemaSpy +telconet @setup
+x 2021-06-21 2021-06-21 Generar MER para DB_COMUNICACION.INFO_DOCUMENTO_RELACION +telconet @research
+x 2021-06-18 2021-06-18 Quitar validación al agregar característica del producto +telconet @research
+x 2021-06-18 2021-06-17 Determinar los componentes a modificar +telconet @research
+x 2021-06-17 2021-06-17 Análisis de documento FOR_SIS_02_LEVANTAMIENTO_DE_REQUERIMIENTO_DE_SOFTWARE_Cloud_IaaS.docx +telconet @research
