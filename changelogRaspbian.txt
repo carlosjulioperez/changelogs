@@ -1,12 +1,23 @@
 Raspbian
 	$ sudo apt install qutebrowser openfortivpn audacious virt-viewer
 	flameshot bleachbit keepassx vim-gtk3 xpad thunar sqlite3 sqlitebrowser
+	stopwatch silversearcher-ag imagemagick
+	
+	+ tor browser usando chromium:
+	$ sudo apt install tor
+	$ chromium-browser --proxy-server=socks5://localhost:9050
+
+	+ Listado de paquetes disponibles:
+	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u
+	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u | grep php
 
 	+ Pomodoro:
 	
 	https://github.com/mehdidc/pomodoro
 	$ sudo pip install pomodoro-cli
 	$ pomodoro 25 5 --timer=True 
+	
+	sudo apt-get install python-gi-cairo
 
 	pomostat overall
 	pomostat week
@@ -17,3 +28,18 @@ Raspbian
 	pomostat weeks
 	pomostat today
 	pomostat yesterday
+
+	+ sdkman:
+	$ curl -s "https://get.sdkman.io" | bash
+	$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+	$ sdk version
+
+	$ sdk install sbt
+
+	+ Permisos para convertir unir imgágenes a pdf:
+	$ $ sudo vim /etc/ImageMagick-6/policy.xml 
+	Agregar antes de "</policymap>"
+		<policy domain="coder" rights="read | write" pattern="PDF" />
+
+	$ convert a.jpeg b.jpeg PL_CNEL_MAN_1105133970_2021.pdf carlos_perez.pdf
+

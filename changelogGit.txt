@@ -1,12 +1,12 @@
 Git
 	+ Borrar rama:
 		$ git checkout master
-		$ git branch -D cjperez-2
+		$ git branch -D cjperez-bug-1
 
 	+ Crear rama:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-2 origin/master
+		$ git checkout -b cjperez-bug-1 origin/master
 		
 		$ git branch -a (todas)
 		$ git branch -v (locales)
@@ -14,11 +14,12 @@ Git
 	+ Crear una nueva rama basada en otra:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-1 origin/nnaulal-4
+		$ git checkout -b cjperez-bug-1 origin/nnaulal-4
 		$ git reset --hard origin/nnaulal-4
 
-	+ Reseteo a master:
+	+ Reseteo (actualizar) a master:
 		$ git reset --hard origin/master
+		$ git pull
 
 	+ Actualizar cambios a master:
 		$ cd Repositories/telcos
@@ -30,17 +31,17 @@ Git
 		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_20210604_cjperez.pks
 		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
 		$ git status
-		$ git commit -m "Ultimos cambios"
+		$ git commit -m "MD: INT: Telcos: Bug: Error en el formato de fecha de Incidencia"
 		$ git status
-		$ git push -f origin cjperez-bug
+		$ git push -f origin cjperez-bug-1
 		
 		$ git fetch origin
 		$ git reset --hard origin/master
-		$ git merge --squash origin/cjperez-bug
+		$ git merge --squash origin/cjperez-bug-1
 		$ git status
-		$ git commit -m "MD: INT: Telcos: Mant: Administracion para Procesamiento de Ips Ecucert MD"
+		$ git commit -m "MD: INT: Telcos: Bug: Error en el formato de fecha de Incidencia"
 		$ git log
-		$ git push -f origin cjperez-bug
+		$ git push -f origin cjperez-bug-1
 		$ git status
 
 		+ Agregar cambios:
@@ -49,7 +50,7 @@ Git
 		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
 		$ git status
 		$ git commit --amend
-		$ git push -f origin cjperez-bug
+		$ git push -f origin cjperez-bug-1
 		$ git status
 		$ git log
 

@@ -430,3 +430,22 @@ x 2021-06-21 2021-06-21 Generar MER para DB_COMUNICACION.INFO_DOCUMENTO_RELACION
 x 2021-06-18 2021-06-18 Quitar validación al agregar característica del producto +telconet @research
 x 2021-06-18 2021-06-17 Determinar los componentes a modificar +telconet @research
 x 2021-06-17 2021-06-17 Análisis de documento FOR_SIS_02_LEVANTAMIENTO_DE_REQUERIMIENTO_DE_SOFTWARE_Cloud_IaaS.docx +telconet @research
+x 2021-06-22 2021-06-22 Crear carpetas para subir archivos en el contenedor +telconet @setup
+x 2021-06-22 2021-06-18 Impedimento idPto +telconet @impediment
+x 2021-06-22 2021-06-21 Prueba para subir archivo digital +telconet @test
+x 2021-06-22 2021-06-22 Prueba para subir contratos externos digitales +telconet @test
+x 2021-06-22 2021-06-22 Generar MER de relaciones implicadas +telconet @doc
+x 2021-06-23 2021-06-23 Error No se puede descargar un archivo
+x 2021-06-23 13:05 2021-06-23 12:07 Reunión Comercial MD +telconet @meetings
+x 2021-06-24 15:40 2021-06-24 15:10 Capacitación Ecucert +telconet @capacitation
+x 2021-06-24 2021-06-23 Revisar la funcionalidad de subir hasta tres archivos y corrección de impedimento +telconet @fix
+x 2021-06-25 2021-06-25 Elaboración del documento de diseño. +telconet @doc
+x 2021-06-25 2021-06-25 Elaboración del documento de pruebas. +telconet @doc
+x 2021-06-25 2021-06-25 Documentación de usuario +telconet @doc
+x 2021-06-25 2021-06-25 Merge request +telconet @git
+x 2021-06-25 2021-06-25 Revisar documentación WS-CONSULTA_DATOS_PERSONA.pdf +telconet @research
+x 2021-06-25 2021-06-25 Revisar documentación WS-CONSULTA_RECOMENDACIONES_PERSONA.pdf +telconet @research
+x 2021-06-25 2021-06-25 MD: INT: Telcos: Bug: Administracion para Procesamiento de Ips Ecucert MD +telconet @bug
+x 2021-06-28 2021-06-28 Validaciones archivo CSV +telconet @bug
+x 2021-06-30 2021-06-30 Instalación de Symfony 3.4.47 en rpi4 para usarlo como test +telconet @research
+x 2021-06-29 2021-06-29 Pruebas de procesamiento CSV Ecucert +telconet @test

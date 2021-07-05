@@ -1,14 +1,17 @@
-(A) 2021-06-21 Prueba para subir archivo digital +telconet @test
-(A) 2021-06-21 Identificar componentes para seleccionar más de un archivo. +telconet @research
-(A) 2021-06-18 Impedimento idPto +telconet @impediment
+x 2021-07-02 11:40 2021-07-02 11:20 Reunión zoom proyecto equifax +telconet @meeting
+x 2021-07-02 2021-07-02 Instalación Framework Symfony 2.8.48 +telconet @research
+x 2021-07-02 2021-07-02 Instalación Framework Symfony 2.7.48 +telconet @research
+x 2021-07-02 2021-07-01 Framework Symfony Chapter 3. +telconet @research
+x 2021-07-01 2021-07-01 Framework Symfony Chapter 2. +telconet @research
+Docker para MQ +telconet @research
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
+(B) Docker para Symfony +telconet @research
 (B) Identificar funciones JS para Cloud +telconet @research
 (B) Leer funcionamiento de SoporteService::guardarJsonIncidencia Ecucert() +telconet @research
 (B) Pescarolo reportes +pescarolo @design
 (B) Recrear el JSON en PHP +telconet @enhance
 (B) Revisar camunda +telconet @research
 (C) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
-(C) Cotizar villa primavera 2 - $45K $48K +carper @research
 (C) Estrategia venta terrenos +carper @design
 (C) Oracle PL/SQL +skills @research
 (E) Actualizar SuiteTest +ingenio @fix

@@ -1,10 +1,53 @@
 Symfony 
+	+ kernel:
+		/home/cjperez/Repositories/telcos/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php
+    	const VERSION = '2.3.1'; // Telcos+
+		const VERSION = '3.4.47'; 
 	
+	+ versión 3:
+		+ usando composer:
+		https://symfony.com/doc/2.3/cookbook/composer.html
+		https://getcomposer.org/download/
+
+		$ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+		$ php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+		$ php composer-setup.php
+		$ php -r "unlink('composer-setup.php');"
+		$ sudo mv composer.phar /usr/local/bin/composer
+		o
+		$ sudo cp composer.phar /usr/local/bin/composer
+		$ composer create-project symfony/framework-standard-edition demo "3.*"
+
+		$ cd demo
+		$ php bin/console server:run
+
+	+ versión 2:
+		https://stackoverflow.com/questions/25749655/how-do-i-create-a-project-based-on-a-specific-version-of-symfony-using-composer
+
+		+ version 2.3.1:
+			$ composer create-project symfony/framework-standard-edition blog231 2.3.1 --no-interaction
+
+		+ En versiones 2.7.48 y 2.8.48 se aplica la misma configuración:
+			$ composer create-project symfony/framework-standard-edition blog 2.* --no-interaction
+
+			Sale el mensaje de error:
+			[Symfony\Component\Debug\Exception\ContextErrorException]:
+			Warning: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"?  
+
+			$ app/console cache:clear -v
+
+			Modificar "continue" por "continue 2" en las líneas:
+			/home/pi/local/code/symfony/blog/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:2636
+			/home/pi/local/code/symfony/blog/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:2665
+			
+			Solucionado:
+			$ app/console cache:clear -v
+			[OK] Cache for the "dev" environment (debug=true) was successfully cleared. 
+
 	+ docker: $ docker pull phpmentors/symfony-app
 		$ docker run -p 8000:80 -it phpmentors/symfony-app
 		$ docker run -p 8000:80 -it phpmentors/symfony-app /bin/bash
 
-	+ ejemplo 1:
 		https://hub.docker.com/r/whatwedo/symfony3
 
 		$ docker pull whatwedo/symfony3
@@ -14,19 +57,9 @@ Symfony
 		$ docker run -p 80:80 -v [YOUR-PROJECT-ROOT]:/var/www whatwedo/symfony3:v2.1
 		$ docker run -p 8000:80 -v demo:/var/www whatwedo/symfony3:v2.1
 
+		https://hub.docker.com/r/bitnami/symfony/
+		$ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-symfony/master/docker-compose.yml
 	+ vdi:
 		$ cjperez@pvd-cjperez-rh-sisvdi:~$ lsb_release -a
 		Description:	Ubuntu 18.04.5 LTS Release:	18.04 Codename:	bionic
 		
-		* [Ejemplo 1]:
-		https://symfony.com/doc/2.4/book/installation.html
-		$ cd /home/cjperez/local
-		$ curl -s https://getcomposer.org/installer | php
-		$ php composer.phar create-project symfony/framework-standard-edition p1 '2.4.*'
-
-		https://hub.docker.com/r/bitnami/symfony/
-		$ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-symfony/master/docker-compose.yml
-
-		* [Ejemplo 2]:
-		https://symfony.com/doc/3.2/setup.html
-		$ composer create-project symfony/framework-standard-edition demo

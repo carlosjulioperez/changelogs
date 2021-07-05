@@ -652,6 +652,10 @@ TIPS
 
 		+ Más rápido:
 		$ sudo ag -a TrashCanaCrearTrashAction
+
+		+ Por tipo de archivo:
+		$ ag --list-file-types
+		$ sudo ag "const VERSION" --php
 	
 	* Search and replace string in the current folder:
 		http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files

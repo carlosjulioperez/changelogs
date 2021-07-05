@@ -13,6 +13,9 @@ MX 19.1:
 		https://github.com/mehdidc/pomodoro
 		$ sudo apt install python-pip
 		$ sudo pip install pomodoro-cli
+
+		$ sudo apt-get install python-matplotlib
+		Instalar python-tk desde MX Package installer.
 	
 		$ pomodoro 25 5 --timer=True 
 

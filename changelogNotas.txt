@@ -1,5 +1,6 @@
 Notas
-	libros
+
+	+ libros:
 	https://vk.com/proglib/bookv
 
 	http://netlifeecuador.speedtestcustom.com/
@@ -20,6 +21,9 @@ Notas
 
 	+ php sandbox:
 		https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo2
+	
+	+ peli:
+		https://youtu.be/wbjthcsSWTc?t=2432
 
 	+ telcos:
 		https://trello.com/b/Abhc6wdw/telconet
@@ -34,42 +38,19 @@ Notas
 		http://dev-telcos-developer.telconet.ec/soporte/reporteria/consulta_casos_ecucert/
 		http://dev-telcos-developer.telconet.ec/app.php/soporte/info_caso
 		http://dev-telcos-developer.telconet.ec/soporte/tareas/
-	
-	+ peli:
-		https://youtu.be/wbjthcsSWTc?t=2432
-
-	+ [TN-MD: INT: telcos: Mant: Ampliar la subida de documentos para Cloud IaaS Public]:
-		https://projects.zoho.com/portal/telcosis#tasklistdetail/245613000010310099/245613000010372092
-
-		+ Componentes:
-		http://dev-telcos-developer.telconet.ec/comercial/punto/398012/Cliente/show
-			+ Impedimento al mostrar el punto:
-			cjperez@pvd-cjperez-rh-sisvdi:~/Repositories/telcos$ mkdir -p web/public/uploads/archivo_punto
-					
-		+ Impedimento al grabar el archivo:
-		http://dev-telcos-developer.telconet.ec/comercial/punto/grabarsubirarchivo
-		infopunto_newarchivodigital
-		+ 948:
-		/home/cjperez/Repositories/telcos/src/telconet/comercialBundle/Resources/views/infopunto/show.html.twig
-
-		+ Error idPto - 6207:
-		/home/cjperez/Repositories/telcos/src/telconet/comercialBundle/Controller/InfoPuntoController.php
-
-		+ 857:
-		/home/cjperez/Repositories/telcos/src/telconet/schemaBundle/Entity/InfoPunto.php
 		
-		Allan Suarez, [18.06.21 17:10]
-		hola, no
-		la herramienta guarda en ese campo??
-		actualmente
-		porque lo que debe pasar es que todo vaya a la INFO_DOCUMENTO_RELACION
-		y todo lo que se suba sea un documento de la INFO_DOCUMENTO
-		la info_documento_relacion te relaciones documentos con puntos, eso ya soprte el 1 a muchos
-		esa es la solucion	
-		
-		-----------------------------------------------------------
+		* Cambio para login:
+		/home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php
+		391: return false;
 
-		En la sección donde se sube los documentos, al momento solo puede subir un documento, se necesita ampliar el campo de recepción de documentos para que acepte múltiples documentos.
-		
-		+ Quitar validación:
-		https://gitlab.telconet.ec/telcos/telcos/-/commit/b8548d66e9745cdfafc0332f7edd6fff6ab46538
+		=============
+		01-julio-2021
+		=============
+
+		https://projects.zoho.com/portal/telcosis#todomilestones/245613000010459085/customview/6
+		[MD: INT: Telcos: Nuevo: Implementacion Equifax]
+		* Obtener información verídica y comprobada de nuestros nuevos clientes, que nos permitan culminar los procesos de Contratación a través del móvil con mayor rapidez y reduciendo al mínimo los errores humanos que se cometen al ingresar los datos.
+		* Adicionalmente, de cada cliente se espera tener datos extras para realizar una analítica de datos.
+		* Para alcanzar los objetivos propuestos por la Gerencia, se espera poder integrar al Móvil Comercial una consulta de Datos con el Proveedor Equifax, quienes deberán proveer un servicio web y brindar a los agentes de ventas recomendaciones para su gestión.
+
+
