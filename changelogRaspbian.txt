@@ -3,6 +3,11 @@ Raspbian
 	flameshot bleachbit keepassx vim-gtk3 xpad thunar sqlite3 sqlitebrowser
 	stopwatch silversearcher-ag imagemagick
 	
+	$ snap install xclock-simosx
+	$ sudo apt install cairo-clock
+	$ sudo apt install dclock
+	$ sudo apt install tiemu
+	
 	+ tor browser usando chromium:
 	$ sudo apt install tor
 	$ chromium-browser --proxy-server=socks5://localhost:9050

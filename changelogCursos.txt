@@ -1,4 +1,7 @@
 Cursos
+	+ Data Scientist:
+		https://open.sap.com/courses/ds3/items/2ict8Ps6DDL20tPuxQPEi7
+
 	+ Scala:
 		https://alvinalexander.com/scala/scala-book-free/
 

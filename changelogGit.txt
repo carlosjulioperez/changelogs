@@ -1,12 +1,16 @@
 Git
 	+ Borrar rama:
 		$ git checkout master
-		$ git branch -D cjperez-bug-1
+		$ git branch -D cjperez-2
+	
+	+ Estado:
+		$ git status
+		$ git log
 
 	+ Crear rama:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-bug-1 origin/master
+		$ git checkout -b cjperez-4 origin/master
 		
 		$ git branch -a (todas)
 		$ git branch -v (locales)
@@ -14,46 +18,28 @@ Git
 	+ Crear una nueva rama basada en otra:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-bug-1 origin/nnaulal-4
-		$ git reset --hard origin/nnaulal-4
+		$ git checkout -b cjperez-4 origin/<rama>
+		$ git reset --hard origin/<rama>
 
 	+ Reseteo (actualizar) a master:
 		$ git reset --hard origin/master
 		$ git pull
 
-	+ Actualizar cambios a master:
+	+ Agregar cambios a master:
 		$ cd Repositories/telcos
-		$ git status
-		$ git add src/telconet/soporteBundle/Controller/CasoEcucertController.php
-		$ git status
-		$ git log
-		$ git status
 		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_20210604_cjperez.pks
-		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
-		$ git status
-		$ git commit -m "MD: INT: Telcos: Bug: Error en el formato de fecha de Incidencia"
-		$ git status
-		$ git push -f origin cjperez-bug-1
+		$ git commit -m "TN-MD: INT: telcos: Mant: Ampliar la subida de documentos para Cloud IaaS Public"
+		$ git push -f origin cjperez-4
 		
+	+ Actualizar cambios a master:
 		$ git fetch origin
 		$ git reset --hard origin/master
-		$ git merge --squash origin/cjperez-bug-1
-		$ git status
-		$ git commit -m "MD: INT: Telcos: Bug: Error en el formato de fecha de Incidencia"
-		$ git log
-		$ git push -f origin cjperez-bug-1
-		$ git status
+		$ git merge --squash origin/cjperez-4
+		$ git add ...
+		$ git commit -m ...
+		$ git push -f origin cjperez-4
 
-		+ Agregar cambios:
-		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez.pks
-		$ git status
-		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_ROLLBACK_20210604_cjperez
-		$ git status
 		$ git commit --amend
-		$ git push -f origin cjperez-bug-1
-		$ git status
-		$ git log
-
 
 	+ Quitar carpeta:
 		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository
@@ -74,6 +60,9 @@ Git
 		$ git clone -b <branch> <remote_repo>
 
 		$ git clone -b zk8 https://github.com/zkoss/zkessentials.git
+
+	+ Descargar carpeta:
+		https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
 
 	+ Actualizar password git:
 		$ git config --global credential.helper store

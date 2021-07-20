@@ -1,4 +1,23 @@
 TIPS
+	* VLC plugin youtube playlist:
+		https://www.maketecheasier.com/play-youtube-playlist-vlc/
+
+		$ mkdir -p ~/.local/share/vlc/lua/playlist/
+		$ cd ~/.local/share/vlc/lua/playlist/
+		+ Copiar este archivo:
+		https://gist.github.com/bastibeckr/16f57b6bdecf27b772d6433b2090bf61
+
+	* Imprimir json en consola:
+		https://itsfoss.com/pretty-print-json-linux/
+		$ sudo apt install jq
+		$ jq . sample.json
+
+		* Dentro de VIM:
+		:%!jq .
+
+		* Imprimir como tablas:
+		https://stackoverflow.com/questions/39139107/how-to-format-a-json-string-as-a-table-using-jq
+
 	* Descargar deb en carpeta local específica:
 		$ dpkg-deb -X sleek_1.0.3-1_amd64.deb /home/carper/local/fullstack/
 		$ dpkg-deb -X code_1.56.0-1620166262_amd64.deb /home/carper/local/fullstack/

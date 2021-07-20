@@ -3,19 +3,24 @@ MX 19.1:
 		
 		$ sudo apt-get install openjdk-11-jdk
 		
-		sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3 postgresql tmux openjdk-11-jdk ant ant-optional groovy
+		$ sudo apt install graphviz
+
+		$ sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3 postgresql tmux openjdk-11-jdk ant ant-optional groovy
 		playonlinux doublecmd-gtk
 
 	* Package manager:
-		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker
-		FreeOffice 2018' sq
+		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018' jq
 	* Pomodoro:
+		Instalar python-tk desde MX Package installer.
+
 		https://github.com/mehdidc/pomodoro
+		$ sudo apt-get install python-matplotlib
 		$ sudo apt install python-pip
+		$ sudo pip install --upgrade setuptools
 		$ sudo pip install pomodoro-cli
 
-		$ sudo apt-get install python-matplotlib
-		Instalar python-tk desde MX Package installer.
+		* Error:
+		Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-install-inVnZ4/pomodoro-cli/
 	
 		$ pomodoro 25 5 --timer=True 
 

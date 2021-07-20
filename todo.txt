@@ -1,9 +1,7 @@
-x 2021-07-02 11:40 2021-07-02 11:20 Reunión zoom proyecto equifax +telconet @meeting
-x 2021-07-02 2021-07-02 Instalación Framework Symfony 2.8.48 +telconet @research
-x 2021-07-02 2021-07-02 Instalación Framework Symfony 2.7.48 +telconet @research
-x 2021-07-02 2021-07-01 Framework Symfony Chapter 3. +telconet @research
-x 2021-07-01 2021-07-01 Framework Symfony Chapter 2. +telconet @research
-Docker para MQ +telconet @research
+(A) 2021-07-19 Configuración tomcat maven +telconet @research
+(A) 2021-07-19 Levantamiento del entorno +telconet @research
+(A) 2021-07-16 Instalación y ejecución de virgo +telconet @setup
+(A) Script de migración +telconet @setup
 (B) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (B) Docker para Symfony +telconet @research
 (B) Identificar funciones JS para Cloud +telconet @research
@@ -12,6 +10,7 @@ Docker para MQ +telconet @research
 (B) Recrear el JSON en PHP +telconet @enhance
 (B) Revisar camunda +telconet @research
 (C) 2021-05-09 Cliente-Ordenes-Artículos +skills @research
+(C) 2021-07-16 Revisión de PrimeFaces +telconet @research
 (C) Estrategia venta terrenos +carper @design
 (C) Oracle PL/SQL +skills @research
 (E) Actualizar SuiteTest +ingenio @fix
@@ -19,3 +18,5 @@ Docker para MQ +telconet @research
 (E) Renta 2018 +carper @tax
 (E) Renta 2019 +carper @tax
 (E) Renta 2020 +carper @tax
+Docker para MQ +telconet @research
+Restringir tipos de archivo a subir +telconet @fix

@@ -1,15 +1,35 @@
 Notas
 
+	+ VirtualMind:
+	https://www.netjstech.com/2021/01/spring-boot-rest-api-crud-example-spring-data-jpa.html
+	https://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
+	https://www.baeldung.com/jpa-pagination
+	
+	https://stackoverflow.com/questions/63431287/how-to-work-with-zoneddatetime-using-api-stream
+	https://stackoverflow.com/questions/55536044/how-to-use-java-stream-with-empty-list
+	http://5.9.10.113/65291057/refactoring-with-java-8-streams
+
+	https://superuser.com/questions/1341684/youtube-dl-how-download-only-the-playlist-not-the-files-therein
+	youtube-dl -j --flat-playlist "https://<yourYoutubePlaylist>" | jq -r
+	'.id' | sed 's_^_https://youtu.be/_' > result.log
+
+	+ Java 8 Streams:
+	https://www.baeldung.com/java-8-new-features
+	https://www.baeldung.com/java-8-streams-introduction
+	https://www.baeldung.com/java-8-streams
+
+	+ Link CV Europass:
+	https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/26e96628-a90b-4c25-ab4d-7b680529fc45?view=html
+
+	+ Enlace trabajo UE:
+	https://www.linkedin.com/posts/giz-ecuador_tdr-asesora-de-sistemas-de-informaci%C3%B3n-activity-6815440839788036096-ZnRo/
+	
+	https://www.computrabajo.com.ec/ofertas-de-trabajo/oferta-de-trabajo-de-java-developer-remote-en-ecuador-2D4D75D2BA41C2FA61373E686DCF3405
+	https://www.tropicanafm.com/2016/los-5-colombianos-que-han-participado-en-caso-cerrado-3295135-188119.html
+
 	+ libros:
 	https://vk.com/proglib/bookv
-
 	http://netlifeecuador.speedtestcustom.com/
-
-	https://github.com/mehdidc/pomodoro
-	https://github.com/open-pomodoro/openpomodoro-cli
-	https://www.npmjs.com/package/skyacemike-pomodoro-cli
-
-	https://pomofocus.io/
 
 	+ Cursos bíblicos:
 		https://docs.google.com/spreadsheets/d/1mOXD2IXZcn6ur9Y1qhAaoCTCMG4Q-6vJ5rNl7pjWo7Q/edit#gid=61628535
@@ -25,11 +45,12 @@ Notas
 	+ peli:
 		https://youtu.be/wbjthcsSWTc?t=2432
 
-	+ telcos:
+	+ telconet:
 		https://trello.com/b/Abhc6wdw/telconet
 
 		/media/pi/homeMX/carper/progs/telconet/changelogTelcos.txt
 		/media/pi/homeMX/carper/progs/telconet/config/links.txt
+		/media/pi/homeMX/carper/local/docs/skills/ejercicios/telconet/capacitacion/enlaces.txt
 
 		/media/carper/homeMX/carper/progs/telconet/changelogTelcos.txt
 		/media/carper/homeMX/carper/progs/telconet/config/links.txt
@@ -43,14 +64,60 @@ Notas
 		/home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php
 		391: return false;
 
-		=============
-		01-julio-2021
-		=============
+		==========
+		16-07-2021
+		==========
+		https://projects.zoho.com/portal/telcosis#todomilestones/245613000010436399/customview/6
+		
+		Actualizar la forma de subir archivos en el aplicativo, mediante el uso de microservicio.
+		Cuando se vaya a subir un documento, internamente el sistema hará uso de los microservicios de nfs, para subir el o los archivos.
 
-		https://projects.zoho.com/portal/telcosis#todomilestones/245613000010459085/customview/6
-		[MD: INT: Telcos: Nuevo: Implementacion Equifax]
-		* Obtener información verídica y comprobada de nuestros nuevos clientes, que nos permitan culminar los procesos de Contratación a través del móvil con mayor rapidez y reduciendo al mínimo los errores humanos que se cometen al ingresar los datos.
-		* Adicionalmente, de cada cliente se espera tener datos extras para realizar una analítica de datos.
-		* Para alcanzar los objetivos propuestos por la Gerencia, se espera poder integrar al Móvil Comercial una consulta de Datos con el Proveedor Equifax, quienes deberán proveer un servicio web y brindar a los agentes de ventas recomendaciones para su gestión.
+		Configurar:
+		Combinar carpeta m2 en $HOME/.m2
+			/home/cjperez/.m2/settings.xml
+		Maven (tomcat):
+			/etc/maven/settings.xml
+		Hibernate:
+			ec.telconet.gestiondocumental.hibernate.contex
+			/home/cjperez/Repositories/gestiondocumental/ec.telconet.gestiondocumental.hibernate.context/src/test/resources/hibernate-postgres.cfg.xml
+			/home/cjperez/Repositories/gestiondocumental/ec.telconet.gestiondocumental.hibernate.context/src/test/resources/hibernate-oracle.cfg.xml
+		Instalación:
+			/home/cjperez/Repositories/gestiondocumental/bin/gd.sh
 
+==================================================
 
++ Videos:
+	https://www.youtube.com/watch?v=pcYYUU5tIxU
+				
+	Notas:
+	[ctrl + shift + u] + 2713 = ✓
+
+	oyague youtube-dl
+	48298005 tarea
+
+	chromium-browser --proxy-server=socks5://localhost:9050
+	https://developer.ibm.com/callforcode/
+
+	[] Mooc Clojure
+	[] Mooc React1
+	[] Swift Coursera
+	[] Comparación aire gye, man, uio, Kra
+	[] Symfony test (Accessing other Services)
+
+	Peli: Silence, The tomorrow war
+	https://cyber.dabamos.de/unix/x11/
+	mk docker -> dockerhub
+	sound recorder
+
+	Netlife_Administrador
+	#Pr0H@R3s7*mD&nL
+
+	error_log("\n>>> valor:  $valor");
+	error_log($boolEsTipoPermitido ? "OK": "NO PERMITIDO");
+	error_log(print_r(">>>" . $array, 1));
+
+	$ pomodoro 25 5 --timer=True
+	$ pomodoro 25 5 --timer=True --alarm=False
+	$ pomostat today
+	$ pomostat thisweek
+	vie 9

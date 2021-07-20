@@ -1,9 +1,15 @@
 Symfony 
+	+ debug:
+		/etc/php/7.2/cli/php.ini
+
 	+ kernel:
 		/home/cjperez/Repositories/telcos/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php
     	const VERSION = '2.3.1'; // Telcos+
 		const VERSION = '3.4.47'; 
 	
+	+ Ver todos los servicios:
+		$ app/console container:debug
+
 	+ versión 3:
 		+ usando composer:
 		https://symfony.com/doc/2.3/cookbook/composer.html

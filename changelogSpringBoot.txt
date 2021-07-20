@@ -1,4 +1,13 @@
 Spring Boot
+	+ Conceptos:
+		https://www.baeldung.com/jpa-join-column
+		https://www.baeldung.com/spring-data-rest-relationships
+		https://www.oscarblancarteblog.com/2018/11/30/data-transfer-object-dto-patron-diseno/
+		https://github.com/javaquery/spring-boot-examples/blob/master/src/main/java/com/javaquery/examples/springboot/rest/exception/EntityNotFoundException.java
+
+            throw new EntityNotFoundException(Topic.class, topicId);
+            //  throw new EntityNotFoundException("Topic.class, topicId");
+
 
 	+ Spring Boot CLI:
 		https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started-installing-the-cli

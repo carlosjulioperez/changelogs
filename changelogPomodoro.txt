@@ -11,4 +11,10 @@ Pomodoro
 	* cli:
 		https://coderwall.com/p/7ea_ew/productivity-pomodoro-technique-with-cli
 		
+	* enlaces:
+		https://github.com/mehdidc/pomodoro
+		https://github.com/open-pomodoro/openpomodoro-cli
+		https://www.npmjs.com/package/skyacemike-pomodoro-cli
+
+		https://pomofocus.io/
 
