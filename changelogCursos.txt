@@ -1,6 +1,26 @@
 Cursos
+	+ Salarios:
+		+ Ocaml:
+		https://www.efinancialcareers.com/news/2021/06/ocaml-coding-language
+		https://www.youtube.com/watch?v=v1CmGbOGb2I&t=226s
+		https://6figr.com/us/salary/ocaml--s
+
+		+ Functionals:
+		https://www.efinancialcareers.co.uk/news/2019/04/python-clojure-f-scala-and-elixir-in-finance-jobs
+
 	+ Data Scientist:
 		https://open.sap.com/courses/ds3/items/2ict8Ps6DDL20tPuxQPEi7
+
+	https://open.hpi.de/
+	https://mooc.pharo.org/
+
+	+ Algoritmos:
+		https://medium.com/javarevisited/5-coding-interview-books-to-prepare-for-programming-job-interviews-d8f63348afaf
+		https://medium.com/javarevisited/10-best-books-for-data-structure-and-algorithms-for-beginners-in-java-c-c-and-python-5e3d9b478eb1
+
+		https://realtoughcandy.com/best-algorithms-books/
+
+		https://www.amazon.com/gp/bestsellers/books/3870
 
 	+ Scala:
 		https://alvinalexander.com/scala/scala-book-free/
@@ -16,4 +36,25 @@ Cursos
 
 		https://courses.cognitiveclass.ai/courses/course-v1:BigDataUniversity+SC0101EN+2016/courseware/14db1c4f26394ef7be7e9d37f8b29146/67289d0c32a445ea90777cb15d134e9f/
 
+	+ Clojure:
+		https://iloveponies.github.io/120-hour-epic-sax-marathon/index.html
+		https://medium.com/@shamdi/clojure-for-the-new-and-uninitiated-abd1dec923ff
 
+	+ Functional:
+		https://www.my-mooc.com/es/mooc/introduction-functional-programming-delftx-fp101x-0/
+
+	+ Coursera:
+		+ 50% nueva carrera profesional:
+		https://www.coursera.org/specializations/swift-5-ios-app-developer
+
+		+ 62% nueva carrera profesional:
+		https://www.coursera.org/specializations/algorithms
+
+		+ 35% nueva carrera profesional:
+		https://www.coursera.org/specializations/scala
+
+	+ Pharo:
+		https://mooc.pharo.org/
+
+	+ iOS:
+		https://www.techrepublic.com/article/how-to-become-an-ios-developer-a-cheat-sheet/

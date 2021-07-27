@@ -2,3 +2,13 @@ Ubuntu
 	+ paquetes:
 		sudo apt install vim filezilla openjdk-8-jdk openjdk-8-jre-headless
 		ack gnome-shell-pomodoro vim-gnome tree terminator meld youtube-dl vlc
+
+	+ Anydesk en 18.04:
+		https://computingforgeeks.com/how-to-install-anydesk-on-ubuntu/
+
+		$ wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+		$ echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+		$ sudo apt update
+		$ sudo apt install anydesk
+
+

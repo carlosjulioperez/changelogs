@@ -10,6 +10,22 @@ MX 19.1:
 
 	* Package manager:
 		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018' jq
+
+	* Whatsapp client:
+		https://snapcraft.io/whatsdesk
+		
+	* GMail Desktop:
+		https://forum.snapcraft.io/t/solved-cannot-install-snaps-on-linux-mx19-patito-feo/14976/2
+		https://mxlinux.org/wiki/applications/snap-packages-and-mx-linux/
+		+ Activar systemd en boot options:
+		+ Agregar a PATH:
+		https://mxlinux.org/wiki/system/path/
+
+		+ Verificar si está /snap/bin:
+		$ /etc/profile.d/apps-bin-path.sh
+		
+		https://snapcraft.io/gmail-desktop
+
 	* Pomodoro:
 		Instalar python-tk desde MX Package installer.
 
@@ -19,10 +35,18 @@ MX 19.1:
 		$ sudo pip install --upgrade setuptools
 		$ sudo pip install pomodoro-cli
 
+	https://github.com/mehdidc/pomodoro
+	$ sudo pip install pomodoro-cli
+	$ sudo pip install configparser
+	$ sudo apt-get install python-gi-cairo
+
+	$ pomodoro 25 5 --timer=True --notif=True --alarm=False
+
 		* Error:
 		Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-install-inVnZ4/pomodoro-cli/
 	
 		$ pomodoro 25 5 --timer=True 
+		$ pomodoro 25 5 --timer=True --notif=True --alarm=False
 
 		pomostat overall
 		pomostat week
@@ -40,6 +64,12 @@ MX 19.1:
 		$ xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
 		$ xrandr --addmode VGA1 "1368x768_60.00" --error esperado
 		$ xrandr --addmode DP-1 "1368x768_60.00"
+		
+
+		$ cvt 1366 800 | grep Modeline  | cut -d' '  -f2-
+		$ xrandr --newmode "1368x800_60.00"   88.75  1368 1440 1576 1784  800 803 813 831 -hsync +vsync
+		$ xrandr --addmode DP-1 "1368x800_60.00"
+
 
 		+ Configuración:
 		$ sudo vim /etc/X11/xorg.conf.d/10-monitor.conf

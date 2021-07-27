@@ -24,3 +24,31 @@ x 2021-07-16 2021-07-16 Configuración de cliente de correo Thunderbird +telcone
 x 2021-07-16 2021-07-16 Registro en Trello del proyecto +telconet @setup
 x 2021-07-16 2021-07-16 Revisión de FOR SIS 02 LEVANTAMIENTO DE REQUERIMIENTO DE SOFTWARE.pdf +telconet @research
 x 2021-07-16 2021-07-16 Revisión de FOR SIS 03 ANALISIS Y DISEÑO TECNICO.pdf +telconet @research
+x 2021-07-19 2021-07-19 Configuración tomcat maven +telconet @research
+x 2021-07-19 2021-07-19 Levantamiento del entorno +telconet @research
+x 2021-07-20 2021-07-20 Instalación y ejecución de virgo +telconet @setup
+x 2021-07-21 2021-07-21 Configuración de BD +telconet @setup
+x 2021-07-21 2021-07-21 Configuración de /home/cjperez/Repositories/gestiondocumental/bin/gd.sh +telconet @research
+x 2021-07-22 2021-07-22 Levantamiento de ambiente con la ayuda de Germán Valenzuela +telconet @setup
+x 2021-07-22 2021-07-22 Configuración de Classvisualizer +telconet @setup
+x 2021-07-22 2021-07-22 Código fuente para cosumo de WS +telconet @research
+x 2021-07-22 2021-07-22 Transferencia de archivo repository_res.zip para levantar el ambiente +telconet @setup
+x 2021-07-22 2021-07-22 Registro de horas Gestor documental +telconet @doc
+x 2021-07-23 2021-07-23 Configuración de despliegue de artefactos en servidor Virgo +telconet @setup 
+x 2021-07-23 2021-07-23 Crear enlace de Spring Tool Suite en Escritorio +telconet @setup 
+x 2021-07-23 2021-07-23 Probar acceso a BD con nueva dirección +telconet @setup
+x 2021-07-23 2021-07-23 Generación de ERD de gestión documental +telconet @setup
+x 2021-07-23 2021-07-23 Configuración de Virgo para laventar UI de gestión documental +telconet @setup
+x 2021-07-27 2021-07-27 Creación de script deply.sh +telconet @enhance
+x 2021-07-27 2021-07-27 Creación de DocumentoBeanTest.java +telconet @enhance
+x 2021-07-27 2021-07-27 Creación de pom.xml +telconet @enhance
+x 2021-07-27 2021-07-27 Creación de DML_27072021_cjperez.pks +telconet @enhance
+x 2021-07-27 2021-07-27 Creación de DML_ROLLBACK_27072021_cjperez.pks +telconet @enhance
+x 2021-07-27 2021-07-27 Actualizar la estructura de INFO_DOCUMENTO para guardar la ruta del documento subido +telconet @enhance
+x 2021-07-26 2021-07-26 Análisis de estructuras +telconet @research
+x 2021-07-26 2021-07-26 Prueba de WS para enviar archivos +telconet @research
+x 2021-07-26 2021-07-26 Verificación de archivo guardado en tablas +telconet @research
+x 2021-07-26 2021-07-26 guardar un PDF en µS +telconet @test
+x 2021-07-27 2021-07-26 Revisión de código del programa visor de los PDFs +telconet @research
+x 2021-07-27 2021-07-27 Crear bash para copiar los jars del proyecto hacia la carpeta de Virgo +telconet @research
+x 2021-07-27 2021-07-27 Probar lectura para leer url del documento subido +telconet @research

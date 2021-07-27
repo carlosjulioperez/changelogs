@@ -3,6 +3,7 @@ Centos
 	rsync -r -v --progress -e ssh user@remote-system:/address/to/remote/file /home/user/
 	
 	rsync -r -v --progress -e 'ssh -p 2022' root@192.168.0.3:/home/carper/mn/20201022 .
+	rsync -r -v --progress -e 'ssh -p 22' carper@192.168.100.6:"/home/carper/VirtualBox\ VMs/win7/win7.vdi" .
 
 	# sudo cat /etc/centos-release
 	CentOS release 6.10 (Final)

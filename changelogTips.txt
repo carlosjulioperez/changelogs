@@ -1,4 +1,13 @@
 TIPS
+	* Sitios útiles:
+		https://avxhm.is/
+		https://developer.ibm.com/callforcode/
+		https://vk.com/proglib/bookv
+		https://ur.1lib.limited/book/5606902/ae0490
+
+		+ tor:
+		https://ahmia.fi/
+
 	* VLC plugin youtube playlist:
 		https://www.maketecheasier.com/play-youtube-playlist-vlc/
 
@@ -105,21 +114,26 @@ TIPS
 	    sudo apt-get install poppler-utils
 
 	* Eclipse:
-		[Desktop Entry]
-		Version=1.0
-		Name=Eclipse 2019.09 R
-		Comment=Eclipse
-		Exec=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/eclipse
-		Icon=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/icon.xpm
-		Terminal=false
-		Type=Application
-		Categories=Utility;Application;
+		+ /usr/share/applications/:
+			[Desktop Entry]
+			Version=1.0
+			Name=Eclipse 2019.09 R
+			Comment=Eclipse
+			Exec=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/eclipse
+			Icon=/home/carper/local/utils/eclipse/eclipse-java-2019-09-R-linux-gtk-x86_64/eclipse/icon.xpm
+			Terminal=false
+			Type=Application
+			Categories=Utility;Application;
 
-		Instalar vim vrapper
-		Instalar Darkest Dark Theme with DevStyle CI 2019.09.16
-			Editor theme: Darkest Dark -> IntelliJ Idea Dark
+		+ Varios:
+			Instalar vim vrapper
+			Instalar Darkest Dark Theme with DevStyle CI 2019.09.16
+				Editor theme: Darkest Dark -> IntelliJ Idea Dark
 
-		Windows, Preference, Install/Update, Available Software Site
+			Windows, Preference, Install/Update, Available Software Site
+
+		+ Combinación de teclas:
+			https://stackoverflow.com/questions/2957774/searching-files-in-eclipse
 
 	* Geany:
 		+ Cambiar color:

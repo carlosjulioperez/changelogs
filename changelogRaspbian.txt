@@ -20,9 +20,11 @@ Raspbian
 	
 	https://github.com/mehdidc/pomodoro
 	$ sudo pip install pomodoro-cli
+	$ sudo pip install configparser
+	$ sudo apt-get install python-gi-cairo
+
 	$ pomodoro 25 5 --timer=True 
-	
-	sudo apt-get install python-gi-cairo
+	$ pomodoro 25 5 --timer=True --notif=True --alarm=False
 
 	pomostat overall
 	pomostat week
