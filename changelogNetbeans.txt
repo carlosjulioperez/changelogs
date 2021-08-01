@@ -1,0 +1,6 @@
+Netbeans
+	+Conf java en 12:
+
+	 76 #netbeans_jdkhome="/path/to/jdk"
+	  77 netbeans_jdkhome="/opt/java-jdk/jdk1.8.0_161"
+

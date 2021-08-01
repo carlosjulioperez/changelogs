@@ -1,12 +1,19 @@
 Cursos
 	+ Salarios:
+		+ Highest salary:
+		https://lvivity.com/top-highly-paid-programming-languages
+
 		+ Ocaml:
 		https://www.efinancialcareers.com/news/2021/06/ocaml-coding-language
 		https://www.youtube.com/watch?v=v1CmGbOGb2I&t=226s
 		https://6figr.com/us/salary/ocaml--s
 
-		+ Functionals:
+		+ Functionals fintech:
 		https://www.efinancialcareers.co.uk/news/2019/04/python-clojure-f-scala-and-elixir-in-finance-jobs
+		https://serokell.io/blog/functional-programming-in-fintech
+
+	+ Java 8 a 11:
+	https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9
 
 	+ Data Scientist:
 		https://open.sap.com/courses/ds3/items/2ict8Ps6DDL20tPuxQPEi7

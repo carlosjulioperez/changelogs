@@ -52,3 +52,20 @@ x 2021-07-26 2021-07-26 guardar un PDF en µS +telconet @test
 x 2021-07-27 2021-07-26 Revisión de código del programa visor de los PDFs +telconet @research
 x 2021-07-27 2021-07-27 Crear bash para copiar los jars del proyecto hacia la carpeta de Virgo +telconet @research
 x 2021-07-27 2021-07-27 Probar lectura para leer url del documento subido +telconet @research
+x 2021-07-28 2021-07-28 Análisis para mostrar un PDF dentro de sección Visualizar del Gesr Documental +telconet @research
+x 2021-07-28 2021-07-28 Análisis de la vista gestion/view.xhtml +telconet @research
+x 2021-07-28 2021-07-28 Análidis del controlador DocumentoBean.java +telconet @research
+x 2021-07-28 2021-07-28 Lectura JSON de url del documento subido desde Java +telconet @research
+x 2021-07-29 2021-07-29 Agregar columna UBICACION_FISICA_DOCUMENTO en Documento.java +telconet @enhance
+x 2021-07-29 2021-07-29 Agregar columna UBICACION_FISICA_DOCUMENTO en DocumentoBean.java +telconet @enhance
+x 2021-07-29 2021-07-29 Agregar columna UBICACION_FISICA_DOCUMENTO en HibernateDocumento.java +telconet @enhance
+x 2021-07-29 2021-07-29 Revisión de Interface Documento.java +telconet @enhance
+x 2021-07-29 2021-07-29 Revisión de método DocumentoBean::processDocumento 847 +telconet @enhance
+x 2021-07-29 2021-07-29 Revisión de método DocumentoBean::handleFileUpload +telconet @enhance
+x 2021-07-29 2021-07-29 Revisión de la vista upload.xhtml +telconet @enhance
+x 2021-07-29 2021-07-29 Revisión de la vista view.xhtml +telconet @enhance
+x 2021-07-29 2021-07-29 Vista: Subir documentos +telconet @research
+x 2021-07-29 2021-07-29 Mapear los objetos JPA para el campo creado +telconet @enhance
+x 2021-07-29 2021-07-29 Determinar el método para grabar en DB +telconet @enhance
+x 2021-07-30 2021-07-30 Test unitario para invocar WS guardarDocumento usando Spring +telconet @research
+x 2021-07-30 2021-07-30 Analizar sistema MoveFilesNewNfs +telconet @research

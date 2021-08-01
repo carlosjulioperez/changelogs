@@ -66,6 +66,41 @@ Notas
 		391: return false;
 
 		==========
+		30-07-2021
+		==========
+		Analizar sistema MoveFilesNewNfs
+		Test unitario para invocar WS guardarDocumento usando Spring
+
+		==========
+		29-07-2021
+		==========
+		Agregar columna UBICACION_FISICA_DOCUMENTO en Documento.java
+		Agregar columna UBICACION_FISICA_DOCUMENTO en DocumentoBean.java
+		Agregar columna UBICACION_FISICA_DOCUMENTO en HibernateDocumento.java
+		Revisión de Interface Documento.java
+		Revisión de método DocumentoBean::processDocumento 847
+		Revisión de método DocumentoBean::handleFileUpload
+		Revisión de la vista upload.xhtml
+		Revisión de la vista view.xhtml
+
+		==========
+		28-07-2021
+		==========
+		+ IFrame: 
+		https://stackoverflow.com/questions/1939778/how-to-display-a-pdf-document-in-jsf-page-in-iframe
+		<iframe src="/path/to/file.pdf"></iframe>
+
+		Verificar si hay otra opción para grabar el archivo.
+		Ubicar correctamente la ventana del formulario.
+
+		==========
+		28-07-2021
+		==========
+		handleFileUpload
+		799: public void handleFileUpload(FileUploadEvent event)
+
+
+		==========
 		27-07-2021
 		==========
 		ec.telconet.gestiondocumental.web.gestion/pom.xml
@@ -92,7 +127,6 @@ Notas
 
 		+ Visor:
 		ec.telconet.gestiondocumental.hibernate.context/src/test/resources/default-data.xml
-
 
 		file:///home/cjperez/local/schemaSpy/v6/dbdocumental/tables/INFO_DOCUMENTO.html
 		file:///home/cjperez/local/schemaSpy/v6/dbcomunicacion/tables/INFO_DOCUMENTO.html
@@ -265,4 +299,10 @@ When I was working as a java consultant, the requeriment was to develop a POS so
 	error_log($boolEsTipoPermitido ? "OK": "NO PERMITIDO");
 	error_log(print_r(">>>" . $array, 1));
 
-	vie 9
+	+ Tecnisys (María Betania):
+	Gym Pass
+	Bonificación de electricidad y conectividad
+	Cumpleaños libre
+	Bono desempeño 1 o 2 sueldos
+	Chapter Directos: Training
+

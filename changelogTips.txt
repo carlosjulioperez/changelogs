@@ -1,9 +1,11 @@
 TIPS
 	* Sitios útiles:
 		https://avxhm.is/
-		https://developer.ibm.com/callforcode/
 		https://vk.com/proglib/bookv
 		https://ur.1lib.limited/book/5606902/ae0490
+		https://b-ok.lat/book/11999817/ae2448?id=11999817&secret=ae2448
+
+		https://developer.ibm.com/callforcode/
 
 		+ tor:
 		https://ahmia.fi/
