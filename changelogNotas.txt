@@ -104,6 +104,54 @@ Notas
 		de PosgreSQL con la nube.
 
 		-------------------------------------------------------------
+
+		==========
+		20-08-2021 9:35 - 18:18
+		==========
+		* Quitar código quemado de MasterParameters.java
+		* Leer parámetros en DocumentoBean.java
+		* Documentar los cambios en doc de análisis	FOR SIS 03 ANALISIS Y DISEÑO TECNICO_V2.pdf
+		* Generar jars y pasar a amedina
+		Actualizar MR
+
+		Cambiar credenciales JDBC en /home/cjperez/Repositories/MoveFilesNewNfs
+
+		Apuntar a prod en:
+		* /ec.telconet.gestiondocumental.web.gestion/src/main/resources/application.properties
+			# url.microServicio.nfs=http://test2-microservicios.telconet.ec/nfs-2/procesar
+			# url.microServicio.nfs=http://dev-microservicios.telconet.ec/nfs/procesar
+			url.microServicio.nfs=https://microservicios.telconet.ec/nfs/procesar
+		
+		* ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml
+			+ master:
+			https://gitlab.telconet.ec/backoffice/gestiondocumental/-/blob/master/ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml
+
+			<param-name>serviceTarget</param-name>
+			<!-- TEST -->
+			<!-- <param-value>http://dev-gd.telconet.ec:18080/gestiondocumental/</param-value> -->
+			<param-value>http://dev-gd.telconet.ec/gestiondocumental/</param-value>
+
+		* /ec.telconet.gestiondocumental.db.oracle/src/main/resources/META-INF/spring/module-context.xml
+			+ master:
+			https://gitlab.telconet.ec/backoffice/gestiondocumental/-/blob/master/ec.telconet.gestiondocumental.db.oracle/src/main/resources/META-INF/spring/module-context.xml
+
+			<!-- TEST -->
+			<!-- <property name="url" value="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 172.24.14.202) -->
+			<!-- (PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = DesaS09.telconet.ec)))" /> -->
+			<!-- <property name="username" value="DB_DOCUMENTAL" /> -->
+			<!-- <property name="password" value="rca8wTF9LLJnI14AV7Dy" /> -->
+			
+			<!-- DEVELOPMENT -->        
+			<property name="url" value="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 172.24.14.226)
+			(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = TestS02.telconet.ec)))" />
+			<property name="username" value="DB_DOCUMENTAL" />
+			<property name="password" value="ugmRBrD7nDJOjDypam1v" />
+
+
+		* Después reemplazar en getInfoOrdenCompra
+		* serviceTarget apuntar a prod
+		* Probar en test
+
 		==========
 		19-08-2021 9:26 - 18:30
 		==========
@@ -124,12 +172,8 @@ Notas
 		intCodigoApp
 		intCodigoPath
 		intPathCodigoPais
-		intPathCodigoEmpresa
 		
-		Parametrizar a través de properties
-		Después reemplazar en getInfoOrdenCompra
-
-		serviceTarget apuntar a prod
+		Parametrizar a través de application.properties
 
 		==========
 		18-08-2021 9:07 - 20:33

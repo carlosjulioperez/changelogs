@@ -1,4 +1,7 @@
 Git
+	+ Poner Continue en gitlab:
+		:recycle: Continue
+
 	+ Borrar rama:
 		$ git checkout master
 		$ git branch -D cjperez-2

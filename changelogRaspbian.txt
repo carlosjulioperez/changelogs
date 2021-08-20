@@ -54,6 +54,8 @@ Raspbian
 	$ sudo apt-get install python-gi-cairo
 
 	$ pomodoro 25 5 --timer=True 
+	
+	$ sudo apt install pyqt5-dev
 	$ pomodoro 25 5 --timer=True --notif=True --alarm=False
 
 	pomostat overall
