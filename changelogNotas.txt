@@ -1,18 +1,22 @@
 Notas
+	scala clojure functional languages quora
+
+	https://www.linkedin.com/in/carlosjulioperez/
+	Revisar codenameone para crear apps a domicilio y emprender
+	https://www.producthunt.com/posts/grub-ubereats-clone
+
+	http://190.63.184.11:1002/
+	f.arellano@eneragro.com.ec
+	123456789
+
+	https://docs.google.com/presentation/d/1sV6Bx2TBmR6bk8sZ-nEhG0mnaH4XHa5l79CMkCc0aQ4/edit#slide=id.p1
+
 	/media/carper/homeMX/carper/progs/telconet/config/links.txt
-
-	+ VirtualMind:
-	https://www.netjstech.com/2021/01/spring-boot-rest-api-crud-example-spring-data-jpa.html
-	https://www.concretepage.com/spring-boot/spring-boot-rest-jpa-hibernate-mysql-example
-	https://www.baeldung.com/jpa-pagination
-	
-	https://stackoverflow.com/questions/63431287/how-to-work-with-zoneddatetime-using-api-stream
-	https://stackoverflow.com/questions/55536044/how-to-use-java-stream-with-empty-list
-	http://5.9.10.113/65291057/refactoring-with-java-8-streams
-
-	https://superuser.com/questions/1341684/youtube-dl-how-download-only-the-playlist-not-the-files-therein
-	youtube-dl -j --flat-playlist "https://<yourYoutubePlaylist>" | jq -r
-	'.id' | sed 's_^_https://youtu.be/_' > result.log
+	+ Devsu:
+	https://stsewd.dev/posts/devsucodejam-2019/
+	https://github.com/devsu/simple-bearer-token-test-helper
+	https://www.academia.edu/16554023/Devsu_Code_Jam_Example_Questions
+	https://www.geeksforgeeks.org/length-smallest-sub-string-consisting-maximum-distinct-characters/
 
 	+ Java 8 Streams:
 	https://www.baeldung.com/java-8-new-features
@@ -46,6 +50,28 @@ Notas
 	+ peli:
 		https://youtu.be/wbjthcsSWTc?t=2432
 
+	+ eneragro:
+		* Mostrar los días de trabajo "activos"
+		* Dia de Trabajo Zafra -> Crear o No requerido
+		ColorMat: Agregar cálculo (complejo)
+		Stock de Fábrica: Todos deben tener calentadura
+		Stock de Proceso: Agregar botón "Recalcular desde Stocl de Fábrica"
+
+		Revisar temperaturas:
+		Calentador de jugo (solo al primero)
+		Calentador de Meladura
+		Cristalización:
+		Tacho 2 y tacho 3
+		* Stock de Proceso: A veces no aparece el botón "Cargar Items"
+		Tamaño Grano Detalle: Malla 20 y cálculos
+		Reporte BLC, TIEMPOS -> TIEMPOS PERDIDOS
+
+		URGENTE
+		* Hacer editable campo BLC: SOLIDOS INSOL
+
+	+ pescarolo:
+		Presentar demo
+
 	+ telconet:
 		https://trello.com/b/Abhc6wdw/telconet
 
@@ -64,6 +90,282 @@ Notas
 		* Cambio para login:
 		/home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php
 		391: return false;
+
+		Probar envío de correos
+
+		==========
+		10-08-2021
+		==========
+		Andrés Ruilova
+		ey
+		Ensen Yohn implementador de SAP
+		Conectar BI con PostgreS mediante un Gateway en Windows
+		BI7 actualizado con info en línea, recibe como puerto de enlace a NW
+		de PosgreSQL con la nube.
+
+		-------------------------------------------------------------
+		==========
+		19-08-2021 9:26 - 18:30
+		==========
+		MR Relacionados
+		- [Gestión Documental](https://gitlab.telconet.ec/backoffice/gestiondocumental/-/merge_requests/56)
+		- [Objetos-DB](https://gitlab.telconet.ec/oracle/objetos-db/-/merge_requests/121)
+		- [Regularización](https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/321)	
+		Versionamiento 2 del documento FOR SIS 04 INFORME DE PRUEBAS UNITARIAS.pdf
+		Versionamiento 2 del documento FOR SIS 07 GUIA DE USUARIO.pdf
+		objetos-db
+		* (doc) MR tiene dos commits, solo debe tener uno
+		* (doc) ítem "MR relacionados" debe tener links hacia los MR de test relacionados
+		* (sql) colocar comentario al inicio de DB_GENERAL/TABLES/DML/DML_27072021_cjperez.pks. Adicional los alter van en un DDL. Cambiar directorio, nombre y tambien cambiar lo mismo en ítem DB en Gitlab	
+	
+		+ Quitar código comentado de Kevin:
+		Determinar qué código parametrizar
+		strUrlMicroservicioNfs
+		intCodigoApp
+		intCodigoPath
+		intPathCodigoPais
+		intPathCodigoEmpresa
+		
+		Parametrizar a través de properties
+		Después reemplazar en getInfoOrdenCompra
+
+		serviceTarget apuntar a prod
+
+		==========
+		18-08-2021 9:07 - 20:33
+		==========
+		Pasar los jars de Gestión Documental a amedina
+		Agregar puntos 5 y 6 en documento de Análisis FOR SIS 03 ANALISIS Y DISEÑO TECNICO
+		Modificación del documento FOR SIS 03 ANALISIS Y DISEÑO TECNICO
+		Validaar antivirus con help desk
+		Modificación del documento FOR SIS 04 INFORME DE PRUEBAS UNITARIAS.pdf
+		Modificación del documento FOR SIS 07 GUIA DE USUARIO.pdf
+
+		==========
+		17-08-2021 9:14 - 19:03
+		==========
+		Revisión de envío de correos
+		Revisión de MR con Alexis Medina
+		(doc) ítem "MR relacionados" tiene links hacia MR de master, debe
+		tener links hacia los MR de test
+		(doc) MR tiene dos commits, solo debe tener uno
+		(doc) Se encontró un documento guía de usuario en la tarea de
+		Pruebas Desarrollo, este documento debe ir en la tarea de capacitación
+		a usuarios. Adicional se debe mejorar el documento ya que en este solo
+		se pueden observar pruebas de migración y no hay pruebas de la
+		aplicación gestión documental
+
+		==========
+		16-08-2021
+		==========
+		Proyectos:
+		TN: INT: Gestor Documental: Nuevo: File Server
+		Completar MR
+		Subir pdfs
+
+		/ec/telconet/gd/core/indexacion/model/Documento.java     |  15 ++
+		/ec/telconet/gd/core/master/config/MasterParameters.java |  46 +++++
+		/src/main/resources/META-INF/spring/module-context.xml   |   6 +-
+		/gd/hibernate/indexacion/model/HibernateDocumento.java   |   8 +
+		/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java  | 254 +++++++++++++++++++++----
+		/src/main/resources/gestion/upload.xhtml                 |   2 +-
+		/src/main/resources/gestion/view.xhtml                   |  35 ++--
+		/src/main/resources/sql/DML/DML_27072021_cjperez.pks     |   5 +
+		/resources/sql/DML/DML_ROLLBACK_27072021_cjperez.pks     |   5 +
+		/.attach_pid24198                                        |   0
+		/src/main/resources/WEB-INF/web.xml                      |   4 +-
+
+		Agregar diccionario español en WPS para ejecutar la herramienta de corrección ortográfica.
+		Instalación del paquete: WPS Office 2016 - All lang,  no internet
+
+		Creación del documento: FOR SIS 03 ANALISIS Y DISEÑO TECNICO.pdf
+		Creación del documento: FOR SIS 04 INFORME DE PRUEBAS UNITARIAS.pdf
+		Creación del documento: FOR SIS 07 GUIA DE USUARIO.pdf
+
+		Copiar los siguientes pks a /home/cjperez/Repositories/objetos-db/DB_GENERAL/TABLES/DML
+		DML_27072021_cjperez.pks
+		DML_11082021_cjperez.pks
+		DML_12082021_cjperez.pks
+		DML_ROLLBACK_27072021_cjperez.pks
+		DML_ROLLBACK_11082021_cjperez.pks
+		DML_ROLLBACK_12082021_cjperez.pks
+
+		==========
+		15-08-2021
+		==========
+
+		GD Kevin:
+			HOST         = 172.24.14.202
+			PORT         = 1521
+			SERVICE_NAME = DesaS09.telconet.ec
+			#username    = DB_DOCUMENTAL
+			#password    = rca8wTF9LLJnI14AV7Dy
+			username     = GITLAB
+			password     = g4LbHtuFW8cntpYxE
+
+		Gitlab:
+			HOST         = 172.24.14.204
+			PORT         = 1521
+			SERVICE_NAME = DesaS07.telconet.ec
+			username     = GITLAB
+			password     = g4LbHtuFW8cntpYxE
+
+		Apuntar en gestiondocumental al usuario GITLAB para hacer la prueba de migración 
+
+		"el gitlab era para el insert a otro esquema y la regularizacion"
+		Concatenar PATH + ID_DOCUMENTO para el nombre físico del archivo
+		Excepción:
+		java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+
+		+ Java 1.7:
+		nbproject/project.properties
+		77:javac.source=1.7
+		78:javac.target=1.7
+		104:platform.active=JDK_1.7
+
+		Descargar Netbeans para Java 1.7 y generar el archivo jar
+		
+		Ejecutar la aplicación:
+		$ JAVA_HOME=/opt/java-jdk/jdk1.8.0_161
+		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 23/07/2021 23/07/2021
+
+		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 29/07/2021 29/07/2021
+
+		==========
+		13-08-2021
+		==========
+		DML_12082021_cjperez.pks
+		DML_ROLLBACK_12082021_cjperez.pks
+		Probar scripts en DB_GENERAL OK
+		Cambiar parámetros en src/configuration/application.properties para pruebas
+		Validar WS en ec.telconet.gestiondocumental.core/src/main/java/ec/telconet/gd/core/master/config/MasterParameters.java para pruebas en MoveFilesNewNfs:
+		http://test2-microservicios.telconet.ec/nfs-2/procesar
+		http://dev-microservicios.telconet.ec/nfs/procesar (OK)
+		Organizar imports
+		Preparar jar para ejecutar pruebas
+		Selección de rango de fecha para pruebas
+		Usar credenciales de GITLAB para pruebas
+		Subir archivos de la forma anterior en webapp gestiondocumental para pruebas.
+		Comparar:
+		/home/cjperez/Repositories/gestiondocumental/ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java
+		/home/cjperez/Documents/proyectos/05-gestionDocumental/code/original/DocumentoBean.java
+
+		ec.telconet.gestiondocumental.db.oracle/src/main/resources/META-INF/spring/module-context.xml
+		19:        <property name="url" value="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 172.24.14.202)
+
+		Apuntar en gestiondocumental al usuario GITLAB para hacer la prueba de migración 
+
+		==========
+		12-08-2021
+		==========
+		Cambio de hostname en vdi
+		Ajustar Codigo APP y Codigo PATH en MasterParameters.java
+		Análisis de campos query vs src/thread/NfsThread.java
+
+		Crear el query del insert (archivos fisicos en db_documental) as
+		ubicacion_fisica_documento
+		DML y ROLLBACK
+		Borrar archivos de ubicación física y crear nuevos en NFS
+
+		==========
+		11-08-2021
+		==========
+		Crear ID Codigo APP y Codigo PATH
+		Análisis de ADMI_GESTION_DIRECTORIOS
+		Análisis de src/configuration/application.properties
+		Análisis de src/utils/Utility.java
+
+		Ruta para scripts *.pks
+		Referencia:
+		/home/cjperez/Repositories/scripts-regularizacion/SOPORTE/DML
+
+		Modificar:
+		8   src/configuration/application.properties
+		154 src/utils/Utility.java
+
+		==========
+		10-08-2021
+		==========
+		Desactivar botón Descargar
+		Importar proyecto en VSCode
+		Análisis de consultas de src/utils/Utility.java
+
+		==========
+		08-08-2021
+		==========
+		Reubicar ventana de comentarios
+
+		==========
+		06-08-2021
+		==========
+		Modificar método: innerLoadDocumento() para visualizar archivos
+		Reubicar ventana de comentarios
+		Revisar en manual de PrimeFaces el control <h:outputText/>
+
+		==========
+		05-08-2021
+		==========
+		Superar impedimento:
+			ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:150)
+			Depurar...
+
+		Revisar:
+		https://stackoverflow.com/questions/8875818/how-to-use-primefaces-pfileupload-listener-method-is-never-invoked-or-uploaded
+		ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml
+		228:		<filter-class>ec.telconet.gd.web.master.filter.FileUploadFilter</filter-class>
+
+		https://stackoverflow.com/questions/19262356/file-upload-doesnt-work-with-ajax-in-primefaces-4-0-jsf-2-2-x-javax-servlet-s
+
+		Google:
+		primefaces 4.0 fileUpload Listener org.springframework.web.client.HttpClientErrorException
+
+		+ Comparar:
+		/home/cjperez/Documents/proyectos/05-gestionDocumental/code/cj/DocumentoBean.java
+		/home/cjperez/Repositories/gestiondocumental/ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java
+
+		==========
+		04-08-2021
+		==========
+		Ejecutar método después de evento handleFileUpload
+		Reunión zoom 10:00 - 11:00
+		Versión de PrimeFaces y método upload()
+		Análisis documentación de FileUpload para Primefaces 4.0
+		Probar WS
+		http://dev-microservicios.telconet.ec/nfs/procesar
+
+		Versión PrimeFaces
+		/ec.telconet.gestiondocumental.web/pom.xml
+		https://stackoverflow.com/questions/34669439/primefaces-fileupload-complete-call-specify-method
+		
+		Superar impedimento:
+			ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:150)
+
+		==========
+		03-08-2021
+		==========
+		Análisis de query para mover archivos a nuevo NFS: parámetros codigoApp y codigoPath
+		Al subir el documento consumir el ws procesar
+		Convertir el archivo subido en formato Base64
+		Uso de Biblioteca commons-codec-1.7.jar
+		Uso de Biblioteca org.apache.commons.codec.binary.Base64
+		Uso de Biblioteca org.apache.axis.encoding.Base64
+		Uso de Biblioteca org.primefaces.util.Base64
+		
+		Agregar Apache Commons Codec 1.7 al proyecto:
+
+		https://mvnrepository.com/artifact/commons-codec/commons-codec/1.7
+
+		+ Comparar:
+		/home/cjperez/Documents/proyectos/05-gestionDocumental/code/cj/DocumentoBean.java
+		/home/cjperez/Repositories/gestiondocumental/ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java
+
+		+ Cerrar archivo:
+		http://primefaces.org/showcase/ui/file/upload/basic.xhtml?jfwid=a876c
+
+		==========
+		02-08-2021
+		==========
+		https://stackoverflow.com/questions/2237537/which-maven-dependencies-to-include-for-spring-3-0
 
 		==========
 		30-07-2021
@@ -113,6 +415,8 @@ Notas
 
 		$ cd ec.telconet.gestiondocumental.web.gestion
 		$ mvn -Dtest=ec.telconet.gd.web.gestion.jsf.bean.DocumentoBeanTest#testGuardarArchivo test
+		
+		$ mvn -Dtest=ec.telconet.gd.web.gestion.jsf.bean.DocumentoBeanTest#testGuardarArchivo test dependency:tree -Dincludes=org.springframework.*
 
 		==========
 		26-07-2021
@@ -281,12 +585,6 @@ When I was working as a java consultant, the requeriment was to develop a POS so
 	chromium-browser --proxy-server=socks5://localhost:9050
 	https://developer.ibm.com/callforcode/
 
-	[] Mooc Clojure
-	[] Mooc React1
-	[] Swift Coursera
-	[] Comparación aire gye, man, uio, Kra
-	[] Symfony test (Accessing other Services)
-
 	Peli: Silence, The tomorrow war
 	https://cyber.dabamos.de/unix/x11/
 	mk docker -> dockerhub
@@ -299,10 +597,10 @@ When I was working as a java consultant, the requeriment was to develop a POS so
 	error_log($boolEsTipoPermitido ? "OK": "NO PERMITIDO");
 	error_log(print_r(">>>" . $array, 1));
 
-	+ Tecnisys (María Betania):
+	+ Technisys (María Betania):
 	Gym Pass
 	Bonificación de electricidad y conectividad
 	Cumpleaños libre
 	Bono desempeño 1 o 2 sueldos
-	Chapter Directos: Training
+	Chapter Director: Training
 

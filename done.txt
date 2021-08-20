@@ -69,3 +69,19 @@ x 2021-07-29 2021-07-29 Mapear los objetos JPA para el campo creado +telconet @e
 x 2021-07-29 2021-07-29 Determinar el método para grabar en DB +telconet @enhance
 x 2021-07-30 2021-07-30 Test unitario para invocar WS guardarDocumento usando Spring +telconet @research
 x 2021-07-30 2021-07-30 Analizar sistema MoveFilesNewNfs +telconet @research
+x 2021-08-02 2021-08-02 Spring JUnit Test +telconet @enhance
+x 2021-08-02 2021-08-02 Al subir el documento consumir el ws procesar +telconet @enhance
+x 2021-08-03 2021-08-03 Análisis de query para mover archivos a nuevo NFS: parámetros codigoApp y codigoPath +telconet @research
+x 2021-08-03 2021-08-03 Al subir el documento consumir el ws procesar +telconet @enhance
+x 2021-08-03 2021-08-03 Convertir el archivo subido en formato Base64 +telconet @enhance
+x 2021-08-03 2021-08-03 Uso de Biblioteca commons-codec-1.7.jar +telconet @enhance
+x 2021-08-06 2021-08-06 Modificar método: innerLoadDocumento() para visualizar archivos +telconet @enhance
+x 2021-08-10 2021-08-10 Desactivar botón Descargar +telconet @enhance
+x 2021-08-10 2021-08-10 Importar proyecto en VSCode +telconet @enhance
+x 2021-08-10 2021-08-10 Análisis de consultas de src/utils/Utility.java +telconet @enhance
+x 2021-08-12 2021-08-12 Cambio de hostname en vdi +telconet @enhance
+x 2021-08-12 2021-08-12 Ajustar Codigo APP y Codigo PATH en MasterParameters.java +telconet @enhance
+x 2021-08-13 2021-08-13 Cambiar parámetros en src/configuration/application.properties para +telconet @enhance
+x 2021-08-13 2021-08-13 DML_12082021_cjperez.pks +telconet @enhance
+x 2021-08-13 2021-08-13 DML_ROLLBACK_12082021_cjperez.pks +telconet @enhance
+x 2021-08-13 2021-08-13 Probar scripts en DB_GENERAL OK +telconet @enhance

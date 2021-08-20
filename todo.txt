@@ -1,5 +1,7 @@
-(A) Guardar la url de retorno de µS en INFO_DOCUMENTO +telconet @enhance
-(A) Al subir el documento consumir el ws procesar +telconet @enhance
+x 2021-08-18 2021-08-18 Pasar los jars de Gestión Documental a amedina +telconet @qa
+x 2021-08-18 2021-08-18 Agregar puntos 5 y 6 en documento de Análisis FOR SIS 03 ANALISIS Y DISEÑO TECNICO.doc
+Quitar código comentado de Kevin 
+(A) 2021-08-18 Modificación del documento FOR SIS 04 INFORME DE PRUEBAS UNITARIAS.doc
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
 (D) Estrategia venta terrenos +carper @design
@@ -7,6 +9,7 @@
 (E) Renta 2018 +carper @tax
 (E) Renta 2019 +carper @tax
 (E) Renta 2020 +carper @tax
+Desactivar botón Descargar
 Docker para MQ +telconet @research
 Revisar camunda +telconet @research
 Script de migración +telconet @setup

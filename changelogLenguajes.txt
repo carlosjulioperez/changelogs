@@ -1,4 +1,41 @@
 Tendencias
+	+ Stackoverflow 2021:
+	https://stackoverflow.blog/2021/08/02/2021-stack-overflow-developer-survey-results/
+
+		+ Clojure:
+		https://www.aspect-analytics.com/media/blog/2021-04-26-clojure-i-choose-you/
+
+	* Comparación:
+		* iUpper:
+			scala3 Odersky:
+			val nameHasUpperCase = name.exists(_.isUpper)	
+
+			clojure:
+			https://johnjago.com/blog/clojure-uppercase/
+			(defn has-uppercase? [str]
+			  (some #(Character/isUpperCase %) str))
+
+			(println (has-uppercase? "abc")) ; nil - all characters checked without finding uppercase
+			(println (has-uppercase? "aBc")) ; true - it stops when it finds B
+
+			f# :
+			http://www.visualfsharp.com/datatypes/strings.htm
+			Char.IsUpper(txtNewPassword.Text, i)
+
+			kotlin:
+			https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/is-upper-case.html
+			val chars = listOf('A', 'Ψ', 'a', '1', '+')
+			val (upperCases, notUpperCases) = chars.partition {
+			it.isUpperCase() }
+			println(upperCases) // [A, Ψ]
+			println(notUpperCases) // [a, 1, +]
+
+			swift:
+			https://developer.apple.com/documentation/swift/string/1640996-uppercased
+			let cafe = "Café"
+			print(cafe.uppercased())
+			// Prints "CAFÉ"
+
 	* Kotlin vs Scala:
 		https://dzone.com/articles/kotlin-vs-scala-vs-java?edition=347114&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-12-22
 
@@ -97,6 +134,8 @@ Wordpress
 		https://wordpress.org/about/books/
 
 Varios
+	https://coderpad.io/languages/
+
 	* Mejores:
 		https://www.quora.com/Which-one-do-you-prefer-for-back-end-development-now-Scala-Kotlin-Elixir-or-Go
 

@@ -12,6 +12,36 @@ Raspbian
 	$ sudo apt install tor
 	$ chromium-browser --proxy-server=socks5://localhost:9050
 
+	+ netsurf:
+	Instalar desde fuentes
+	$ sudo apt install bison flex gperf
+	$ sudo apt install libcurl4-gnutls-dev
+	$ sudo apt install libgtk2.0-dev
+	$ sudo apt install libjpeg-dev
+
+	HTML/Entities.pm 
+	https://linuxhint.com/install_perl_modules_debian_linux/?__cf_chl_managed_tk__=pmd_J_NV.O2X2IGD4EPc2kKxpWHq7lMrhGlPsCuh9Wc8rlU-1629393118-0-gqNtZGzNAuWjcnBszQh9
+
+	$ sudo apt install perl-doc libpath-tiny-perl
+	$ cpan [yes] enter
+	cpan[1] > install HTML::Entities
+	$ sudo cpan -i HTML::Entities
+
+	~/Downloads/netsurf/netsurf-all-3.10 $ make
+
+	+ kweb:
+	sudo apt install libwebkitgtk-3.0-dev
+	https://github.com/ekapujiw2002/kweb
+	pi@raspberrypi:~/Downloads/kweb-master $ sudo make install
+	sudo install -g dialout kweb /usr/bin
+	sudo cp ./kweb.desktop /usr/share/applications
+	sudo cp ./minimalkioskbrowser.png /usr/share/pixmaps
+	sudo cp ./kweb.1.gz /usr/share/man/man1
+	sudo cp ./kwebhelper.py /usr/local/bin
+	sudo chmod +x /usr/local/bin/kwebhelper.py
+	sudo cp ./kwebhelper_settings.py /usr/local/bin
+	sudo chmod +x /usr/local/bin/kwebhelper_settings.
+
 	+ Listado de paquetes disponibles:
 	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u
 	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u | grep php

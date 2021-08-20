@@ -1,6 +1,7 @@
 TIPS
 	* Sitios útiles:
 		https://avxhm.is/
+		https://vk.com/proglib
 		https://vk.com/proglib/bookv
 		https://ur.1lib.limited/book/5606902/ae0490
 		https://b-ok.lat/book/11999817/ae2448?id=11999817&secret=ae2448
@@ -412,6 +413,8 @@ TIPS
 		$ pdfnup --nup 2x2 --suffix '2x2' --no-landscape --frame true
 
 	* Unir archivos PDF:
+		$ sudo apt-get install texlive-latex-recommended
+		$ pdfjoin --paper a4paper --rotateoversize false
 		$ pdfjoin *.pdf
 
 	* Free disk space:

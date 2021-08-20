@@ -1,4 +1,8 @@
 Cursos
+	+ Math:
+		https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2
+	+ Revisar:
+		Elasticsearch
 	+ Salarios:
 		+ Highest salary:
 		https://lvivity.com/top-highly-paid-programming-languages

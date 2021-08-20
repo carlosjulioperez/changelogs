@@ -10,7 +10,7 @@ Git
 	+ Crear rama:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-4 origin/master
+		$ git checkout -b cjperez-4 origin/master (gestiondocumental, objetos-db y regularización)
 		
 		$ git branch -a (todas)
 		$ git branch -v (locales)
@@ -27,19 +27,32 @@ Git
 
 	+ Agregar cambios a master:
 		$ cd Repositories/telcos
-		$ git add src/telconet/soporteBundle/Resources/sql/DDL/DDL_20210604_cjperez.pks
-		$ git commit -m "TN-MD: INT: telcos: Mant: Ampliar la subida de documentos para Cloud IaaS Public"
+		$ git add 
+		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
 		$ git push -f origin cjperez-4
 		
 	+ Actualizar cambios a master:
-		$ git fetch origin
+		$ git checkout master
+		$ git reset --hard origin/master
+		$ git fetch
+		$ git pull
+		$ git merge --squash origin/cjperez-4
+		$ git add ...
+		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
+		$ git push -f origin cjperez-4
+
+		+ Otra forma - plantilla:
+		$ git reset --hard origin/master
+		$ git merge --squash origin/cjperez-1 (rama)
+		$ git merge commit -m "Nombre tarea Zoho"
+		$ git push -f origin ramalocal:ramaRemota
+		
+		$ git checkout cjperez-4
 		$ git reset --hard origin/master
 		$ git merge --squash origin/cjperez-4
 		$ git add ...
-		$ git commit -m ...
+		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
 		$ git push -f origin cjperez-4
-
-		$ git commit --amend
 
 	+ Quitar carpeta:
 		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository

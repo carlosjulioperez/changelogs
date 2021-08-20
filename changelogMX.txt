@@ -1,6 +1,7 @@
 MX 19.1:
 	* Paquetes:
 		
+		$ sudo apt-get install openjdk-8-jdk
 		$ sudo apt-get install openjdk-11-jdk
 		
 		$ sudo apt install graphviz
@@ -9,12 +10,24 @@ MX 19.1:
 		playonlinux doublecmd-gtk
 
 	* Package manager:
-		Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018' jq
+		Kazam Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018' jq
 
-	* Whatsapp client:
-		https://snapcraft.io/whatsdesk
+	* webcam:
+		$ sudo apt-get install v4l-utils --install-suggests
+		$ sudo apt-get install webcamoid
+
+	* Activar snapd:
+		$ sudo apt install snapd
+		Seleccionar systemd en Boot Options de MX
 		
-	* GMail Desktop:
+	* Aplicaciones:
+		
+		+ GMail Desktop:
+		https://snapcraft.io/gmail-desktop
+		
+		+ Whatsapp client:
+		https://snapcraft.io/whatsdesk
+
 		https://forum.snapcraft.io/t/solved-cannot-install-snaps-on-linux-mx19-patito-feo/14976/2
 		https://mxlinux.org/wiki/applications/snap-packages-and-mx-linux/
 		+ Activar systemd en boot options:
@@ -23,8 +36,6 @@ MX 19.1:
 
 		+ Verificar si está /snap/bin:
 		$ /etc/profile.d/apps-bin-path.sh
-		
-		https://snapcraft.io/gmail-desktop
 
 	* Pomodoro:
 		Instalar python-tk desde MX Package installer.
@@ -179,6 +190,9 @@ MX 19.1:
 
 		$ whereis groovyConsole
 		groovyConsole: /usr/bin/groovyConsole
+		
+		$ whereis startGroovy
+		$ sudo vim /usr/bin/startGroovy
 
 		+ Apuntar a JDK y agregar en:
 		~/.sdkman/candidates/groovy/2.4.19/bin/startGroovy
