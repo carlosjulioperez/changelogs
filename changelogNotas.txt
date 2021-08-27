@@ -1,5 +1,9 @@
 Notas
 	scala clojure functional languages quora
+	
+	+ Examen toefl:
+	https://www.ets.org/
+	https://www.linuxadictos.com/duolingo-como-app-de-gnu-linux-aprende-ingles-de-una-forma-divertida.html
 
 	https://www.linkedin.com/in/carlosjulioperez/
 	Revisar codenameone para crear apps a domicilio y emprender
@@ -45,14 +49,37 @@ Notas
 		https://open.sap.com/dashboard
 
 	+ php sandbox:
-		https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo2
-	
+		https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo2 
 	+ peli:
 		https://youtu.be/wbjthcsSWTc?t=2432
 
 	+ eneragro:
+		diaTrabajo_id='40288ad07b3556bf017b3680e5ba0001';
+
+		http://190.63.184.11:1002/Ingenio/m/TrashCana
+		http://190.63.184.11:1002/Ingenio/m/Blc
+		http://190.63.184.11:1002/Ingenio/m/StockProceso
+		http://190.63.184.11:1002/Ingenio/m/StockFabrica
+
+		Agregar ip a "157.100.74.174" a pg_hba.conf
+		# service postgresql-9.3 restart
+
+		* BLC: [Consultar datos] no lee valor de "Trash" en "Método laboratorio de caña".
+		QueryTest: Cambiar diaTrabajo.id y ejecutar getValoresBlc()
+
+		select * from trashcana where diaTrabajo_id='40288ad07b3556bf017b3680e5ba0001';
+
+		[Ajustes]
 		* Mostrar los días de trabajo "activos"
 		* Dia de Trabajo Zafra -> Crear o No requerido
+		* Stock de Proceso, a veces no aparece el botón "Cargar Items"
+		* Hacer editable campo BLC.SOLIDOS INSOL
+		* Ajustes en StockProceso
+		* Mostrar en Blc/Variables primarias/Caña/%Trash el campo TrashCana.avgPorcTrash en vez de Trash.avgPorcTrash.
+		* Reemplazo de fórmula detalle5.jDiluidoBr canaNeta por canaDia
+		* Reemplazo de fórmula detalle22.sacJBrCanaExtraida canaNeta por canaDia
+		* El promedio Jugo.v25 varía con el sistema porque la columna v no calcula bien
+
 		ColorMat: Agregar cálculo (complejo)
 		Stock de Fábrica: Todos deben tener calentadura
 		Stock de Proceso: Agregar botón "Recalcular desde Stocl de Fábrica"
@@ -62,17 +89,24 @@ Notas
 		Calentador de Meladura
 		Cristalización:
 		Tacho 2 y tacho 3
-		* Stock de Proceso: A veces no aparece el botón "Cargar Items"
 		Tamaño Grano Detalle: Malla 20 y cálculos
 		Reporte BLC, TIEMPOS -> TIEMPOS PERDIDOS
 
 		URGENTE
-		* Hacer editable campo BLC: SOLIDOS INSOL
+		No duplicar el formulario Trash para un mismo día de trabajo
+
+		Revisar los totales de StockProceso
+
+		less -N /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/logs/catalina.out
+		tail -f /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/logs/catalina.out
 
 	+ pescarolo:
 		Presentar demo
 
 	+ telconet:
+		+ Copiar un archivo con sus carpetas:
+		$ cp --parents ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml /home/cjperez/Documents/proyectos/05-gestionDocumental/code/respaldo/gestiondocumental
+
 		https://trello.com/b/Abhc6wdw/telconet
 
 		/media/pi/homeMX/carper/progs/telconet/changelogTelcos.txt
@@ -105,6 +139,94 @@ Notas
 
 		-------------------------------------------------------------
 
+		Atrapar excepciones en los casos detallados
+ 		Agregar comentario en ScriptRegularización y adjuntar el jar
+		Grabar la ruta del archivo migrado y poner en columna PATH="Migrado"
+		
+		Atrapar el error en:
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
+
+		==========
+		26-08-2021 9:00 - 18:52
+		==========
+		Atrapar excepción:
+		[2021-08-26 18:46:41.596] ERROR http-nio-18080-exec-7        ec.telconet.gd.web.master.filter.DirDocFilter                     AuthFilter.doFilter: Processing of multipart/form-data request failed. /gd/uploads/upload__2e238740_17b84d57930__7ffd_00000015.tmp (Permiso denegado) java.io.IOException: Processing of multipart/form-data request failed. /gd/uploads/upload__2e238740_17b84d57930__7ffd_00000015.tmp (Permiso denegado)
+		
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
+
+
+		==========
+		26-08-2021 9:43 - 18:52
+		==========
+		* Pasar ejemplos de borrar un archivo a amedina (imágenes) con estado de borrado.
+		* Crear carpeta de respaldo con la estructura del proyecto para comparar con meld.
+		* zoom amedina 14:31 - 15:32
+
+		Revisión de documento de mejoras:
+		https://docs.zoho.com/ws/project/file/c4w735e724f61dad544e8846f700d23ccaf97
+
+		chmod 555 /gd/uploads
+		ls -alrt /gd/uploads
+
+		Catch para mensajes de error
+		Cambiar conexiones
+		Quitar privilegios de carpeta uploads para emular error y disparar
+		excepciones
+
+		==========
+		25-08-2021 9:28 - 18:30
+		==========
+		Revisión del error:
+		
+		2021-08-24 17:13:01.203] WARN  http-nio-18080-exec-2 org.springframework.web.client.RestTemplate POST request for "http://test2-microservicios.telconet.ec/nfs-2/procesar" resulted in 409 (Conflict); invoking error handler 
+		[2021-08-24 17:13:01.205] ERROR http-nio-18080-exec-2 ec.telconet.gd.web.gestion.jsf.bean.DocumentoBean org.springframework.web.client.HttpClientErrorException: 409 Conflict
+		http://test2-microservicios.telconet.ec/nfs-2/procesar
+		por
+		http://test2-microservicios.telconet.ec/nfs/procesar
+
+		Error 409 (Conflict): Este código expresa que se ha producido un
+		conflicto con el recurso solicitado mediante la petición del
+		navegador, y por ello dicha petición no se ha podido completar.
+
+		Revisión:
+		https://gitlab.telconet.ec/telcos/telcos/-/merge_requests/9075
+		https://projects.zoho.com/portal/telcosis#tasklistdetail/245613000009404201/245613000010092001
+		Revisión de doc:
+		Formatos_FOR SIS 04 INFORME DE PRUEBAS UNITARIAS NFS COMERCIAL.pdf
+
+
+		==========
+		24-08-2021 9:34 - 18:18
+		==========
+		Reunión nnaulal para hacer calidad de MR 11:53 - 12:04 
+		Reunión amedina para hacer calidad de MR 12:27 - 13:20 
+		Creación de carpetas en docker
+		Error de BD al insertar registros al momento de subir archivos en NFS
+		Error de conexión con WS:
+		===
+		2021-08-24 17:13:01.203] WARN  http-nio-18080-exec-2 org.springframework.web.client.RestTemplate POST request for "http://test2-microservicios.telconet.ec/nfs-2/procesar" resulted in 409 (Conflict); invoking error handler 
+		[2021-08-24 17:13:01.205] ERROR http-nio-18080-exec-2 ec.telconet.gd.web.gestion.jsf.bean.DocumentoBean org.springframework.web.client.HttpClientErrorException: 409 Conflict
+		===
+		
+		Revisión de MR:
+		https://gitlab.telconet.ec/telcos/telcos/-/merge_requests/9075
+		https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/299
+
+
+		==========
+		23-08-2021 9:34 - 18:46
+		==========
+		Revisar envío de correos
+		Pruebas con amedina para subir archivos pdf
+
+		Agregar en la documentación del MR lo siguiente:
+		https://gitlab.telconet.ec/oracle/objetos-db/-/merge_requests/121
+		Revisión de la excepción
+
+		$ sudo mkdir -p /gd/store
+		$ sudo mkdir -p /gd/uploads
+		$ sudo chown -R 777 /gd
+		
 		==========
 		20-08-2021 9:35 - 18:18
 		==========
@@ -578,6 +700,7 @@ Notas
 			$ sudo chown -R cjperez: /gd
 			$ sudo chmod -R 777 /gd
 			$ tail -f serviceability/logs/log.log
+			$ tail -f ~/local/gd-virgo-tomcat-server-3.6.2.RELEASE-18080/serviceability/logs/log.log
 
 			http://localhost:18080/admin/content/overview
 			admin/springsource

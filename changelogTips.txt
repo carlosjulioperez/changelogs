@@ -10,6 +10,30 @@ TIPS
 
 		+ tor:
 		https://ahmia.fi/
+	
+	* Copiar un archivo con sus carpetas:
+		$ cp --parents ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml /home/cjperez/Documents/proyectos/05-gestionDocumental/code/respaldo/gestiondocumental
+
+	
+	* export calc a html:
+		localc --headless --convert-to html --outdir ~/Desktop/ file.xlsx
+	
+	* Colores para cat con alias:
+		https://stackoverflow.com/questions/7851134/syntax-highlighting-colorizing-cat
+		$ sudo apt install highlight
+		$ sudo apt install python-pygments (más lento)
+
+		$ vim .bashrc
+			alias ccat="highlight -O ansi --force"
+		$ source ~/.bashrc
+
+		$ ccat run.sh
+
+	* htop:
+		https://www.howtogeek.com/668986/how-to-use-the-linux-top-command-and-understand-its-output/
+		m l t para desactivar las filas
+		Z para colores Z 2 Ent
+		F para columnas q
 
 	* VLC plugin youtube playlist:
 		https://www.maketecheasier.com/play-youtube-playlist-vlc/
@@ -179,6 +203,15 @@ TIPS
 		$ zip -F HIMNARIO\ ADVENTISTA\ CHILE.zip --output himnario.zip
 
 	* screen:
+		https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/
+		$ screen
+		$ screen -ls
+		$ screen -r id Restaurar
+		C-A d Detach
+		C-A w Imprimir
+		C-A c Nuevo
+		C-A n Siguiente
+
 		http://aperiodic.net/screen/quick_reference
 		$ screen
 		< Preparar el entorno de trabajo >
@@ -187,6 +220,11 @@ TIPS
 		< Restaurar >
 		$ screen -ls
 		$ screen -r
+
+		+ kill:
+		https://stackoverflow.com/questions/1509677/kill-detached-screen-session
+		$ screen -X -S [session # you want to kill] quit
+		For dead sessions use: $ screen -wipe
 
 		Matar una pestaña congelada
 		:kill

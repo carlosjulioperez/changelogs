@@ -24,6 +24,19 @@ Centos
 	186.33.181.219 oymar
 	190.63.184.11 100020, 10015432, 10028080
 
+	* alternatives:
+	# vim /etc/profile
+		export JAVA_HOME="/opt/jdk1.8.0_251"
+		export PATH="$JAVA_HOME/bin:$PATH"
+
+	# source /etc/profile
+	# echo $JAVA_HOME
+	# echo $PATH
+	# java -version
+
+	# update-alternatives --install /opt/jdk1.8.0_251/bin/java java /usr/bin/java 1
+	# update-alternatives --config java
+
 	* Documentar:
 		postgres@mx-box:~$ createdb nomina
 		postgres@mx-box:~$ psql nomina
@@ -570,6 +583,9 @@ Centos
 			+ Cambiar entre versiones de Java:
 				$ sudo update-alternatives --list java
 				$ sudo update-alternatives --config java
+
+			+ Agregar alternative a ruta específica con prioridad 0:
+				# update-alternatives --install /opt/jdk1.8.0_251/bin/java java /usr/bin/java 0
 
 			# useradd -r tomcat8 --shell /bin/false
 			# wget http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz -P /tmp

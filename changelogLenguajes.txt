@@ -1,9 +1,33 @@
 Tendencias
 	+ Stackoverflow 2021:
-	https://stackoverflow.blog/2021/08/02/2021-stack-overflow-developer-survey-results/
+	https://insights.stackoverflow.com/survey/2021
+	https://www.xataka.com/aplicaciones/rust-flechazos-lenguaje-programacion-amado-para-ganar-dinero-mejor-lenguajes-rarunos-como-clojure-f-elixir
+
+		+ On RPi 4:
+			+ clojure:
+			https://ajpierce.com/2020-01-08_safe-to-wake-pt4/
+			
+			+ Flutter on rpi4:
+			https://snapcraft.io/install/flutter/raspbian
+
+		+ OCaml:
+		https://www.efinancialcareers.com/news/2021/06/ocaml-coding-language
 
 		+ Clojure:
 		https://www.aspect-analytics.com/media/blog/2021-04-26-clojure-i-choose-you/
+		https://clojureverse.org/t/clojure-libs-frameworks-tooling-for-rapid-web-development/4017/3
+		+ F#:
+		https://fsharpforfunandprofit.com/posts/fsharp-is-the-best-enterprise-language/
+
+	* performance:
+		https://www.techempower.com/benchmarks/
+		https://web-frameworks-benchmark.netlify.app/result
+		https://benchmarksgame-team.pages.debian.net/benchmarksgame/
+
+		https://elixirforum.com/t/webserver-benchmark-erlang-vs-go-vs-java-vs-nodejs/28090
+		Webserver Benchmark: Erlang vs Go vs Java vs NodeJS
+		https://stressgrid.com/blog/webserver_benchmark/
+
 
 	* Comparación:
 		* iUpper:

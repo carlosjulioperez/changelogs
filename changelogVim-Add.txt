@@ -82,6 +82,9 @@ Vim
 		https://vimawesome.com/plugin/fzf
 		:FZF
 
+		https://github.com/junegunn/fzf
+		sudo apt install fzf
+
 	* Explorador por defecto:
 		https://shapeshed.com/vim-netrw/
 	* Agregar sufijos al final de la columna:
