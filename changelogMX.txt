@@ -46,11 +46,6 @@ MX 19.1:
 		$ sudo pip install --upgrade setuptools
 		$ sudo pip install pomodoro-cli
 
-	https://github.com/mehdidc/pomodoro
-	$ sudo pip install pomodoro-cli
-	$ sudo pip install configparser
-	$ sudo apt-get install python-gi-cairo
-
 	$ pomodoro 25 5 --timer=True --notif=True --alarm=False
 
 		* Error:

@@ -28,8 +28,9 @@ Tendencias
 		Webserver Benchmark: Erlang vs Go vs Java vs NodeJS
 		https://stressgrid.com/blog/webserver_benchmark/
 
-
 	* Comparación:
+		https://bell-sw.com/announcements/2021/01/05/Coding-Languages-for-Fintech/
+
 		* iUpper:
 			scala3 Odersky:
 			val nameHasUpperCase = name.exists(_.isUpper)	

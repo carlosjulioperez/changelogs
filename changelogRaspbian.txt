@@ -1,54 +1,27 @@
 Raspbian
-	$ sudo apt install qutebrowser openfortivpn audacious virt-viewer
-	flameshot bleachbit keepassx vim-gtk3 xpad thunar sqlite3 sqlitebrowser
-	stopwatch silversearcher-ag imagemagick
-	
-	$ snap install xclock-simosx
-	$ sudo apt install cairo-clock
-	$ sudo apt install dclock
-	$ sudo apt install tiemu
-	
-	+ tor browser usando chromium:
-	$ sudo apt install tor
-	$ chromium-browser --proxy-server=socks5://localhost:9050
+	$ sudo apt install openfortivpn audacious virt-viewer flameshot bleachbit
+	keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick
+	youtube-dl graphviz meld
 
-	+ netsurf:
-	Instalar desde fuentes
-	$ sudo apt install bison flex gperf
-	$ sudo apt install libcurl4-gnutls-dev
-	$ sudo apt install libgtk2.0-dev
-	$ sudo apt install libjpeg-dev
+	+ Actualizar lua:
+	https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=295145&p=1781013#p1781182
 
-	HTML/Entities.pm 
-	https://linuxhint.com/install_perl_modules_debian_linux/?__cf_chl_managed_tk__=pmd_J_NV.O2X2IGD4EPc2kKxpWHq7lMrhGlPsCuh9Wc8rlU-1629393118-0-gqNtZGzNAuWjcnBszQh9
-
-	$ sudo apt install perl-doc libpath-tiny-perl
-	$ cpan [yes] enter
-	cpan[1] > install HTML::Entities
-	$ sudo cpan -i HTML::Entities
-
-	~/Downloads/netsurf/netsurf-all-3.10 $ make
-
-	+ kweb:
-	sudo apt install libwebkitgtk-3.0-dev
-	https://github.com/ekapujiw2002/kweb
-	pi@raspberrypi:~/Downloads/kweb-master $ sudo make install
-	sudo install -g dialout kweb /usr/bin
-	sudo cp ./kweb.desktop /usr/share/applications
-	sudo cp ./minimalkioskbrowser.png /usr/share/pixmaps
-	sudo cp ./kweb.1.gz /usr/share/man/man1
-	sudo cp ./kwebhelper.py /usr/local/bin
-	sudo chmod +x /usr/local/bin/kwebhelper.py
-	sudo cp ./kwebhelper_settings.py /usr/local/bin
-	sudo chmod +x /usr/local/bin/kwebhelper_settings.
+	$ mkdir -p /home/pi/.local/share/vlc/lua/playlist
+	$ wget https://raw.githubusercontent.com/videolan/vlc/master/share/lua/playlist/youtube.lua -O ~/.local/share/vlc/lua/playlist/youtube.lua
 
 	+ Listado de paquetes disponibles:
 	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u
 	$ sudo grep ^Package /var/lib/apt/lists/*_Packages | awk '{print $2}' | sort -u | grep php
 
-	+ Pomodoro:
+	$ sudo apt install dclock
 	
+	+ tor browser usando chromium:
+	$ sudo apt install tor
+	$ chromium-browser --proxy-server=socks5://localhost:9050
+
+	+ Pomodoro:
 	https://github.com/mehdidc/pomodoro
+	$ sudo apt-get install python-matplotlib
 	$ sudo pip install pomodoro-cli
 	$ sudo pip install configparser
 	$ sudo apt-get install python-gi-cairo
@@ -82,3 +55,32 @@ Raspbian
 
 	$ convert a.jpeg b.jpeg PL_CNEL_MAN_1105133970_2021.pdf carlos_perez.pdf
 
+	+ netsurf:
+	Instalar desde fuentes
+	$ sudo apt install bison flex gperf
+	$ sudo apt install libcurl4-gnutls-dev
+	$ sudo apt install libgtk2.0-dev
+	$ sudo apt install libjpeg-dev
+
+	HTML/Entities.pm 
+	https://linuxhint.com/install_perl_modules_debian_linux/?__cf_chl_managed_tk__=pmd_J_NV.O2X2IGD4EPc2kKxpWHq7lMrhGlPsCuh9Wc8rlU-1629393118-0-gqNtZGzNAuWjcnBszQh9
+
+	$ sudo apt install perl-doc libpath-tiny-perl
+	$ cpan [yes] enter
+	cpan[1] > install HTML::Entities
+	$ sudo cpan -i HTML::Entities
+
+	~/Downloads/netsurf/netsurf-all-3.10 $ make
+
+	+ kweb:
+	sudo apt install libwebkitgtk-3.0-dev
+	https://github.com/ekapujiw2002/kweb
+	pi@raspberrypi:~/Downloads/kweb-master $ sudo make install
+	sudo install -g dialout kweb /usr/bin
+	sudo cp ./kweb.desktop /usr/share/applications
+	sudo cp ./minimalkioskbrowser.png /usr/share/pixmaps
+	sudo cp ./kweb.1.gz /usr/share/man/man1
+	sudo cp ./kwebhelper.py /usr/local/bin
+	sudo chmod +x /usr/local/bin/kwebhelper.py
+	sudo cp ./kwebhelper_settings.py /usr/local/bin
+	sudo chmod +x /usr/local/bin/kwebhelper_settings.

@@ -1,5 +1,6 @@
 Notas
 	scala clojure functional languages quora
+	https://onedrive.live.com
 	
 	+ Examen toefl:
 	https://www.ets.org/
@@ -147,13 +148,89 @@ Notas
 		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
 
 		==========
-		26-08-2021 9:00 - 18:52
+		31-08-2021 9:29 - 18:11
+		==========
+		1 Análisis de código
+		PlatformWebContext.addCallbackParam("error", FacesUtils.getLabelBundle("gestion.documento.view.error", e.toString()));
+		Revisar log para el error null cuando se invoca [PlatformWebContext.addCallbackParam]
+
+		Ejemplos en:
+		ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java,
+		1145, 1163, 1567
+
+		https://www.logicbig.com/tutorials/misc/primefaces/request-context-param.html
+
+		Análisis de FacesUtils.getLabelBundle
+		Análisis de ec.telconet.platform.web.util.FacesUtils
+
+		cjperez@cjperez-vdi:~/.m2$ grep -Ri FacesUtils
+		Coincidencia en el archivo binario
+		repository/ec/telconet/platform/ec.telconet.platform.web/1.1.0.SNAPSHOT/ec.telconet.platform.web-1.1.0.SNAPSHOT-sources.jar
+			/**
+			 * Obtiene una etiqueta desde el contexto del sistema por su key
+			 * @param key
+			 * @return
+			 */
+			public static String getLabelBundle(String key){
+				FacesContext context = FacesContext.getCurrentInstance();
+				ResourceBundle bundle = context.getApplication().getResourceBundle(context, Constantes.RESOURCE_BUNDLE_VAR);
+				return bundle.getString(key);
+			}
+			
+			public static String getLabelBundle(String key, Object... args){
+				return MessageUtils.getFormattedMessage(getLabelBundle(key), args);
+			}
+
+		Análisis de Constantes.RESOURCE_BUNDLE_VAR
+		cjperez@cjperez-vdi:~/.m2$ grep -Ri Constantes
+		Coincidencia en el archivo binario repository/ec/telconet/platform/ec.telconet.platform.util/1.3.1.SNAPSHOT/ec.telconet.platform.util-1.3.1.SNAPSHOT.jar
+		
+		Ingeniería inversa de ec.telconet.platform.util-1.3.1.SNAPSHOT.jar para leer código fuente
+		(Esto resuelve Fixing1)
+		Instalación de JD-GUI:
+		$ sudo vim /usr/share/applications/jd-gui.desktop
+		  5 #Exec=java -jar /opt/jd-gui/jd-gui.jar
+		  6 Exec=/opt/java-jdk/jdk1.8.0_161/bin/java -jar /opt/jd-gui/jd-gui.jar
+		~/.m2/repository/ec/telconet/platform/ec.telconet.platform.util/1.3.1.SNAPSHOT/ec.telconet.platform.util-1.3.1.SNAPSHOT.jar
+
+		2 Análisis de URL
+		* Cambiar a GestionDocumental/Gestion/MisDocumentos
+		* Modificar scripts
+		Se repite la carpeta del día (revisar código de nnaulal)
+		Prueba de Web Service
+
+		==========
+		30-08-2021 9:10 - 10:10
+		==========
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
+		gestion.documento.view.error
+		catch (Exception e) { 
+			PlatformWebContext.addCallbackParam("error", FacesUtils.getLabelBundle("gestion.documento.view.error", e.toString()));
+		}
+		Impedimento: 
+		Se ha producido un error al realizar la operación solicitada:
+		Error de E/S: The Network Adapter could not establish the connection
+		Código de proveedor 17002		
+
+		==========
+		27-08-2021 9:00 - 18:00
 		==========
 		Atrapar excepción:
+		[2021-08-27 10:03:02.510] ERROR http-nio-18080-exec-9 ec.telconet.gd.web.master.filter.DirDocFilter AuthFilter.doFilter: Processing of multipart/form-data request failed. /gd/uploads/upload_4d6cce65_17b8821465c__7ffd_00000007.tmp (No existe el archivo o el directorio) java.io.IOException: Processing of multipart/form-data request failed. /gd/uploads/upload_4d6cce65_17b8821465c__7ffd_00000007.tmp (No existe el archivo o el directorio)	
+		
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
+		
 		[2021-08-26 18:46:41.596] ERROR http-nio-18080-exec-7        ec.telconet.gd.web.master.filter.DirDocFilter                     AuthFilter.doFilter: Processing of multipart/form-data request failed. /gd/uploads/upload__2e238740_17b84d57930__7ffd_00000015.tmp (Permiso denegado) java.io.IOException: Processing of multipart/form-data request failed. /gd/uploads/upload__2e238740_17b84d57930__7ffd_00000015.tmp (Permiso denegado)
 		
 		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
 
+		Análisis de sistema de notificación de errores
+		gestion.documento.view.error
+		Zoom amedina Reunión
+
+		catch (Exception e) { 
+			PlatformWebContext.addCallbackParam("error", FacesUtils.getLabelBundle("gestion.documento.view.error", e.toString()));
+		}
 
 		==========
 		26-08-2021 9:43 - 18:52

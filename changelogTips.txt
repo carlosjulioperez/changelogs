@@ -1,6 +1,6 @@
 TIPS
 	* Sitios útiles:
-		https://avxhm.is/
+		https://avxhm.is
 		https://vk.com/proglib
 		https://vk.com/proglib/bookv
 		https://ur.1lib.limited/book/5606902/ae0490
@@ -10,6 +10,9 @@ TIPS
 
 		+ tor:
 		https://ahmia.fi/
+	
+	* Listar archivos del paquete:
+		$ dpkg --contents jd-gui-1.6.6.deb
 	
 	* Copiar un archivo con sus carpetas:
 		$ cp --parents ec.telconet.gestiondocumental.web/src/main/resources/WEB-INF/web.xml /home/cjperez/Documents/proyectos/05-gestionDocumental/code/respaldo/gestiondocumental
