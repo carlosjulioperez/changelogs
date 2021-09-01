@@ -98,7 +98,8 @@ Git
 		y prompt solicita la nueva clave
 		$ git config --global credential.helper store
 		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
-		$ git config --global user.email "cjperez@telconet.ec"
+		$ git config --global user.email "carlosjulioperez@gmail.com"
+		#$ git config --global user.email "cjperez@telconet.ec"
 		$ git fetch
 
 	+ Nuevo repo:
