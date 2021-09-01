@@ -87,7 +87,11 @@ Git
 		
 		$ git config --global user.email "cjperez@telconet.ec"
 
-		+ Probado con gitlab:
+	+ Actualizar con token:
+		$ git remote remove origin
+		$ git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
+
+	+ Probado con gitlab:
 		https://stackoverflow.com/questions/21745213/changed-github-password-no-longer-able-to-push-back-to-the-remote
 
 		$ git remote -v
