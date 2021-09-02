@@ -1,7 +1,7 @@
 Raspbian
 	$ sudo apt install openfortivpn audacious virt-viewer flameshot bleachbit
 	keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick
-	youtube-dl graphviz meld
+	youtube-dl graphviz meld ack fzf
 
 	+ Actualizar lua:
 	https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=295145&p=1781013#p1781182

@@ -148,6 +148,34 @@ Notas
 		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
 
 		==========
+		01-09-2021 9:45 - 02-09-2021 0:20 - 
+		==========
+		2 Análisis de URL
+		* Cambiar a GestionDocumental/Gestion/MisDocumentos
+		* Modificar scripts
+		* Buscar texto QUERIES_PARA_MOVER_ARCHIVOS_A_NUEVO_NFS
+		[https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/299]
+		
+		Se repite la carpeta del día (revisar código de nnaulal)
+		Prueba de Web Service
+		
+		gestion.documento.view.error
+		[2021-09-01 17:44:56.059] ERROR http-nio-18080-exec-10 ec.telconet.gd.web.master.filter.DirDocFilter AuthFilter.doFilter: null java.lang.NullPointerException: null
+		at ec.telconet.platform.web.util.FacesUtils.getLabelBundle(FacesUtils.java:147)
+		at ec.telconet.platform.web.util.FacesUtils.getLabelBundle(FacesUtils.java:152)
+
+		System.out.println(">>> Objeto JSON: " + objJson.toString());
+		System.out.println(">>> Respuesta  : " + intRespuestaWS);
+
+		[x] Analizar doc salida de migración
+		[x] Analizar JSON respuesta de WS
+		[x] Comparar llamada Java de WS
+		[x] Refactoring DocumentoBean#guardarArchivoNfs
+		[x] Refactoring FileUploadFilter captura error
+		[x] application.properties drop codigo.pais 
+		[x] Mejora de los mensajes
+
+		==========
 		31-08-2021 9:29 - 18:11
 		==========
 		1 Análisis de código

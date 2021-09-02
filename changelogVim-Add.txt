@@ -210,9 +210,16 @@ Vim
 		export LC_CTYPE=en_US.UTF-8
 		export LC_ALL=en_US.UTF-8
 
+	* Tamaño actual:
+		:echo winwidth('%') winheight('%')
+		81 37
+
 	* Activar la sintaxis:
 		:syntax enable
+	
 	* Tamaño de ventana:
+		https://vim.fandom.com/wiki/Maximize_or_set_initial_window_size
+
 		if has("gui_running")
 		  " GUI is running or is about to start.
 		  " Maximize gvim window (for an alternative on Windows, see simalt below).
