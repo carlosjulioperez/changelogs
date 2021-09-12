@@ -1,7 +1,89 @@
 Raspbian
-	$ sudo apt install openfortivpn audacious virt-viewer flameshot bleachbit
+	$ sudo apt install xiphos openfortivpn audacious virt-viewer flameshot bleachbit
 	keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick
-	youtube-dl graphviz meld ack fzf
+	youtube-dl graphviz meld ack fzf gtk-recordmydesktop telegram-desktop
+
+	+ Instalar nim:
+	https://snapcraft.io/install/nim-lang/raspbian#install
+	
+	$ sudo apt install snapd
+	$ sudo reboot
+	$ sudo snap install core
+	$ sudo snap install nim-lang --classic
+	$ sudo snap alias nim-lang.nim nim
+
+	https://nim-by-example.github.io/hello_world/
+	Fibonacci 40:
+	https://betterprogramming.pub/a-python-substitute-i-tried-out-the-best-programming-language-youve-never-heard-of-9e29cd1893c0
+	https://www.youtube.com/watch?v=Hnxd_Fme51k
+	
+	proc fibonacci(n: int): int = 
+		if n <= 1:
+			return n
+		return fibonacci(n-1) + fibonacci(n-2) 
+
+	echo fibonacci 40
+
+	$ nim c -r --verbosity:0 hello.nim 
+	$ ls -l hello
+	-rwxr-xr-x 1 pi pi 98392 Sep 11 23:48 hello
+
+	$ time ./hello 
+	102334155
+	real	0m17.655s
+	user	0m17.609s
+	sys	0m0.011s
+
+	+ Instalar go:
+	https://golang.org/dl/
+	https://www.jeremymorgan.com/tutorials/raspberry-pi/install-go-raspberry-pi/
+	https://gobyexample.com/hello-world
+	Fibonacci:
+	https://www.thepolyglotdeveloper.com/2016/12/fibonacci-sequence-printed-golang/
+
+	package main
+
+	import (
+		"fmt"
+	)
+
+	func FibonacciRecursion(n int) int {
+		if n <= 1 {
+			return n
+		}
+		return FibonacciRecursion(n-1) + FibonacciRecursion(n-2)
+	}
+
+	func main() {
+		fmt.Print( FibonacciRecursion(40) )
+	}
+
+	$ go build fibonacci.go
+	$ ls -l fibonacci
+	-rwxr-xr-x 1 pi pi 1752416 Sep 12 00:15 fibonacci
+	$ time ./fibonacci 
+	102334155
+	real	0m2.560s
+	user	0m2.555s
+	sys	0m0.010s
+
+
+	+ Instalación de webcam:
+	Listar los dispositivos:
+	pi@raspberrypi:~ $ arecord -l
+	
+	**** List of CAPTURE Hardware Devices ****
+	card 1: Camera [HD Web Camera], device 0: USB Audio [USB Audio]
+	Subdevices: 1/1
+	Subdevice #0: subdevice #0
+	card 2: UACDemoV10 [UACDemoV1.0], device 0: USB Audio [USB Audio]
+	Subdevices: 1/1
+	Subdevice #0: subdevice #0
+
+	En mi caso tengo la webcam y los cascos usb.
+	
+	Grabo un audio desde el micrófono de la cámara:
+	$ arecord -D plughw:1,0 camara.wav
 
 	+ Actualizar lua:
 	https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=295145&p=1781013#p1781182
@@ -20,7 +102,7 @@ Raspbian
 	$ chromium-browser --proxy-server=socks5://localhost:9050
 
 	+ Pomodoro:
-	https://github.com/mehdidc/pomodoro
+	
 	$ sudo apt-get install python-matplotlib
 	$ sudo pip install pomodoro-cli
 	$ sudo pip install configparser

@@ -19,7 +19,7 @@ Tendencias
 		+ F#:
 		https://fsharpforfunandprofit.com/posts/fsharp-is-the-best-enterprise-language/
 
-	* performance:
+	* Performance:
 		https://www.techempower.com/benchmarks/
 		https://web-frameworks-benchmark.netlify.app/result
 		https://benchmarksgame-team.pages.debian.net/benchmarksgame/
@@ -60,6 +60,9 @@ Tendencias
 			let cafe = "Café"
 			print(cafe.uppercased())
 			// Prints "CAFÉ"
+	* Nim:
+		https://dev.to/buildsavvy/why-you-should-consider-the-nim-programming-language-1bpb	
+		https://blog.logrocket.com/nim-vs-python-which-should-you-choose/
 
 	* Kotlin vs Scala:
 		https://dzone.com/articles/kotlin-vs-scala-vs-java?edition=347114&utm_source=Daily%20Digest&utm_medium=email&utm_campaign=Daily%20Digest%202017-12-22
@@ -100,6 +103,9 @@ Vue
 		https://news.ycombinator.com/item?id=15052691
 
 Java
+	* BigDecimal and overloading:
+		https://blogs.oracle.com/javamagazine/is-it-time-for-overloading-in-java
+
 	* Spring Boot:
 		https://spring.io/guides/gs/accessing-data-rest/
 		http://mrbool.com/rest-server-with-spring-data-spring-boot-and-postgresql/34023

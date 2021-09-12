@@ -1,10 +1,19 @@
 Notas
+
+	loor: 954 760 7704/123AAA#
 	scala clojure functional languages quora
 	https://onedrive.live.com
 	
 	+ Examen toefl:
 	https://www.ets.org/
+
+	https://www.urbandictionary.com
 	https://www.linuxadictos.com/duolingo-como-app-de-gnu-linux-aprende-ingles-de-una-forma-divertida.html
+	https://www.livescience.com/
+	https://writeandimprove.com/
+	https://owlcation.com/academia/Words-to-Use-in-Starting-Sentences
+	https://play.google.com/store/apps/details?id=org.cambridgeenglish.bravi.quiz&hl=en_US&gl=US
+	https://stormboard.com/
 
 	https://www.linkedin.com/in/carlosjulioperez/
 	Revisar codenameone para crear apps a domicilio y emprender
@@ -80,23 +89,31 @@ Notas
 		* Reemplazo de fórmula detalle5.jDiluidoBr canaNeta por canaDia
 		* Reemplazo de fórmula detalle22.sacJBrCanaExtraida canaNeta por canaDia
 		* El promedio Jugo.v25 varía con el sistema porque la columna v no calcula bien
+		* Revisar los totales de StockProceso
+		* Revisar temperaturas:
+		* Calentador de jugo (solo al primero)
+		* Calentador de Meladura
+		* Cristalización:
+		* Tacho 2 y tacho 3
+		
+		[TODO]:
+		Revisar cálculo de "Toneladas Melaza Producida Total/zafra" en Stock de
+		Fábrica, sumar el valor de P149 en AX132
+		
+		Celda: ax132
+		Fórmula anter: =((U144*T149)/1000)+(U155*T160)/1000
+		Fórmula nueva: =(T151+U162+P149)+AX129-65.2
 
+		Usar Dia 8 (8/7/2019) [7 JUNIT 07-08-2019] para pruebas JUNIT.
+		Ejecutar Test
+
+		----
 		ColorMat: Agregar cálculo (complejo)
 		Stock de Fábrica: Todos deben tener calentadura
-		Stock de Proceso: Agregar botón "Recalcular desde Stocl de Fábrica"
-
-		Revisar temperaturas:
-		Calentador de jugo (solo al primero)
-		Calentador de Meladura
-		Cristalización:
-		Tacho 2 y tacho 3
 		Tamaño Grano Detalle: Malla 20 y cálculos
 		Reporte BLC, TIEMPOS -> TIEMPOS PERDIDOS
-
 		URGENTE
 		No duplicar el formulario Trash para un mismo día de trabajo
-
-		Revisar los totales de StockProceso
 
 		less -N /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/logs/catalina.out
 		tail -f /opt/liferay-portal-6.1.2-ce-ga3/tomcat-7.0.40/logs/catalina.out
@@ -122,30 +139,148 @@ Notas
 		http://dev-telcos-developer.telconet.ec/app.php/soporte/info_caso
 		http://dev-telcos-developer.telconet.ec/soporte/tareas/
 		
-		* Cambio para login:
-		/home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php
-		391: return false;
-
-		Probar envío de correos
-
-		==========
-		10-08-2021
-		==========
-		Andrés Ruilova
-		ey
-		Ensen Yohn implementador de SAP
-		Conectar BI con PostgreS mediante un Gateway en Windows
-		BI7 actualizado con info en línea, recibe como puerto de enlace a NW
-		de PosgreSQL con la nube.
-
-		-------------------------------------------------------------
-
-		Atrapar excepciones en los casos detallados
- 		Agregar comentario en ScriptRegularización y adjuntar el jar
-		Grabar la ruta del archivo migrado y poner en columna PATH="Migrado"
+		* Cambio para login: /home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php 391: return false; Probar envío de correos ========== 10-08-2021 ========== Andrés Ruilova ey Ensen Yohn implementador de SAP Conectar BI con PostgreS mediante un Gateway en Windows BI7 actualizado con info en línea, recibe como puerto de enlace a NW de PosgreSQL con la nube. ------------------------------------------------------------- Atrapar excepciones en los casos detallados Agregar comentario en ScriptRegularización y adjuntar el jar Grabar la ruta del archivo migrado y poner en columna PATH="Migrado" Atrapar el error en: ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146) ==========
 		
-		Atrapar el error en:
-		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146)
+		Mailtrap para pruebas:
+		https://mailtrap.io/
+		
+		Usar para correo:
+		sustituye el sissmtp-int.telconet.net por 172.24.14.11
+
+		==========
+		10-09-2021 09:31-18:04
+		==========
+		Ubicar carpeta platform para especificar *.properties
+		Probar con: 
+		/home/cjperez/Repositories/gestiondocumental/platform/development.properties
+
+		Agregar en /etc/hosts
+		172.24.14.11    sissmtp-test.telconet.ec
+		Revisar en el código la llamada al correo.
+
+		==========
+		09-09-2021 09:05-18:00
+		==========
+		Prueba de Recepción / Asignados -> compartir documentos
+		TODO: Revisión de error:
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:149
+
+		Cambiar servidor de correos: 
+		sissmtp-int.telconet.net, port: 25;
+		cjperez@cjperez-vdi:~/.m2$ grep -Ri "context.mail"
+		Coincidencia en el archivo binario
+		repository/ec/telconet/platform/ec.telconet.platform.context/1.1.6.SNAPSHOT/ec.telconet.platform.context-1.1.6.SNAPSHOT.jar
+		
+		Ingeniería inversa de jar: [ec.telconet.platform.context-1.1.6.SNAPSHOT.jar]
+		this.properties = new Properties();
+		this.properties.setProperty("mail.transport.protocol", System.getProperty("platform.mail.protocol", "smtp"));
+		this.properties.setProperty("mail.host", System.getProperty("platform.mail.host", "sissmtp-int.telconet.net"));
+		this.properties.setProperty("mail.debug", System.getProperty("platform.mail.debug", "false"));
+
+		https://docs.oracle.com/javase/tutorial/essential/environment/properties.html
+
+		Formulario: Palabras clave, keywordsNotAvaliable:
+		ec.telconet.gestiondocumental.web.recepcion/src/main/resources/recepcion/send.xhtml
+
+		Buscar el servidor de correos: 
+		sissmtp-int.telconet.net
+
+
+		Revisar funcionalidad: Compartir/Agregar colaborador
+		
+		==========
+		08-09-2021 15:00-18:00
+		==========
+		Cambiar ruta al consumir el WS desde Asignación
+		Revisar funcionalidad "Compartir documento"
+		
+		Analizar excepción del servidor de correo:
+		ec.telconet.platform.context.mail.CentroMensajeriaCorreos
+		javax.mail.MessagingException: Could not connect to SMTP host:
+		sissmtp-int.telconet.net, port: 25;
+		  nested exception is:
+				java.net.ConnectException: Expiró el tiempo de conexión 
+
+		==========
+		07-09-2021 09:30-18:00
+		==========
+		Revisión del Fixing con Alexis
+		Fixing de https://telconet.zoom.us/j/88519167823, script migración
+		Pasar jar con servidor de correo
+		
+		==========
+		06-09-2021 09:09-18:00
+		==========
+		Revisión de objetos-db
+		Spring Boot
+		
+		==========
+		05-09-2021 07:40-12:04, 16:53-20:00, 22:43-05:32
+		==========
+		Mostrar el pdf subido en la sección "Visualización"
+		Refactoring de AsignacionBean#process
+		Mostrar mensaje directo de PrimeFaces para errores de WS.
+		Refactoring de AsignacionBean#send
+
+		
+		==========
+		04-09-2021 22:10 - 00:53
+		==========
+		Mostrar el pdf subido en la sección "Visualización"
+		
+		==========
+		03-09-2021 9:07 - 18:15
+		==========
+		Crear script para respaldar programas
+		DEST=/home/cjperez/Documents/proyectos/05-gestionDocumental/code/respaldo/gestiondocumental
+		Refactoring de: 
+		ec.telconet.gestiondocumental.web.recepcion/src/main/java/ec/telconet/gd/web/recepcion/jsf/bean/AsignacionBean.java
+		Generación de MER documental de nuevo esquema
+		Refactoring AsignacionBean#process para no generar pdfs y ni imágenes de páginas
+		Refactoring AsignacionBean#send para almacenar la URL del archivo subido a NFS
+		Resolver impedimento asignacion.error.convert "No se puede convertir documento, favor escoger un documento válido!" en:
+		ec.telconet.gestiondocumental.web.recepcion/src/main/resources/recepcion/upload.xhtml
+		Refactoring: Cerrar el documento subido en send() y no en process() de AsignacionBean
+		Refactoring de uploadedFile.getFileName()
+
+	  /**
+	   * Representación de cadena de caracteres del archivo PDF 
+	  */
+		private String strFileBase64;
+
+		==========
+		02-09-2021 9:30 - 23:59
+		==========
+		Descargar documento desde el menú contextual
+		
+		//FileInputStream stream = new FileInputStream(fileFullPath);
+		//String contentType = FacesContext.getCurrentInstance().getExternalContext().getMimeType(fileFullPath);
+		
+		// https://itqna.net/questions/15083/how-download-pdf-file-jsf
+		// https://stackoverflow.com/questions/39624536/how-to-open-a-pdf-file-in-a-new-tab
+		
+		Descargar pdf desde menú contextual
+		Refactoring de DownloadBean#downloadDocumento()
+		Agregar logger a DownloadBean y descarga de archivo
+		Validar descargar con URL de archivo nulo
+		Validar compartir con URL de archivo nulo
+
+		Tarea 1/2 Verificar campos Metadata, Origen y Caja.
+		Si el documento subido no tiene metadata, le asigna "metadata" al campo,
+		según la línea 319 de:
+		ec.telconet.gestiondocumental.hibernate.process/src/main/java/ec/telconet/gd/hibernate/indexacion/process/IndexacionPImpl.java
+
+		Cuando el archivo se sube por el sistema, le pone por defecto el texto
+		"digital" al campo origen, según la línea 819 de:
+		ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/DocumentoBean.java
+
+		Como el documento subido por el sistema es de carácter digital, no se
+		asigna un valor al campo caja, ya que éste se llena cuando el origen de
+		dicho documento es físico, según la línea 323 de:
+		ec.telconet.gestiondocumental.hibernate.process/src/main/java/ec/telconet/gd/hibernate/indexacion/process/IndexacionPImpl.java
+
+		Tarea 2/2 Revisar la funcionalidad del módulo "Recepción"
+		Reactivar el botón Descargar desde el visor del documento.
 
 		==========
 		01-09-2021 9:45 - 02-09-2021 0:20 - 
@@ -156,8 +291,8 @@ Notas
 		* Buscar texto QUERIES_PARA_MOVER_ARCHIVOS_A_NUEVO_NFS
 		[https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/299]
 		
-		Se repite la carpeta del día (revisar código de nnaulal)
-		Prueba de Web Service
+		* Se repite la carpeta del día (revisar código de nnaulal)
+		* Prueba de Web Service
 		
 		gestion.documento.view.error
 		[2021-09-01 17:44:56.059] ERROR http-nio-18080-exec-10 ec.telconet.gd.web.master.filter.DirDocFilter AuthFilter.doFilter: null java.lang.NullPointerException: null
@@ -224,8 +359,8 @@ Notas
 		2 Análisis de URL
 		* Cambiar a GestionDocumental/Gestion/MisDocumentos
 		* Modificar scripts
-		Se repite la carpeta del día (revisar código de nnaulal)
-		Prueba de Web Service
+		* Se repite la carpeta del día (revisar código de nnaulal)
+		* Prueba de Web Service
 
 		==========
 		30-08-2021 9:10 - 10:10
@@ -380,7 +515,7 @@ Notas
 		* Probar en test
 
 		==========
-		19-08-2021 9:26 - 18:30
+		19-08-2021 9:26 - 18:30: 9:04
 		==========
 		MR Relacionados
 		- [Gestión Documental](https://gitlab.telconet.ec/backoffice/gestiondocumental/-/merge_requests/56)

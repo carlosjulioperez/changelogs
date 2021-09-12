@@ -189,6 +189,9 @@ MX 19.1:
 		$ whereis startGroovy
 		$ sudo vim /usr/bin/startGroovy
 
+		* Error en Ubuntu para 2.4.16:
+		https://bugs.launchpad.net/ubuntu/+source/groovy/+bug/1842928
+
 		+ Apuntar a JDK y agregar en:
 		~/.sdkman/candidates/groovy/2.4.19/bin/startGroovy
 
