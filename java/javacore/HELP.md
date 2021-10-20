@@ -20,6 +20,7 @@ n. [Thread](#thread)
 ## Decorator Pattern
 ## Adapter Pattern
 
+
 # <a name="oop">Object Oriented Programming</a>
 ## <a name='solid'>SOLID Principle</a>
 ![alt text](img/solid.png)
