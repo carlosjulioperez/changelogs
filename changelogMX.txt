@@ -6,11 +6,17 @@ MX 19.1:
 		
 		$ sudo apt install graphviz
 
-		$ sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3 postgresql tmux openjdk-11-jdk ant ant-optional groovy
-		playonlinux doublecmd-gtk
+		$ sudo apt install ack silversearcher-ag bleachbit terminator meld keepassx vim-gtk3 postgresql tmux openjdk-11-jdk ant ant-optional groovy playonlinux doublecmd-gtk
 
 	* Package manager:
 		Kazam Bibletime Zoom Telegram qutebrowser VirtualBox Brave Wine AnyDesk 'SoftMaker FreeOffice 2018' jq
+
+	* mariadb:
+		$ sudo apt install mariadb-server
+		$ sudo mysql_secure_installation
+		$ sudo mysql -u root -p
+		CREATE DATABASE oms;
+		GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
 
 	* webcam:
 		$ sudo apt-get install v4l-utils --install-suggests
@@ -75,7 +81,6 @@ MX 19.1:
 		$ cvt 1366 800 | grep Modeline  | cut -d' '  -f2-
 		$ xrandr --newmode "1368x800_60.00"   88.75  1368 1440 1576 1784  800 803 813 831 -hsync +vsync
 		$ xrandr --addmode DP-1 "1368x800_60.00"
-
 
 		+ Configuración:
 		$ sudo vim /etc/X11/xorg.conf.d/10-monitor.conf

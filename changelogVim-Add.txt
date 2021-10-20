@@ -284,7 +284,7 @@ Vim
 
 	* Encoding:
 		:e ++enc=utf-8
-		:e ++enc=ISO-8859-1 
+		:e ++enc=ISO-8859-1
 		:write ++enc=utf-8 russian.txt
 
 	* Números de línea:

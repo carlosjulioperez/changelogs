@@ -154,10 +154,18 @@ SQL
 		pg_dump --data-only --table=tiporet apracomsa > apracomsa_tiporet.sql
 		
 		pg_dump --data-only --table=inventory apracomsa > apracomsa_inventory.sql
-		pg_dump --data-only --table=ingenio.stockfabricadetalle17 ingenio > stockfabricadetalle17.sql
+		
+		pg_dump --data-only --table=ingenio.stockfabricadetalle73 ingenio > stockfabricadetalle73.sql
+		../bin/pg_dump --data-only --table=ingenio.stockfabricadetalle73 ingenio > stockfabricadetalle73.sql
 		
 		pg_dump --data-only --table=ingenio.blcdetalle16 ingenio > blcdetalle16.sql
 		../bin/pg_dump --data-only --table=ingenio.stockprocesodetalle1 ingenio > stockprocesodetalle1.sql
+
+		../bin/pg_dump --data-only --table=ingenio.stockprocesopdetalle3 ingenio > stockprocesopdetalle3.sql
+
+		pg_dump --data-only --table=ingenio.indicador ingenio > indicador.sql
+		../bin/pg_dump --data-only --table=ingenio.indicador ingenio > indicador.sql
+		COPY indicador FROM '/tmp/indicador.csv' DELIMITER ',' CSV HEADER;
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump

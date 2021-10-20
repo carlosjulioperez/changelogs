@@ -25,3 +25,43 @@ Spacevim
 			Open current directory in a new split: ds
 			Open VimFiler: \e
 			Find files under current directory (Unite): \f
+
+		+ git:
+			S f v d
+			[[layers]]
+				name = "VersionControl"
+
+			[[layers]]
+				name = "git"
+					git_plugin = 'fugitive'
+
+		+ java:
+			https://spacevim.org/use-vim-as-a-java-ide/
+
+			[[layers]]
+			name = "lang#java"
+
+			[[layers]]
+			name = "lsp"
+			filetypes = [
+				"java"
+			]
+			# jdt-language-server-1.4.0-202109161824.tar.gz
+			[layers.override_cmd]
+			java = [
+				"java",
+				"-Declipse.application=org.eclipse.jdt.ls.core.id1",
+				"-Dosgi.bundles.defaultStartLevel=4",
+				"-Declipse.product=org.eclipse.jdt.ls.core.product",
+				"-Dlog.protocol=true",
+				"-Dlog.level=NONE",
+				"-noverify",
+				"-Xmx1G",
+				"-jar",
+				"/media/pi/homeMX/carper/local/javaDev/jdt/v14/plugins/org.eclipse.equinox.launcher_1.6.300.v20210813-1054.jar",
+				"-configuration",
+				"/media/pi/homeMX/carper/local/javaDev/jdt/v14/config_linux",
+				"-data",
+				"/home/pi/.cache/javalsp"
+			]
+

@@ -11,6 +11,56 @@ TIPS
 		+ tor:
 		https://ahmia.fi/
 	
+	* youtube-dl:
+		$ sudo youtube-dl -U
+		$ pip install update youtube-dl
+
+	* Gradle, generar Fat Jar usando uber desde la documentación oficial:
+		https://docs.gradle.org/current/userguide/userguide.pdf
+		
+		build.gradle:
+		dependencies {
+			...
+			implementation 'commons-io:commons-io:2.6'
+		}
+
+		tasks.register('uberJar', Jar) {
+			archiveClassifier = 'uber'
+			from sourceSets.main.output
+			dependsOn configurations.runtimeClasspath
+			duplicatesStrategy = 'include'
+			from {
+				configurations.runtimeClasspath.findAll {
+					it.name.endsWith('jar') }
+				.collect { zipTree(it) }
+			}
+		}
+
+		Importante agregar [duplicatesStrategy = 'include']
+		https://discuss.gradle.org/t/gradle-7-fail-for-duplicates-in-copy-specs-has-no-duplicates-in-project/39834/3
+
+		Al generar este fatJar o uberJar se obtiene un jar clásico para
+		generar documentación con la herramienta urm-core
+
+		pi@raspberrypi:/media/pi/homeMX/carper/local/projects/handsoncode/java/springBoot/users/build/libs
+		$ tree
+		.
+		├── salida.txt
+		├── urm-core-2.0.1-SNAPSHOT.jar
+		└── users-0.0.1-SNAPSHOT-uber.jar
+		
+		$ java -cp users-0.0.1-SNAPSHOT-uber.jar:urm-core-2.0.1-SNAPSHOT.jar com.iluwatar.urm.DomainMapperCli -p ec.carper.users -f salida.txt
+		http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000:
+
+	* Generar jar usando zip en linux:
+		pi@raspberrypi:/tmp/users $ tree -L 1
+		.
+		├── classes
+		├── lib
+		└── users_cj.jar
+
+		$ zip -r users_cj.jar classes/ lib/
+
 	* Listar archivos del paquete:
 		$ dpkg --contents jd-gui-1.6.6.deb
 	
@@ -455,8 +505,16 @@ TIPS
 
 	* Unir archivos PDF:
 		$ sudo apt-get install texlive-latex-recommended
+		$ sudo apt-get install texlive-extra-utils
+
 		$ pdfjoin --paper a4paper --rotateoversize false
 		$ pdfjoin *.pdf
+
+	* PDFBooklet Crear booklet (brochure):
+		$ pdftk Apocalipsis\ Revelaciones\ de\ Esperanza.pdf cat 106-113 output materialAuxiliar.pdf
+
+		$ sudo dpkg -i pdfbooklet_3.1.2-2_all.deb
+		$ sudo apt install -f
 
 	* Free disk space:
 		http://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu

@@ -6,6 +6,10 @@ Git
 		$ git checkout master
 		$ git branch -D cjperez-2
 	
+	+ Descartar últimos cambios:
+		$ git stash save --keep-index --include-untracked
+		https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git
+	
 	+ Estado:
 		$ git status
 		$ git log
@@ -21,7 +25,7 @@ Git
 	+ Crear una nueva rama basada en otra:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
-		$ git checkout -b cjperez-4 origin/<rama>
+		$ git checkout -b cjperez-5 origin/<rama>
 		$ git reset --hard origin/<rama>
 
 	+ Reseteo (actualizar) a master:
@@ -39,6 +43,8 @@ Git
 		$ git reset --hard origin/master
 		$ git fetch
 		$ git pull
+		$ git checkout cjperez-4
+		$ git reset --hard origin/master
 		$ git merge --squash origin/cjperez-4
 		$ git add ...
 		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
@@ -50,13 +56,6 @@ Git
 		$ git merge commit -m "Nombre tarea Zoho"
 		$ git push -f origin ramalocal:ramaRemota
 		
-		$ git checkout cjperez-4
-		$ git reset --hard origin/master
-		$ git merge --squash origin/cjperez-4
-		$ git add ...
-		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
-		$ git push -f origin cjperez-4
-
 	+ Quitar carpeta:
 		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository
 
@@ -79,6 +78,8 @@ Git
 
 	+ Descargar carpeta:
 		https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
+		https://github.com/carlosjulioperez/handsoncode/tree/main/java/springBoot/oms
+
 
 	+ Actualizar password git:
 		$ git config --global credential.helper store
@@ -92,6 +93,7 @@ Git
 
 		$ git remote remove origin
 		$ git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
+		$ git remote add origin https://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@github.com/carlosjulioperez/handsoncode.git
 		$ git push --set-upstream origin master
 		o
 		$ git push --set-upstream origin main

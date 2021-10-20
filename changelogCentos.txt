@@ -139,7 +139,7 @@ Centos
 		https://www.cyberciti.biz/faq/howto-set-date-time-from-linux-command-prompt/
 
 		# date -s "13 JUN 2019 8:00:00"
-		# date +%T -s "08:28:00"
+		# date +%T -s "9:48:15"
 		# hwclock --systohc
 
 	* Instalar en modo texto:

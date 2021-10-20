@@ -1,4 +1,5 @@
 Notas
+	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
 
 	loor: 954 760 7704/123AAA#
 	scala clojure functional languages quora
@@ -43,9 +44,6 @@ Notas
 	+ Enlace trabajo UE:
 	https://www.linkedin.com/posts/giz-ecuador_tdr-asesora-de-sistemas-de-informaci%C3%B3n-activity-6815440839788036096-ZnRo/
 	
-	https://www.computrabajo.com.ec/ofertas-de-trabajo/oferta-de-trabajo-de-java-developer-remote-en-ecuador-2D4D75D2BA41C2FA61373E686DCF3405
-	https://www.tropicanafm.com/2016/los-5-colombianos-que-han-participado-en-caso-cerrado-3295135-188119.html
-
 	+ libros:
 	https://vk.com/proglib/bookv
 	http://netlifeecuador.speedtestcustom.com/
@@ -62,6 +60,25 @@ Notas
 		https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo2 
 	+ peli:
 		https://youtu.be/wbjthcsSWTc?t=2432
+
+	+ parrolab:
+		+ relaciones:
+			https://www.oscarblancarteblog.com/2018/12/13/personalizar-las-relaciones-con-joincolumn/
+			https://www.baeldung.com/spring-boot-data-sql-and-schema-sql
+			https://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/howto-database-initialization.html
+			https://www.baeldung.com/hibernate-identifiers
+		
+		+ proyecto:
+			https://www.section.io/engineering-education/how-to-create-a-rest-api-using-spring-boot-maven-and-mysql/
+			https://stackoverflow.com/questions/49652768/how-to-implement-api-returns-nested-json-with-onetomany-relationship-in-spring-b
+
+		+ mysql:
+			https://www.javaguides.net/2019/08/spring-boot-spring-jdbc-mysql-crud-example.html
+			+ sencillo:
+			https://mail.codejava.net/frameworks/spring-boot/spring-boot-restful-crud-api-examples-with-mysql-database
+		
+	+ estrategit:
+		Preguntar si tienen servidor SQL Server en la nube
 
 	+ eneragro:
 		diaTrabajo_id='40288ad07b3556bf017b3680e5ba0001';
@@ -97,16 +114,6 @@ Notas
 		* Tacho 2 y tacho 3
 		
 		[TODO]:
-		Revisar cálculo de "Toneladas Melaza Producida Total/zafra" en Stock de
-		Fábrica, sumar el valor de P149 en AX132
-		
-		Celda: ax132
-		Fórmula anter: =((U144*T149)/1000)+(U155*T160)/1000
-		Fórmula nueva: =(T151+U162+P149)+AX129-65.2
-
-		Usar Dia 8 (8/7/2019) [7 JUNIT 07-08-2019] para pruebas JUNIT.
-		Ejecutar Test
-
 		----
 		ColorMat: Agregar cálculo (complejo)
 		Stock de Fábrica: Todos deben tener calentadura
@@ -139,14 +146,474 @@ Notas
 		http://dev-telcos-developer.telconet.ec/app.php/soporte/info_caso
 		http://dev-telcos-developer.telconet.ec/soporte/tareas/
 		
-		* Cambio para login: /home/cjperez/Repositories/telcos/src/telconet/adminBundle/Service/ActualizarPasswordService.php 391: return false; Probar envío de correos ========== 10-08-2021 ========== Andrés Ruilova ey Ensen Yohn implementador de SAP Conectar BI con PostgreS mediante un Gateway en Windows BI7 actualizado con info en línea, recibe como puerto de enlace a NW de PosgreSQL con la nube. ------------------------------------------------------------- Atrapar excepciones en los casos detallados Agregar comentario en ScriptRegularización y adjuntar el jar Grabar la ruta del archivo migrado y poner en columna PATH="Migrado" Atrapar el error en: ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:146) ==========
-		
 		Mailtrap para pruebas:
 		https://mailtrap.io/
 		
 		Usar para correo:
 		sustituye el sissmtp-int.telconet.net por 172.24.14.11
 
+		TODO:
+		* Probar estrategia de reverso de migración.
+		* Reseteo a Master sin mi rama
+		* Comentar "delete file" en Script
+
+		* Revisar el script de migración cuando selecciona archivos con caracteres
+		especiales.
+
+		* Reversar etiquetas y poner el código vs la tabla de mensajes
+				Cambiar mensaje de "contacte a sistemas" no se pudo ejecutar el microservicio, por favor reintente.
+		Revisar
+		
+		+ Revisar pedidos:
+		https://gitlab.telconet.ec/backoffice/compras/-/merge_requests/141
+
+		Question: The system you work with on a daily basis runs multiple
+		microservices. You have been asked to pre...
+
+		https://stackoverflow.com/questions/66686574/iterate-array-of-mapstring-object-and-return-maplong-long-using-java-8
+
+		https://stackoverflow.com/questions/67716160/map-streaming-misleading-intellij-error-warning-is-this-a-bug
+
+		* Liferay:
+		https://issues.liferay.com/browse/LPS-16516?focusedCommentId=131288&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel
+		Solucionar enviar la clave por correo
+
+		* Spring Boot:
+		https://www.bezkoder.com/spring-boot-jpa-h2-example/
+		https://www.bezkoder.com/spring-boot-jwt-authentication/
+
+		https://devwithus.com/spring-boot-rest-api-security-jwt/
+
+		Ejemplo:
+		https://www.section.io/engineering-education/how-to-create-a-rest-api-using-spring-boot-maven-and-mysql/
+		https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-many-mapping-example/
+
+		* rest bidirectional example:
+		https://hellokoding.com/jpa-one-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/
+
+		* Probar:
+		https://github.com/codeforgeyt/one-to-many-web-service/find/main
+		
+		* Spring jar generation:
+		https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html
+
+		* UML Reverse Mapper:
+		java -cp abstract-factory.jar:urm-core.jar com.iluwatar.urm.DomainMapperCli -p com.iluwatar.abstractfactory -i com.iluwatar.abstractfactory.Castle
+		
+		$ java -cp users-0.0.1-SNAPSHOT.jar:urm-core-2.0.1-SNAPSHOT.jar com.iluwatar.urm.DomainMapperCli -p BOOT-INF.classes.ec.carper.users -f salida.txt
+		
+		$ java -cp users-0.0.1-SNAPSHOT.jar:urm-core-2.0.1-SNAPSHOT.jar com.iluwatar.urm.DomainMapperCli -p "ec.carper.users, org.springframework.boot, io.springfox" -f salida.txt
+
+		
+		$ cd /media/pi/homeMX/carper/local/projects/handsoncode/java/springBoot/users/
+		$ ./gradlew jar
+		$ cd /media/pi/homeMX/carper/local/projects/handsoncode/java/springBoot/users/build/libs/
+		$ java -cp users-0.0.1-SNAPSHOT-uber.jar:urm-core-2.0.1-SNAPSHOT.jar com.iluwatar.urm.DomainMapperCli -p ec.carper.users -f salida.txt
+
+		+ Validation:
+		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
+	
+		==========
+		19-10-2021 09:15-18:19
+		==========
+		https://stackoverflow.com/questions/13712564/how-to-find-out-what-dependencies-in-my-maven-pom-have-a-particular-dependency
+		$ mvn dependency:tree -Dverbose -Dincludes=commons-collections
+
+		Néstor Gabriel Naula López, [19.10.21 12:13]
+		https://gitlab.telconet.ec/sistemas/sqa/-/tree/master/Ambientes/1.%20Desarrollo/Compras
+		https://gitlab.telconet.ec/sistemas/sqa/-/blob/master/Ambientes/1.%20Desarrollo/Compras/1.%20Levantar-compras-contenedor-local.md
+
+		[Instalación y depliegue de compras]:
+		* Seguir los pasos de:
+			https://gitlab.telconet.ec/sistemas/sqa/-/blob/master/Ambientes/1.%20Desarrollo/Compras/1.%20Levantar-compras-contenedor-local.md
+		* $ sudo apt install docker-compose
+	 	* $ bash comprasbuild.sh 'INIT' '/opt/java-jdk/jdk1.7.0_80'
+	 	* $ bash comprasbuild.sh 'RUN'  '/opt/java-jdk/jdk1.7.0_80'
+
+		Conexión a Base de Datos
+		172.24.14.204
+		DesaS08.telconet.ec
+		DB_COMPRAS       IDENTIFIED BY "avXQhfn7br4hLBqVkZUj";
+		NAF47_TNET       IDENTIFIED BY "TFgxXH2OsA0DTG1OLpnf";
+	
+		==========
+		18-10-2021 09:40-17:30
+		==========
+		Script para instalar jar de forma programática
+		https://stackoverflow.com/questions/44828958/how-do-format-and-traverse-an-array-that-contains-arrays-and-each-array-contain/44831174#44831174
+
+		Creación de: "~/Documents/proyectos/06-compras-pedidos/compras_instalacion_jars.sh"
+
+		Resolver excepción:
+		java.lang.NoClassDefFoundError: org/codehaus/plexus/archiver/ArchiverException 
+		https://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
+
+		==========
+		15-10-2021 10:54-17:30
+		==========
+		Resolving:
+		java.lang.NoClassDefFoundError:
+		org/codehaus/plexus/archiver/ArchiverException
+		Determinar dependencias
+		$ mvn dependency:go-offline
+		Crear script para instalar jar manualmente.
+
+		==========
+		14-10-2021 09:34-17:00
+		==========
+		Error: 
+		java.lang.NoClassDefFoundError:
+		org/codehaus/plexus/archiver/ArchiverException
+
+		https://stackoverflow.com/questions/58972874/mvn-dependencygo-offline-doesnt-download-the-requirements-for-maven-surefire-p
+		
+		https://stackoverflow.com/questions/1245076/maven-offline-problem-with-mvn-plugins
+		$ mvn dependency:go-offline
+		
+		https://www.oreilly.com/library/view/apache-maven-cookbook/9781785286124/ch08s05.html
+		$ mvn –o clean package
+		
+		$ mvn clean package install
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/ \
+			-DgroupId= \
+			-DartifactId= -Dversion= -Dpackaging=jar
+
+		$ mvn dependency:go-offline > salida.txt
+		[Instalación manual de cada jar]
+		* maven-assembly-plugin:jar:2.2-beta-5
+		* maven-dependency-plugin:jar:2.8
+		* maven-release-plugin:jar:2.3.2
+		* org.codehaus.mojo:hibernate3-maven-plugin:jar:2.2
+		* org.codehaus.mojo:dbunit-maven-plugin:jar:1.0-beta-3
+		* org.eclipse.m2e:lifecycle-mapping:jar:1.0.0
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/lifecycle-mapping-1.0.0.jar \
+			-DgroupId=org.eclipse.m2e \
+			-DartifactId=lifecycle-mapping -Dversion=1.0.0 -Dpackaging=jar
+		
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/dbunit-maven-plugin-1.0-beta-3.jar \
+			-DgroupId=org.codehaus.mojo \
+			-DartifactId=dbunit-maven-plugin -Dversion=1.0-beta-3 -Dpackaging=jar
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/hibernate3-maven-plugin-2.2.jar \
+			-DgroupId=org.codehaus.mojo \
+			-DartifactId=hibernate3-maven-plugin -Dversion=2.2 -Dpackaging=jar
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/maven-release-plugin-2.3.2.jar \
+			-DgroupId=org.apache.maven.plugins \
+			-DartifactId=maven-release-plugin -Dversion=2.3.2 -Dpackaging=jar
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/maven-dependency-plugin-2.8.jar \
+			-DgroupId=org.apache.maven.plugins \
+			-DartifactId=maven-dependency-plugin -Dversion=2.8 -Dpackaging=jar
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/maven-assembly-plugin-2.2-beta-5.jar \
+			-DgroupId=org.apache.maven.plugins \
+			-DartifactId=maven-assembly-plugin -Dversion=2.2-beta-5 -Dpackaging=jar
+	
+		==========
+		13-10-2021 10:08-18:00
+		==========
+		Working in offline mode
+		$ mvn dependency:go-offline > salida.txt
+
+		==========
+		12-10-2021 09:32-18:00
+		==========
+		Resolución de dependencias usando maven
+
+		==========
+		11-10-2021 09:20-17:32
+		==========
+		Resolución del error:
+		Caused by: java.lang.ClassNotFoundException:
+		org.apache.tools.ant.BuildException
+		Configurar STS con Java 7 para resolver dependencias
+		
+		https://stackoverflow.com/questions/17223536/failed-to-execute-goal-org-apache-maven-pluginsmaven-compiler-plugin2-3-2comp
+		$ mvn clean install -X
+		$ mvn dependency:resolve-plugins
+
+		==========
+		07-10-2021 09:18-18:13
+		==========
+		maven-antrun-plugin:1.3:run: org/apache/tools/ant/BuildException
+		Importando biblioteca: plexus-utils-1.1.jar
+		
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/plexus-utils-1.1.jar \
+			-DgroupId=org.codehaus.plexus \
+			-DartifactId=plexus-utils -Dversion=1.1 -Dpackaging=jar
+
+		java.lang.NoClassDefFoundError: org/apache/tools/ant/BuildException
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/ant-1.8.1.jar \
+			-DgroupId=org.apache.ant \
+			-DartifactId=ant -Dversion=1.8.1 -Dpackaging=jar
+	
+		[WARNING] Error injecting: org.apache.maven.plugin.antrun.AntRunMojo
+
+		==========
+		06-10-2021 10:53-18:23
+		==========
+		Compras resolución:
+		Error: 
+		Caused by: java.lang.ClassNotFoundException: org.apache.tools.ant.BuildException
+
+		==========
+		05-10-2021 09:04-19:20, 21:55-23:56
+		==========
+		[Ejecución de script de migración con sistema actual]
+		* Poner la IP correcta para levantar virgos gd
+		* Generar documento de prueba
+		* Ejecutar script de migración:
+				$ JAVA_HOME=/opt/java-jdk/jdk1.8.0_161
+				$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 05/10/2021 05/10/2021
+		* Ingresar las horas trabajadas
+		* Modificar pks para seleccionar 5 registros y no considerar los migrados.
+			cp --parents DB_GENERAL/TABLES/DML/DML_12082021_cjperez.pks
+			/home/cjperez/Documents/proyectos/05-gestionDocumental/code/respaldo/objetos-db
+		* Commit de cambios para realizar prueba de migración
+		* Subir todo el proyecto inluido fuentes, dist, lis, etc. 
+			[/home/cjperez/Repositories/scriptJava/gestionDocumental/MoveFilesNewNfs]
+		* Agregar los pks (GRANT y REVOKE):
+			DB_GENERAL/TABLES/DML/DML_05102021_cjperez.pks
+			DB_GENERAL/TABLES/DML/DML_ROLLBACK_05102021_cjperez.pks
+		* Modificar el MR indicando el orden correcto de los archivos PKS.
+
+
+		==========
+		04-10-2021 09:35-21:08
+		==========
+		Resolución de error:
+		[ERROR] Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of
+		its dependencies could not be resolved: Failed to read artifact descriptor
+		for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3: Could not
+		transfer artifact org.apache.maven.plugins:maven-antrun-plugin:pom:1.3
+		from/to ext-release-local
+		(https://sites.telconet.ec/artifactory/ext-release-local):
+		java.lang.RuntimeException: Could not generate DH keypair: Prime size must
+		be multiple of 64, and can only range from 512 to 1024 (inclusive) ->
+
+		En [https://sites.telconet.ec/artifactory/ext-release-local/] no se
+		encuentra el plugin.
+
+		$ mvn -Dmaven.repo.local=~/.m2/repository clean pack install
+
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin/1.3
+		https://mkyong.com/maven/how-to-include-library-manully-into-maven-local-repository/
+		$ mvn install:install-file 
+			-Dfile=c:\kaptcha-{version}.jar
+			-DgroupId=com.google.code 
+			-DartifactId=kaptcha -Dversion={version} -Dpackaging=jar
+
+		> mvn install:install-file \
+			-Dfile=/home/cjperez/Descargas/maven-antrun-plugin-1.3.jar \
+			-DgroupId=org.apache.maven.plugins \
+			-DartifactId=maven-antrun-plugin -Dversion=1.3 -Dpackaging=jar
+
+		Error: 
+		Caused by: java.lang.ClassNotFoundException: org.apache.tools.ant.BuildException
+
+		14:00 - 15:00 Reunión con Keneth y Néstor
+		
+		****
+		
+		[Probar estrategia de reverso de migración]:
+		* Reseteo a Master
+			$ git reset --hard origin/master
+			$ git checkout master
+		* Comentar "delete file" en Script
+		* Crear casos de prueba en Excel
+		*	Seleccionar registros para borrar registros
+				Ejecutar el script
+					$ JAVA_HOME=/opt/java-jdk/jdk1.8.0_161
+					$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 29/08/2021 01/09/2021
+				Verificar si no se han borrado los archivos
+				Verificar si se actualizaron los registros
+
+		==========
+		01-10-2021 09:00-18:00
+		==========
+		Reset a master de objetos-db
+		+ Instalar jar de forma manual:
+			https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
+
+			$ mvn install:install-file -Dfile=<path-to-file> -DpomFile=<path-to-pomfile>
+			
+			$ mvn install:install-file 
+				-Dfile=/home/cjperez/Descargas/maven-antrun-plugin-1.3.jar 
+				-DpomFile=/home/cjperez/Repositories/compras/ec.telconet.compras.db.oracle/pom.xml
+
+		Cambiar ruta de virgos de pom.xml, de:
+		tofile="${user.home}/Repositories/virgos/compras/rel/${project. artifactId}-${project.version}.jar" />
+		a 
+		/home/cjperez/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080/repository/rel
+
+		17:00 reunión de pases
+
+
+		==========
+		30-09-2021 09:36-18:20
+		==========
+		Levantar el ambiente de compras
+		Usar la variable de entorno ${user.home} para la generación de artefactos
+		en pom.xml y reemplazar por la ruta estática "/home/jnuques"
+		Crear una instancia de virgo para compras
+		Crear workspace_compras
+
+		==========
+		29-09-2021 09:20-18:20
+		==========
+		Casos de prueba para script de migración
+		Usar campo descripción para colocar "migrado"
+		$ JAVA_HOME=/opt/java-jdk/jdk1.8.0_161
+		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 29/08/2021 01/09/2021
+		Generación de casos de prueba
+		Ejecución de script con y sin SQL-Developer activo
+
+		==========
+		28-09-2021 08:55-19:50
+		==========
+		Clonar repositorio:
+		Levantar entorno compras
+		Probar funcionalidad
+		Hacer fixing
+
+		==========
+		27-09-2021 09:25-18:11 
+		==========
+		Revisar sistema de pedidos
+		Crear rama basada en jnuques
+		Ejecución de script con Java 8 sin dependencias con Alexis
+
+		==========
+		24-09-2021 09:45-18:08 
+		==========
+		Corrección del mes al consumir el µServicio para guardar en NFS
+		Prueba de script de migración con otras bases de datos
+		$ git checkout -- ec.telconet.gestiondocumental.web/src/main/java/ec/telconet/gd/web/util/RestUtil.java
+		Rollback y commit con PKs originales. Al cambiar de bases, se movieron
+		los parámetros.
+		
+		==========
+		23-09-2021 09:20-18:40 
+		==========
+		.../src/main/resources/gestion/upload.xhtml
+		.../src/main/resources/gestion/view.xhtml 
+		.../src/main/resources/recepcion/send.xhtml
+		.../src/main/resources/recepcion/upload.xhtml
+		Refactoring script java para migración (origen digital)
+		Modificación de DML_11082021_cjperez.pks por pase de sonar
+		
+		==========
+		22-09-2021 09:55-17:50 
+		==========
+		Refactoring script java para migración (origen digital)
+		* Revisar query de migración
+		* Ajustar la ruta de migración del archivo en el servidor NFS
+		Cambiar estado a Migrado
+
+		==========
+		21-09-2021 09:20-17:50 
+		==========
+		Refactoring de DocumentoBean.java
+		Refactoring de RechazoBean.java
+		Identificar 7.1 y 7.2 en script de migración Java
+		Refactoring script java para migración
+		
+		==========
+		20-09-2021 09:20-18:00 
+		==========
+		Finalizar método RestUtil::guardarArchivoNfs
+		Leer application.properties para configuración de correo
+		Refactoring de AsignacionBean.java
+		
+		==========
+		17-09-2021 11:00-00:00
+		==========
+		Múltiples INSERT en ORACLE
+		https://stackoverflow.com/questions/228221/how-can-i-insert-multiple-rows-into-oracle-with-a-sequence-value
+		https://livesql.oracle.com/apex/livesql/file/content_BM1LJQ87M5CNIOKPOWPV6ZGR3.html
+
+		Crear método RestUtil::guardarArchivoNfs
+		
+		==========
+		16-09-2021 10:00-18:00
+		==========
+		Parametrización de configuración de servidor de correo desde proyecto "web".
+		Mover application.properties al proyecto web
+		
+		Agregar programa:
+		ec.telconet.gestiondocumental.web/src/main/java/ec/telconet/gd/web/util/RestUtil.java
+
+		Modificar PKS:
+		
+		==========
+		15-09-2021 09:40-18:00
+		==========
+		Buscar appProperties bean para invocar a las propiedades
+		Buscar getProperty bean para invocar a las propiedades
+		Buscar "mail.host"
+
+		// TODO
+		// System.out.println("\n>>> Environment: " +
+		PlatformContext.getEnvironment());
+		// System.out.println("\n>>> Propiedades: ");
+		// /*
+		//  * String lista = "mail.transport.protocol," + "mail.host," + "mail.debug";
+		//  */
+		// String lista = "platform.mail.protocol," + "platform.mail.host," + "platform.mail.debug";
+		// for (String prop : lista.split(","))
+		//     System.out.println(prop + ": " + PlatformContext.getProperty(prop));
+
+		Modificar para leer el host del correo en:
+		ec.telconet.gestiondocumental.hibernate.process/src/main/java/ec/telconet/gd/hibernate/gestion/process/GestionPImpl.java
+		ec.telconet.gestiondocumental.hibernate.process/src/main/java/ec/telconet/gd/hibernate/indexacion/process/IndexacionPImpl.java
+
+		==========
+		14-09-2021 09:40-21:50
+		==========
+		Creación de scripts:
+		DB_GENERAL/TABLES/DML/DML_14092021_cjperez.pks
+		DB_GENERAL/TABLES/DML/DML_ROLLBACK_14092021_cjperez.pks
+
+		Buscar appProperties bean para invocar a las propiedades
+
+		Subir archivo dentro de una carpeta
+		documento.save.success
+
+		TODO: ack "saveDocumento\("
+		Ver si se carga desde Hibernate
+
+		==========
+		13-09-2021 09:48-02:00
+		==========
+		Revisión de error:
+		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:149)
+
+		El properties debe estar en un archivo jar
+		
+		public PlatformPlaceholder() {
+			this.environment = System.getProperty("platform.environment", "development");
+			setLocation((Resource)new ClassPathResource("platform/" + this.environment + ".properties"));
+		}
+
+		Análisis de [IndexacionPImpl.java]
+		Atención en gestiondocumental.core por MasterParameters.java
+		appProperties
+
+		Solución al punto 5 en base a: documento.delete.undo
+		
 		==========
 		10-09-2021 09:31-18:04
 		==========
@@ -162,7 +629,7 @@ Notas
 		09-09-2021 09:05-18:00
 		==========
 		Prueba de Recepción / Asignados -> compartir documentos
-		TODO: Revisión de error:
+		Revisión de error:
 		ec.telconet.gd.web.master.filter.FileUploadFilter.doFilter(FileUploadFilter.java:149
 
 		Cambiar servidor de correos: 
@@ -173,9 +640,9 @@ Notas
 		
 		Ingeniería inversa de jar: [ec.telconet.platform.context-1.1.6.SNAPSHOT.jar]
 		this.properties = new Properties();
-		this.properties.setProperty("mail.transport.protocol", System.getProperty("platform.mail.protocol", "smtp"));
-		this.properties.setProperty("mail.host", System.getProperty("platform.mail.host", "sissmtp-int.telconet.net"));
-		this.properties.setProperty("mail.debug", System.getProperty("platform.mail.debug", "false"));
+		this.properties.setProperty("mail.transport.protocol" , System.getProperty("platform.mail.protocol" , "smtp"));
+		this.properties.setProperty("mail.host"               , System.getProperty("platform.mail.host"     , "sissmtp-int.telconet.net"));
+		this.properties.setProperty("mail.debug"              , System.getProperty("platform.mail.debug"    , "false"));
 
 		https://docs.oracle.com/javase/tutorial/essential/environment/properties.html
 
@@ -465,7 +932,7 @@ Notas
 
 		$ sudo mkdir -p /gd/store
 		$ sudo mkdir -p /gd/uploads
-		$ sudo chown -R 777 /gd
+		$ sudo chmod -R 777 /gd
 		
 		==========
 		20-08-2021 9:35 - 18:18
@@ -520,7 +987,7 @@ Notas
 		MR Relacionados
 		- [Gestión Documental](https://gitlab.telconet.ec/backoffice/gestiondocumental/-/merge_requests/56)
 		- [Objetos-DB](https://gitlab.telconet.ec/oracle/objetos-db/-/merge_requests/121)
-		- [Regularización](https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/321)	
+		- [Regularización](https://gitlab.telconet.ec/backoffice/scripts-regularizacion/-/merge_requests/321)
 		Versionamiento 2 del documento FOR SIS 04 INFORME DE PRUEBAS UNITARIAS.pdf
 		Versionamiento 2 del documento FOR SIS 07 GUIA DE USUARIO.pdf
 		objetos-db
@@ -635,7 +1102,7 @@ Notas
 		$ JAVA_HOME=/opt/java-jdk/jdk1.8.0_161
 		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 23/07/2021 23/07/2021
 
-		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 29/07/2021 29/07/2021
+		$ $JAVA_HOME/bin/java -jar MoveFilesNewNfs.jar 29/08/2021 29/08/2021
 
 		==========
 		13-08-2021
