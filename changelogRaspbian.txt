@@ -5,11 +5,11 @@ Raspbian
 	https://www.youtube.com/watch?v=gHUjO6MK5fg
 	$ sudo apt install arc-theme papirus-icon-theme breeze-cursor-theme
 
-	Ejecutar: lxappearance
-	Control: Arc-Dark
-	Tema de iconos: Papirus-Dark
-	Cursor del ratón: Brisa
-	Borde de la ventana: Arc-Dark
+		Ejecutar: lxappearance
+		Control: Arc-Dark
+		Tema de iconos: Papirus-Dark
+		Cursor del ratón: Brisa
+		Borde de la ventana: Arc-Dark
 
 	+ Después de instalar pi-apps y MacOS theme:
 	$ sudo apt install openfortivpn virt-viewer keepassx vim-gtk3 stopwatch silversearcher-ag imagemagick graphviz meld ack fzf
