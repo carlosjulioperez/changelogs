@@ -2,6 +2,7 @@ Raspbian
 	$ sudo apt install xiphos openfortivpn audacious virt-viewer flameshot bleachbit keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick youtube-dl graphviz meld ack fzf gtk-recordmydesktop telegram-desktop retext 
 	
 	+ Instalar keystrokes:
+
 	https://raspi4.wordpress.com/the-raspberry-pi4-as-desktop-computer/setting-up-hotkeys/
 	$ vim /home/pi/.config/openbox/lxde-pi-rc.xml
 
