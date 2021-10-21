@@ -214,6 +214,34 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
+		20-10-2021 09:28-00:00
+		==========
+		Agregar paso no especificado en el manual:
+		$ docker login registry.gitlab.telconet.ec
+		Resolver mensaje:
+			Validando el contenedor desa_compras 
+			No se encuentra levantado el contenedor  
+			Levantando el contenedor desa_compras 
+			f7df170ced719445826fc539e7625c33ccedce1952a8bd8673a95972518723bb
+			Host no encontrado, por favor agregar host de desarrollo en el
+			archivo /etc/hosts 
+			172.17.0.1      dev-compras.telconet.ec 
+		
+		+ Crear rama:
+			$ git checkout -b cjperez-5 origin/<rama>
+			$ git checkout -b cjperez-5 origin/jnuques-2
+
+		+ Maven:
+			Especificar user_settings.xml
+			https://stackoverflow.com/questions/25277866/maven-command-line-how-to-point-to-a-specific-settings-xml-for-a-single-command
+			$ mvn --settings YourOwnSettings.xml clean install
+			or
+			$ mvn -s YourOwnSettings.xml clean install
+			
+			$ mvn -s /home/cjperez/.m2/settings_virgos.xml clean install
+			$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
+
+		==========
 		19-10-2021 09:15-18:19
 		==========
 		https://stackoverflow.com/questions/13712564/how-to-find-out-what-dependencies-in-my-maven-pom-have-a-particular-dependency
@@ -227,6 +255,7 @@ Notas
 		* Seguir los pasos de:
 			https://gitlab.telconet.ec/sistemas/sqa/-/blob/master/Ambientes/1.%20Desarrollo/Compras/1.%20Levantar-compras-contenedor-local.md
 		* $ sudo apt install docker-compose
+		* $ docker login registry.gitlab.telconet.ec
 	 	* $ bash comprasbuild.sh 'INIT' '/opt/java-jdk/jdk1.7.0_80'
 	 	* $ bash comprasbuild.sh 'RUN'  '/opt/java-jdk/jdk1.7.0_80'
 

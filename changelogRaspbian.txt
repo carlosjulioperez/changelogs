@@ -1,6 +1,19 @@
 Raspbian
 	$ sudo apt install xiphos openfortivpn audacious virt-viewer flameshot bleachbit keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick youtube-dl graphviz meld ack fzf gtk-recordmydesktop telegram-desktop retext 
 	
+	+ Instalar keystrokes:
+	https://raspi4.wordpress.com/the-raspberry-pi4-as-desktop-computer/setting-up-hotkeys/
+	$ vim /home/pi/.config/openbox/lxde-pi-rc.xml
+
+	Run programs...
+	<keybind key="A-F2">
+		<action name="Execute">
+			<command>lxpanelctl run</command>
+		</action>
+	</keybind>
+
+	$ openbox --reconfigure
+
 	+ Instalar dark theme:
 	https://www.youtube.com/watch?v=gHUjO6MK5fg
 	$ sudo apt install arc-theme papirus-icon-theme breeze-cursor-theme

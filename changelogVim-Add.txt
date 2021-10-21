@@ -1,8 +1,17 @@
 Vim
+	* Moverse entre tabs:
+		https://superuser.com/questions/410982/in-vim-how-can-i-quickly-switch-between-tabs
+		g t, g T, n g t
+
 	* configuración de gvim:
 
 		$ vim .gvimrc 
 		" set guifont=Monaco:h8
+		set nu
+		colo desert
+		colo gruvbox
+		set guifont=Fantasque\ Sans\ Mono\ Bold\ 12
+
 
 	* Ir a último término de búsqueda:
 		https://stackoverflow.com/questions/15707618/vim-find-last-occurrence-of
