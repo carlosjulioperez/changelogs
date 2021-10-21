@@ -80,7 +80,6 @@ Git
 		https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
 		https://github.com/carlosjulioperez/handsoncode/tree/main/java/springBoot/oms
 
-
 	+ Actualizar password git:
 		$ git config --global credential.helper store
 		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
