@@ -92,7 +92,6 @@ Git
 
 		$ git remote remove origin
 		$ git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
-		$ git remote add origin https://@github.com/carlosjulioperez/handsoncode.git
 		$ git push --set-upstream origin master
 		o
 		$ git push --set-upstream origin main
