@@ -1,24 +1,7 @@
-PACIECEG600
-
-Essay
-
-Vamos a analizar en téminos generales el tema de la deshumanización de la sociedad, donde se determinan posibles causas de este fenómeno, tales como: la tecnología, la falta de comunicación, la crisis de valores y la ausencia de los padres.  
-
-La sociedad, a través de la historia, ha experimentado cambios económicos, políticos, sociales, educativos y tecnológicos, pero en los últimos años la humanidad ha generado una sociedad donde cada individuo cree tener su propia verdad de la realidad y donde los intereses personales y el propio bienestar son más importantes que las colectivos.  
-
-Actualmente las injusticias sociales, los gobiernos corruptos, la discriminación de género, xenofobia, intolerancia, violencia, etc. han convertido al ser humano en un ente insensible, inmune al dolor y al sufrimiento de otras personas, como lo denominó Noam Chomsky: "la destrucción de la solidaridad".  
-
-Y la deshumanización se puede observar en las escuelas y colegios, donde los niños y jóvenes tienen la incapacidad de vivir en armonía, por el contrario, demuestran actitudes negativas hacia los demás, generando como consecuencia el bullying y la violencia. Esos seres humanos no fueron criados con valores tales como el respeto de la dignidad humana individual y colectiva.  
-
-En esta crisis de valores el rol de los padres es fundamental, pero la influencia actual en sus hijos no es la misma como era antes, ya que muchas veces las largas jornadas de trabajo hacen que los padres vean a sus hijos por la noche, por ejemplo.
-
-Otro factor que provoca la falta de humanización en la sociedad es la tecnología, ya que una de sus grandes desventajas es que ha absorvido al ser humano a vivir en un mundo digital, a través de las redes sociales, juego de videos, o usar permanentemente el teléfono celular. Esto deteriora las relaciones humanas, donde el individuo se vuelve insensible y superficial.
-
-El mal uso de la tecnología aporta a la deshumanización, ya que tenemos una sociedad donde vemos a más personas chateando que conversando, donde se está perdiendo el don de la palabra donde en las reuniones físicas podemos apreciar que cada persona está con su mente y concentración en otro lugar.
-
-El nuevo reto de la sociedad actual es no olvidar al ser humano que existe en cada individuo, ya que somos seres sociales por naturaleza y necesitamos respetar a los demás para vivir en una socieda más armónica, más humanizada.
-
 Notas
+	+ Nisum:
+		PACIECEG600
+
 	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
 
 	loor: 954 760 7704/123AAA#
