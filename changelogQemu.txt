@@ -1,4 +1,29 @@
 Qemu y kvm
+	* KVm QEMU and macOs en MX 21:
+		+ Dependencias:
+			$ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system virt-manager qemu-system-gui bridge-utils 
+
+		+ Automatizado:
+			https://github.com/foxlet/macOS-Simple-KVM
+
+			$ ./jumpstart.sh --catalina
+			$ qemu-img create -f qcow2 MyDisk.qcow2 128G
+			$ vim basic.sh (agregar)
+				-drive id=SystemDisk,if=none,file=MyDisk.qcow2 \
+				-device ide-hd,bus=sata.4,drive=SystemDisk \
+
+		+ Verificación:
+			https://tutorialforlinux.com/2020/05/19/step-by-step-kvm-mx-linux-19-installation-guide/2/
+
+		+ Manual:
+			$ qemu-img create catalina.img -f qcow2 128G
+			$ kvm -m 2048 -cdrom /media/carper/5489BCB16F3CF6DC/macOSCatalina.iso -boot d catalina.img
+			$ kvm -m 4096 catalina.img
+
+	* Copiar y pegar desde host a vm:
+		https://askubuntu.com/questions/858649/how-can-i-copypaste-from-the-host-to-a-kvm-guest
+		$ sudo apt install spice-vdagent
+
 	* Creación de imagen:
 		https://askubuntu.com/questions/293294/how-to-create-images-from-iso-for-kvm
 		

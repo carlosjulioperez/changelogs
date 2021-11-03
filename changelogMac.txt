@@ -1,4 +1,38 @@
 Software en mac
+	+ macOS Catalina:
+		Command Line Tools para XCode 11
+		+ VPN:
+
+			$ sudo vim /etc/hosts
+			172.30.210.15 	sr1rhevmtnuiod.telconet.cloud1
+
+			+ openfortivpn:
+			https://github.com/adrienverge/openfortivpn
+
+			# Install 'Homebrew'
+			$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+			# Install 'openfortivpn'
+			$ brew install openfortivpn
+
+			$ sudo mkdir -p /etc/openfortivpn
+			$ sudo vim /etc/openfortivpn/my-config
+				host = vpn0.telconet.ec
+				port = 443
+				username = cjperez@telconet.ec
+				password = <secret>
+				set-dns = 0
+				pppd-use-peerdns = 0
+
+			$ sudo openfortivpn -c /etc/openfortivpn/my-config
+
+			+ Virt-viewer:
+			https://www.arthurkoziel.com/running-virt-manager-and-libvirt-on-macos/
+
+		
+	+ Combinaciones:	
+		Borrar archivos: Option + Command + Delete
+
 	+ Limpiar archivos recientes:
 		https://superuser.com/questions/30839/how-to-clear-recent-items-in-os-x
 

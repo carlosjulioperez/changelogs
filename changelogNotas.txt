@@ -1,3 +1,23 @@
+PACIECEG600
+
+Essay
+
+Vamos a analizar en téminos generales el tema de la deshumanización de la sociedad, donde se determinan posibles causas de este fenómeno, tales como: la tecnología, la falta de comunicación, la crisis de valores y la ausencia de los padres.  
+
+La sociedad, a través de la historia, ha experimentado cambios económicos, políticos, sociales, educativos y tecnológicos, pero en los últimos años la humanidad ha generado una sociedad donde cada individuo cree tener su propia verdad de la realidad y donde los intereses personales y el propio bienestar son más importantes que las colectivos.  
+
+Actualmente las injusticias sociales, los gobiernos corruptos, la discriminación de género, xenofobia, intolerancia, violencia, etc. han convertido al ser humano en un ente insensible, inmune al dolor y al sufrimiento de otras personas, como lo denominó Noam Chomsky: "la destrucción de la solidaridad".  
+
+Y la deshumanización se puede observar en las escuelas y colegios, donde los niños y jóvenes tienen la incapacidad de vivir en armonía, por el contrario, demuestran actitudes negativas hacia los demás, generando como consecuencia el bullying y la violencia. Esos seres humanos no fueron criados con valores tales como el respeto de la dignidad humana individual y colectiva.  
+
+En esta crisis de valores el rol de los padres es fundamental, pero la influencia actual en sus hijos no es la misma como era antes, ya que muchas veces las largas jornadas de trabajo hacen que los padres vean a sus hijos por la noche, por ejemplo.
+
+Otro factor que provoca la falta de humanización en la sociedad es la tecnología, ya que una de sus grandes desventajas es que ha absorvido al ser humano a vivir en un mundo digital, a través de las redes sociales, juego de videos, o usar permanentemente el teléfono celular. Esto deteriora las relaciones humanas, donde el individuo se vuelve insensible y superficial.
+
+El mal uso de la tecnología aporta a la deshumanización, ya que tenemos una sociedad donde vemos a más personas chateando que conversando, donde se está perdiendo el don de la palabra donde en las reuniones físicas podemos apreciar que cada persona está con su mente y concentración en otro lugar.
+
+El nuevo reto de la sociedad actual es no olvidar al ser humano que existe en cada individuo, ya que somos seres sociales por naturaleza y necesitamos respetar a los demás para vivir en una socieda más armónica, más humanizada.
+
 Notas
 	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
 
@@ -214,7 +234,130 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
-		20-10-2021 09:28-00:00
+		29-10-2021 09:15-17:00
+		==========
+		Instalación de token fortinet
+		Revisión de instalación de compras
+	
+		==========
+		28-10-2021 09:20-20:27
+		==========
+		Script para copiar los archivos a carpeta rel
+		$ tail -f ~/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080/serviceability/logs/log.log
+		Solución de error:
+			[2021-10-28 17:03:27.249] http-nio-18080-exec-3        <DE0002E> Installation of plan 'ec.telconet.compras' version '1.4.2' failed. org.eclipse.virgo.nano.deployer.api.core.DeploymentException: Unable to satisfy dependencies of bundle 'ec.telconet.compras.web' at version '1.3.2': Import-Bundle with symbolic name 'ec.com.ebos.all-themes' in version range '[1.0.10, oo)' could not be satisfied at org.eclipse.virgo.kernel.deployer.core.internal.ImportExpandingTransformer.expandImports(ImportExpandingTransformer.java:116) at org.eclipse.virgo.kernel.deployer.core.internal.ImportExpandingTransformer$ImportExpandingGraphVisitor.visit(ImportExpandingTransformer.java:80)
+
+		Modificación de:
+			/home/cjperez/Repositories/compras/docs/install/ec.telconet.compras.plan
+
+		Comparación de:
+			/home/cjperez/Repositories/compras/docs/install/ec.telconet.compras.plan
+			/home/cjperez/Repositories/compras_ant/docs/install/ec.telconet.compras.plan
+
+		Descomprimir repository.zip y copiar en: /home/cjperez/.m2
+
+		$ git branch -a | grep jnuques
+		remotes/origin/jnuques-1
+		remotes/origin/jnuques-2
+		
+		Crear rama en base a jnuques-2
+		+ Crear rama:
+			$ git branch -D cjperez-5
+			$ git checkout -b cjperez-5 origin/jnuques-2
+		
+		==========
+		27-10-2021 09:44-02:06
+		==========
+		Resolución de dependencias usando STS siguiendo tutorial:
+		https://gitlab.telconet.ec/sistemas/sqa/-/blob/master/Ambientes/1.%20Desarrollo/Compras/1.%20Levantar-compras-contenedor-local.md
+
+		Probar con IntelliJ
+		Instalar Eclipse 2021-09 (4.21.0)
+
+		==========
+		26-10-2021 10:00-19:06
+		==========
+		Configuración de VPN openfortivpn en macOS
+
+		Reemplazar 
+			/home/jnuques/Repositories/virgos 
+		por
+			/${user.home}/Repositories
+
+		$ cat docs/install/ec.telconet.compras.plan
+			
+		==========
+		25-10-2021 09:40-18:06
+		==========
+		+ gestiondocumental:
+		Configuración de entorno para deploy
+		Revisar ~/.m2/settings.xml (es mutuamente excluyente con otra
+		configuración de maven, por ejemplo: settings_virgos.xml
+		Imprimir "query"
+
+		+ compras:
+		tofile="/home/jnuques/Repositories/virgos/compras/rel/${project.artifactId}-${project.version}.jar" />
+		tofile="${user.home}/Repositories/virgos/compras/rel/${project.artifactId}-${project.version}.jar" />
+		
+		/home/cjperez/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080/repository/rel
+
+		Reemplazar
+
+		Reemplazar usuario de pom.xml por variable de entorno en los archivos:
+			ec.telconet.compras.db.oracle/pom.xml
+			ec.telconet.compras.web.admin/pom.xml
+			ec.telconet.compras.web.pedidos/src/main/java/ec/telconet/compras/web/pedidos/jsf/bean/PedidoBean.java
+			ec.telconet.compras.web.pedidos/pom.xml
+			ec.telconet.compras.web.compras/src/main/java/ec/telconet/compras/web/compras/jsf/bean/PdfBean.java
+			ec.telconet.compras.web.compras/src/main/java/ec/telconet/compras/web/compras/jsf/bean/SolicitudDetalleBean.java
+			ec.telconet.compras.web.compras/pom.xml
+			ec.telconet.compras.web.autorizaciones/pom.xml
+			ec.telconet.compras.web/src/main/java/ec/telconet/compras/web/utils/GuardarArchivoUtils.java
+			ec.telconet.compras.web/pom.xml
+			ec.telconet.compras.web.mantenimiento/pom.xml
+			ec.telconet.compras.hibernate.context/pom.xml
+			ec.telconet.compras.hibernate.process/pom.xml
+			ec.telconet.compras.service/pom.xml
+			ec.telconet.compras.web.security/pom.xml
+			ec.telconet.compras.web.devoluciones/pom.xml
+			ec.telconet.compras.core/pom.xml
+	
+		==========
+		22-10-2021 09:47-18:50
+		==========
+		Levantar entorno gd
+		Revisar el listado de destinatario en:
+			Configuración / Control / Nuevo / Filtro: Reenviar (Ingrese destinatario)
+		
+		ec.telconet.gestiondocumental.web.gestion/src/main/resources/gestion/config.xhtml
+			271: <p:fieldset legend="#{msg.forward}">
+
+		ec.telconet.gestiondocumental.web.gestion/src/main/java/ec/telconet/gd/web/gestion/jsf/bean/FiltroBean.java
+			333:     public List<EmpresaUsuario> completeEmpresaUsuario(String query) {
+
+		ec.telconet.gestiondocumental.web/src/main/java/ec/telconet/gd/web/master/jsf/bean/GestionDocumentalBean.java
+			120: public List<EmpresaUsuario> completeEmpresaUsuario(String query) {
+
+		ec.telconet.gestiondocumental.hibernate.process/src/main/java/ec/telconet/gd/hibernate/master/process/MasterPImpl.java
+			277:	public List<EmpresaUsuario> findEmpresaUsuarioList(String query) {
+	
+		==========
+		21-10-2021 10:28-18:50
+		==========
+		Cambiar referencia de usuario jnuques por $user
+		Determinar la ruta de instalación de Virgos
+			comprasbuild.sh
+			    -v $RUTA_COMPRAS/logs:/opt/virgo-tomcat-server-3.6.2.RELEASE-8080/serviceability \
+			/home/cjperez/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080
+
+		tofile="/home/jnuques/Repositories/virgos/compras/rel/${project.artifactId}-${project.version}.jar" />
+		tofile="${user.home}/Repositories/virgos/compras/rel/${project.artifactId}-${project.version}.jar" />
+		
+		/home/cjperez/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080
+		/home/cjperez/local/compras-virgo-tomcat-server-3.6.2.RELEASE-18080/repository/rel
+	
+		==========
+		20-10-2021 09:28-18:50
 		==========
 		Agregar paso no especificado en el manual:
 		$ docker login registry.gitlab.telconet.ec

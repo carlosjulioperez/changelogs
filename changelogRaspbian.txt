@@ -1,6 +1,23 @@
 Raspbian
 	$ sudo apt install xiphos openfortivpn audacious virt-viewer flameshot bleachbit keepassx vim-gtk3 xpad thunar stopwatch silversearcher-ag imagemagick youtube-dl graphviz meld ack fzf gtk-recordmydesktop telegram-desktop retext 
 	
+	+ Inslatar impresora:
+	https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
+
+	$ sudo apt install cups
+	$ sudo usermod -a -G lpadmin pi
+	$ sudo vim /etc/cups/cupsd.conf
+		# Only listen for connections from the local machine.
+		#Listen localhost:631
+		Port 631
+
+		Agregar:
+		Allow @local
+	$ sudo /etc/init.d/cups restart	 
+
+	Ir a:
+	https://localhost:631
+	
 	+ Instalar keystrokes:
 
 	https://raspi4.wordpress.com/the-raspberry-pi4-as-desktop-computer/setting-up-hotkeys/
