@@ -85,3 +85,5 @@ x 2021-08-13 2021-08-13 Cambiar parámetros en src/configuration/application.pro
 x 2021-08-13 2021-08-13 DML_12082021_cjperez.pks +telconet @enhance
 x 2021-08-13 2021-08-13 DML_ROLLBACK_12082021_cjperez.pks +telconet @enhance
 x 2021-08-13 2021-08-13 Probar scripts en DB_GENERAL OK +telconet @enhance
+x 2021-08-18 2021-08-18 Pasar los jars de Gestión Documental a amedina +telconet @qa
+x 2021-08-18 2021-08-18 Agregar puntos 5 y 6 en documento de Análisis FOR SIS 03 ANALISIS Y DISEÑO TECNICO.doc

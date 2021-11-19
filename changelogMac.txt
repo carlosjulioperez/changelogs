@@ -1,4 +1,8 @@
 Software en mac
+	+ Status Clock:
+		Para ver un reloj adicional con GMT-3, hora chile
+		https://apps.apple.com/us/app/status-clock/id552792489?mt=12
+
 	+ macOS Catalina:
 		Command Line Tools para XCode 11
 		+ VPN:
@@ -31,7 +35,10 @@ Software en mac
 
 		
 	+ Combinaciones:	
-		Borrar archivos: Option + Command + Delete
+		+ Borrar archivos: 
+			Option + Command + Delete
+		+ Captura de región de pantalla:
+			
 
 	+ Limpiar archivos recientes:
 		https://superuser.com/questions/30839/how-to-clear-recent-items-in-os-x

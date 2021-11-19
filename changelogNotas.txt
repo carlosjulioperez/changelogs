@@ -217,6 +217,153 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
+		19-11-2021 09:40 16:10
+		==========
+	
+		==========
+		18-11-2021 10:00 16:10
+		==========
+		Cambiar compras al servidor 204
+		Ver el MR y determinar los scripts para actualizar las estructuras
+		Pasar documentación de gestión documental a Néstor
+		Pasar documentación de gestión documental a Gonzalo Vélez
+
+		[Revisar el tema de los permisos para el usuario Mónica Haro]
+		Scripts de permisos
+		Diagramas
+		Consultas en la tabla
+	
+		==========
+		17-11-2021 07:40 16:0077
+		==========
+		Sin permisos para revisar estos enlaces:
+		https://gitlab.telconet.ec/backoffice/compras/-/merge_requests/141
+		https://gitlab.telconet.ec/backoffice/compras/-/merge_requests/141/diffs
+		Sin permisos para la BD 202
+	
+		==========
+		16-11-2021 09:50-20:02
+		==========
+		Análisis de script
+		rama master
+		Conexiones a la BD
+		[2021-11-16 18:30:07.761] WARN  region-dm-4
+		org.hibernate.cfg.SettingsFactory
+		Could not obtain connection to query metadata
+		org.apache.commons.dbcp.SQLNestedException: Cannot create
+		PoolableConnectionFactory (The Network Adapter could not establish the
+		connection)
+
+	
+		==========
+		15-11-2021 09:28-19:00
+		==========
+		+ Error:
+			Login Succeeded 
+			Generando módulos desde la ruta /home/cjperez/Repositories/compras 
+			❌ No se pudo realizar la compilación de los módulos, realice el update project maven siguiendo los pasos de la
+			   configuración y vuelva a ejecutar otra vez 
+		Actualizar proyecto con Idea
+		Análisis de script
+	
+		==========
+		12-11-2021 09:45-17:40
+		==========
+		Generar diagramas ERD
+			file:///home/cjperez/local/schemaSpy/v6/dbcompras
+			file:///home/cjperez/local/schemaSpy/v6/naf47_tnet
+		Ver documentación interna
+		Cambio de rama
+		
+		$ git branch -a | grep jnuques
+		remotes/origin/jnuques-1
+		remotes/origin/jnuques-2
+		
+		Crear rama en base a jnuques-2
+		+ Crear rama:
+			$ git branch -D cjperez-5
+			$ git checkout -b cjperez-5 origin/jnuques-2
+
+		+ Error:
+			Login Succeeded 
+			Generando módulos desde la ruta /home/cjperez/Repositories/compras 
+			❌ No se pudo realizar la compilación de los módulos, realice el update project maven siguiendo los pasos de la
+			   configuración y vuelva a ejecutar otra vez 
+
+		==========
+		11-11-2021 09:10-19:00
+		==========
+		ec.telconet.compras.hibernate.process/src/main/java/ec/telconet/compras/hibernate/security/process/SecurityPImpl.java
+		333:            sessionBean.putAttr("usuarioNaf", objUsuarioNaf);
+	
+	
+		==========
+		10-11-2021 11:10-19:00
+		==========
+	 	* $ ./comprasbuild.sh 'RUN'  '/opt/java-jdk/jdk1.7.0_80'
+		Solución de error
+		Determinar los usuarios
+
+		[2021-11-10 13:39:37.551] ERROR region-dm-12                 org.hibernate.proxy.pojo.BasicLazyInitializer                     Javassist Enhancement failed: ec.telconet.compras.hibernate.master.model.HibernateObjeto java.lang.ClassFormatError: Truncated class file
+
+		Recompilar con Java 7 todo el proyecto
+
+		[2021-11-10 14:51:48.473] ERROR http-nio-8080-exec-3
+		ec.telconet.compras.web.pedidos.jsf.bean.ComprasPedidoBean        No se cargo usuarioNaf, login no encontrado 
+
+		ec.telconet.compras.web.pedidos/src/main/java/ec/telconet/compras/web/pedidos/jsf/bean/PedidoBean.java
+		655:            logger.error("No se cargo usuarioNaf, login no encontrado");
+
+		ec.telconet.compras.hibernate.process/src/main/java/ec/telconet/compras/hibernate/security/process/SecurityPImpl.java
+		333:            sessionBean.putAttr("usuarioNaf", objUsuarioNaf);
+	
+		==========
+		09-11-2021 09:10-20:00
+		==========
+	
+		==========
+		08-11-2021 10:30-22:40
+		==========
+		Cambiar DS desde xml
+		dataSourceNAF:
+		ec.telconet.compras.db.oracle/src/main/resources/META-INF/spring/module-context.xml
+		configAdminProperties
+
+		se copia a:
+		rel/ec.telconet.compras.properties
+	
+		==========
+		05-11-2021 09:30-17:45
+		==========
+		Revisión de log
+		Error:
+			[2021-11-05 15:45:34.774] ERROR region-dm-13                 ec.telconet.compras.hibernate.aspect.process.ExceptionAspect      Execute met    hod : init org.eclipse.gemini.blueprint.service.ServiceUnavailableException: service matching filter=[(&(objectClass=javax.sql.DataSource)    (|(org.eclipse.gemini.blueprint.bean.name=dataSourceNAF)(org.springframework.osgi.bean.name=dataSourceNAF)(osgi.service.blueprint.compname    =dataSourceNAF)))] unavailable
+			  3     at org.eclipse.gemini.blueprint.service.importer.support.internal.aop.ServiceDynamicInterceptor.getTarget(ServiceDynamicInterceptor.ja    va:404)
+			
+		Revisar el tema de las credenciales
+		Revisar cada una de las conexiones Oracle
+	
+		==========
+		04-11-2021 09:35-20:08
+		==========
+		Instalación de compras
+		Borrar carpeta .m2/repository
+		[Instalación y depliegue de compras]:
+		* Seguir los pasos de:
+			https://gitlab.telconet.ec/sistemas/sqa/-/blob/master/Ambientes/1.%20Desarrollo/Compras/1.%20Levantar-compras-contenedor-local.md
+		* $ sudo apt install docker-compose
+		* $ docker login registry.gitlab.telconet.ec
+	 	* $ ./comprasbuild.sh 'INIT' '/opt/java-jdk/jdk1.7.0_80'
+	 	* $ ./comprasbuild.sh 'RUN'  '/opt/java-jdk/jdk1.7.0_80'
+
+		Conexión a Base de Datos
+		172.24.14.204
+		DesaS08.telconet.ec
+		DB_COMPRAS       IDENTIFIED BY "avXQhfn7br4hLBqVkZUj";
+		NAF47_TNET       IDENTIFIED BY "TFgxXH2OsA0DTG1OLpnf";
+
+	
+		==========
 		29-10-2021 09:15-17:00
 		==========
 		Instalación de token fortinet

@@ -4,6 +4,7 @@ Vim
 		g t, g T, n g t
 
 	* configuración de gvim:
+		$ sudo apt install fonts-fantasque-sans
 
 		$ vim .gvimrc 
 		" set guifont=Monaco:h8

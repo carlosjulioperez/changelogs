@@ -39,7 +39,7 @@ Raspbian
 		Ejecutar: lxappearance
 		Control: Arc-Dark
 		Tema de iconos: Papirus-Dark
-		Cursor del ratón: Brisa
+		Cursor del ratón: Breeze
 		Borde de la ventana: Arc-Dark
 
 	+ Después de instalar pi-apps y MacOS theme:
