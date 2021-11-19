@@ -1,4 +1,4 @@
-Notas
+as
 	+ Nisum:
 		PACIECEG600
 
@@ -219,6 +219,9 @@ Notas
 		==========
 		19-11-2021 09:40 16:10
 		==========
+		Configuración de herramientas en Macos
+		Configuración de .git-credentials
+		vim plugin
 	
 		==========
 		18-11-2021 10:00 16:10

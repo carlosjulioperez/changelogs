@@ -1,4 +1,4 @@
-aaaaa  +nisum @techtalk
+(A) Actualizar iOS +nisum @tools
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
 (D) Estrategia venta terrenos +carper @design
@@ -7,3 +7,4 @@ aaaaa  +nisum @techtalk
 (E) Renta 2019 +carper @tax
 (E) Renta 2020 +carper @tax
 Revisar camunda +telconet @research
+(A) 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt +nisum @tools
