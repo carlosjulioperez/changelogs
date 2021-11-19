@@ -1,6 +1,6 @@
 as
 	+ Nisum:
-		PACIECEG600
+	PACIECEG600
 
 	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
 
@@ -217,11 +217,12 @@ as
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
-		19-11-2021 09:40 16:10
+		19-11-2021 09:40 17:40
 		==========
 		Configuración de herramientas en Macos
 		Configuración de .git-credentials
 		vim plugin
+		Cambio de IP de BD
 	
 		==========
 		18-11-2021 10:00 16:10

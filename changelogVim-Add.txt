@@ -388,6 +388,11 @@ Vim
 			let g:loaded_sql_completion = 0
 
 	* todo.txt plugin:
+
+		git clone git://github.com/freitass/todo.txt-vim.git
+		cd todo.txt-vim
+		cp -R * ~/.vim
+
 		Sorting tasks:
 		<localleader>s Sort the file
 		<localleader>s+ Sort the file on +Projects

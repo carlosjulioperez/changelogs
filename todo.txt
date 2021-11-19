@@ -1,4 +1,4 @@
-(A) Actualizar iOS +nisum @tools
+(A) Terminar configurar VPN +nisum @tools
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
 (D) Estrategia venta terrenos +carper @design
@@ -7,4 +7,5 @@
 (E) Renta 2019 +carper @tax
 (E) Renta 2020 +carper @tax
 Revisar camunda +telconet @research
-(A) 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt +nisum @tools
+x 2021-11-19 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt pri:A +nisum @tools
+x 2021-11-19 2021-11-19 Configurar vim con plugins de desarrollo pri:A +nisum @tools
