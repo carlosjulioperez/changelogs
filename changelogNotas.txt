@@ -1,4 +1,5 @@
-as
+Notas
+
 	+ Nisum:
 	PACIECEG600
 
@@ -215,6 +216,16 @@ as
 
 		+ Validation:
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
+	
+		==========
+		22-11-2021 13:00 21:00
+		==========
+		BCI:
+		Instalación de splunk
+
+		TN:
+		Cambio de IP de BD
+		
 	
 		==========
 		19-11-2021 09:40 17:40
