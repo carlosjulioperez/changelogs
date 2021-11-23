@@ -1,10 +1,8 @@
-(B) 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) +IASD @bible
-x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
-(B) 2021-11-22 Curso de Salesforce +nisum @bci
 (A) 2021-11-22 Instalación de splunk +nisum @bci
+(B) 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) +IASD @bible
+(B) 2021-11-22 Curso de Salesforce +nisum @bci
 (B) 2021-11-22 Preparar diapositiva para semana de capacitación +IASD @expo
 (B) 2021-11-22 Revisar los microservicios +nisum @bci
-(B) Terminar configurar VPN +nisum @bci
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
 (D) Estrategia venta terrenos +carper @design
@@ -15,5 +13,7 @@ x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
 Revisar camunda +telconet @research
 x 2021-11-19 2021-11-19 Configurar vim con plugins de desarrollo pri:A +nisum @tools
 x 2021-11-19 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt pri:A +nisum @tools
+x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
 x 2021-11-22 2021-11-22 Crear trello de actividades pri:A +nisum @activity
-(A) 2021-11-22 Entrevista a programadores +businessmind @interview
+x 2021-11-23 2021-11-22 Entrevista a programadores +businessmind @interview
+x 2021-11-23 2021-11-23 Terminar configurar VPN +nisum @bci
