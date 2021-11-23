@@ -225,6 +225,13 @@ Notas
 
 		TN:
 		Cambio de IP de BD
+		Error:
+		Caused by: org.hibernate.HibernateException: Missing column: LOGIN in
+		DB_COMPRAS.INFO_PEDIDO
+		Comparación de campos de base 202 con 204 y determinar las columnas
+		faltantes
+		Buscar PKS
+
 		
 	
 		==========
