@@ -218,7 +218,7 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
-		23-11-2021 09:20 00:00
+		23-11-2021 09:20 18:13
 		==========
 		Error:
 		Caused by: org.hibernate.HibernateException: Missing column: LOGIN in DB_COMPRAS.INFO_PEDIDO
