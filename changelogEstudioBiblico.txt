@@ -6,6 +6,9 @@ Estudios bíblicos
 			https://media1.egwwritings.org/epub/es_CNS(COS).epub
 			https://media1.egwwritings.org/mobi/es_CNS(COS).mobi
 			
+			https://media1.egwwritings.org/mobi/es_EUD(LDE).mobi
+			https://media1.egwwritings.org/pdf/es_EUD(LDE).pdf
+			
 		+ La edificación del carácter:
 			https://egwwritings-a.akamaihd.net/pdf/es_ECFP(SL).pdf
 			https://media1.egwwritings.org/mobi/es_ECFP(SL).mobi

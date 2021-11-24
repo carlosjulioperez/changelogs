@@ -218,6 +218,29 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
+		24-11-2021 09:00 18:13
+		==========
+		No encontré el ALTER:
+			ALTER TABLE DB_COMPRAS.INFO_PEDIDO ADD LOGIN
+		ec.telconet.compras.hibernate.context/src/main/java/ec/telconet/compras/hibernate/pedidos/model/HibernatePedido.java
+		Crear script:
+			ALTER TABLE DB_COMPRAS.INFO_PEDIDO DROP COLUMN LOGIN;
+			ALTER TABLE DB_COMPRAS.INFO_PEDIDO DROP COLUMN LOGIN_AUX;
+
+			ALTER TABLE DB_COMPRAS.INFO_PEDIDO ADD LOGIN VARCHAR2(60) NULL;
+			ALTER TABLE DB_COMPRAS.INFO_PEDIDO ADD LOGIN_AUX VARCHAR2(60) NULL;
+
+			COMMIT;
+			/
+
+		Borrar carpeta target de cada proyecto
+		Error:
+			Login Succeeded 
+			Generando módulos desde la ruta /home/cjperez/Repositories/compras 
+			❌ No se pudo realizar la compilación de los módulos, realice el update project maven siguiendo los pasos de la configuración y vuelva a ejecutar otra vez 
+		Compilar los proyectos
+	
+		==========
 		23-11-2021 09:20 18:13
 		==========
 		Error:
