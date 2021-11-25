@@ -3,6 +3,11 @@ Notas
 	+ Nisum:
 	PACIECEG600
 
+	$ sudo ./splunk start --accept-license
+	admin / admin123
+	http://127.0.0.1:8000
+
+
 	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
 
 	loor: 954 760 7704/123AAA#
@@ -218,8 +223,27 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
-		24-11-2021 09:00 18:13
+		25-11-2021 07:30 18:13
 		==========
+		Error:
+			Login Succeeded 
+			Generando módulos desde la ruta /home/cjperez/Repositories/compras 
+			❌ No se pudo realizar la compilación de los módulos, realice el update project maven siguiendo los pasos de la configuración y vuelva a ejecutar otra vez 
+		Compilar los proyectos
+		Borrar carpeta .m2 y recompilar proyecto
+		Volver a descargar el proyecto
+	 	
+		* $ ./comprasbuild.sh 'INIT' '/opt/java-jdk/jdk1.7.0_80'
+	 	* $ ./comprasbuild.sh 'RUN'  '/opt/java-jdk/jdk1.7.0_80'
+
+		[2021-11-25 10:03:33.422] Invocation of init method failed; nested exception is org.hibernate.Hi bernateException: Missing column: CANTIDAD_LIBERADA in DB_COMPRAS.INFO_PEDIDO_DETALLE' for bundle 'ec.telconet.compras.hibernate.context_1.3.0 [16 3]'
+		Agregar CANTIDAD_RESERVADA, CANTIDAD_PRESTADA, CANTIDAD_LIBERADA
+
+		[2021-11-25 16:38:53.477] Invocation of init method failed; nested exception is org.hibernate.HibernateException: Missing table: INFO_PRESTAMO_PRODUCTOS
+
+		==========
+		24-11-2021 09:00 18:13
+		=========
 		No encontré el ALTER:
 			ALTER TABLE DB_COMPRAS.INFO_PEDIDO ADD LOGIN
 		ec.telconet.compras.hibernate.context/src/main/java/ec/telconet/compras/hibernate/pedidos/model/HibernatePedido.java

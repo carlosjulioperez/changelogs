@@ -1,4 +1,5 @@
-(A) 2021-11-22 Instalación de splunk +nisum @bci
+(A) 2021-11-25 Corregir el tema de las horas con Francisca +nisum @bci
+(A) 2021-11-25 Mandar un request a paycom para cambiar el paycode de Unbillable a Billable +nisum @bci
 (B) 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) +IASD @bible
 (B) 2021-11-22 Curso de Salesforce +nisum @bci
 (B) 2021-11-22 Preparar diapositiva para semana de capacitación +IASD @expo
@@ -17,3 +18,4 @@ x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
 x 2021-11-22 2021-11-22 Crear trello de actividades pri:A +nisum @activity
 x 2021-11-23 2021-11-22 Entrevista a programadores +businessmind @interview
 x 2021-11-23 2021-11-23 Terminar configurar VPN +nisum @bci
+x 2021-11-24 Instalación de splunk +nisum @bci
