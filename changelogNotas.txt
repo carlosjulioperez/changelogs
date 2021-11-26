@@ -223,6 +223,11 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
+		26-11-2021 10:10 18:13
+		==========
+		Crear script para tabla INFO_PRESTAMO_PRODUCTOS
+	
+		==========
 		25-11-2021 07:30 18:13
 		==========
 		Error:
