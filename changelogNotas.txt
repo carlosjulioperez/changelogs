@@ -1,4 +1,31 @@
 Notas
+	
+	+ Bci:
+
+	[01-12-2021]
+		Instalación de confluence
+
+	[29-11-2021]
+		* Corrección de las horas
+		* Activación de cuenta azure con excperq@bci.cl
+		* Coaching desde 10h30 11h40
+		* Curso splunk
+		* Preparar trello con actividades
+		* Instalación de confluence
+			% brew install datawire/blackbird/telepresence-legacy
+			sshfs-mac This formula requires macFUSE. Please run `brew install --cask macfuse` first.
+			Error, telepresence-legacy, An unsatisfied requirement failed this build.
+			Error, The `brew link` step did not complete successfully	
+			% brew unlink telepresence
+			% brew link --overwrite telepresence-legacy
+
+	+ Inocar:
+	[30-11-2021]
+		Copiar Eclipse en ..024
+
+	[29-11-2021]
+		* Instalar en ..024 (Win7 64,java 1.8) eclipse que está en ..932 (Win7 64, java 1.7)			
+		Instalar kepler en ..024
 
 	+ Nisum:
 	PACIECEG600
@@ -223,9 +250,15 @@ Notas
 		https://www.javaguides.net/2021/04/spring-boot-dto-validation-example.html
 	
 		==========
+		29-11-2021 08:01 17:49
+		==========
+	
+		==========
 		26-11-2021 10:10 18:13
 		==========
 		Crear script para tabla INFO_PRESTAMO_PRODUCTOS
+		Sistema compras levantado.
+		Fin telconet
 	
 		==========
 		25-11-2021 07:30 18:13

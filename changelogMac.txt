@@ -1,4 +1,9 @@
 Software en mac
+	+ Ingresar unicode
+		[ctrl + command + space]
+		u+007e = ~
+		u+00b5 = µ
+
 	+ Status Clock:
 		Para ver un reloj adicional con GMT-3, hora chile
 		https://apps.apple.com/us/app/status-clock/id552792489?mt=12

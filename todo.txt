@@ -1,14 +1,14 @@
-(B) 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) +IASD @bible
+x 2021-12-03 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) pri:B +IASD @bible
 (B) 2021-11-22 Curso de Salesforce +nisum @bci
-(B) 2021-11-22 Preparar diapositiva para semana de capacitación +IASD @expo
+x 2021-12-03 2021-11-22 Preparar diapositiva para semana de capacitación pri:B +IASD @expo
 (B) 2021-11-22 Revisar los microservicios +nisum @bci
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
 (D) Estrategia venta terrenos +carper @design
 (D) Revisión de PrimeFaces +telconet @research
-(E) Renta 2018 +carper @tax
-(E) Renta 2019 +carper @tax
-(E) Renta 2020 +carper @tax
+(B) Renta 2018 +carper @tax
+(B) Renta 2019 +carper @tax
+(B) Renta 2020 +carper @tax
 Revisar camunda +telconet @research
 x 2021-11-19 2021-11-19 Configurar vim con plugins de desarrollo pri:A +nisum @tools
 x 2021-11-19 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt pri:A +nisum @tools
@@ -21,3 +21,11 @@ x 2021-11-25 Enviar request para corregir el tema de las horas con Francisca +ni
 x 2021-11-25 Mandar un request a paycom para cambiar el paycode de Unbillable a Billable +nisum @bci
 x 2021-11-26 Levantar sistema de compras +telconet @compras
 x 2021-11-26 Pasar CV a Andrés Ruilova +nirsa @nw
+(A) 2021-11-29 Levantar confluence +nisum @bci
+x 2021-12-02 2021-11-29 Llenar mural con "mapa personal" antes de la retro del miércoles pri:A +nisum @bci
+x 2021-11-30 2021-11-29 Instalar Eclipse en equipo de Nury pri:A +inocar @java
+x 2021-11-30 2021-11-30 Carta de renuncia para Iván pri:A +businessmind @java
+(A) 2021-12-01 Revisar roles +nisum @bci
+(A) 2021-12-01 Tarea Inglés
+(A) 2021-12-06 Crear enlace para meet con Gissel +nisum @bci
+(A) 2021-12-06 Correo a Diego con los jefes Nisum +nisum @bci
