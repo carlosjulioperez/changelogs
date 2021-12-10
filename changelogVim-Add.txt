@@ -3,6 +3,13 @@ Vim
 		https://superuser.com/questions/410982/in-vim-how-can-i-quickly-switch-between-tabs
 		g t, g T, n g t
 
+	* Instalar Fantasque en macos:
+		https://github.com/belluzj/fantasque-sans
+		
+		#You only need to do this once for cask-fonts
+		% brew tap homebrew/cask-fonts 
+		% brew install --cask font-fantasque-sans-mono
+		
 	* configuración de gvim:
 		$ sudo apt install fonts-fantasque-sans
 
@@ -11,8 +18,10 @@ Vim
 		set nu
 		colo desert
 		colo gruvbox
-		set guifont=Fantasque\ Sans\ Mono\ Bold\ 12
-
+		En Linux:
+			set guifont=Fantasque\ Sans\ Mono\ Bold\ 12
+		En macos - macvim:
+			set guifont=Fantasque\ Sans\ Mono\ Regular:h14
 
 	* Ir a último término de búsqueda:
 		https://stackoverflow.com/questions/15707618/vim-find-last-occurrence-of

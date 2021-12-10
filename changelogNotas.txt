@@ -1,6 +1,21 @@
 Notas
 	
+	+ Pomodoro:
+Take a five minute break
+5 steps.
+The Pomodoro® Technique is organised into six incremental objectives
+
 	+ Bci:
+	[10-12-2021]
+		Revisar documentación general
+		Training plan
+
+	[09-12-2021]
+		Revisar documentación general
+		Training plan
+
+	[06-12-2021]
+		Revisión de µS
 
 	[01-12-2021]
 		Instalación de confluence
@@ -20,6 +35,21 @@ Notas
 			% brew link --overwrite telepresence-legacy
 
 	+ Inocar:
+	[10-12-2021]
+		mobaterm para acceso a servidor
+
+	[08-12-2021]
+		* Instalación de Jboss en 758489024
+		* Levantar Jboss
+			javax.management.InstanceNotFoundException: JMImplementation:service=LoaderRepos itory,name=Default at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(Unknow
+			Solución:
+			https://developer.jboss.org/thread/157979
+			Bajar versión de Java
+	
+	[06-12-2021]
+		Instalación de Jboss
+		Revisión de excepción en Jboss
+
 	[30-11-2021]
 		Copiar Eclipse en ..024
 
