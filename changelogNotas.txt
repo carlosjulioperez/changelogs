@@ -1,11 +1,85 @@
 Notas
-	
+
+	+ Pelis:
+		Mission Impossible (1996)
+		"MUNICH" (2005)
+		"BRIDGE OF SPIES" (2015)
+		"SKYFALL" (2012)
+		Spy Game
+		Red Sparrow
+		Spy Kids (2001)
+		The Man from U.N.C.L.E.
+		A most wanted man
+		Atomic Blonde (2017)
+		No Way Out (1987)
+		Enemy of the State (1998)
+		Tinker, Tailor, Soldier, Spy (2011)
+		The Bourne Identity (2002)
+		Three Days Of The Condor (1975)
+		Zero Dark Thirty (2012)
+		The Lives Of Others (2006)
+		Confessions of a Dangerous Mind
+
+		https://www.glamour.com/gallery/best-spy-movies
+		
+	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
+		
 	+ Pomodoro:
 Take a five minute break
 5 steps.
 The Pomodoro® Technique is organised into six incremental objectives
 
 	+ Bci:
+		% az login
+		% az account set --subscription "BCIRG3DSRSUB" && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
+		% kubectl config use-context bci-api-desa001
+
+		% az account set --subscription "BCIRG3CRTSUB" && az aks get-credentials --resource-group BCIRG3CRT-RG-AKSMSAPI001 --name bci-api-cert001
+		% kubectl config use-context bci-api-cert001 
+		
+		% telepresence
+		% telepresence --version
+
+		% mkdir /Users/carper/local/prog/vol-ms
+		% mv pubcerts.ts /vol-ms
+		% sudo chmod 775 -fr /vol-ms
+
+		/Users/carper/local/prog/vol-ms/pubcerts.ts
+
+		$ kubectl -n bci-api get secret tokensecret -o=jsonpath='{.data.token}' | base64 -D
+
+VAULT_TOKEN
+s.OUw8FqN1borlF05KTBw8zdgF%
+
+MS_VERSION
+pruebacj
+
+CONTEXT_PATH
+/ejemplo-path/ms-nombre-neg/feature-nombre
+/Users/carper/local/prog/ms-nombre-neg/pruebacj
+
+		SPRING_PROFILES_ACTIVE=integracion;SPRING_CLOUD_CONFIG_URI=http://config-server-service.bci-infra:8888;VAULT_SCHEME=https;VAULT_HOST=vault-server-service.bci-infra;VAULT_PORT=8200;VAULT_AUTHENTICATION=TOKEN;VAULT_TRUST_STORE_PWD=changeit;VAULT_TRUST_STORE=/Users/carper/local/prog/vol-ms/pubcerts.ts;VAULT_TOKEN=s.OUw8FqN1borlF05KTBw8zdgF%;AMBIENTE_PIPE=integracion;MS_VERSION=pruebacj;PORT=8080;TZ=Chile/Continental;CONTEXT_PATH=/Users/carper/local/prog/ms-nombre-neg/pruebacj
+
+	[22-12-2021]
+		Ejecución de ms
+
+	[21-12-2021]
+		Completar configuración
+
+	[20-12-2021]
+		Validación de acceso a segundo factor
+
+	[16-12-2021]
+		* Instalación de Mongodb docker
+		Verificar acceso a BitBucket
+		Revisión de SalesForce
+
+	[15-12-2021]
+		Documentación Buenas prácticas, Estandar REST.
+
+	[13-12-2021]
+		Documentación Buenas prácticas, Estandar REST.
+		
 	[10-12-2021]
 		Revisar documentación general
 		Training plan
@@ -35,6 +109,10 @@ The Pomodoro® Technique is organised into six incremental objectives
 			% brew link --overwrite telepresence-legacy
 
 	+ Inocar:
+	[16-12-2021]
+		* Levantar jboss en dev en 758489024 (2122.Inocar)
+		Ejecutar applicacion
+
 	[10-12-2021]
 		mobaterm para acceso a servidor
 

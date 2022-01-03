@@ -1,4 +1,37 @@
 Docker + Status:
+	* Comandos
+		+ Borrar todas las imágenes:
+			$ docker rmi $(docker images -q)
+
+		$ docker run hello-world
+
+	* Cleaning up containers:
+		+ kill all running containers:
+			$ docker kill $(docker ps -q)
+
+		+ Delete all stopped docker containers:
+			$ docker rm $(docker ps -a -q)
+
+	* MongoDb:
+		Descarga y ejecuta mongo.
+		$ docker run mongo
+		$ docker ps -a
+		
+		$ docker run mongo -d
+		$ docker ps
+		$ docker stop d5f555273090
+
+		$ docker run -p 27017:27017 -d mongo
+		$ docker ps
+		$ docker logs -f dc67ac5c3e76
+		% ./mvnw spring-boot:run
+		% mvn spring-boot:run
+
+		% docker images
+		% docker images -q --no-trunc
+
+		http://localhost:8080/
+	
 	* Docker container paths:
 		https://www.freecodecamp.org/news/where-are-docker-images-stored-docker-container-paths-explained/
 
@@ -13,6 +46,15 @@ Docker + Status:
 		Borrar los no usados:
 		$ docker system prune -a
 		$ docker volumes prune
+
+		$ docker run -d --hostname guru-rabbit --name some-rabbit -p 8080:15672 -p 5671:5671 -p 5672:5672 rabbitmq:3-management
+		$ docker ps
+		http://localhost:8080/
+
+		$ cd /Users/carper/local/prog/tmp
+
+		https://hub.docker.com/_/mysql
+		$ docker run --name guru-mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v /Users/carper/local/prog/tmp:/var/lib/mysql -p 3306:3306 -d mysql
 
 	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9

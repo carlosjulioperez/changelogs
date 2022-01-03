@@ -1,5 +1,15 @@
 Software en mac
-	+ Ingresar unicode
+	+ Conocer las versiones de java instaladas:
+		% /usr/libexec/java_home -V
+
+	+ Versión de Java:
+		% /usr/libexec/java_home
+		/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
+
+		% brew install mvn
+		% mvn spring-boot:run
+
+	+ Ingresar unicode:
 		[ctrl + command + space]
 		u+007e = ~
 		u+00b5 = µ
