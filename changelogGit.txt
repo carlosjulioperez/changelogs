@@ -55,6 +55,8 @@ Git
 		$ git merge --squash origin/cjperez-1 (rama)
 		$ git merge commit -m "Nombre tarea Zoho"
 		$ git push -f origin ramalocal:ramaRemota
+
+		% git push -f origin feature-cjperez-01
 		
 	+ Quitar carpeta:
 		https://stackoverflow.com/questions/6313126/how-to-remove-a-directory-from-git-repository

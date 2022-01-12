@@ -1,4 +1,8 @@
 Software en mac
+
+	+ CPU status:
+		% brew install --cask stats
+
 	+ Conocer las versiones de java instaladas:
 		% /usr/libexec/java_home -V
 
@@ -10,7 +14,7 @@ Software en mac
 		% mvn spring-boot:run
 
 	+ Ingresar unicode:
-		[ctrl + command + space]
+		[ctrl + command + space]:
 		u+007e = ~
 		u+00b5 = µ
 

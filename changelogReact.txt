@@ -1,0 +1,75 @@
+React
+	https://nisum.udemy.com/course/full-stack-application-with-spring-boot-and-react/learn/lecture/14018394#overview
+
+	https://github.com/facebook/create-react-app
+	https://create-react-app.dev/docs/troubleshooting/
+
+	+ Concepts:
+		root component = AppComponent
+
+	+ Browser: Inspect / Console:
+		=> Lambda expression
+
+		var list = [1,2,3,4]
+		list.forEach ( x => console.log(2*x) )
+
+	+ Babel js:
+		--- Ejemplo 1:
+		<h1 className="something" attr="10">Heading</h1>
+
+		"use strict";
+
+		/*#__PURE__*/
+		React.createElement("h1", {
+		  className: "something",
+		  attr: "10"
+		}, "Heading");
+
+		--- Ejemplo 2:
+		<ParentComponent>
+		  <ChildComponent>
+			<AnotherChildComponent>
+			</AnotherChildComponent>
+		  </ChildComponent>
+		</ParentComponent>
+
+		"use strict";
+
+		/*#__PURE__*/
+		React.createElement(ParentComponent, null, /*#__PURE__*/React.createElement(ChildComponent, null, /*#__PURE__*/React.createElement(AnotherChildComponent, null)));
+
+		--- Ejemplo 3:
+		<div>
+		  <h1>head 1</h1>
+		  <h2>head 2</h2>
+		</div>
+		"use strict";
+
+		/*#__PURE__*/
+		React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "head 1"), /*#__PURE__*/React.createElement("h2", null, "head 2"));
+
+		--- Ejemplo 4:
+		<>
+		  <h1>head 1</h1>
+		  <h2>head 2</h2>
+		</>
+		"use strict";
+
+		/*#__PURE__*/
+		React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "head 1"), /*#__PURE__*/React.createElement("h2", null, "head 2"));	
+
+	+ Quick Overview:
+		% npx create-react-app my-app
+		% cd my-app
+		% npm start
+
+		% npx create-react-app todo-app
+		% cd todo-app
+		% npm start
+
+		Compiled successfully!
+
+		You can now view todo-app in the browser.
+
+		  Local:            http://localhost:3000
+		  On Your Network:  http://192.168.100.6:3000

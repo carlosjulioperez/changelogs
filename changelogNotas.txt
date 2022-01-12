@@ -3,13 +3,11 @@ Notas
 	+ Pelis:
 		Mission Impossible (1996)
 		"MUNICH" (2005)
-		"BRIDGE OF SPIES" (2015)
 		"SKYFALL" (2012)
 		Spy Game
 		Red Sparrow
 		Spy Kids (2001)
 		The Man from U.N.C.L.E.
-		A most wanted man
 		Atomic Blonde (2017)
 		No Way Out (1987)
 		Enemy of the State (1998)
@@ -17,18 +15,12 @@ Notas
 		The Bourne Identity (2002)
 		Three Days Of The Condor (1975)
 		Zero Dark Thirty (2012)
-		The Lives Of Others (2006)
 		Confessions of a Dangerous Mind
 
 		https://www.glamour.com/gallery/best-spy-movies
 		
 	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
 		
-	+ Pomodoro:
-Take a five minute break
-5 steps.
-The Pomodoro® Technique is organised into six incremental objectives
-
 	+ Bci:
 		% az login
 		% az account set --subscription "BCIRG3DSRSUB" && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
@@ -59,6 +51,47 @@ CONTEXT_PATH
 /Users/carper/local/prog/ms-nombre-neg/pruebacj
 
 		SPRING_PROFILES_ACTIVE=integracion;SPRING_CLOUD_CONFIG_URI=http://config-server-service.bci-infra:8888;VAULT_SCHEME=https;VAULT_HOST=vault-server-service.bci-infra;VAULT_PORT=8200;VAULT_AUTHENTICATION=TOKEN;VAULT_TRUST_STORE_PWD=changeit;VAULT_TRUST_STORE=/Users/carper/local/prog/vol-ms/pubcerts.ts;VAULT_TOKEN=s.OUw8FqN1borlF05KTBw8zdgF%;AMBIENTE_PIPE=integracion;MS_VERSION=pruebacj;PORT=8080;TZ=Chile/Continental;CONTEXT_PATH=/Users/carper/local/prog/ms-nombre-neg/pruebacj
+
+	Crear proyecto SB con:
+	
+	TdsApplication
+	cl.bci.ms3ds.TdsApplication
+	/Users/carper/local/prog/ms-3ds-neg
+
+	[12-01-2022]
+		Crear el request desde el controlador (clase)
+		Usamos Repository en vez de Client
+		En vez de hacer el scanner se hace el insert
+		El DTO es la estructura de la Data que va al request
+		ContenidoFeedResponse () devolver... 200, 400, 500
+		Usar Coordinador como ejemplo
+
+		1. Crear el contenidofeedapp
+		2. Cambiar el request String data por el DTO
+		3. Devuelva el estado (200) success en true
+
+	[06-01-2022]
+		Generación de token para configuración de ms en:
+		/Users/carper/local/prog/work/archivosConfIntelliJ/env-ic.list
+			VAULT_TOKEN=s.7NHdbDFUbtpvNaDq4pSPkizU
+			SPRING_PROFILES_ACTIVE=integracion
+			AMBIENTE_PIPE=integracion
+
+		% kubectl -n bci-api get secret tokensecret -o=jsonpath='{.data.token}' | base64 -D
+		s.7NHdbDFUbtpvNaDq4pSPkizU%   
+
+	[05-01-2022]
+		* Configuración de sourcetree para ejecutar ms
+			https://bitbucket.org/bancocreditoeinversiones/ms-contenidofeedapp-neg/src/b6bd5871ea47e23f93af7268080aef1e45e83599/?at=feature-cjperez-01
+		* Udemy java full stack
+
+	[04-01-2022]
+		* Udemy docker+java
+
+	[03-01-2022]
+		* Determinar el curso admin de salesforce
+		* Terminar ejecución de ms confluence (no encuentra clase main)
+		* DockerFile para ejecutar jar en docker centos 
 
 	[22-12-2021]
 		Ejecución de ms

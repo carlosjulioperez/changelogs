@@ -1,18 +1,17 @@
-(A) 2021-11-29 Levantar confluence +nisum @bci
+(A) 2022-01-03 Crear un proyecto con sb 1.8 y ejecutar el run conf +nisum @bci
 (A) 2021-12-01 Revisar roles +nisum @bci
-x 2021-12-16 2021-12-08 Pedidos Amazon pri:A +carper @compras
-x 2021-12-16 2021-12-09 Tarea Inglés pri:A
+(A) 2021-12-14 Revisar Hbase y Dataleak +nisum @bci
+(A) 2021-12-14 Revisar ms Héctor +nisum @bci
+(A) 2021-12-14 Revisar ms Juan Carlos +nisum @bci
 (B) Crear proceso Integration Lead +nisum @bci
 (B) Curso de Salesforce +nisum @bci
 (B) Renta 2018 +carper @tax
 (B) Renta 2019 +carper @tax
 (B) Renta 2020 +carper @tax
+(B) Renta 2021 +carper @tax
 (B) Revisar los microservicios +nisum @bci
 (C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
 (C) Pescarolo reportes +pescarolo @design
-(D) Estrategia venta terrenos +carper @design
-(D) Revisión de PrimeFaces +telconet @research
-Revisar camunda +telconet @research
 x 2021-11-19 2021-11-19 Configurar vim con plugins de desarrollo pri:A +nisum @tools
 x 2021-11-19 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt pri:A +nisum @tools
 x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
@@ -31,11 +30,10 @@ x 2021-12-02 2021-11-29 Llenar mural con "mapa personal" antes de la retro del m
 x 2021-12-03 2021-11-22 Bajar recursos eventos finales (escatología, lluvia tardía) pri:B +IASD @bible
 x 2021-12-03 2021-11-22 Preparar diapositiva para semana de capacitación pri:B +IASD @expo
 x 2021-12-06 2021-12-06 Correo a Diego con los jefes Nisum +nisum @bci
-(A) 2021-12-14 Revisar ms Juan Carlos +nisum @bci
-(A) 2021-12-14 Revisar ms Héctor +nisum @bci
-(A) 2021-12-14 Revisar Hbase y Dataleak +nisum @bci
-(A) 2021-12-16 Pagar IESS +carper @IESS
+x 2021-12-16 2021-12-08 Pedidos Amazon pri:A +carper @compras
+x 2021-12-16 2021-12-09 Tarea Inglés pri:A
 x 2021-12-22 2021-12-16 Cambio de contraseña de excperq pri:A +nisum @bci
-(A) 2021-12-17 Certificado bancario pacífico +carper @docs
 x 2021-12-22 2021-12-22 Documentos personales para DFSK 580 Robin pri:A +carper @docs
 x 2021-12-23 2021-12-23 Imprimir mecanizado de aportaciones pri:A +carper @IESS
+x 2021-12-30 2021-12-16 Pagar IESS +carper @IESS
+x 2022-01-03 2021-12-17 Certificado bancario pacífico pri:A +carper @docs

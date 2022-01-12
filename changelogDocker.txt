@@ -12,6 +12,12 @@ Docker + Status:
 		+ Delete all stopped docker containers:
 			$ docker rm $(docker ps -a -q)
 
+
+	* Delete all local Docker images:
+		https://stackoverflow.com/questions/44785585/docker-how-to-delete-all-local-docker-images
+		$ docker rm -vf $(docker ps -aq)
+		$ docker rmi -f $(docker images -aq)
+		
 	* MongoDb:
 		Descarga y ejecuta mongo.
 		$ docker run mongo
@@ -55,6 +61,50 @@ Docker + Status:
 
 		https://hub.docker.com/_/mysql
 		$ docker run --name guru-mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -v /Users/carper/local/prog/tmp:/var/lib/mysql -p 3306:3306 -d mysql
+
+		$ docker run -d centos
+		
+		$ docker run -d centos tail -f /dev/null
+		$ docker ps
+			CONTAINER ID   IMAGE     COMMAND               CREATED          STATUS         PORTS     NAMES
+			15f79f1d9fa9   centos    "tail -f /dev/null"   10 seconds ago   Up 9 seconds             tender_kalam	
+		
+		$ docker exec -it tender_kalam bash
+		Dentro de la imagen, podemos instalar java
+		[root@15f79f1d9fa9 /]# yum install java
+
+		Ejecutar jar en docker centos
+		$ cd /Users/carper/Documents/nisum/docker4Java/Archive
+		$ docker build -t spring-boot-docker .
+		$ docker run -d -p 8080:8080 spring-boot-docker
+
+		http://0.0.0.0:8080/
+		admin/admin
+
+	+ comandos:
+		$ mvn docker:start
+		$ mvn docker:stop
+		$ mvn docker:push
+		$ mvn docker:run
+		$ docker logs -f <container name>
+		
+		+ Create a network host name reference for a docker container to
+		another container:
+		--link 
+		--link <container name>:<hostname>
+
+		+ remove a stoped docker container:
+		$ docker rm <container name>
+
+		+ remove docker image from system:
+		$ docker rmi <image name>
+		
+		+ shell into a running docker container:
+		$ docker exec -it <container name> bash
+
+		$ docker-compose up 
+		$ docker-compose up -d 
+
 
 	* Debian:
 		https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9
