@@ -58,6 +58,9 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
+	[13-01-2022]
+		Ajustes realizados en Ms
+
 	[12-01-2022]
 		Crear el request desde el controlador (clase)
 		Usamos Repository en vez de Client
