@@ -73,3 +73,6 @@ React
 
 		  Local:            http://localhost:3000
 		  On Your Network:  http://192.168.100.6:3000
+
+	+ Routers:
+		% npm add react-router-dom

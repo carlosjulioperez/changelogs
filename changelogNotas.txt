@@ -20,8 +20,9 @@ Notas
 		https://www.glamour.com/gallery/best-spy-movies
 		
 	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
-		
+
 	+ Bci:
+		
 		% az login
 		% az account set --subscription "BCIRG3DSRSUB" && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
 		% kubectl config use-context bci-api-desa001
@@ -58,7 +59,50 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
+	[24-01-2022]
+		Determinar el error 403 en prueba de cobertura
+		Correo para cambio de passwowd
+
+	[19-01-2022]
+		
+		tabla: db_hba_analytics:feed_gatillos_mktcloud_desa
+
+		Agregar en:
+		https://bitbucket.org/bancocreditoeinversiones/configuration-files-desarrollo-az/src/master/ms-contenidofeedapp-neg-feature-cjperez-01-integracion.yml
+			
+		nombreTablas:
+    		-- datosCliente: 'db_hba_analytics:info_pyme_crm_analitico_dev'
+			++ contenidoFeed: 'db_hba_analytics:feed_gatillos_mktcloud_desa'
+
+		Creación de HClient
+		* Pruebas de aceptación
+		* Instalación de JMeter
+		Pruebas de pipeline
+		Pruebas con JMeter
+
+	
+	[18-01-2022]
+		Creando componentes basados en :
+		https://bitbucket.org/bancocreditoeinversiones/ms-coordinadorjourneyscliente-neg/src/develop/app/src/test/groovy/cl/bci/coordinadorjourneyscliente/
+
+	[17-01-2022]
+		Crear proyecto Spock:
+		https://www.baeldung.com/groovy-spock
+		https://github.com/eugenp/tutorials/tree/master/testing-modules/groovy-spock
+
+		Revisar:
+		https://bitbucket.org/bancocreditoeinversiones/ms-coordinadorjourneyscliente-neg/src/develop/app/src/test/groovy/cl/bci/coordinadorjourneyscliente/
+
+		Aprendizaje Spock
+		https://www.baeldung.com/groovy-spock
+
+	[14-01-2022]
+		Revisar test en base a:
+			https://bitbucket.org/bancocreditoeinversiones/ms-coordinadorjourneyscliente-neg/src/develop/app/src/test/groovy/cl/bci/coordinadorjourneyscliente/controller/CoordinadorControllerSpec.groovy
+
 	[13-01-2022]
+		* Terminar ajustes de código
+		Agregar test
 
 	[12-01-2022]
 		Crear el request desde el controlador (clase)

@@ -1,5 +1,12 @@
 Software en mac
 
+	+ Traductor:
+		% brew install translate-shell
+		% trans :es 'this is my word'
+
+	+ Control de volumen:
+		https://github.com/kyleneideck/BackgroundMusic
+
 	+ CPU status:
 		% brew install --cask stats
 
