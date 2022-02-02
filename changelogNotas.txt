@@ -21,6 +21,12 @@ Notas
 		
 	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
 
+	+ N:
+	
+	[02-02-2022]
+		* Comparar String Role con proyecto anterior
+		Determinar usuarios cuyo token JWT no caduque (usuario.expirar_sesion)	
+
 	+ Bci:
 		
 		% az login
@@ -59,6 +65,9 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
+	[02-02-2022]
+		Training plan (la semana pasada fueron pruebas de contenidoFeedApp)
+	
 	[24-01-2022]
 		Determinar el error 403 en prueba de cobertura
 		Correo para cambio de passwowd
@@ -80,7 +89,6 @@ CONTEXT_PATH
 		Pruebas de pipeline
 		Pruebas con JMeter
 
-	
 	[18-01-2022]
 		Creando componentes basados en :
 		https://bitbucket.org/bancocreditoeinversiones/ms-coordinadorjourneyscliente-neg/src/develop/app/src/test/groovy/cl/bci/coordinadorjourneyscliente/

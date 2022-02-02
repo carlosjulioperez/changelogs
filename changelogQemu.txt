@@ -20,6 +20,50 @@ Qemu y kvm
 			$ kvm -m 2048 -cdrom /media/carper/5489BCB16F3CF6DC/macOSCatalina.iso -boot d catalina.img
 			$ kvm -m 4096 catalina.img
 
+	* Qemu on macos:
+
+		https://www.arthurkoziel.com/qemu-ubuntu-20-04/
+		% qemu-img create -f qcow2 mx21.qcow2 20G
+
+		% qemu-system-x86_64 -version
+			QEMU emulator version 6.2.0
+			Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
+		
+		% qemu-system-x86_64 -accel help
+		Accelerators supported in QEMU binary:
+		tcg
+		hax
+		hvf
+		
+		+ Error:
+			qemu 6.2.0 on macos error qemu-system-x86_64: accel=hvf: Could not open 'accel=hvf': No such file or directory
+
+		% qemu-system-x86_64 \
+			-machine type=q35 \
+			-accel hvf -cpu host \
+			-smp 2 \
+			-hda mx21.qcow2 \
+			-cdrom ./MX-21_x64.iso \
+			-m 4G \
+			-usb \
+			-device usb-tablet \
+			-display default
+
+		% qemu-system-x86_64 \
+			-machine type=q35 \
+			-accel hvf \
+			-smp 2 \
+			-hda mx21.qcow2 \
+			-cdrom ./MX-21_x64.iso \
+			-m 4G \
+			-vga virtio \
+			-usb \
+			-device usb-tablet \
+			-display default
+
+		https://stackoverflow.com/questions/53778106/how-to-enable-kvm-on-a-mac-for-qemu
+		% qemu-system-x86_64 -m 2G -hda ubuntu.20.qcow2 -accel hvf
+
 	* Copiar y pegar desde host a vm:
 		https://askubuntu.com/questions/858649/how-can-i-copypaste-from-the-host-to-a-kvm-guest
 		$ sudo apt install spice-vdagent

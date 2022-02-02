@@ -826,9 +826,16 @@ TIPS
 				find . -type f -exec sed -i 's,SqlUtil.instance.getPromedio,SqlUtil.instance.getValorCampo,g' {} +
 				
 			+ En Mac:
+				
+				https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line
+				Mac or Linur
+				$ find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/foo/bar/g'
+				$ find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's,bezkoder.spring.security.postgresql,nirsa.security,g'
+
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
 				
 				$ find . -type f -name '*.txt' -exec sed -i '' s/this/that/ {} +
+				$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
 				$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
 
 	* Búsqueda de patrón substring en archivos:

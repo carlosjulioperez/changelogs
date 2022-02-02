@@ -1,5 +1,23 @@
 Software en mac
 
+	+ pomodoro cli:
+
+		Para dar soporte a bash/pomo.sh
+		% brew install zenity && zenity --info --text 'You did it!'
+
+		https://github.com/0kron/pomodoro-cli
+		clone it:
+		% python3 main.py
+
+		https://github.com/patsuckow/pomodorotimer
+		https://pypi.org/project/pomodorotimer/#description
+		% pip3 install pomodorotimer --user
+		% pomodoro
+
+	+ Fuentes:
+		% brew tap homebrew/cask-fonts
+		% brew install --cask font-source-code-pro
+
 	+ Traductor:
 		% brew install translate-shell
 		% trans :es 'this is my word'

@@ -87,8 +87,6 @@ Git
 		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
 		$ git config --global user.email "carlosjulioperez@gmail.com"
 		
-		$ git config --global user.email "cjperez@telconet.ec"
-
 	+ Actualizar con token:
 		https://medium.com/geekculture/how-to-change-your-github-remote-authentication-from-username-password-to-personal-access-token-64e527a766cf
 
