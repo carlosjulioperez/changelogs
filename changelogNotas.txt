@@ -65,6 +65,10 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
+	[09-02-2022]
+		Crear documentación de contenidofeed:
+			https://bcibank.atlassian.net/wiki/spaces/SM/pages/3194389392/ms-contenidofeedapp-neg
+	
 	[02-02-2022]
 		Training plan (la semana pasada fueron pruebas de contenidoFeedApp)
 	

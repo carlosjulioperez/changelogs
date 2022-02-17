@@ -1,4 +1,7 @@
 Software en mac
+	
+	+ Graphviz:
+		% brew install graphviz
 
 	+ pomodoro cli:
 
