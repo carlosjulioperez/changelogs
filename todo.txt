@@ -1,17 +1,16 @@
-(A) 2022-01-03 Crear un proyecto con sb 1.8 y ejecutar el run conf +nisum @bci
-(A) 2021-12-01 Revisar roles +nisum @bci
-(A) 2021-12-14 Revisar Hbase y Dataleak +nisum @bci
-(A) 2021-12-14 Revisar ms Héctor +nisum @bci
-(A) 2021-12-14 Revisar ms Juan Carlos +nisum @bci
-(B) Crear proceso Integration Lead +nisum @bci
-(B) Curso de Salesforce +nisum @bci
-(B) Renta 2018 +carper @tax
-(B) Renta 2019 +carper @tax
-(B) Renta 2020 +carper @tax
-(B) Renta 2021 +carper @tax
-(B) Revisar los microservicios +nisum @bci
-(C) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
-(C) Pescarolo reportes +pescarolo @design
+x 2022-03-07 Eliminar docker mac +nisum @config
+(A) Query para reporte autoclaves +nirsa @nw
+(B) Curso Redis
+(B) Curso Kafka
+(D) Crear proceso Integration Lead +nisum @bci
+(D) Curso de Salesforce +nisum @bci
+(D) Renta 2018 +carper @tax
+(D) Renta 2019 +carper @tax
+(D) Renta 2020 +carper @tax
+(D) Renta 2021 +carper @tax
+(D) Revisar los microservicios +nisum @bci
+(E) Colores UI según http://www.southpacificsurveys.com +pescarolo @enhance
+(E) Pescarolo reportes +pescarolo @design
 x 2021-11-19 2021-11-19 Configurar vim con plugins de desarrollo pri:A +nisum @tools
 x 2021-11-19 2021-11-19 Instalación de herramientas sleek, keepassx, todotxt pri:A +nisum @tools
 x 2021-11-22 2021-11-22 Crear link para semana evangelismo pri:A +IASD @expo
