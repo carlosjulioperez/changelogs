@@ -8,5 +8,19 @@ Windows 10
 		DisableAntiSpyware
 		Modify / Value data / 1
 		Ok
+	* wsl windows 10 21H2:
+		winver
+
+		https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+		wsl --install
+		wsl --list --online
+		wsl --install -d Ubuntu
+
+		https://devblogs.microsoft.com/commandline/access-linux-filesystems-in-windows-and-wsl-2/
+
+		wmic diskdrive list brief
+
+
+
 
 
