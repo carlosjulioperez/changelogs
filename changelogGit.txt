@@ -18,6 +18,7 @@ Git
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
 		$ git checkout -b cjperez-4 origin/master (gestiondocumental, objetos-db y regularización)
+		$ git checkout -b cjperez-SFCRM-5650 origin/develop
 		
 		$ git branch -a (todas)
 		$ git branch -v (locales)
