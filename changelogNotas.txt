@@ -65,6 +65,24 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
+
+	[16-03-2022]
+		+ Renombrar rama [cjperez-SFCRM-5650] a [feature-SFCRM-5650]:
+		git checkout <old_name>
+		git branch -m <new_name>
+
+		$ git branch -m feature-SFCRM-5650
+
+
+
+		Agregar en master:
+		https://bitbucket.org/bancocreditoeinversiones/configuration-files-desarrollo-az/src/master/ -integracion.yml
+			
+		nombreTablas:
+    		-- datosCliente: 'db_hba_analytics:info_pyme_crm_analitico_dev'
+			++ contenidoFeed: 'db_hba_analytics:feed_gatillos_mktcloud_desa'
+		
+
 	[09-02-2022]
 		Crear documentación de contenidofeed:
 			https://bcibank.atlassian.net/wiki/spaces/SM/pages/3194389392/ms-contenidofeedapp-neg
