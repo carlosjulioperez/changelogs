@@ -2,6 +2,10 @@ Git
 	+ Poner Continue en gitlab:
 		:recycle: Continue
 
+	+ Renombrar rama:
+		git checkout <old_name>
+		git branch -m <new_name>
+
 	+ Borrar rama:
 		$ git checkout master
 		$ git branch -D cjperez-2
