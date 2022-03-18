@@ -1,0 +1,7 @@
+DBVeaver
+	+ instalación:
+		Windows
+	+ vim plugin:
+		https://shehuawwal.com/installing-vim-extension-module-for-dbeaver-with-vrapper/
+		install new software:
+		http://vrapper.sourceforge.net/update-site/stable
