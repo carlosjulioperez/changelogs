@@ -65,14 +65,26 @@ CONTEXT_PATH
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
 
-
-	[16-03-2022]
+	--------------------------------------------------
+	git commit -m "feature-SFCRM-5650"
+	--------------------------------------------------
+	
+	[17-03-2022]
 		+ Renombrar rama [cjperez-SFCRM-5650] a [feature-SFCRM-5650]:
-		git checkout <old_name>
-		git branch -m <new_name>
+			git checkout <old_name>
+			git branch -m <new_name>
 
-		$ git branch -m feature-SFCRM-5650
+			% git branch -m feature-SFCRM-5650
 
+		+ Crear archivo de configuración:
+			% cd /Users/carper/local/prog/work/configuration-files-desarrollo-az
+			% cp ms-planvinculacionpyme-neg-develop-integracion.yml ms-planvinculacionpyme-neg-feature-sfcrm-5650-integracion.yml
+			git commit -m "Perfil contextual de cliente en V360"
+
+	[16-03-2022]:
+		Create
+
+	--------------------------------------------------
 
 
 		Agregar en master:
