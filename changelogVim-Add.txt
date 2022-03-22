@@ -1,4 +1,7 @@
 Vim
+	* Instalar fuente Monaco:
+		https://github.com/taodongl/monaco.ttf	
+
 	* Moverse entre tabs:
 		https://superuser.com/questions/410982/in-vim-how-can-i-quickly-switch-between-tabs
 		g t, g T, n g t
@@ -12,15 +15,17 @@ Vim
 		
 	* configuración de gvim:
 		$ sudo apt install fonts-fantasque-sans
-
+		
+		En Windows:
 		$ vim .gvimrc 
-		" set guifont=Monaco:h8
+		" set guifont=Monaco:h10
 		set nu
 		colo desert
 		colo gruvbox
+		
 		En Linux:
 			set guifont=Fantasque\ Sans\ Mono\ Bold\ 12
-		En macos - macvim:
+		En MacOS - macvim:
 			set guifont=Fantasque\ Sans\ Mono\ Regular:h14
 
 	* Ir a último término de búsqueda:
