@@ -18,9 +18,13 @@ Vim
 		
 		En Windows:
 		$ vim .gvimrc 
-		" set guifont=Monaco:h10
+		set guifont=Monaco:h9
 		set nu
 		colo desert
+		set fileencodings=utf-8
+		syntax enable
+		set syntax=html
+
 		colo gruvbox
 		
 		En Linux:
