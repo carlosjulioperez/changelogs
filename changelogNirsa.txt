@@ -1,0 +1,11 @@
+Nirsa
+	[12-04-2022]:
+		* Reunión Andrés.
+		* t06 Búsqueda por cédula o código evolution.
+		* Tabla empleado no tiene Unique por cédula ni código empleado
+		t07 Análisis de tiempo para desarrollo para pantalla para habilitar y deshabilitar conexión con evolution. (estimado 8h)
+	
+	[13-04-2022]:
+		t07 Pantalla para habilitar y deshabilitar conexión con evolution
+		Video (16:14):
+		* Reunión con Neptalí (5m)
