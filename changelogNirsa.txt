@@ -1,11 +1,41 @@
 Nirsa
+	[18-04-2022]:
+		* Impedimento Failed to load /produccion/EncartonadoRegistroIngresodeCoche.zul
+		* Estandarización de mensajes (Sistema.java)
+		* Analizar funcionalidad de EncartonadoRegistroIngresodeCoche.zul
+		* Ajuste de método EncartonadoRegistroIngresoCocheWindow.ValidarProduccionActiva()
+		* Solución Impedimento 1
+		* Agregar opción "Encartonado Apertura/Cierre Fecha Labor" al menú de procesos de Encartonado.
+		* Ajuste en EncartonadoAperturaCierreProcesoWindow.java para estandarizar mensajes.
+		* Ajuste de método EncartonadoAperturaCierreLaborWindow.ValidarProduccionActiva()
+		* Solución Impedimento 2
+		* Analizar funcionalidad de EncartonadoAperturaCierreLabor.zul
+		* Ajuste de valores SQL en registro de encartonado_lider_turno
+		* Solución Impedimento 3
+		* UPDATE para pruebas
+
+	[14-04-2022]:
+		* Análisis de t08 Ajustes para seleccionar el proceso activo
+		Tomar todos los cambios en los fuentes de SVN después de la sincronización
+		Los operadores podrán trabajar con sus pantallas cuando hay un proceso aperturado.
+		La idea es que todo lo que se registre se asocie con el proceso activo (aperturado).
+		EncartonadoAperturaCierreLabor.zul agregar a las opciones del usuario.
+		Borrar tabla encartonado_proceso
+		Análisis de funcionalidad de formulario "Encartonado - Ingreso de Coche en Surdry"
+		En el ingreso o mantenimiento hay que recuperar la información por fecha de labor (calendario) y turno de labor para consultar en encartonado_proceso.
+	
+		* Análisis de t09 Registrar el personal en cada línea (surdry) (16h)
+		En encartonado_proceso tomar las n últimas producciones (parámetro 1060)
+
+	[13-04-2022]:
+		* Video (16:14)
+		* t07 Pantalla para habilitar y deshabilitar conexión con evolution
+		* Reunión con Neptalí (5m)
+		* Análisis de inconsistencias para leer los parámetros
+		* Análisis de inconsistencia en auditoría de parámetros
+	
 	[12-04-2022]:
 		* Reunión Andrés.
 		* t06 Búsqueda por cédula o código evolution.
 		* Tabla empleado no tiene Unique por cédula ni código empleado
-		t07 Análisis de tiempo para desarrollo para pantalla para habilitar y deshabilitar conexión con evolution. (estimado 8h)
-	
-	[13-04-2022]:
-		t07 Pantalla para habilitar y deshabilitar conexión con evolution
-		Video (16:14):
-		* Reunión con Neptalí (5m)
+		* t07 Análisis de tiempo para desarrollo para pantalla para habilitar y deshabilitar conexión con evolution. (estimado 8h)
