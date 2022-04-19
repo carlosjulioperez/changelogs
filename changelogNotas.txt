@@ -44,11 +44,13 @@ Notas
 		% sudo chmod 775 -fr /vol-ms
 
 		/Users/carper/local/prog/vol-ms/pubcerts.ts
-
+	
+		+ VAULT_TOKEN se puede utilizar el siguiente comando que entregara el valor actualizado:
 		$ kubectl -n bci-api get secret tokensecret -o=jsonpath='{.data.token}' | base64 -D
 
 VAULT_TOKEN
 s.OUw8FqN1borlF05KTBw8zdgF%
+s.f43WZGWY0sW9h9kJyPmFjA7T%
 
 MS_VERSION
 pruebacj
@@ -69,6 +71,35 @@ CONTEXT_PATH
 	git commit -m "feature-SFCRM-5650"
 	--------------------------------------------------
 	
+	[24-03-2022]
+		+ Solución de problema:
+		[intellij idea Execution failed for task ':app:PlanvinculacionpymeApplication.main()'. > Process 'command '/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1]:
+		https://stackoverflow.com/questions/58598577/got-error-process-command-library-java-javavirtualmachines-jdk1-8-0-77-jdk
+		Agregar try ... catch
+		
+		try {
+			SpringApplication.run(PlanvinculacionpymeApplication.class, args);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		[java.lang.IllegalArgumentException: Resource URL [file:/Users/administrador/Develop/telepresence/pubcerts.ts] does not exist]
+
+
+	[23-03-2022]
+		+ Impedimento: 
+		Error: Could not find or load main class cl.bci.planvinculacionpyme.PlanvinculacionpymeApplication
+		Instalación de IntelliJ IDEA Community Edition versión 2021.1.3 - macOS (dmg)
+		Instalación de plugin EnvFile
+
+	[22-03-2022]
+		+ Instalación de plygin EnvFile:
+		https://plugins.jetbrains.com/plugin/7861-envfile
+
+	[21-03-2022]
+		+ DataLake y datos mock:
+		Implementar método HbaseRepositoryImpl.obtenerPerfilContextual()
+
 	[17-03-2022]
 		+ Renombrar rama [cjperez-SFCRM-5650] a [feature-SFCRM-5650]:
 			git checkout <old_name>
