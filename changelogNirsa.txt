@@ -1,4 +1,26 @@
 Nirsa
+		TODO:
+			Agregar lista de búsqueda por cédula o por código
+			Eliminar la relación encartonado_registro_responsabilidad_surdry con encartonado_lider_turno
+
+	[22-04-2022]:
+		Funcionalidad para agregar elementos a un a lista usando *databinding*
+
+	[21-04-2022]:
+
+		Ajustar el formulario principal EncartonadoRegistroResponsabilidadSurdry.zul
+
+	[20-04-2022]:
+		Modificar controlador EncartonadoRegistroIngresoCocheWindow.java
+
+	[19-04-2022]:
+		En proceso 1 (EncartonadoAperturaCierreProceso.zul), se apertura el proceso. 
+		En proceso 2 (EncartonadoAperturaCierreLabor.zul), se apertura el turno de labor.
+		Validación:
+		Si NO existe un proceso activo, mostrar un mensaje.
+		Si existe un proceso activo, con turno = null, se debe APERTURAR solamente.
+		Si existe un proceso activo, con turno aperturado, se debe CERRAR solamente.
+		
 	[18-04-2022]:
 		* Impedimento Failed to load /produccion/EncartonadoRegistroIngresodeCoche.zul
 		* Estandarización de mensajes (Sistema.java)
