@@ -1,4 +1,17 @@
 Notas
+	+ CVs:
+		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
+
+	+ 
+	Sábado 14 de mayo 15h00
+	LANZAMIENTO DE LA RUTA MISIONERA 2da PARADA BAUTISMOS DE PRIMAVERA
+	CLASES BÍBLICAS
+	AVENTUREROS
+	CONQUISTADORES
+	GP J.A.
+	PADRES Y MAESTRAS DE ESPERANZA (NIÑOS)
+	ADULTOS
+	El sábado se verá la transmisión desde la MES y se entregará el material para las Clases Bíblicas.
 
 	+ Pelis:
 		Mission Impossible (1996)
@@ -45,6 +58,7 @@ ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Runnin
 ms-planvinculacionpyme-neg-feature-sfcrm-5650-7fc6b64f78-hrx5h    1/1     Running            0                  11h
 
 		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-56bfdd5dd7-64cqf
+		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-6895c856cc-ssdhq
 		
 		% mkdir /Users/carper/local/prog/vol-ms
 		% mv pubcerts.ts /vol-ms
@@ -98,7 +112,6 @@ CONTEXT_PATH
 		Pegarlo en Slack
 		/supportzip td cn bci-api ms-planvinculacionpyme-neg-re-v1-0
 
-
 	Verificar que pase todo el flujo por API Management.
 	El ms funciona, hay que verificar que se despliegue bien.
 	-------
@@ -108,10 +121,40 @@ CONTEXT_PATH
 	TdsApplication
 	cl.bci.ms3ds.TdsApplication
 	/Users/carper/local/prog/ms-3ds-neg
-
+	Éxito
 	--------------------------------------------------
 	git commit -m "feature-SFCRM-5650"
 	--------------------------------------------------
+
+	[19-05-2022]
+		Revisión de consultHistory
+			: https://bcibank.atlassian.net/wiki/spaces/SM/pages/3236102181/consultHistory
+		* Estado de 5784 QA in progress
+			: https://bcibank.atlassian.net/browse/SFCRM-5784
+		* Estado de 5694 QA in progress 14-03-2022 31-03-2022
+		* Estado de 5671 QA in progress 15-02-2022 04-05-2022
+		* Soporte a Solange para ejecutar ms en desarrollo salesforce
+
+	[18-05-2022]
+		Training Kafka
+
+	[17-05-2022]
+		*Agregar SK en header de JMeter
+		*Cambiar producto de [ventas-y-servicios_ventas] a [salesforce]
+			"api": {
+			  "b2b": {
+				"published": true,
+				"product": ["salesforce"]
+			  }
+			},
+		Éxito
+	
+	[13-05-2022]
+		*Build with parameters in jenkins
+			Ver logs por conflico de URLs
+		*Probar ms en rama develop (datos-pyme y perfil-contextual)
+		Documentación de perfil contextual
+		Quitar Login de llamada de ms planvinculacion
 	
 	[12-05-2022]
 		* Consultar a NICO estado de 5694
@@ -126,9 +169,12 @@ CONTEXT_PATH
 			},
 		* Merge de rama en develop
 		* Configuración de IntelliJ IDEA para rama develop (java 11, rm .gradle, rm .idea)
-		Probar ms en rama develop (datos-pyme y perfil-contextual)
-		Documentación de perfil contextual
-		Quitar Login de llamada de ms planvinculacion
+		* Actualizar token .github cj
+		* Agregar configuración de feature a develop
+			/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-planvinculacionpyme-neg-feature-sfcrm-5650-integracion.yml
+			/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-planvinculacionpyme-neg-develop-integracion.yml
+				perfilcontextual:
+					evaluar-perfil-contextual: '${oauth.autorizacion.roles.salesForce}'
 
 	[11-05-2022]
 		* Pruebas Login en postman para perfil-conjextual

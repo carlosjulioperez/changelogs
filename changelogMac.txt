@@ -1,4 +1,7 @@
 Software en mac
+	+ Visidata:
+		https://jsvine.github.io/intro-to-visidata/the-big-picture/installation/
+		% pip3 install visidata
 	
 	+ Graphviz:
 		% brew install graphviz
