@@ -1,4 +1,10 @@
 Software en mac
+	+ Convertir m4a to mp3:
+		https://www.cisdem.com/resource/convert-m4a-to-mp3.html
+		
+		If you desire to convert multiple M4A files, copy the batch script here: 
+		https://www.rickmakes.com/batch-convert-lossless-audio-to-mp3-shell-script/.
+
 	+ Visidata:
 		https://jsvine.github.io/intro-to-visidata/the-big-picture/installation/
 		% pip3 install visidata

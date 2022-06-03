@@ -2,16 +2,11 @@ Notas
 	+ CVs:
 		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
 
-	+ 
-	Sábado 14 de mayo 15h00
-	LANZAMIENTO DE LA RUTA MISIONERA 2da PARADA BAUTISMOS DE PRIMAVERA
-	CLASES BÍBLICAS
-	AVENTUREROS
-	CONQUISTADORES
-	GP J.A.
-	PADRES Y MAESTRAS DE ESPERANZA (NIÑOS)
-	ADULTOS
-	El sábado se verá la transmisión desde la MES y se entregará el material para las Clases Bíblicas.
+	test@liferay.com
+	f.arellano@eneragro.com.ec
+	s.narvaez@eneragro.com.ec
+	c.cruz@eneragro.com.ec
+	lab@eneragro.com.ec
 
 	+ Pelis:
 		Mission Impossible (1996)
@@ -33,6 +28,9 @@ Notas
 		https://www.glamour.com/gallery/best-spy-movies
 		
 	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
+
+	+ Salesforce:
+		https://docs.google.com/spreadsheets/d/1zwVOi1s58ZuqEAOWpOS_N8l4qr-Nhhz7-F5_Q_QGkx4/edit#gid=0
 
 	+ Bci:
 		% az login
@@ -126,7 +124,63 @@ CONTEXT_PATH
 	git commit -m "feature-SFCRM-5650"
 	--------------------------------------------------
 
+	[02-06-2022]
+		Documentación confluence
+		Consulta de Juan Burgueño para el usuario de datalake
+
+	[25-05-2022]
+		* Contexto de últimos cambios a Héctor.
+		* Actualización de diapositiva.
+	
+	[24-05-2022]
+		Soporte a Enrique para pruebas
+
+	[23-05-2022]
+		* Consulta equipo end-point
+		* Actualización de:
+			/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-ecosistema-enrolamiento-neg-develop-integracion.yml
+			uri:
+			  mach: 
+			  key: 
+			  machHistory: "https://ig73q1c3c2-vpce-0140aa35104c09689.execute-api.us-east-1.amazonaws.com/prod"
+			  keyHistory: 
+		
+		* Ejecución Jenkins' pipeline:
+			http://jenkins-ic.bci.cl:8080/job/celula_mobile_k8s/job/MS/job/ms-ecosistema-enrolamiento-neg/
+		* Revisión de logs:
+			% kubectl -n bci-api get pods | grep ms-ecosistema-enrolamiento-neg-develop
+			% kubectl -n bci-api logs ms-ecosistema-enrolamiento-neg-develop-799d597bd8-rcqpw
+		* Agregar Key en la documentación para perfil-contextual:
+			https://bcibank.atlassian.net/wiki/spaces/SM/pages/3299147777/perfil-contextual
+
+	[20-05-2022]
+		* HDU:
+			https://bcibank.atlassian.net/browse/SFCRM-5671
+		* Código: 
+			https://bitbucket.org/bancocreditoeinversiones/ms-ecosistema-enrolamiento-neg
+		* Revisión de videos y notas
+		* Endpoint:
+			https://apigwdsr.bci.cl/operaciones-y-ejecucion/servicio-al-consumidor/ms-ecosistema-enrolamiento-neg/develop/history
+		* Reunión acerca de URLs para perfil contextual
+		Revisión de log
+			% kubectl -n bci-api get pods | grep ms-ecosistema-enrolamiento-neg-develop
+			% kubectl -n bci-api logs ms-ecosistema-enrolamiento-neg-develop-6587d4df6d-75rpv 
+
+			  "documentNumber":"1111111",
+			  "phoneNumber":"12312134" 
+
+		Configuración:
+			/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-ecosistema-enrolamiento-neg-develop-integracion.yml
+			/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-ecosistema-enrolamiento-neg-develop-ok-integracion.yml
+
 	[19-05-2022]
+		Revisar el log del ms-ecosistema-enrolamiento-neg P2P
+			En la base se graba el RUT sin punto y el guión
+			https://apigwdsr.bci.cl/operaciones-y-ejecucion/servicio-al-consumidor/ms-ecosistema-enrolamiento-neg/develop/history
+			https://apigwdsr.bci.cl/operaciones/seguridad-y-acceso/ms-autenticacion-personasmobile-exp/develop/login
+
+			https://ig73q1c3c2-vpce-0140aa35104c09689.execute-api.us-east-1.amazonaws.com/prod/p2p/contacts/history?phoneNumber=56912312134		
+
 		Revisión de consultHistory
 			: https://bcibank.atlassian.net/wiki/spaces/SM/pages/3236102181/consultHistory
 		* Estado de 5784 QA in progress
@@ -140,7 +194,7 @@ CONTEXT_PATH
 
 	[17-05-2022]
 		*Agregar SK en header de JMeter
-		*Cambiar producto de [ventas-y-servicios_ventas] a [salesforce]
+		*Cambiar producto de [ventas-y-servicios_ventas] a [salesforce]:
 			"api": {
 			  "b2b": {
 				"published": true,
@@ -160,7 +214,7 @@ CONTEXT_PATH
 		* Consultar a NICO estado de 5694
 		* Actualizar presentación Gissel
 		* Vídeo último Héctor (desa.apipartner.bci.cl)
-		* Comparación de container_params.json (see develop branch into bitbucket)
+		* Comparación de container_params.json (see develop branch into bitbucket) :
 			"api": {
 			  "b2b": {
 				"published": true,

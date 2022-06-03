@@ -25,6 +25,9 @@ SQL
 		WHERE pg_stat_activity.datname = 'busicentury19' -- ← change this to your DB
 		  AND procpid <> pg_backend_pid();
 
+	* Respaldar base:
+		$ bin/pg_dump ingenio > backups/ing_ser_20220601.sql 
+
 	* Buscar un valor en todos los campos de una bd:
 		https://stackoverflow.com/questions/5350088/how-to-search-a-specific-value-in-all-tables-postgresql
 
