@@ -124,6 +124,29 @@ CONTEXT_PATH
 	git commit -m "feature-SFCRM-5650"
 	--------------------------------------------------
 
+	bci:
+	
+	https://bcibank.atlassian.net/wiki/spaces/AT/pages/3318841417/ADR+Uso+de+Microservicios+de+Experiencia
+	https://docs.google.com/spreadsheets/d/1zwVOi1s58ZuqEAOWpOS_N8l4qr-Nhhz7-F5_Q_QGkx4/edit?authuser=1#gid=0
+
+	[08-06-2022]
+		Documentación:
+			https://plantuml.com/es/activity-diagram-legacy
+			https://plantuml.com/es/color
+			https://www.w3.org/TR/css-color-4/#named-colors
+
+
+	[06-06-2022]
+		* Documentación:
+			+ Casos productivos MS Salesforce:
+				https://bcibank.atlassian.net/wiki/spaces/SM/pages/3325886589/Casos+productivos+MS+Salesforce
+
+			+ Workflow Propuesto HT Microservicios:
+				https://docs.google.com/presentation/d/1BzBfqzN4eDud7VdwvPwmyefJ50obJZtI8IvBTm5heeM/edit#slide=id.g12ef6b1a19b_0_39
+				https://bcibank.atlassian.net/wiki/spaces/SM/pages/3328737529/Workflow+Propuesto+HT+Microservicios
+
+		* Reunión Revision alternativa MS - header
+
 	[02-06-2022]
 		Documentación confluence
 		Consulta de Juan Burgueño para el usuario de datalake
