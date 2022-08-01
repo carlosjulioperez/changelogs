@@ -33,6 +33,8 @@ Notas
 		https://docs.google.com/spreadsheets/d/1zwVOi1s58ZuqEAOWpOS_N8l4qr-Nhhz7-F5_Q_QGkx4/edit#gid=0
 
 	+ Bci:
+		http://sdm.bci.cl/CAisd/pdmweb.exe
+
 		% az login
 		% az account set --subscription "BCIRG3DSRSUB" && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
 		% kubectl config use-context bci-api-desa001
@@ -47,7 +49,7 @@ Notas
 		//Kuberneter DEV
 		% az account set --subscription 4f6dc042-48f3-4a9c-83d8-b7b7376d480e && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
 
-		//Kuberneter QA
+		//Kubernetes QA
 		% az account set --subscription “BCIRG3CRTSUB” && az aks get-credentials --resource-group BCIRG3CRT-RG-AKSMSAPI001 --name bci-api-cert001
 		
 		% kubectl -n bci-api get pods | grep ms-planvinculacion
@@ -56,8 +58,13 @@ ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Runnin
 ms-planvinculacionpyme-neg-feature-sfcrm-5650-7fc6b64f78-hrx5h    1/1     Running            0                  11h
 
 		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-56bfdd5dd7-64cqf
-		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-6895c856cc-ssdhq
-		
+		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-b684866fd-frh76
+
+		Crashed:
+		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-69bf7bdd89-5n5c6 > traza.txt
+		{{schema}}://desa.apipartner.bci.cl/ventas-y-servicios/ventas/ms-planvinculacionpyme-neg/develop/perfil-contextual
+		{{schema}}://desa.apipartner.bci.cl/ventas-y-servicios/ventas/ms-planvinculacionpyme-neg/feature-sfcrm-5650/perfil-contextual
+
 		% mkdir /Users/carper/local/prog/vol-ms
 		% mv pubcerts.ts /vol-ms
 		% sudo chmod 775 -fr /vol-ms
@@ -96,6 +103,33 @@ CONTEXT_PATH
 		* Ejecutar build en Jenkins
 		* Pruebas en postman (primero Login y luego Endpoint)
 
+	+ Carpetas para OC:
+		excperq
+		http://sdm.bci.cl/CAisd/pdmweb.exe
+		Perfil = Resolutor de continuidad
+
+		OC - 170393 guia para despliegue de MS en QA y produccion de plan vinculacion
+		https://drive.google.com/drive/folders/154S_eolsbZ4x5qvr8htnMdMyIOer9Hw3?ths=true
+		https://docs.google.com/spreadsheets/d/1X3H4OK3L8WtcyPhDE6oDHlyXQvzSsmSjtkvccZcxZnw/edit#gid=1750475098 OC de ejemplo para plan vinculacion, sin valores de Vault
+		https://docs.google.com/spreadsheets/d/1XI5lVGCZMh1fzCIqb3bfc5cC4QkfXukJ3kbZw5OgMlA/edit#gid=496189732 OC con valores de vault
+
+
+Estimados, favor su apoyo para desplegar la OC 174021 - [Salesforce][PerfilContextual] Obtener el perfil contextual de un cliente.
+
+Esta OC está relacionada a:
+
+HDU:
+https://bcibank.atlassian.net/browse/SFCRM-5633
+
+PIM Cloud:
+https://docs.google.com/spreadsheets/d/1mMkCQfOxjlCdiJz07wmLKACYMKWcK1I4p10irsTkWv8/edit?usp=sharing
+
+De antemano muchas gracias.
+
+
+No tengo el valor 
+No tengo opción Fábrica de Testing
+
 	+ URL para API Management:
 		desa.apipartner.bci.cl
 		cert.apipartner.bci.cl
@@ -109,6 +143,7 @@ CONTEXT_PATH
 	+ Obtener los logs de producción:
 		Pegarlo en Slack
 		/supportzip td cn bci-api ms-planvinculacionpyme-neg-re-v1-0
+		/supportzip td cn bci-api ms-planvinculacionpyme-neg-re-v1-1
 
 	Verificar que pase todo el flujo por API Management.
 	El ms funciona, hay que verificar que se despliegue bien.
@@ -125,16 +160,35 @@ CONTEXT_PATH
 	--------------------------------------------------
 
 	bci:
-	
 	https://bcibank.atlassian.net/wiki/spaces/AT/pages/3318841417/ADR+Uso+de+Microservicios+de+Experiencia
 	https://docs.google.com/spreadsheets/d/1zwVOi1s58ZuqEAOWpOS_N8l4qr-Nhhz7-F5_Q_QGkx4/edit?authuser=1#gid=0
+
+	[15-06-2022]
+		https://docs.google.com/spreadsheets/d/1mMkCQfOxjlCdiJz07wmLKACYMKWcK1I4p10irsTkWv8/edit?usp=sharing
+
+		https://bitbucket.org/bancocreditoeinversiones/ms-planvinculacionpyme-neg/branch/re-v1-0-1?dest=develop
+
+		Agregar cambio de versión con leyenda
+		Modificar OC para poner Vault
+		Quitar protección de hojas de cálculo en PIM Cloud
+
+	[14-06-2022]
+		Generar la OC para perfil contextual:
+			Buscar carpetas
+			https://drive.google.com/drive/folders/154S_eolsbZ4x5qvr8htnMdMyIOer9Hw3?ths=true
+
+	[13-06-2022]
+		Generar la OC para perfil contextual:
+			Buscar carpetas
+
+		Analizar dependencias:
+			https://bitbucket.org/bancocreditoeinversiones/bff-personassalesforce/src/master/?search_id=ae0ec038-fad7-4c49-b2fb-8b36aa535ede
 
 	[08-06-2022]
 		Documentación:
 			https://plantuml.com/es/activity-diagram-legacy
 			https://plantuml.com/es/color
 			https://www.w3.org/TR/css-color-4/#named-colors
-
 
 	[06-06-2022]
 		* Documentación:
