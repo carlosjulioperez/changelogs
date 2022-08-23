@@ -172,6 +172,9 @@ SQL
 
 		+ Solo esquema:
 		pg_dump -s databasename > file.dump
+
+		* MacOS:
+			/Applications/Postgres.app/Contents/Versions/10/bin
 	
 	* Comparar bases de datos:
 		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql

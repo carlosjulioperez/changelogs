@@ -1,4 +1,18 @@
 Software en mac
+
+	+ Ver archivos ocultos:
+		Command+Shift+Dot
+
+	+ Agregar programas a PATH:
+		https://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-os-x
+
+			% cat .bash_profile
+				export ANT_HOME=/Users/carper/Downloads/tools/apache-ant-1.9.16
+				export PSQL_HOME=/Applications/Postgres.app/Contents/Versions/10/
+				export PATH=${PATH}:$ANT_HOME/bin:$PSQL_HOME/bin
+
+			% source ~/.bash_profile
+
 	+ Convertir m4a to mp3:
 		https://www.cisdem.com/resource/convert-m4a-to-mp3.html
 		
