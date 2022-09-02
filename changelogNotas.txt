@@ -8,6 +8,9 @@ Notas
 	c.cruz@eneragro.com.ec
 	lab@eneragro.com.ec
 
+	+ Investigar:
+		Scrum & Dynatrace
+
 	+ Pelis:
 		Mission Impossible (1996)
 		"MUNICH" (2005)

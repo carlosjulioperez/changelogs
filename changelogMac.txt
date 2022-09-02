@@ -1,5 +1,11 @@
 Software en mac
 
+	+ Ejecutar un shell script como aplicación con automator:
+
+		https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock
+		Run shell script:
+			/Users/carper/bin/ireport.sh
+
 	+ Ver archivos ocultos:
 		Command+Shift+Dot
 
@@ -63,6 +69,9 @@ Software en mac
 
 		% brew install mvn
 		% mvn spring-boot:run
+
+		* Especificar:
+			https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos
 
 	+ Ingresar unicode:
 		[ctrl + command + space]:
