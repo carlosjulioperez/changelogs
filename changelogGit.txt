@@ -42,6 +42,7 @@ Git
 		$ git add 
 		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
 		$ git push -f origin cjperez-4
+		$ git push -f origin develop
 		
 	+ Actualizar cambios a master:
 		$ git checkout master
