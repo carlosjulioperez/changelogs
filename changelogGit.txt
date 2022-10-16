@@ -37,12 +37,18 @@ Git
 		$ git reset --hard origin/master
 		$ git pull
 
+
+	+ tips:
+		$ git log
+		$ git commit --amend
+		$ git push origin HEAD
+
 	+ Agregar cambios a master:
 		$ cd Repositories/telcos
-		$ git add 
+		$ git add gT
 		$ git commit -m "TN: INT: Gestor Documental: Nuevo: File Server"
 		$ git push -f origin cjperez-4
-		$ git push -f origin develop
+		$ git push -f origin developt
 		
 	+ Actualizar cambios a master:
 		$ git checkout master

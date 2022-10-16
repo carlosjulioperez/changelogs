@@ -32,6 +32,20 @@ Notas
 		
 	https://www.esquire.com/uk/culture/film/news/a7509/the-10-best-sex-movies-countdown/
 
+	+ MS:
+
+		curl --location --request POST 'localhost:8080/auth/login' \
+		--header 'Content-Type: application/json' \
+		--data-raw '{"email":"nam@codejava.net", "password":"nam2020"}'
+
+
+		curl --location --request POST 'http://localhost:8080/add' \
+		--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLG5hbUBjb2RlamF2YS5uZXQiLCJpc3MiOiJDb2RlSmF2YSIsImlhdCI6MTY2NTY3MTE4MiwiZXhwIjoxNjY1NzU3NTgyfQ.i-j403ulsfvLk-ksIBpGv7wuJIk1JEQijVuX4iAp8uH36x_ngjpoR-Ksa8q-ZqIDsqAg2Qi1ZCuW2C_zs9NJAw' \
+		--header 'Content-Type: application/json' \
+		--data-raw '{     "name": "Juan Rodriguez",     "email": "juan@rodrigDeuez.org",     "password": "huntE334",     "phones": [         {             "number": "1234567",             "citycode": "1",             "contrycode": "57"         }     ]
+		}'
+		
+
 	+ Salesforce:
 		https://docs.google.com/spreadsheets/d/1zwVOi1s58ZuqEAOWpOS_N8l4qr-Nhhz7-F5_Q_QGkx4/edit#gid=0
 

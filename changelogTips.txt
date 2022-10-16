@@ -15,7 +15,10 @@ TIPS
 		$ sudo youtube-dl -U
 		$ pip install update youtube-dl
 
-	* Gradle, generar Fat Jar usando uber desde la documentación oficial:
+	* Gradle:
+		+ ./gradlew clean/build/bootRun
+
+		+ generar Fat Jar usando uber desde la documentación oficial:
 		https://docs.gradle.org/current/userguide/userguide.pdf
 		
 		build.gradle:
