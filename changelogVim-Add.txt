@@ -1,4 +1,9 @@
 Vim
+
+	* Desplazarse a una columna específica:
+		| 
+		https://stackoverflow.com/questions/9953082/how-to-jump-directly-to-a-column-number-in-vim
+
 	* Instalar fuente Monaco:
 		https://github.com/taodongl/monaco.ttf	
 
