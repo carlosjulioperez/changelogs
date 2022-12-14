@@ -1,5 +1,17 @@
 Vim
 
+	* Copiar todo el texto de un documento:
+		https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard
+
+		:%y+
+
+		Reemplazar " por \"
+		:%s,",\",g
+		:%s,\",\\",g
+		
+		Eliminar todas los saltos de línea de un documento
+		:%s,\n,
+
 	* Desplazarse a una columna específica:
 		| 
 		https://stackoverflow.com/questions/9953082/how-to-jump-directly-to-a-column-number-in-vim
