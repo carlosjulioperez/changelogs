@@ -1,5 +1,8 @@
 Vim
 
+	* Yank 5 caracteres a la derecha:
+		y5l
+	
 	* Copiar todo el texto de un documento:
 		https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard
 
