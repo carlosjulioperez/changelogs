@@ -69,13 +69,22 @@ Notas
 		//Kubernetes QA
 		% az account set --subscription “BCIRG3CRTSUB” && az aks get-credentials --resource-group BCIRG3CRT-RG-AKSMSAPI001 --name bci-api-cert001
 		
+		* Ver logs:
+		% kubectl -n bci-api logs -f NOMBRE_POD
+		% kubectl -n bci-api get pods | grep NOMBRE_MS
+
 		% kubectl -n bci-api get pods | grep ms-planvinculacion
+		% kubectl -n bci-api get pods | grep ms-reporteriapdf-util
+
+
+
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
 ms-planvinculacionpyme-neg-feature-sfcrm-5650-7fc6b64f78-hrx5h    1/1     Running            0                  11h
 
 		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-56bfdd5dd7-64cqf
 		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-b684866fd-frh76
+		% kubectl -n bci-api logs ms-reporteriapdf-util-develop-689f4467c6-hxpc5
 
 		Crashed:
 		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-69bf7bdd89-5n5c6 > traza.txt
