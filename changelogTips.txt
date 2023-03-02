@@ -10,6 +10,10 @@ TIPS
 
 		+ tor:
 		https://ahmia.fi/
+
+	* spring boot:
+		% brew install mvn
+		% mvn spring-boot:run
 	
 	* youtube-dl:
 		$ sudo youtube-dl -U

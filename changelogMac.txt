@@ -1,4 +1,17 @@
 Software en mac
+	+ Eliminar proceso se que se reinicia:
+		https://stackoverflow.com/questions/55622999/how-to-kill-a-process-that-absolutely-will-not-die-osx-terminal
+
+		% sudo launchctl list | grep PID
+		En finder, CMD+Shift+G
+	~/Library/LaunchAgents
+		Eliminar el archivo
+
+	+ Buscar texto:
+		https://stackoverflow.com/questions/11187248/unix-command-to-search-for-text-string-in-all-files
+
+		% grep -rn "mvn" *
+		% sudo cd / && grep -rn "hello" *
 
 	+ Ejecutar un shell script como aplicación con automator:
 
