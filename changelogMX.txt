@@ -47,6 +47,11 @@ MX 19.1:
 		Instalar python-tk desde MX Package installer.
 
 		https://github.com/mehdidc/pomodoro
+		MX 21
+		$ sudo apt install python3-pip
+		$ sudo pip install pomodoro-cli
+		
+		
 		$ sudo apt-get install python-matplotlib
 		$ sudo apt install python-pip
 		$ sudo pip install --upgrade setuptools
