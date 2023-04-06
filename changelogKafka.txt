@@ -1,4 +1,44 @@
 Kafka
+	
+	+ kafka-for-developers-using-spring-boot
+		https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot/blob/master/SetUpKafka3.md
+
+		Start up the Zookeeper.
+			$ ./zookeeper-server-start.sh ../config/zookeeper.properties
+
+		Add the below properties in the server.properties
+			listeners=PLAINTEXT://localhost:9092
+			auto.create.topics.enable=false
+
+		Start up the Kafka Broker
+			$ ./kafka-server-start.sh ../config/server.properties
+
+		How to create a topic ?
+			$ ./kafka-topics.sh --create --topic test-topic --replication-factor 1 --partitions 4 --bootstrap-server localhost:9092
+
+		How to instantiate a Console Producer?
+			Without Key
+			$ ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
+
+			With Key
+			$ ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic --property "key.separator=-" --property "parse.key=true"
+
+		How to instantiate a Console Consumer?
+			Without Key
+			$ ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+
+			With Key
+			$ ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
+
+			With Consumer Group
+			$ ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --group <group-name>
+
+
+		List the topics in a cluster
+			$ ./kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+		How to view consumer groups
+			$ ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 
 	+ Confluence:
 		Event-driven architecture:
@@ -21,34 +61,3 @@ Kafka
 			Turn off this advice by setting config variable advice.detachedHead to false
 
 
-	+ kafka-for-developers-using-spring-boot
-		https://github.com/dilipsundarraj1/kafka-for-developers-using-spring-boot/blob/master/SetUpKafka3.md
-		
-		% cd /Users/carper/Downloads/tools/kafka_2.13-3.1.0/bin
-		% ./zookeeper-server-start.sh ../config/zookeeper.properties
-		% cd ../config
-		% vim server.properties
-			listeners=PLAINTEXT://localhost:9092
-			auto.create.topics.enable=false
-		% ./kafka-server-start.sh ../config/server.properties
-		
-		+ Crerar un tópico:
-		% ./kafka-topics.sh --create --topic test-topic --replication-factor 1 --partitions 4 --bootstrap-server localhost:9092
-
-		+ How to instantiate a Console Producer?:
-		Without Key
-		% ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
-
-		>Hi
-		>Hello kafka
-		>
-
-		Escribir mensajes...
-		+ How to instantiate a Console Consumer?:
-		Without Key
-		% ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
-
-		Hello kafka
-		Hi
-
-	
