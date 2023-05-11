@@ -64,6 +64,10 @@ Notas
 
 		% sudo telepresence --method vpn-tcp
 
+	+ jenkins / build with parameters / stage a ejecutar:
+		buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
+		pruebasFuncionales;pruebasRendimiento;validarProyectoBci;validarConfigFileIC;
+
 	+ Ver logs:
 		//Kuberneter DEV
 		% az account set --subscription 4f6dc042-48f3-4a9c-83d8-b7b7376d480e && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001
@@ -77,6 +81,7 @@ Notas
 
 		% kubectl -n bci-api get pods | grep ms-planvinculacion
 		% kubectl -n bci-api get pods | grep ms-reporteriapdf-util
+		% kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
 
 
 
