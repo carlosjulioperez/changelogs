@@ -1,4 +1,7 @@
 Software en mac
+	+ Quicktime screen recorder para grabar audio interno
+		https://www.awesomescreenshot.com/blog/screen-recording/how-to-record-internal-audio-on-mac
+
 	+ Eliminar proceso se que se reinicia:
 		https://stackoverflow.com/questions/55622999/how-to-kill-a-process-that-absolutely-will-not-die-osx-terminal
 
