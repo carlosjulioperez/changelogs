@@ -1,4 +1,7 @@
 Software en mac
+	+ $ brew install youtube-dl
+	+ $ brew reinstall youtube-dl
+
 	+ Quicktime screen recorder para grabar audio interno
 		https://www.awesomescreenshot.com/blog/screen-recording/how-to-record-internal-audio-on-mac
 
