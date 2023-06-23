@@ -24,6 +24,7 @@ Software en mac
 		https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock
 		Run shell script:
 			/Users/carper/bin/ireport.sh
+			/Users/carper/bin/snowflake.sh
 
 	+ Ver archivos ocultos:
 		Command+Shift+Dot

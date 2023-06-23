@@ -83,7 +83,8 @@ Notas
 		% kubectl -n bci-api get pods | grep ms-reporteriapdf-util
 		% kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
 
-
+		Reinicio
+		% kubectl -n bci-api delete pods ms-creditocomercialmx-neg-feat-del-wld-262-558676dc-hpsz8
 
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
