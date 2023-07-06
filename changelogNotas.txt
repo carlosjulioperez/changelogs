@@ -64,6 +64,16 @@ Notas
 
 		% sudo telepresence --method vpn-tcp
 
+
+	+ Instalación de kubelogin:
+		% brew install Azure/kubelogin/kubelogin
+		% brew update
+		% brew upgrade
+		% brew upgrade Azure/kubelogin/kubelogin
+		% rm -rf ~/.kube/config
+		% az login
+		% az account set --subscription BCIRG3DSRSUB && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001 && kubelogin convert-kubeconfig
+
 	+ jenkins / build with parameters / stage a ejecutar:
 		buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
 		pruebasFuncionales;pruebasRendimiento;validarProyectoBci;validarConfigFileIC;
