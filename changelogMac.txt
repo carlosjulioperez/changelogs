@@ -1,4 +1,18 @@
 Software en mac
+
+	+ azure client:
+		% brew update && brew install azure-cli
+	
+	+ telepresence:
+		% brew install datawire/blackbird/telepresence-legacy
+
+	+ brew desinstalar/instalar:
+
+		https://stackoverflow.com/questions/54543697/not-able-to-install-anything-because-of-brew-no-such-file-or-directory-error
+
+		% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+		% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 	+ $ brew install youtube-dl
 	+ $ brew reinstall youtube-dl
 
