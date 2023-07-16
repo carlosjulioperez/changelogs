@@ -76,6 +76,7 @@ Notas
 
 	+ jenkins / build with parameters / stage a ejecutar:
 		buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
+		validarConfigFileIC;buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
 		pruebasFuncionales;pruebasRendimiento;validarProyectoBci;validarConfigFileIC;
 
 	+ Ver logs:
@@ -95,6 +96,11 @@ Notas
 
 		Reinicio
 		% kubectl -n bci-api delete pods ms-creditocomercialmx-neg-feat-del-wld-262-558676dc-hpsz8
+
+		Borrar todas las imagenes:
+		% kubectl -n bci-api delete deployments "ms-rama"
+		% kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-262"
+		% kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
 
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
