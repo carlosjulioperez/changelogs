@@ -87,31 +87,32 @@ Notas
 		% az account set --subscription “BCIRG3CRTSUB” && az aks get-credentials --resource-group BCIRG3CRT-RG-AKSMSAPI001 --name bci-api-cert001
 		
 		* Ver logs:
-		% kubectl -n bci-api logs -f NOMBRE_POD
-		% kubectl -n bci-api get pods | grep NOMBRE_MS
+		% sudo kubectl -n bci-api logs -f NOMBRE_POD
+		% sudo kubectl -n bci-api get pods | grep NOMBRE_MS
 
-		% kubectl -n bci-api get pods | grep ms-planvinculacion
-		% kubectl -n bci-api get pods | grep ms-reporteriapdf-util
-		% kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
+		% sudo kubectl -n bci-api get pods | grep ms-planvinculacion
+		% sudo kubectl -n bci-api get pods | grep ms-reporteriapdf-util
+		% sudo kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
 
 		Reinicio
-		% kubectl -n bci-api delete pods ms-creditocomercialmx-neg-feat-del-wld-262-558676dc-hpsz8
+		% sudo kubectl -n bci-api delete pods ms-creditocomercialmx-neg-feat-del-wld-262-558676dc-hpsz8
 
 		Borrar todas las imagenes:
-		% kubectl -n bci-api delete deployments "ms-rama"
-		% kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-262"
-		% kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
+		% sudo kubectl -n bci-api delete deployments "ms-rama"
+		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-262"
+		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
 
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
 ms-planvinculacionpyme-neg-feature-sfcrm-5650-7fc6b64f78-hrx5h    1/1     Running            0                  11h
 
-		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-56bfdd5dd7-64cqf
-		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-b684866fd-frh76
-		% kubectl -n bci-api logs ms-reporteriapdf-util-develop-689f4467c6-hxpc5
+		% sudo kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-56bfdd5dd7-64cqf
+		% sudo kubectl -n bci-api logs ms-planvinculacionpyme-neg-develop-b684866fd-frh76
+		% sudo kubectl -n bci-api logs ms-reporteriapdf-util-develop-689f4467c6-hxpc5
+		% sudo kubectl -n bci-api logs ms-creditocomercialmx-neg-feat-del-wld-298-549c7874bc-29kcb
 
 		Crashed:
-		% kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-69bf7bdd89-5n5c6 > traza.txt
+		% sudo kubectl -n bci-api logs ms-planvinculacionpyme-neg-feature-sfcrm-5650-69bf7bdd89-5n5c6 > traza.txt
 		{{schema}}://desa.apipartner.bci.cl/ventas-y-servicios/ventas/ms-planvinculacionpyme-neg/develop/perfil-contextual
 		{{schema}}://desa.apipartner.bci.cl/ventas-y-servicios/ventas/ms-planvinculacionpyme-neg/feature-sfcrm-5650/perfil-contextual
 
@@ -145,6 +146,13 @@ CONTEXT_PATH
 			vim /Users/carper/.gradle/gradle.properties
 		* YAML:
 			/Users/carper/local/prog/work/configuration-files-desarrollo-az
+
+			+ Respaldar configuración local:
+			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml
+			
+			+ Copiar de respaldo a configuraciòn:
+			cp /ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml ~/local/prog/work/configuration-files-desarrollo-az
+
 		* JMeter:
 			/Users/carper/Downloads/tools/apache-jmeter-5.4.3/bin
 			/Users/carper/local/prog/work/ms-planvinculacionpyme-neg/external-test/load/jmeter/ms-planvinculacionpyme-neg.jmx

@@ -1,6 +1,12 @@
 Software en mac
 
-	+ azure client:
+	+ Ingresar unicode:
+		[ctrl + command + space]:
+		u+007e = ~
+		u+005c = \
+		u+00b5 = µ
+
+		+ azure client:
 		% brew update && brew install azure-cli
 	
 	+ telepresence:
@@ -107,10 +113,6 @@ Software en mac
 		* Especificar:
 			https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos
 
-	+ Ingresar unicode:
-		[ctrl + command + space]:
-		u+007e = ~
-		u+00b5 = µ
 
 	+ Status Clock:
 		Para ver un reloj adicional con GMT-3, hora chile
