@@ -74,6 +74,9 @@ Notas
 		% az login
 		% az account set --subscription BCIRG3DSRSUB && az aks get-credentials --resource-group BCIRG3DSR-RG-AKSMSAPI001 --name bci-api-desa001 && kubelogin convert-kubeconfig
 
+		Listado de pods para hacer login:
+		% sudo kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
+
 	+ jenkins / build with parameters / stage a ejecutar:
 		buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
 		validarConfigFileIC;buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
@@ -151,7 +154,7 @@ CONTEXT_PATH
 			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml
 			
 			+ Copiar de respaldo a configuraciòn:
-			cp /ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml ~/local/prog/work/configuration-files-desarrollo-az
+			cp ~/local/documentos/bci/delirium/yml/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/prog/work/configuration-files-desarrollo-az
 
 		* JMeter:
 			/Users/carper/Downloads/tools/apache-jmeter-5.4.3/bin
