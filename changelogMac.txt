@@ -1,4 +1,9 @@
 Software en mac
+	+ the_silver_searcher:
+
+	$ sudo xcode-select --switch /Users/carper/Downloads/tools/xcode/Xcode.app
+	$ brew install the_silver_searcher
+	$ ag segCambiaEstPin
 
 	+ Ingresar unicode:
 		[ctrl + command + space]:

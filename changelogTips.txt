@@ -734,6 +734,23 @@ TIPS
 	
 	* Maven:
 		mvn archetype:generate -DgroupId=ec.cjpq.springsecurity -DartifactId=springsecurity -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+		
+		+ Install the JAR into your local Maven repository (typically .m2 in your home folder) as follows:
+		% brew install maven
+
+		$ mvn install:install-file \
+		   -Dfile=<path-to-file> \
+		   -DgroupId=<group-id> \
+		   -DartifactId=<artifact-id> \
+		   -Dversion=<version> \
+		   -Dpackaging=<packaging> \
+		   -DgeneratePom=true
+
+		$ sh mvnw install:install-file \
+		   -Dfile=/Users/carper/Downloads/cucumber-html-0.2.3.jar \
+		   -DgroupId=info.cukes \
+		   -DartifactId=cucumber-html \
+		   -Dversion=0.2.3
 
 	* MySQL:
 		root/admin
@@ -795,6 +812,9 @@ TIPS
 		$ grep -Ri --exclude-dir "local" TrashCanaCrearTrashAction
 
 		+ Más rápido:
+		$ brew install gcc 
+		$ brew install the_silver_searcher
+		
 		$ sudo ag -a TrashCanaCrearTrashAction
 
 		+ Por tipo de archivo:
