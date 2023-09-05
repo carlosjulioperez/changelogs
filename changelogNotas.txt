@@ -82,6 +82,8 @@ Notas
 	+ jenkins / build with parameters / stage a ejecutar:
 		validarConfigFileIC;buildCodigo;crearImagenDocker;deployKubernetes;deployIngress;
 		pruebasFuncionales;pruebasRendimiento;validarProyectoBci;validarConfigFileIC;
+		restauracionDatos
+		restauracionDatos;pruebasFuncionales;pruebasRendimiento;
 
 	+ Ver logs:
 		//Kuberneter DEV
@@ -89,23 +91,25 @@ Notas
 
 		//Kubernetes QA
 		% az account set --subscription “BCIRG3CRTSUB” && az aks get-credentials --resource-group BCIRG3CRT-RG-AKSMSAPI001 --name bci-api-cert001
-		
-		* Ver logs:
-		% sudo kubectl -n bci-api logs -f NOMBRE_POD
-		% sudo kubectl -n bci-api logs -f ms-usuariosgrupoempresa-neg-feat-del-wld-458-cd897fd9-mdd2w > traza.txt
 
+		* Consulta de pods:
 		% sudo kubectl -n bci-api get pods | grep NOMBRE_MS
 		% sudo kubectl -n bci-api get pods | grep ms-planvinculacion
 		% sudo kubectl -n bci-api get pods | grep ms-reporteriapdf-util
 		% sudo kubectl -n bci-api get pods | grep ms-creditocomercialmx-neg
 		% sudo kubectl -n bci-api get pods | grep ms-usuariosgrupoempresa-neg
+		% sudo kubectl -n bci-api get pods | grep ms-gestioncuentas-neg
 
+		* Ver logs:
+		% sudo kubectl -n bci-api logs -f NOMBRE_POD
+		% sudo kubectl -n bci-api logs -f ms-usuariosgrupoempresa-neg-feat-del-wld-458-5947784bfb-vgsfj > traza.txt
+		% sudo kubectl -n bci-api logs -f ms-usuariosgrupoempresa-neg-re-v4-4-575877c8f8-ghpqb > traza-qa.txt
 
 		* Reinicio:
 		% sudo kubectl -n bci-api delete pods ms-creditocomercialmx-neg-feat-del-wld-262-558676dc-hpsz8
-		% sudo kubectl -n bci-api delete pods ms-usuariosgrupoempresa-neg-feat-del-wld-458-855687fc7b-52gcq
+		% sudo kubectl -n bci-api delete pods ms-usuariosgrupoempresa-neg-feat-del-wld-458-677b5df7d5-h278q
 
-		Borrar todas las imagenes:
+		* Borrar todas las imagenes:
 		% sudo kubectl -n bci-api delete deployments "ms-rama"
 		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
 		% sudo kubectl -n bci-api delete deployments "ms-usuariosgrupoempresa-neg-feat-del-wld-458-cd897fd9-mdd2w"
@@ -156,13 +160,14 @@ CONTEXT_PATH
 			/Users/carper/local/prog/work/configuration-files-desarrollo-az
 
 			+ Copiar de respaldo a configuraciòn:
-			cp ~/local/documentos/bci/delirium/yml/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/prog/work/configuration-files-desarrollo-az
-			cp ~/local/documentos/bci/delirium/yml/ms-usuariosgrupoempresa-neg-feat-del-wld-458-integracion.yml ~/local/prog/work/configuration-files-desarrollo-az
+				~/local/prog/work/configuration-files-desarrollo-az/ms-gestioncuentas-neg-feat-del-wld-286-integracion.yml
 
 			+ Respaldar configuración local:
 			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml
 			
 			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-usuariosgrupoempresa-neg-feat-del-wld-458-integracion.yml ~/local/documentos/bci/delirium/yml
+			
+			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-gestioncuentas-neg-feat-del-wld-286-integracion.yml ~/local/documentos/bci/delirium/yml
 			
 		* JMeter:
 			/Users/carper/Downloads/tools/apache-jmeter-5.4.3/bin
