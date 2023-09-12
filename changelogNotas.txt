@@ -1,9 +1,4 @@
 Notas
-
-
-			log.error("[cambioClave][BCI_FINEX] Error al invocar tuxedo segCambiaEstPin: Codigo [{}], Descripcion [{}]", e.getTuxedoCode(), e.getTuxedoDescription(), e);
-
-
 	+ CVs:
 		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
 

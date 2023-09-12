@@ -1,4 +1,7 @@
 Software en mac
+	+ Instalar maven:
+		https://www.digitalocean.com/community/tutorials/install-maven-mac-os
+
 	+ the_silver_searcher:
 
 	$ sudo xcode-select --switch /Users/carper/Downloads/tools/xcode/Xcode.app
