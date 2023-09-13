@@ -31,6 +31,7 @@ Software en mac
 	+ $ brew reinstall youtube-dl
 
 	+ Quicktime screen recorder para grabar audio interno
+		Shift + Command + 5
 		https://www.awesomescreenshot.com/blog/screen-recording/how-to-record-internal-audio-on-mac
 
 	+ Eliminar proceso se que se reinicia:
@@ -56,7 +57,7 @@ Software en mac
 
 	+ Ver archivos ocultos:
 		Command+Shift+Dot
-
+ 
 	+ Agregar programas a PATH:
 		https://stackoverflow.com/questions/30461201/how-do-i-edit-path-bash-profile-on-os-x
 

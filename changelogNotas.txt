@@ -109,6 +109,8 @@ Notas
 		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
 		% sudo kubectl -n bci-api delete deployments "ms-usuariosgrupoempresa-neg-feat-del-wld-458-cd897fd9-mdd2w"
 
+		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-443-8694f499-slx94"
+
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
 ms-planvinculacionpyme-neg-feature-sfcrm-5650-7fc6b64f78-hrx5h    1/1     Running            0                  11h
@@ -158,6 +160,8 @@ CONTEXT_PATH
 				~/local/prog/work/configuration-files-desarrollo-az/ms-gestioncuentas-neg-feat-del-wld-286-integracion.yml
 
 			+ Respaldar configuración local:
+			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-472-integracion.yml ~/local/documentos/bci/delirium/yml
+
 			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-413-integracion.yml ~/local/documentos/bci/delirium/yml
 			
 			cp ~/local/prog/work/configuration-files-desarrollo-az/ms-usuariosgrupoempresa-neg-feat-del-wld-458-integracion.yml ~/local/documentos/bci/delirium/yml
