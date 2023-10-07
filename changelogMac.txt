@@ -1,12 +1,22 @@
 Software en mac
+	+ idea:
+		* impedir scroll horizontal:
+			Shift + command + A
+
+			https://www.jetbrains.com/idea/guide/tutorials/presenting/soft-wrap/#:~:text=Press%20%E2%87%A7%E2%8C%98A%20(on,we%20can%20configure%20soft%2Dwrap.
+
+
+	+ borrar spotify:
+		https://www.drbuho.com/how-to/uninstall-spotify-on-mac
+
 	+ Instalar maven:
 		https://www.digitalocean.com/community/tutorials/install-maven-mac-os
 
 	+ the_silver_searcher:
 
-	$ sudo xcode-select --switch /Users/carper/Downloads/tools/xcode/Xcode.app
-	$ brew install the_silver_searcher
-	$ ag segCambiaEstPin
+		$ sudo xcode-select --switch /Users/carper/Downloads/tools/xcode/Xcode.app
+		$ brew install the_silver_searcher
+		$ ag segCambiaEstPin
 
 	+ Ingresar unicode:
 		[ctrl + command + space]:
@@ -117,10 +127,21 @@ Software en mac
 		/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
 
 		% brew install mvn
+		% mvn clean install
 		% mvn spring-boot:run
 
 		* Especificar:
 			https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos
+
+			% /usr/libexec/java_home -V        
+			Matching Java Virtual Machines (4):
+				11.0.20, x86_64:	"Amazon Corretto 11"	/Users/carper/Library/Java/JavaVirtualMachines/corretto-11.0.20.1/Contents/Home
+				11.0.13, x86_64:	"Java SE 11.0.13"	/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
+				1.8.0_311, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home
+				1.7.0_80, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+
+			OK:
+			https://medium.com/@devkosal/switching-java-jdk-versions-on-macos-80bc868e686a
 
 
 	+ Status Clock:

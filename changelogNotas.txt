@@ -8,6 +8,18 @@ Notas
 	c.cruz@eneragro.com.ec
 	lab@eneragro.com.ec
 
+	
+    "986":
+      - "comprobante1PCOM"
+      - "comprobantePCOMPRO"
+      - "comprobantePCOMPAE_PRO"
+    "COMPROBANTE1PCOM":
+      codigoPlantillaSolicitud: "LDMX-PCOM-01"
+    "COMPROBANTEPCOMPRO":
+      codigoPlantillaSolicitud: "LDMX-PCOM-02"
+    "COMPROBANTEPCOMPAE_PRO":
+      codigoPlantillaSolicitud: "LDMX-PCOM-02"
+
 	+ Investigar:
 		Scrum & Dynatrace
 
@@ -109,7 +121,7 @@ Notas
 		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-388"
 		% sudo kubectl -n bci-api delete deployments "ms-usuariosgrupoempresa-neg-feat-del-wld-458-cd897fd9-mdd2w"
 
-		% sudo kubectl -n bci-api delete deployments "ms-creditocomercialmx-neg-feat-del-wld-443-8694f499-slx94"
+		% sudo kubectl -n bci-api delete pod "ms-creditocomercialmx-neg-feat-del-wld-449-7c5dfbdfbb-hr6q7"
 
 			(con este comando buscas los pod que tengan ese nombre)
 ms-planvinculacionpyme-neg-develop-6877c9bbb7-x4txq               1/1     Running            0                  4d
@@ -151,10 +163,21 @@ CONTEXT_PATH
 		* Sourcetree:
 			* Merge branchs:
 				https://stackoverflow.com/questions/34687089/how-to-merge-develop-branch-to-master-branch-within-sourcetree
+
+			$ git merge remotes/origin/feat-del-wld-262
+			$ git merge RAMA(MASTER) --no-commit --no-ff
+			$ git merge remotes/origin/re-v4-1-0 --no-commit --no-ff
+			
+
 		* Gradle:
 			vim /Users/carper/.gradle/gradle.properties
 		* YAML:
-			/Users/carper/local/prog/work/configuration-files-desarrollo-az
+			~/local/prog/work/configuration-files-desarrollo-az
+
+			+ Comparar:
+				/Users/carper/local/prog/work/configuration-files-desarrollo-az/ms-creditocomercialmx-neg-feat-del-wld-472-integracion.yml
+				/Users/carper/local/documentos/bci/delirium/yml/ms-creditocomercialmx-neg-re-v4-1-qa.yml
+			
 
 			+ Copiar de respaldo a configuraciòn:
 				~/local/prog/work/configuration-files-desarrollo-az/ms-gestioncuentas-neg-feat-del-wld-286-integracion.yml

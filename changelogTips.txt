@@ -13,6 +13,9 @@ TIPS
 
 	* spring boot:
 		% brew install mvn
+
+		o instalar manualmente y ejecutar
+		% source ~/.bash_profile
 		% mvn spring-boot:run
 	
 	* youtube-dl:
