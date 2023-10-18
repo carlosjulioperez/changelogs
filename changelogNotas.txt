@@ -8,7 +8,86 @@ Notas
 	c.cruz@eneragro.com.ec
 	lab@eneragro.com.ec
 
-	
+
+Por definir: debe ser una lista (labelAsunto)
+
+	if(correoCuartoClickRequestDTO.getOrigen().equals(Constantes.INGRESO)){
+
+	if(correoCuartoClickRequestDTO.getOrigen().equals(Constantes.FIRMA)){
+
+setearParametrosComunes
+    Primero se debe modificar clase CorreoComunesDTO para almacenar frecuencia
+    Luego en metodo convertirCamposIngreso se debe hacer el set de frecuencia
+    Se debe utilizar objeto correoComunesDTO de tipo CorreoComunesDTO en función setearParametrosComunes para poder generar el nuevo campo de nº cuotas
+        LDMX-SOL
+            1 vencimiento con X plazo de pago
+            N cuota mensuales(en este caso siempre es mensual)
+        LDMX-PRO
+            1 vencimiento con X plazo de pago
+        PAE-PRO
+            1 vencimiento con X plazo de pago
+        PAE-SOL
+            1 vencimiento con X plazo de pago
+            N cuota con x frecuencia(frecuencia es dinámica)
+
+
+
+if CorreoComunesDTO.cuotas es igual a 1
+// set nuevo de numero de cuotas debería ser así
+CorreoComunesDTO.cuotas + "vencimiento a " + CorreoComunesDTO.plazoPago + "días";
+        "%s vencimiento a %s días"
+
+if CorreoComunesDTO.cuotas es mayor igual a 2
+    if CorreoComunesDTO.frecuencia  es nulo
+        // set nuevo de numero de cuotas debería ser así
+        CorreoComunesDTO.cuotas + "cuotas con pago mensual"
+        "%s cuotas con pago mensual"
+    else if CorreoComunesDTO.frecuencia  no es nulo
+        // set nuevo de numero de cuotas debería ser así
+        CorreoComunesDTO.cuotas + "cuotas con pago" +  CorreoComunesDTO.frecuencia
+        "%s cuotas con pago %s"
+
+
+/* CON TAN SOLO UTULIZAR EL METODO setearParametrosComunes y agregar nuevo parametros.put al hashmap(Nº de cuotas) se resuelve el coreo cliente*/
+${nombreCliente} -> SE SETEA EN setearParametrosComunes
+${nombreEmpresa} -> SE SETEA EN setearParametrosComunes
+${rutEmpresa} -> SE SETEA EN setearParametrosComunes
+${tipoCredito} -> SE SETEA EN setearParametrosComunes
+${monedaMonto} -> SE SETA EN setearParametrosComunes
+NUEVA Key cuotas existirá un cambio -> 1 vencimiento a 90 días / 2 cuotas mensuales / 2 cuotas semestrales
+${textoTasaInteres} -> SE SETEA EN setearParametrosComunes
+-----------------------------
+NUEVA Key donde se definirá el tipo de credito/producto que hace referencia el 4toClick
+${nombreEmpresa} -> SE SETEA EN setearParametrosComunes
+${nombreCliente} -> SE SETEA EN setearParametrosComunes
+${rutEmpresa} -> SE SETEA EN setearParametrosComunes
+${rutCliente} -> SE SETEA EN enviarCorreoEjecutivo
+${banca}-> SE SETEA EN setearParametrosCorreoEjecutivo
+${correo} -> SE SETEA EN setearParametrosComunes
+${banquero} -> SE SETEA EN setearParametrosComunes
+${telefono} -> SE SETEA EN setearParametrosComunes
+${monedaMonto} -> SE SETEA EN setearParametrosComunes
+${textoTasaInteres} -> SE SETEA EN setearParametrosComunes
+${textoCuotas} -> SE SETEA EN setearParametrosComunes
+${fechaSolicitud} -> SE SETEA EN setearParametrosCorreoEjecutivo
+${textoEstado} -> SE SETEA EN setearParametrosComunes
+${montoDisponibleCurse}-> SE SETEA EN setearParametrosCorreoEjecutivo (edited) 
+
+para el caso de NUEVA Key cuotas existirá un cambio -> 1 vencimiento a 90 días / 2 cuotas mensuales / 2 cuotas semestrales
+para origen ingreso se tiene que hacer si o si el juego que te comentaba
+pero para las firmas para el caso de cuotas siempre debe ir fijo en mensual
+en caso de que sean cuotas
+luego cuando este listo el ingreso se hace la mejora ahi
+NUEVA Key donde se definirá el tipo de credito/producto que hace referencia el 4toClick
+y sobre esta la idea es crear una variable de configuraicion en el yml
+para definir el texto paraemtrico
+en base a el producto-operacion
+cuando estes trabajando en aquello me avisas y lo vemos
+la idea es que esto pueda estar para la siguiente semana
+por que por lo visto el tema es corto
+porfavor
+
+
     "986":
       - "comprobante1PCOM"
       - "comprobantePCOMPRO"

@@ -2,6 +2,7 @@ Software en mac
 	+ idea:
 		* impedir scroll horizontal:
 			Shift + command + A
+			soft-wrap
 
 			https://www.jetbrains.com/idea/guide/tutorials/presenting/soft-wrap/#:~:text=Press%20%E2%87%A7%E2%8C%98A%20(on,we%20can%20configure%20soft%2Dwrap.
 
