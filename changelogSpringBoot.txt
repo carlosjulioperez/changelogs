@@ -8,6 +8,16 @@ Spring Boot
             throw new EntityNotFoundException(Topic.class, topicId);
             //  throw new EntityNotFoundException("Topic.class, topicId");
 
+		% sh mvnw clean install
+		% sh mvnw spring-boot:run
+		% sh mvnw test
+ 
+		% source ~/.bash_profile
+		% mvn clean install
+		% mvn spring-boot:run
+
+		Registro en la base de datos H2 vía consola web:
+		http://localhost:8081/h2-console
 
 	+ Spring Boot CLI:
 		https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started-installing-the-cli

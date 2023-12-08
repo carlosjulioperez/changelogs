@@ -1,4 +1,8 @@
 Software en mac
+	+ borrar homebrew cache:
+		% echo "$(brew --cache)"
+		% rm -rf "$(brew --cache)"
+
 	+ idea:
 		* impedir scroll horizontal:
 			Shift + command + A
@@ -118,16 +122,27 @@ Software en mac
 		https://github.com/kyleneideck/BackgroundMusic
 
 	+ CPU status:
-		% brew install --cask stats
+		% b el valor máximo ofrecido es 4100? rew install --cask stats
+
+	+ Instalar java:
+		https://admin-api.codejava.net/java-se/download-and-install-openjdk-17
 
 	+ Conocer las versiones de java instaladas:
 		% /usr/libexec/java_home -V
+
+		https://www.oracle.com/co/java/technologies/javase-jdk11-downloads.html
+	
+	+ Cambiar versión de java para Grails 2.3.4:
+		% export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+		% export JAVA_HOME=`/usr/libexec/java_home -v 11`
+		% java -version
 
 	+ Versión de Java:
 		% /usr/libexec/java_home
 		/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
 
 		% brew install mvn
+		% source ~/.bash_profile
 		% mvn clean install
 		% mvn spring-boot:run
 

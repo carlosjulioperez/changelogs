@@ -1,0 +1,134 @@
+Entorno:
+	+ Conocer las versiones de java instaladas:
+		% /usr/libexec/java_home -V
+
+	+ ~/.bash_profile:
+		export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+		...
+		#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+		export SDKMAN_DIR="$HOME/.sdkman" [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+	+ Instalación con SDKMAN:
+		$ curl -s https://get.sdkman.io | bash
+		Open a new terminal or type the command:
+		$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+		
+		Then install the latest stable Grails version:
+		$ sdk install grails
+		$ sdk install grails 2.3.4
+
+	+ Cambiar versión de java para Grails 2.3.4:
+		% export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+		% java -version
+	
+	+ Resolución de dependencias en versión 2.3.4:
+		https://stackoverflow.com/questions/68566240/resolve-error-obtaining-dependencies-failed-to-read-artifact-descriptor-for-o
+		grails-app/conf/BuildConfig.groovy
+		    repositories {
+				//inherits true // Whether to inherit repository definitions from plugins
+				mavenRepo "https://repo1.maven.org/maven2/"
+				mavenRepo "https://repo.grails.org/grails/core"
+				mavenRepo "https://repo.grails.org/grails/plugins"
+				mavenRepo "https://jaspersoft.jfrog.io/artifactory/third-party-ce-artifacts"
+
+	+ Crear proyecto:
+		% grails create-app Rewards
+
+		grails-app/conf/BuildConfig.groovy
+			grails.server.port.http=8081
+VSCode
+	$ grails run-app
+	
+	grails create-controller <controller-name>
+	% grails create-controller InventoryController
+	% grails create-controller CustomerController
+	% grails create-controller AwardController
+	% grails create-controller OnlineOrderController
+	% grails create-controller OrderItemController
+	% grails create-controller ProductController
+
+
+	% grails create-view [nombre-de-la-vista] [carpeta-de-destino]
+	% grails create-view edit inventory
+
+	% grails create-domain-class Product
+	% grails create-domain-class Customer
+	% grails create-domain-class Award
+	% grails create-domain-class Order
+	% grails create-domain-class OrderItem
+
+Base de datos
+	http://localhost:8080/Rewards/dbconsole
+
+Grails command
+
+	grails create-app			Creates a Grails application for the given name
+	grails create-domain-class	Creates a new domain class
+	grails generate-all			Generates a CRUD interface (controller + views) for a domain class
+	grails install-plugin		Installs a plug-in for the given URL or name and version
+	grails create-controller	Creates a new controller
+	grails interactive			Starts Grails CLI (script runner) in interactive mode. 
+	
+	Keeps the JVM running between grails commands for faster script execution.
+	grails console				Load the Grails interactive Swing console
+	grails run-app				grails [environment]* run-app - Runs a Grails application
+
+
+	% grails create-controller Controller
+
+
+	% grails create-view [nombre-de-la-vista] [carpeta-de-destino]
+	% grails create-view edit inventory
+
+	% grails create-domain-class Product
+	% grails create-domain-class Customer
+	% grails create-domain-class Award
+	% grails create-domain-class Order
+	% grails create-domain-class OrderItem
+
+Base de datos
+	http://localhost:8080/Rewards/dbconsole
+
+Grails command
+
+	grails create-app			Creates a Grails application for the given name
+	grails create-domain-class	Creates a new domain class
+	grails generate-all			Generates a CRUD interface (controller + views) for a domain class
+	grails install-plugin		Installs a plug-in for the given URL or name and version
+	grails create-controller	Creates a new controller
+	grails interactive			Starts Grails CLI (script runner) in interactive mode. 
+	
+	Keeps the JVM running between grails commands for faster script execution.
+	grails console				Load the Grails interactive Swing console
+	grails run-app				grails [environment]* run-app - Runs a Grails application
+
+
+	% grails create-controller Controller
+
+
+	% grails create-view [nombre-de-la-vista] [carpeta-de-destino]
+	% grails create-view edit inventory
+
+	% grails create-domain-class Product
+	% grails create-domain-class Customer
+	% grails create-domain-class Award
+	% grails create-domain-class Order
+	% grails create-domain-class OrderItem
+
+Base de datos
+	http://localhost:8080/Rewards/dbconsole
+
+Grails command
+
+	grails create-app			Creates a Grails application for the given name
+	grails create-domain-class	Creates a new domain class
+	grails generate-all			Generates a CRUD interface (controller + views) for a domain class
+	grails install-plugin		Installs a plug-in for the given URL or name and version
+	grails create-controller	Creates a new controller
+	grails interactive			Starts Grails CLI (script runner) in interactive mode. 
+	
+	Keeps the JVM running between grails commands for faster script execution.
+	grails console				Load the Grails interactive Swing console
+	grails run-app				grails [environment]* run-app - Runs a Grails application
+
+
