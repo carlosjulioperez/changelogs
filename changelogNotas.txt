@@ -2,31 +2,54 @@ Notas
 	+ CVs:
 		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
 
+
 	test@liferay.com
 	f.arellano@eneragro.com.ec
 	s.narvaez@eneragro.com.ec
 	c.cruz@eneragro.com.ec
 	lab@eneragro.com.ec
 
+==================================================
+Que opcion permite extraer solo la informacion necesaria de un objeto para no
+mostrar todos los detalles tecnicos del objeto?
+a. Encapsulación
+b. Herencia
+c. Abstracción
+d. Polimorfismo
 
 ==================================================
-3
-OK
-Transaction failed and execution fails
-X
-Transaction mined and execution fails
+	https://sophilabs.com/faq
+	Brooklyn and Latin America
 
-5
-OK
-Inside the modifier
-X
-Inside the function
+Past experiences
+How the team was involved in
+any type of challenges you had to deal with
 
-7
-OK 
-Transaction mined and execution succeeds
-X
-Transaction failed and execution fails
+
+Hola, mi nombre es Carlos Julio Pérez vivo en Manta Ecuador.  Soy desarrollador Backend Java con más de 10 años de experiencia y creo que encajaría en el puesto porque me gusta trabajar con gente de varios países y aprender cosas nuevas cada día.
+
+Hello, my name is Carlos Julio Pérez, I live in Manta Ecuador. I am a Backend Java developer with more than 10 years of experience and I think I would fit the position because I like to work with people from various countries and learn new things every day.
+I want be part of an efficient team to successfully close projects, contributing with my experience and commitment the effort necessary to deliver work with added value to the client.
+
+Recently I have been completed the Professional Certification from Coursera
+(Preparing for Google Cloud Certification: Cloud Architect) and a Blockchain
+Certification and some others.
+You can learn more about me reviewing my LinkedIn profile at:
+https://www.linkedin.com/in/carlosjulioperez/
+
+This is my updated resumé in PDF format:
+https://drive.google.com/file/d/1sjj5RayCyo7aLjTaGoQWk3i7a5ro0yX4/view?usp=sharing
+
+This is my repository 
+https://ec.linkedin.com/in/carlosjulioperez
+
+Creating a POS web application (java and open source tools) that working in two modes, online and offline and that communicates it with the SAP ERP via web services.
+
+Hoja de vida:
+https://drive.google.com/file/d/1sjj5RayCyo7aLjTaGoQWk3i7a5ro0yX4/view?usp=sharing
+
+Java Groovy SpringBoot Linux Blockchain (jr) Clojure (jr) GCP
+
 ==================================================
 
 	+ Pelis:

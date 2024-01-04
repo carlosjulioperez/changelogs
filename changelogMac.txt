@@ -4,6 +4,9 @@ Software en mac
 		% rm -rf "$(brew --cache)"
 
 	+ idea:
+		* Maximize editor pane:
+			Command + Shift + F12
+			
 		* impedir scroll horizontal:
 			Shift + command + A
 			soft-wrap
