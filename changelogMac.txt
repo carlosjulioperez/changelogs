@@ -172,7 +172,7 @@ Software en mac
 		+ VPN:
 
 			$ sudo vim /etc/hosts
-			172.30.210.15 	sr1rhevmtnuiod.telconet.cloud1
+			172.30.210.15 	host
 
 			+ openfortivpn:
 			https://github.com/adrienverge/openfortivpn
@@ -185,9 +185,9 @@ Software en mac
 
 			$ sudo mkdir -p /etc/openfortivpn
 			$ sudo vim /etc/openfortivpn/my-config
-				host = vpn0.telconet.ec
+				host = vpn0.server
 				port = 443
-				username = cjperez@telconet.ec
+				username = user
 				password = <secret>
 				set-dns = 0
 				pppd-use-peerdns = 0

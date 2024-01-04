@@ -108,21 +108,6 @@ Git
 		o
 		$ git push --set-upstream origin main
 
-	+ Probado con gitlab:
-		https://stackoverflow.com/questions/21745213/changed-github-password-no-longer-able-to-push-back-to-the-remote
-
-		$ git remote -v
-			origin	https://cjperez:MDsoWB)5%21P@gitlab.telconet.ec/telcos/telcos.git (fetch)
-			origin	https://cjperez:MDsoWB)5%21P@gitlab.telconet.ec/telcos/telcos.git (push)
-		$ git remote set-url origin https://cjperez@gitlab.telconet.ec/telcos/telcos.git
-		$ git fetch
-		y prompt solicita la nueva clave
-		$ git config --global credential.helper store
-		$ git config --global user.name "Carlos Julio Pérez Quizhpe"
-		$ git config --global user.email "carlosjulioperez@gmail.com"
-		#$ git config --global user.email "cjperez@telconet.ec"
-		$ git fetch
-
 	+ Nuevo repo:
 		https://medium.com/swlh/using-git-how-to-add-a-repo-to-track-an-existing-project-a05093f76396
 

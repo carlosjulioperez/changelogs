@@ -20,7 +20,6 @@ x 2021-11-23 2021-11-23 Terminar configurar VPN +nisum @bci
 x 2021-11-24 Instalación de splunk +nisum @bci
 x 2021-11-25 Enviar request para corregir el tema de las horas con Francisca +nisum @bci
 x 2021-11-25 Mandar un request a paycom para cambiar el paycode de Unbillable a Billable +nisum @bci
-x 2021-11-26 Levantar sistema de compras +telconet @compras
 x 2021-11-26 Pasar CV a Andrés Ruilova +nirsa @nw
 x 2021-11-30 2021-11-29 Instalar Eclipse en equipo de Nury pri:A +inocar @java
 x 2021-11-30 2021-11-30 Carta de renuncia para Iván pri:A +businessmind @java

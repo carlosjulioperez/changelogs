@@ -245,9 +245,6 @@ CONTEXT_PATH
 	admin / admin123
 	http://127.0.0.1:8000
 
-
-	https://sr1rhevmtnuiod.telconet.cloud1/ovirt-engine/
-
 	loor: 954 760 7704/123AAA#
 	scala clojure functional languages quora
 	https://onedrive.live.com
@@ -273,7 +270,6 @@ CONTEXT_PATH
 
 	https://docs.google.com/presentation/d/1sV6Bx2TBmR6bk8sZ-nEhG0mnaH4XHa5l79CMkCc0aQ4/edit#slide=id.p1
 
-	/media/carper/homeMX/carper/progs/telconet/config/links.txt
 	+ Devsu:
 	https://stsewd.dev/posts/devsucodejam-2019/
 	https://github.com/devsu/simple-bearer-token-test-helper
