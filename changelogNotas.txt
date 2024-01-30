@@ -1,7 +1,7 @@
 Notas
+
 	+ CVs:
 		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
-
 
 	test@liferay.com
 	f.arellano@eneragro.com.ec
@@ -10,16 +10,22 @@ Notas
 	lab@eneragro.com.ec
 
 ==================================================
-Que opcion permite extraer solo la informacion necesaria de un objeto para no
-mostrar todos los detalles tecnicos del objeto?
-a. Encapsulación
-b. Herencia
-c. Abstracción
-d. Polimorfismo
+https://cryptocurrencyjobs.co/entry-level/
+
+Rust
+https://supraoracles.com/careers/4966815004/?gh_src=cryptocurrencyjobs.co
+Very good command over Rust programming
+Knowledge and experience with Rust testing tools and testing methodologies
+Knowledge of fuzzing
+Knowledge of code contracts
+Async programming/ tokio runtime in Rust
+
+Rust
+https://jobs.lever.co/chainlink/c79ebded-4d90-417f-8958-fbaffdae6018?lever-origin=applied&lever-source%5B%5D=cryptocurrencyjobs.co
+We use Go, Typescript, Solidity, Python, LATEX, git, and Linux/Unix.
+
 
 ==================================================
-	https://sophilabs.com/faq
-	Brooklyn and Latin America
 
 Past experiences
 How the team was involved in
@@ -53,6 +59,19 @@ Java Groovy SpringBoot Linux Blockchain (jr) Clojure (jr) GCP
 ==================================================
 
 	+ Pelis:
+		El exhorsista
+		Hijos del hombre
+		Triple frontera
+		El último boy scout
+		Constantine
+		Sociedad de la nieve
+		The big short (bolsa de valores)
+		The reign of fire
+		Jordan
+		Anchor man
+		Roreo y Julieta
+		Mel Brooks
+
 		Mission Impossible (1996)
 		"MUNICH" (2005)
 		"SKYFALL" (2012)

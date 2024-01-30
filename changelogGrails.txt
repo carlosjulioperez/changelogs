@@ -16,6 +16,7 @@ Entorno:
 		Then install the latest stable Grails version:
 		$ sdk install grails
 		$ sdk install grails 2.3.4
+		$ sdk install groovy 2.1.9
 
 	+ Cambiar versión de java para Grails 2.3.4:
 		% export JAVA_HOME=`/usr/libexec/java_home -v 1.7`

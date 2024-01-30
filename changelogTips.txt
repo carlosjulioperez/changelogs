@@ -857,13 +857,21 @@ TIPS
 			+ En Mac:
 				
 				https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line
-				Mac or Linur
+				Mac or Linux
 				$ find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's/foo/bar/g'
 				$ find . -type f -name "*.txt" -print0 | xargs -0 sed -i '' -e 's,bezkoder.spring.security.postgresql,nirsa.security,g'
 
 				https://stackoverflow.com/questions/9704020/recursive-search-and-replace-in-text-files-on-mac-and-linux
 				
 				$ find . -type f -name '*.txt' -exec sed -i '' s/this/that/ {} +
+				
+				$ find . -type f -name '*.groovy' -exec sed -i '' s/ec.carper.ingenio.model/ec.carper.ingenio.model.laboratorio/ {} +
+				$ find . -type f -name '*.groovy' -exec sed -i '' s/ec.carper.ingenio.test/ec.carper.ingenio.test.laboratorio/ {} +
+				$ find . -type f -name '*.groovy' -exec sed -i '' s/ec.carper.ingenio.actions.*/ec.carper.ingenio.actions.laboratorio.*/ {} +
+
+				ingenio.actions
+				ingenio.calculators
+
 				$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
 				$ find . -type f -exec sed -i '' s,/usr/local/fe,/opt/fe,g {} +
 

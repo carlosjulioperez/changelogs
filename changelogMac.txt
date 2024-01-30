@@ -1,4 +1,10 @@
 Software en mac
+	+ wget:
+		% brew install wget
+		
+		Descarga nativa con:
+			% curl -O http://ministeriopersonal.com.s3.amazonaws.com/labibliahabla-daniel/revistadanielespanhol.pdf
+
 	+ borrar homebrew cache:
 		% echo "$(brew --cache)"
 		% rm -rf "$(brew --cache)"
