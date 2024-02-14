@@ -1,4 +1,15 @@
 Software en mac
+	+ PostgreSQL.app:
+		Doble clic en bd carper
+		carper=# drop database ingenio;
+
+		carper=# create database ingenio;
+
+	+ matar proceso en puerto 5432:
+
+		% sudo lsof -i :5432
+		% sudo kill -9 [PID]
+
 	+ wget:
 		% brew install wget
 		
