@@ -5,6 +5,22 @@ Software en mac
 
 		carper=# create database ingenio;
 
+	+ brew:
+		% brew install postgresql
+
+		To start postgresql@14 now and restart at login:
+			% brew services start postgresql@14
+		Or, if you don't want/need a background service you can just run:
+			% /usr/local/opt/postgresql@14/bin/postgres -D /usr/local/var/postgresql@14
+
+		+ Crear usuario postgres:
+			https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist
+			% /usr/local/opt/postgresql@14/bin/createuser -s postgres
+
+			% createdb carper
+			% psql
+			% createdb dev
+
 	+ matar proceso en puerto 5432:
 
 		% sudo lsof -i :5432
@@ -29,7 +45,6 @@ Software en mac
 			soft-wrap
 
 			https://www.jetbrains.com/idea/guide/tutorials/presenting/soft-wrap/#:~:text=Press%20%E2%87%A7%E2%8C%98A%20(on,we%20can%20configure%20soft%2Dwrap.
-
 
 	+ borrar spotify:
 		https://www.drbuho.com/how-to/uninstall-spotify-on-mac
@@ -233,6 +248,7 @@ Software en mac
 
 		$ diskutil unmountDisk /dev/disk2
 		$ sudo dd bs=1m if=/Users/carper/recursos/iso/wifislax64-2.0-final.iso of=/dev/rdisk2 conv=sync
+		$ sudo dd bs=1m if=/Users/carper/local/img/wifislax64-3.4-final.iso of=/dev/rdisk2 conv=sync
 	
 	+ cask:
 	$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
