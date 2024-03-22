@@ -1,4 +1,13 @@
 Software en mac
+	+ Monterey:
+		https://medium.com/macoclock/enabling-ntfs-write-in-macos-10-15-catalina-the-open-source-way-a5fd0d1cb32e
+
+		$ brew install --cask macfuse
+		$ brew tap gromgit/homebrew-fuse
+		$ brew install ntfs-3g-mac
+
+		Luego instalar Mounty
+
 	+ PostgreSQL.app:
 		Doble clic en bd carper
 		carper=# drop database ingenio;
