@@ -8,6 +8,9 @@ Software en mac
 
 		Luego instalar Mounty
 
+	+ Countdown timer:
+		$ brew install --cask menubar-countdown
+
 	+ PostgreSQL.app:
 		Doble clic en bd carper
 		carper=# drop database ingenio;

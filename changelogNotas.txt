@@ -9,6 +9,9 @@ Notas
 	c.cruz@eneragro.com.ec
 	lab@eneragro.com.ec
 
+Nodejs
+	Senior-level experience of at least 4 years of experience with Javascript, NodeJS, Express, Mongo
+
 ==================================================
 https://cryptocurrencyjobs.co/entry-level/
 
