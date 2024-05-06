@@ -1,4 +1,9 @@
 Software en mac
+
+	+ Visual Studio Code:
+		https://stackoverflow.com/questions/54173462/how-to-turn-off-or-on-sounds-from-visual-studio-code
+		editor.accessibilitySupport = off pora evitar sonidos.
+
 	+ Monterey:
 		https://medium.com/macoclock/enabling-ntfs-write-in-macos-10-15-catalina-the-open-source-way-a5fd0d1cb32e
 
@@ -96,10 +101,6 @@ Software en mac
 		Shift + Command + 5
 		https://www.awesomescreenshot.com/blog/screen-recording/how-to-record-internal-audio-on-mac
 
-	+ Eliminar proceso se que se reinicia:
-		https://stackoverflow.com/questions/55622999/how-to-kill-a-process-that-absolutely-will-not-die-osx-terminal
-
-		% sudo launchctl list | grep PID
 		En finder, CMD+Shift+G
 	~/Library/LaunchAgents
 		Eliminar el archivo
