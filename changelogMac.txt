@@ -23,6 +23,8 @@ Software en mac
 		carper=# create database ingenio;
 
 	+ brew:
+		% brew install postgresql@16
+
 		% brew install postgresql
 
 		To start postgresql@14 now and restart at login:
