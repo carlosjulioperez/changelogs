@@ -22,6 +22,10 @@ Software en mac
 
 		carper=# create database ingenio;
 
+		export PSQL_HOME=/Applications/Postgres.app/Contents/Versions/latest
+		export PATH=${PATH}:$ANT_HOME/bin:$PSQL_HOME/bin
+		$ source ~/.bash_profile
+
 	+ brew:
 		% brew install postgresql@16
 
@@ -31,6 +35,8 @@ Software en mac
 			% brew services start postgresql@14
 		Or, if you don't want/need a background service you can just run:
 			% /usr/local/opt/postgresql@14/bin/postgres -D /usr/local/var/postgresql@14
+
+		brew services stop postgresql
 
 		+ Crear usuario postgres:
 			https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist

@@ -175,6 +175,29 @@ SQL
 
 		* MacOS:
 			/Applications/Postgres.app/Contents/Versions/10/bin
+
+	* Usar pg_restore:
+		The input is a PostgreSQL custom-format dump.  Use the pg_restore command-line client to restore this dump to a database.
+
+		
+		$ createdb -E UTF8 -T template1 EF_Legacy
+		$ psql
+			-- Connect to the database
+			\c your_database_name;
+			
+			-- Create the role with a password
+			CREATE ROLE your_role_name WITH LOGIN PASSWORD 'your_password';
+			
+			-- Grant all privileges on all tables in the schema to the role
+			GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO your_role_name;
+			
+			-- Optionally, grant all privileges on future tables in the schema to the role
+			ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO your_role_name;
+
+			GRANT CREATE ON SCHEMA public TO legacy;
+
+		$ pg_restore -U john -d orange < backup.sql
+		$ pg_restore -U carper -d EF_Legacy < /Users/carper/Documents/eurofish/codigo/AppTransporte/legacy.sql 
 	
 	* Comparar bases de datos:
 		https://stackoverflow.com/questions/4804779/how-to-check-difference-between-two-databases-in-postgresql
@@ -198,6 +221,7 @@ SQL
 	* Ejemplos de ejecución de scripts:
 
 		$ createdb -E UTF8 -T template1 hpm
+		$ createdb -E UTF8 -T template1 EF_Legacy
 
 		# psql -U sql-ledger -d apracomsa -a -f /home/cromero/fe/insert.sql
 		# psql -U sql-ledger -d apracomsa -a -f ~/local/projects/cjerp/cjfe/src/main/resources/sql/fe_config.sql 

@@ -1,0 +1,97 @@
++ RestClient VS Code Plugin example	
+	### Create
+	POST http://localhost:8080/customer/add
+	Content-Type: application/json
+	
+	{
+	    "name" : "Carlos Julio Pérez Quizhpe",
+	    "phone": "+593 993208265",
+	    "email": "carlosjulioperez@gmail.com",
+	    "shippingAddresses": []
+	}
+	
+	### Delete
+	DELETE http://localhost:8080/customer/delete/1
+	
+	### Get all
+	GET http://localhost:8080/customer/all
+	
+	### Get single record
+	GET http://localhost:8080/customer/find/1
+	
+	### Create another record and Update it
+	POST http://localhost:8080/customer/add
+	Content-Type: application/json
+	
+	{
+	    "name" : "Juan Carlos Vera",
+	    "phone": "+593 986622100",
+	    "email": "jcvera@gmail.com",
+	    "shippingAddresses": []
+	}
+	
+	### Update
+	PUT http://localhost:8080/customer/update/3
+	Content-Type: application/json
+	
+	{
+	    "name" : "Juan Carlos Vera Ortiz",
+	    "phone": "+593 986622100",
+	    "email": "jcverao@gmail.com",
+	    "shippingAddresses": []
+	}
+	
+	### Create orders
+	POST http://localhost:8080/order/add
+	Content-Type: application/json
+	
+	{
+	  "customer": {
+	    "id": 99,
+	    "email": "cjperez@gmail.com",
+	    "name": "Carlos Julio",
+	    "phone": "0993208265"
+	  },
+	  "date": "2021-09-22",
+	  "lines": [
+	    {
+	      "id": 1,
+	      "product": {
+	        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+	        "description": "Product 1",
+	        "price": 1.5,
+	        "weight": 0
+	      },
+	      "quantity": 10
+	    }
+	  ],
+	  "orderNumber": 123,
+	  "paymentType": "CASH",
+	  "total": 10.5
+	}
+
+	### Create User
+	POST http://localhost:8080/user/add
+	Content-Type: application/json
+	
+	{
+	  "email": "cjperez@nisum.com",
+	  "name": "Carlos Julio Pérez",
+	  "password": "4Z1vvgy-002",
+	  "phones": [
+	    {
+	      "citycode": 2,
+	      "countrycode": 58,
+	      "number": 123123
+	    }
+	  ]
+	}
+	
+	### Get Users
+	GET http://localhost:8080/user/all
+	
+	### Get single record
+	GET http://localhost:8080/user/find/2
+	
+	### Delete record
+	DELETE http://localhost:8080/user/delete/2

@@ -1,0 +1,41 @@
+Ionic
+	+ Build iOs, Android & Web Apps with Ionic & Angular:
+	
+	+ ionic:
+		$ npm install -g ionic 	
+		$ npm i -g @ionic/cli
+
+		$ ionic start
+		? Project name: ionic-angular-course
+
+		$ cd ionic-angular-course
+		$ ionic serve
+		$ ionic generate (page, service, etc...)
+
+		$ ionic generate page/recipes/recipe-detail
+		$ ionic generate pipe pipes/tipo-carne  
+
+		+ Dependencias (dentro carpeta proyecto):
+			$ npm install @ionic/storage-angular
+			$ npm install ionic-selectable --save
+
+	+ angular:
+		$ npm install -g @angular/cli
+		$ npm install -g @angular/cli@16
+		
+		$ npm install -g @angular/cli@x.y.z
+		$ npm install -g @angular/cli@17.3.6
+
+		$ ng new my-project 
+		
+		+ Traditional Angular module system:
+		$ ng new my-project --strict false --standalone false
+		
+		$ cd my-project
+		$ ng serve
+		$ ng build
+
+		$ ng version (versión instalada de angular)
+		$ ng version (carpeta de proyecto, versión del proyecto)
+		
+		
