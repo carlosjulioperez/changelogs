@@ -19,6 +19,12 @@ Ionic
 			$ npm install @ionic/storage-angular
 			$ npm install ionic-selectable --save
 
+		$ npm i date-fn npm i date-fns-tz
+		$ npm i moment-timezone
+
+		console.log(new Date().toLocaleString())
+		
+
 	+ angular:
 		$ npm install -g @angular/cli
 		$ npm install -g @angular/cli@16
