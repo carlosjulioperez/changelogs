@@ -102,8 +102,10 @@ Software en mac
 		% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 		% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-	+ $ brew install youtube-dl
-	+ $ brew reinstall youtube-dl
+	* Reemplaza a youtube-dl
+		$ brew install yt-dlp
+			$ brew install youtube-dl
+			$ brew reinstall youtube-dl
 
 	+ Quicktime screen recorder para grabar audio interno
 		Shift + Command + 5

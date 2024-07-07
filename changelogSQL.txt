@@ -142,6 +142,10 @@ SQL
 		https://stackoverflow.com/questions/3185266/postgresql-temporarily-disable-connections
 		update pg_database set datallowconn = false where datname = 'prueba';
 
+	* Conectarme al psql por medio de root:
+		# psql -h localhost -U postgres -W
+		\c sigfa_produccion
+
 	* Backup y restore:
 		pg_dump dbname > outfile
 		psql dbname < infile

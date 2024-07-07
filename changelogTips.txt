@@ -11,6 +11,9 @@ TIPS
 		+ tor:
 		https://ahmia.fi/
 
+	* sdk:
+		$ sdk install java 11.0.23-amzn 
+
 	* spring boot:
 		% brew install mvn
 
