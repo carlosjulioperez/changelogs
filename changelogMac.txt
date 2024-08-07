@@ -3,6 +3,11 @@ Software en mac
 	+ Visual Studio Code:
 		https://stackoverflow.com/questions/54173462/how-to-turn-off-or-on-sounds-from-visual-studio-code
 		editor.accessibilitySupport = off pora evitar sonidos.
+		
+		Descomprimir con unzip
+		% unzip VSCode-darwin-universal.zip
+
+		% brew install --cask visual-studio-code
 
 	+ Monterey:
 		https://medium.com/macoclock/enabling-ntfs-write-in-macos-10-15-catalina-the-open-source-way-a5fd0d1cb32e
@@ -153,6 +158,8 @@ Software en mac
 	
 	+ Graphviz:
 		% brew install graphviz
+		Dependencies:
+			% brew install svn
 
 	+ pomodoro cli:
 

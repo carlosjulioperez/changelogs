@@ -1,0 +1,156 @@
+[
+index.js:
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import routes from './src/routes/crmRoutes';
+
+const app = express();
+const PORT = 3000;
+
+// mongoose connection
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/CRMdb', {
+    useNewUrlParser: true
+});
+
+// bodyparser setup
+// to allow us to do json back and forth in
+// between the Mongo database and our server.
+app.use(bodyParser.urlencoded( {extended: true} ))
+app.use(bodyParser.json());
+
+// servir static files
+app.use(express.static('public'));
+
+routes(app);
+
+app.get('/', (req, res) =>
+    res.send (`Node and express server is running on port ${PORT}`)
+);
+
+app.listen(PORT, () =>
+    console.log(`Your server is running on port ${PORT}`)
+);
+
+crmModel.js:
+import mongoose from "mongoose";
+ 
+const Schema = mongoose.Schema;
+
+export const ContactSchema = new Schema({
+    firstName: {
+        type: String,
+        required: 'Enter a first name'
+    },
+    lastName: {
+        type: String,
+        required: 'Enter a last name'
+    },
+    email: {
+        type: String,
+    },
+    company: {
+        type: String,
+    },
+    phone: {
+        type: Number,
+    },
+    created_date: {
+        type: Date,
+        default: Date.now
+    }
+})
+
+crmController.js:
+import mongoose from "mongoose";
+
+import { ContactSchema } from "../models/crmModel"; 
+
+const Contact = mongoose.model('Contact', ContactSchema);
+
+export const addNewContact = async (req, res) => {
+  try {
+    const newContact = new Contact(req.body);
+    const contact = await newContact.save();
+    res.json(contact);
+  } catch (err) {
+    res.send(err);
+  }
+};
+
+export const getContacts = async (req, res) => {
+  try {
+    const contacts = await Contact.find({});
+    res.json(contacts);
+  } catch (err) {
+    res.send(err);
+  }
+};
+
+export const getContactById = async (req, res) => {
+  try {
+    const contact = await Contact.findById(req.params.contactId);
+    if (!contact) {
+      return res.status(404).json({ message: 'Contact not found' });
+    }
+    res.json(contact);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+export const updateContact = async (req, res) => {
+  try {
+    const contact = await Contact.findByIdAndUpdate(
+      req.params.contactId,
+      req.body,
+      { new: true, runValidators: true }
+    );
+    if (!contact) {
+      return res.status(404).json({ message: 'Contact not found' });
+    }
+    res.json(contact);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+export const deleteContact = async (req, res) => {
+  try {
+    const contact = await Contact.findByIdAndDelete(req.params.contactId);
+    if (!contact) {
+      return res.status(404).json({ message: 'Contact not found' });
+    }
+    res.json({ message: 'Contact successfully deleted' });
+  } catch (err) {
+    res.status(500).send(err);
+  }
+};
+
+crmRoutes.js:
+import { addNewContact, getContactById, getContacts, updateContact, deleteContact } from "../controllers/crmController";
+
+const routes = (app) => {
+    app.route('/contact')
+    // Get all contacts
+    .get((req, res, next) => {
+        // middleware
+        console.log(`Request from: ${req.originalUrl}`);
+        console.log(`Request type: ${req.method}`);
+        next();
+    }, getContacts)
+    // Create new contact
+    .post(addNewContact);
+
+    app.route('/contact/:contactId')
+    // Get contact by its Id
+    .get(getContactById)
+    // Update a contact
+    .put(updateContact)
+    // Delete a contact
+    .delete(deleteContact)
+}
+export default routes;
+]
+

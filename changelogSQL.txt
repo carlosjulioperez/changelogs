@@ -1,4 +1,37 @@
 SQL	
+	* Crear usuario y bd usando psql:
+		% psql -U postgres
+	
+		CREATE ROLE sistemas
+		  WITH LOGIN
+		  SUPERUSER
+		  INHERIT
+		  CREATEDB
+		  CREATEROLE
+		  REPLICATION
+		  BYPASSRLS
+		  PASSWORD 'sistemas';
+
+		CREATE DATABASE posaje OWNER sistemas;
+
+
+		CREATE DATABASE posaje
+			WITH
+			OWNER = sistemas
+			ENCODING = 'UTF8'
+			LOCALE_PROVIDER = 'libc'
+			CONNECTION LIMIT = -1
+			IS_TEMPLATE = False;
+
+	* Otorgar todos los permisos en public:
+		$ psql -U your_username -d your_database
+
+		-- Inside psql, execute the following:
+		GRANT ALL PRIVILEGES ON SCHEMA public TO sistemas;
+		GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO sistemas;
+		GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO sistemas;
+		GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO sistemas;
+
 	* Comandos a archivo:
 		https://stackoverflow.com/questions/5331320/psql-save-results-of-command-to-a-file
 		\o texto.txt
@@ -199,6 +232,9 @@ SQL
 			ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO your_role_name;
 
 			GRANT CREATE ON SCHEMA public TO legacy;
+
+
+			CREATE ROLE usuario WITH LOGIN PASSWORD unoaltres;
 
 		$ pg_restore -U john -d orange < backup.sql
 		$ pg_restore -U carper -d EF_Legacy < /Users/carper/Documents/eurofish/codigo/AppTransporte/legacy.sql 

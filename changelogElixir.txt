@@ -1,0 +1,12 @@
+Elixir
+	* Install:
+		% brew install elixir
+		% mix new cards
+
+		% iex -S mix (interactive elixir shell)
+
+		Cards.hello
+		recompile
+
+		deck = Cards.create_deck
+		Cards.shuffle(deck)

@@ -2,7 +2,7 @@ Ionic
 	+ Build iOs, Android & Web Apps with Ionic & Angular:
 	
 	+ ionic:
-		$ npm install -g ionic 	
+		$ sudo npm install -g ionic 	
 		$ npm i -g @ionic/cli
 
 		$ ionic start

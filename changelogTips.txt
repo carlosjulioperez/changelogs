@@ -12,7 +12,9 @@ TIPS
 		https://ahmia.fi/
 
 	* sdk:
+		$ sdk install java 7.0.352-zulu
 		$ sdk install java 11.0.23-amzn 
+		$ sdk default java 11.0.23-amzn  
 
 	* spring boot:
 		% brew install mvn
@@ -24,6 +26,8 @@ TIPS
 	* youtube-dl:
 		$ sudo youtube-dl -U
 		$ pip install update youtube-dl
+
+		$ yt-dlp -x --audio-format mp3 <URL>
 
 	* Gradle:
 		+ ./gradlew clean/build/bootRun
