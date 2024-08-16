@@ -1,3 +1,93 @@
+The speed at which robot is capable of manipulating its end effector is known as the...
+a Velocity of robot
+b Maximum reach
+c Speed of movement (*)
+d Load carrying capacity
+
+... is a collection of mechanical linkage connected by joints.
+a End effector
+b Gripper
+c Sensor
+d Manipulator (*)
+
+Which of the following is not a functionality of robots.
+a Efficient performance
+b Responsibility (*)
+c AI
+d Manipulation
+
+Write java code solution for 
+[
+Detective, one of our team members tracked our target, Vincent the thief, to a hidden warehouse. We believe this is where he's storing the stolen goods. The entrance to this warehouse is guarded by a digital combination lock. However, our informant isn't entirely certain about the PIN (String format) they witnessed Vincent input.
+The keypad has the following layout
+
+1 2 3
+4 5 6
+7 8 9
+  0
+
+He noted the PIN 1357, it can be another adjacernt digit (horizontally or vertically, but not diagonally), e.g ionstead 1 it could also be the 2 or 4, and instead 5, it could also be 2, 4, 6, or 8.
+
+Sample input:
+8
+
+Sample output:
+0
+5
+7
+8
+9
+
+Complete this function:
+static String[] solution (String pin){
+}
+
+]
+
+Write java code solution for 
+[
+Write a function that transform a duration (given as a number of seconds) to readable text. 
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds. 
+Example:
+* For seconds = 62 -> "1 minute and 2 seconds"
+* For seconds = 3662 -> "1 hour, 1 minute and 2 seconds"
+For restriction a year is 365 days and a day is 24 hours.
+
+Complete this function:
+static String solution int seconds(){
+    String result = "";
+    return result;
+}
+]
+
+
+
+Write java code solution for [
+A restauran has launched an app for their food delivery. 'n' reviews about various of their menu items have been submitted. Users have submitting a rating of 5 (1 being worst and 5 being best) The manager wants to know tyhe most dish in the restaurant. Find out the dish with the highest average rating. Note: If two dishes are rated the same, return the dish with the smallest ID. Complete the function solution:
+
+static int solution(int N, int [][] ratings){
+   int result = 0;
+
+   return result;
+}
+
+Sample inmput
+4
+512 2
+123 3
+987 4
+123 5
+
+Sample output
+123
+]
+
+
+
+
+
+
+
 De acuerdo a la teología adventista, ¿qué efecto tuvo la caída del matrimonio? Seleccione la respuesta correcta:
 1 El egoísmo es el motivador primario de todos los que no permiten que el amor de Cristo los constriña.
 2 El interés egoísta se introdujo allí donde antes reinaban el perfecto amor y la unidad.
