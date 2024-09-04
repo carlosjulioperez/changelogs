@@ -1,3 +1,95 @@
+Giving this context:
+[
+REST API: Best TV Shows in Genre
+Use the HTTP GET method to retrieve information about recent television shows. 
+Query https://jsonmock.hackerrank.com/api/tvseries to find all the shows in a genre.
+The query resutl is paginated. 
+To access additional pages, append ?page={num} to the URL where num is the page number.
+
+The response is a JSON object with the following 5 fields:
+page: the current page of the results (Number).
+per_page: the maximum number of results returned per page (Number)
+total: the total number of results (Number)
+total_pages: the total number of pages with results (Number)
+data: an array of tv series records.
+]
+
+Complete the 'bestInGenre' function bellow in Java:
+public static String bestInGenre(String genre){
+    ...
+}
+
+Givingethis context:
+[
+Rearrange letters to create the next lexicographically larger string
+
+Given two strings, one is said to be alphabetically greater than the other if its leftmost differing character is of greater ordinal value than the one in the other string. For example, abd is greater than abc because their first differing characters, d > c.
+ 
+More formally, consider a string, word, consisting of lowercase letters, ascii[a-z]. If we permute word's characters into a new string, x, we say that x is alphabetically greater than word if the following two conditions are satisfied:
+ 
+    The sequence of the first i-1 characters in both word and x are exactly the same.
+    The ith character of string x is alphabetically greater than the ith character of word.
+ 
+Given word, we want to find the next alphabetically greater string.
+ 
+For example, the string word = "baca" has the following permutations:
+    Alphabetically smaller strings (in ascending order): "aabc", "aacb", "abac", "abca", "acab", "acba", and "baac".
+    Alphabetically greater strings (in ascending order): "bcaa", "caab", "caba", and "cbaa".
+This means that the next alphabetically greater string is "bcaa".
+ 
+Function Description
+
+Complete the function rearrangeWord in the editor below. The function must return the next lexicographically larger permutation of the string. If no such string exists, return the string "no answer" instead.
+ 
+rearrangeWord has the following parameter(s):
+    word:  the string to analyze
+ 
+Constraints
+word[i] subset of ascii[a-z].
+    2 <= |word| <=104
+ 
+Input Format for Custom Testing
+
+Input from stdin will be processed as follows and passed to the function.
+ 
+The only line contains the string word.
+Sample Case 0
+Sample Input 0
+xy
+Sample Output 0
+yx
+Explanation 0
+We can rearrange the characters in word = "xy" to create the next alphabetically greater string, so we return yx.
+
+Sample Case 1
+Sample Input 1
+pp
+Sample Output 1
+no answer
+Explanation 1
+There is no way we can rearrange the characters in word = "pp" to create an alphabetically greater string, so we return no answer.
+
+Sample Case 2
+Sample Input 2
+hefg
+Sample Output 2
+hegf
+Explanation 2
+We can rearrange the characters in word = "hefg" to create the next alphabetically greater string, so we return hegf.  
+]
+
+Complete the 'rearrangeWord' function bellow in Java:
+
+public static String rearrangeWord(String word){
+    // Write your code here
+}
+
+Public class Solution {
+    ...
+}
+
+==================================================
+
 The speed at which robot is capable of manipulating its end effector is known as the...
 a Velocity of robot
 b Maximum reach
@@ -82,12 +174,6 @@ Sample output
 123
 ]
 
-
-
-
-
-
-
 De acuerdo a la teología adventista, ¿qué efecto tuvo la caída del matrimonio? Seleccione la respuesta correcta:
 1 El egoísmo es el motivador primario de todos los que no permiten que el amor de Cristo los constriña.
 2 El interés egoísta se introdujo allí donde antes reinaban el perfecto amor y la unidad.
@@ -107,3 +193,22 @@ De acuerdo a la teología adventista:"Somos mayordomos de Dios, a quienes se nos
 2 La entrega a Dios es un proceso dinámico, o sea, cuanto más le ofrecemos de nosotros a Él, más tendremos para ofrecer y más profunda se hace nuestra entrega.
 3 Cuando entregamos a Dios todo lo que somos y tenemos, Él acepta todo y nos devuelve lo que le entregamos, haciéndonos responsables mayordomos de todo lo que poseemos.
 4 Todas las opciones son correctas.
+
+English level: B2
+Total years of working experience: 25 software development
+Years of working experience with: 
+Tableau: 0
+Kubernetes: 3 
+Scala: 0
+SQL: 10
+Java: 20
+Rust: 0
+Do you have experience with BigID integration? No
+Country of residency: Ecuador
+Can you overlap 6 hours with the UTC -4 time zone? Yes
+Email address: carlosjulioperez@gmail.com
+Salary Expectation (USD monthly): 4000
+
+If it's necessary I can study fastly the techs that I have no exoperiencie for reach the desired skills. I love learn new things everyday.
+
+My availability is ASAP.

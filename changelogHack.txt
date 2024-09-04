@@ -1,0 +1,17 @@
+Google
+	* Búsquedas:
+		site:ec "jefe de sistemas"
+		site:no "remote java developer"
+
+		jaramijó
+		jefe de procesos
+		auditor informático
+
+		https://www.acunetix.com/websitesecurity/google-hacking/
+			intitle:"index of" filetype:sql
+		
+		intile: "jefe de sistemas"
+
+Líder de TI
+Jefe de TI
+Jefe de Tecnologías de la Información
