@@ -4,12 +4,18 @@ Ionic
 	+ ionic:
 		$ sudo npm install -g ionic 	
 		$ npm i -g @ionic/cli
+		$ npm i nodemon
+		$ sudo npm install -g nodemon
 
 		$ ionic start
 		? Project name: ionic-angular-course
 
 		$ cd ionic-angular-course
+		
 		$ ionic serve
+		$ ng run app:serve --host=localhost --port=8100
+		$ ng run app:serve --host=0.0.0.0 --port=8100
+
 		$ ionic generate (page, service, etc...)
 
 		$ ionic generate page/recipes/recipe-detail

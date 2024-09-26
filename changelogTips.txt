@@ -11,6 +11,10 @@ TIPS
 		+ tor:
 		https://ahmia.fi/
 
+	* Determinar ip en mac:
+		$ ipconfig getifaddr en1
+		$ ifconfig | grep inet
+
 	* sdk:
 		$ sdk install java 7.0.352-zulu
 		$ sdk install java 11.0.23-amzn 

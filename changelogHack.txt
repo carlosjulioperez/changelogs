@@ -1,6 +1,22 @@
 Google
 	* Búsquedas:
+		indeed
+		ziprecruiter
+		glassdoor
+		elempleo.com
+		weworkremotely
+		dice
+		angellist
+		reactjobs.com
+		Workingnomad.co
+
+
+		ecuador sistema control ganadero
+		site:Ec "software ganadero"
+
 		site:ec "jefe de sistemas"
+		site:ec.computrabajo.com "java developer" remote
+		site:ec.indeed.com "java developer" remote
 		site:no "remote java developer"
 
 		jaramijó
