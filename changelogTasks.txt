@@ -1,0 +1,8 @@
+fa-logic
+
+rancher app
+2024-09-26
+	[ ] Crear proyecto node
+	[ ] Crear estructura de tablas
+
+
