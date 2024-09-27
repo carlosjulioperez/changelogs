@@ -1,8 +1,45 @@
+Todo
+	[ ] Vue (tiempo de aprendizaje)
+	[ ] Pharo
+
 fa-logic
+
+emprendimiento
+	[ ] Emprendedores Ecuador 
+	[ ] Misión
+	[ ] Visión
+	[ ] AWS frontend solo react?
+	[ ] RbPI Node o Golang rendimiento?
+	[x] Node o Golang curva de aprendizaje
+	[ ] Salsa socio para mi negocio
 
 rancher app
 2024-09-26
-	[ ] Crear proyecto node
-	[ ] Crear estructura de tablas
+	[x] Crear proyecto node
+	[x] Crear base de datos:
+		CREATE ROLE rancher_owner
+		  WITH LOGIN
+		  SUPERUSER
+		  INHERIT
+		  CREATEDB
+		  CREATEROLE
+		  REPLICATION
+		  BYPASSRLScrías
+		  PASSWORD '123456';
+		CREATE DATABASE rancherdb OWNER rancher_owner;
 
+		$ touch .env
+			DB_USER=rancher_owner
+			DB_HOST=localhost
+			DB_DATABASE=rancherdb
+			DB_PASSWORD=123456
+			DB_PORT=5432
 
+	[ ] Crear estructura de tablas:
+		hacienda, 
+		res (hacienda, nombre, código, sexo, raza, fecha nacimiento, abuela,
+		abuelo, padre, madre) 
+		crías (tx: codigo, observacion)
+		protocolo (tx: codigo, fecha, tipo preñez, toro), 
+		comprador
+		ventas (tx: codigo, comprador, fecha)
