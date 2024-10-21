@@ -1,0 +1,17 @@
+Nim
+
+	* Install:
+		+ macos:
+			# curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+			~./bash_profile:
+			export NIM_HOME=$HOME/.nimble
+			export PATH=${PATH}:$ANT_HOME/bin:$PSQL_HOME/bin:$NIM_HOME/bin
+
+			# source ~/.bash_profile
+
+		echo "Hello World!"
+		% nim c -r helloworld.nim
+
+	* Debug:
+		# brew install gdb

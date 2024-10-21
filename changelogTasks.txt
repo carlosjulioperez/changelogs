@@ -5,12 +5,14 @@ Todo
 fa-logic
 
 emprendimiento
+	[ ] Mobile UI React
+	[ ] Mobile UI Vue
+	[x] Nim vs Go microservices benchmark
+	[x] Go fiber (express)
 	[ ] Emprendedores Ecuador 
 	[ ] Misión
 	[ ] Visión
 	[ ] AWS frontend solo react?
-	[ ] RbPI Node o Golang rendimiento?
-	[x] Node o Golang curva de aprendizaje
 	[ ] Salsa socio para mi negocio
 
 rancher app

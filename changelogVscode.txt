@@ -1,0 +1,7 @@
+VSCode
+	* Plugins:
+		+ Rewrap: 
+			Alt = Q para poner comentarios en varias líneas
+		+ REST Client:
+			Probar endpoints
+

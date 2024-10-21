@@ -2,3 +2,7 @@ Golang
     + catalina:
         $ brew search golang    
         $ brew install golang
+
+	+ tour:
+		~/go/bin/tour
+		http://127.0.0.1:3999/welcome/1
