@@ -7,6 +7,8 @@ Ionic
 		$ npm i nodemon
 		$ sudo npm install -g nodemon
 
+		$ ionic version
+
 		$ ionic start
 		? Project name: ionic-angular-course
 
