@@ -13,7 +13,6 @@ emprendimiento
 	[ ] Misión
 	[ ] Visión
 	[ ] AWS frontend solo react?
-	[ ] Salsa socio para mi negocio
 
 rancher app
 2024-09-26
