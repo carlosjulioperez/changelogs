@@ -179,6 +179,7 @@ TIPS
 
 	* Contar caracteres de una cadena:
 		$ echo "SANTIAGO DE QUITO (CAB. EN SAN ANTONIO DE QUITO)" | wc -c
+		$ echo "Fabril entra 8 avanza 3 cuadras giro derecha cajon blanco" | wc -c
 
 	* Listado de directorios y archivos:
 		$ tree -s -D -L 2
