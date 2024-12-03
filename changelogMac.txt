@@ -1,5 +1,8 @@
 Software en mac
 
+	+ todo.txt:
+		brew install --cask sleek
+
 	+ Visual Studio Code:
 		https://stackoverflow.com/questions/54173462/how-to-turn-off-or-on-sounds-from-visual-studio-code
 		editor.accessibilitySupport = off pora evitar sonidos.

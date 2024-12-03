@@ -14,6 +14,17 @@ emprendimiento
 	[ ] Visión
 	[ ] AWS frontend solo react?
 
+falogic
+2024-12-03
+	[ ] Crear transacción para crear nuevo registro
+	[x] Revisar todo.txt
+	[x] Revisar curso de AWS Developer
+	[x] Crear correo AWS Builder ID carlosjulioperez
+	[x] Revisar correo hotmail
+	[x] Revisar correo espol 
+	[x] Revisión de maestrías ESPOL
+	[x] Instalación de sleek [brew install --cask sleek]
+
 rancher app
 2024-09-26
 	[x] Crear proyecto node
