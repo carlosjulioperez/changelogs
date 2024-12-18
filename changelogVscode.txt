@@ -1,4 +1,7 @@
 VSCode
+	* Keys:
+		+ Goto symbol: Command + Shift + o		
+	
 	* Plugins:
 		+ Rewrap: 
 			Alt = Q para poner comentarios en varias líneas

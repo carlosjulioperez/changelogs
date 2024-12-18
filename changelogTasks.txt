@@ -2,8 +2,6 @@ Todo
 	[ ] Vue (tiempo de aprendizaje)
 	[ ] Pharo
 
-fa-logic
-
 emprendimiento
 	[ ] Mobile UI React
 	[ ] Mobile UI Vue
@@ -17,6 +15,8 @@ emprendimiento
 falogic
 2024-12-03
 	[ ] Crear transacción para crear nuevo registro
+		[] endpoint para buscar (idaguaje + fechadespacho)
+	[ ] Mapa conceptual de estrategias
 	[x] Revisar todo.txt
 	[x] Revisar curso de AWS Developer
 	[x] Crear correo AWS Builder ID carlosjulioperez

@@ -1,1 +1,9 @@
-(A) 2024-12-03 Crear transacción para agregar nuevo despacho hielo +falogic @sql
+x 2024-12-10 2024-12-03 Crear transacción para agregar nuevo despacho hielo pri:A +falogic @sql
+x 2024-12-11 2024-12-03 SAP Signavio y transformación digital pri:B due:2024-12-11 +sap @learning
+x 2024-12-04 2024-12-04 Elaborar mapa conceptual de estrategias pri:A +carper @estrategia
+x 2024-12-09 2024-12-04 Comprar [Introduction to Data Engineering] pri:A due:2024-12-06 +carper @learning
+x 2024-12-10 2024-12-10 Entrevista TCS UY pri:A due:2024-12-10 +carper @interview
+(B) 2024-12-10 Compilar preguntas Java Core y Spring +carper @interview
+x 2024-12-17 2024-12-10 Ingresar los elementos de detalle como Gestion Despacho pri:A due:2024-12-11 +falogic @frontend
+(A) 2024-12-10 Revisar árbol estrategia +carper @estrategia
+(A) 2024-12-17 Proyecto Ourtlier +carper @ai

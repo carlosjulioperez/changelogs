@@ -1,0 +1,41 @@
+MindMap
+	@startmindmap
+	* Debian
+	** Ubuntu
+	*** Linux Mint
+	*** Kubuntu
+	*** Lubuntu
+	*** KDE Neon
+	** LMDE
+	** SolydXK
+	** SteamOS
+	** Raspbian with a very long name
+	*** <s>Raspmbc</s> => OSMC
+	*** <s>Raspyfi</s> => Volumio
+	@endmindmap
+
+Estrategia
+	@startmindmap
+	* Estrategia
+	** Management
+	*** IT Architect
+	*** Project Management
+	*** UX/UI
+	*** Industrial Automation
+	**** Asterisk
+	*** SAP Signavio (BPM)
+	*** Odoo, Oracle Suite
+	** AI
+	** Data Management
+	** Emprendimiento
+	*** AWS Developer
+	*** Fullstack Open
+	*** Rancher App
+	*** Nim
+	*** Go
+	*** Elixir
+	** DevOps
+	*** Coursera Prof.Cert.
+	*** Linkedin Prof.Cert.
+	** Cybersecurity
+	@endmindmap

@@ -410,6 +410,9 @@ CONTEXT_PATH
 	Netlife_Administrador
 	#Pr0H@R3s7*mD&nL
 
+	SoporteS34
+	JCmel9fPk2KE9x8
+
 	error_log("\n>>> valor:  $valor");
 	error_log($boolEsTipoPermitido ? "OK": "NO PERMITIDO");
 	error_log(print_r(">>>" . $array, 1));
