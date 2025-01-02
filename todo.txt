@@ -6,4 +6,5 @@ x 2024-12-10 2024-12-10 Entrevista TCS UY pri:A due:2024-12-10 +carper @intervie
 (B) 2024-12-10 Compilar preguntas Java Core y Spring +carper @interview
 x 2024-12-17 2024-12-10 Ingresar los elementos de detalle como Gestion Despacho pri:A due:2024-12-11 +falogic @frontend
 (A) 2024-12-10 Revisar árbol estrategia +carper @estrategia
-(A) 2024-12-17 Proyecto Ourtlier +carper @ai
+(A) 2024-12-17 Proyecto Outlier +carper @ai
+(B) 2024-12-18 BairesDev pruebas Java +carper @interview
