@@ -11,6 +11,8 @@ Docker + Status:
 
 		+ Delete all stopped docker containers:
 			$ docker rm $(docker ps -a -q)
+	* kind:
+		$ brew install kind
 
 
 	* Delete all local Docker images:
