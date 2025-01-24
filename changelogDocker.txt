@@ -1,3 +1,6 @@
+Install:
+  * brew:
+    $ brew install --cask docker
 Docker + Status:
 	* Comandos
 		+ Borrar todas las imágenes:
