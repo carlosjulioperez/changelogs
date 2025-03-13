@@ -1,4 +1,19 @@
 Cursos
+
+	Python for Data Science
+	https://cognitiveclass.ai/courses/python-for-data-science
+	
+	Big Data Foundations
+	https://cognitiveclass.ai/learn/big-data
+		Hadoop 101
+		https://cognitiveclass.ai/courses/introduction-to-hadoop
+	
+		Spark fundamentals
+		https://cognitiveclass.ai/courses/what-is-spark
+	
+		Big Data 101
+		https://cognitiveclass.ai/courses/what-is-big-data
+
 	+ Math:
 		https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2
 	+ Revisar:
