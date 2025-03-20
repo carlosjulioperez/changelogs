@@ -1,5 +1,11 @@
 Vim
 
+	* Agregar sorround print() a una variable:
+		Ubicarse al inicio de la variable y activar modo visual
+		viw
+		c (chambiar)
+		print(Ctr + r, luego "
+		
 	* Yank 5 caracteres a la derecha:
 		y5l
 	
