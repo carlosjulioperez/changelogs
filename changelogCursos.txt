@@ -13,6 +13,8 @@ Cursos
 	
 		Big Data 101
 		https://cognitiveclass.ai/courses/what-is-big-data
+	
+	https://trailhead.salesforce.com/users/gwade/trailmixes/ncino-developer-training
 
 	+ Math:
 		https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2
