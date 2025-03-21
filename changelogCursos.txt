@@ -15,6 +15,7 @@ Cursos
 		https://cognitiveclass.ai/courses/what-is-big-data
 	
 	https://trailhead.salesforce.com/users/gwade/trailmixes/ncino-developer-training
+	https://www.udemy.com/course/ibm-app-connect-enterprise-12-ace-development
 
 	+ Math:
 		https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2
