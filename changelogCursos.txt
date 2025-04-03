@@ -1,4 +1,6 @@
 Cursos
+	+ Temas:
+		SAFe Agilist, RedHat's Ansible Automation Platform, Databrics, DataLake, Servicenow, K8S, Azure DevOps
 
 	Python for Data Science
 	https://cognitiveclass.ai/courses/python-for-data-science
@@ -13,6 +15,10 @@ Cursos
 	
 		Big Data 101
 		https://cognitiveclass.ai/courses/what-is-big-data
+	
+	https://trailhead.salesforce.com/users/gwade/trailmixes/ncino-developer-training
+	https://www.udemy.com/course/ibm-app-connect-enterprise-12-ace-development
+	https://learn.microsoft.com/en-us/training/azure/
 
 	+ Math:
 		https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2
