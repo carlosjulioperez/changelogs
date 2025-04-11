@@ -1,5 +1,10 @@
 Artificial Inelligence
 	Desarrollo software & AI
 	https://www.cio.com/article/3437436/rethinking-software-development-in-the-ai-era.html?nsdr=true
-452885086
-https://mobileappcommunicator.auth.microsoft.com/activatev2/714285462/SASPUBNCUSLZ2FD117
+
+		python3 -m venv .venv
+		source .venv/bin/activate
+		.venv\Scripts\activate
+		pip install pyspark==3.3.2
+		pip install pyspark[sql]
+		pip install pyspark[pandas_on_spark]
