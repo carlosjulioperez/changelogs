@@ -1,0 +1,27 @@
+Spark
+	+ Mac:
+		* brew:
+		https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
+
+		$ brew install openjdk@11	
+
+		* legacy:
+		$ wget https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
+		$ tar -xvzf spark-3.3.2-bin-hadoop3.tgz
+
+		$ vim ~/.bash_profile
+		export SPARK_HOME=~/opt/spark-3.3.2-bin-hadoop3
+		export PATH=$SPARK_HOME/bin:$PY4J_PATH:$PATH
+		export PY4J_PATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.9.5-src.zip:$PY4J_PATH
+		$ source ~/.bash_profile
+
+		$ python3 -m venv .venv
+		$ source .venv/bin/activate
+		$ pip install pyspark==3.3.2
+		$ pip install pyspark[sql]
+		$ pip install pyspark[pandas_on_spark]
+
+		Verify installation:
+		$ python -c "import pyspark; print(pyspark.__version__)"
+
+

@@ -1,0 +1,11 @@
+SdkMan
+	https://sdkman.io/usage#listversions
+	$ sdk list groovy
+	$ sdk current groovy
+	$ sdk default groovy 2.4.19
+	
+	$ sdk install java 7.0.352-zulu
+	$ sdk default java 8.0.402-amzn
+	$ sdk install java 11.0.23-amzn 
+	$ sdk default java 11.0.23-amzn  
+
