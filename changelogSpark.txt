@@ -1,11 +1,44 @@
 Spark
 	+ Mac:
-		* brew:
 		https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
 
-		$ brew install openjdk@11	
+		$ sdk install java 11.0.23-amzn 
+		$ sdk default java 11.0.23-amzn  
+		
+		$ python3 -m venv .venv
+		$ source .venv/bin/activate
+		$ pip install pyspark
+		$ pip install pyspark[sql]
+		$ pip install pyspark[pandas_on_spark]
 
-		* legacy:
+		Verify installation:
+		$ python -c "import pyspark; print(pyspark.__version__)"
+
+		# Create DataFrame in PySpark Shell
+		data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
+		df = spark.createDataFrame(data)
+		df.show()
+
+		https://colab.research.google.com/drive/1G894WS7ltIUTusWWmsCnF_zQhQqZCDOc#scrollTo=hz6ALr5mMqZt
+		$ wget https://jacobceles.github.io/knowledge_repo/colab_and_pyspark/cars.csv
+
+		* loadCsv.py (Python 3.13.3, PySpark: 3.5.5):
+		from pyspark.sql import SparkSession
+
+		# Initialize Spark session
+		spark = SparkSession.builder \
+		 .appName("CSV Loader") \
+		 .getOrCreate()
+
+		df = spark.read.csv('cars.csv', header=True, sep=";")
+		df.show(5)
+
+		# Other csv example and resources
+		https://colab.research.google.com/drive/1fa2G3YuXx3Isqyby5kFETqmWotFwtqlH?usp=sharing
+		https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
+		https://sparkmadeeasy.com/quick_start
+
+	* Linux:
 		$ wget https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
 		$ tar -xvzf spark-3.3.2-bin-hadoop3.tgz
 
