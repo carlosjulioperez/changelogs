@@ -5,11 +5,17 @@ Spark
 		$ sdk install java 11.0.23-amzn 
 		$ sdk default java 11.0.23-amzn  
 		
-		$ python3 -m venv .venv
-		$ source .venv/bin/activate
+		$ python3 -m venv venv
+		$ source venv/bin/activate
 		$ pip install pyspark
 		$ pip install pyspark[sql]
 		$ pip install pyspark[pandas_on_spark]
+
+		Exportar dependencias:
+		$ pip freeze > requirements.txt
+
+		Instalar dependencias:
+		$ pip install -r requirements.txt
 
 		Verify installation:
 		$ python -c "import pyspark; print(pyspark.__version__)"
