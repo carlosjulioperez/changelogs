@@ -40,3 +40,22 @@ numAs = logData.filter(lambda s: 'a' in s).count()
 numBs = logData.filter(lambda s: 'b' in s).count()
 print(f"Lines with a: {numAs}, lines with b: {numBs}")
 # print ("Lines with a: %i, lines with b: %i" % (numAs, numBs)
+
+----
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import concat_ws, col
+
+# Initialize Spark session
+spark = SparkSession.builder \
+ .appName("CSV Loader") \
+ .getOrCreate()
+
+df = spark.read.csv('cars.csv', header=True, sep=";")
+# df.show(5)
+# Add new transformation column by concatenating Car, Model, and Origin
+df = df.withColumn("transformation", 
+                  concat_ws(" - ", col("Car"), col("Model"), col("Origin")))
+
+# Show the first 5 rows with the new column
+df.show(5, truncate=False)
