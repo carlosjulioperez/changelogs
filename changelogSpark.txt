@@ -44,6 +44,45 @@ Spark
 		https://sparkbyexamples.com/pyspark/how-to-install-pyspark-on-mac/
 		https://sparkmadeeasy.com/quick_start
 
+# Put your code here
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("DataProcessing").getOrCreate()
+
+data = [("1", "Jack", 22, "Data Science"),
+        ("2", "Luke", 21, "Data Analytics"),
+        ("3", "Leo", 24, "Micro Services")]
+
+columns = ["ID", "Name", "Age", "Area of Interest"]
+df = spark.createDataFrame(data, columns)
+
+age_stats_df = df.describe(["Age"])
+age_stats_df.write.parquet("/projects/challenge/Age")
+print("Statical description of 'Age' column saved to /projects/challenge/Age")
+
+selected_df = df.select("ID", "Name", "Age").orderBy("Name")
+
+# Put your code here
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("DataProcessing").getOrCreate()
+
+data = [("1", "Jack", 22, "Data Science"),
+        ("2", "Luke", 21, "Data Analytics"),
+        ("3", "Leo", 24, "Micro Services")]
+
+columns = ["ID", "Name", "Age", "Area of Interest"]
+df = spark.createDataFrame(data, columns)
+
+age_stats_df = df.describe(["Age"])
+age_stats_df.write.parquet("/projects/challenge/Age")
+print("Statical description of 'Age' column saved to /projects/challenge/Age")
+
+selected_df = df.select("ID", "Name", "Age").orderBy("Name", ascending=False)
+selected_df.write.parquet("/projects/challenge/NameSorted")
+print("DataFrame with 'ID', 'Name', and 'Age'")
+
+spark.stop()
+
+
 	* Linux:
 		$ wget https://archive.apache.org/dist/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
 		$ tar -xvzf spark-3.3.2-bin-hadoop3.tgz
