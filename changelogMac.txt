@@ -2,6 +2,9 @@ Software en mac
 
 	+ todo.txt:
 		brew install --cask sleek
+	
+	+ imagemagick:
+		brew install imagemagick
 
 	+ Visual Studio Code:
 		https://stackoverflow.com/questions/54173462/how-to-turn-off-or-on-sounds-from-visual-studio-code
