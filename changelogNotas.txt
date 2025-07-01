@@ -1,81 +1,51 @@
 Notas
+	* TODO:
+		+ Daniel Pinto:
+			https://www.youtube.com/watch?v=PxcW1OtvscI
+		+ Cursos:
+			Electricidad:
+			Mecánica:
+			SAP en IEvolve
 
 	+ CVs:
+		https://europass.europa.eu/en
 		https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/aa59c551-0373-45ed-950d-205280cdc034?view=html
 
-	test@liferay.com
-	f.arellano@eneragro.com.ec
-	s.narvaez@eneragro.com.ec
-	c.cruz@eneragro.com.ec
-	lab@eneragro.com.ec
-
-Nodejs
-	Senior-level experience of at least 4 years of experience with Javascript, NodeJS, Express, Mongo
-
-==================================================
-https://cryptocurrencyjobs.co/entry-level/
-
-Rust
-https://supraoracles.com/careers/4966815004/?gh_src=cryptocurrencyjobs.co
-Very good command over Rust programming
-Knowledge and experience with Rust testing tools and testing methodologies
-Knowledge of fuzzing
-Knowledge of code contracts
-Async programming/ tokio runtime in Rust
-
-Rust
-https://jobs.lever.co/chainlink/c79ebded-4d90-417f-8958-fbaffdae6018?lever-origin=applied&lever-source%5B%5D=cryptocurrencyjobs.co
-We use Go, Typescript, Solidity, Python, LATEX, git, and Linux/Unix.
-
-
-==================================================
-
-Past experiences
-How the team was involved in
-any type of challenges you had to deal with
-
-
-Hola, mi nombre es Carlos Julio Pérez vivo en Manta Ecuador.  Soy desarrollador Backend Java con más de 10 años de experiencia y creo que encajaría en el puesto porque me gusta trabajar con gente de varios países y aprender cosas nuevas cada día.
-
-Hello, my name is Carlos Julio Pérez, I live in Manta Ecuador. I am a Backend Java developer with more than 10 years of experience and I think I would fit the position because I like to work with people from various countries and learn new things every day.
-I want be part of an efficient team to successfully close projects, contributing with my experience and commitment the effort necessary to deliver work with added value to the client.
-
-Recently I have been completed the Professional Certification from Coursera
-(Preparing for Google Cloud Certification: Cloud Architect) and a Blockchain
-Certification and some others.
-You can learn more about me reviewing my LinkedIn profile at:
-https://www.linkedin.com/in/carlosjulioperez/
-
-This is my updated resumé in PDF format:
-https://drive.google.com/file/d/1sjj5RayCyo7aLjTaGoQWk3i7a5ro0yX4/view?usp=sharing
-
-This is my repository 
-https://ec.linkedin.com/in/carlosjulioperez
-
-Creating a POS web application (java and open source tools) that working in two modes, online and offline and that communicates it with the SAP ERP via web services.
-
-Hoja de vida:
-https://drive.google.com/file/d/1sjj5RayCyo7aLjTaGoQWk3i7a5ro0yX4/view?usp=sharing
-
-Java Groovy SpringBoot Linux Blockchain (jr) Clojure (jr) GCP
+GenAI
+	Be the first to get certified in Google Cloud Generative AI Leader (GAIL ) Certificate || Join now for the bootcamp
+	1 Mandatory registration (use TCS Email id) 
+	https://cloud.google.com/resources/pck-page
+	2 Mandatory Learning for a Certification enrolled (Create account with TCS Email)
+	https://partner.cloudskillsboost.google/paths/1952
+	3 Join Instructor Led Session (Free of cost) to support in your certification Learning Journey (Attending session is not mandatory for voucher)
+	4 Post completion of above mandatory steps you shall receive an exam booking form with "Congratulations! It's time for us to book your exam"
+	5 if you are done with the both steps mentioned above and Exam booking form not received within 5-7 working days then write to cloud-partner- training@google.com
+	6 Acquire the certificate and upload in iEvolve ID 24416
+	What is the validity period for this certificate?
+	This External certification from Google is valid for 3 years from the date of certification.
+	Will I get an iEvolve competency ?
+	The certified associate will get the following iEvolve competencies, Generative AI ( ID 6618) at E1 Level
+	AI & Gen AI - Products & Tools (ID: 6686) at E1 Level
+	This is a relatively easy certificate, from Google Cloud, therefore, we strongly encourage you to consider this valuable opportunity to expand your skillset and contribute to TCS growth in the AI space.
+	Please feel free to reach out to my team (@Mohd Malik or @HARE SUTHAN K G) for any queries.
 
 ==================================================
 
 	+ Pelis:
 		El exhorsista
-		Hijos del hombre
+		[x] Hijos del hombre
 		Triple frontera
 		El último boy scout
 		Constantine
-		Sociedad de la nieve
+		[x] Sociedad de la nieve
 		The big short (bolsa de valores)
 		The reign of fire
 		Jordan
 		Anchor man
-		Roreo y Julieta
+		[x] Roreo y Julieta
 		Mel Brooks
 
-		Mission Impossible (1996)
+		[x] Mission Impossible (1996)
 		"MUNICH" (2005)
 		"SKYFALL" (2012)
 		Spy Game
@@ -85,7 +55,7 @@ Java Groovy SpringBoot Linux Blockchain (jr) Clojure (jr) GCP
 		Atomic Blonde (2017)
 		No Way Out (1987)
 		Enemy of the State (1998)
-		Tinker, Tailor, Soldier, Spy (2011)
+		[x] Tinker, Tailor, Soldier, Spy (2011)
 		The Bourne Identity (2002)
 		Three Days Of The Condor (1975)
 		Zero Dark Thirty (2012)
