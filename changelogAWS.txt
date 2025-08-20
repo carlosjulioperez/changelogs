@@ -1,0 +1,10 @@
+AWS
+
+	Amazon RDS for databases
+	Amazon Lambda for serverless computing 
+	Amazon S3 for storage
+
+	Hakllmark
+	Tapas Samui
+	Narendra Gudapati
+

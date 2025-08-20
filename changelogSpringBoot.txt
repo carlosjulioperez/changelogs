@@ -1,5 +1,15 @@
 Spring Boot
 
+	+ terms:
+		jpa annotation exception spring boot controller adwise
+		
+		In Spring Boot applications, @ControllerAdvice is a powerful annotation used for global exception handling and other cross-cutting concerns that apply to multiple controllers. When dealing with JPA (Java Persistence API) and potential exceptions arising from database interactions, @ControllerAdvice can be effectively combined with @ExceptionHandler to provide centralized and consistent error responses.
+
+		Entornos: dev, qa, prod
+		Lombok
+		AWS fullstack
+		Vue
+
 	+ JPA:
 		In Springboot 3 javax.persistence was replaced by [jakarta.persistence]
 		https://genotechies.medium.com/not-found-javax-persistence-in-my-spring-boot-project-b52939614066

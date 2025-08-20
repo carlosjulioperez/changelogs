@@ -1,0 +1,335 @@
+FastAPI
+
+	from fastapi import FastAPI
+	app = FastAPI()
+
+	@app.get("/")
+	def root():
+		return {"message": "Hello World"}
+
+	$ fastapi dev main.py
+	$ curl http://localhost:8000
+	{"message":"Hello World"}
+
+	--------------------------------------------------
+
+	from fastapi import FastAPI
+	app = FastAPI()
+
+	@app.get("/")
+	def root(name: str = "Alan"):
+		return {"message": f"Hello {name}"}
+	
+	$ fastapi dev main.py
+	$ curl \
+	  -H 'Content-Type: application/json' \
+	  http://localhost:8000?name=Steve
+	{"message":"Hello Steve"}	
+
+	--------------------------------------------------
+
+	# Import date
+	from datetime import date
+
+	# Import BaseModel
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+		quantity: int = 0
+		expiration: date = None
+	
+	--------------------------------------------------
+
+	from fastapi import FastAPI
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+
+	app = FastAPI()
+	
+	@app.post("/")
+	def root(item: Item):
+		name = item.name
+		return {"message": f"We have {name}"}	
+
+	$ fastapi dev main.py
+	$ curl -X POST \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "bananas"}' \
+	  http://localhost:8000
+	{"message":"We have bananas"}
+
+	--------------------------------------------------
+
+	from fastapi import FastAPI
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+		description: str
+
+	# Define items at application start
+	items = {"bananas": "Yellow fruit."}
+
+	app = FastAPI()
+
+
+	@app.put("/items")
+	def update_item(item: Item):
+		name = item.name
+		# Update the description
+		items[name] = item.description
+		return item
+
+	$ fastapi dev main.py
+	$ curl -X PUT \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "bananas", "description": "Delicious!"}' \
+	  http://localhost:8000/items
+	{"name":"bananas","description":"Delicious!"}
+
+	--------------------------------------------------
+
+	from fastapi import FastAPI
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+
+	# Define items at application start
+	items = {"apples", "oranges", "bananas"}
+
+	app = FastAPI()
+
+	@app.delete("/items")
+	def delete_item(item: Item):
+		name = item.name
+		# Delete the item
+		items.remove(name)
+		return {}
+	
+	$ fastapi dev main.py
+	$ curl -X DELETE \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "bananas"}' \
+	  http://localhost:8000/items
+	{}
+	
+	--------------------------------------------------
+
+	from fastapi import FastAPI, HTTPException
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+
+	# Define items at application startup
+	items = {"apples", "oranges"}
+
+	app = FastAPI()
+
+
+	@app.delete("/items")
+	def delete_item(item: Item):
+		name = item.name
+		if name in items:
+			items.remove(name)
+		else:
+			# Raise HTTPException with status code for "not found"
+			raise HTTPException(status_code=404, detail="Item not found.")
+		return {}
+
+	$ fastapi dev main.py
+	$ curl -X DELETE \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "bananas"}' \
+	  http://localhost:8000/items
+	{"detail":"Item not found."}
+
+	--------------------------------------------------
+
+	from fastapi import FastAPI, HTTPException
+	from pydantic import BaseModel
+
+	# Define model Item
+	class Item(BaseModel):
+		name: str
+
+	app = FastAPI()
+	items = {"rock", "paper", "scissors"}
+
+	@app.delete("/items")
+	# Make asynchronous
+	async def root(item: Item):
+		name = item.name
+		# Check if name is in items
+		if name not in items:
+			# Return the status code for not found
+			raise HTTPException(status_code=404, detail="Item not found.")
+		items.remove(name)
+		return {"message": "Item deleted"}
+
+	$ fastapi dev main.py
+	$ curl -X DELETE \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "rock"}' \
+	  http://localhost:8000/items
+
+	$ curl -X DELETE \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "roll"}' \
+	  http://localhost:8000/items
+
+	{"detail":"Item not found."}
+
+	--------------------------------------------------
+
+	main.py
+	from fastapi import FastAPI, HTTPException
+	from pydantic import BaseModel
+	from typing import Optional
+
+	# define model Item
+	class Item(BaseModel):
+		name: str
+		quantity: Optional[int] = 0
+
+	app = FastAPI()
+
+	items = {"scissors": Item(name="scissors", quantity=100)}
+
+	@app.get("/items")
+	def read(name: str):
+		if name not in items:
+			raise HTTPException(status_code=404, detail="Item not found")
+		return items[name]
+
+	system_test.py	
+
+	# Import TestClient
+	from fastapi.testclient import TestClient
+	from main import app
+
+	# Create test client with application context
+	client = TestClient(app)
+
+	def test_main():
+		response = client.get("/items?name=scissors")
+		assert response.status_code == 200
+		assert response.json() == {"name": "scissors",
+								   "quantity": 100}
+
+	$ pytest
+
+	--------------------------------------------------
+
+	from fastapi import FastAPI, HTTPException
+	from pydantic import BaseModel
+	from typing import Optional
+
+	# define model Item
+	class Item(BaseModel):
+		name: str
+		quantity: Optional[int] = 0
+
+	app = FastAPI()
+
+	items = {}
+
+	@app.post("/items")
+	def create(item: Item):
+		name = item.name
+		if name in items:
+			raise HTTPException(status_code=409, detail="Item exists")
+		items[name] = item
+		return {"message": f"Added {name} to items."}
+	  
+	@app.get("/items")
+	def read(name: str):
+		if name not in items:
+			raise HTTPException(status_code=404, detail="Item not found")
+		return items[name]  
+	  
+	@app.put("/items")
+	def update(item: Item):
+		name = item.name
+		if name not in items:
+			raise HTTPException(status_code=404, detail="Item not found")
+		items[name] = item
+		return {"message": f"Updated {name}."}
+	  
+	@app.delete("/items")
+	def delete(item: Item):
+		name = item.name
+		if name not in items:
+			raise HTTPException(status_code=404, detail="Item not found")
+		del items[name]
+		return {"message": f"Deleted {name}."}
+
+	$ fastapi dev main.py
+	$ curl -X POST \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "rock"}' \
+	  http://localhost:8000/items
+
+	$ curl http://localhost:8000/items?name=rock
+
+	$ curl -X PUT \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "rock", "quantity": 100}' \
+	  http://localhost:8000/items
+
+	$ curl -X DELETE \
+	  -H 'Content-Type: application/json' \
+	  -d '{"name": "rock"}' \
+	  http://localhost:8000/items
+
+	$ curl http://localhost:8000/items?name=rock
+
+	{"message":"Added rock to items."}
+
+	--------------------------------------------------
+
+	import requests
+
+	ENDPOINT = "http://localhost:8000/items"
+
+	# Create item "rock" without providing quantity
+	r = requests.post(ENDPOINT, json={"name": "rock"})
+	assert r.status_code == 200
+	assert r.json()["message"] == "Added rock to items."
+
+	# Verify that item "rock" has quantity 0
+	r = requests.get(ENDPOINT + "?name=rock")
+	assert r.status_code == 200
+	assert r.json()["quantity"] == 0
+
+	# Update item "rock" with quantity 100
+	r = requests.put(ENDPOINT, json={"name": "rock", "quantity": 100})
+	assert r.status_code == 200
+	assert r.json()["message"] == "Updated rock."
+
+	# Verify that item "rock" has quantity 100
+	r = requests.get(ENDPOINT + "?name=rock")
+	assert r.status_code == 200
+	assert r.json()["quantity"] == 100
+
+	# Delete item "rock"
+	r = requests.delete(ENDPOINT, json={"name": "rock"})
+	assert r.status_code == 200
+	assert r.json()["message"] == "Deleted rock."
+
+	# Verify that item "rock" does not exist
+	r = requests.get(ENDPOINT + "?name=rock")
+	assert r.status_code == 404
+
+	print("Test complete.")
+
+

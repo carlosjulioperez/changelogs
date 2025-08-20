@@ -1,0 +1,44 @@
+GCP
+	* Cursos
+	https://www.udemy.com/course/learn-serverless-google-cloud-run-with-java-and-spring-boot/?couponCode=25BBPMXINACTIVE
+
+	* Develop and manage backend services using GCP sertvices like Cloud Run, App Engine, Cloud Functions, Pub/Sub, Firestore, BigQuery, Cloud SQL and Identity & Access Management (IAM)
+
+	Spring Cloud Config to manage your application's configuration.
+	You'll send and receive messages with Pub/Sub and Spring Integration.
+	You'll also use Cloud SQL as a managed relational database for your Java
+	applications, and learn how to migrate to Spanner.
+
+	Building Scalable Java Microservices with Spring Boot and Spring Cloud
+	======================================================================
+	Introduction
+	Google Cloud provides a range of cloud services that are options for solution architects and developers.
+
+	Compute and hosting services
+	----------------------------
+	Cloud Functions, that provide a completely serverless execution environment
+	App Engine, that provides a fully managed platform-as-a-service framework
+	Google Kubernetes Engine, that provides a managed containers-as-a-service environment for containerized applications
+	Compute Engine, which is Google’s infrastructure-as-a-service solution that provides maximum flexibility for users and organisations who choose to manage their solutions themselves
+	Cloud Run, which is a serverless, managed compute platform, that lets you run stateless containers by using web requests or Pub/Sub events.
+	Cloud Shell is an interactive Linux command line shell environment for managing resources hosted on GCP.
+	When you start Cloud Shell, it provisions a small compute engine virtual machine running a Debian based Linux operating system.
+
+	Storage services
+	----------------
+	These services can deliver cost and performance-optimized solutions for structured, unstructured, transactional, and relational data.
+
+	The demo application used in this course is composed of two separate microservices-style component applications: the Guestbook frontend application and the Guestbook backend service.
+
+	Zipkin is able to provide detailed timing data that can be used to troubleshoot latency issues with a microservices-style application like this.
+	By implementing a Zipkin (or similar) solution yourself, you can provide the tracing services required to handle both the collection and analysis of this data.
+
+	Message queuing solutions, like RabbitMQ, allow services to send or receive messages (or requests) asynchronously, instead of having to carry out resource-intensive processing at the same time. This helps to avoid component services getting stuck waiting to hand off a message.
+	Message queueing makes it much easier to scale out component services independently because it allows you to distribute messages to multiple targets for processing or across multiple services for load-balancing.
+	Message queuing also helps create connections between applications or services that are more independent, asynchronous, and therefore less tightly coupled.
+
+	In the labs, you’ll configure Pub/Sub as a message broker for the application.
+
+	The frontend UI sends messages to a message queue that the backend service is subscribed to so that it can receive and process the messages asynchronously.
+
+	These infrastructure services all require management and operational overhead in order to deliver scalable solutions.
