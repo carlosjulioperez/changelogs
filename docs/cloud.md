@@ -6,10 +6,15 @@
     - [Environment specific profiles](#environment-specific-profiles)
     - [Spring Profiles](#spring-profiles)
     - [Spring Boot Actuator](#spring-boot-actuator)
+    - [Packaging](#packaging)
     - [@ControllerAdvice](#controlleradvice)
 
-
 # Running Spring Boot in production
+
+> You don't need to deploy the code into a container. Just stand up the engine. 
+> It is just a library at that point. It is all about reducing that surface area. 
+> Josh Long, Spring Developer
+
 ## Dependencies
 ```bash
 curl -s "https://get.sdkman.io" | bash
@@ -214,8 +219,30 @@ java -jar -Dspring.profiles.active=prod build/libs/SpringBootProdApplication-0.0
 ```
 
 [http://localhost:9001/actuator/health](http://localhost:9001/actuator/health)
-```
-{"status":"UP","components":{"diskSpace":{"status":"UP","details":{"total":250790436864,"free":73358626816,"threshold":10485760,"exists":true}},"ping":{"status":"UP"}}}
+```json
+{
+  "status": "UP",
+  "components": {
+    "dataWebServiceApi": {
+      "status": "UP",
+      "details": {
+        "Data Web Service API": "Up"
+      }
+    },
+    "diskSpace": {
+      "status": "UP",
+      "details": {
+        "total": 250790436864,
+        "free": 70818664448,
+        "threshold": 10485760,
+        "exists": true
+      }
+    },
+    "ping": {
+      "status": "UP"
+    }
+  }
+}
 ```
 
 [http://localhost:9001/actuator/info](http://localhost:9001/actuator/info)
@@ -232,4 +259,13 @@ java -jar -Dspring.profiles.active=prod build/libs/SpringBootProdApplication-0.0
 }
 ```
 
+### Packaging
+
+> You don't need to deploy the code into a container. Just stand up the engine. 
+> It is just a library at that point. It is all about reducing that surface area. 
+
+Josh Long, Spring Developer
+
+
 ### @ControllerAdvice
+aaa

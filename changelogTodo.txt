@@ -28,10 +28,29 @@ TODO
 [ ] Elixir + Phoenix
 [ ] FullStack Open
 
+Globalbitz
+
+Pr Carlos Enrique Carrasco Norte
+08-22
+[x] Medicamente contra cancer FENBENDAZOL
+[x] Entrevista Perficient Sofía Halm AR
+	Tienen una metodología específica para la migración?
+	Cuál es el stackl tecnológico?
+	¿Cómo está estructurado el equipo alrededor de la arquitectura? ¿Cuál es el rol específico del Java Architect y cómo colabora con product owners, QA, DevOps?
+	¿Qué expectativas tienen para esta posición en los primeros 3–6 meses? ¿Cómo miden el éxito de un arquitecto (por ejemplo, performance, escalabilidad, mantenibilidad, entregas)?
+
+	consulora en USA, LATAM, Montevideo, arquitecto Java o asumir responsabilidades
+	cerca de Plaza Zavala, Ciudad Vieja. Asistir 2 veces a la oficina.
+[ ] SpringBoot en producción
+[ ] Freecodecamp
+
+08-21
+[x] Citrix Workspace app 2411.10 for Mac
+
 08-18
 [x] Revisión de gastos
 [x] Cursos FullStack con experiencia para trabajos
-[ ] Bicicletas eléctricas Lionel ebikes
+[x] Bicicletas eléctricas Lionel ebikes
 [ ] SpringBoot en producción
 [ ] Freecodecamp
 
