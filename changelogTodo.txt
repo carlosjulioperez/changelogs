@@ -28,7 +28,7 @@ TODO
 [ ] Elixir + Phoenix
 [ ] FullStack Open
 
-Globalbitz
+El ministerio de la alimentación saludable EGW
 
 Pr Carlos Enrique Carrasco Norte
 08-22
