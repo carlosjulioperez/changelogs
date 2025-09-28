@@ -168,6 +168,7 @@ Software en mac
 			% brew install svn
 
 	+ pomodoro cli:
+		% brew install --cask murdercode/presto/presto
 
 		Para dar soporte a bash/pomo.sh
 		% brew install zenity && zenity --info --text 'You did it!'
