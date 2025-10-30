@@ -14,9 +14,6 @@ TODO
 	https://www.coursera.org/specializations/spring-and-spring-boot-development
 	https://www.coursera.org/learn/advanced-spring-boot-development
 
-	GEOCOM Desarrollador Senior (Java) 
-	https://www.linkedin.com/jobs/view/4278566424/?refId=aba3a7d1-55a2-4f3a-adc4-10493bcc28ea&trackingId=BnqnmRzrQ2ySuYEHVqigXQ%3D%3D&trk=flagship3_job_home_appliedjobs
-
 [ ] IA Microsoft
 [ ] System Thinking
 [ ] Machine Learning
@@ -31,6 +28,11 @@ TODO
 El ministerio de la alimentación saludable EGW
 
 Pr Carlos Enrique Carrasco Norte
+
+10-29
+	[] IntelliJ IDEA CE
+		https://studyeasy.org/course-articles/6-months-free-jetbrains-license-activation-guide/?sfw=pass1761776396&sfw=pass1761776400		
+
 08-22
 [x] Medicamente contra cancer FENBENDAZOL
 [x] Entrevista Perficient Sofía Halm AR
