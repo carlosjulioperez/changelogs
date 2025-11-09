@@ -1,5 +1,11 @@
 Vim
 
+	* del texto [<a href="localhost:8080/h2-console"] ¿cómo selecciono desde la [l] todo el texto hasta antes del último ["] ?
+		v t"
+
+		v  : entra en modo visual carácter.
+		t" : mueve el cursor hasta antes del carácter " (sin incluirlo).
+
 	* Agregar sorround print() a una variable:
 		Ubicarse al inicio de la variable y activar modo visual
 		viw
