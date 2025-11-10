@@ -133,6 +133,13 @@ Software en mac
 		% sudo cd / && grep -rn "hello" *
 
 	+ Ejecutar un shell script como aplicación con automator:
+		Automator / Run Shell Script:
+			nohup /Applications/Kiyut/Alkitab-6_1/bin/alkitab >/dev/null 2>&1 &
+			exit 0
+		
+		Ejecutar el script desde consola (no ligado con Automator)
+		% vim alkitab.sh
+			/Applications/Kiyut/Alkitab-6_1/bin/alkitab &
 
 		https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock
 		Run shell script:
