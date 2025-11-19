@@ -1,4 +1,7 @@
 Git
+	+ Repetir el último mensaje de commit:
+		$ git commit --reuse-message=HEAD
+
 	+ Poner Continue en gitlab:
 		:recycle: Continue
 
