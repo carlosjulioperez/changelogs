@@ -1,5 +1,8 @@
 Software en mac
 
+	+ descomprimit:
+		brew install unar
+
 	+ todo.txt:
 		brew install --cask sleek
 	

@@ -21,6 +21,12 @@ Git
 		$ git status
 		$ git log
 
+	+ Crear rama a partir de la actual (main):
+		$ git checkout main (si no estás en main)
+		$ git pull origin main (asegurarte de que tu rama main está actualizada con el repositorio remoto)
+		$ git checkout -b nombre-de-tu-nueva-rama (crear nueva rama)
+		$ git push -u origin nombre-de-tu-nueva-rama (rama disponible en repositorio remoto)
+
 	+ Crear rama:
 		$ git checkout master (si no estoy en rama master)
 		$ git fetch
