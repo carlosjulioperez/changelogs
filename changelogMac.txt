@@ -1,5 +1,8 @@
 Software en mac
 
+	+ Borrar cookies y datos de un determinado sitio en Brave:
+		brave://settings/content/all
+
 	+ descomprimit:
 		brew install unar
 
