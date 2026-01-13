@@ -27,6 +27,9 @@ Software en mac
 
 		Luego instalar Mounty
 
+		+ mysql:
+		
+
 	+ Countdown timer:
 		$ brew install --cask menubar-countdown
 
