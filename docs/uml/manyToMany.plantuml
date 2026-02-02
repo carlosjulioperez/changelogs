@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+entity "Job Position" as JobPosition {
+  +jobPositionId
+  title
+  description
+}
+
+entity "Candidate" as Candidate {
+  +candidateId
+  name
+  email
+}
+
+entity "Job Application" as JobApplication {
+  +jobApplicationId
+  applicationDate
+  status
+}
+
+JobPosition ||--o{ JobApplication : receives
+Candidate  ||--o{ JobApplication : submits
+
+@enduml

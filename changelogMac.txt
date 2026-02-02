@@ -1,5 +1,12 @@
 Software en mac
 
+	+ Exportar SWORD a E-Sword:
+		Descargar zip de release de BibleMultiConverter 
+
+		$ java -jar BibleMultiConverter.jar SWORD /Users/carper/Downloads/tools/biblia/swordProject/spavbl2018eb ESwordV11 /Users/carper/tmp/ESword/spavbl2018eb
+		
+		Nota: Para exportar de e-sword a sword, usar Simple Bible Reader
+
 	+ Borrar cookies y datos de un determinado sitio en Brave:
 		brave://settings/content/all
 

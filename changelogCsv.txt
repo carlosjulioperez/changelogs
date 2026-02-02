@@ -1,0 +1,29 @@
+CSV
+
+	+ Terminal:
+		$ column -s, -t file.csv | less -S
+
+	+ csvkit Python:
+		$ cd salesforce_developer
+		$ python3 -m venv venv
+		$ source venv/bin/activate
+		$ pip install csvkit
+		$ csvcut --help (verify)
+		$ csvlook file.csv | less -S
+
+	+ visidata Python
+		$ cd salesforce_developer
+		$ python3 -m venv venv
+		$ source venv/bin/activate
+		$ pip install visidata
+		$ vd EmployeeDataInsert.csv
+		
+	+ miller go:
+		$ brew install miller
+		$ mlr --c2p cat EmployeeDataInsert.csv | less -S    o
+		$ mlr --icsv --opprint cat EmployeeDataInsert.csv
+
+		
+
+
+

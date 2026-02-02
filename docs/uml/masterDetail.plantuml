@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+entity "Account" as Account {
+    +Id : String
+    Name : String
+    Industry : String
+}
+
+entity "Contact" as Contact {
+    +Id : String
+    FirstName : String
+    LastName : String
+    Email : String
+    AccountId : String
+}
+
+Account ||--o{ Contact : "Master-Detail"
+@enduml
