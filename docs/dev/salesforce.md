@@ -19,8 +19,11 @@
     - [isPickVal](#ispickval)
     - [Valid format](#valid-format)
   - [Importing and Exporting Data](#importing-and-exporting-data)
+    - [View CSV files by console](#view-csv-files-by-console)
     - [Data Import Options](#data-import-options)
     - [Download Data Loader](#download-data-loader)
+    - [Import Records using Data Loader](#import-records-using-data-loader)
+    - [Update Records using Data Loader](#update-records-using-data-loader)
 
 # SalesForce Dev
 
@@ -179,6 +182,13 @@ NOT(REGEX( Mobile_Number__c , "\\D*?(\\d\\D*?){10}"))
   * Data Loader
   * Exporting data via reports
 
+### View CSV files by console
+  * Install [miller](https://miller.readthedocs.io/en/6.16.0/)
+```bash
+brew install miller
+mlr --c2p cat EmployeeDataInsert.csv | less -S
+```
+
 ### Data Import Options
 * `Data Loader`: Data loader can be used to load large files that contain up to 5 million records.
 * `Data Import Wizard`: The Data Import Wizard can be accessed in Setup to import up to 50,000 records.
@@ -189,3 +199,32 @@ NOT(REGEX( Mobile_Number__c , "\\D*?(\\d\\D*?){10}"))
 ### Download Data Loader
 * Integrations / Data Loader / Downloads
 * `java -jar dataloader-64.1.0.jar` (Java 17)
+
+### Import Records using Data Loader
+*Steps*
+* Insert / OAuth / Production
+* https://login.salesforce.com/
+* Use Custom Domain
+* trailhead.salesforce.com
+* Login until arrives this message in browser: `Authorization Successful!`
+
+*Import CSV*
+* Select Salesforce Object: Employee__c
+* Import from (CSV file): select file
+* Next (Initialization succeeded)
+* Step 2b: (Optional) relate using lookup field / Next
+* Step 3: Mapping / Create or Edit a Map
+![alt text](img/dataloader_mapping.png)
+* Save Mapping: EmployeeMappingDataLoader / OK
+* Step 4: Finish / Select Results Forlder / Finish
+
+### Update Records using Data Loader
+* Employees All
+* Pin columns
+
+![alt text](img/employees_pin1.png)
+![alt text](img/employees_pin2.png)
+* Select Fields to Display
+
+![alt text](img/employees_pin3.png)
+![alt text](img/employees_pin4.png)

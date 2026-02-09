@@ -1,4 +1,8 @@
 Software en mac
+	+ mole Limpiar espacio en disco
+		https://github.com/tw93/Mole
+		$ brew install mole
+		$ mole clean
 
 	+ Exportar SWORD a E-Sword:
 		Descargar zip de release de BibleMultiConverter 
@@ -18,6 +22,16 @@ Software en mac
 	
 	+ imagemagick:
 		brew install imagemagick
+
+		+ Convertir PDF a imagen uniendo todas las páginas verticalmente
+
+		$ magick -density 300 Informacion-de-cursos-2.pdf \
+			-background white -alpha remove -alpha off \
+			-append output.png
+
+		$ magick -density 300 resume-CarlosPerez-v4.1.pdf \
+		-background white -alpha remove -alpha off \
+		-append output.png
 
 	+ Visual Studio Code:
 		https://stackoverflow.com/questions/54173462/how-to-turn-off-or-on-sounds-from-visual-studio-code
