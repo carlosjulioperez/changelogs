@@ -1,4 +1,4 @@
-- [Salesforce Data Cloud Consultant Certification Course](#salesforce-data-cloud-consultant-certification-course)
+- [Salesforce Data Cloud Consultant Certification](#salesforce-data-cloud-consultant-certification)
   - [Data Cloud Process Overview](#data-cloud-process-overview)
     - [Data Cloud Lifecycle](#data-cloud-lifecycle)
   - [Data Cloud Setup and Administration](#data-cloud-setup-and-administration)
@@ -9,8 +9,12 @@
   - [Data Ingestion and Modeling](#data-ingestion-and-modeling)
     - [Data Space](#data-space)
     - [Data Explorer and Query Editor](#data-explorer-and-query-editor)
+    - [Upload Reservation and Contacts Records on Amazon S3](#upload-reservation-and-contacts-records-on-amazon-s3)
+    - [Create Connection between Amazon S3 and Data Cloud](#create-connection-between-amazon-s3-and-data-cloud)
+      - [Connect Salesforce with Amazon S3](#connect-salesforce-with-amazon-s3)
+      - [Create New Data Stream to get information from Amazon S3](#create-new-data-stream-to-get-information-from-amazon-s3)
 
-# Salesforce Data Cloud Consultant Certification Course
+# Salesforce Data Cloud Consultant Certification
 
 ## Data Cloud Process Overview
 
@@ -133,7 +137,64 @@ Query Editor
 
 ![alt text](img/query_editor1.png)
 
+### Upload Reservation and Contacts Records on Amazon S3
 
+*Download access key file*
+* Search: IAM
+* Quick Links: My Security Credentials
+* Create access key
+* Check: Continue to create access key / Create access key
+* Download .csv file
 
+*Create a bucket in S3*
+* Search: S3
+* Create bucket
+* General purpose
+* Bucket name: mydatacloudbucketcj
+* Create bucket
 
+![alt text](img/bucket1.png)
 
+* Create a folder: contactandhotelbookings
+* Create folder
+
+![alt text](img/folder1.png)
+
+* Upload (Coral_Clouds_Guests.csv, Coral_Clouds_Hotel_Reservations.csv)
+
+![alt text](img/upload.png)
+
+![alt text](img/upload1.png)
+* Destination: `s3://mydatacloudbucketcj/contactandhotelbookings/`
+
+### Create Connection between Amazon S3 and Data Cloud
+
+#### Connect Salesforce with Amazon S3
+* Setup / Home / Data Cloud / External Integrations / Other Connectors
+* New / Amazon S3
+
+![alt text](img/conn1.png)
+
+* Connection Name:  AmazonS3
+* Connection API Name:  AmazonS3
+* Provide `AWS access` key and `AWS secret access key`
+* Bucket name: `mydatacloudbucketcj`
+* Parent directory: `contactandhotelbookings`
+* Test Connection / Save
+
+![alt text](img/testconnection.png)
+![alt text](img/connectors.png)
+
+#### Create New Data Stream to get information from Amazon S3
+
+* Data Cloud / Data Streams / New
+* Amazon S3 / Next
+* New Data Stream / Connection: AmazonS3 / File Name: `Coral_Clouds_Guests.csv` / Next
+
+![alt text](img/ds1.png)
+
+* Data Lake Object Label: `Guest` / Data Lake Object API Name: `Guest`
+* Properties
+  * Category: `Profile`
+  * Primary key: `Guest Id`
+* In supported Fields: Adjust Data Type is needed
