@@ -5,9 +5,22 @@
     - [Data Cloud Tenant Endpoint](#data-cloud-tenant-endpoint)
     - [Load Data into Contact Object](#load-data-into-contact-object)
     - [Data Streams](#data-streams)
+      - [Categories](#categories)
     - [Create new Data Stream](#create-new-data-stream)
+    - [Data Normalization](#data-normalization)
+      - [Normalize Denormalized Data Use Case](#normalize-denormalized-data-use-case)
+    - [Data Transform](#data-transform)
   - [Data Ingestion and Modeling](#data-ingestion-and-modeling)
+    - [Data Cloud Object](#data-cloud-object)
+    - [Data Source Object](#data-source-object)
+    - [Data Lake Object (DLO)](#data-lake-object-dlo)
+    - [Data Model Object (DMO)](#data-model-object-dmo)
+    - [Key Takeaways](#key-takeaways)
+    - [Customer 360 Data Model](#customer-360-data-model)
     - [Data Space](#data-space)
+      - [How Data Space Work?](#how-data-space-work)
+      - [Use Case for Data Spaces](#use-case-for-data-spaces)
+    - [Permission Set Data Space Management](#permission-set-data-space-management)
     - [Data Explorer and Query Editor](#data-explorer-and-query-editor)
     - [Upload Reservation and Contacts Records on Amazon S3](#upload-reservation-and-contacts-records-on-amazon-s3)
     - [Create Connection between Amazon S3 and Data Cloud](#create-connection-between-amazon-s3-and-data-cloud)
@@ -16,6 +29,7 @@
     - [Mapping to Guest DLO to Individual DMO](#mapping-to-guest-dlo-to-individual-dmo)
     - [Mapping to Reservation DLO to Reservation DMO](#mapping-to-reservation-dlo-to-reservation-dmo)
       - [Duplicate records](#duplicate-records)
+  - [Identity Resolution](#identity-resolution)
 
 # Salesforce Data Cloud Consultant Certification
 
@@ -42,11 +56,11 @@
 
 ### Data Cloud Tenant Endpoint
 
-* https://developer.salesforce.com/agentforce-workshop/data-cloud/1-ingest-crm-contacts
-* Self-Service Workshop Setup
-* Quick Start: Explore the Coral Cloud Sample App
+* https://trailhead.salesforce.com
+* Search: Quick Start: Explore the Coral Cloud Sample App
 * Deploy the Coral Cloud Sample App / Sign Up
-* Create playground
+* This Badge Requires a New Custom Data Cloud Playground...
+* Create Playground
 * Verify email
 * Click link to Reset password
 
@@ -90,10 +104,16 @@
 ![alt text](img/data_stream1.png)
 ![alt text](img/data_stream2.png)
 
+#### Categories
+![alt text](img/data_stream03.png)
+![alt text](img/data_stream04.png)
+![alt text](img/data_stream05.png)
+![alt text](img/data_stream06.png)
+
 ### Create new Data Stream
 
-* Data Streams / New / Salesforce CRM
-* EPIC OrgFarm / Custom Data Bundle 
+* Data Cloud / Data Streams / New / Salesforce CRM / Next
+* EPIC OrgFarm / Custom Bundles (1) / Salesforce_Contacts
 
 ![alt text](img/salesforce_contacts.png)
 
@@ -109,20 +129,76 @@
 ![alt text](img/conrtacthome_mapping.png)
 
 * Contact_Home Mappings / Save
-* Data Explorer / Object - Data Lake Object - Contact_Home
 
 ![alt text](img/datamodelobjects_mapped.png)
 
+* Data Explorer / Object - Data Lake Object - Contact_Home
+
 ![alt text](img/dataexplorer_objects.png)
 
-## Data Ingestion and Modeling
-### Data Space
+### Data Normalization
+![alt text](img/dc10.png)
 
-Permission Set Data Space Management
-* Clic on Config (Engine icon)
+#### Normalize Denormalized Data Use Case
+* In this use case, the data comes from a single Marketing Cloud Engagement data extension but must be normalized to map to the Data 360 data model objects (DMO).
+* The source data has two email addresses and two phone numbers for a customer. However, in the Data 360 data model, you can map only one email address and one phone number to the individual DMO. To retain the customer’s additional contact details, you normalize the contact point data before ingesting it.
+
+![alt text](img/dc11.png)
+
+To normalize the data, divide the data into three tables that can map to the Individual DMO, Contact Point Email DMO, and Contact Point Phone DMO and define the relationship between them.
+
+![alt text](img/dc12.png)
+
+* When mapping data to a DMO, each record requires a primary key that uniquely identifies it across all the data sources.
+* To map attributes to the Contact Point Email and Contact Point Phone DMO, you need more than the Contact Id value, because you’re ingesting multiple email addresses and phone numbers for a single Contact Id. Therefore, you extend the data at ingestion through the use of formula fields and generate primary keys.
+* To map to the Contact Point Phone DMO, create a primary key CP_Phone_Id using a composite key by concatenating the Contact Id and Phone Number fields. This primary key is a representative example of how primary keys can be generated at ingestion time using formula fields.
+
+![alt text](img/dc13.png)
+
+* Similarly, to map to the Contact Point Email DMO, create a primary key CP_Email_Id using a composite key by concatenating the Contact Id and Email Address fields.
+
+![alt text](img/dc14.png)
+
+### Data Transform
+
+![alt text](img/dc15.png)
+
+## Data Ingestion and Modeling
+
+![alt text](img/dc16.png)
+
+### Data Cloud Object
+![alt text](img/dc01.png)
+
+### Data Source Object
+![alt text](img/dc02.png)
+
+### Data Lake Object (DLO)
+![alt text](img/dc03.png)
+
+### Data Model Object (DMO)
+![alt text](img/dc04.png)
+
+### Key Takeaways
+![alt text](img/dc05.png)
+
+### Customer 360 Data Model
+![alt text](img/dc06.png)
+
+### Data Space
+![alt text](img/dc07.png)
+
+#### How Data Space Work?
+![alt text](img/dc08.png)
+
+#### Use Case for Data Spaces
+![alt text](img/dc09.png)
+
+### Permission Set Data Space Management
+* Setup / Clic on Config (Engine icon)
 * Home / Quick Find: Permission Sets
 * Access Agentforce Default Agent
-* Data Cloud Data Space Management
+* Click on: Data Cloud Data Space Management
 
 ![alt text](img/permission-set-data-space.png)
 
@@ -133,6 +209,7 @@ Permission Set Data Space Management
 * Contact Home
 
 ![alt text](img/data-explorer1.png)
+  * Columns: Contact ID, Full Name, Email, Birthdate, Business Phone, Created Date, Data Source, Photo URL, Home Phone
 ![alt text](img/edit_columns.png)
 ![alt text](img/data_explorer2.png)
 
@@ -172,6 +249,10 @@ Query Editor
 
 ### Create Connection between Amazon S3 and Data Cloud
 
+![alt text](img/conn01.png)
+![alt text](img/conn02.png)
+![alt text](img/conn03.png)
+
 * Setup / Home / Data Cloud / External Integrations / Other Connectors
 * New / Amazon S3
 
@@ -188,7 +269,6 @@ Query Editor
 ![alt text](img/connectors.png)
 
 ### Create New Data Stream to get Gest information from Amazon S3
-
 * Data Cloud / Data Streams / New
 * Amazon S3 / Next
 * New Data Stream / Connection: AmazonS3 / File Name: `Coral_Clouds_Guests.csv` / Next
@@ -314,3 +394,5 @@ Query Editor
 
 ![alt text](img/gm20.png)
 ![alt text](img/gm21.png)
+
+## Identity Resolution
