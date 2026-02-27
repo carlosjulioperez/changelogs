@@ -30,6 +30,24 @@
     - [Mapping to Reservation DLO to Reservation DMO](#mapping-to-reservation-dlo-to-reservation-dmo)
       - [Duplicate records](#duplicate-records)
   - [Identity Resolution](#identity-resolution)
+    - [How Identity Resolution Works in Data Cloud](#how-identity-resolution-works-in-data-cloud)
+    - [Example](#example)
+    - [What are Matching Rules](#what-are-matching-rules)
+      - [Identity Resolution Process](#identity-resolution-process)
+      - [Metching and Reconciliation](#metching-and-reconciliation)
+      - [Unified Profile](#unified-profile)
+      - [Key types of matching rules in Data Cloud](#key-types-of-matching-rules-in-data-cloud)
+      - [Precision Level (Matching Rules)](#precision-level-matching-rules)
+    - [How to create Matching Rules](#how-to-create-matching-rules)
+    - [What is Unified Individual and Unified Link Individual](#what-is-unified-individual-and-unified-link-individual)
+    - [Run the Identity Resolution Ruleset](#run-the-identity-resolution-ruleset)
+      - [Identity Resolution creates two new records in Data Cloud](#identity-resolution-creates-two-new-records-in-data-cloud)
+      - [Consolidation Rate](#consolidation-rate)
+      - [Relationship between Consolidation Rate and Matching Rule](#relationship-between-consolidation-rate-and-matching-rule)
+      - [Matching Rule Based on Email](#matching-rule-based-on-email)
+      - [Matching Rule Based on Email + Phone](#matching-rule-based-on-email--phone)
+    - [Reconciliation Rule](#reconciliation-rule)
+    - [Ignore Empty Value](#ignore-empty-value)
 
 # Salesforce Data Cloud Consultant Certification
 
@@ -206,7 +224,7 @@ To normalize the data, divide the data into three tables that can map to the Ind
 
 * Data Explorer
 * Object: Data Lake Object
-* Contact Home
+* Contact Home / button Edit Columns
 
 ![alt text](img/data-explorer1.png)
   * Columns: Contact ID, Full Name, Email, Birthdate, Business Phone, Created Date, Data Source, Photo URL, Home Phone
@@ -262,7 +280,7 @@ Query Editor
 * Connection API Name:  AmazonS3
 * Provide `AWS access` key and `AWS secret access key`
 * Bucket name: `mydatacloudbucketcj`
-* Parent directory: `contactandhotelbookings`
+* Parent directory: `/contactandhotelbookings`
 * Test Connection / Save
 
 ![alt text](img/testconnection.png)
@@ -304,7 +322,7 @@ Query Editor
   * Category: `Engagement` (contains behavioral information)
   * Event Time Field: `Check-in Date`
   * Primary key: `Reservation ID`
-* In Supported Fields: `Room Number` change to `Text`, `Taxes and fees`, change to `Percent`
+* In Supported Fields: `Room Number` change to `Text`, `Taxes and fees`, change to `Percent` / Next
 
 ![alt text](img/ds6.png)
 
@@ -320,13 +338,17 @@ Query Editor
 
 ### Mapping to Guest DLO to Individual DMO
 
-* Data Streams / Select Guest / Start
+* Data Streams / Select `Guest` / Start
 
 ![alt text](img/gm01.png)
 
-* Select Object
+* Select Objects
 * Standard Data Model
-* Select `Individual` and `Conctact Point Email` / Done
+* Select `Individual` and `Contact Point Email` / Done
+* Mapping 
+  * `Guest Id` with `Individual Id`
+  * `Guest Id` with `Contact Point Email Id`
+  * `Guest Id` with `Party`
 
 ![alt text](img/gm02.png)
 
@@ -396,3 +418,169 @@ Query Editor
 ![alt text](img/gm21.png)
 
 ## Identity Resolution
+* Identity Resolution in Data Cloud is the process of accurately identifying and linking records that represent the same individual or account across different data sources.<br>
+
+Why is Identity Resolution Important?
+* Inaccurate data: Duplicate records with conflicting information
+* Inefficient marketing: Sending the same marketing message multiple times to the same person
+* Poor customer experience
+
+![alt text](img/ir24.png)
+
+### How Identity Resolution Works in Data Cloud
+Data Cloud employs a two-step process to resolve identities:
+* `Matching`: This stage analyzes records from different sources to identify potential matches based on specific criteria.
+* `Reconciliation`: Defining how to resolve conflicts when multiple matching records are found for the same individual, such as selecting the most recent or highest quality data source.
+
+### Example
+![alt text](img/ir01.png)
+
+### What are Matching Rules 
+#### Identity Resolution Process
+![alt text](img/ir02.png)
+
+#### Metching and Reconciliation
+* In this example you can see that the customer, Aisha, has interacted with different technologies and each underlying data store represents the same person slightly differently.
+![alt text](img/ir03.png)
+
+* Data Cloud makes it easy to federate queries across data sources — like being able to see Aisha’s shopping cart from data sourced from Commerce Cloud — and take action on events — like sending a marketing follow-up when Aisha abandons her shopping cart.
+![alt text](img/ir04.png)
+
+#### Unified Profile
+![alt text](img/ir05.png)
+
+#### Key types of matching rules in Data Cloud
+* `Exact Match`: Strict comparison, only matching records where the data fields are completely identical across all relevant attributes.
+* `Fuzzy Match`: Allows for some variation in data, like slight misspellings, nicknames, or different formatting, with adjustable levels of tolerance to control the match sensitivity.
+* `Normalized Match`: Compares data after applying normalization techniques like removing extra spaces, converting to uppercase, or standardizing date formats, enabling matching even when data is presented differently.
+
+#### Precision Level (Matching Rules)
+* `Low Precision`: This is the most lenient level, allowing for significant variations in spelling and even misspellings.
+* `Medium Precision`: This level is less generous, but still allows for some variations, such as initials and some nicknames.
+* `High Precision`: This is the most restrictive level, allowing for only minor variations like hyphenation or common nicknames. For example, "Matthew" and "Matt" could match, but not much more variation than that.
+
+### How to create Matching Rules
+* Data Cloud / Identity Resolutions / New / Create New Ruleset / Next
+* Individual / Individual / `ccid` / Next
+
+![alt text](img/ir06.png)
+
+* Ruleset Name: `Resolution based on Email And Name` / Save
+
+![alt text](img/ir07.png)
+
+![alt text](img/ir08.png)
+
+* Configure / Next
+  
+![alt text](img/ir09.png)
+
+* Add Match Rules / Configure
+
+![alt text](img/ir10.png)
+
+* Select `Fuzzy Name and Normalized Email` / Next
+
+![alt text](img/ir11.png)
+
+* Configure Matching Criteria / Next
+
+![alt text](img/ir12.png)
+
+* Add Match Rules / Save
+
+![alt text](img/ir13.png)
+
+![alt text](img/ir14.png)
+
+* When `Last Job Status` change to `Succeeded` / Click on `Run Ruleset`
+
+![alt text](img/ir15.png)
+
+### What is Unified Individual and Unified Link Individual
+
+* Data Cloud / Data Explorer / Data Model Object / Unified Individual ccid
+
+![alt text](img/ir16.png)
+
+* Edit Columns
+  * Unified Individual id, First Name, Last Name, Birth Date, Person Name, Photo URL, Salutation, Title
+
+![alt text](img/ir17.png)
+![alt text](img/ir18.png)
+
+* New Filter / `Last Name` / `Rodriguez` / Done / Apply
+
+![alt text](img/ir18.png)
+![alt text](img/ir19.png)
+![alt text](img/ir20.png)
+
+*See [Duplicate records](#duplicate-records)*
+
+* Copy `Unified Individual ccid`
+* Data Model Object / `Unified Link Individual ccid` / Edit Columns
+
+![alt text](img/ir21.png)
+
+* New Filter / `Unified Individual Id` / Paste previous code / Done / Apply
+
+![alt text](img/ir22.png)
+![alt text](img/ir23.png)
+
+### Run the Identity Resolution Ruleset
+
+#### Identity Resolution creates two new records in Data Cloud
+* `Unified Profile`: This record represents the single, consolidated view of the customer (e.g., the unified "Individual" record for "John Smith")
+* `Unified Link`: This record acts as a bridge, connecting the unified profile to the original records from the different source systems.
+
+#### Consolidation Rate
+* The `consolidation rate` in Data Cloud's Identity Resolution process measures how effectively your matching rules are bringing together fragmented customer data from different sources. It's represented as a **percentage that shows how many individual source profiles were successfully combined into unified profiles**.
+
+```puretext
+Consolidation Rate = 1 - (Number of Unified Profiles / Number of Source Profiles) x 100
+```
+
+* `Number of Unified Profiles`: This is the count of unique customer profiles created after the Identity Resolution process has linked the matching profiles from different source systems.
+* `Number of Source Profiles`: This is the total count of individual customer profiles present across all your source systems before the matching process begins.
+
+#### Relationship between Consolidation Rate and Matching Rule
+* Increasing the number of matching rules will increase the consolidation rate, because more matching rules will result into more matches.
+
+#### Matching Rule Based on Email
+* Unique Profile: 4
+
+```puretext
+John Doe, john.doe@example.com, 123-456-7890 (1)
+J. Doe, john.doe@example.com, 123-456-7890 (1)
+Jane Smith, jane.smith@example.com, 987-654-3210 (2) 
+J Smith, jane.s@example.com, 987-654-3210 (3)
+John Doe, johnd@example.com, 123-456-7890 (4)
+```
+#### Matching Rule Based on Email + Phone
+* Unique Profile: 2
+
+```puretext
+John Doe, john.doe@example.com, 123-456-7890 (1)
+J. Doe, john.doe@example.com, 123-456-7890 (1)
+Jane Smith, jane.smith@example.com, 987-654-3210 (2) 
+J Smith, jane.s@example.com, 987-654-3210 (2)
+John Doe, johnd@example.com, 123-456-7890 (1)
+```
+
+### Reconciliation Rule
+
+* `Recency`: This prioritizes attributes based on their last modified date. The most recently updated value is selected for the unified profile. For example, if you have conflicting 'Last Name' values for a customer across different systems, the one with the most recent modification date will be chosen. This ensures that the unified profile reflects the latest information available.
+
+* `Frequency`: This prioritizes attributes based on how often they appear across the matched records. The attribute appearing most frequently is chosen for the unified profile. For example, if a customer's 'Home Address' is recorded differently across systems, the address that appears most often will be chosen.
+
+* `Source System`: You can prioritize data from specific source systems over others. For example, you might consider data from your CRM system more reliable than data from an older marketing platform. You can define the hierarchy of source system priority during reconciliation rule setup. This approach leverages the trust and confidence you have in different data sources.
+
+* Data Cloud / Identity Resolutions / Click on `Resolution based on Email And Name` / `Individual`
+
+![alt text](img/ir25.png)
+
+![alt text](img/ir26.png)
+
+![alt text](img/ir27.png)
+
+### Ignore Empty Value
