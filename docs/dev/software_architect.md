@@ -177,3 +177,585 @@ La seguridad no es una capa externa, sino parte integral del diseño. Aplico pri
 Cada decisión de arquitectura tiene un reflejo en la factura de la nube. Analizo el costo de operación continuo para garantizar la sostenibilidad financiera de la solución a largo plazo.
 
 ![alt text](img/marco_arquitectura.png)
+
+En entrevistas técnicas (sobre todo para Java), las preguntas sobre **colecciones y genéricos** suelen evaluar:
+
+1. Si entiendes la **jerarquía del framework de colecciones**,
+2. Si sabes **cuándo usar cada estructura**,
+3. Si comprendes **complejidad temporal (Big-O)**,
+4. Y si dominas bien los **Generics**.
+
+Voy a explicártelo como lo preguntaría un reclutador 👇
+
+---
+
+# 📌 1️⃣ ¿Qué es el Java Collections Framework?
+
+Es un conjunto de interfaces y clases del paquete `java.util` que permiten almacenar y manipular grupos de objetos.
+
+Las interfaces principales son:
+
+* `List`
+* `Set`
+* `Map` (no hereda de Collection, pero forma parte del framework)
+
+---
+
+# 📌 2️⃣ List vs Set vs Map
+
+## 🔹 List
+
+* Permite **elementos duplicados**
+* Mantiene **orden de inserción**
+* Acceso por índice
+* Ejemplo: lista de pedidos, historial, etc.
+
+Implementaciones comunes:
+
+### ✅ ArrayList
+
+* Basado en **arreglo dinámico**
+* Acceso rápido por índice → **O(1)**
+* Insertar/eliminar en medio → **O(n)**
+* No es thread-safe
+
+Uso típico:
+
+```java
+List<String> nombres = new ArrayList<>();
+nombres.add("Juan");
+nombres.add("Ana");
+```
+
+👉 Pregunta típica:
+
+> ¿Cuándo usarías ArrayList?
+> ✔ Cuando necesitas muchas lecturas y pocas inserciones en medio.
+
+---
+
+### ✅ LinkedList
+
+* Basado en **lista doblemente enlazada**
+* Insertar/eliminar al inicio o medio → **O(1)** (si ya tienes referencia)
+* Acceso por índice → **O(n)**
+
+👉 Se usa cuando hay muchas inserciones/eliminaciones.
+
+---
+
+## 🔹 Set
+
+* NO permite duplicados
+* No garantiza orden (depende de implementación)
+
+Implementaciones:
+
+### ✅ HashSet
+
+* Basado en hash
+* No mantiene orden
+* Operaciones básicas → **O(1)** promedio
+
+```java
+Set<String> usuarios = new HashSet<>();
+usuarios.add("Juan");
+usuarios.add("Juan"); // No se agrega
+```
+
+👉 Pregunta típica:
+
+> ¿Cómo determina HashSet si un elemento es duplicado?
+> ✔ Usa `hashCode()` y `equals()`.
+
+---
+
+### ✅ TreeSet
+
+* Ordenado automáticamente
+* Basado en árbol (Red-Black Tree)
+* Operaciones → **O(log n)**
+
+---
+
+## 🔹 Map
+
+* Almacena pares **clave → valor**
+* Claves únicas
+* No permite claves duplicadas
+
+Implementaciones:
+
+### ✅ HashMap
+
+* Basado en hash
+* O(1) promedio
+* No ordenado
+
+```java
+Map<String, Integer> edades = new HashMap<>();
+edades.put("Juan", 30);
+```
+
+👉 Preguntas comunes:
+
+* ¿Permite claves null? → Sí (una sola)
+* ¿Es thread-safe? → No
+
+---
+
+### ✅ TreeMap
+
+* Ordenado por clave
+* O(log n)
+
+---
+
+# 📌 3️⃣ Diferencias clave resumidas
+
+| Estructura | Duplicados | Orden | Acceso por índice | Complejidad |
+| ---------- | ---------- | ----- | ----------------- | ----------- |
+| ArrayList  | Sí         | Sí    | Sí                | O(1) get    |
+| LinkedList | Sí         | Sí    | Sí (lento)        | O(n) get    |
+| HashSet    | No         | No    | No                | O(1)        |
+| TreeSet    | No         | Sí    | No                | O(log n)    |
+| HashMap    | Clave no   | No    | No                | O(1)        |
+| TreeMap    | Clave no   | Sí    | No                | O(log n)    |
+
+---
+
+# 📌 4️⃣ Preguntas comunes sobre HashMap
+
+### 🔥 ¿Cómo funciona internamente?
+
+1. Calcula `hashCode()` de la clave
+2. Determina el índice del bucket
+3. Si hay colisión:
+
+   * Lista enlazada (Java 7)
+   * Árbol balanceado si crece mucho (desde Java 8)
+
+---
+
+### 🔥 ¿Qué es una colisión?
+
+Cuando dos claves diferentes generan el mismo hash.
+
+---
+
+# 📌 5️⃣ Generics (Muy preguntado)
+
+## 🔹 ¿Qué son?
+
+Permiten definir tipos de datos de manera genérica.
+
+```java
+List<String> lista = new ArrayList<>();
+```
+
+Sin generics:
+
+```java
+List lista = new ArrayList();
+lista.add("Hola");
+Integer num = (Integer) lista.get(0); // Error en runtime
+```
+
+Con generics:
+✔ Seguridad en compilación
+✔ No necesitas cast
+✔ Código más limpio
+
+---
+
+## 🔹 Wildcards
+
+### `<?>`
+
+Tipo desconocido
+
+### `<? extends T>`
+
+Solo lectura (covarianza)
+
+```java
+List<? extends Number>
+```
+
+### `<? super T>`
+
+Permite insertar (contravarianza)
+
+---
+
+👉 Pregunta clásica:
+
+> ¿Por qué no puedes hacer `new T()`?
+> Porque los generics en Java usan **type erasure** (se eliminan en runtime).
+
+---
+
+# 📌 6️⃣ Preguntas trampa típicas de reclutadores
+
+### ❓ ¿Cuál es más rápido: ArrayList o LinkedList?
+
+Depende:
+
+* Lectura → ArrayList
+* Inserciones frecuentes → LinkedList
+
+---
+
+### ❓ ¿HashMap es thread-safe?
+
+No.
+Alternativa:
+
+* `Collections.synchronizedMap()`
+* `ConcurrentHashMap`
+
+---
+
+### ❓ Diferencia entre == y equals en colecciones
+
+* `==` compara referencia
+* `equals()` compara contenido
+
+---
+
+# 📌 7️⃣ Cuándo usar cada uno (respuesta de entrevista)
+
+✔ Lista de elementos con duplicados → ArrayList
+✔ Evitar duplicados → HashSet
+✔ Datos clave-valor → HashMap
+✔ Necesito orden automático → TreeSet / TreeMap
+✔ Mucha concurrencia → ConcurrentHashMap
+
+---
+
+# 📌 8️⃣ Respuesta ideal en entrevista
+
+Cuando te pregunten:
+
+> ¿Qué estructura usarías y por qué?
+
+Responde siempre mencionando:
+
+* Orden
+* Duplicados
+* Complejidad temporal
+* Concurrencia
+* Tipo de acceso (índice o búsqueda)
+
+---
+
+Si quieres, puedo:
+
+* 🔥 Hacerte preguntas tipo entrevista para practicar
+* 🧠 Explicarte ConcurrentHashMap en profundidad
+* 💻 Hacer ejercicios prácticos tipo coding challenge
+* 📊 Explicarte Big-O aplicado a cada estructura
+
+¿Quieres que lo llevemos a nivel entrevista senior?
+
+Perfecto 👌 Te armo el **simulacro completo perfil Senior Java + Spring**, y debajo de cada pregunta te doy **la respuesta correcta + explicación detallada**.
+
+---
+
+# 📋 SIMULACRO – Programador Java Senior + Spring
+
+---
+
+## 🧠 PARTE 1 – JAVA CORE (Senior)
+
+---
+
+### 1️⃣ ¿Qué sucede si no se sobrescribe `hashCode()` pero sí `equals()`?
+
+A) Nada
+B) Se rompe el contrato en colecciones basadas en hash
+C) Mejora el rendimiento
+D) Solo afecta a listas
+
+✅ **Respuesta: B**
+
+**Explicación:**
+El contrato de Java dice que si dos objetos son iguales según `equals()`, deben tener el mismo `hashCode()`.
+Si no lo cumples, estructuras como `HashMap` y `HashSet` no funcionarán correctamente (pueden duplicar objetos o no encontrarlos).
+
+---
+
+### 2️⃣ ¿Cuál es la principal diferencia entre `ConcurrentHashMap` y `HashMap`?
+
+A) ConcurrentHashMap permite null
+B) HashMap es thread-safe
+C) ConcurrentHashMap es thread-safe
+D) No hay diferencia
+
+✅ **Respuesta: C**
+
+**Explicación:**
+`HashMap` NO es seguro en entornos multihilo.
+`ConcurrentHashMap` maneja concurrencia internamente sin bloquear toda la estructura.
+
+---
+
+### 3️⃣ ¿Qué es una clase inmutable?
+
+A) Clase sin constructor
+B) Clase que no puede cambiar su estado después de creada
+C) Clase abstracta
+D) Clase final
+
+✅ **Respuesta: B**
+
+**Explicación:**
+Una clase inmutable:
+
+* Atributos `private final`
+* Sin setters
+* Estado definido en constructor
+* Si contiene objetos mutables, se devuelven copias
+
+Ejemplo clásico: `String`.
+
+---
+
+### 4️⃣ ¿Qué ocurre si llamas `parallelStream()` en una colección grande?
+
+A) Siempre mejora rendimiento
+B) Puede empeorar rendimiento según contexto
+C) Es igual que stream()
+D) Bloquea la JVM
+
+✅ **Respuesta: B**
+
+**Explicación:**
+`parallelStream()` usa ForkJoinPool.
+Puede empeorar rendimiento si:
+
+* Operaciones pequeñas
+* Mucha contención
+* IO blocking
+
+---
+
+### 5️⃣ ¿Qué problema resuelve el patrón Builder?
+
+A) Herencia múltiple
+B) Constructores con muchos parámetros
+C) Concurrencia
+D) Serialización
+
+✅ **Respuesta: B**
+
+**Explicación:**
+Evita constructores telescópicos y mejora legibilidad.
+
+---
+
+## 🧵 PARTE 2 – CONCURRENCIA
+
+---
+
+### 6️⃣ Diferencia entre `synchronized` y `ReentrantLock`
+
+✅ **Respuesta resumida:**
+
+| synchronized                | ReentrantLock              |
+| --------------------------- | -------------------------- |
+| Más simple                  | Más flexible               |
+| No permite tryLock          | Permite tryLock            |
+| No permite fairness         | Permite fairness           |
+| Libera lock automáticamente | Debe liberarse manualmente |
+
+**Explicación:**
+ReentrantLock es más potente pero más complejo.
+
+---
+
+### 7️⃣ ¿Qué es un Deadlock?
+
+✅ **Respuesta:**
+Situación donde dos o más hilos se bloquean esperando recursos que el otro posee.
+
+---
+
+### 8️⃣ ¿Qué hace `volatile`?
+
+A) Hace thread-safe una variable
+B) Garantiza visibilidad entre hilos
+C) Bloquea escritura
+D) Sincroniza métodos
+
+✅ **Respuesta: B**
+
+**Explicación:**
+`volatile` garantiza que cambios sean visibles en otros hilos, pero NO garantiza atomicidad.
+
+---
+
+## 🌱 PARTE 3 – SPRING / SPRING BOOT
+
+---
+
+### 9️⃣ ¿Qué es Inversión de Control (IoC)?
+
+✅ **Respuesta:**
+El contenedor Spring gestiona la creación y ciclo de vida de objetos (beans).
+
+---
+
+### 🔟 Diferencia entre `@Component`, `@Service`, `@Repository`
+
+✅ **Respuesta:**
+
+* `@Component`: Genérico
+* `@Service`: Lógica de negocio
+* `@Repository`: Acceso a datos (traduce excepciones)
+
+---
+
+### 11️⃣ ¿Qué hace `@Transactional`?
+
+A) Crea una conexión
+B) Maneja transacciones automáticamente
+C) Ejecuta en paralelo
+D) Optimiza consultas
+
+✅ **Respuesta: B**
+
+**Explicación:**
+Spring crea un proxy que inicia, confirma o revierte la transacción.
+
+---
+
+### 12️⃣ ¿Qué pasa si una excepción checked ocurre dentro de `@Transactional`?
+
+✅ **Respuesta:**
+Por defecto NO hace rollback.
+Solo hace rollback automático con RuntimeException.
+
+---
+
+### 13️⃣ ¿Qué es Lazy Loading en JPA?
+
+✅ **Respuesta:**
+Las relaciones se cargan cuando se accede a ellas, no cuando se consulta la entidad.
+
+---
+
+### 14️⃣ ¿Qué problema genera LazyInitializationException?
+
+✅ **Respuesta:**
+Acceder a una relación lazy fuera de una sesión activa.
+
+---
+
+### 15️⃣ Diferencia entre `CrudRepository` y `JpaRepository`
+
+✅ **Respuesta:**
+`JpaRepository` extiende CrudRepository y agrega:
+
+* Paginación
+* Sorting
+* flush()
+
+---
+
+## 🗄 PARTE 4 – SQL
+
+---
+
+### 16️⃣ Diferencia entre INNER JOIN y LEFT JOIN
+
+✅ **Respuesta:**
+
+* INNER: Solo coincidencias
+* LEFT: Todo de la izquierda + coincidencias
+
+---
+
+### 17️⃣ ¿Qué hace un índice?
+
+A) Guarda datos duplicados
+B) Mejora velocidad de búsqueda
+C) Reduce memoria
+D) Evita deadlocks
+
+✅ **Respuesta: B**
+
+---
+
+## 💻 PARTE 5 – EJERCICIOS PRÁCTICOS
+
+---
+
+### 18️⃣ ¿Qué problema tiene este código?
+
+```java
+Map<String, String> map = new HashMap<>();
+map.put(null, "test");
+```
+
+✅ **Respuesta:**
+No hay problema en HashMap.
+Pero sí fallaría en ConcurrentHashMap (no permite null).
+
+---
+
+### 19️⃣ ¿Qué problema ves aquí?
+
+```java
+@Transactional
+public void method() {
+    this.otherMethod();
+}
+```
+
+✅ **Respuesta:**
+No funciona la transacción si otherMethod() también tiene @Transactional.
+
+**Explicación:**
+Spring usa proxies. Las llamadas internas no pasan por el proxy.
+
+---
+
+### 20️⃣ Diseña un endpoint REST para crear usuario
+
+✅ **Respuesta ejemplo:**
+
+```java
+@PostMapping("/users")
+public ResponseEntity<UserDto> create(@RequestBody CreateUserDto dto) {
+    User user = service.create(dto);
+    return ResponseEntity.status(HttpStatus.CREATED).body(mapper.toDto(user));
+}
+```
+
+**Explicación:**
+
+* POST para crear
+* 201 CREATED
+* Separación DTO / Entity
+* Service layer
+
+---
+
+# 🎯 NIVEL DE DIFICULTAD
+
+Este simulacro está en rango:
+
+* Semi-Senior alto
+* Senior intermedio
+
+---
+
+Si quieres, ahora puedo:
+
+* 🔥 Hacer una ronda de entrevista técnica difícil (nivel Senior real)
+* 💣 Hacer preguntas de arquitectura (microservicios, Kafka, Docker)
+* 🧩 Hacer un ejercicio de diseño tipo sistema real
+* 🏆 Simulacro tipo empresa grande
+
+¿Quieres que lo llevemos a nivel “empresa exigente”?
