@@ -1,4 +1,8 @@
 Software en mac
+
+	+ Tamaño de carpetas:
+		du -sh */
+
 	+ mole Limpiar espacio en disco
 		https://github.com/tw93/Mole
 		$ brew install mole
